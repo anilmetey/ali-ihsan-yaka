@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D3A34"/>
+      <stop offset="50%" stop-color="#1E2823"/>
+      <stop offset="100%" stop-color="#141B18"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DFC48B"/>
+      <stop offset="50%" stop-color="#C5A059"/>
+      <stop offset="100%" stop-color="#9E7835"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EEDAC5"/>
+      <stop offset="100%" stop-color="#D7BA9D"/>
+    </linearGradient>
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="750" fill="url(#bgGrad)"/>
+
+  <!-- Atmospheric Arch & Depth -->
+  <circle cx="300" cy="280" r="210" fill="#24332D" opacity="0.6"/>
+  <circle cx="300" cy="280" r="190" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.35" stroke-dasharray="4 6"/>
+  
+  <!-- Subtle Greek / Lacanian Knot Motif in Background -->
+  <path d="M 240 280 C 240 220, 360 220, 360 280 C 360 340, 240 340, 240 280 Z" fill="none" stroke="#DFC48B" stroke-width="1" opacity="0.15"/>
+  <path d="M 300 220 C 360 220, 360 340, 300 340 C 240 340, 240 220, 300 220 Z" fill="none" stroke="#DFC48B" stroke-width="1" opacity="0.15"/>
+
+  <!-- Torso & Suit -->
+  <path d="M 170 750 L 190 540 L 250 490 L 300 580 L 350 490 L 410 540 L 430 750 Z" fill="#121815"/>
+  <!-- Lapel Left -->
+  <path d="M 230 500 L 290 620 L 270 630 L 210 530 Z" fill="#1E2622"/>
+  <!-- Lapel Right -->
+  <path d="M 370 500 L 310 620 L 330 630 L 390 530 Z" fill="#1E2622"/>
+  <!-- Shirt & Tie -->
+  <polygon points="280,500 320,500 310,580 290,580" fill="#F4F1EA"/>
+  <polygon points="295,505 305,505 308,610 292,610" fill="#7A3926"/>
+
+  <!-- Neck -->
+  <path d="M 270 430 L 330 430 L 335 500 L 265 500 Z" fill="url(#skinGrad)"/>
+  <path d="M 265 480 Q 300 510 335 480 L 335 500 L 265 500 Z" fill="#C5A485" opacity="0.5"/>
+
+  <!-- Head & Jaw -->
+  <path d="M 245 320 C 245 220, 355 220, 355 320 C 355 385, 335 440, 300 445 C 265 440, 245 385, 245 320 Z" fill="url(#skinGrad)"/>
+  
+  <!-- Hair & Beard (Sophisticated Academic Silhouette) -->
+  <path d="M 240 300 C 240 210, 360 210, 360 300 C 360 270, 345 230, 300 230 C 255 230, 240 270, 240 300 Z" fill="#201C1B"/>
+  <!-- Beard / Goatee contours -->
+  <path d="M 260 380 C 265 440, 335 440, 340 380 C 325 410, 275 410, 260 380 Z" fill="#201C1B" opacity="0.85"/>
+  <!-- Mustache -->
+  <path d="M 275 380 Q 300 375 325 380 Q 300 395 275 380 Z" fill="#201C1B" opacity="0.9"/>
+
+  <!-- Spectacles / Glasses (Classic Scholar Thin Frames) -->
+  <ellipse cx="275" cy="330" rx="22" ry="17" fill="none" stroke="url(#goldGrad)" stroke-width="2.5"/>
+  <ellipse cx="325" cy="330" rx="22" ry="17" fill="none" stroke="url(#goldGrad)" stroke-width="2.5"/>
+  <line x1="297" y1="330" x2="303" y2="330" stroke="url(#goldGrad)" stroke-width="2"/>
+  <line x1="253" y1="328" x2="242" y2="324" stroke="url(#goldGrad)" stroke-width="2"/>
+  <line x1="347" y1="328" x2="358" y2="324" stroke="url(#goldGrad)" stroke-width="2"/>
+
+  <!-- Eyes subtle -->
+  <ellipse cx="275" cy="330" rx="6" ry="3" fill="#2A2421"/>
+  <ellipse cx="325" cy="330" rx="6" ry="3" fill="#2A2421"/>
+
+  <!-- Typographic Badge at Bottom -->
+  <rect x="60" y="650" width="480" height="70" rx="4" fill="#141B18" stroke="#37473F" stroke-width="1"/>
+  <text x="300" y="678" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="20" font-weight="600" fill="#E8DEC9" letter-spacing="2">DR. ALİ İHSAN YAKA, Ph.D.</text>
+  <text x="300" y="702" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="400" fill="#A7B3AC" letter-spacing="1.5">CLINICAL PSYCHOLOGIST · POSTDOCTORAL RESEARCH SCHOLAR</text>
+</svg>

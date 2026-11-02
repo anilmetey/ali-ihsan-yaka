@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+  <style>@media (prefers-reduced-motion: reduce) { .mark-current { display: none; } }</style>
+  <circle cx="50" cy="50" r="45" stroke="#4E5BA6" stroke-opacity=".12" stroke-width="1.4"/>
+  <ellipse cx="50" cy="34" rx="22" ry="16" stroke="#B78B4F" stroke-width="3.2"/>
+  <ellipse cx="37" cy="59" rx="22" ry="16" transform="rotate(-55 37 59)" stroke="#4E5BA6" stroke-width="3.2"/>
+  <ellipse cx="63" cy="59" rx="22" ry="16" transform="rotate(55 63 59)" stroke="#34465F" stroke-width="3.2"/>
+  <path class="mark-current" d="M50 15c8 5 13 11 15 18M19 52c7-2 14-1 20 3m42-3c-7-2-14-1-20 3" stroke="#B78B4F" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="14 94">
+    <animate attributeName="stroke-dashoffset" values="0;-108" dur="12s" repeatCount="indefinite"/>
+  </path>
+  <circle cx="50" cy="50" r="4.5" fill="#F8F5EE" stroke="#B78B4F" stroke-width="2"/>
+  <circle cx="50" cy="18" r="3" fill="#B78B4F"/><circle cx="24" cy="68" r="3" fill="#4E5BA6"/><circle cx="76" cy="68" r="3" fill="#34465F"/>
+</svg>

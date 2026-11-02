@@ -1,0 +1,14 @@
+# Local consultation records and temporary source/review material
+consultations.db
+consultations.db-*
+*.sqlite
+*.sqlite3
+*.db
+/tmp/
+/tmp/**
+/data/
+/data/**
+
+# Local editor and operating-system files
+.taste-skill/
+.DS_Store

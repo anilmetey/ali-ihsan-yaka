@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Luminous Alabaster Gradient -->
+    <linearGradient id="luminousBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFCF9"/>
+      <stop offset="45%" stop-color="#F7F6F0"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+
+    <!-- Watercolor Cobalt Wash -->
+    <radialGradient id="cobaltWash" cx="30%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#5A65B6" stop-opacity="0.22"/>
+      <stop offset="45%" stop-color="#4C58A8" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#5A65B6" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Watercolor Amber Ochre Wash -->
+    <radialGradient id="amberWash" cx="75%" cy="65%" r="50%">
+      <stop offset="0%" stop-color="#EAA028" stop-opacity="0.20"/>
+      <stop offset="40%" stop-color="#D8830F" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#D8830F" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Gold Foil Line Gradient -->
+    <linearGradient id="goldLinear" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D8830F"/>
+      <stop offset="50%" stop-color="#F2C265"/>
+      <stop offset="100%" stop-color="#C5750A"/>
+    </linearGradient>
+
+    <!-- Cobalt Foil Line Gradient -->
+    <linearGradient id="cobaltLinear" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3D478A"/>
+      <stop offset="50%" stop-color="#5A65B6"/>
+      <stop offset="100%" stop-color="#808BDB"/>
+    </linearGradient>
+
+    <!-- Subtle Paper Blur Filter -->
+    <filter id="softDiffusion" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+  </defs>
+
+  <!-- Luminous Base Canvas -->
+  <rect width="1600" height="1000" fill="url(#luminousBase)"/>
+
+  <!-- Organic Watercolor Art Washes (Inspired by Hilda Fernandez's OrangeBlue palette) -->
+  <circle cx="480" cy="380" r="420" fill="url(#cobaltWash)" filter="url(#softDiffusion)"/>
+  <circle cx="1180" cy="620" r="390" fill="url(#amberWash)" filter="url(#softDiffusion)"/>
+  <ellipse cx="900" cy="400" rx="350" ry="240" fill="#5A65B6" opacity="0.04" filter="url(#softDiffusion)"/>
+
+  <!-- Delicate Lacanian Borromean Knot (R.S.I.: Real, Symbolic, Imaginary) -->
+  <g transform="translate(1120, 360)" opacity="0.75">
+    <!-- Ring 1: Le Symbolique (Gold / Language) -->
+    <ellipse cx="0" cy="-75" rx="170" ry="125" fill="none" stroke="url(#goldLinear)" stroke-width="2" stroke-dasharray="8 6"/>
+    <text x="0" y="-210" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#D8830F" letter-spacing="3" opacity="0.85">LE SYMBOLIQUE</text>
+
+    <!-- Ring 2: L'Imaginaire (Cobalt / The Ego) -->
+    <ellipse cx="-85" cy="65" rx="170" ry="125" fill="none" stroke="url(#cobaltLinear)" stroke-width="2.5"/>
+    <text x="-210" y="190" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#5A65B6" letter-spacing="3" opacity="0.85">L'IMAGINAIRE</text>
+
+    <!-- Ring 3: Le Réel (Fine Charcoal / The Unrepresentable) -->
+    <ellipse cx="85" cy="65" rx="170" ry="125" fill="none" stroke="#2D3142" stroke-width="1.8" stroke-opacity="0.45"/>
+    <text x="210" y="190" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#2D3142" letter-spacing="3" opacity="0.6">LE RÉEL</text>
+
+    <!-- Central Intersection Anchor (L'Objet petit a) -->
+    <circle cx="0" cy="20" r="4" fill="#D8830F" opacity="0.9"/>
+    <circle cx="0" cy="20" r="14" fill="none" stroke="#D8830F" stroke-width="1" stroke-dasharray="2 3" opacity="0.5"/>
+    <text x="22" y="24" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="16" fill="#D8830F" opacity="0.9">objet a</text>
+  </g>
+
+  <!-- Fluid Signifying Chains (Speech Curves & Punctuation) -->
+  <g opacity="0.5">
+    <path d="M -100 820 C 320 680, 620 920, 1020 740 C 1320 600, 1520 750, 1800 660" fill="none" stroke="url(#cobaltLinear)" stroke-width="1.5"/>
+    <path d="M -100 780 C 360 640, 680 880, 1060 700 C 1360 560, 1560 710, 1800 620" fill="none" stroke="url(#goldLinear)" stroke-width="1" opacity="0.6"/>
+    <path d="M -100 860 C 280 720, 580 960, 980 780 C 1280 640, 1480 790, 1800 700" fill="none" stroke="#2D3142" stroke-width="0.8" opacity="0.25"/>
+  </g>
+
+  <!-- Fine Museum Hairline Grid -->
+  <line x1="80" y1="80" x2="1520" y2="80" stroke="#EAEAEF" stroke-width="1"/>
+  <line x1="80" y1="920" x2="1520" y2="920" stroke="#EAEAEF" stroke-width="1"/>
+  <line x1="80" y1="80" x2="80" y2="920" stroke="#EAEAEF" stroke-width="1"/>
+  <line x1="1520" y1="80" x2="1520" y2="920" stroke="#EAEAEF" stroke-width="1"/>
+
+  <!-- Corner Coordinates / Academic Plaque -->
+  <text x="110" y="115" font-family="'JetBrains Mono', monospace" font-size="11" fill="#7E8299" letter-spacing="2">DR. ALİ İHSAN YAKA, PH.D.</text>
+  <text x="1490" y="115" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="11" fill="#7E8299" letter-spacing="2">SUNY BUFFALO CSPC · 2026</text>
+  <text x="110" y="895" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="15" fill="#5A65B6" opacity="0.8">L'inconscient est structuré comme un langage.</text>
+  <text x="1490" y="895" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="10" fill="#9FA2B4" letter-spacing="2">BORROMEAN TOPOLOGY</text>
+</svg>
