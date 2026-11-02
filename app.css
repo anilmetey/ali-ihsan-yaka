@@ -4874,3 +4874,139 @@ html.splash-visited #splashScreen.splash-screen {
   #splashScreen .splash-scholar-title { margin-top: .5rem; font-size: .74rem; }
   #splashScreen .splash-enter-btn { min-height: 44px; margin-top: .7rem; }
 }
+
+/* Mobile-specific corrections from real-device screenshots. */
+@media (max-width: 760px) {
+  #splashScreen.splash-screen {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: clamp(.35rem, 1.4svh, .9rem);
+    width: 100%;
+    height: 100svh;
+    min-height: 100svh;
+    padding: max(.6rem, env(safe-area-inset-top)) clamp(1.1rem, 5vw, 1.5rem) max(.85rem, env(safe-area-inset-bottom));
+    overflow-y: auto;
+    background: #f3f2ed !important;
+  }
+
+  #splashScreen .splash-portrait-source {
+    position: relative;
+    inset: auto;
+    display: block;
+    flex: 0 0 min(43svh, 350px);
+    width: 100%;
+    min-height: 210px;
+    z-index: 1;
+  }
+
+  #splashScreen .splash-portrait {
+    position: relative !important;
+    inset: auto !important;
+    display: block;
+    width: min(100%, 350px) !important;
+    height: 100% !important;
+    margin: 0 auto;
+    object-fit: contain;
+    object-position: center bottom;
+    transform: none !important;
+    opacity: .9;
+    filter: saturate(.88) contrast(.98);
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 76%, rgba(0,0,0,.55) 91%, transparent 100%);
+    mask-image: linear-gradient(180deg, #000 0%, #000 76%, rgba(0,0,0,.55) 91%, transparent 100%);
+    animation: splash-portrait-fade 1.2s ease-out both !important;
+  }
+
+  #splashScreen .splash-monograph-card {
+    flex: 0 0 auto;
+    width: min(100%, 560px) !important;
+    max-width: 560px;
+    margin: 0 auto;
+    padding: .2rem 0 0;
+  }
+
+  #splashScreen .splash-eyebrow { font-size: .64rem; line-height: 1.45; letter-spacing: .12em; }
+  #splashScreen .splash-quote { max-width: 22ch; margin: .55rem 0; font-size: clamp(1.65rem, 7.4vw, 2.15rem); line-height: 1.08; }
+  #splashScreen .splash-divider { margin: .55rem 0; }
+  #splashScreen .splash-lacan-quote { font-size: .84rem; line-height: 1.4; }
+  #splashScreen .splash-scholar-title { margin-top: .55rem; font-size: .8rem; line-height: 1.45; }
+  #splashScreen .splash-enter-btn { min-height: 48px; margin-top: .8rem; }
+
+  .mobile-drawer { background: rgba(29, 35, 51, .34); }
+  .drawer-panel {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    max-height: 100svh;
+    padding: max(.65rem, env(safe-area-inset-top)) clamp(1.15rem, 6vw, 1.75rem) max(.8rem, env(safe-area-inset-bottom));
+    gap: 0;
+    background: rgba(250, 249, 246, .97);
+    box-shadow: none;
+    opacity: 1;
+    transform: translateX(100%);
+    transition: transform .32s cubic-bezier(.2,.75,.25,1);
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .mobile-drawer.is-open .drawer-panel { transform: translateX(0); }
+  .drawer-header { display: flex; align-items: center; justify-content: space-between; gap: .75rem; min-height: 64px; padding-bottom: .8rem; border-bottom: 1px solid rgba(48, 58, 85, .12); }
+  .drawer-brand { display: inline-flex; align-items: center; min-width: 0; gap: .7rem; color: var(--text-heading); text-decoration: none; }
+  .drawer-brand img { display: block; flex: 0 0 42px; width: 42px; height: 42px; object-fit: contain; }
+  .drawer-brand > span { display: grid; gap: .2rem; min-width: 0; }
+  .drawer-brand strong { font: 500 1.08rem/1.15 var(--font-serif); white-space: nowrap; }
+  .drawer-brand small { color: var(--color-primary); font: 600 .59rem/1.3 var(--font-sans); letter-spacing: .055em; text-transform: uppercase; }
+  .drawer-close { display: grid; flex: 0 0 44px; width: 44px; height: 44px; place-items: center; padding: 0; border: 1px solid rgba(48,58,85,.13); border-radius: 50%; font: 300 1.65rem/1 var(--font-sans); }
+  .drawer-links { gap: .1rem; margin: 1rem 0 0; }
+  .drawer-links li { min-width: 0; }
+  .drawer-link { display: flex; align-items: center; min-height: 48px; width: 100%; padding: .35rem .15rem; font-size: 1.14rem; line-height: 1.25; }
+  .drawer-link:hover, .drawer-link.active { transform: none; }
+  .drawer-panel > div:last-child { margin-top: auto !important; padding-top: .9rem; }
+  .drawer-panel > div:last-child .btn { min-height: 50px; font-size: .95rem; }
+
+  .hero-art-grid { display: flex; flex-direction: column; align-items: stretch; gap: 1.5rem; }
+  .hero-art-grid > .hero-portrait-column { order: -1; width: min(100%, 34rem); margin-inline: auto; }
+  .hero-art-grid > :first-child { order: 0; width: 100%; }
+  .portrait-card-outer, .portrait-card-inner { width: 100%; }
+  .portrait-img-wrap { height: clamp(300px, 76svw, 440px); }
+  .hero-particle-field { top: 63%; opacity: .76; }
+}
+
+@media (max-width: 380px) {
+  #splashScreen .splash-portrait-source { flex-basis: min(39svh, 285px); }
+  #splashScreen .splash-portrait { width: min(100%, 310px) !important; }
+  #splashScreen .splash-quote { font-size: 1.58rem; }
+  .drawer-brand strong { font-size: 1rem; }
+  .drawer-brand small { font-size: .54rem; }
+}
+
+@keyframes splash-portrait-fade {
+  from { opacity: .38; }
+  to { opacity: .9; }
+}
+
+/* Draw diagram connectors as small line icons so iOS never renders emoji glyphs. */
+.psyche-mobile-arrow { position: relative; display: inline-block; flex: 0 0 16px; width: 16px; height: 22px; color: #9b794c; font-size: 0 !important; line-height: 0; }
+.psyche-mobile-arrow::before { content: ""; position: absolute; left: 7px; top: 2px; width: 1.5px; height: 16px; background: currentColor; }
+.psyche-arrow-down::after { content: ""; position: absolute; left: 4px; bottom: 1px; width: 6px; height: 6px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg); }
+.psyche-arrow-both::after { content: ""; position: absolute; inset: 0; background: linear-gradient(45deg, transparent 44%, currentColor 46% 56%, transparent 58%) left 2px top 1px / 7px 7px no-repeat, linear-gradient(-45deg, transparent 44%, currentColor 46% 56%, transparent 58%) right 2px top 1px / 7px 7px no-repeat, linear-gradient(-135deg, transparent 44%, currentColor 46% 56%, transparent 58%) left 2px bottom 1px / 7px 7px no-repeat, linear-gradient(135deg, transparent 44%, currentColor 46% 56%, transparent 58%) right 2px bottom 1px / 7px 7px no-repeat; }
+.psyche-mobile-register-row .psyche-register-link { position: relative; display: block; width: 100%; height: 1px; min-width: 8px; background: rgba(155,121,76,.6); font-size: 0 !important; }
+.psyche-register-link::before, .psyche-register-link::after { content: ""; position: absolute; top: -3px; width: 6px; height: 6px; border-top: 1px solid #9b794c; }
+.psyche-register-link::before { left: 0; border-left: 1px solid #9b794c; transform: rotate(-45deg); }
+.psyche-register-link::after { right: 0; border-right: 1px solid #9b794c; transform: rotate(45deg); }
+.psyche-mobile-crosslinks { display: flex; align-items: center; justify-content: space-around; min-height: 20px; }
+.psyche-mobile-crosslinks span { position: relative; display: block; width: 12%; height: 16px; }
+.psyche-cross-vertical::before, .psyche-cross-up::before, .psyche-cross-down::before { content: ""; position: absolute; left: 50%; top: 0; height: 100%; border-left: 1px solid rgba(155,121,76,.72); transform-origin: center; }
+.psyche-cross-up::before { transform: rotate(35deg); }
+.psyche-cross-down::before { transform: rotate(-35deg); }
+.psyche-mobile-steps span + span::before { content: "" !important; top: -.42rem; left: -.88rem; width: 5px; height: 5px; border-right: 1px solid #4e5ba6; border-bottom: 1px solid #4e5ba6; transform: rotate(45deg); font-size: 0; }
+.psyche-diagram[data-active="true"] .psyche-mobile-arrow::before,
+.psyche-diagram[data-active="true"] .psyche-mobile-arrow::after,
+.psyche-diagram[data-active="true"] .psyche-register-link { animation: psyche-line-pulse 3.6s ease-in-out infinite; }
+@keyframes psyche-line-pulse { 0%,100% { opacity: .58; } 50% { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  #splashScreen .splash-portrait { animation: none !important; }
+  .mobile-drawer .drawer-panel { transition: none; }
+  .psyche-mobile-arrow::before, .psyche-mobile-arrow::after, .psyche-register-link { animation: none !important; }
+}

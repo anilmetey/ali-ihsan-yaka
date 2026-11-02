@@ -1607,7 +1607,8 @@
         behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
         block: 'start'
       });
-      document.getElementById('welcomeHeading')?.focus({ preventScroll: true });
+      // Do not move focus to the heading after the timed dismissal: mobile
+      // Safari draws a persistent focus rectangle around the hero title.
     };
 
     const scheduleSplashClose = () => {
@@ -1749,7 +1750,15 @@
         list.appendChild(item);
       });
       const cta = document.querySelector('.header-cta-pill');
-      panel.append(drawerClose, list);
+      const drawerHeader = document.createElement('div');
+      drawerHeader.className = 'drawer-header';
+      const drawerBrand = document.createElement('a');
+      drawerBrand.className = 'drawer-brand';
+      drawerBrand.href = 'index.html';
+      drawerBrand.setAttribute('aria-label', 'Dr. Ali İhsan Yaka');
+      drawerBrand.innerHTML = '<img src="assets/images/psyche-structure-mark.svg" alt="" width="42" height="42" aria-hidden="true"><span><strong>Dr. Ali İhsan Yaka</strong><small data-i18n="header.sub">Uzman Klinik Psikolog • Ph.D.</small></span>';
+      drawerHeader.append(drawerBrand, drawerClose);
+      panel.append(drawerHeader, list);
       if (cta) {
         const ctaWrap = document.createElement('div');
         ctaWrap.className = 'drawer-cta';
@@ -2028,7 +2037,8 @@
     ctx.setTransform(renderScale, 0, 0, renderScale, 0, 0);
     let seed = 7319;
     const random = () => { seed = (seed * 48271) % 2147483647; return (seed - 1) / 2147483646; };
-    const particles = Array.from({ length: 188 }, () => {
+    const particleCount = window.matchMedia('(max-width: 760px)').matches ? 112 : 188;
+    const particles = Array.from({ length: particleCount }, () => {
       const x = 20 + random() * 380;
       const y = 22 + random() * 376;
       const warmGold = random() > 0.72;

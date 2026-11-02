@@ -33,7 +33,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="icon" href="assets/images/psyche-structure-mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="app.css?v=5.38">
+  <link rel="stylesheet" href="app.css?v=5.39">
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -154,7 +154,13 @@
   <!-- Mobile Drawer: Standalone Multi-Page Links -->
   <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobil Menü" data-i18n-aria-label="nav.mobileMenu">
     <div class="drawer-panel">
-      <button type="button" class="drawer-close" id="drawerClose" aria-label="Kapat" data-i18n-aria-label="common.close">&times;</button>
+      <div class="drawer-header">
+        <a href="index.html" class="drawer-brand" aria-label="Dr. Ali İhsan Yaka">
+          <img src="assets/images/psyche-structure-mark.svg" alt="" width="42" height="42" aria-hidden="true">
+          <span><strong>Dr. Ali İhsan Yaka</strong><small data-i18n="header.sub">Uzman Klinik Psikolog • Ph.D.</small></span>
+        </a>
+        <button type="button" class="drawer-close" id="drawerClose" aria-label="Kapat" data-i18n-aria-label="common.close">&times;</button>
+      </div>
       <ul class="drawer-links">
         <li><a href="index.html" class="drawer-link active" data-i18n="nav.home">Ana Sayfa</a></li>
         <li><a href="hakkimda.html" class="drawer-link" data-i18n="nav.about">Hakkında</a></li>
@@ -343,27 +349,27 @@
 
           <div class="psyche-mobile-map" aria-label="Psikanalitik şema: mobil görünüm">
             <div class="psyche-mobile-node psyche-mobile-origin"><span class="psyche-mobile-index">01</span><strong data-i18n="psyche.origin">Gösteren</strong></div>
-            <div class="psyche-mobile-connector"><span class="psyche-mobile-arrow">↓</span><span data-i18n="psyche.s2Label">S2 · gösteren zinciri</span></div>
+            <div class="psyche-mobile-connector"><span class="psyche-mobile-arrow psyche-arrow-down" aria-hidden="true"></span><span data-i18n="psyche.s2Label">S2 · gösteren zinciri</span></div>
             <section class="psyche-mobile-stage">
               <header><span class="psyche-mobile-index">02</span><h3 data-i18n="psyche.message">Baba metaforu</h3></header>
               <p class="psyche-mobile-subtitle" data-i18n="psyche.messageText">Mesaj · Ayna evresi</p>
               <div class="psyche-mobile-steps"><span data-i18n="psyche.fall">Simgeselden düşme</span><span data-i18n="psyche.unrecognized">Simgeselde tanı(n)mama</span><span data-i18n="psyche.recognized">Simgeselde tanı(n)ma</span></div>
             </section>
-            <div class="psyche-mobile-connector psyche-mobile-mirror"><span class="psyche-mobile-arrow">↕</span><span data-i18n="psyche.ayna">Ayna evresi</span></div>
+            <div class="psyche-mobile-connector psyche-mobile-mirror"><span class="psyche-mobile-arrow psyche-arrow-both" aria-hidden="true"></span><span data-i18n="psyche.ayna">Ayna evresi</span></div>
             <section class="psyche-mobile-stage psyche-mobile-network">
               <header><span class="psyche-mobile-index">03</span><h3 data-i18n="psyche.code">Baba-nın-Adları</h3></header>
               <p class="psyche-mobile-subtitle" data-i18n="psyche.codeText">Kod · Ruhsal yapılar</p>
               <div class="psyche-mobile-register-headings"><span data-i18n="psyche.imaginary">İmgesel</span><span data-i18n="psyche.real">Gerçek</span><span data-i18n="psyche.symbolic">Simgesel</span></div>
-              <div class="psyche-mobile-register-row"><span data-i18n="psyche.imaginary">İmgesel</span><i>↔</i><span data-i18n="psyche.real">Gerçek</span><i>↔</i><span data-i18n="psyche.symbolic">Simgesel</span></div>
-              <div class="psyche-mobile-register-row"><span data-i18n="psyche.imaginary">İmgesel</span><i>↔</i><span data-i18n="psyche.real">Gerçek</span><i>↔</i><span data-i18n="psyche.symbolic">Simgesel</span></div>
-              <div class="psyche-mobile-register-row"><span data-i18n="psyche.imaginary">İmgesel</span><i>↔</i><span data-i18n="psyche.real">Gerçek</span><i>↔</i><span data-i18n="psyche.symbolic">Simgesel</span></div>
-              <div class="psyche-mobile-crosslinks" aria-hidden="true"><span>↕</span><span>↗</span><span>↕</span><span>↘</span><span>↕</span></div>
+              <div class="psyche-mobile-register-row"><span data-i18n="psyche.imaginary">İmgesel</span><i class="psyche-register-link" aria-hidden="true"></i><span data-i18n="psyche.real">Gerçek</span><i class="psyche-register-link" aria-hidden="true"></i><span data-i18n="psyche.symbolic">Simgesel</span></div>
+              <div class="psyche-mobile-register-row"><span data-i18n="psyche.imaginary">İmgesel</span><i class="psyche-register-link" aria-hidden="true"></i><span data-i18n="psyche.real">Gerçek</span><i class="psyche-register-link" aria-hidden="true"></i><span data-i18n="psyche.symbolic">Simgesel</span></div>
+              <div class="psyche-mobile-register-row"><span data-i18n="psyche.imaginary">İmgesel</span><i class="psyche-register-link" aria-hidden="true"></i><span data-i18n="psyche.real">Gerçek</span><i class="psyche-register-link" aria-hidden="true"></i><span data-i18n="psyche.symbolic">Simgesel</span></div>
+              <div class="psyche-mobile-crosslinks" aria-hidden="true"><span class="psyche-cross-vertical"></span><span class="psyche-cross-up"></span><span class="psyche-cross-vertical"></span><span class="psyche-cross-down"></span><span class="psyche-cross-vertical"></span></div>
             </section>
-            <div class="psyche-mobile-connector psyche-mobile-s1"><span class="psyche-mobile-arrow">↕</span><strong>S1</strong><span data-i18n="psyche.structureHeading">Ruhsal yapılar</span></div>
+            <div class="psyche-mobile-connector psyche-mobile-s1"><span class="psyche-mobile-arrow psyche-arrow-both" aria-hidden="true"></span><strong>S1</strong><span data-i18n="psyche.structureHeading">Ruhsal yapılar</span></div>
             <section class="psyche-mobile-structures" aria-label="Ruhsal yapılar">
               <span data-i18n="psyche.psychotic">Psikotik</span><span data-i18n="psyche.perverse">Pervers</span><span data-i18n="psyche.neurotic">Nevrotik</span>
             </section>
-            <div class="psyche-mobile-connector"><span class="psyche-mobile-arrow">↓</span></div>
+            <div class="psyche-mobile-connector"><span class="psyche-mobile-arrow psyche-arrow-down" aria-hidden="true"></span></div>
             <div class="psyche-mobile-node psyche-mobile-output"><span class="psyche-mobile-index">04</span><strong data-i18n="psyche.speech">Dil alanı</strong><span data-i18n="psyche.speechText">Süjenin konuşma işlevi</span></div>
             <div class="psyche-mobile-loop"><span>S2</span><span data-i18n="psyche.loopNote">Üst ve alt döngüler gösteren zincirini bağlar.</span><span>S2</span></div>
           </div>
@@ -940,6 +946,6 @@
     <div id="lightboxCaption"></div>
   </div>
 
-  <script src="app.js?v=5.38"></script>
+  <script src="app.js?v=5.39"></script>
 </body>
 </html>
