@@ -5010,3 +5010,181 @@ html.splash-visited #splashScreen.splash-screen {
   .mobile-drawer .drawer-panel { transition: none; }
   .psyche-mobile-arrow::before, .psyche-mobile-arrow::after, .psyche-register-link { animation: none !important; }
 }
+
+/* Sözden ruhsal yapıya: make the relational flow legible in motion and depth. */
+.psyche-diagram-frame {
+  perspective: 1500px;
+  transform-style: preserve-3d;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(102,119,178,.09), transparent 54%),
+    linear-gradient(145deg, rgba(255,255,255,.94), rgba(239,239,235,.92));
+}
+.psyche-diagram[data-active="true"] .psyche-diagram-frame::before,
+.psyche-diagram[data-active="true"] .psyche-diagram-frame::after {
+  animation: psyche-corner-breathe 3.6s ease-in-out infinite;
+}
+.psyche-diagram[data-active="true"] .psyche-loop {
+  stroke-dasharray: 12 10;
+  animation: psyche-loop-current 6.5s linear infinite;
+}
+.psyche-flow-group { color: #a8824b; }
+.psyche-flow-group-gold { color: #5969a7; }
+.psyche-flow-halo { fill: currentColor; opacity: .18; transform-box: fill-box; transform-origin: center; }
+.psyche-flow-dot { fill: currentColor; filter: drop-shadow(0 0 4px rgba(168,130,75,.48)); }
+.psyche-flow-core { fill: #fff; opacity: .96; }
+.psyche-diagram[data-active="true"] .psyche-flow-halo { animation: psyche-halo-breathe 1.65s ease-in-out infinite; }
+.psyche-register-node,.psyche-process-node,.psyche-structure-node { transform-box: fill-box; transform-origin: center; }
+.psyche-register-node,.psyche-process-node,.psyche-structure-node { transform: perspective(1200px) translate3d(0,0,6px) rotateX(.25deg); }
+.psyche-diagram[data-active="true"] .psyche-register-node { animation: psyche-node-depth 4.8s ease-in-out infinite; }
+.psyche-diagram[data-active="true"] .psyche-register-node:nth-of-type(2n) { animation-delay: .55s; }
+.psyche-diagram[data-active="true"] .psyche-register-node:nth-of-type(3n) { animation-delay: 1.1s; }
+@keyframes psyche-corner-breathe { 0%,100% { opacity: .48; } 50% { opacity: .95; } }
+@keyframes psyche-loop-current { to { stroke-dashoffset: -88; } }
+@keyframes psyche-halo-breathe { 0%,100% { opacity: .22; transform: scale(.62); } 50% { opacity: .58; transform: scale(1.32); } }
+@keyframes psyche-node-depth { 0%,100% { transform: perspective(1200px) translate3d(0,0,6px) rotateX(.25deg); } 50% { transform: perspective(1200px) translate3d(0,-1.5px,12px) rotateX(0) scale(1.018); } }
+
+@media (max-width: 760px) {
+  .psyche-mobile-map {
+    isolation: isolate;
+    perspective: 1100px;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    border-color: rgba(73,88,137,.24);
+    background:
+      radial-gradient(ellipse at 12% 4%, rgba(177,138,82,.11), transparent 30%),
+      radial-gradient(ellipse at 90% 58%, rgba(84,101,162,.09), transparent 36%),
+      linear-gradient(145deg, #fcfbf8, #eff0ef);
+    box-shadow: 0 24px 56px rgba(32,45,66,.15), 0 5px 14px rgba(32,45,66,.07), inset 0 1px #fff;
+  }
+  .psyche-mobile-map::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: .76;
+    background-image:
+      radial-gradient(circle at 12% 19%, rgba(168,130,75,.62) 0 1.4px, transparent 2px),
+      radial-gradient(circle at 87% 72%, rgba(78,91,166,.56) 0 1.4px, transparent 2px),
+      radial-gradient(ellipse at 50% 10%, transparent 0 20%, rgba(78,91,166,.16) 20.2% 20.45%, transparent 20.8%),
+      radial-gradient(ellipse at 50% 10%, transparent 0 42%, rgba(168,130,75,.14) 42.2% 42.45%, transparent 42.8%),
+      repeating-radial-gradient(ellipse at 50% 48%, transparent 0 43px, rgba(78,91,166,.095) 43.5px 44px, transparent 44.5px 78px),
+      repeating-linear-gradient(145deg, transparent 0 52px, rgba(78,91,166,.11) 52.5px 53px, transparent 53.5px 94px),
+      repeating-linear-gradient(35deg, transparent 0 71px, rgba(168,130,75,.1) 71.5px 72px, transparent 72.5px 122px);
+    -webkit-mask-image: radial-gradient(ellipse at 50% 46%, #000 18%, rgba(0,0,0,.72) 66%, transparent 100%);
+    mask-image: radial-gradient(ellipse at 50% 46%, #000 18%, rgba(0,0,0,.72) 66%, transparent 100%);
+  }
+  .psyche-mobile-map::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    pointer-events: none;
+    opacity: .56;
+    background: linear-gradient(112deg, transparent 32%, rgba(255,255,255,.88) 48%, rgba(133,147,190,.2) 51%, transparent 68%);
+    transform: translate3d(-115%,0,0);
+  }
+  .psyche-diagram[data-active="true"] .psyche-mobile-map::before { animation: psyche-web-drift 15s ease-in-out infinite alternate; }
+  .psyche-diagram[data-active="true"] .psyche-mobile-map::after { animation: psyche-web-sweep 8.5s cubic-bezier(.22,1,.36,1) infinite; }
+  .psyche-mobile-map > * { position: relative; z-index: 2; }
+  .psyche-mobile-node,.psyche-mobile-stage {
+    transform: perspective(760px) translate3d(0,0,16px) rotateX(.7deg);
+    border-color: rgba(74,91,146,.24);
+    background: rgba(255,255,255,.88);
+    box-shadow: 0 1px 0 rgba(59,70,99,.1), 0 5px 0 rgba(63,75,107,.035), 0 12px 24px rgba(35,47,68,.11), inset 0 1px rgba(255,255,255,.98);
+  }
+  .psyche-mobile-stage { border-radius: 13px; }
+  .psyche-mobile-network { transform: perspective(760px) translate3d(0,0,19px) rotateX(.6deg) rotateY(-.35deg); }
+  .psyche-mobile-stage:not(.psyche-mobile-network) { transform: perspective(760px) translate3d(0,0,16px) rotateX(.7deg) rotateY(.25deg); }
+  .psyche-mobile-stage header { position: relative; }
+  .psyche-mobile-stage header::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -.45rem;
+    left: 2.3rem;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(168,130,75,.5), rgba(78,91,166,.16), transparent);
+  }
+  .psyche-mobile-origin { border-left: 2px solid #a8824b; }
+  .psyche-mobile-origin::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: .8rem;
+    width: 46px;
+    height: 38px;
+    pointer-events: none;
+    opacity: .76;
+    background:
+      radial-gradient(ellipse at center, transparent 47%, rgba(168,130,75,.92) 51% 57%, transparent 62%) 0 50% / 25px 34px no-repeat,
+      radial-gradient(ellipse at center, transparent 47%, rgba(78,91,166,.88) 51% 57%, transparent 62%) 10px 50% / 25px 34px no-repeat,
+      radial-gradient(ellipse at center, transparent 47%, rgba(168,130,75,.74) 51% 57%, transparent 62%) 20px 50% / 25px 34px no-repeat;
+    transform: translateY(-50%) perspective(220px) rotateX(58deg) rotateZ(-12deg);
+  }
+  .psyche-diagram[data-active="true"] .psyche-mobile-origin::after { animation: psyche-knot-orbit 7.2s ease-in-out infinite alternate; }
+  .psyche-mobile-output { border-right: 2px solid #5969a7; }
+  .psyche-mobile-steps span { box-shadow: inset 0 1px rgba(255,255,255,.9), 0 2px 7px rgba(40,53,80,.035); }
+  .psyche-mobile-register-row span { background: rgba(255,255,255,.9); box-shadow: 0 3px 9px rgba(36,47,64,.05), inset 0 1px #fff; }
+  .psyche-mobile-structures span { transform: translateZ(6px); box-shadow: 0 5px 12px rgba(36,47,64,.07), inset 0 1px #fff; }
+  .psyche-diagram[data-active="true"] .psyche-mobile-origin,
+  .psyche-diagram[data-active="true"] .psyche-mobile-stage,
+  .psyche-diagram[data-active="true"] .psyche-mobile-structures,
+  .psyche-diagram[data-active="true"] .psyche-mobile-output {
+    translate: 0 0;
+    animation: psyche-layer-arrive .72s cubic-bezier(.22,1,.36,1) both, psyche-mobile-levitate 4.2s ease-in-out .72s infinite;
+  }
+  .psyche-diagram[data-active="true"] .psyche-mobile-stage { animation-delay: .08s, .8s; }
+  .psyche-diagram[data-active="true"] .psyche-mobile-network { animation-delay: .16s, .88s; }
+  .psyche-diagram[data-active="true"] .psyche-mobile-structures { animation-delay: .24s, .96s; }
+  .psyche-diagram[data-active="true"] .psyche-mobile-output { animation-delay: .32s, 1.04s; }
+  .psyche-diagram[data-active="true"] .psyche-cross-vertical::before,
+  .psyche-diagram[data-active="true"] .psyche-cross-up::before,
+  .psyche-diagram[data-active="true"] .psyche-cross-down::before { animation: psyche-crosslink-glint 2.6s ease-in-out infinite; }
+  .psyche-mobile-crosslinks span:nth-child(2)::before { animation-delay: .22s !important; }
+  .psyche-mobile-crosslinks span:nth-child(3)::before { animation-delay: .44s !important; }
+  .psyche-mobile-crosslinks span:nth-child(4)::before { animation-delay: .66s !important; }
+  .psyche-mobile-crosslinks span:nth-child(5)::before { animation-delay: .88s !important; }
+  .psyche-mobile-connector { text-shadow: 0 1px rgba(255,255,255,.85); }
+  .psyche-mobile-arrow { color: #9a7542; }
+}
+@keyframes psyche-web-drift { from { transform: translate3d(-2.5%,0,0) rotate(-1.1deg) scale(1.015); } to { transform: translate3d(2.5%,0,0) rotate(1.1deg) scale(1.015); } }
+@keyframes psyche-web-sweep { 0% { transform: translate3d(-115%,0,0); } 42%,100% { transform: translate3d(115%,0,0); } }
+@keyframes psyche-layer-arrive { from { opacity: .58; transform: perspective(760px) translate3d(0,9px,-18px) rotateX(2deg); } to { opacity: 1; } }
+@keyframes psyche-mobile-levitate { 0%,100% { translate: 0 0; } 50% { translate: 0 -2px; } }
+@keyframes psyche-crosslink-glint { 0%,100% { opacity: .42; } 50% { opacity: 1; } }
+@keyframes psyche-knot-orbit { from { transform: translateY(-50%) perspective(220px) rotateX(52deg) rotateY(-12deg) rotateZ(-16deg); } to { transform: translateY(-50%) perspective(220px) rotateX(62deg) rotateY(12deg) rotateZ(15deg); } }
+
+/* Keep the complete navy discovery button inside the splash copy column. */
+#splashScreen .splash-monograph-card { overflow: visible; }
+#splashScreen .splash-enter-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  min-width: 12rem;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-inline: 0;
+  padding-inline: 1.4rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  overflow: visible;
+  outline-offset: 4px;
+}
+@media (max-width: 760px) {
+  #splashScreen .splash-enter-btn { min-width: 0; max-width: calc(100% - 6px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .psyche-diagram-frame::before,.psyche-diagram-frame::after,
+  .psyche-diagram[data-active="true"] .psyche-loop,
+  .psyche-diagram[data-active="true"] .psyche-flow-halo { animation: none !important; }
+  .psyche-mobile-map::before,.psyche-mobile-map::after,
+  .psyche-diagram[data-active="true"] .psyche-mobile-origin,
+  .psyche-diagram[data-active="true"] .psyche-mobile-stage,
+  .psyche-diagram[data-active="true"] .psyche-mobile-structures { animation: none !important; }
+  .psyche-diagram[data-active="true"] .psyche-cross-vertical::before,
+  .psyche-diagram[data-active="true"] .psyche-cross-up::before,
+  .psyche-diagram[data-active="true"] .psyche-cross-down::before,
+  .psyche-diagram[data-active="true"] .psyche-mobile-origin::after { animation: none !important; }
+}
