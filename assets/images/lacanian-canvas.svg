@@ -44,7 +44,7 @@
   <!-- Luminous Base Canvas -->
   <rect width="1600" height="1000" fill="url(#luminousBase)"/>
 
-  <!-- Organic Watercolor Art Washes (Inspired by Hilda Fernandez's OrangeBlue palette) -->
+  <!-- Organic watercolor washes in the site palette -->
   <circle cx="480" cy="380" r="420" fill="url(#cobaltWash)" filter="url(#softDiffusion)"/>
   <circle cx="1180" cy="620" r="390" fill="url(#amberWash)" filter="url(#softDiffusion)"/>
   <ellipse cx="900" cy="400" rx="350" ry="240" fill="#5A65B6" opacity="0.04" filter="url(#softDiffusion)"/>

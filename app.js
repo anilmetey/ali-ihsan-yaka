@@ -1,7 +1,7 @@
 /**
  * DR. ALİ İHSAN YAKA, Ph.D. — MAIN APPLICATION SCRIPT
  * High Performance · Accessible Vanilla JS · Zero Dependencies
- * Production Quality Benchmark: Inspired by Hilda Fernandez
+ * Project-specific bilingual content and localization
  */
 
 (function () {
@@ -69,7 +69,7 @@
     "hero.portraitAlt": "Dr. Ali İhsan Yaka, Ph.D. — Klinik Psikolog ve doktora sonrası araştırmacı",
     "splash.eyebrow": "DR. ALİ İHSAN YAKA, PH.D. • UNIVERSITY AT BUFFALO (SUNY)",
     "splash.quote": "“Bilinçdışını dinlemek, imkânsızı imkâna dönüştürebilir.”",
-    "splash.lacanQuote": "“Dinlemek, henüz söze dökülmemiş olana yer açar.”",
+    "splash.supportQuote": "“Dinlemek, henüz söze dökülmemiş olana yer açar.”",
     "splash.scholarTitle": "Yetişkinler için psikanalitik psikoterapi • Klinik süpervizyon",
     "splash.enterBtn": "Çalışmaları keşfet ↓",
     "nav.home": "Ana Sayfa",
@@ -564,7 +564,7 @@
     "hero.portraitAlt": "Dr. Ali Ihsan Yaka, Ph.D. — Clinical Psychologist",
     "splash.eyebrow": "DR. ALI IHSAN YAKA, PH.D. • UNIVERSITY AT BUFFALO (SUNY)",
     "splash.quote": "“Listening to the unconscious opens (im)possibilities.”",
-    "splash.lacanQuote": "“Listening makes room for what has not yet found words.”",
+    "splash.supportQuote": "“Listening makes room for what has not yet found words.”",
     "splash.scholarTitle": "Psychoanalytic psychotherapy for adults • Clinical supervision",
     "splash.enterBtn": "Explore the work ↓",
     "nav.home": "Home",
@@ -1050,7 +1050,7 @@
     "Klinik psikoloji ve psikanalitik çalışma; klinik uygulama, akademik araştırma ve insani yardım deneyiminin kesişiminde.": "Clinical psychology and psychoanalytic work across clinical practice, academic research, and humanitarian experience.",
     "Psikoloji eğitimimi Dicle Üniversitesi'nde tamamladıktan sonra Ankara Üniversitesi'nde klinik psikoloji yüksek lisansı, Orta Doğu Teknik Üniversitesi'nde klinik psikoloji doktorası yaptım. Çalışmalarım psikanalitik klinik pratik, sosyal travma ve ruh sağlığı çalışanlarının saha deneyimlerine odaklanıyor.": "After earning my psychology degree from Dicle University, I completed a master’s degree in clinical psychology at Ankara University and a Ph.D. in clinical psychology at Middle East Technical University. My work focuses on psychoanalytic clinical practice, social trauma, and the field experiences of mental health workers.",
     "2026'nın Ocak–Ağustos döneminde University at Buffalo'daki": "From January to August 2026, I was a visiting postdoctoral researcher at the University at Buffalo’s",
-    "bünyesinde misafir doktora sonrası araştırmacı olarak bulundum. Doktora araştırmamı, Irak'ta sosyal travma koşullarında çalışan ruh sağlığı uzmanlarının söylemini ve klinik süpervizyon deneyimini psikanalitik bir yaklaşımla ele alarak tamamladım.": "as a visiting postdoctoral researcher. My doctoral research examined the discourse and clinical supervision experiences of mental health professionals working amid social trauma in Iraq through a Lacanian psychoanalytic lens.",
+    "bünyesinde misafir doktora sonrası araştırmacı olarak bulundum. Doktora araştırmamı, Irak'ta sosyal travma koşullarında çalışan ruh sağlığı uzmanlarının söylemini ve klinik süpervizyon deneyimini Lacanyen psikanalitik bir yaklaşımla ele alarak tamamladım.": "as a visiting postdoctoral researcher. My doctoral research examined the discourse and clinical supervision experiences of mental health professionals working amid social trauma in Iraq through a Lacanian psychoanalytic lens.",
     "Araştırma odağı": "Research focus",
     "Sosyal travma · Lacanyen psikanaliz · Klinik süpervizyon · İnsani yardım bağlamlarında ruh sağlığı": "Social trauma · Lacanian psychoanalysis · Clinical supervision · Mental health in humanitarian settings",
     "01 / EĞİTİM": "01 / EDUCATION",
@@ -1418,7 +1418,7 @@
     "Klinik süpervizyon kimler içindir ve süreç nasıl işler?": "Who is clinical supervision for, and how does it work?",
     "Klinik süpervizyon; aktif danışan gören klinik psikologlar, psikoterapistler ve insani yardım sahasında çalışan ruh sağlığı personeli (MHPSS) içindir. Lacanyen vaka formülasyonu, aktarım ve karşı-aktarım süreçleri ile terapistin etik dinleme pozisyonu ele alınır.": "Clinical supervision is for clinical psychologists, psychotherapists, and mental health staff (MHPSS) working in humanitarian settings. Supervision may address Lacanian case formulation, transference and countertransference, and the clinician’s ethical listening position.",
     "Acil kriz veya acil psikiyatrik müdahale durumlarında ne yapılmalıdır?": "What should I do in an emergency or psychiatric crisis?",
-    "Psikanalitik psikoterapi ve danışmanlık hizmetleri acil psikiyatrik kriz müdahalesi kapsamında değildir. Kendinize veya bir başkasına zarar verme riski ya da acil psikiyatrik durumlarda en yakın hastanenin acil servisine başvurun veya Türkiye'de 112 Acil Çağrı Merkezi'ni arayın.": "Lacanian psychoanalytic psychotherapy and consultation do not provide emergency psychiatric crisis care. If you or someone else may be at risk of harm or needs urgent psychiatric care, go to the nearest emergency department or call 112 in Turkey.",
+    "Lacanyen psikanalitik psikoterapi ve danışmanlık hizmetleri acil psikiyatrik kriz müdahalesi kapsamında değildir. Kendinize veya bir başkasına zarar verme riski ya da acil psikiyatrik durumlarda en yakın hastanenin acil servisine başvurun veya Türkiye'de 112 Acil Çağrı Merkezi'ni arayın.": "Lacanian psychoanalytic psychotherapy and consultation do not provide emergency psychiatric crisis care. If you or someone else may be at risk of harm or needs urgent psychiatric care, go to the nearest emergency department or call 112 in Turkey.",
     "Başka bir sorunuz veya ön görüşme talebiniz mi var?": "Do you have another question or want to request an initial consultation?",
     "Sorularınız ve seans başvurularınız için doğrudan iletişime geçebilirsiniz.": "Get in touch directly with questions or to inquire about sessions.",
     "Ön Görüşme Formunu Doldur →": "Complete the Initial Consultation Form →"

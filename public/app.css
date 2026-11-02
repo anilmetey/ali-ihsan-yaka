@@ -1,7 +1,7 @@
 /* ==========================================================================
-   DR. ALİ İHSAN YAKA, Ph.D. — LACANIAN PSYCHOANALYSIS & CLINICAL PSYCHOLOGY
-   Aesthetic Benchmark: Inspired by Hilda Fernandez (hildafernandez.com)
-   Palette: Luminous White · Lacanian Cobalt Indigo (#4E5BA6) · Warm Ochre Gold (#D48214)
+   DR. ALİ İHSAN YAKA, Ph.D. — LACANYEN-ORIENTED PSYCHOTHERAPY & CLINICAL PSYCHOLOGY
+   Design notes: Editorial typography and a restrained color palette
+   Palette: White · Brand Indigo (#4E5BA6) · Warm Ochre Gold (#D48214)
    Crafted with Awwwards / Editorial Gallery Standards
    ========================================================================== */
 
@@ -19,7 +19,7 @@
   --text-light: #6F7480;
   --text-inverse: #FFFFFF;
 
-  --color-primary: #4E5BA6;          /* Hilda Fernandez signature cobalt/indigo */
+  --color-primary: #4E5BA6;          /* Brand indigo */
   --color-primary-hover: #3A468D;
   --color-primary-dark: #35427F;
   --color-primary-soft: rgba(78, 91, 166, 0.07);
@@ -511,7 +511,7 @@ a:hover {
   opacity: 0.6;
 }
 
-.splash-lacan-quote {
+.splash-support-quote {
   font-family: var(--font-serif);
   font-style: italic;
   font-size: 1.05rem;
@@ -547,7 +547,7 @@ a:hover {
 
 /* ==========================================================================
    SITE HEADER & NAVIGATION
-   Hilda Fernandez Style Minimalist Topbar
+   Main Navigation
    ========================================================================== */
 .site-header {
   position: sticky;
@@ -1413,7 +1413,7 @@ a:hover {
 .scroll-reveal-stagger.is-revealed > *:nth-child(8) { transition-delay: 0.32s; }
 
 /* ==========================================================================
-   2. "WHAT'S NEW" SECTION (Exact Hilda Fernandez Signature Architecture)
+   2. CURRENT WORK AND EVENT CARDS
    ========================================================================== */
 .whats-new-grid {
   display: grid;
@@ -3258,7 +3258,7 @@ textarea.form-control {
 #splashScreen .splash-eyebrow { max-width: 44ch; color: #66718a; font-size: .68rem; line-height: 1.55; letter-spacing: .15em; }
 #splashScreen .splash-quote { max-width: 13ch; margin: 1.15rem 0 1.05rem; color: #202b3c; font-size: clamp(2.3rem,4.2vw,4.35rem); line-height: 1.04; letter-spacing: -.035em; text-wrap: balance; }
 #splashScreen .splash-divider { width: 48px; height: 2px; margin: 1.45rem 0; background: linear-gradient(90deg,#a8824b,rgba(168,130,75,.2)); }
-#splashScreen .splash-lacan-quote { max-width: 38ch; color: #6f7887; font-size: clamp(.98rem,1.25vw,1.1rem); line-height: 1.6; }
+#splashScreen .splash-support-quote { max-width: 38ch; color: #6f7887; font-size: clamp(.98rem,1.25vw,1.1rem); line-height: 1.6; }
 #splashScreen .splash-scholar-title { max-width: 38ch; margin-top: 1rem; color: #3b4759; font-size: .87rem; line-height: 1.55; }
 #splashScreen .splash-enter-btn { margin-top: 1.65rem; }
 @media (max-width: 760px) {
@@ -3268,7 +3268,7 @@ textarea.form-control {
   #splashScreen .splash-eyebrow { font-size: .6rem; letter-spacing: .11em; }
   #splashScreen .splash-quote { max-width: 16ch; margin: .65rem 0; font-size: clamp(1.65rem,7vw,2.25rem); line-height: 1.1; }
   #splashScreen .splash-divider { margin: .8rem 0; }
-  #splashScreen .splash-lacan-quote { font-size: .92rem; }
+  #splashScreen .splash-support-quote { font-size: .92rem; }
   #splashScreen .splash-scholar-title { margin-top: .5rem; font-size: .76rem; }
   #splashScreen .splash-enter-btn { margin-top: 1rem; }
 }
@@ -3455,7 +3455,7 @@ textarea.form-control {
   }
   .splash-eyebrow { font-size: 0.62rem; letter-spacing: 0.12em; }
   .splash-quote { font-size: clamp(1.4rem, 6vw, 1.75rem); }
-  .splash-lacan-quote { font-size: 1rem; }
+  .splash-support-quote { font-size: 1rem; }
   .splash-scholar-title { font-size: 0.78rem; }
 
   .footer-main-grid > *,
@@ -4176,7 +4176,7 @@ body.splash-active { overflow: hidden; }
 #splashScreen .splash-eyebrow { max-width: 46ch; color: #67738b; font-size: .68rem; line-height: 1.6; letter-spacing: .14em; }
 #splashScreen .splash-quote { max-width: 13ch; margin: 1.1rem 0; color: #202b3c; font-size: clamp(2.25rem,4.1vw,4.1rem); line-height: 1.05; letter-spacing: -.035em; text-wrap: balance; }
 #splashScreen .splash-divider { width: 48px; height: 2px; margin: 1.25rem 0; background: linear-gradient(90deg,#a8824b,rgba(168,130,75,.18)); opacity: 1; }
-#splashScreen .splash-lacan-quote { max-width: 38ch; margin-bottom: .85rem; color: #6d7888; font-size: clamp(.98rem,1.2vw,1.1rem); line-height: 1.6; }
+#splashScreen .splash-support-quote { max-width: 38ch; margin-bottom: .85rem; color: #6d7888; font-size: clamp(.98rem,1.2vw,1.1rem); line-height: 1.6; }
 #splashScreen .splash-scholar-title { max-width: 38ch; margin: .45rem 0 0; color: #3b4759; font-size: .86rem; line-height: 1.55; letter-spacing: .01em; }
 #splashScreen .splash-enter-btn { margin-top: 1.55rem; }
 @media (max-width: 760px) {
@@ -4203,7 +4203,7 @@ body.splash-active { overflow: hidden; }
   #splashScreen .splash-eyebrow { font-size: .59rem; letter-spacing: .1em; }
   #splashScreen .splash-quote { max-width: 16ch; margin: .55rem 0; font-size: clamp(1.55rem,7vw,2.05rem); line-height: 1.1; }
   #splashScreen .splash-divider { margin: .65rem 0; }
-  #splashScreen .splash-lacan-quote { margin-bottom: .4rem; font-size: .9rem; }
+  #splashScreen .splash-support-quote { margin-bottom: .4rem; font-size: .9rem; }
   #splashScreen .splash-scholar-title { margin-top: .35rem; font-size: .74rem; }
   #splashScreen .splash-enter-btn { margin-top: .8rem; }
 }
@@ -4857,7 +4857,7 @@ html.splash-visited #splashScreen.splash-screen {
     font-size: clamp(1.75rem, 7vw, 2.25rem);
     line-height: 1.08;
   }
-  #splashScreen .splash-lacan-quote { font-size: .92rem; }
+  #splashScreen .splash-support-quote { font-size: .92rem; }
   #splashScreen .splash-scholar-title { margin-top: .5rem; font-size: .78rem; }
   #splashScreen .splash-enter-btn { margin-top: .9rem; }
 }
@@ -4867,7 +4867,7 @@ html.splash-visited #splashScreen.splash-screen {
   #splashScreen .splash-portrait { height: min(38vh, 215px); }
   #splashScreen .splash-quote { max-width: 18ch; margin: .45rem 0; font-size: 1.65rem; }
   #splashScreen .splash-divider { margin: .55rem 0; }
-  #splashScreen .splash-lacan-quote { font-size: .84rem; line-height: 1.4; }
+  #splashScreen .splash-support-quote { font-size: .84rem; line-height: 1.4; }
   #splashScreen .splash-scholar-title { font-size: .7rem; }
   #splashScreen .splash-enter-btn { min-height: 44px; margin-top: .65rem; }
 }
@@ -4878,7 +4878,7 @@ html.splash-visited #splashScreen.splash-screen {
   #splashScreen .splash-portrait { top: 0; right: 0; bottom: 0; width: min(54vw, 480px); height: 100%; transform: none; opacity: .38; }
   #splashScreen .splash-quote { max-width: 18ch; margin: .5rem 0; font-size: clamp(1.55rem, 4.8vw, 2rem); }
   #splashScreen .splash-divider { margin: .6rem 0; }
-  #splashScreen .splash-lacan-quote { font-size: .84rem; line-height: 1.35; }
+  #splashScreen .splash-support-quote { font-size: .84rem; line-height: 1.35; }
   #splashScreen .splash-scholar-title { margin-top: .5rem; font-size: .74rem; }
   #splashScreen .splash-enter-btn { min-height: 44px; margin-top: .7rem; }
 }
@@ -4937,7 +4937,7 @@ html.splash-visited #splashScreen.splash-screen {
   #splashScreen .splash-eyebrow { font-size: .64rem; line-height: 1.45; letter-spacing: .12em; }
   #splashScreen .splash-quote { max-width: 22ch; margin: .55rem 0; font-size: clamp(1.65rem, 7.4vw, 2.15rem); line-height: 1.08; }
   #splashScreen .splash-divider { margin: .55rem 0; }
-  #splashScreen .splash-lacan-quote { font-size: .84rem; line-height: 1.4; }
+  #splashScreen .splash-support-quote { font-size: .84rem; line-height: 1.4; }
   #splashScreen .splash-scholar-title { margin-top: .55rem; font-size: .8rem; line-height: 1.45; }
   #splashScreen .splash-enter-btn { min-height: 48px; margin-top: .8rem; }
 
