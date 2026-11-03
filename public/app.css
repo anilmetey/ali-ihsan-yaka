@@ -5246,3 +5246,19 @@ html.splash-visited #splashScreen.splash-screen {
 
 /* Keep the full head inside the mobile About portrait crop. */
 @media(max-width:760px){.about-portrait img{object-position:center top!important}}
+
+/* S2 returns around the diagram; message lines advance in five linked stages. */
+.psyche-diagram[data-active="true"] .psyche-flow-1{animation-delay:0s!important}
+.psyche-diagram[data-active="true"] .psyche-flow-2{animation-delay:.7s!important}
+.psyche-diagram[data-active="true"] .psyche-flow-3{animation-delay:1.4s!important}
+.psyche-diagram[data-active="true"] .psyche-flow-4{animation-delay:2.1s!important}
+.psyche-diagram[data-active="true"] .psyche-flow-5{animation-delay:2.8s!important}
+.psyche-diagram[data-active="true"] .psyche-vertical-vector{stroke-dasharray:8 10;animation:psyche-flow-upward 8s linear infinite!important}
+.psyche-motion-note{max-width:72ch;margin:.5rem auto 0;color:var(--text-muted);font-size:.84rem;line-height:1.6;text-align:center}
+@media(prefers-reduced-motion:reduce){.psyche-diagram[data-active="true"] .psyche-vertical-vector{animation:none!important}}
+
+/* Rebuild the homepage model directly from Article Figure 5. */
+.model-zones rect{fill:rgba(247,247,244,.78);stroke:#e0e3e8;stroke-width:1}.model-headings{fill:#485b87;font:600 15px system-ui,sans-serif;letter-spacing:.04em;text-anchor:middle}.model-headings .model-subhead{font:italic 12px Georgia,serif;letter-spacing:0;fill:#7a8498}.model-headings .model-sidehead{font-size:12px}.model-row-labels{fill:#394252;font:italic 16px Georgia,serif;text-anchor:middle}.model-loop{fill:none;stroke:#58739e;stroke-width:3;stroke-linecap:round;stroke-dasharray:12 11}.model-loop-top,.model-loop-bottom{animation:figure-loop-flow 8s linear infinite}.model-loop-bottom{animation-delay:-4s}.model-loop-label{fill:#647492;font:600 13px system-ui,sans-serif;letter-spacing:.08em;text-anchor:middle}.model-forward{fill:none;stroke:#6074a5;stroke-width:2.4;stroke-dasharray:8 9;stroke-linecap:round;animation:figure-forward 8s linear infinite}.model-stage-2{animation-delay:.7s}.model-stage-3{animation-delay:1.4s}.model-stage-4{animation-delay:2.1s}.model-stage-5{animation-delay:2.8s}.model-stage-6{animation-delay:3.5s}.model-up{fill:none;stroke:#b58a50;stroke-width:2.5;stroke-dasharray:7 9;stroke-linecap:round;animation:figure-up 6s linear infinite}.model-mirror-axis{stroke-width:2}.model-code-vector:nth-of-type(2){animation-delay:-1.5s}.model-code-vector:nth-of-type(3){animation-delay:-2.8s}.model-code-arc{fill:none;stroke:#6279a1;stroke-width:2.4;stroke-linecap:round}.model-s1-return path{fill:none;stroke:#b58a50;stroke-width:2;stroke-dasharray:6 7;animation:figure-return 6s linear infinite}.model-s1-return path:nth-child(2){animation-delay:-2s}.model-s1-return path:nth-child(3){animation-delay:-4s}.model-axis-label{fill:#a17b48;font:600 13px system-ui,sans-serif;text-anchor:middle}.model-structures{fill:#333d4d;font:600 17px Georgia,serif;text-anchor:middle}.model-structure-vector{stroke-width:2}.model-speech{fill:#374253;font:italic 16px Georgia,serif;text-anchor:middle}.model-speech path{stroke:#aeb5c1;stroke-width:1}.psyche-pan-hint{display:none}.psyche-motion-note{margin-top:1rem}
+@keyframes figure-forward{to{stroke-dashoffset:-136}}@keyframes figure-up{to{stroke-dashoffset:-112}}@keyframes figure-return{to{stroke-dashoffset:-96}}@keyframes figure-loop-flow{to{stroke-dashoffset:-184}}
+@media(max-width:760px){.psyche-diagram-frame{display:block!important;overflow-x:auto!important;overscroll-behavior-inline:contain}.psyche-diagram-svg{display:block!important;width:1000px!important;max-width:none!important;height:auto}.psyche-mobile-map{display:none!important}.psyche-pan-hint{display:block;margin:.75rem 0;color:var(--text-muted);font-size:.76rem;text-align:center}}
+@media(prefers-reduced-motion:reduce){.model-forward,.model-up,.model-s1-return path,.model-loop{animation:none!important}}

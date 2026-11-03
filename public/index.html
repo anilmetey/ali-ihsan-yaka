@@ -251,104 +251,36 @@
         </header>
 
         <figure class="psyche-diagram" data-psyche-model>
+          <p class="psyche-pan-hint" data-i18n="psyche.panHint">Şemayı yatay kaydırarak tüm akışları izleyin ↔</p>
           <div class="psyche-diagram-frame">
             <svg class="psyche-diagram-svg" viewBox="0 0 1440 680" role="img" aria-labelledby="psycheDiagramTitle psycheDiagramDescription" preserveAspectRatio="xMidYMid meet">
-              <title id="psycheDiagramTitle" data-i18n="psyche.diagramTitle">Gösteren zincirinden ruhsal yapılara uzanan şema</title>
-              <desc id="psycheDiagramDescription" data-i18n="psyche.diagramDesc">Şema; Baba metaforu ve ayna evresinden başlayıp Gerçek, İmgesel ve Simgesel arasındaki bağlantıları, S1 eksenini, ruhsal yapıları ve öznenin konuşma işlevini gösterir.</desc>
-              <defs>
-                <marker id="psyche-arrow-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1L9 5L1 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
-                <marker id="psyche-arrow-gold" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1L9 5L1 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
-                <linearGradient id="psyche-panel-wash" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fcfbf8"/><stop offset=".58" stop-color="#f6f5f0"/><stop offset="1" stop-color="#eeeff0"/></linearGradient>
-                <linearGradient id="psyche-loop-light" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b58a50" stop-opacity=".5"/><stop offset=".48" stop-color="#6372ad"/><stop offset="1" stop-color="#b58a50" stop-opacity=".72"/></linearGradient>
-                <pattern id="psyche-grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#677391" stroke-opacity=".065" stroke-width="1"/><circle cx="0" cy="0" r="1.1" fill="#677391" fill-opacity=".12"/></pattern>
-                <filter id="psyche-node-shadow" x="-25%" y="-30%" width="150%" height="170%"><feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#263653" flood-opacity=".09"/></filter>
-              </defs>
-              <rect class="psyche-paper" x="1" y="1" width="1438" height="678" rx="24"/>
-              <rect class="psyche-blueprint-grid" x="2" y="2" width="1436" height="676" rx="23"/>
-              <g class="psyche-zones" aria-hidden="true">
-                <rect x="184" y="238" width="244" height="258" rx="18"/>
-                <rect x="516" y="238" width="456" height="258" rx="18"/>
-                <rect x="1047" y="238" width="204" height="258" rx="18"/>
-                <path d="M488 238V496M1002 238V496M1270 238V496"/>
-              </g>
-              <g class="psyche-register-rail" aria-hidden="true"><path d="M595 266V474M750 266V474M905 266V474"/><circle cx="595" cy="266" r="3"/><circle cx="750" cy="266" r="3"/><circle cx="905" cy="266" r="3"/></g>
-              <path class="psyche-loop psyche-thread" d="M92 233C238 82 1184 82 1348 231" marker-end="url(#psyche-arrow-gold)"/>
-              <text class="psyche-loop-label" x="718" y="101" text-anchor="middle" data-i18n="psyche.s2Label">S2 · gösteren zinciri</text>
-              <path class="psyche-loop psyche-thread psyche-loop-return" d="M1348 490C1187 627 245 627 92 490" marker-end="url(#psyche-arrow-gold)"/>
-              <text class="psyche-loop-label" x="718" y="611" text-anchor="middle">S2</text>
-
-              <g class="psyche-source-node">
-                <rect x="30" y="270" width="126" height="184" rx="16"/>
-                <text x="93" y="368" text-anchor="middle" transform="rotate(-90 93 368)" data-i18n="psyche.origin">Gösteren</text>
-              </g>
-              <g class="psyche-process-column">
-                <text class="psyche-column-heading" x="300" y="197" text-anchor="middle" data-i18n="psyche.message">Baba metaforu</text>
-                <text class="psyche-column-subheading" x="300" y="219" text-anchor="middle" data-i18n="psyche.messageText">Mesaj · Ayna evresi</text>
-                <path class="psyche-connector" d="M156 306H202M156 362H202M156 418H202" marker-end="url(#psyche-arrow-blue)"/>
-                <rect class="psyche-process-node" x="208" y="281" width="196" height="48" rx="10"/><text x="306" y="311" text-anchor="middle" data-i18n="psyche.fall">Simgeselden düşme</text>
-                <rect class="psyche-process-node" x="208" y="338" width="196" height="48" rx="10"/><text x="306" y="368" text-anchor="middle" data-i18n="psyche.unrecognized">Simgeselde tanı(n)mama</text>
-                <rect class="psyche-process-node" x="208" y="395" width="196" height="48" rx="10"/><text x="306" y="425" text-anchor="middle" data-i18n="psyche.recognized">Simgeselde tanı(n)ma</text>
-                <path class="psyche-connector psyche-connector-soft" d="M306 329V336M306 386V393" marker-end="url(#psyche-arrow-blue)"/>
-              </g>
-
-              <g class="psyche-mirror-axis">
-                <path class="psyche-mirror-spine" d="M466 272V456" marker-start="url(#psyche-arrow-blue)" marker-end="url(#psyche-arrow-blue)"/>
-                <text class="psyche-mirror-label" x="466" y="256" text-anchor="middle" data-i18n="psyche.ayna">Ayna evresi</text>
-                <path class="psyche-connector" d="M404 305H540M404 362H540M404 419H540" marker-end="url(#psyche-arrow-blue)"/>
-              </g>
-
-              <g class="psyche-register-network">
-                <text class="psyche-column-heading" x="743" y="197" text-anchor="middle" data-i18n="psyche.code">Baba-nın-Adları</text>
-                <text class="psyche-column-subheading" x="743" y="219" text-anchor="middle" data-i18n="psyche.codeText">Kod · Ruhsal yapılar</text>
-                <text class="psyche-register-label" x="595" y="255" text-anchor="middle" data-i18n="psyche.imaginary">İmgesel</text>
-                <text class="psyche-register-label" x="750" y="255" text-anchor="middle" data-i18n="psyche.real">Gerçek</text>
-                <text class="psyche-register-label" x="905" y="255" text-anchor="middle" data-i18n="psyche.symbolic">Simgesel</text>
-                <path class="psyche-connector" d="M646 306H696M801 306H851M646 373H696M801 373H851M646 440H696M801 440H851" marker-end="url(#psyche-arrow-blue)"/>
-                <path class="psyche-relation" d="M595 324V355M595 391V422M750 324V355M750 391V422M905 324V355M905 391V422" marker-start="url(#psyche-arrow-gold)" marker-end="url(#psyche-arrow-gold)"/>
-                <path class="psyche-cross-link psyche-thread" d="M648 303C676 276 690 276 706 357" marker-end="url(#psyche-arrow-gold)"/>
-                <path class="psyche-cross-link psyche-thread" d="M802 372C830 343 844 343 860 424" marker-end="url(#psyche-arrow-gold)"/>
-                <path class="psyche-cross-link psyche-thread" d="M648 440C672 468 690 468 706 390" marker-end="url(#psyche-arrow-gold)"/>
-                <rect class="psyche-register-node" x="544" y="282" width="102" height="44" rx="22"/><text x="595" y="310" text-anchor="middle" data-i18n="psyche.imaginary">İmgesel</text>
-                <rect class="psyche-register-node psyche-register-node-real" x="699" y="282" width="102" height="44" rx="22"/><text x="750" y="310" text-anchor="middle" data-i18n="psyche.real">Gerçek</text>
-                <rect class="psyche-register-node" x="854" y="282" width="102" height="44" rx="22"/><text x="905" y="310" text-anchor="middle" data-i18n="psyche.symbolic">Simgesel</text>
-                <rect class="psyche-register-node" x="544" y="349" width="102" height="44" rx="22"/><text x="595" y="377" text-anchor="middle" data-i18n="psyche.imaginary">İmgesel</text>
-                <rect class="psyche-register-node psyche-register-node-real" x="699" y="349" width="102" height="44" rx="22"/><text x="750" y="377" text-anchor="middle" data-i18n="psyche.real">Gerçek</text>
-                <rect class="psyche-register-node" x="854" y="349" width="102" height="44" rx="22"/><text x="905" y="377" text-anchor="middle" data-i18n="psyche.symbolic">Simgesel</text>
-                <rect class="psyche-register-node" x="544" y="416" width="102" height="44" rx="22"/><text x="595" y="444" text-anchor="middle" data-i18n="psyche.imaginary">İmgesel</text>
-                <rect class="psyche-register-node psyche-register-node-real" x="699" y="416" width="102" height="44" rx="22"/><text x="750" y="444" text-anchor="middle" data-i18n="psyche.real">Gerçek</text>
-                <rect class="psyche-register-node" x="854" y="416" width="102" height="44" rx="22"/><text x="905" y="444" text-anchor="middle" data-i18n="psyche.symbolic">Simgesel</text>
-              </g>
-
-              <g class="psyche-s1-axis">
-                <text class="psyche-s1-label" x="1017" y="228" text-anchor="middle">S1</text>
-                <path d="M1017 256V466" marker-start="url(#psyche-arrow-gold)" marker-end="url(#psyche-arrow-gold)"/>
-                <text class="psyche-s1-label" x="1017" y="490" text-anchor="middle">S1</text>
-                <path class="psyche-connector" d="M956 304H1005M956 371H1005M956 438H1005" marker-end="url(#psyche-arrow-blue)"/>
-              </g>
-
-              <g class="psyche-motion-points" aria-hidden="true">
-                <g class="psyche-flow-group"><circle r="10" class="psyche-flow-halo"/><circle r="5" class="psyche-flow-dot"/><circle r="2" class="psyche-flow-core"/><animateMotion begin="indefinite" dur="4.8s" repeatCount="indefinite" path="M156 306H404"/></g>
-                <g class="psyche-flow-group psyche-flow-group-gold"><circle r="10" class="psyche-flow-halo"/><circle r="4.5" class="psyche-flow-dot psyche-flow-dot-gold"/><circle r="1.8" class="psyche-flow-core"/><animateMotion begin="indefinite" dur="5.6s" repeatCount="indefinite" path="M595 326C676 276 690 276 750 326"/></g>
-                <g class="psyche-flow-group"><circle r="10" class="psyche-flow-halo"/><circle r="5" class="psyche-flow-dot"/><circle r="2" class="psyche-flow-core"/><animateMotion begin="indefinite" dur="4.4s" repeatCount="indefinite" path="M956 438H1286"/></g>
-                <g class="psyche-flow-group psyche-flow-group-gold"><circle r="9" class="psyche-flow-halo"/><circle r="4.5" class="psyche-flow-dot psyche-flow-dot-gold"/><circle r="1.8" class="psyche-flow-core"/><animateMotion begin="indefinite" dur="6.2s" repeatCount="indefinite" path="M466 272V456"/></g>
-                <g class="psyche-flow-group"><circle r="9" class="psyche-flow-halo"/><circle r="4.5" class="psyche-flow-dot"/><circle r="1.8" class="psyche-flow-core"/><animateMotion begin="indefinite" dur="5.8s" repeatCount="indefinite" path="M1017 256V466"/></g>
-              </g>
-
-              <g class="psyche-structure-column">
-                <text class="psyche-column-heading" x="1156" y="197" text-anchor="middle" data-i18n="psyche.structureHeading">Ruhsal yapılar</text>
-                <rect class="psyche-structure-node" x="1068" y="282" width="176" height="44" rx="10"/><text x="1156" y="310" text-anchor="middle" data-i18n="psyche.psychotic">Psikotik</text>
-                <rect class="psyche-structure-node" x="1068" y="349" width="176" height="44" rx="10"/><text x="1156" y="377" text-anchor="middle" data-i18n="psyche.perverse">Pervers</text>
-                <rect class="psyche-structure-node" x="1068" y="416" width="176" height="44" rx="10"/><text x="1156" y="444" text-anchor="middle" data-i18n="psyche.neurotic">Nevrotik</text>
-                <path class="psyche-connector psyche-connector-output" d="M1244 304H1286M1244 371H1286M1244 438H1286" marker-end="url(#psyche-arrow-blue)"/>
-              </g>
-
-              <g class="psyche-output-node">
-                <rect x="1290" y="264" width="126" height="214" rx="16"/>
-                <text x="1353" y="337" text-anchor="middle" data-i18n="psyche.speech">Dil alanı</text>
-                <path class="psyche-output-rule" d="M1312 354H1394"/>
-                <text class="psyche-output-copy" x="1353" y="380" text-anchor="middle"><tspan x="1353" data-i18n="psyche.speechTextA">Süjenin konuşma</tspan><tspan x="1353" dy="19" data-i18n="psyche.speechTextB">işlevi</tspan></text>
-              </g>
-            </svg>
+<title id="psycheDiagramTitle" data-i18n="psyche.diagramTitle">Baba işlevi grafiği: gösteren zincirinden ruhsal yapılara</title><desc id="psycheDiagramDescription" data-i18n="psyche.diagramDesc">Şekil 5’in web için yeniden çizimi. Yatay mesaj hatları soldan sağa ilerler; kodlama vektörleri aşağıdan yukarı çıkar. Üst S2 döngüsü sağdan sola, alt döngü soldan sağa döner.</desc>
+<defs><marker id="psyche-arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#536c9b"/></marker><marker id="psyche-arrow-gold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#b58a50"/></marker></defs>
+<rect class="psyche-paper" x="1" y="1" width="1438" height="678" rx="24"/>
+<g class="model-zones"><rect x="26" y="255" width="120" height="232" rx="15"/><rect x="185" y="245" width="270" height="255" rx="15"/><rect x="575" y="245" width="345" height="255" rx="15"/><rect x="1020" y="245" width="168" height="255" rx="15"/><rect x="1215" y="255" width="195" height="232" rx="15"/></g>
+<path class="model-loop model-loop-top" d="M1378 258 C1290 76 190 76 104 258" marker-end="url(#psyche-arrow-blue)"/><text class="model-loop-label" x="740" y="98">S2 · GÖSTEREN ZİNCİRİ</text>
+<path class="model-loop model-loop-bottom" d="M104 492 C205 630 1282 630 1378 492" marker-end="url(#psyche-arrow-blue)"/><text class="model-loop-label" x="740" y="610">S2 · GERİ DÖNÜŞ</text>
+<g class="model-headings"><text x="86" y="215" data-i18n="psyche.origin">Gösteren</text><text x="320" y="205" data-i18n="psyche.message">Baba metaforu</text><text x="320" y="226" class="model-subhead" data-i18n="psyche.messageText">Mesaj · Ayna evresi</text><text x="490" y="222" class="model-sidehead" transform="rotate(-90 490 222)" data-i18n="psyche.ayna">Ayna evresi</text><text x="746" y="205" data-i18n="psyche.code">Baba-nın-Adları</text><text x="746" y="226" class="model-subhead" data-i18n="psyche.codeText">Kod · Ruhsal yapılar</text><text x="1104" y="215" data-i18n="psyche.structureHeading">Ruhsal yapılar</text><text x="1312" y="215" data-i18n="psyche.speech">Dil alanı</text></g>
+<g class="model-horizontal">
+<path class="model-forward model-stage-1" d="M146 310H205M146 385H205M146 460H205" marker-end="url(#psyche-arrow-blue)"/>
+<path class="model-forward model-stage-2" d="M438 310H478M438 385H478M438 460H478" marker-end="url(#psyche-arrow-blue)"/>
+<path class="model-forward model-stage-3" d="M505 310H592M505 385H592M505 460H592" marker-end="url(#psyche-arrow-blue)"/>
+<path class="model-forward model-stage-4" d="M882 310H965M882 385H965M882 460H965" marker-end="url(#psyche-arrow-blue)"/>
+<path class="model-forward model-stage-5" d="M1007 310H1040M1007 385H1040M1007 460H1040" marker-end="url(#psyche-arrow-blue)"/>
+<path class="model-forward model-stage-6" d="M1160 310H1220M1160 385H1220M1160 460H1220" marker-end="url(#psyche-arrow-blue)"/>
+</g>
+<g class="model-row-labels"><text x="320" y="315" data-i18n="psyche.fall">Simgeselden düşme</text><text x="320" y="390" data-i18n="psyche.unrecognized">Simgeselde tanı(n)mama</text><text x="320" y="465" data-i18n="psyche.recognized">Simgeselde tanı(n)ma</text></g>
+<path class="model-up model-mirror-axis" d="M490 480V266" marker-end="url(#psyche-arrow-gold)"/><text class="model-axis-label" x="490" y="505" data-i18n="psyche.ayna">Ayna evresi</text>
+<g class="model-code"><text x="760" y="315">Gerçek, …</text><text x="760" y="390">Gerçek, İmgesel, …</text><text x="760" y="465">Gerçek, İmgesel, Simgesel</text>
+<path class="model-up model-code-vector" d="M650 337V286" marker-end="url(#psyche-arrow-gold)"/><path class="model-code-arc" d="M670 297C688 274 710 274 728 297"/>
+<path class="model-up model-code-vector" d="M650 412V363M720 412V363" marker-end="url(#psyche-arrow-gold)"/><path class="model-code-arc" d="M670 374C687 350 704 350 720 374M740 374C757 350 774 350 790 374"/>
+<path class="model-up model-code-vector" d="M650 487V438M720 487V438M790 487V438" marker-end="url(#psyche-arrow-gold)"/><path class="model-code-arc" d="M670 449C687 425 704 425 720 449M740 449C757 425 774 425 790 449M810 449C827 425 844 425 860 449"/></g>
+<path class="model-up model-s1-axis" d="M980 490V270" marker-end="url(#psyche-arrow-gold)"/><text class="model-axis-label" x="980" y="252">S1</text><text class="model-axis-label" x="980" y="515">S1</text>
+<g class="model-s1-return"><path d="M960 310C930 280 910 280 890 306" marker-end="url(#psyche-arrow-blue)"/><path d="M960 385C930 355 910 355 890 381" marker-end="url(#psyche-arrow-blue)"/><path d="M960 460C930 430 910 430 890 456" marker-end="url(#psyche-arrow-blue)"/></g>
+<g class="model-structures"><text x="1100" y="315" data-i18n="psyche.psychotic">Psikotik</text><text x="1100" y="390" data-i18n="psyche.perverse">Pervers</text><text x="1100" y="465" data-i18n="psyche.neurotic">Nevrotik</text><path class="model-up model-structure-vector" d="M1140 344V282M1140 419V357M1140 494V432" marker-end="url(#psyche-arrow-gold)"/></g>
+<g class="model-speech"><text x="1310" y="345">Süjenin</text><text x="1310" y="372">dil alanı ve</text><text x="1310" y="399">konuşma işlevi</text><path d="M1240 420H1380"/></g>
+<g class="model-labels"><text x="84" y="374" transform="rotate(-90 84 374)" data-i18n="psyche.origin">Gösteren</text><text class="model-loop-label" x="275" y="555">S2</text><text class="model-loop-label" x="1210" y="555">S1</text></g>
+</svg>
           </div>
 
           <div class="psyche-mobile-map" aria-label="Psikanalitik şema: mobil görünüm">
@@ -385,6 +317,7 @@
           </figcaption>
         </figure>
         <p class="psyche-research-note"><span data-i18n="psyche.researchPrompt">Makalede yer alan diğer şemalar ve açıklamalar için</span> <a href="arastirmalar.html" data-i18n="nav.research">Araştırmalar</a></p>
+        <p class="psyche-motion-note" data-i18n="psyche.motionNote">Üst S2 hattı sağdan sola döner; alt S2 hattı soldan sağa bağlar. Mesaj yatayda soldan sağa, S1 kodlaması dikeyde aşağıdan yukarı akar.</p>
       </div>
     </section>
 
