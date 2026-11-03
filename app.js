@@ -210,9 +210,24 @@
     "practice.p3f3": "Ücret ve çerçevenin önceden konuşulması",
     "practice.p3f4": "Uygunluğu değerlendirmek için ön görüşme",
     "practice.featurePill": "KLİNİK FORMÜLASYON & DİLE GELEN ARZU",
+    "practice.featureOrientation": "LACANYEN PSİKANALİTİK YÖNELİM",
     "practice.featureTitle": "Semptomun Ardındaki Öznel Anlam",
-    "practice.featureDesc": "Psikanalitik çalışma, kişinin semptomunun taşıyabileceği anlamı konuşup dikkatle dinlemek için alan açar.",
+    "practice.featureDesc": "Psikanalitik çalışmada semptom, hızla susturulması gereken bir arıza olarak değil; kişinin yaşam öyküsünde, dilinde ve ilişkilerinde taşıdığı öznel anlamla dinlenir.",
+    "practice.featureQuote": "Hazır reçeteler ya da standart protokoller yerine, her öznenin kendi sözüne, tekrar eden düğümlerine ve tekil arzusuna alan açan bir çalışma çerçevesi kurulur.",
+    "practice.featureAxesAria": "Klinik çalışma eksenleri",
+    "practice.featureAxis1Tag": "I · ANALİTİK DİNLEME",
+    "practice.featureAxis1Title": "Söz ve Serbest Çağrışım",
+    "practice.featureAxis1Desc": "Dil sürçmeleri, duraksamalar ve söylemdeki kırılmalar üzerinden bilinçdışı konumun duyulması.",
+    "practice.featureAxis2Tag": "II · YAPISAL OKUMA",
+    "practice.featureAxis2Title": "Öznel Konum ve Tekrar",
+    "practice.featureAxis2Desc": "Semptomun ruhsal yapıdaki işlevinin ve ilişkisel döngülerin tekil bağlamda kavramsallaştırılması.",
+    "practice.featureAxis3Tag": "III · KLİNİK ÇERÇEVE",
+    "practice.featureAxis3Title": "Etik Sınırlar ve Ritim",
+    "practice.featureAxis3Desc": "Gizlilik ilkesi, seans sıklığı ve öznel zamansallığın ilk görüşmelerden itibaren birlikte kurulması.",
     "practice.featureBtn": "Ön Görüşme Talep Et",
+    "practice.featureMoreLink": "Klinik yaklaşımı ve çerçeveyi incele",
+    "practice.featureLangs": "Türkçe • English • Kurmancî",
+    "practice.featureCaptionRole": "Doktor Klinik Psikolog • Psikanalitik Psikoterapi & Süpervizyon",
     "practice.slidingTitle": "Ücret ve Uygunluk",
     "practice.slidingDesc": "Güncel ücret ve uygunluk bilgisi, ilk görüşme planlanmadan önce doğrudan konuşulabilir.",
     "practice.slidingBtn": "Ücret ve Uygunluğu Sor",
@@ -366,6 +381,27 @@
     "publication.bogaziciDesc": "Yalnızlık ve psikanalitik perspektif üzerine davetli konuşma; Lacanyen psikanalitik perspektifte ayna evresi ve öznel toplumsallaşma ilişkisi çerçevesinde.",
     "publication.bogaziciImageAlt": "Dr. Ali İhsan Yaka, Boğaziçi Üniversitesi XI. Psikoloji Günü’nde psikanalitik yalnızlık sunumunu yaparken",
     "publication.bogaziciLink": "Etkinlik ayrıntılarını inceleyin →",
+    "news.bogaziciBadge": "DAVETLİ KONUŞMACI &bull; BOĞAZİÇİ ÜNİVERSİTESİ XI. PSİKOLOJİ GÜNÜ",
+    "news.bogaziciLocation": "27 NİSAN 2025 &bull; ALBERT LONG HALL, İSTANBUL",
+    "news.bogaziciTitle": "XI. Psikoloji Günü: Yalnızlık ve Psikanalitik Perspektif",
+    "news.bogaziciSubtitle": "“Psikopatolojik Yalnızlıktan Subjektif Toplumsallığa: Psikanalitik Öznelleşme Deneyimi”",
+    "news.bogaziciDesc": "Boğaziçi Üniversitesi Psikoloji Topluluğu davetiyle gerçekleştirilen bu konuşma; yalnızlığı salt bir sosyal soyutlanma ya da psikopatolojik semptom olarak değil, Lacanyen psikanalitik kuramın <strong>Ayna Evresi (Le stade du miroir)</strong>, imgesel yabancılaşma ve simgesel öznelleşme diyalektiği üzerinden irdeler. Bireyin Öteki (l'Autre) ile kurduğu bağın, psikopatolojik yalnızlıktan öznel toplumsallığa dönüşüm olanakları kürsü ve sunum şemaları eşliğinde tartışılmıştır.",
+    "news.bogaziciTag1": "✦ Ayna Evresi (Le stade du miroir)",
+    "news.bogaziciTag2": "✦ Lacanyen Psikanaliz",
+    "news.bogaziciTag3": "✦ Simgesel Düzen &amp; Öteki",
+    "news.bogaziciTag4": "✦ Öznel Toplumsallaşma",
+    "news.bogaziciCta": "Akademik Çalışmaları İncele",
+    "news.bogaziciCitationLink": "Yayın Kaydı: Yaka, A. İ. (2025) &rarr;",
+    "news.bogaziciStageBadge": "KÜRSÜ &amp; SALON &bull; BOĞAZİÇİ ÜNİVERSİTESİ",
+    "news.bogaziciStageCaption": "Boğaziçi Üniversitesi XI. Psikoloji Günü · 27 Nisan 2025",
+    "news.bogaziciStageDesc": "Albert Long Hall, Davetli Konuşmacı Açılış Oturumu",
+    "news.bogaziciSlideBadge": "✦ SUNUM SLAYDI &bull; AYNA EVRESİ",
+    "news.bogaziciSlideTitle": "Ayna Evresi Sunumundan",
+    "news.bogaziciSlideDesc": "Simgesel Düzen ve Psikanalitik Perspektif",
+    "news.bogaziciSpeakerBadge": "ÖZNELLEŞME DENEYİMİ",
+    "news.bogaziciSpeakerTitle": "Yalnızlık ve Psikanalitik Perspektif",
+    "news.bogaziciSpeakerDesc": "Öznel Toplumsallaşma Tartışması",
+    "news.bogaziciZoomHint": "Büyüt",
     "publication.kurdiBadge": "KURMANCÎ ÇEVİRİ · PSYCHOLOGY KURDÎ",
     "publication.kurdiTitle": "Psikopatolojik Yalnızlıktan Subjektif Toplumsallığa: Psikanalitik Öznelleşme Deneyimi",
     "publication.kurdiCitation": "<strong>Yaka, A. İ.</strong> (2026). “<em>Ji tenêtiya psîkopatolojîk berev civakîbûna subjektîf: Tecribeya bikerbûna psîkanalîtîk</em>.” <em>Psychology Kurdî</em>, 9(21), 61–74. Kurmancî çeviri: Aydin Rengîn.",
@@ -376,12 +412,16 @@
     "practice.methodEyebrow": "KLİNİK ÇALIŞMANIN ÇERÇEVESİ",
     "practice.methodTitle": "Söz, semptom ve çalışma çerçevesi",
     "practice.methodDesc": "Görüşmeler kişinin başvuru nedeni ve sözünü dikkatle dinleyerek ilerler. Semptomun kişisel anlamı, gizlilik ve çalışma biçimi birlikte ele alınır.",
+    "practice.methodEthics": "Bireysel mahremiyet, gizlilik ve Lacanyen etik ilkeler rehberliğinde",
     "practice.methodStep1": "Dinleme",
     "practice.methodStep1Desc": "Başvuru nedenine ve kişinin kendi sözcüklerine alan açmak.",
+    "practice.step1Pill": "Serbest Çağrışım",
     "practice.methodStep2": "Kavramsallaştırma",
     "practice.methodStep2Desc": "Tekrarlayan güçlükleri ve semptomun taşıyabileceği öznel anlamı konuşmak.",
+    "practice.step2Pill": "Bilinçdışı Anlam",
     "practice.methodStep3": "Çerçeve",
     "practice.methodStep3Desc": "Görüşme sıklığını, biçimini ve gizlilik sınırlarını birlikte belirlemek.",
+    "practice.step3Pill": "Etik Çerçeve",
     "practice.inclusiveEyebrow": "ÇALIŞMA YAKLAŞIMI",
     "practice.inclusiveTitle": "Kapsayıcı ve kültüre duyarlı bir alan",
     "practice.inclusiveDesc": "Çalışma, kişinin kendi yaşam öyküsünü, dilini ve kültürel bağlamını gözeten; LGBTQI+ bireyleri kapsayıcı ve onaylayıcı bir yaklaşımla yürütülür. Her görüşmenin çerçevesi ve ihtiyaçları kişiyle birlikte ele alınır.",
@@ -715,9 +755,24 @@
     "practice.p3f3": "Fee arrangements discussed in advance",
     "practice.p3f4": "An initial conversation to clarify fit",
     "practice.featurePill": "CLINICAL FORMULATION & DESIRE IN SPEECH",
+    "practice.featureOrientation": "LACANIAN PSYCHOANALYTIC ORIENTATION",
     "practice.featureTitle": "The Subjective Meaning Behind a Symptom",
-    "practice.featureDesc": "Psychoanalytic work offers a space to speak and listen closely to the meaning a symptom may hold for each person.",
-    "practice.featureBtn": "Request an Initial Conversation",
+    "practice.featureDesc": "In psychoanalytic work, a symptom is not treated as a malfunction to be quickly silenced, but listened to for the subjective meaning it holds within a person’s history, language, and relationships.",
+    "practice.featureQuote": "Rather than applying ready-made formulas or standardized protocols, sessions establish a working frame that makes room for each subject’s own words, recurring impasses, and singular desire.",
+    "practice.featureAxesAria": "Clinical practice axes",
+    "practice.featureAxis1Tag": "I · ANALYTIC LISTENING",
+    "practice.featureAxis1Title": "Speech & Free Association",
+    "practice.featureAxis1Desc": "Attending closely to slips of the tongue, pauses, and ruptures in discourse where unconscious position emerges.",
+    "practice.featureAxis2Tag": "II · STRUCTURAL READING",
+    "practice.featureAxis2Title": "Subjective Position & Repetition",
+    "practice.featureAxis2Desc": "Formulating the function a symptom serves within psychic structure and recurring relational patterns.",
+    "practice.featureAxis3Tag": "III · CLINICAL FRAME",
+    "practice.featureAxis3Title": "Ethical Boundaries & Rhythm",
+    "practice.featureAxis3Desc": "Establishing confidentiality, session frequency, and subjective temporality together from the initial meetings.",
+    "practice.featureBtn": "Request Initial Consultation",
+    "practice.featureMoreLink": "Clinical approach & frame",
+    "practice.featureLangs": "Turkish • English • Kurmanji",
+    "practice.featureCaptionRole": "Clinical Psychologist, Ph.D. • Psychoanalytic Psychotherapy & Supervision",
     "practice.slidingTitle": "Fees and Availability",
     "practice.slidingDesc": "Current fees and availability can be discussed directly before an initial meeting is arranged.",
     "practice.slidingBtn": "Ask About Fees and Availability",
@@ -888,6 +943,27 @@
     "publication.bogaziciDesc": "Invited talk on loneliness and a psychoanalytic perspective, including the mirror stage and subjectivity in social life from a Lacanian psychoanalytic perspective.",
     "publication.bogaziciImageAlt": "Dr. Ali Ihsan Yaka presenting on psychoanalytic perspectives on loneliness at Boğaziçi University’s 11th Psychology Day",
     "publication.bogaziciLink": "View event details →",
+    "news.bogaziciBadge": "INVITED KEYNOTE &bull; BOĞAZİÇİ UNIVERSITY 11TH PSYCHOLOGY DAY",
+    "news.bogaziciLocation": "APRIL 27, 2025 &bull; ALBERT LONG HALL, ISTANBUL",
+    "news.bogaziciTitle": "11th Psychology Day: Loneliness and Psychoanalytic Perspective",
+    "news.bogaziciSubtitle": "“From Pathological Loneliness to Subjective Sociality: The Experience of Psychoanalytic Subjectivation”",
+    "news.bogaziciDesc": "Delivered as an invited keynote at the 11th Psychology Day organized by the Boğaziçi University Psychology Society, this talk re-articulates loneliness beyond clinical pathology through Lacanian psychoanalysis—focusing on the <strong>Mirror Stage (Le stade du miroir)</strong>, imaginary alienation, and the symbolic dialectic of subjectivation. The presentation examines how the subject's relation to the Other (l'Autre) opens pathways from psychopathological loneliness toward subjective sociality.",
+    "news.bogaziciTag1": "✦ The Mirror Stage (Le stade du miroir)",
+    "news.bogaziciTag2": "✦ Lacanian Psychoanalysis",
+    "news.bogaziciTag3": "✦ Symbolic Order &amp; the Other",
+    "news.bogaziciTag4": "✦ Subjective Sociality",
+    "news.bogaziciCta": "Explore Academic Work",
+    "news.bogaziciCitationLink": "Publication Record: Yaka, A. İ. (2025) &rarr;",
+    "news.bogaziciStageBadge": "KEYNOTE &amp; HALL &bull; BOĞAZİÇİ UNIVERSITY",
+    "news.bogaziciStageCaption": "Boğaziçi University 11th Psychology Day · April 27, 2025",
+    "news.bogaziciStageDesc": "Albert Long Hall, Invited Keynote Opening Session",
+    "news.bogaziciSlideBadge": "✦ THEORETICAL SLIDE &bull; THE MIRROR STAGE",
+    "news.bogaziciSlideTitle": "From the Mirror Stage Presentation",
+    "news.bogaziciSlideDesc": "The Symbolic Order and Psychoanalytic Perspective",
+    "news.bogaziciSpeakerBadge": "SUBJECTIVATION EXPERIENCE",
+    "news.bogaziciSpeakerTitle": "Loneliness &amp; Psychoanalytic Perspective",
+    "news.bogaziciSpeakerDesc": "Discussion on Subjective Sociality",
+    "news.bogaziciZoomHint": "Zoom",
     "publication.kurdiBadge": "KURMANJI TRANSLATION · PSYCHOLOGY KURDÎ",
     "publication.kurdiTitle": "From Psychopathological Loneliness Toward Subjective Sociality: The Experience of Psychoanalytic Subjectivation",
     "publication.kurdiCitation": "<strong>Yaka, A. İ.</strong> (2026). “<em>Ji tenêtiya psîkopatolojîk berev civakîbûna subjektîf: Tecribeya bikerbûna psîkanalîtîk</em>.” <em>Psychology Kurdî</em>, 9(21), 61–74. Translated into Kurmanji by Aydin Rengîn.",
@@ -898,12 +974,16 @@
     "practice.methodEyebrow": "THE CLINICAL FRAME",
     "practice.methodTitle": "Speech, symptom, and the frame of the work",
     "practice.methodDesc": "Sessions begin by listening closely to what brings a person to therapy and how they describe it. The personal meaning of a symptom, confidentiality, and the working frame are discussed together.",
+    "practice.methodEthics": "Guided by personal confidentiality, privacy, and Lacanian ethical principles",
     "practice.methodStep1": "Listening",
     "practice.methodStep1Desc": "Make room for the reason for seeking therapy and the person’s own words.",
+    "practice.step1Pill": "Free Association",
     "practice.methodStep2": "Formulation",
     "practice.methodStep2Desc": "Talk through recurring difficulties and the possible subjective meaning of symptoms.",
+    "practice.step2Pill": "Unconscious Meaning",
     "practice.methodStep3": "Working frame",
     "practice.methodStep3Desc": "Agree together on session frequency, format, and limits of confidentiality.",
+    "practice.step3Pill": "Ethical Frame",
     "practice.inclusiveEyebrow": "APPROACH TO CARE",
     "practice.inclusiveTitle": "An inclusive, culturally responsive space",
     "practice.inclusiveDesc": "The work attends to each person’s life story, language, and cultural context, and takes an LGBTQI+-affirming and inclusive approach. The frame and needs of each consultation are discussed collaboratively.",
@@ -2209,7 +2289,248 @@
     reduceMotion.addEventListener?.('change', syncPsycheMotion);
   }
 
-    setLanguage(savedLang);
+  // -------------------------------------------------------------
+  // 9. FOOTER ANIMATED EFFECTS (Interactive Synaptic Particles & Ambient Motion)
+  // -------------------------------------------------------------
+  function initFooterEffects() {
+    const footers = document.querySelectorAll('.site-footer');
+    if (!footers.length) return;
+
+    footers.forEach(footer => {
+      // 1. Ensure ambient container exists
+      let ambient = footer.querySelector('.footer-ambient-effects');
+      if (!ambient) {
+        ambient = document.createElement('div');
+        ambient.className = 'footer-ambient-effects';
+        ambient.setAttribute('aria-hidden', 'true');
+        ambient.innerHTML = `
+          <div class="footer-top-beam"></div>
+          <div class="footer-ambient-orb footer-orb-1"></div>
+          <div class="footer-ambient-orb footer-orb-2"></div>
+          <div class="footer-ambient-orb footer-orb-3"></div>
+          <canvas class="footer-canvas"></canvas>
+        `;
+        footer.insertBefore(ambient, footer.firstChild);
+      }
+
+      const canvas = ambient.querySelector('.footer-canvas');
+      if (!canvas) return;
+
+      const ctx = canvas.getContext('2d', { alpha: true });
+      if (!ctx) return;
+
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      let isVisible = false;
+      let animFrameId = 0;
+      let lastTime = 0;
+      let width = 0;
+      let height = 0;
+      let mouseX = -9999;
+      let mouseY = -9999;
+      let targetMouseX = -9999;
+      let targetMouseY = -9999;
+
+      const resize = () => {
+        const rect = footer.getBoundingClientRect();
+        width = Math.max(rect.width || window.innerWidth, 300);
+        height = Math.max(rect.height || 360, 200);
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        canvas.width = Math.floor(width * dpr);
+        canvas.height = Math.floor(height * dpr);
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      };
+
+      resize();
+
+      // Palette strictly matching existing site colors:
+      // Warm gold [217, 193, 143] and subtle indigo-silver [164, 184, 218]
+      const count = width < 768 ? 24 : 44;
+      const particles = [];
+
+      for (let i = 0; i < count; i++) {
+        const isGold = Math.random() > 0.4;
+        particles.push({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          baseVx: (Math.random() - 0.5) * 0.3,
+          baseVy: -(0.16 + Math.random() * 0.28), // gentle upward float
+          vx: 0,
+          vy: 0,
+          radius: 0.7 + Math.random() * 1.3,
+          baseAlpha: 0.22 + Math.random() * 0.38,
+          alpha: 0.25,
+          pulsePhase: Math.random() * Math.PI * 2,
+          pulseSpeed: 0.02 + Math.random() * 0.025,
+          color: isGold ? [217, 193, 143] : [164, 184, 218]
+        });
+      }
+
+      function updateParticles() {
+        if (targetMouseX > 0 && targetMouseY > 0) {
+          mouseX += (targetMouseX - mouseX) * 0.12;
+          mouseY += (targetMouseY - mouseY) * 0.12;
+        } else {
+          mouseX = -9999;
+          mouseY = -9999;
+        }
+
+        for (let i = 0; i < particles.length; i++) {
+          const p = particles[i];
+          p.pulsePhase += p.pulseSpeed;
+          const shimmer = 0.82 + Math.sin(p.pulsePhase) * 0.26;
+          p.alpha = p.baseAlpha * shimmer;
+
+          // Natural ambient drift
+          p.x += p.baseVx + Math.sin(p.pulsePhase * 0.7) * 0.14 + p.vx;
+          p.y += p.baseVy + p.vy;
+
+          // Drag to dampen interactive velocities
+          p.vx *= 0.93;
+          p.vy *= 0.93;
+
+          // Interactive mouse deflection
+          if (mouseX > 0 && mouseY > 0) {
+            const dx = p.x - mouseX;
+            const dy = p.y - mouseY;
+            const dist = Math.hypot(dx, dy);
+            const maxDist = 130;
+            if (dist < maxDist && dist > 1) {
+              const force = (1 - dist / maxDist) * 1.6;
+              p.vx += (dx / dist) * force * 0.55;
+              p.vy += (dy / dist) * force * 0.55;
+              p.alpha = Math.min(0.92, p.alpha + (1 - dist / maxDist) * 0.4);
+            }
+          }
+
+          // Screen wrap-around
+          if (p.x < -20) p.x = width + 20;
+          else if (p.x > width + 20) p.x = -20;
+          if (p.y < -20) p.y = height + 20;
+          else if (p.y > height + 20) p.y = -20;
+        }
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, width, height);
+
+        // Draw faint synaptic connecting threads
+        const maxDist = 95;
+        const maxDistSq = maxDist * maxDist;
+        for (let i = 0; i < particles.length; i++) {
+          const p1 = particles[i];
+          for (let j = i + 1; j < particles.length; j++) {
+            const p2 = particles[j];
+            const dx = p1.x - p2.x;
+            const dy = p1.y - p2.y;
+            const distSq = dx * dx + dy * dy;
+            if (distSq < maxDistSq) {
+              const dist = Math.sqrt(distSq);
+              const edgeAlpha = (1 - dist / maxDist) * 0.12 * Math.min(p1.alpha, p2.alpha);
+              if (edgeAlpha > 0.005) {
+                ctx.beginPath();
+                ctx.moveTo(p1.x, p1.y);
+                ctx.lineTo(p2.x, p2.y);
+                ctx.strokeStyle = `rgba(217, 193, 143, ${edgeAlpha.toFixed(3)})`;
+                ctx.lineWidth = 0.55;
+                ctx.stroke();
+              }
+            }
+          }
+        }
+
+        // Draw glowing particles
+        for (let i = 0; i < particles.length; i++) {
+          const p = particles[i];
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(${p.color[0]}, ${p.color[1]}, ${p.color[2]}, ${p.alpha.toFixed(3)})`;
+          ctx.fill();
+
+          // Subtle halo around larger particles
+          if (p.radius > 1.25) {
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.radius * 2.4, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(${p.color[0]}, ${p.color[1]}, ${p.color[2]}, ${(p.alpha * 0.22).toFixed(3)})`;
+            ctx.fill();
+          }
+        }
+      }
+
+      function loop(timestamp) {
+        animFrameId = 0;
+        if (!isVisible || document.hidden || reducedMotion.matches) return;
+        if (timestamp - lastTime >= 24) { // ~40-60fps smooth
+          updateParticles();
+          draw();
+          lastTime = timestamp;
+        }
+        animFrameId = requestAnimationFrame(loop);
+      }
+
+      function syncMotion() {
+        if (isVisible && !document.hidden && !reducedMotion.matches && !animFrameId) {
+          animFrameId = requestAnimationFrame(loop);
+        } else if ((!isVisible || document.hidden || reducedMotion.matches) && animFrameId) {
+          cancelAnimationFrame(animFrameId);
+          animFrameId = 0;
+        }
+      }
+
+      // Pointer event listeners on footer
+      footer.addEventListener('pointermove', (e) => {
+        const rect = footer.getBoundingClientRect();
+        targetMouseX = e.clientX - rect.left;
+        targetMouseY = e.clientY - rect.top;
+      }, { passive: true });
+
+      footer.addEventListener('pointerleave', () => {
+        targetMouseX = -9999;
+        targetMouseY = -9999;
+      }, { passive: true });
+
+      // Viewport visibility
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver((entries) => {
+          isVisible = entries.some(entry => entry.isIntersecting);
+          syncMotion();
+        }, { threshold: 0.02 }).observe(footer);
+      } else {
+        isVisible = true;
+        syncMotion();
+      }
+
+      let resizeTimer = 0;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+          resize();
+          if (!animFrameId && isVisible) draw();
+        }, 150);
+      }, { passive: true });
+
+      document.addEventListener('visibilitychange', syncMotion);
+      reducedMotion.addEventListener?.('change', syncMotion);
+
+      draw();
+      syncMotion();
+    });
+  }
+
+  initFooterEffects();
+
+  // Dynamic spotlight glow and interactive hover physics for practice-method-band
+  const methodBands = document.querySelectorAll('.practice-method-band');
+  methodBands.forEach(band => {
+    band.addEventListener('mousemove', (e) => {
+      const rect = band.getBoundingClientRect();
+      const x = Math.round(e.clientX - rect.left);
+      const y = Math.round(e.clientY - rect.top);
+      band.style.setProperty('--mouse-x', `${x}px`);
+      band.style.setProperty('--mouse-y', `${y}px`);
+    }, { passive: true });
+  });
+
+  setLanguage(savedLang);
   }
 
   if (document.readyState === 'loading') {

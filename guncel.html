@@ -28,7 +28,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="icon" href="assets/images/psyche-structure-mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="app.css?v=5.44">
+  <link rel="stylesheet" href="app.css?v=5.60">
 </head>
 <body>
   <a class="skip-link" href="#mainContent" data-i18n="a11y.skipToContent">Ana içeriğe geç</a>
@@ -139,9 +139,15 @@
               </div>
             </div>
 
-            <!-- Visual Asset -->
-            <div class="news-feature-media" style="border-radius: var(--radius-inner); overflow: hidden; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-subtle); background: #FAF9F6;">
-              <img src="assets/images/spring26_final.jpg" alt="University at Buffalo CSPC Spring 2026 Symposium Afişi" width="792" height="1224" loading="lazy" decoding="async" style="width: 100%; height: auto; object-fit: contain; display: block;" data-zoomable>
+            <!-- Visual Asset: Tam Boy Sempozyum Afişi -->
+            <div class="news-feature-media news-poster-media" style="border-radius: var(--radius-inner); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-subtle); background: #FAF9F6; display: flex; align-items: center; justify-content: center; padding: 1rem; overflow: visible;">
+              <figure style="margin: 0; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                <img src="assets/images/spring26_final.jpg" alt="University at Buffalo CSPC Spring 2026 Symposium Afişi" width="792" height="1224" loading="lazy" decoding="async" class="news-poster-img" style="display: block; width: auto; max-width: 100%; height: auto; max-height: 560px; object-fit: contain; border-radius: calc(var(--radius-inner) - 6px); box-shadow: 0 4px 18px rgba(0,0,0,0.06); cursor: zoom-in;" data-zoomable>
+                <figcaption style="margin-top: 0.6rem; font-family: var(--font-sans); font-size: 0.78rem; color: var(--text-muted); display: inline-flex; align-items: center; gap: 0.35rem; cursor: pointer;" onclick="this.previousElementSibling.click()">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                  <span>Afişin tamamını yüksek çözünürlükte incelemek için tıklayınız</span>
+                </figcaption>
+              </figure>
             </div>
           </article>
 
@@ -174,27 +180,110 @@
             </div>
           </article>
 
-          <!-- Selected event photo from the supplied WhatsApp materials -->
+          <!-- Boğaziçi Üniversitesi XI. Psikoloji Günü: Yalnızlık & Psikanalitik Perspektif (Ayna Evresi) -->
           <article id="bogazici-2025" class="whats-new-card scroll-reveal curated-event-card">
-            <div class="curated-event-copy">
-              <div class="curated-event-date">27 NİSAN 2025 · BOĞAZİÇİ ÜNİVERSİTESİ</div>
-              <h2>XI. Psikoloji Günü: Yalnızlık</h2>
-              <p>“Yalnızlık ve Psikanalitik Perspektif” başlıklı konuşmadan seçilmiş bir kare. Etkinlik, Boğaziçi Üniversitesi XI. Psikoloji Günü kapsamında düzenlendi.</p>
-              <a class="btn btn-secondary btn-sm" href="yayinlar.html">Akademik çalışmaları incele &rarr;</a>
-            </div>
-            <div class="curated-event-gallery" aria-label="Boğaziçi Üniversitesi XI. Psikoloji Günü’nden seçilmiş fotoğraflar">
-              <figure class="curated-event-photo curated-event-photo-featured">
-                <img src="assets/images/bogazici-2025-talk-wide.jpg" alt="Dr. Ali İhsan Yaka Boğaziçi Üniversitesi XI. Psikoloji Günü’nde konuşmasını yaparken" data-i18n-alt="publication.bogaziciImageAlt" width="1800" height="1350" loading="lazy" decoding="async">
-                <figcaption>Boğaziçi Üniversitesi · 27 Nisan 2025</figcaption>
-              </figure>
-              <figure class="curated-event-photo">
-                <img src="assets/images/bogazici-psikoloji-gunu-2025.jpg" alt="Boğaziçi Üniversitesi XI. Psikoloji Günü’nde Ali İhsan Yaka’nın sunumundan" width="1653" height="1204" loading="lazy" decoding="async">
-                <figcaption>Yalnızlık ve psikanalitik perspektif</figcaption>
-              </figure>
-              <figure class="curated-event-photo">
-                <img src="assets/images/bogazici-2025-talk-closeup.jpg" alt="Boğaziçi Üniversitesi’nde Ayna Evresi sunumu sırasında Dr. Ali İhsan Yaka" width="1350" height="1800" loading="lazy" decoding="async">
-                <figcaption>Ayna Evresi sunumundan</figcaption>
-              </figure>
+            <!-- Top Masthead Bar: Event Accreditation & Meta -->
+            <header class="curated-event-masthead">
+              <div class="curated-event-badge-group">
+                <span class="curated-event-pill" data-i18n="news.bogaziciBadge">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  DAVETLİ KONUŞMACI &bull; BOĞAZİÇİ ÜNİVERSİTESİ XI. PSİKOLOJİ GÜNÜ
+                </span>
+              </div>
+              <time class="curated-event-location-stamp" datetime="2025-04-27" data-i18n="news.bogaziciLocation">
+                27 NİSAN 2025 &bull; ALBERT LONG HALL, İSTANBUL
+              </time>
+            </header>
+
+            <div class="curated-event-body-grid">
+              <!-- Left Column: Editorial & Theoretical Context -->
+              <div class="curated-event-copy">
+                <h2 data-i18n="news.bogaziciTitle">XI. Psikoloji Günü: Yalnızlık ve Psikanalitik Perspektif</h2>
+                <div class="curated-event-subtitle" data-i18n="news.bogaziciSubtitle">
+                  “Psikopatolojik Yalnızlıktan Subjektif Toplumsallığa: Psikanalitik Öznelleşme Deneyimi”
+                </div>
+                <p data-i18n="news.bogaziciDesc">
+                  Boğaziçi Üniversitesi Psikoloji Topluluğu davetiyle gerçekleştirilen bu konuşma; yalnızlığı salt bir sosyal soyutlanma ya da psikopatolojik semptom olarak değil, Lacanyen psikanalitik kuramın <strong>Ayna Evresi (Le stade du miroir)</strong>, imgesel yabancılaşma ve simgesel öznelleşme diyalektiği üzerinden irdeler. Bireyin Öteki (l'Autre) ile kurduğu bağın, psikopatolojik yalnızlıktan öznel toplumsallığa dönüşüm olanakları kürsü ve sunum şemaları eşliğinde tartışılmıştır.
+                </p>
+
+                <!-- Theoretical Anchors / Concept Chips -->
+                <div class="curated-event-chips" aria-label="Kuramsal anahtar kavramlar">
+                  <span class="theory-chip" data-i18n="news.bogaziciTag1">✦ Ayna Evresi (Le stade du miroir)</span>
+                  <span class="theory-chip" data-i18n="news.bogaziciTag2">✦ Lacanyen Psikanaliz</span>
+                  <span class="theory-chip" data-i18n="news.bogaziciTag3">✦ Simgesel Düzen &amp; Öteki</span>
+                  <span class="theory-chip" data-i18n="news.bogaziciTag4">✦ Öznel Toplumsallaşma</span>
+                </div>
+
+                <!-- Call to Action & Citation Reference -->
+                <div class="curated-event-actions">
+                  <a class="btn btn-primary curated-cta-btn" href="yayinlar.html#bogazici-2025">
+                    <span data-i18n="news.bogaziciCta">Akademik Çalışmaları İncele</span>
+                    <span class="btn-arrow-bubble" aria-hidden="true">&rarr;</span>
+                  </a>
+                  <a class="curated-secondary-link" href="yayinlar.html#bogazici-2025" data-i18n="news.bogaziciCitationLink">
+                    Yayın Kaydı: Yaka, A. İ. (2025) &rarr;
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right Column: Presentation Bento Gallery -->
+              <div class="curated-event-bento" aria-label="Boğaziçi Üniversitesi XI. Psikoloji Günü Sunum ve Sahne Arşivi">
+                <!-- 1. Featured Stage & Lectern Hero Shot -->
+                <figure class="bento-media bento-media-hero">
+                  <div class="bento-glass-tag" data-i18n="news.bogaziciStageBadge">
+                    KÜRSÜ &amp; SALON &bull; BOĞAZİÇİ ÜNİVERSİTESİ
+                  </div>
+                  <div class="bento-zoom-indicator" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                    <span data-i18n="news.bogaziciZoomHint">Büyüt</span>
+                  </div>
+                  <img src="assets/images/bogazici-2025-talk-wide.jpg"
+                       alt="Dr. Ali İhsan Yaka Boğaziçi Üniversitesi XI. Psikoloji Günü’nde konuşmasını yaparken"
+                       data-i18n-alt="publication.bogaziciImageAlt"
+                       width="1800" height="1350" loading="lazy" decoding="async" data-zoomable>
+                  <figcaption class="bento-caption">
+                    <strong data-i18n="news.bogaziciStageCaption">Boğaziçi Üniversitesi XI. Psikoloji Günü · 27 Nisan 2025</strong>
+                    <span class="bento-caption-sub" data-i18n="news.bogaziciStageDesc">Albert Long Hall, Davetli Konuşmacı Açılış Oturumu</span>
+                  </figcaption>
+                </figure>
+
+                <!-- Subgrid: Theoretical Slide & Speaker Discussion -->
+                <div class="bento-subgrid">
+                  <!-- 2. The Theoretical Slide (Ayna Evresi Sunumu) -->
+                  <figure class="bento-media bento-media-slide">
+                    <div class="bento-glass-tag" data-i18n="news.bogaziciSlideBadge">
+                      ✦ SUNUM SLAYDI &bull; AYNA EVRESİ
+                    </div>
+                    <div class="bento-zoom-indicator" aria-hidden="true">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </div>
+                    <img src="assets/images/bogazici-2025-talk-closeup.jpg"
+                         alt="Boğaziçi Üniversitesi’nde Ayna Evresi ve Psikanalitik Perspektif sunumu sırasında Dr. Ali İhsan Yaka"
+                         width="1350" height="1800" loading="lazy" decoding="async" data-zoomable>
+                    <figcaption class="bento-caption">
+                      <strong data-i18n="news.bogaziciSlideTitle">Ayna Evresi Sunumundan</strong>
+                      <span class="bento-caption-sub" data-i18n="news.bogaziciSlideDesc">Simgesel Düzen ve Psikanalitik Perspektif</span>
+                    </figcaption>
+                  </figure>
+
+                  <!-- 3. Discussion & Conceptual Focus -->
+                  <figure class="bento-media bento-media-speaker">
+                    <div class="bento-glass-tag" data-i18n="news.bogaziciSpeakerBadge">
+                      ÖZNELLEŞME DENEYİMİ
+                    </div>
+                    <div class="bento-zoom-indicator" aria-hidden="true">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </div>
+                    <img src="assets/images/bogazici-psikoloji-gunu-2025.jpg"
+                         alt="Boğaziçi Üniversitesi XI. Psikoloji Günü’nde Ali İhsan Yaka’nın sunumundan kürsü detayı"
+                         width="1653" height="1204" loading="lazy" decoding="async" data-zoomable>
+                    <figcaption class="bento-caption">
+                      <strong data-i18n="news.bogaziciSpeakerTitle">Yalnızlık ve Psikanalitik Perspektif</strong>
+                      <span class="bento-caption-sub" data-i18n="news.bogaziciSpeakerDesc">Öznel Toplumsallaşma Tartışması</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
             </div>
           </article>
 
@@ -267,6 +356,13 @@
 
   <!-- Site Footer -->
   <footer class="site-footer" role="contentinfo" id="siteFooter">
+    <div class="footer-ambient-effects" aria-hidden="true">
+      <div class="footer-top-beam"></div>
+      <div class="footer-ambient-orb footer-orb-1"></div>
+      <div class="footer-ambient-orb footer-orb-2"></div>
+      <div class="footer-ambient-orb footer-orb-3"></div>
+      <canvas class="footer-canvas"></canvas>
+    </div>
     <div class="container footer-container">
       
       <!-- 1. Main 3-Column Editorial Grid -->
@@ -340,6 +436,15 @@
 
     </div>
   </footer>
+
+  <!-- =====================================================================
+       IMAGE LIGHTBOX MODAL
+       ===================================================================== -->
+  <div id="imageLightbox" role="dialog" aria-modal="true" aria-label="Görsel Büyüteç" data-i18n-aria-label="lightbox.label">
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Kapat" data-i18n-aria-label="common.close">&times;</button>
+    <img id="lightboxImg" alt="">
+    <div id="lightboxCaption"></div>
+  </div>
 
   <script src="app.js?v=5.43"></script>
 </body>
