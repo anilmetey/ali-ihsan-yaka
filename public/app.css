@@ -4484,9 +4484,9 @@ body.splash-active { overflow: hidden; }
   pointer-events: none;
 }
 .hero-flow-motion { position:absolute; inset:0; display:block; width:100%; height:100%; overflow:visible; }
-.diagram-ghost { opacity:.12; }
-.diagram-labels { opacity:.1; }
-.flow-track { fill:none; stroke:#b27d3f; stroke-width:7; stroke-linecap:round; stroke-dasharray:3 34; opacity:.7; animation: lacanian-flow-dash 3s linear infinite; }
+.diagram-ghost { opacity:.114; }
+.diagram-labels { opacity:.095; }
+.flow-track { fill:none; stroke:#b27d3f; stroke-width:7; stroke-linecap:round; stroke-dasharray:3 34; opacity:.49; animation: lacanian-flow-dash 3s linear infinite; }
 .flow-lower { animation-duration:3.6s; animation-direction:reverse; }
 .flow-center { stroke:#5868a7; stroke-width:6; stroke-dasharray:3 28; animation-duration:2.6s; }
 @keyframes lacanian-flow-dash { to { stroke-dashoffset:-156px; } }
