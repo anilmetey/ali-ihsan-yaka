@@ -5231,3 +5231,15 @@ html.splash-visited #splashScreen.splash-screen {
 
 /* Directional S1/S2 movement, drawn from the paper's Figures 3–5. */
 .psyche-signature-mark{max-width:760px}.signature-thread,.signature-node,.signature-orbit{display:none}.home-loop{fill:none;stroke:#8996ad;stroke-width:1.7;stroke-dasharray:7 7;animation:signature-flow 11s linear infinite}.home-loop-return{animation-direction:reverse}.home-horizontal{fill:none;stroke:#6074a5;stroke-width:2;stroke-dasharray:8 8;animation:signature-flow 3.4s linear infinite}.home-vertical{fill:none;stroke:#b48a50;stroke-width:2;stroke-dasharray:7 7;animation:home-rise 4s linear infinite}.home-vertical:nth-of-type(7){animation-delay:-1.3s}.home-vertical:nth-of-type(8){animation-delay:-2.6s}.home-crossing{fill:#fff;stroke:#b48a50;stroke-width:2;animation:signature-orbit 3s ease-in-out infinite alternate}@keyframes home-rise{from{stroke-dashoffset:80}to{stroke-dashoffset:-80}}
+
+/* Keep the original full diagram and tune only its vector directions. */
+.psyche-diagram[data-active="true"] .psyche-connector:not(.psyche-connector-soft){animation:psyche-flow-horizontal 8s linear infinite!important}
+.psyche-diagram[data-active="true"] .psyche-connector:not(.psyche-connector-soft):nth-of-type(2n){animation-delay:-2s!important}
+.psyche-diagram[data-active="true"] .psyche-mirror-spine,.psyche-diagram[data-active="true"] .psyche-relation{stroke-dasharray:7 9;animation:psyche-flow-upward 8s linear infinite!important}
+.psyche-diagram[data-active="true"] .psyche-relation:nth-of-type(2n){animation-delay:-2.5s!important}
+@keyframes psyche-flow-horizontal{to{stroke-dashoffset:-112}}
+@keyframes psyche-flow-upward{to{stroke-dashoffset:112}}
+.psyche-research-note{max-width:70ch;margin:1rem auto 0;text-align:center;color:var(--text-muted);font-size:.9rem;line-height:1.6}
+.psyche-research-note a{color:var(--color-primary);font-weight:600;text-underline-offset:3px}
+
+@media(prefers-reduced-motion:reduce){.psyche-diagram[data-active="true"] .psyche-connector,.psyche-diagram[data-active="true"] .psyche-mirror-spine,.psyche-diagram[data-active="true"] .psyche-relation{animation:none!important}}
