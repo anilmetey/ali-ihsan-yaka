@@ -1,4 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" fill="none" aria-hidden="true">
+  <style>
+    .flow-pulse { stroke-dasharray: 3 48; animation: flow-travel 8s linear infinite; }
+    .flow-pulse.reverse { animation-direction: reverse; animation-duration: 10s; }
+    @keyframes flow-travel { to { stroke-dashoffset: -255; } }
+    @media (prefers-reduced-motion: reduce) { .flow-pulse { animation: none; } }
+  </style>
   <g stroke="#3e638c" stroke-linecap="round" stroke-linejoin="round">
     <path d="M104 132C220 20 933 20 1084 132" stroke-width="9"/>
     <path d="M1084 428C930 540 230 540 104 428" stroke-width="9"/>
@@ -10,6 +16,10 @@
     <path d="M420 242c27-32 53-32 80 0s53 32 80 0 53-32 80 0" stroke-width="7"/>
     <path d="M420 318c27 32 53 32 80 0s53-32 80 0 53 32 80 0" stroke-width="7"/>
     <path d="M472 218v124m56-112v100m56-112v124" stroke-width="6"/>
+  </g>
+  <g fill="none" stroke="#b27d3f" stroke-width="5" stroke-linecap="round" opacity=".85">
+    <path class="flow-pulse" d="M104 132C220 20 933 20 1084 132"/>
+    <path class="flow-pulse reverse" d="M1084 428C930 540 230 540 104 428"/>
   </g>
   <circle cx="528" cy="280" r="10" fill="#b27d3f"/>
 </svg>
