@@ -5297,3 +5297,11 @@ html.splash-visited #splashScreen.splash-screen {
 
 /* On phones show the same complete diagram scaled to the viewport. */
 @media(max-width:760px){.psyche-diagram-frame{display:block!important;overflow:hidden!important;width:100%;}.psyche-diagram-svg{display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;height:auto!important;}.psyche-mobile-map{display:none!important}.psyche-pan-hint{display:none!important}}
+
+/* Nested return paths shown in the article's full graph. */
+.model-inner-loop{fill:none;stroke:#6e83a8;stroke-width:2.5;stroke-dasharray:8 8;stroke-linecap:round;animation:figure-loop-flow 7s linear infinite}.model-s2-forward{animation-delay:-3.5s}.model-s1-return,.model-s1-forward{stroke:#b58a50;stroke-width:2;animation-duration:5s}.model-transition{fill:none;stroke:#536c9b;stroke-width:2.2;stroke-dasharray:6 7;stroke-linecap:round;animation:figure-forward 4.5s linear infinite}.model-transition-message{animation-delay:.25s}
+@media(max-width:760px){.model-inner-transitions,.model-loop,.model-forward,.model-up,.model-down{animation-duration:7s}}
+@media(prefers-reduced-motion:reduce){.model-inner-loop,.model-transition{animation:none!important}}
+
+.model-stage-down{fill:none;stroke:#536c9b;stroke-width:2.2;stroke-dasharray:6 8;stroke-linecap:round;animation:figure-down 5s linear infinite}
+@media(prefers-reduced-motion:reduce){.model-stage-down{animation:none!important}}
