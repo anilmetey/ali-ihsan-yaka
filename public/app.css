@@ -4488,22 +4488,17 @@ body.splash-active { overflow: hidden; }
   pointer-events: none;
   animation: lacanian-flow-drift 12s ease-in-out infinite alternate;
 }
-.hero-lacanian-flow::before,
-.hero-lacanian-flow::after { content:""; position:absolute; inset:0; background:url("assets/images/lacanian-flow-overlay.svg") center / contain no-repeat; }
+.hero-lacanian-flow::before { content:""; position:absolute; inset:0; background:url("assets/images/lacanian-flow-overlay.svg") center / contain no-repeat; }
 .hero-lacanian-flow::before { opacity:.12; }
-.hero-lacanian-flow::after {
-  background:linear-gradient(105deg,transparent 37%,rgba(178,125,63,.95) 48%,rgba(255,255,255,.85) 50%,rgba(178,125,63,.95) 52%,transparent 63%);
-  background-size:240% 100%;
-  -webkit-mask:url("assets/images/lacanian-flow-overlay.svg") center / contain no-repeat;
-  mask:url("assets/images/lacanian-flow-overlay.svg") center / contain no-repeat;
-  opacity:.82;
-  animation: lacanian-flow-sweep 4.2s linear infinite;
-}
+.hero-flow-motion { position:absolute; inset:0; display:block; width:100%; height:100%; overflow:visible; }
+.flow-track { fill:none; stroke:#b27d3f; stroke-width:9; stroke-linecap:round; stroke-dasharray:2 42; animation: lacanian-flow-dash 4s linear infinite; }
+.flow-lower { animation-duration:4.6s; animation-direction:reverse; }
+.flow-center { stroke:#5868a7; stroke-width:8; stroke-dasharray:2 30; animation-duration:2.8s; }
 @keyframes lacanian-flow-drift {
   from { transform: translate(-51%, -50.5%) scale(.99); }
   to { transform: translate(-49%, -49.5%) scale(1.02); }
 }
-@keyframes lacanian-flow-sweep { from { background-position: 100% 0; } to { background-position: -140% 0; } }
+@keyframes lacanian-flow-dash { to { stroke-dashoffset:-220px; } }
 .hero-art-grid > :first-child { position: relative; isolation: isolate; }
 .hero-art-grid > :first-child > :not(.hero-lacanian-flow) { position: relative; z-index: 1; }
 .hero-particle-field canvas { display:block;width:100%;height:100%; }
@@ -4514,7 +4509,7 @@ body.splash-active { overflow: hidden; }
 @media (prefers-reduced-motion:reduce) {
   .hero-particle-field { opacity:.58; }
   .hero-lacanian-flow { animation: none; }
-  .hero-lacanian-flow::after { animation: none; opacity: .12; }
+  .flow-track { animation: none; }
 }
 
 /* Final splash overrides: independent full-screen surface, no card frame. */
