@@ -4477,38 +4477,28 @@ body.splash-active { overflow: hidden; }
   mask-image:radial-gradient(ellipse at center,#000 28%,rgba(0,0,0,.82) 58%,transparent 96%);
 }
 .hero-lacanian-flow {
-  position: absolute;
-  z-index: 0;
-  top: 10%;
-  left: 50%;
-  width: min(110%, 980px);
-  aspect-ratio: 1200 / 560;
-  transform: translate(-50%, -50%);
+  position: relative;
+  z-index: 1;
+  width: min(100%, 25rem);
+  aspect-ratio: 1200 / 360;
+  margin: .35rem 0 1rem;
   isolation: isolate;
   pointer-events: none;
-  animation: lacanian-flow-drift 12s ease-in-out infinite alternate;
 }
-.hero-lacanian-flow::before { content:""; position:absolute; inset:0; background:url("assets/images/lacanian-flow-overlay.svg") center / contain no-repeat; }
-.hero-lacanian-flow::before { opacity:.12; }
+.hero-lacanian-flow::before { content:""; position:absolute; inset:0; background:url("assets/images/lacanian-flow-overlay.svg") center / 100% 100% no-repeat; }
+.hero-lacanian-flow::before { opacity:.09; }
 .hero-flow-motion { position:absolute; inset:0; display:block; width:100%; height:100%; overflow:visible; }
-.flow-track { fill:none; stroke:#b27d3f; stroke-width:9; stroke-linecap:round; stroke-dasharray:2 42; animation: lacanian-flow-dash 4s linear infinite; }
-.flow-lower { animation-duration:4.6s; animation-direction:reverse; }
-.flow-center { stroke:#5868a7; stroke-width:8; stroke-dasharray:2 30; animation-duration:2.8s; }
-@keyframes lacanian-flow-drift {
-  from { transform: translate(-51%, -50.5%) scale(.99); }
-  to { transform: translate(-49%, -49.5%) scale(1.02); }
-}
-@keyframes lacanian-flow-dash { to { stroke-dashoffset:-220px; } }
-.hero-art-grid > :first-child { position: relative; isolation: isolate; }
-.hero-art-grid > :first-child > :not(.hero-lacanian-flow) { position: relative; z-index: 1; }
+.flow-track { fill:none; stroke:#b27d3f; stroke-width:11; stroke-linecap:round; stroke-dasharray:3 36; animation: lacanian-flow-dash 2.8s linear infinite; }
+.flow-lower { animation-duration:3.2s; animation-direction:reverse; }
+.flow-center { stroke:#5868a7; stroke-width:10; stroke-dasharray:3 26; animation-duration:2.2s; }
+@keyframes lacanian-flow-dash { to { stroke-dashoffset:-156px; } }
 .hero-particle-field canvas { display:block;width:100%;height:100%; }
 @media (max-width:760px) {
-  .hero-lacanian-flow { top: 10%; left: 50%; width: 116vw; }
+  .hero-lacanian-flow { width: min(86vw, 25rem); margin: .2rem auto .8rem; }
   .hero-particle-field { top:43%;left:50%;width:min(94vw,520px);opacity:.78; }
 }
 @media (prefers-reduced-motion:reduce) {
   .hero-particle-field { opacity:.58; }
-  .hero-lacanian-flow { animation: none; }
   .flow-track { animation: none; }
 }
 
