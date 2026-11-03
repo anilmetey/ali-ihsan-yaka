@@ -3705,7 +3705,7 @@ textarea.form-control {
   .news-event-card { padding: 1rem !important; border-radius: .85rem !important; }
   .news-event-card > div:first-child > div:first-child:not(.news-feature-media) { font-size: .63rem !important; letter-spacing: .025em; }
   .news-event-card h2 { font-size: 1.4rem !important; line-height: 1.2 !important; margin-bottom: .7rem !important; }
-  .news-feature-media { height: clamp(260px,78vw,350px); }
+  .news-feature-media { height: clamp(190px,55vw,230px); }
   .news-event-card .btn { width: 100%; justify-content: center; }
   .curated-event-card { padding: 1rem; }
   .curated-event-date { font-size: .68rem; }
