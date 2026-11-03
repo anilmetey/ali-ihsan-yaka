@@ -5243,3 +5243,6 @@ html.splash-visited #splashScreen.splash-screen {
 .psyche-research-note a{color:var(--color-primary);font-weight:600;text-underline-offset:3px}
 
 @media(prefers-reduced-motion:reduce){.psyche-diagram[data-active="true"] .psyche-connector,.psyche-diagram[data-active="true"] .psyche-mirror-spine,.psyche-diagram[data-active="true"] .psyche-relation{animation:none!important}}
+
+/* Keep the full head inside the mobile About portrait crop. */
+@media(max-width:760px){.about-portrait img{object-position:center top!important}}
