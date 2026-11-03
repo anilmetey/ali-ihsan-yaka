@@ -5294,3 +5294,6 @@ html.splash-visited #splashScreen.splash-screen {
 @media(max-width:760px){.mv-down{display:inline-block;color:#b58a50;font-size:1.15rem;font-style:normal;line-height:1;animation:mobile-down-nudge 1.8s ease-in-out infinite}.mobile-axis-link .mv-up{display:none}}
 @keyframes mobile-down-nudge{0%,100%{transform:translateY(-2px);opacity:.65}50%{transform:translateY(2px);opacity:1}}
 @media(prefers-reduced-motion:reduce){.model-down,.mv-down{animation:none!important}}
+
+/* On phones show the same complete diagram scaled to the viewport. */
+@media(max-width:760px){.psyche-diagram-frame{display:block!important;overflow:hidden!important;width:100%;}.psyche-diagram-svg{display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;height:auto!important;}.psyche-mobile-map{display:none!important}.psyche-pan-hint{display:none!important}}
