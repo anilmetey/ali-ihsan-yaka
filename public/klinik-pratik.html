@@ -28,7 +28,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="icon" href="assets/images/psyche-structure-mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="app.css?v=5.43">
+  <link rel="stylesheet" href="app.css?v=5.60">
 </head>
 <body>
   <a class="skip-link" href="#mainContent" data-i18n="a11y.skipToContent">Ana içeriğe geç</a>
@@ -36,12 +36,18 @@
   <!-- Site Header -->
   <header class="site-header" role="banner" id="siteHeader">
     <div class="container header-inner">
-      <a href="index.html" class="brand-block" aria-label="Dr. Ali İhsan Yaka">
-        <div class="brand-logo-mark" aria-hidden="true"><img class="brand-logo-svg" src="assets/images/psyche-structure-mark.svg" alt="" width="36" height="36"></div>
-        <div class="brand-text">
-          <span class="brand-title">Dr. Ali İhsan Yaka</span>
-          <span class="brand-sub">Doktor Klinik Psikolog &bull; Ph.D.</span>
-        </div>
+      <a href="index.html" class="brand-block" aria-label="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek">
+        <span class="brand-logo-frame">
+          <picture>
+            <source srcset="assets/images/ali-ihsan-yaka-logo-4k.webp" type="image/webp">
+            <img class="brand-logo-full" src="assets/images/ali-ihsan-yaka-logo-4k.png" alt="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek" width="4096" height="1480" fetchpriority="high" decoding="async">
+          </picture>
+          <svg class="brand-orbit-svg" viewBox="0 0 410 148" fill="none" aria-hidden="true" preserveAspectRatio="none">
+            <rect class="brand-orbit-base" x="2" y="2" width="406" height="144" rx="72"/>
+            <rect class="brand-orbit-runner" x="2" y="2" width="406" height="144" rx="72"/>
+            <rect class="brand-orbit-inner" x="6" y="6" width="398" height="136" rx="68"/>
+          </svg>
+        </span>
       </a>
 
       <!-- Multi-Page Standalone Navigation: Each link opens its dedicated page -->
@@ -78,7 +84,19 @@
   <!-- Mobile Drawer: Standalone Multi-Page Links -->
   <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobil Menü" data-i18n-aria-label="nav.mobileMenu">
     <div class="drawer-panel">
-      <div class="drawer-header"><a href="index.html" class="drawer-brand" aria-label="Dr. Ali İhsan Yaka"><img src="assets/images/psyche-structure-mark.svg" alt="" width="42" height="42" aria-hidden="true"><span><strong>Dr. Ali İhsan Yaka</strong><small data-i18n="header.sub">Doktor Klinik Psikolog • Ph.D.</small></span></a><button type="button" class="drawer-close" id="drawerClose" aria-label="Kapat" data-i18n-aria-label="common.close">&times;</button></div>
+      <div class="drawer-header"><a href="index.html" class="drawer-brand" aria-label="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek">
+          <span class="brand-logo-frame brand-logo-frame-drawer">
+            <picture>
+              <source srcset="assets/images/ali-ihsan-yaka-logo-4k.webp" type="image/webp">
+              <img class="brand-logo-full" src="assets/images/ali-ihsan-yaka-logo-4k.png" alt="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek" width="4096" height="1480" decoding="async">
+            </picture>
+            <svg class="brand-orbit-svg" viewBox="0 0 410 148" fill="none" aria-hidden="true" preserveAspectRatio="none">
+              <rect class="brand-orbit-base" x="2" y="2" width="406" height="144" rx="72"/>
+              <rect class="brand-orbit-runner" x="2" y="2" width="406" height="144" rx="72"/>
+              <rect class="brand-orbit-inner" x="6" y="6" width="398" height="136" rx="68"/>
+            </svg>
+          </span>
+        </a><button type="button" class="drawer-close" id="drawerClose" aria-label="Kapat" data-i18n-aria-label="common.close">&times;</button></div>
       <ul class="drawer-links">
         <li><a href="index.html" class="drawer-link" data-i18n="nav.home">Ana Sayfa</a></li>
         <li><a href="hakkimda.html" class="drawer-link" data-i18n="nav.about">Hakkında</a></li>
@@ -385,51 +403,44 @@
       </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="section" style="padding: 4rem 0;">
+    <!-- Clinical Process & Initial Consultation Paragraphs Section -->
+    <section class="section" style="padding: 4.5rem 0;">
       <div class="container container-narrow">
         <div style="text-align: center; margin-bottom: 2.5rem;">
-          <div class="section-pill" data-i18n="practice.faqEyebrow">SIKÇA SORULAN SORULAR</div>
-          <h2 data-i18n="practice.faqTitle" style="font-size: 2.1rem; margin-top: 0.5rem; color: var(--text-heading);">
-            Süreç Hakkında Merak Edilenler
+          <div class="section-pill" data-i18n="practice.faqEyebrow">KLİNİK SÜREÇ & ÇERÇEVE</div>
+          <h2 data-i18n="practice.faqTitle" style="font-size: clamp(1.85rem, 3vw, 2.35rem); margin-top: 0.6rem; color: var(--text-heading); letter-spacing: -0.015em;">
+            Ön Görüşme ve Seans Çerçevesi
           </h2>
         </div>
 
-        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-          <div style="background: #FFFFFF; border: 1px solid var(--border-light); border-radius: var(--radius-inner); padding: 1.5rem;">
-            <h3 data-i18n="practice.faq1Title" style="font-size: 1.15rem; color: var(--text-heading); margin-bottom: 0.5rem;">
-              Ön görüşme süreci nasıl işler?
-            </h3>
-            <p data-i18n="practice.faq1Desc" style="color: var(--text-main); font-size: 0.95rem; line-height: 1.6;">
-              Ön görüşme (ilk seans), danışanın terapiye geliş sebebini, beklentilerini ve psikanalitik çalışmaya uygunluğunu değerlendirdiğimiz karşılıklı bir tanışma seansıdır. Bu seansta seans sıklığı, çalışma dili ve çerçeve detayları netleştirilir.
+        <article style="background: #FFFFFF; border: 1px solid var(--border-light); border-radius: var(--radius-outer); padding: clamp(1.75rem, 4vw, 2.75rem); box-shadow: var(--shadow-card);">
+          <div style="display: flex; flex-direction: column; gap: 1.35rem; color: var(--text-main); font-size: 1.02rem; line-height: 1.8;">
+            <p data-i18n="practice.faq1Desc" style="margin: 0;">
+              Psikanalitik çalışma, danışan ile analist arasında karşılıklı bir tanışma niteliği taşıyan ön görüşme (ilk seans) ile başlar. Bu ilk buluşmada danışanın terapiye geliş sebebi, beklentileri ve psikanalitik çalışmaya uygunluğu birlikte değerlendirilir; seans sıklığı, çalışma dili ve analitik çerçevenin temel esasları netleştirilir.
+            </p>
+            <p data-i18n="practice.faq2Desc" style="margin: 0;">
+              Görüşmeler, danışanın ihtiyaçlarına ve coğrafi koşullarına bağlı olarak yüz yüze veya çevrim içi (online) olarak yürütülür. Online seansların sizin için uygunluğu ilk görüşmede ele alınırken; kullanılacak platform, saat dilimi ve güncel randevu uygunluğu süreç öncesinde karşılıklı olarak netleştirilir.
+            </p>
+            <p data-i18n="practice.faq3Desc" style="margin: 0;">
+              Öznenin kendi hakikatine ve bilinçdışı süreçlerine temas edebilmesi için dil kurucu bir öneme sahiptir. Bu doğrultuda seanslar, danışanın kendisini en rahat, sansürsüz ve sahici biçimde ifade edebildiği dilde; <strong>Türkçe</strong>, <strong>İngilizce</strong> veya <strong>Kurmancî</strong> olarak gerçekleştirilmektedir.
             </p>
           </div>
 
-          <div style="background: #FFFFFF; border: 1px solid var(--border-light); border-radius: var(--radius-inner); padding: 1.5rem;">
-            <h3 data-i18n="practice.faq2Title" style="font-size: 1.15rem; color: var(--text-heading); margin-bottom: 0.5rem;">
-              Online seanslar yüz yüze seanslar kadar verimli midir?
-            </h3>
-            <p data-i18n="practice.faq2Desc" style="color: var(--text-main); font-size: 0.95rem; line-height: 1.6;">
-              Online görüşmelerin sizin için uygun olup olmadığı ilk görüşmede konuşulabilir. Kullanılacak platform, saat dilimi ve güncel uygunluk randevu öncesinde netleştirilir.
-            </p>
+          <div style="margin-top: 2.25rem; padding-top: 1.75rem; border-top: 1px solid var(--border-subtle); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.25rem;">
+            <div>
+              <strong data-i18n="practice.faqCtaTitle" style="color: var(--text-heading); font-size: 1.05rem; display: block; margin-bottom: 0.2rem;">
+                İlk adımı birlikte planlayalım.
+              </strong>
+              <span data-i18n="practice.faqCtaNote" style="color: var(--text-muted); font-size: 0.9rem;">
+                Ön görüşme detayları ve uygunluk için doğrudan iletişime geçebilirsiniz.
+              </span>
+            </div>
+            <a href="iletisim.html" class="btn btn-primary" style="white-space: nowrap;">
+              <span data-i18n="practice.faqCta">Ön Görüşme Randevusu Başlat</span>
+              <span class="btn-icon-bubble">&rarr;</span>
+            </a>
           </div>
-
-          <div style="background: #FFFFFF; border: 1px solid var(--border-light); border-radius: var(--radius-inner); padding: 1.5rem;">
-            <h3 data-i18n="practice.faq3Title" style="font-size: 1.15rem; color: var(--text-heading); margin-bottom: 0.5rem;">
-              Hangi dillerde seans alabilirim?
-            </h3>
-            <p data-i18n="practice.faq3Desc" style="color: var(--text-main); font-size: 0.95rem; line-height: 1.6;">
-              Seanslar danışanın kendisini en rahat ve sahici biçimde ifade ettiği dilde; Türkçe, İngilizce veya Kurmancî olarak gerçekleştirilebilmektedir.
-            </p>
-          </div>
-        </div>
-
-        <div style="text-align: center; margin-top: 3rem;">
-          <a href="iletisim.html" class="btn btn-primary">
-            <span data-i18n="practice.faqCta">Ön Görüşme Randevusu Başlat</span>
-            <span class="btn-icon-bubble">&rarr;</span>
-          </a>
-        </div>
+        </article>
       </div>
     </section>
   </main>
@@ -448,6 +459,19 @@
       <!-- 1. Main 3-Column Editorial Grid -->
       <div class="footer-main-grid">
         <div>
+          <a href="index.html" class="footer-brand-lockup" aria-label="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek">
+            <span class="brand-logo-frame brand-logo-frame-footer">
+              <picture>
+                <source srcset="assets/images/ali-ihsan-yaka-logo-4k.webp" type="image/webp">
+                <img class="brand-logo-full" src="assets/images/ali-ihsan-yaka-logo-4k.png" alt="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek" width="4096" height="1480" loading="lazy" decoding="async">
+              </picture>
+              <svg class="brand-orbit-svg" viewBox="0 0 410 148" fill="none" aria-hidden="true" preserveAspectRatio="none">
+                <rect class="brand-orbit-base" x="2" y="2" width="406" height="144" rx="72"/>
+                <rect class="brand-orbit-runner" x="2" y="2" width="406" height="144" rx="72"/>
+                <rect class="brand-orbit-inner" x="6" y="6" width="398" height="136" rx="68"/>
+              </svg>
+            </span>
+          </a>
           <div class="footer-brand-title">Dr. Ali İhsan Yaka, Ph.D.</div>
           <div class="footer-brand-sub" data-i18n="footer.brandSub">Doktor Klinik Psikolog &bull; Psikanalist</div>
           <p class="footer-intro" data-i18n="footer.ethos">

@@ -4124,6 +4124,358 @@ textarea.form-control {
 @media (prefers-reduced-motion: reduce) { #splashScreen *, .curated-event-card * { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
 #splashScreen.splash-screen.is-hidden { display: none !important; }
 
+/* ==========================================================================
+   CLINICAL ETHICS & FRAMEWORK SHOWCASE (Klinik Çerçeve & Ücret/Uygunluk)
+   Agency-grade editorial layout: Double-bezel, SVG micro-icons, refined cards
+   ========================================================================== */
+
+.clinical-ethics-section {
+  background: var(--bg-subtle, #F9F9FC) !important;
+  border-top: 1px solid var(--border-light, #EAEAEF) !important;
+  border-bottom: 1px solid var(--border-light, #EAEAEF) !important;
+  padding: clamp(3.5rem, 5.5vw, 5rem) 0 !important;
+  position: relative;
+}
+
+.clinical-ethics-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.95fr);
+  gap: clamp(1.75rem, 3.5vw, 2.75rem);
+  align-items: stretch;
+}
+
+/* Left Card: Setting & Ethics */
+.clinical-ethics-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #FFFFFF;
+  border: 1px solid rgba(78, 91, 166, 0.16);
+  border-radius: var(--radius-outer, 24px);
+  padding: clamp(1.75rem, 3vw, 2.5rem);
+  box-shadow: 0 16px 44px -10px rgba(22, 24, 31, 0.06), 0 1px 3px rgba(22, 24, 31, 0.03);
+  position: relative;
+  overflow: hidden;
+  transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 280ms ease;
+}
+
+.clinical-ethics-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-primary, #4E5BA6) 0%, rgba(78, 91, 166, 0.2) 100%);
+}
+
+.clinical-ethics-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 52px -12px rgba(78, 91, 166, 0.12);
+}
+
+.clinical-ethics-header {
+  margin-bottom: 1.25rem;
+}
+
+.clinical-ethics-header .section-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.85rem;
+  font-size: 0.76rem;
+  letter-spacing: 0.07em;
+  font-weight: 700;
+}
+
+.clinical-ethics-header .ethics-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-primary, #4E5BA6);
+  box-shadow: 0 0 0 3px rgba(78, 91, 166, 0.2);
+  display: inline-block;
+}
+
+.clinical-ethics-card h2 {
+  font-size: clamp(1.75rem, 2.6vw, 2.25rem);
+  color: var(--text-heading);
+  line-height: 1.22;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.clinical-ethics-lead {
+  color: var(--text-main);
+  line-height: 1.7;
+  font-size: 0.98rem;
+  margin: 0;
+}
+
+/* Feature Tiles List */
+.ethics-tiles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+}
+
+.ethics-tile {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 1.15rem;
+  background: var(--bg-subtle, #F9F9FC);
+  border: 1px solid rgba(78, 91, 166, 0.1);
+  border-radius: var(--radius-inner, 16px);
+  transition: all 220ms ease;
+}
+
+.ethics-tile:hover {
+  background: #FFFFFF;
+  border-color: rgba(78, 91, 166, 0.28);
+  box-shadow: 0 6px 20px -6px rgba(78, 91, 166, 0.1);
+  transform: translateX(3px);
+}
+
+.ethics-tile-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: rgba(78, 91, 166, 0.08);
+  color: var(--color-primary, #4E5BA6);
+  display: grid;
+  place-items: center;
+  transition: background 200ms ease, color 200ms ease;
+}
+
+.ethics-tile:hover .ethics-tile-icon {
+  background: var(--color-primary, #4E5BA6);
+  color: #FFFFFF;
+}
+
+.ethics-tile-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.ethics-tile-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.ethics-tile-title {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  line-height: 1.35;
+  margin-bottom: 0.25rem;
+}
+
+.ethics-tile-desc {
+  font-size: 0.88rem;
+  color: var(--text-main);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Right Card: Fees & Availability */
+.clinical-fees-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(145deg, #FFFFFF 0%, #FDFBF7 100%);
+  border: 1px solid rgba(212, 130, 20, 0.24);
+  border-radius: var(--radius-outer, 24px);
+  padding: clamp(1.75rem, 3vw, 2.5rem);
+  box-shadow: 0 16px 44px -10px rgba(212, 130, 20, 0.07), 0 1px 3px rgba(0, 0, 0, 0.03);
+  position: relative;
+  overflow: hidden;
+  transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 280ms ease;
+}
+
+.clinical-fees-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-secondary, #D48214) 0%, #E6A13D 100%);
+}
+
+.clinical-fees-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 52px -12px rgba(212, 130, 20, 0.15);
+}
+
+.fees-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  font-family: var(--font-mono, monospace);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--color-secondary, #D48214);
+  background: var(--color-secondary-soft, rgba(212, 130, 20, 0.08));
+  border: 1px solid rgba(212, 130, 20, 0.22);
+  border-radius: var(--radius-pill, 9999px);
+  margin-bottom: 0.85rem;
+}
+
+.fees-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-secondary, #D48214);
+  box-shadow: 0 0 0 3px rgba(212, 130, 20, 0.2);
+  display: inline-block;
+}
+
+.clinical-fees-card h3 {
+  font-size: clamp(1.5rem, 2.2vw, 1.95rem);
+  color: var(--text-heading);
+  line-height: 1.25;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.015em;
+}
+
+.fees-lead {
+  color: var(--text-main);
+  line-height: 1.65;
+  font-size: 0.94rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Points list */
+.fees-points-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1.25rem 0 1.75rem;
+  padding: 1rem 1.15rem;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(212, 130, 20, 0.16);
+  border-radius: var(--radius-inner, 16px);
+}
+
+.fees-point-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--text-main);
+}
+
+.fees-point-item .point-bullet {
+  color: var(--color-secondary, #D48214);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.fees-point-item strong {
+  color: var(--text-heading);
+  font-weight: 600;
+}
+
+/* CTA & Reassurance */
+.fees-action-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.fees-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.75rem 1.35rem;
+  border-radius: var(--radius-pill, 9999px);
+  background: linear-gradient(135deg, var(--color-primary, #4E5BA6) 0%, #3B4687 100%);
+  color: #FFFFFF !important;
+  font-weight: 600;
+  font-size: 0.94rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 6px 20px rgba(78, 91, 166, 0.28);
+  transition: all 240ms cubic-bezier(0.22, 1, 0.36, 1);
+  text-decoration: none;
+}
+
+.fees-cta-btn:hover {
+  background: linear-gradient(135deg, #3E4A94 0%, #2E3875 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(78, 91, 166, 0.38);
+}
+
+.fees-cta-btn .btn-arrow-bubble {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.24);
+  font-size: 0.95rem;
+  transition: transform 220ms ease;
+}
+
+.fees-cta-btn:hover .btn-arrow-bubble {
+  transform: translateX(3px);
+}
+
+.fees-reassurance {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.fees-reassurance svg {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  color: var(--color-primary, #4E5BA6);
+}
+
+/* Responsive for Clinical Ethics */
+@media (max-width: 900px) {
+  .clinical-ethics-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .clinical-ethics-card,
+  .clinical-fees-card {
+    padding: 1.25rem !important;
+    border-radius: var(--radius-inner, 16px) !important;
+  }
+  .ethics-tile {
+    padding: 0.85rem;
+    gap: 0.75rem;
+  }
+  .ethics-tile-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+  }
+  .ethics-tile-icon svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+
 /* Fieldwork archive: the markup previously had no matching timeline styles. */
 .field-timeline {
   position: relative;
