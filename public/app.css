@@ -11889,13 +11889,21 @@ html.splash-visited #splashScreen.splash-screen {
 .model-headings .model-subhead { fill: #5A6682; }
 .model-headings .model-sidehead { fill: #C88218; }
 .model-row-labels, .model-structures, .model-speech { fill: #1B2438; }
-.model-loop, .model-inner-loop, .model-forward, .model-transition, .model-stage-down { stroke: #3D5690; stroke-dasharray: none !important; animation: none !important; }
+@keyframes arrowLoopMarch {
+  to { stroke-dashoffset: -32; }
+}
+@keyframes arrowInnerMarch {
+  to { stroke-dashoffset: -24; }
+}
+.model-loop, .model-inner-loop { stroke: #3D5690; stroke-dasharray: 10 6 !important; animation: arrowLoopMarch 1.8s linear infinite !important; }
+.model-forward, .model-transition, .model-stage-down { stroke: #3D5690; stroke-dasharray: 8 4 !important; animation: arrowInnerMarch 1.5s linear infinite !important; }
 .model-loop-label { fill: #4E5BA6; }
-.model-up, .model-down, .model-code-arc, .model-s1-return path, .model-s1-return, .model-s1-forward { stroke: #B8791E; stroke-dasharray: none !important; animation: none !important; }
-.model-mirror-axis { stroke: #3D5690 !important; }
+.model-up, .model-down, .model-code-arc, .model-s1-return path, .model-s1-return, .model-s1-forward { stroke: #B8791E; stroke-dasharray: 8 4 !important; animation: arrowInnerMarch 1.5s linear infinite !important; }
+.model-mirror-axis { stroke: #3D5690 !important; stroke-dasharray: 10 6 !important; animation: arrowLoopMarch 1.6s linear infinite !important; }
+.model-s1-axis { stroke-dasharray: 10 6 !important; animation: arrowLoopMarch 1.6s linear infinite !important; }
 .model-axis-label { fill: #C88218; }
-.model-traveler { fill: #4E5BA6; filter: drop-shadow(0 0 4px rgba(78,91,166,0.55)); }
-.model-traveler-gold { fill: #C88218; filter: drop-shadow(0 0 4px rgba(200,130,24,0.55)); }
+.model-traveler { fill: #354B84; filter: none; }
+.model-traveler-gold { fill: #B8791E; filter: none; }
 #psyche-arrow-blue path { fill: #4E5BA6; }
 #psyche-arrow-gold path { fill: #C88218; }
 /* calmer motion */
@@ -12899,10 +12907,21 @@ html.splash-visited #splashScreen.splash-screen {
   pointer-events: none;
 }
 
-.wa-chathead svg {
+.wa-chathead,
+.wa-chathead:hover,
+.wa-chathead:focus,
+.wa-chathead:active,
+.wa-chathead:visited {
+  color: #FFFFFF !important;
+}
+
+.wa-chathead svg,
+.wa-chathead svg path {
   width: 26px;
   height: 26px;
-  fill: currentColor;
+  fill: #FFFFFF !important;
+  stroke: none !important;
+  color: #FFFFFF !important;
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.15));
   pointer-events: none;
 }

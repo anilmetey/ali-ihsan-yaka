@@ -256,8 +256,11 @@ function init() {
           if (a > uProgress) discard;
           float core = pow(max(0.0, abs(dot(vN, vView))), 0.45);
           float ends = smoothstep(0.0, 0.015, a) * smoothstep(uProgress, max(0.0, uProgress - 0.015), a);
-          vec3 col = mix(uColor * 0.82, uColor * 1.06, core);
-          float alpha = 0.96 * uDim * ends;
+          float wave = 0.5 + 0.5 * sin((a * uDensity * 18.8495) - uTime * uSpeed * 8.5 + uPhase * 6.2831);
+          float dash = smoothstep(0.22, 0.48, wave);
+          vec3 baseCol = mix(uColor * 0.72, uColor * 1.12, dash);
+          vec3 col = mix(baseCol * 0.88, baseCol * 1.06, core);
+          float alpha = (0.38 + 0.60 * dash) * uDim * ends;
           gl_FragColor = vec4(col, alpha);
         }`
     });
@@ -279,16 +282,20 @@ function init() {
       cone = new THREE.Mesh(new THREE.ConeGeometry(coneR, coneH, 20), coneMat);
       const end = curve.getPointAt(1);
       const tan = curve.getTangentAt(1).normalize();
-      cone.position.copy(end).addScaledVector(tan, -coneH * 0.38);
+      const basePos = end.clone().addScaledVector(tan, -coneH * 0.38);
+      cone.position.copy(basePos);
       cone.quaternion.setFromUnitVectors(V(0, 1, 0), tan);
       cone.scale.setScalar(0.001);
       cone.renderOrder = 3;
+      cone.userData.basePos = basePos;
+      cone.userData.tan = tan;
+      cone.userData.coneH = coneH;
       world.add(cone);
       mat.userData.cone = cone;
     }
 
     if (particles > 0) {
-      flows.push({ curve, color, count: particles, speed: 0.065 + speed * 0.09, length, tags, mat });
+      flows.push({ curve, color, radius, arrowScale, count: particles, speed: 0.065 + speed * 0.09, length, tags, mat });
     }
     dimmables.push({
       tags,
@@ -796,55 +803,33 @@ function init() {
     color: C.loop, radius: 0.088, order: 5.05, speed: 0.28, particles: 6, glow: 1.12, arrowScale: 1.15
   });
 
-  /* ------------------------------------------------------------ particles */
-  const totalParticles = flows.reduce((n, f) => n + f.count, 0);
-  const pGeo = new THREE.BufferGeometry();
-  const pPos = new Float32Array(totalParticles * 3);
-  const pCol = new Float32Array(totalParticles * 3);
-  const pSize = new Float32Array(totalParticles);
+  /* ------------------------------------------------------------ moving 3D arrowheads (instead of light orbs) */
+  const sharedArrowGeo = new THREE.ConeGeometry(1, 1, 16);
   const particleState = [];
   flows.forEach(f => {
+    const r = (f.radius || 0.045) * 2.55 * (f.arrowScale || 1);
+    const h = (f.radius || 0.045) * 6.2 * (f.arrowScale || 1);
     for (let k = 0; k < f.count; k++) {
-      const i = particleState.length;
-      particleState.push({ f, u: k / f.count + Math.random() * 0.08 });
-      pCol.set([f.color.r, f.color.g, f.color.b], i * 3);
-      pSize[i] = 1;
+      const aMat = new THREE.MeshBasicMaterial({
+        color: f.color.clone(),
+        transparent: true,
+        opacity: 0.92,
+        toneMapped: false
+      });
+      const aMesh = new THREE.Mesh(sharedArrowGeo, aMat);
+      aMesh.scale.set(r, h, r);
+      aMesh.renderOrder = 4;
+      world.add(aMesh);
+      particleState.push({
+        f,
+        u: (k / f.count + Math.random() * 0.06) % 1,
+        mesh: aMesh,
+        mat: aMat,
+        r,
+        h
+      });
     }
   });
-  pGeo.setAttribute('position', new THREE.BufferAttribute(pPos, 3));
-  pGeo.setAttribute('color', new THREE.BufferAttribute(pCol, 3));
-  pGeo.setAttribute('aScale', new THREE.BufferAttribute(pSize, 1));
-  const pMat = new THREE.ShaderMaterial({
-    transparent: true,
-    depthWrite: false,
-    blending: THREE.NormalBlending,
-    toneMapped: false,
-    vertexColors: true,
-    uniforms: { uMap: { value: glowTexture }, uPx: { value: dpr } },
-    vertexShader: /* glsl */`
-      attribute float aScale;
-      varying vec3 vColor;
-      varying float vA;
-      uniform float uPx;
-      void main() {
-        vColor = color;
-        vA = aScale;
-        vec4 mv = modelViewMatrix * vec4(position, 1.0);
-        gl_PointSize = 20.0 * uPx * aScale / -mv.z * 6.0;
-        gl_Position = projectionMatrix * mv;
-      }`,
-    fragmentShader: /* glsl */`
-      uniform sampler2D uMap;
-      varying vec3 vColor;
-      varying float vA;
-      void main() {
-        vec4 tx = texture2D(uMap, gl_PointCoord);
-        gl_FragColor = vec4(vColor, tx.a * vA * 0.85);
-      }`
-  });
-  const points = new THREE.Points(pGeo, pMat);
-  points.renderOrder = 4;
-  world.add(points);
 
   /* atmosphere: 3D spatial grid floor for immediate depth perception */
   const floorGrid = new THREE.GridHelper(28, 28, '#8B9DC7', '#D6DFEE');
@@ -986,7 +971,6 @@ function init() {
       ? THREE.MathUtils.clamp(w / 1180, 0.28, 0.48)
       : THREE.MathUtils.clamp(w / 1120, 0.52, 1.15);
     host.style.setProperty('--p3d-scale', String(labelScale));
-    pMat.uniforms.uPx.value = renderer.getPixelRatio();
   }
   const ro = new ResizeObserver(resize);
   if (frame) ro.observe(frame);
@@ -1047,6 +1031,8 @@ function init() {
   };
 
   const tmp = new THREE.Vector3();
+  const tmpTan = new THREE.Vector3();
+  const upAxis = new THREE.Vector3(0, 1, 0);
   function frameTick() {
     if (!running) return;
     requestAnimationFrame(frameTick);
@@ -1061,7 +1047,12 @@ function init() {
         const local = THREE.MathUtils.clamp((it - m.userData.order * 0.28) / 0.85, 0, 1);
         m.uniforms.uProgress.value = motion ? easeOut(local) : 1;
         if (m.userData.cone) {
-          m.userData.cone.scale.setScalar(local > 0.94 ? easeOut((local - 0.94) / 0.06) : 0.001);
+          const c = m.userData.cone;
+          c.scale.setScalar(local > 0.94 ? easeOut((local - 0.94) / 0.06) : 0.001);
+          if (motion && local >= 1 && c.userData.basePos && c.userData.tan) {
+            const shift = Math.sin(time * 3.8 + m.userData.order) * (c.userData.coneH * 0.14);
+            c.position.copy(c.userData.basePos).addScaledVector(c.userData.tan, shift);
+          }
         }
       });
       nodes.forEach(n => {
@@ -1081,18 +1072,20 @@ function init() {
       d.setDim(dimValues[i]);
     });
 
-    const posAttr = pGeo.attributes.position;
-    const scaleAttr = pGeo.attributes.aScale;
-    particleState.forEach((p, i) => {
-      if (motion) p.u = (p.u + dt * p.f.speed * (4 / Math.max(1.5, p.f.length))) % 1;
+    particleState.forEach(p => {
+      if (motion) p.u = (p.u + dt * p.f.speed * (3.6 / Math.max(1.5, p.f.length))) % 1;
       const prog = p.f.mat.uniforms.uProgress.value;
-      const vis = p.u <= prog ? p.f.mat.uniforms.uDim.value : 0;
-      p.f.curve.getPointAt(Math.min(p.u, 1), tmp);
-      posAttr.setXYZ(i, tmp.x, tmp.y, tmp.z);
-      scaleAttr.setX(i, vis * (0.72 + 0.28 * Math.sin(p.u * Math.PI)));
+      const dim = p.f.mat.uniforms.uDim.value;
+      const uClamped = Math.min(Math.max(p.u, 0.02), 0.96);
+      const vis = p.u <= prog ? dim * Math.sin(p.u * Math.PI) : 0;
+      p.f.curve.getPointAt(uClamped, tmp);
+      p.f.curve.getTangentAt(uClamped, tmpTan).normalize();
+      p.mesh.position.copy(tmp);
+      p.mesh.quaternion.setFromUnitVectors(upAxis, tmpTan);
+      const s = vis > 0.02 ? (0.78 + 0.22 * Math.sin(p.u * Math.PI)) : 0.0001;
+      p.mesh.scale.set(p.r * s, p.h * s, p.r * s);
+      p.mat.opacity = Math.min(0.95, vis * 1.05);
     });
-    posAttr.needsUpdate = true;
-    scaleAttr.needsUpdate = true;
 
     if (tween) {
       const k = THREE.MathUtils.clamp((now - tween.t0) / tween.dur, 0, 1);

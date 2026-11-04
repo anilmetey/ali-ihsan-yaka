@@ -587,6 +587,14 @@
     "about.peerCertId": "DergiPark Hakemlik Belgesi · ID: 1817613",
     "about.peerCertView": "Belgeyi gör ↗",
     "about.peerCertVerify": "Doğrula ↗",
+    "about.peerRoleChip": "ULAKBİM Hakemli Dergi",
+    "about.peerScopeChip": "Klinik Psikanaliz & Kuram",
+    "about.baGradNote": "Psikoloji lisans mezuniyeti (2005) ve ulusal psikoloji öğrenci kongreleri dönemi.",
+    "about.baGradPhotoTitle": "Lisans Mezuniyeti (2005)",
+    "about.baGradPhotoSub": "Büyütmek için tıklayın",
+    "about.hiMissionOrderLink": "Görev Belgesi (PDF) ↗",
+    "fieldwork.2020.missionOrder": "Resmi Görevlendirme Belgesi (Ordre de Mission · PDF) ↗",
+    "fieldwork.2017.certLink": "Erbil İleri Psikososyal Destek Eğitim Sertifikası (ACF · PDF) ↗",
     "about.pubCountBadge": "4 Hakemli Yayın",
     "about.pubArchiveLink": "Arşiv ↗",
     "about.pubIndexNote": "DergiPark · ULAKBİM · Google Scholar · ORCID",
@@ -671,8 +679,8 @@
     "pub.ledger3Title": "University at Buffalo CSPC, WPA Prag, Boğaziçi & ICCP",
     "pub.ledger4Cat": "AKREDİTASYON & İLERİ EĞİTİM • 4 BELGE",
     "pub.ledger4Title": "APsA San Francisco (44.5 CE), IPU Berlin, GATA & DAPHB",
-    "pub.ledger5Cat": "HİBE & HAKEMLİK • IPA & TÜBİTAK ULAKBİM",
-    "pub.ledger5Title": "IPA Küresel Araştırma Hibesi & AYNA DergiPark Hakemliği",
+    "pub.ledger5Cat": "ARAŞTIRMA HİBESİ • IPA LONDON",
+    "pub.ledger5Title": "IPA Küresel Araştırma Hibesi (12 Aylık Desteklenen Proje)",
     "pub.filterAria": "Yayın kategorisi filtreleme",
     "pub.filterAll": "Tümü",
     "pub.filterThesis": "Doktora Tezi",
@@ -682,12 +690,12 @@
     "pub.statArticlesLabel": "Hakemli Makale & Çeviri (AYNA, TPY, Kurdî)",
     "pub.statTalksLabel": "Sempozyum & Kongre Bildirisi (UB CSPC, WPA...)",
     "pub.statAccreditationLabel": "Uluslararası Akreditasyon & CE (APsA, IPU Berlin...)",
-    "pub.statGrantsLabel": "IPA Araştırma Hibesi & Hakemlik (Londra / TÜBİTAK)",
+    "pub.statGrantsLabel": "IPA Araştırma Hibesi (Londra)",
     "pub.filterThesis": "Lisansüstü Tezler",
     "pub.filterTalks": "Kongre & Sempozyumlar",
     "pub.filterAccreditation": "Akreditasyon & Eğitim",
-    "pub.filterReview": "Hibe & Hakemlik",
-    "pub.filterStatusAll": "17 Doğrulanmış Akademik Kayıt • Kronolojik ve Tematik Arşiv",
+    "pub.filterReview": "Araştırma Hibesi",
+    "pub.filterStatusAll": "16 Doğrulanmış Akademik Kayıt • Kronolojik ve Tematik Arşiv",
     "pub.thesisPill": "DOKTORA MONOGRAFİSİ · PH.D.",
     "pub.ankaraPill": "KLİNİK PSİKOLOJİ · M.S.",
     "pub.ankaraDesc": "Yetişkin bağlanma stilleri, erken dönem uyumsuz şemalar (EMS) ve bilişsel/duygusal öz-düzenleme süreçlerinin psikolojik belirti düzeyleri (depresyon, kaygı ve somatizasyon) üzerindeki yordayıcı rollerini inceleyen ampirik klinik psikoloji tezi.",
@@ -1406,6 +1414,14 @@
     "about.peerCertId": "DergiPark Reviewer Certificate · ID: 1817613",
     "about.peerCertView": "View certificate ↗",
     "about.peerCertVerify": "Verify ↗",
+    "about.peerRoleChip": "ULAKBİM Indexed Journal",
+    "about.peerScopeChip": "Clinical Psychoanalysis & Theory",
+    "about.baGradNote": "Undergraduate degree in Psychology (2005) and national psychology student congress years.",
+    "about.baGradPhotoTitle": "B.A. Graduation (2005)",
+    "about.baGradPhotoSub": "Click to enlarge",
+    "about.hiMissionOrderLink": "Mission Order (PDF) ↗",
+    "fieldwork.2020.missionOrder": "Official Mission Order (Ordre de Mission · PDF) ↗",
+    "fieldwork.2017.certLink": "Erbil Advanced Psychosocial Support Training Certificate (ACF · PDF) ↗",
     "about.pubCountBadge": "4 Peer-Reviewed Articles",
     "about.pubArchiveLink": "Archive ↗",
     "about.pubIndexNote": "DergiPark · ULAKBİM · Google Scholar · ORCID",
@@ -1479,8 +1495,8 @@
     "pub.ledger3Title": "University at Buffalo CSPC, WPA Prague, Boğaziçi & ICCP",
     "pub.ledger4Cat": "ACCREDITATIONS & CONTINUING ED • 4 CREDENTIALS",
     "pub.ledger4Title": "APsA San Francisco (44.5 CE), IPU Berlin, GATA & DAPHB",
-    "pub.ledger5Cat": "GRANTS & PEER REVIEW • IPA & TÜBİTAK ULAKBİM",
-    "pub.ledger5Title": "IPA Global Research Grant & AYNA DergiPark Peer Review",
+    "pub.ledger5Cat": "RESEARCH GRANT • IPA LONDON",
+    "pub.ledger5Title": "IPA Global Research Grant (12-Month Supported Project)",
     "pub.filterAria": "Filter publications by category",
     "pub.filterAll": "All",
     "pub.filterThesis": "Ph.D. Dissertation",
@@ -1490,12 +1506,12 @@
     "pub.statArticlesLabel": "Peer-Reviewed Articles & Translation (AYNA, TPA, Kurdî)",
     "pub.statTalksLabel": "Symposia & Congress Proceedings (UB CSPC, WPA...)",
     "pub.statAccreditationLabel": "International Accreditations & CE (APsA, IPU Berlin...)",
-    "pub.statGrantsLabel": "IPA Research Grant & Peer Review (London / TÜBİTAK)",
+    "pub.statGrantsLabel": "IPA Research Grant (London)",
     "pub.filterThesis": "Graduate Theses",
     "pub.filterTalks": "Symposia & Congresses",
     "pub.filterAccreditation": "Accreditations & Training",
-    "pub.filterReview": "Grants & Peer Review",
-    "pub.filterStatusAll": "17 Verified Scholarly Records • Chronological & Thematic Archive",
+    "pub.filterReview": "Research Grant",
+    "pub.filterStatusAll": "16 Verified Scholarly Records • Chronological & Thematic Archive",
     "pub.thesisPill": "DOCTORAL MONOGRAPH · PH.D.",
     "pub.thesisDesc": "This doctoral monograph examines the clinical supervision discourse of local mental health workers in the Nineveh Plains of Iraq following the ISIS/Êzidî genocide through Lacanian psychoanalytic theory, the Four Discourses, and social trauma.",
     "pub.thesisMetaKeywords": "Lacanian Discourse Analysis • Social Trauma",
@@ -2254,6 +2270,35 @@
     "Afişin tamamını yüksek çözünürlükte incelemek için tıklayınız": "Click to view the full poster in high resolution",
     "e-Poster belgesinin tamamını yüksek çözünürlükte incelemek için tıklayınız": "Click to view the full e-Poster document in high resolution",
     "AYNA Klinik Psikoloji Dergisi": "AYNA Clinical Psychology Journal",
+    "2025 – 2026 • ULUSLARARASI PSİKANALİZ BİRLİĞİ (IPA)": "2025 – 2026 • INTERNATIONAL PSYCHOANALYTICAL ASSOCIATION (IPA)",
+    "IPA Küresel Araştırma Hibesi (Research Grant)": "IPA Global Research Grant",
+    "Uluslararası Psikanaliz Birliği (IPA) tarafından 12 aylık araştırma desteği kapsamında fonlanan çalışma, psikanalitik kuramın kriz ve afet sahalarında pratik bir metodolojiye dönüştürülmesini ve toplumsal travma koşullarında klinik süpervizyon süreçlerini inceler.": "Funded as a 12-month research project by the International Psychoanalytical Association (IPA), this study examines the translation of psychoanalytic theory into a practical field methodology in crisis settings and clinical supervision under conditions of collective trauma.",
+    "12 Aylık Desteklenen Proje • IPA London": "12-Month Supported Project • IPA London",
+    "Proje Kaydını İncele →": "View Project Record →",
+    "Proje Başlığı (TR)": "Project Title (TR)",
+    "DESTEK KURUMU": "FUNDING INSTITUTION",
+    "IPA (Londra)": "IPA (London)",
+    "PROJE SÜRESİ": "PROJECT DURATION",
+    "12 Ay (2025–2026)": "12 Months (2025–2026)",
+    "1 PROJE": "1 PROJECT",
+    "Tümü (12)": "All (12)",
+    "Kriz ve çatışma bölgelerinde çocuk gelişimi, ikincil travma ve saha çalışanlarına yönelik 24 saatlik ileri psikososyal destek eğitimi (Temmuz 2017, Dr. Koen Sevenants).": "24-hour advanced training on child development, secondary trauma, and psychosocial support for field workers in crisis and conflict settings (July 2017, Dr. Koen Sevenants).",
+    "KONGRE & 5 ATÖLYE": "CONGRESS & 5 WORKSHOPS",
+    "İstanbul’da (2–5 Haziran 2011) düzenlenen kongre katılımı ve psikotik semptomlar, temel inançlar, olumsuz düşünce stratejileri, imgelem ve anksiyete tedavisi üzerine 5 ayrı klinik atölye sertifikası.": "Congress attendance in Istanbul (June 2–5, 2011) and 5 clinical workshop certificates on psychotic symptoms, core beliefs, negative thinking strategies, imagery in therapy, and anxiety treatment.",
+    "Kongre Katılım PDF ↗": "Congress Attendance PDF ↗",
+    "Psikotik Semptomlar ↗": "Psychotic Symptoms ↗",
+    "Temel İnançlar ↗": "Core Beliefs ↗",
+    "Olumsuz Düşünce ↗": "Negative Thinking ↗",
+    "Terapide İmgelem ↗": "Imagery in Therapy ↗",
+    "Anksiyete Atölyesi ↗": "Anxiety Workshop ↗",
+    "2003 · ANKARA ÜNİV.": "2003 · ANKARA UNIV.",
+    "PSİKOLOJİ & SANAT": "PSYCHOLOGY & ART",
+    "Ankara Üniversitesi DTCF Psikoloji Bölümü": "Ankara University Department of Psychology",
+    "VIII. Ulusal Psikoloji Öğrencileri Kongresi": "8th National Psychology Students Congress",
+    "Ankara Üniversitesi Dil ve Tarih-Coğrafya Fakültesi Psikoloji Bölümü tarafından 2–5 Temmuz 2003 tarihlerinde düzenlenen “Psikoloji ve Sanat” temalı ulusal kongre katılım belgesi.": "Participation certificate for the 8th National Psychology Students Congress (“Psychology and Art”), hosted by Ankara University Department of Psychology on July 2–5, 2003.",
+    "Kongre Katılım Belgesi (PDF) ↗": "Congress Attendance Certificate (PDF) ↗",
+    "Psikotik Semptomlar Atölyesi (PDF) ↗": "Psychotic Symptoms Workshop (PDF) ↗",
+    "Anksiyete Atölyesi (PDF) ↗": "Anxiety Workshop (PDF) ↗",
     "Hakemlik sertifikasının tamamını yüksek çözünürlükte incelemek için tıklayınız": "Click to view the full peer-review certificate in high resolution",
     "44,5": "44.5",
     "Saat CE Kredisi": "CE Credit Hours",
@@ -2649,16 +2694,78 @@
     window.dispatchEvent(new CustomEvent('aiy:langchange', { detail: { lang: activeLang } }));
   }
 
-  // Bind Language buttons
+  // Bind Language buttons (manual choice overrides auto geo-detection)
   document.querySelectorAll('.lang-btn, .lang-text-btn').forEach(btn => {
     btn.addEventListener('click', () => {
+      try { localStorage.setItem('aiy_lang_manual', btn.dataset.lang); } catch (_) {}
       setLanguage(btn.dataset.lang);
     });
   });
 
-  const queryLang = new URLSearchParams(window.location.search).get('lang');
-  const savedLang = (queryLang === 'en' || queryLang === 'tr') ? queryLang : (localStorage.getItem('aiy_lang') || 'tr');
+  function resolveInitialLanguage() {
+    const queryLang = new URLSearchParams(window.location.search).get('lang');
+    if (queryLang === 'en' || queryLang === 'tr') {
+      try { localStorage.setItem('aiy_lang_manual', queryLang); } catch (_) {}
+      return queryLang;
+    }
+    try {
+      const manual = localStorage.getItem('aiy_lang_manual');
+      if (manual === 'en' || manual === 'tr') return manual;
+      const cachedCountry = sessionStorage.getItem('aiy_geo_country') || localStorage.getItem('aiy_geo_country');
+      if (cachedCountry) return cachedCountry.toUpperCase() === 'TR' ? 'tr' : 'en';
+    } catch (_) {}
+    try {
+      const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+      if (/Istanbul|Turkey/i.test(tz)) return 'tr';
+      if (tz) return 'en';
+    } catch (_) {}
+    const navLang = (navigator.language || '').toLowerCase();
+    return navLang.startsWith('tr') ? 'tr' : 'en';
+  }
+
+  let savedLang = resolveInitialLanguage();
   setLanguage(savedLang);
+
+  // Live IP Geolocation check: TR -> Turkish ('tr'), all other countries -> English ('en')
+  (function detectCountryLanguage() {
+    try {
+      if (localStorage.getItem('aiy_lang_manual')) return;
+      if (sessionStorage.getItem('aiy_geo_verified') === '1') return;
+    } catch (_) {}
+
+    const applyCountry = (code) => {
+      if (!code || typeof code !== 'string') return false;
+      const country = code.trim().toUpperCase();
+      if (!/^[A-Z]{2}$/.test(country)) return false;
+      try {
+        localStorage.setItem('aiy_geo_country', country);
+        sessionStorage.setItem('aiy_geo_country', country);
+        sessionStorage.setItem('aiy_geo_verified', '1');
+        if (localStorage.getItem('aiy_lang_manual')) return true;
+      } catch (_) {}
+      const targetLang = country === 'TR' ? 'tr' : 'en';
+      savedLang = targetLang;
+      if (document.documentElement.lang !== targetLang) {
+        setLanguage(targetLang);
+      }
+      return true;
+    };
+
+    const fetchWithTimeout = (url, ms = 3200) => {
+      const ctrl = new AbortController();
+      const timer = setTimeout(() => ctrl.abort(), ms);
+      return fetch(url, { signal: ctrl.signal, cache: 'no-store' })
+        .then(r => { clearTimeout(timer); return r.ok ? r.json() : Promise.reject(); });
+    };
+
+    fetchWithTimeout('https://api.country.is/')
+      .then(d => applyCountry(d && d.country) || Promise.reject())
+      .catch(() => fetchWithTimeout('https://get.geojs.io/v1/ip/country.json')
+        .then(d => applyCountry(d && d.country) || Promise.reject()))
+      .catch(() => fetchWithTimeout('https://ipapi.co/json/')
+        .then(d => applyCountry(d && d.country_code)))
+      .catch(() => {});
+  })();
 
   function initSplash() {
     const splash = document.getElementById('splashScreen');
