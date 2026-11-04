@@ -27,7 +27,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="icon" href="assets/images/psyche-structure-mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="app.css?v=5.95">
+  <link rel="stylesheet" href="app.css?v=5.99">
   <link rel="stylesheet" href="assets/css/research-palette.css?v=1">
 </head>
 <body>
@@ -277,58 +277,257 @@
           </div>
 
           <!-- Figure Frame -->
+                    <div class="psyche-mode-switcher-wrap">
+            <div class="psyche-mode-switcher" role="tablist" aria-label="Görünüm Modu">
+              <button type="button" class="psyche-mode-btn is-active" data-mode="2d" role="tab" aria-selected="true">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                <span data-i18n="psyche.mode2d">2B Şema (Şekil 5)</span>
+              </button>
+              <button type="button" class="psyche-mode-btn psyche-mode-btn-3d" data-mode="3d" role="tab" aria-selected="false">
+                <span class="p3d-sparkle-dot" aria-hidden="true"></span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                <span data-i18n="psyche.mode3d">3D Halini Gör</span>
+              </button>
+            </div>
+          </div>
+
           <figure class="psyche-diagram" data-psyche-model style="margin: 0;">
             <div class="psyche-diagram-frame">
-              <!-- Fallback SVG for noscript or environments without WebGL -->
+              <!-- Fallback High-Fidelity 4K Vector SVG for mobile & non-WebGL environments -->
               <div class="topology-scroll">
-                <svg class="topology-svg" viewBox="0 0 1280 590" role="img" aria-label="Baba işlevi grafiği: gösteren zinciri ve ruhsal yapılar">
+                <svg class="topology-svg psyche-diagram-svg" viewBox="0 0 1280 640" width="100%" role="img" aria-label="Baba işlevi grafiği: gösteren zinciri ve ruhsal yapılar" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
                   <defs>
-                    <marker id="arrow-right" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#6074a5"/></marker>
-                    <marker id="arrow-up" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#b48a50"/></marker>
-                    <marker id="arrow-loop" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#7d8eaa"/></marker>
+                    <marker id="svg-arr-blue" viewBox="0 0 10 10" refX="7.5" refY="5" markerWidth="6.2" markerHeight="6.2" orient="auto">
+                      <path d="M0 1.2L8.8 5L0 8.8z" fill="#3D5690"/>
+                    </marker>
+                    <marker id="svg-arr-gold" viewBox="0 0 10 10" refX="7.5" refY="5" markerWidth="6.2" markerHeight="6.2" orient="auto">
+                      <path d="M0 1.2L8.8 5L0 8.8z" fill="#B8791E"/>
+                    </marker>
+                    <marker id="svg-arr-loop" viewBox="0 0 12 12" refX="8.5" refY="6" markerWidth="7.2" markerHeight="7.2" orient="auto">
+                      <path d="M0 1.2L10.5 6L0 10.8z" fill="#354B84"/>
+                    </marker>
+                    <filter id="svg-node-shadow" x="-15%" y="-15%" width="130%" height="130%">
+                      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#162033" flood-opacity="0.07"/>
+                    </filter>
                   </defs>
-                  <rect width="1280" height="590" fill="#080E1C"/>
-                  <path d="M1190 190 C1170 50 190 42 96 190" fill="none" stroke="#38BDF8" stroke-width="2" stroke-dasharray="8 8" marker-end="url(#arrow-loop)"/>
-                  <text x="640" y="69" fill="#94A3B8" font-family="system-ui" font-size="12" font-weight="bold" text-anchor="middle" letter-spacing="1.5">S2 · DİYAKRONİK GÖSTEREN ZİNCİRİ</text>
-                  <path d="M96 466 C170 552 1094 553 1190 466" fill="none" stroke="#FBBF24" stroke-width="2" stroke-dasharray="8 8" marker-end="url(#arrow-loop)"/>
-                  <text x="640" y="545" fill="#94A3B8" font-family="system-ui" font-size="12" font-weight="bold" text-anchor="middle" letter-spacing="1.5">S1 · SENKRONİK KODLAMA</text>
-                  <g fill="#E2E8F0" font-family="system-ui" font-size="13" font-weight="600" letter-spacing="1" text-anchor="middle">
-                    <text x="100" y="143">GÖSTEREN</text>
-                    <text x="350" y="143">BABA METAFORU</text>
-                    <text x="640" y="143">BABA-NIN-ADLARI</text>
-                    <text x="880" y="143">RUHSAL YAPILAR</text>
-                    <text x="1120" y="143">DİL ALANI</text>
+
+                  <!-- Paper Background -->
+                  <rect class="psyche-paper" x="2" y="2" width="1276" height="636" rx="20" fill="#FAF9F6" stroke="rgba(78,91,166,0.14)" stroke-width="1.5"/>
+
+                  <!-- 9. GIANT OUTER LOOPS -->
+                  <!-- Top Outer Loop: Süjenin Dil Alanı (right) ↶ Gösteren (left) -->
+                  <path class="model-loop model-loop-top" d="M1160 156 C1080 14, 200 14, 96 154" fill="none" stroke="#354B84" stroke-width="3.2" marker-end="url(#svg-arr-loop)"/>
+                  <!-- Bottom Outer Loop: Gösteren (left) ⌣➔ Süjenin Dil Alanı (right) -->
+                  <path class="model-loop model-loop-bottom" d="M96 484 C200 626, 1080 626, 1160 486" fill="none" stroke="#354B84" stroke-width="3.2" marker-end="url(#svg-arr-loop)"/>
+
+                  <!-- 8. INNER S1 ↔ S2 LOOPS -->
+                  <!-- Top Inner Loop: S1 (right) ↶ S2 (left) -->
+                  <path class="model-inner-loop model-s2-return" d="M858 134 C760 52, 495 52, 405 134" fill="none" stroke="#354B84" stroke-width="2.6" marker-end="url(#svg-arr-loop)"/>
+                  <text x="390" y="102" fill="#162033" font-family="'Georgia', serif" font-size="20" font-style="italic" font-weight="700" text-anchor="middle">S2</text>
+                  <text x="872" y="102" fill="#162033" font-family="'Georgia', serif" font-size="20" font-style="italic" font-weight="700" text-anchor="middle">S1</text>
+
+                  <!-- Bottom Inner Loop: S2 (left) ⌢➔ S1 (right) — arches UPWARD in the center exactly as in Figure 5 -->
+                  <path class="model-inner-loop model-s2-forward" d="M422 535 C520 486, 750 486, 848 535" fill="none" stroke="#354B84" stroke-width="2.4" marker-end="url(#svg-arr-loop)"/>
+                  <text x="405" y="558" fill="#162033" font-family="'Georgia', serif" font-size="20" font-style="italic" font-weight="700" text-anchor="middle">S2</text>
+                  <text x="858" y="558" fill="#162033" font-family="'Georgia', serif" font-size="20" font-style="italic" font-weight="700" text-anchor="middle">S1</text>
+
+                  <!-- 1. LEFT MONOLITH BOX: GÖSTEREN -->
+                  <g filter="url(#svg-node-shadow)">
+                    <rect x="55" y="160" width="82" height="320" rx="4" fill="#FFFFFF" stroke="#2C3E6B" stroke-width="1.8"/>
+                    <text x="96" y="320" fill="#162033" font-family="'Georgia', serif" font-size="19" font-style="italic" font-weight="700" text-anchor="middle" transform="rotate(-90 96 320)" data-i18n="psyche.origin">Gösteren</text>
                   </g>
-                  <g fill="#94A3B8" font-family="Georgia, serif" font-style="italic" font-size="15">
-                    <text x="210" y="247">Simgeselden düşme</text>
-                    <text x="210" y="337">Simgeselde tanınmama</text>
-                    <text x="210" y="427">Simgeselde tanınma</text>
-                    <text x="880" y="247" font-weight="bold" fill="#D97706">Psikotik</text>
-                    <text x="880" y="337" font-weight="bold" fill="#7C3AED">Pervers</text>
-                    <text x="880" y="427" font-weight="bold" fill="#0D9488">Nevrotik</text>
-                    <text x="1120" y="280" text-anchor="middle">Öznenin</text>
-                    <text x="1120" y="310" text-anchor="middle">dil alanı ve</text>
-                    <text x="1120" y="340" text-anchor="middle">konuşma işlevi</text>
+
+                  <!-- 2. TOP BRIDGE ARCS ACROSS HEADINGS (4 curved arrows left → right) -->
+                  <!-- Arc 1: Gösteren top-right ↷ Baba Metaforu -->
+                  <path class="model-transition" d="M137 174 C158 136, 196 136, 214 168" fill="none" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+                  <!-- Arc 2: Baba Metaforu right (left of Ayna Evresi) ↷ arches over Ayna Evresi top ↷ Baba-nın-Adları -->
+                  <path class="model-transition" d="M380 174 C418 134, 492 134, 526 168" fill="none" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+                  <!-- Arc 3: Over S1 top arrowhead ↷ Ruhsal Yapılar -->
+                  <path class="model-transition" d="M814 170 C836 136, 876 136, 898 170" fill="none" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+                  <!-- Arc 4: Ruhsal Yapılar ↷ Süjenin Dil Alanı -->
+                  <path class="model-transition" d="M1004 170 C1028 136, 1068 136, 1090 170" fill="none" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+
+                  <!-- 3. COLUMN HEADINGS -->
+                  <g class="model-headings">
+                    <text x="275" y="152" fill="#162033" font-family="'Georgia', serif" font-size="16.5" font-weight="700" text-anchor="middle" data-i18n="psyche.message">Baba Metaforu</text>
+                    <text x="275" y="174" fill="#2C3A52" font-family="'Georgia', serif" font-size="15" font-weight="700" text-anchor="middle">(Mesaj)</text>
+
+                    <text x="648" y="152" fill="#162033" font-family="'Georgia', serif" font-size="16.5" font-weight="700" text-anchor="middle" data-i18n="psyche.code">Baba-nın-Adları</text>
+                    <text x="648" y="174" fill="#2C3A52" font-family="'Georgia', serif" font-size="15" font-weight="700" text-anchor="middle">(Kod)</text>
+
+                    <text x="955" y="152" fill="#162033" font-family="'Georgia', serif" font-size="16.5" font-weight="700" text-anchor="middle">Ruhsal</text>
+                    <text x="955" y="174" fill="#162033" font-family="'Georgia', serif" font-size="16.5" font-weight="700" text-anchor="middle">Yapılar</text>
                   </g>
-                  <g stroke="#38BDF8" stroke-width="2.5" stroke-dasharray="11 9">
-                    <path d="M105 228H1090" marker-end="url(#arrow-right)"/>
-                    <path d="M105 318H1090" marker-end="url(#arrow-right)"/>
-                    <path d="M105 408H1090" marker-end="url(#arrow-right)"/>
+
+                  <!-- 4. BABA METAFORU (MESAJ) COLUMN: 3 STAGES + VERTICAL DESCENT -->
+                  <!-- Vertical downward arrows: (Mesaj) ↓ Simgeselden Düşme ↓ Tanı(n)mama ↓ Tanı(n)ma -->
+                  <line class="model-stage-down" x1="275" y1="182" x2="275" y2="213" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+                  <line class="model-stage-down" x1="275" y1="254" x2="275" y2="308" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+                  <line class="model-stage-down" x1="275" y1="348" x2="275" y2="402" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+                  <!-- Bottom curved arrow: Simgeselde Tanı(n)ma ╰➔ bottom S2 -->
+                  <path class="model-stage-down" d="M275 444 C275 504, 338 518, 388 515" fill="none" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+
+                  <!-- Row 0 Stage: Simgeselden Düşme -->
+                  <line class="model-forward" x1="137" y1="235" x2="186" y2="235" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+                  <g transform="translate(275, 235)" filter="url(#svg-node-shadow)">
+                    <rect x="-86" y="-15" width="172" height="30" rx="7" fill="#FFFFFF" stroke="rgba(61,86,144,0.28)" stroke-width="1.2"/>
+                    <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14" font-style="italic" text-anchor="middle" data-i18n="psyche.fall">Simgeselden Düşme</text>
                   </g>
-                  <g stroke="#FBBF24" stroke-width="2.5" stroke-dasharray="9 8">
-                    <path d="M500 454V205" marker-end="url(#arrow-up)"/>
-                    <path d="M650 454V205" marker-end="url(#arrow-up)"/>
-                    <path d="M800 454V205" marker-end="url(#arrow-up)"/>
+                  <line class="model-forward" x1="362" y1="235" x2="401" y2="235" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+
+                  <!-- Row 1 Stage: Simgeselde Tanı(n)mama -->
+                  <line class="model-forward" x1="137" y1="330" x2="174" y2="330" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+                  <g transform="translate(275, 330)" filter="url(#svg-node-shadow)">
+                    <rect x="-96" y="-15" width="192" height="30" rx="7" fill="#FFFFFF" stroke="rgba(61,86,144,0.28)" stroke-width="1.2"/>
+                    <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14" font-style="italic" text-anchor="middle" data-i18n="psyche.unrecognized">Simgeselde Tanı(n)mama</text>
                   </g>
-                  <g fill="#FBBF24" font-family="system-ui" font-size="11" font-weight="600" text-anchor="middle">
-                    <text x="500" y="188">S1 · KOD</text>
-                    <text x="650" y="188">S1 · KOD</text>
-                    <text x="800" y="188">S1 · KOD</text>
+                  <line class="model-forward" x1="372" y1="330" x2="401" y2="330" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+
+                  <!-- Row 2 Stage: Simgeselde Tanı(n)ma -->
+                  <line class="model-forward" x1="137" y1="425" x2="182" y2="425" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+                  <g transform="translate(275, 425)" filter="url(#svg-node-shadow)">
+                    <rect x="-88" y="-15" width="176" height="30" rx="7" fill="#FFFFFF" stroke="rgba(61,86,144,0.28)" stroke-width="1.2"/>
+                    <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14" font-style="italic" text-anchor="middle" data-i18n="psyche.recognized">Simgeselde Tanı(n)ma</text>
                   </g>
-                  <g fill="#FFFFFF" stroke="#FBBF24" stroke-width="2">
-                    <circle cx="500" cy="228" r="5"/>
-                    <circle cx="650" cy="318" r="5"/>
-                    <circle cx="800" cy="408" r="5"/>
+                  <line class="model-forward" x1="364" y1="425" x2="401" y2="425" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+
+                  <!-- 5. AYNA EVRESİ VERTICAL DOWNWARD AXIS + 3 OUTGOING HORIZONTAL ARROWS -->
+                  <line class="model-down model-mirror-axis" x1="405" y1="182" x2="405" y2="512" stroke="#3D5690" stroke-width="3.2" marker-end="url(#svg-arr-blue)"/>
+                  <text x="424" y="345" fill="#162033" font-family="'Georgia', serif" font-size="15.5" font-style="italic" font-weight="700" text-anchor="middle" transform="rotate(-90 424 345)" data-i18n="psyche.ayna">Ayna Evresi</text>
+
+                  <!-- 3 Horizontal arrows to the right of Ayna Evresi into Baba-nın-Adları -->
+                  <line class="model-forward" x1="442" y1="235" x2="486" y2="235" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+                  <line class="model-forward" x1="442" y1="330" x2="486" y2="330" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+                  <line class="model-forward" x1="442" y1="425" x2="486" y2="425" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+
+                  <!-- 6. BABA-NIN-ADLARI (KOD) 3×3 MATRIX -->
+                  <!-- Row 0 (Top / Psikotik): Gerçek -->
+                  <!-- U-curve from top of Col 1 upward arrow into bottom-left of Row 0 Gerçek (╰⤴) -->
+                  <path class="model-code-arc" d="M546 238 C552 282, 608 282, 618 246" fill="none" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+                  <g transform="translate(648, 235)" filter="url(#svg-node-shadow)">
+                    <rect x="-38" y="-14" width="76" height="28" rx="14" fill="#FFFFFF" stroke="#C87820" stroke-width="1.5"/>
+                    <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14" font-style="italic" font-weight="700" text-anchor="middle">Gerçek</text>
+                  </g>
+                  <!-- Upward arrow: Row 0 Gerçek ↑ (Kod) -->
+                  <line class="model-up" x1="648" y1="218" x2="648" y2="184" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+                  <!-- Short horizontal arrow to the right of Row 0 Gerçek (Gerçek →) -->
+                  <line class="model-forward" x1="688" y1="235" x2="732" y2="235" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+                  <!-- Over-loop above Gerçek → returning into top-right of Row 0 Gerçek (↶) -->
+                  <path class="model-code-arc" d="M746 224 C746 186, 680 186, 672 216" fill="none" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+
+                  <!-- Row 1 (Middle / Pervert): İmgesel & Gerçek -->
+                  <g transform="translate(532, 330)" filter="url(#svg-node-shadow)">
+                    <rect x="-40" y="-14" width="80" height="28" rx="14" fill="#FFFFFF" stroke="#7862B8" stroke-width="1.5"/>
+                    <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14" font-style="italic" font-weight="700" text-anchor="middle">İmgesel</text>
+                  </g>
+                  <!-- Horizontal arrow: İmgesel → Gerçek -->
+                  <line class="model-forward" x1="574" y1="330" x2="606" y2="330" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+                  <!-- Downward U-curve under İmgesel → Gerçek into bottom-left of Row 1 Gerçek (╰⤴) -->
+                  <path class="model-code-arc" d="M546 346 C552 388, 616 388, 626 348" fill="none" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+                  <g transform="translate(648, 330)" filter="url(#svg-node-shadow)">
+                    <rect x="-38" y="-14" width="76" height="28" rx="14" fill="#FFFFFF" stroke="#C87820" stroke-width="1.5"/>
+                    <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14" font-style="italic" font-weight="700" text-anchor="middle">Gerçek</text>
+                  </g>
+                  <!-- Short horizontal arrow to the right of Row 1 Gerçek (Gerçek →) -->
+                  <line class="model-forward" x1="688" y1="330" x2="732" y2="330" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+                  <!-- Over-loop above Gerçek → returning into top-right of Row 1 Gerçek (↶) -->
+                  <path class="model-code-arc" d="M758 320 C755 276, 676 276, 668 312" fill="none" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+
+                  <!-- Row 2 (Bottom / Nevrotik): İmgesel, Gerçek & Simgesel -->
+                  <g transform="translate(532, 425)" filter="url(#svg-node-shadow)">
+                    <rect x="-40" y="-14" width="80" height="28" rx="14" fill="#FFFFFF" stroke="#7862B8" stroke-width="1.5"/>
+                    <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14" font-style="italic" font-weight="700" text-anchor="middle">İmgesel</text>
+                  </g>
+                  <!-- Horizontal arrow: İmgesel → Gerçek -->
+                  <line class="model-forward" x1="574" y1="425" x2="606" y2="425" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+                  <!-- Downward U-curve under İmgesel → Gerçek into bottom of Row 2 Gerçek (╰⤴) -->
+                  <path class="model-code-arc" d="M542 442 C548 492, 620 492, 630 444" fill="none" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+                  <g transform="translate(648, 425)" filter="url(#svg-node-shadow)">
+                    <rect x="-38" y="-14" width="76" height="28" rx="14" fill="#FFFFFF" stroke="#C87820" stroke-width="1.5"/>
+                    <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14" font-style="italic" font-weight="700" text-anchor="middle">Gerçek</text>
+                  </g>
+                  <!-- Horizontal arrow: Gerçek → Simgesel -->
+                  <line class="model-forward" x1="688" y1="425" x2="722" y2="425" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+                  <!-- Over-loop above Gerçek → Simgesel returning into top-right of Row 2 Gerçek (↶) -->
+                  <path class="model-code-arc" d="M748 408 C742 366, 676 366, 668 406" fill="none" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+                  <g transform="translate(768, 425)" filter="url(#svg-node-shadow)">
+                    <rect x="-42" y="-14" width="84" height="28" rx="14" fill="#FFFFFF" stroke="#2E867E" stroke-width="1.5"/>
+                    <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14" font-style="italic" font-weight="700" text-anchor="middle">Simgesel</text>
+                  </g>
+
+                  <!-- Vertical Upward Coding Arrows inside Baba-nın-Adları -->
+                  <!-- Column 1 (İmgesel): Row 2 ↑ Row 1, and Row 1 ↑ Row 0 level -->
+                  <line class="model-up" x1="532" y1="408" x2="532" y2="350" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+                  <line class="model-up" x1="532" y1="312" x2="532" y2="246" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+                  <!-- Column 2 (Gerçek): Row 2 ↑ Row 1 ↑ Row 0 -->
+                  <line class="model-up" x1="648" y1="408" x2="648" y2="350" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+                  <line class="model-up" x1="648" y1="312" x2="648" y2="254" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+                  <!-- Column 3 (Simgesel): rises upward from top-right of Simgesel -->
+                  <line class="model-up" x1="782" y1="408" x2="782" y2="356" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+
+                  <!-- 7. S1 VERTICAL UPWARD AXIS + 3 JUMP ARCS + BOTTOM CURVE -->
+                  <line class="model-up model-s1-axis" x1="855" y1="508" x2="855" y2="178" stroke="#B8791E" stroke-width="3.2" marker-end="url(#svg-arr-gold)"/>
+                  <!-- 3 Tight Jump Arcs hopping OVER S1 vertical shaft (left of S1 ↷ right of S1) -->
+                  <path class="model-code-arc" d="M830 232 C840 198, 870 198, 882 232" fill="none" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+                  <path class="model-code-arc" d="M830 327 C840 293, 870 293, 882 327" fill="none" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+                  <path class="model-code-arc" d="M830 422 C840 388, 870 388, 882 422" fill="none" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+                  <!-- Bottom-right curved arrow: S1 ╰↑ Nevrotik -->
+                  <path class="model-code-arc" d="M868 506 C905 524, 955 496, 955 446" fill="none" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+
+                  <!-- 8. RUHSAL YAPILAR COLUMN (Psikotik / Pervert / Nevrotik) -->
+                  <!-- Vertical upward progression: Nevrotik ↑ Pervert ↑ Psikotik (NO arrow above Psikotik) -->
+                  <line class="model-up" x1="955" y1="406" x2="955" y2="350" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+                  <line class="model-up" x1="955" y1="310" x2="955" y2="255" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+
+                  <!-- Psikotik (Top) -->
+                  <g transform="translate(955, 235)" filter="url(#svg-node-shadow)">
+                    <rect x="-50" y="-15" width="100" height="30" rx="7" fill="#FFFFFF" stroke="#C85A3B" stroke-width="1.6"/>
+                    <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14.5" font-style="italic" font-weight="700" text-anchor="middle" data-i18n="psyche.psychotic">Psikotik</text>
+                  </g>
+                  <line class="model-forward" x1="1008" y1="235" x2="1086" y2="235" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+
+                  <!-- Pervert (Middle) -->
+                  <g transform="translate(955, 330)" filter="url(#svg-node-shadow)">
+                    <rect x="-50" y="-15" width="100" height="30" rx="7" fill="#FFFFFF" stroke="#7A58A8" stroke-width="1.6"/>
+                    <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14.5" font-style="italic" font-weight="700" text-anchor="middle" data-i18n="psyche.perverse">Pervert</text>
+                  </g>
+                  <line class="model-forward" x1="1008" y1="330" x2="1086" y2="330" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+
+                  <!-- Nevrotik (Bottom) -->
+                  <g transform="translate(955, 425)" filter="url(#svg-node-shadow)">
+                    <rect x="-50" y="-15" width="100" height="30" rx="7" fill="#FFFFFF" stroke="#3B6E9E" stroke-width="1.6"/>
+                    <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14.5" font-style="italic" font-weight="700" text-anchor="middle" data-i18n="psyche.neurotic">Nevrotik</text>
+                  </g>
+                  <line class="model-forward" x1="1008" y1="425" x2="1086" y2="425" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+
+                  <!-- 9. RIGHT MONOLITH BOX: SÜJENİN DİL ALANI VE KONUŞMA İŞLEVİ -->
+                  <g filter="url(#svg-node-shadow)">
+                    <rect x="1092" y="160" width="136" height="320" rx="4" fill="#FFFFFF" stroke="#2C3E6B" stroke-width="1.8"/>
+                    <text x="1160" y="238" fill="#162033" font-family="'Georgia', serif" font-size="16" font-style="italic" font-weight="700" text-anchor="middle">Süjenin</text>
+                    <text x="1160" y="280" fill="#162033" font-family="'Georgia', serif" font-size="16" font-style="italic" font-weight="700" text-anchor="middle">Dil Alanı</text>
+                    <text x="1160" y="322" fill="#162033" font-family="'Georgia', serif" font-size="15.5" font-style="italic" font-weight="700" text-anchor="middle">ve</text>
+                    <text x="1160" y="364" fill="#162033" font-family="'Georgia', serif" font-size="16" font-style="italic" font-weight="700" text-anchor="middle">Konuşma</text>
+                    <text x="1160" y="406" fill="#162033" font-family="'Georgia', serif" font-size="16" font-style="italic" font-weight="700" text-anchor="middle">İşlevi</text>
+                  </g>
+
+                  <!-- 10. ANIMATED FLOW TRAVELERS (Living Vector Motion) -->
+                  <g class="model-travelers" aria-hidden="true">
+                    <!-- Outer Loops -->
+                    <circle class="model-traveler model-traveler-blue" r="4"><animateMotion dur="9s" repeatCount="indefinite" path="M1160 156 C1080 14, 200 14, 96 154"/></circle>
+                    <circle class="model-traveler model-traveler-blue" r="4"><animateMotion dur="9s" begin="4.5s" repeatCount="indefinite" path="M96 484 C200 626, 1080 626, 1160 486"/></circle>
+                    <!-- Inner S1 ↔ S2 Loops -->
+                    <circle class="model-traveler model-traveler-blue" r="3.5"><animateMotion dur="7s" repeatCount="indefinite" path="M858 134 C760 52, 495 52, 405 134"/></circle>
+                    <circle class="model-traveler model-traveler-blue" r="3.5"><animateMotion dur="7s" begin="3.5s" repeatCount="indefinite" path="M422 535 C520 486, 750 486, 848 535"/></circle>
+                    <!-- Horizontal Message Streams (Row 0, Row 1, Row 2) -->
+                    <circle class="model-traveler model-traveler-blue" r="3.2"><animateMotion dur="8s" repeatCount="indefinite" path="M137 235 H486 M648 235 H732 M830 232 C840 198, 870 198, 882 232 L1086 235"/></circle>
+                    <circle class="model-traveler model-traveler-blue" r="3.2"><animateMotion dur="8s" begin="2.6s" repeatCount="indefinite" path="M137 330 H732 M830 327 C840 293, 870 293, 882 327 L1086 330"/></circle>
+                    <circle class="model-traveler model-traveler-blue" r="3.2"><animateMotion dur="8s" begin="5.2s" repeatCount="indefinite" path="M137 425 H768 M830 422 C840 388, 870 388, 882 422 L1086 425"/></circle>
+                    <!-- Vertical Axes & Coding Vectors -->
+                    <circle class="model-traveler model-traveler-blue" r="3.2"><animateMotion dur="5.5s" repeatCount="indefinite" path="M405 182 V512"/></circle>
+                    <circle class="model-traveler model-traveler-gold" r="3.5"><animateMotion dur="5.5s" begin="1.2s" repeatCount="indefinite" path="M855 508 V178"/></circle>
+                    <circle class="model-traveler model-traveler-gold" r="3"><animateMotion dur="6s" begin="0.5s" repeatCount="indefinite" path="M532 408 V246"/></circle>
+                    <circle class="model-traveler model-traveler-gold" r="3"><animateMotion dur="6s" begin="2s" repeatCount="indefinite" path="M648 408 V184"/></circle>
+                    <circle class="model-traveler model-traveler-gold" r="3"><animateMotion dur="6s" begin="3.5s" repeatCount="indefinite" path="M955 406 V255"/></circle>
                   </g>
                 </svg>
               </div>
@@ -343,7 +542,7 @@
             <div>
               <div class="inspector-meta-title">
                 <span class="inspector-pill" id="inspectorPill">BÜTÜNCÜL TOPOLOJİ</span>
-                <span style="font-size: 0.78rem; color: #94A3B8;">Canlı Düğüm Müfettişi</span>
+                <span style="font-size: 0.78rem; color: #5A6478; font-weight: 600;">Canlı Düğüm Müfettişi</span>
               </div>
               <div class="inspector-target-name" id="inspectorName">Baba İşlevi Grafiği: Gösteren Zinciri ve Ruhsal Yapılar</div>
               <div class="inspector-target-role" id="inspectorRole">
@@ -351,7 +550,7 @@
               </div>
             </div>
             <div class="inspector-detail-box">
-              <div style="font-family: var(--font-mono); font-size: 0.9rem; color: #FBBF24; margin-bottom: 0.45rem;" id="inspectorFormula">
+              <div style="font-family: var(--font-mono); font-size: 0.95rem; font-weight: 700; color: #263159; margin-bottom: 0.45rem;" id="inspectorFormula">
                 S₁ ↔ S₂ · R.S.I. (Borromeo Düğümü Sentezi)
               </div>
               <div id="inspectorClinical">
@@ -636,67 +835,42 @@
             
             <div class="schema-visual-box">
               <div class="schema-visual-toolbar">
-                <span class="schema-toolbar-badge">4K Vektörel Şema</span>
-                <span class="schema-toolbar-spec">ŞEMA L • SEMİNER IV &amp; V</span>
+                <span class="schema-toolbar-badge" data-i18n="research.schemaToolbarObsessional">4K Vektörel Şema</span>
+                <span class="schema-toolbar-spec" data-i18n="research.schemaToolbarL">ŞEMA L • SEMİNER IV &amp; V</span>
               </div>
               <div class="schema-diagram-preview schema-obsessional-diagram" aria-label="Lacan Şema L: Obsesyonel Nevroz ve Arzu Çıkmazı">
-                <svg viewBox="0 0 760 500" width="100%" height="auto" class="schema-svg-hd" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lacan Şema L: Obsesyonel Nevroz ve Arzu Çıkmazı">
+                <svg viewBox="0 0 760 500" width="100%" class="schema-svg-hd" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lacan Şema L: Obsesyonel Nevroz ve Arzu Çıkmazı">
                   <defs>
-                    <linearGradient id="s1-bg" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stop-color="#0A0F1D" />
-                      <stop offset="50%" stop-color="#111827" />
-                      <stop offset="100%" stop-color="#0F172A" />
-                    </linearGradient>
                     <linearGradient id="s1-symbolic" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stop-color="#60A5FA" />
-                      <stop offset="50%" stop-color="#818CF8" />
-                      <stop offset="100%" stop-color="#38BDF8" />
+                      <stop offset="0%" stop-color="#1D4ED8" />
+                      <stop offset="100%" stop-color="#2563EB" />
                     </linearGradient>
                     <linearGradient id="s1-imaginary" x1="1" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stop-color="#F59E0B" />
-                      <stop offset="50%" stop-color="#F97316" />
-                      <stop offset="100%" stop-color="#EF4444" />
+                      <stop offset="0%" stop-color="#D97706" />
+                      <stop offset="100%" stop-color="#EA580C" />
                     </linearGradient>
-                    <radialGradient id="s1-glow-blue" cx="50%" cy="50%" r="50%">
-                      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.45" />
-                      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0" />
-                    </radialGradient>
-                    <radialGradient id="s1-glow-amber" cx="50%" cy="50%" r="50%">
-                      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.45" />
-                      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0" />
-                    </radialGradient>
-                    <radialGradient id="s1-glow-center" cx="50%" cy="50%" r="50%">
-                      <stop offset="0%" stop-color="#EF4444" stop-opacity="0.35" />
-                      <stop offset="100%" stop-color="#EF4444" stop-opacity="0" />
-                    </radialGradient>
                     <marker id="s1-arr-sym-start" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto-start-reverse">
-                      <polygon points="9 1.5, 1 4.5, 9 7.5" fill="#60A5FA" />
+                      <polygon points="9 1.5, 1 4.5, 9 7.5" fill="#2563EB" />
                     </marker>
                     <marker id="s1-arr-sym-end" markerWidth="9" markerHeight="9" refX="4" refY="4.5" orient="auto">
-                      <polygon points="0 1.5, 8 4.5, 0 7.5" fill="#38BDF8" />
+                      <polygon points="0 1.5, 8 4.5, 0 7.5" fill="#1D4ED8" />
                     </marker>
                     <marker id="s1-arr-imag-start" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto-start-reverse">
-                      <polygon points="9 1.5, 1 4.5, 9 7.5" fill="#F59E0B" />
+                      <polygon points="9 1.5, 1 4.5, 9 7.5" fill="#D97706" />
                     </marker>
                     <marker id="s1-arr-imag-end" markerWidth="9" markerHeight="9" refX="4" refY="4.5" orient="auto">
-                      <polygon points="0 1.5, 8 4.5, 0 7.5" fill="#EF4444" />
+                      <polygon points="0 1.5, 8 4.5, 0 7.5" fill="#EA580C" />
                     </marker>
-                    <filter id="s1-blur-blue" x="-30%" y="-30%" width="160%" height="160%">
-                      <feGaussianBlur stdDeviation="4" />
-                    </filter>
-                    <filter id="s1-blur-amber" x="-30%" y="-30%" width="160%" height="160%">
-                      <feGaussianBlur stdDeviation="4" />
-                    </filter>
-                    <filter id="s1-shadow" x="-20%" y="-20%" width="140%" height="140%">
-                      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.55" />
+                    <filter id="s1-shadow-soft" x="-10%" y="-10%" width="120%" height="120%">
+                      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#1A2035" flood-opacity="0.08" />
                     </filter>
                   </defs>
 
                   <!-- Canvas Base -->
-                  <rect x="2" y="2" width="756" height="496" rx="16" fill="url(#s1-bg)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+                  <rect x="2" y="2" width="756" height="496" rx="14" fill="#FFFFFF" stroke="rgba(28,35,64,0.09)" stroke-width="1.5" />
 
-                  <!-- Blueprint Grid -->
-                  <g stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="3 3">
+                  <!-- Technical Grid -->
+                  <g stroke="rgba(28,35,64,0.06)" stroke-width="1" stroke-dasharray="3 3">
                     <line x1="145" y1="30" x2="145" y2="470" />
                     <line x1="615" y1="30" x2="615" y2="470" />
                     <line x1="380" y1="30" x2="380" y2="470" />
@@ -707,103 +881,98 @@
 
                   <!-- Top Title Banner -->
                   <g transform="translate(380, 28)">
-                    <rect x="-210" y="-12" width="420" height="24" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)" stroke-width="1" />
-                    <text x="0" y="4" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" letter-spacing="1.1" text-anchor="middle">JACQUES LACAN • ŞEMA L: OBSESYONEL ARZU ÇIKMAZI</text>
+                    <rect x="-215" y="-12" width="430" height="24" rx="12" fill="#F4F1EA" stroke="rgba(28,35,64,0.12)" stroke-width="1" />
+                    <text x="0" y="4" fill="#1A2035" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" letter-spacing="0.8" text-anchor="middle">JACQUES LACAN • ŞEMA L: OBSESYONEL ARZU ÇIKMAZI</text>
                   </g>
 
                   <!-- Vectors -->
                   <!-- 1. Simgesel Eksen ($ ⟶ A) -->
-                  <line x1="145" y1="115" x2="615" y2="385" stroke="#3B82F6" stroke-width="9" stroke-opacity="0.2" filter="url(#s1-blur-blue)" />
-                  <line x1="145" y1="115" x2="615" y2="385" stroke="url(#s1-symbolic)" stroke-width="3" stroke-dasharray="7 5" marker-start="url(#s1-arr-sym-start)" marker-end="url(#s1-arr-sym-end)" />
+                  <line x1="145" y1="115" x2="615" y2="385" stroke="#93C5FD" stroke-width="8" stroke-opacity="0.35" stroke-linecap="round" />
+                  <line x1="145" y1="115" x2="615" y2="385" stroke="url(#s1-symbolic)" stroke-width="2.8" stroke-dasharray="6 4" marker-start="url(#s1-arr-sym-start)" marker-end="url(#s1-arr-sym-end)" />
 
                   <!-- 2. İmgesel Eksen (a ⟶ a') -->
-                  <line x1="615" y1="115" x2="145" y2="385" stroke="#F59E0B" stroke-width="10" stroke-opacity="0.25" filter="url(#s1-blur-amber)" />
-                  <line x1="615" y1="115" x2="145" y2="385" stroke="url(#s1-imaginary)" stroke-width="3.8" marker-start="url(#s1-arr-imag-start)" marker-end="url(#s1-arr-imag-end)" />
+                  <line x1="615" y1="115" x2="145" y2="385" stroke="#FDE68A" stroke-width="9" stroke-opacity="0.5" stroke-linecap="round" />
+                  <line x1="615" y1="115" x2="145" y2="385" stroke="url(#s1-imaginary)" stroke-width="3.2" marker-start="url(#s1-arr-imag-start)" marker-end="url(#s1-arr-imag-end)" />
 
                   <!-- Central Impasse Center Point (380, 250) -->
-                  <circle cx="380" cy="250" r="24" fill="url(#s1-glow-center)" />
-                  <circle cx="380" cy="250" r="16" fill="#181016" stroke="#EF4444" stroke-width="2" filter="url(#s1-shadow)" />
-                  <path d="M374,244 L386,256 M386,244 L374,256" stroke="#EF4444" stroke-width="2.5" stroke-linecap="round" />
+                  <circle cx="380" cy="250" r="16" fill="#FEE2E2" stroke="#EF4444" stroke-width="2" filter="url(#s1-shadow-soft)" />
+                  <path d="M374,244 L386,256 M386,244 L374,256" stroke="#DC2626" stroke-width="2.5" stroke-linecap="round" />
 
                   <!-- Callout 1: İmgelerin Perdesi -->
-                  <g transform="translate(380, 190)" filter="url(#s1-shadow)">
-                    <rect x="-160" y="-22" width="320" height="44" rx="12" fill="#161109" stroke="#F59E0B" stroke-width="1.5" />
-                    <circle cx="-138" cy="0" r="5" fill="#F59E0B" />
-                    <text x="-122" y="-3" fill="#FEF3C7" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" letter-spacing="0.6">İMGELERİN PERDESİ (DÜŞÜNCE ENGELİ)</text>
-                    <text x="-122" y="12" fill="#FCD34D" font-family="'Inter', sans-serif" font-size="9.5" font-weight="500">a ⟶ a' İmgesel Savunma: Şüphe &amp; Ruminasyon</text>
+                  <g transform="translate(380, 190)" filter="url(#s1-shadow-soft)">
+                    <rect x="-165" y="-22" width="330" height="44" rx="12" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.6" />
+                    <circle cx="-142" cy="0" r="5" fill="#D97706" />
+                    <text x="-126" y="-3" fill="#78350F" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" letter-spacing="0.5">İMGELERİN PERDESİ (DÜŞÜNCE ENGELİ)</text>
+                    <text x="-126" y="12" fill="#92400E" font-family="'Inter', sans-serif" font-size="10" font-weight="600">a ⟶ a' İmgesel Savunma: Şüphe &amp; Ruminasyon</text>
                   </g>
 
                   <!-- Callout 2: Bilinçdışı Arzunun İmkansızlığı -->
-                  <g transform="translate(380, 312)" filter="url(#s1-shadow)">
-                    <rect x="-175" y="-22" width="350" height="44" rx="12" fill="#091325" stroke="#60A5FA" stroke-width="1.5" />
-                    <circle cx="-153" cy="0" r="5" fill="#60A5FA" />
-                    <text x="-137" y="-3" fill="#EFF6FF" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" letter-spacing="0.6">BİLİNÇDIŞI ARZUNUN İMKANSIZLIĞI ($ ↔ A)</text>
-                    <text x="-137" y="12" fill="#93C5FD" font-family="'Inter', sans-serif" font-size="9.5" font-weight="500">Simgesel Eksen: Öteki'nin Talebini Erteleme / Felç Etme</text>
+                  <g transform="translate(380, 312)" filter="url(#s1-shadow-soft)">
+                    <rect x="-175" y="-22" width="350" height="44" rx="12" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.6" />
+                    <circle cx="-152" cy="0" r="5" fill="#2563EB" />
+                    <text x="-136" y="-3" fill="#1E3A8A" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" letter-spacing="0.5">BİLİNÇDIŞI ARZUNUN İMKANSIZLIĞI ($ ↔ A)</text>
+                    <text x="-136" y="12" fill="#1D4ED8" font-family="'Inter', sans-serif" font-size="10" font-weight="600">Simgesel Eksen: Öteki'nin Talebini Erteleme / Felç Etme</text>
                   </g>
 
                   <!-- Node 1: $ (Bölünmüş Özne) -->
                   <g transform="translate(145, 115)">
-                    <circle cx="0" cy="0" r="42" fill="url(#s1-glow-blue)" />
-                    <circle cx="0" cy="0" r="30" fill="#0F172A" stroke="#60A5FA" stroke-width="2.5" filter="url(#s1-shadow)" />
-                    <text x="0" y="9" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="26" font-weight="800" text-anchor="middle">$</text>
+                    <circle cx="0" cy="0" r="30" fill="#FFFFFF" stroke="#2563EB" stroke-width="2.8" filter="url(#s1-shadow-soft)" />
+                    <text x="0" y="9" fill="#1E40AF" font-family="'JetBrains Mono', monospace" font-size="26" font-weight="800" text-anchor="middle">$</text>
                     <g transform="translate(0, -45)">
-                      <rect x="-65" y="-11" width="130" height="22" rx="11" fill="rgba(15,23,42,0.95)" stroke="#60A5FA" stroke-width="1.2" />
-                      <text x="0" y="4" fill="#93C5FD" font-family="'Inter', sans-serif" font-size="10" font-weight="800" text-anchor="middle">ÖZNE ($)</text>
+                      <rect x="-65" y="-11" width="130" height="22" rx="11" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.2" />
+                      <text x="0" y="4" fill="#1E40AF" font-family="'Inter', sans-serif" font-size="10" font-weight="800" text-anchor="middle">ÖZNE ($)</text>
                     </g>
                     <g transform="translate(-42, 6)">
-                      <text x="-6" y="-4" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" text-anchor="end">Bölünmüş Özne</text>
-                      <text x="-6" y="9" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="9" font-weight="500" text-anchor="end">Sujet Barré</text>
+                      <text x="-6" y="-4" fill="#0F172A" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="end">Bölünmüş Özne</text>
+                      <text x="-6" y="9" fill="#475569" font-family="'Inter', sans-serif" font-size="9.5" font-weight="600" text-anchor="end">Sujet Barré</text>
                     </g>
                   </g>
 
                   <!-- Node 2: a (Benlik / Ego) -->
                   <g transform="translate(615, 115)">
-                    <circle cx="0" cy="0" r="42" fill="url(#s1-glow-amber)" />
-                    <circle cx="0" cy="0" r="30" fill="#1C140A" stroke="#F59E0B" stroke-width="2.5" filter="url(#s1-shadow)" />
-                    <text x="0" y="8" fill="#FEF3C7" font-family="'JetBrains Mono', Georgia, serif" font-size="24" font-weight="800" font-style="italic" text-anchor="middle">a</text>
+                    <circle cx="0" cy="0" r="30" fill="#FFFFFF" stroke="#D97706" stroke-width="2.8" filter="url(#s1-shadow-soft)" />
+                    <text x="0" y="8" fill="#B45309" font-family="'JetBrains Mono', Georgia, serif" font-size="24" font-weight="800" font-style="italic" text-anchor="middle">a</text>
                     <g transform="translate(0, -45)">
-                      <rect x="-65" y="-11" width="130" height="22" rx="11" fill="rgba(28,20,10,0.95)" stroke="#F59E0B" stroke-width="1.2" />
-                      <text x="0" y="4" fill="#FCD34D" font-family="'Inter', sans-serif" font-size="10" font-weight="800" text-anchor="middle">BENLİK (a)</text>
+                      <rect x="-65" y="-11" width="130" height="22" rx="11" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.2" />
+                      <text x="0" y="4" fill="#92400E" font-family="'Inter', sans-serif" font-size="10" font-weight="800" text-anchor="middle">BENLİK (a)</text>
                     </g>
                     <g transform="translate(42, 6)">
-                      <text x="6" y="-4" fill="#FEF3C7" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" text-anchor="start">Narsisistik Ego</text>
-                      <text x="6" y="9" fill="#D97706" font-family="'Inter', sans-serif" font-size="9" font-weight="500" text-anchor="start">Moi / İdeal Benlik</text>
+                      <text x="6" y="-4" fill="#0F172A" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="start">Narsisistik Ego</text>
+                      <text x="6" y="9" fill="#92400E" font-family="'Inter', sans-serif" font-size="9.5" font-weight="600" text-anchor="start">Moi / İdeal Benlik</text>
                     </g>
                   </g>
 
                   <!-- Node 3: a' (İmgesel Öteki) -->
                   <g transform="translate(145, 385)">
-                    <circle cx="0" cy="0" r="42" fill="url(#s1-glow-amber)" />
-                    <circle cx="0" cy="0" r="30" fill="#1C140A" stroke="#F59E0B" stroke-width="2.5" filter="url(#s1-shadow)" />
-                    <text x="0" y="8" fill="#FEF3C7" font-family="'JetBrains Mono', Georgia, serif" font-size="24" font-weight="800" font-style="italic" text-anchor="middle">a'</text>
+                    <circle cx="0" cy="0" r="30" fill="#FFFFFF" stroke="#D97706" stroke-width="2.8" filter="url(#s1-shadow-soft)" />
+                    <text x="0" y="8" fill="#B45309" font-family="'JetBrains Mono', Georgia, serif" font-size="24" font-weight="800" font-style="italic" text-anchor="middle">a'</text>
                     <g transform="translate(0, 45)">
-                      <rect x="-75" y="-11" width="150" height="22" rx="11" fill="rgba(28,20,10,0.95)" stroke="#F59E0B" stroke-width="1.2" />
-                      <text x="0" y="4" fill="#FCD34D" font-family="'Inter', sans-serif" font-size="10" font-weight="800" text-anchor="middle">İMGESEL ÖTEKİ (a')</text>
+                      <rect x="-75" y="-11" width="150" height="22" rx="11" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.2" />
+                      <text x="0" y="4" fill="#92400E" font-family="'Inter', sans-serif" font-size="10" font-weight="800" text-anchor="middle">İMGESEL ÖTEKİ (a')</text>
                     </g>
                     <g transform="translate(-42, 6)">
-                      <text x="-6" y="-4" fill="#FEF3C7" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" text-anchor="end">Ayna Benzeri</text>
-                      <text x="-6" y="9" fill="#D97706" font-family="'Inter', sans-serif" font-size="9" font-weight="500" text-anchor="end">Autre / Savunma</text>
+                      <text x="-6" y="-4" fill="#0F172A" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="end">Ayna Benzeri</text>
+                      <text x="-6" y="9" fill="#92400E" font-family="'Inter', sans-serif" font-size="9.5" font-weight="600" text-anchor="end">Autre / Savunma</text>
                     </g>
                   </g>
 
                   <!-- Node 4: A (Büyük Öteki) -->
                   <g transform="translate(615, 385)">
-                    <circle cx="0" cy="0" r="42" fill="url(#s1-glow-blue)" />
-                    <circle cx="0" cy="0" r="30" fill="#0F172A" stroke="#38BDF8" stroke-width="2.5" filter="url(#s1-shadow)" />
-                    <text x="0" y="9" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="26" font-weight="800" text-anchor="middle">A</text>
+                    <circle cx="0" cy="0" r="30" fill="#FFFFFF" stroke="#2563EB" stroke-width="2.8" filter="url(#s1-shadow-soft)" />
+                    <text x="0" y="9" fill="#1E40AF" font-family="'JetBrains Mono', monospace" font-size="26" font-weight="800" text-anchor="middle">A</text>
                     <g transform="translate(0, 45)">
-                      <rect x="-75" y="-11" width="150" height="22" rx="11" fill="rgba(15,23,42,0.95)" stroke="#38BDF8" stroke-width="1.2" />
-                      <text x="0" y="4" fill="#BAE6FD" font-family="'Inter', sans-serif" font-size="10" font-weight="800" text-anchor="middle">BÜYÜK ÖTEKİ (A)</text>
+                      <rect x="-75" y="-11" width="150" height="22" rx="11" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.2" />
+                      <text x="0" y="4" fill="#1E40AF" font-family="'Inter', sans-serif" font-size="10" font-weight="800" text-anchor="middle">BÜYÜK ÖTEKİ (A)</text>
                     </g>
                     <g transform="translate(42, 6)">
-                      <text x="6" y="-4" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" text-anchor="start">Dil &amp; Bilinçdışı</text>
-                      <text x="6" y="9" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="9" font-weight="500" text-anchor="start">Grand Autre</text>
+                      <text x="6" y="-4" fill="#0F172A" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="start">Dil &amp; Bilinçdışı</text>
+                      <text x="6" y="9" fill="#475569" font-family="'Inter', sans-serif" font-size="9.5" font-weight="600" text-anchor="start">Grand Autre</text>
                     </g>
                   </g>
 
                   <!-- Bottom Note -->
                   <g transform="translate(380, 482)">
-                    <text x="0" y="0" fill="rgba(255,255,255,0.45)" font-family="'Inter', sans-serif" font-size="9.5" text-anchor="middle">Simgesel Eksen ($ ↔ A), İmgesel Savunma Hattı (a ⟶ a') Tarafından Perdeler ve Arzuyu Çıkmaza Sürükler</text>
+                    <text x="0" y="0" fill="#5A6478" font-family="'Inter', sans-serif" font-size="9.5" font-weight="500" text-anchor="middle">Simgesel Eksen ($ ↔ A), İmgesel Savunma Hattı (a ⟶ a') Tarafından Perdeler ve Arzuyu Çıkmaza Sürükler</text>
                   </g>
                 </svg>
               </div>
@@ -814,8 +983,8 @@
             </div>
 
             <div class="schema-meta-list">
-              <div class="meta-row"><strong>Odak:</strong> Şüphe, ertelenen arzu, düşünce nöbetleri</div>
-              <div class="meta-row"><strong>Kuramsal Temel:</strong> Jacques Lacan (Seminer V) &amp; Sigmund Freud</div>
+              <div class="meta-row"><strong data-i18n="research.schemaFocus">Odak:</strong> Şüphe, ertelenen arzu, düşünce nöbetleri</div>
+              <div class="meta-row"><strong data-i18n="research.schemaTheory">Kuramsal Temel:</strong> Jacques Lacan (Seminer V) &amp; Sigmund Freud</div>
             </div>
           </article>
 
@@ -832,222 +1001,198 @@
 
             <div class="schema-visual-box">
               <div class="schema-visual-toolbar">
-                <span class="schema-toolbar-badge">4K Matris Konsolu</span>
-                <span class="schema-toolbar-spec">ODTÜ TEZİ (2024) • DÖRT SÖYLEM</span>
+                <span class="schema-toolbar-badge" data-i18n="research.schemaToolbarObsessional">4K Vektörel Şema</span>
+                <span class="schema-toolbar-spec" data-i18n="research.schemaToolbarDiscourses">DÖRT SÖYLEM MATRİSİ • SEMİNER XVII</span>
               </div>
               <div class="schema-diagram-preview schema-discourse-diagram" aria-label="Lacan Dört Söylem Matrisi">
-                <svg viewBox="0 0 760 520" width="100%" height="auto" class="schema-svg-hd" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lacan Dört Söylem Matrisi: ODTÜ Doktora Tezi Saha Analizi">
+                <svg viewBox="0 0 760 520" width="100%" class="schema-svg-hd" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lacan Dört Söylem Matrisi: ODTÜ Doktora Tezi Saha Analizi">
                   <defs>
-                    <linearGradient id="schema2-bg" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stop-color="#0A0F1D" />
-                      <stop offset="50%" stop-color="#111827" />
-                      <stop offset="100%" stop-color="#0F172A" />
-                    </linearGradient>
-
-                    <!-- Quadrant Backdrops -->
-                    <linearGradient id="card-master-bg" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stop-color="rgba(30, 58, 138, 0.35)" />
-                      <stop offset="100%" stop-color="rgba(15, 23, 42, 0.65)" />
-                    </linearGradient>
-                    <linearGradient id="card-univ-bg" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stop-color="rgba(14, 116, 144, 0.35)" />
-                      <stop offset="100%" stop-color="rgba(15, 23, 42, 0.65)" />
-                    </linearGradient>
-                    <linearGradient id="card-hyst-bg" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stop-color="rgba(180, 83, 9, 0.35)" />
-                      <stop offset="100%" stop-color="rgba(15, 23, 42, 0.65)" />
-                    </linearGradient>
-                    <linearGradient id="card-anal-bg" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stop-color="rgba(6, 95, 70, 0.35)" />
-                      <stop offset="100%" stop-color="rgba(15, 23, 42, 0.65)" />
-                    </linearGradient>
-
                     <!-- Markers -->
                     <marker id="arrow-efendi" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-                      <polygon points="1 1.5, 7 4, 1 6.5" fill="#60A5FA" />
+                      <polygon points="1 1.5, 7 4, 1 6.5" fill="#2563EB" />
                     </marker>
                     <marker id="arrow-univ" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-                      <polygon points="1 1.5, 7 4, 1 6.5" fill="#22D3EE" />
+                      <polygon points="1 1.5, 7 4, 1 6.5" fill="#0D9488" />
                     </marker>
                     <marker id="arrow-hyst" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-                      <polygon points="1 1.5, 7 4, 1 6.5" fill="#FBBF24" />
+                      <polygon points="1 1.5, 7 4, 1 6.5" fill="#D97706" />
                     </marker>
                     <marker id="arrow-anal" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-                      <polygon points="1 1.5, 7 4, 1 6.5" fill="#34D399" />
+                      <polygon points="1 1.5, 7 4, 1 6.5" fill="#059669" />
                     </marker>
                     <marker id="arrow-rot" markerWidth="6" markerHeight="6" refX="4" refY="3" orient="auto">
-                      <polygon points="0 1, 5 3, 0 5" fill="#94A3B8" />
+                      <polygon points="0 1, 5 3, 0 5" fill="#475569" />
                     </marker>
 
-                    <filter id="box-shadow" x="-5%" y="-5%" width="110%" height="110%">
-                      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000000" flood-opacity="0.4" />
+                    <filter id="box-shadow-soft" x="-5%" y="-5%" width="110%" height="110%">
+                      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#1A2035" flood-opacity="0.06" />
                     </filter>
                   </defs>
 
                   <!-- Container -->
-                  <rect x="2" y="2" width="756" height="516" rx="16" fill="url(#schema2-bg)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+                  <rect x="2" y="2" width="756" height="516" rx="14" fill="#FFFFFF" stroke="rgba(28,35,64,0.09)" stroke-width="1.5" />
 
                   <!-- Top Title Banner -->
                   <g transform="translate(380, 26)">
-                    <rect x="-240" y="-12" width="480" height="24" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
-                    <text x="0" y="4" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" letter-spacing="1.1" text-anchor="middle">ODTÜ DOKTORA TEZİ (2024) • NİNOVA &amp; IRAK SAHA SÖYLEM MATRİSİ</text>
+                    <rect x="-240" y="-12" width="480" height="24" rx="12" fill="#F4F1EA" stroke="rgba(28,35,64,0.12)" stroke-width="1" />
+                    <text x="0" y="4" fill="#1A2035" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" letter-spacing="0.8" text-anchor="middle">ODTÜ DOKTORA TEZİ (2024) • NİNOVA &amp; IRAK SAHA SÖYLEM MATRİSİ</text>
                   </g>
 
                   <!-- Cross Dividers -->
-                  <line x1="380" y1="45" x2="380" y2="485" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3 3" />
-                  <line x1="25" y1="265" x2="735" y2="265" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3 3" />
+                  <line x1="380" y1="45" x2="380" y2="485" stroke="rgba(28,35,64,0.08)" stroke-dasharray="3 3" />
+                  <line x1="25" y1="265" x2="735" y2="265" stroke="rgba(28,35,64,0.08)" stroke-dasharray="3 3" />
 
                   <!-- Quadrant 1: Efendi Söylemi (Top-Left) -->
-                  <g transform="translate(25, 46)" filter="url(#box-shadow)">
-                    <rect x="0" y="0" width="340" height="205" rx="14" fill="url(#card-master-bg)" stroke="rgba(96, 165, 250, 0.35)" stroke-width="1.2" />
-                    <rect x="14" y="12" width="195" height="24" rx="6" fill="rgba(30, 58, 138, 0.6)" stroke="#60A5FA" stroke-width="1" />
-                    <circle cx="26" cy="24" r="4" fill="#60A5FA" />
-                    <text x="38" y="28" fill="#EFF6FF" font-family="'Inter', sans-serif" font-size="11" font-weight="800" letter-spacing="0.5">EFENDİ SÖYLEMİ</text>
-                    <text x="216" y="28" fill="#93C5FD" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">(S₁ ⟶ S₂)</text>
+                  <g transform="translate(25, 46)" filter="url(#box-shadow-soft)">
+                    <rect x="0" y="0" width="340" height="205" rx="14" fill="#F4F8FF" stroke="#BFDBFE" stroke-width="1.2" />
+                    <rect x="14" y="12" width="195" height="24" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1" />
+                    <circle cx="26" cy="24" r="4" fill="#2563EB" />
+                    <text x="38" y="28" fill="#1E40AF" font-family="'Inter', sans-serif" font-size="11" font-weight="800" letter-spacing="0.5">EFENDİ SÖYLEMİ</text>
+                    <text x="216" y="28" fill="#2563EB" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">(S₁ ⟶ S₂)</text>
 
                     <!-- Matheme Box -->
                     <g transform="translate(170, 95)">
-                      <rect x="-140" y="-42" width="280" height="84" rx="10" fill="rgba(10, 15, 29, 0.75)" stroke="rgba(96, 165, 250, 0.25)" stroke-width="1" />
+                      <rect x="-140" y="-42" width="280" height="84" rx="10" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1.2" />
                       <!-- Left Fraction: S1 / $ -->
-                      <text x="-75" y="-12" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="800" text-anchor="middle">S₁</text>
-                      <text x="-75" y="-27" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" text-anchor="middle">AJAN (Fail)</text>
-                      <line x1="-105" y1="-4" x2="-45" y2="-4" stroke="#60A5FA" stroke-width="2" />
-                      <text x="-75" y="22" fill="#93C5FD" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" text-anchor="middle">$</text>
-                      <text x="-75" y="34" fill="#64748B" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" text-anchor="middle">HAKİKAT</text>
+                      <text x="-75" y="-12" fill="#0F172A" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="800" text-anchor="middle">S₁</text>
+                      <text x="-75" y="-27" fill="#334155" font-family="'Inter', sans-serif" font-size="9" font-weight="700" text-anchor="middle">AJAN (Fail)</text>
+                      <line x1="-105" y1="-4" x2="-45" y2="-4" stroke="#2563EB" stroke-width="2" />
+                      <text x="-75" y="22" fill="#2563EB" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" text-anchor="middle">$</text>
+                      <text x="-75" y="34" fill="#475569" font-family="'Inter', sans-serif" font-size="9" font-weight="600" text-anchor="middle">HAKİKAT</text>
 
                       <!-- Center Arrow & // -->
-                      <line x1="-32" y1="-4" x2="32" y2="-4" stroke="#60A5FA" stroke-width="2" marker-end="url(#arrow-efendi)" />
-                      <text x="0" y="24" fill="rgba(255,255,255,0.25)" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" text-anchor="middle">//</text>
+                      <line x1="-32" y1="-4" x2="32" y2="-4" stroke="#2563EB" stroke-width="2" marker-end="url(#arrow-efendi)" />
+                      <text x="0" y="24" fill="#94A3B8" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" text-anchor="middle">//</text>
 
                       <!-- Right Fraction: S2 / a -->
-                      <text x="75" y="-12" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="800" text-anchor="middle">S₂</text>
-                      <text x="75" y="-27" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" text-anchor="middle">ÖTEKİ (Köle/Sistem)</text>
-                      <line x1="45" y1="-4" x2="105" y2="-4" stroke="#60A5FA" stroke-width="2" />
-                      <text x="75" y="22" fill="#FCD34D" font-family="'JetBrains Mono', Georgia, serif" font-size="20" font-weight="800" font-style="italic" text-anchor="middle">a</text>
-                      <text x="75" y="34" fill="#D97706" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" text-anchor="middle">ÜRETİM (Artık-Haz)</text>
+                      <text x="75" y="-12" fill="#0F172A" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="800" text-anchor="middle">S₂</text>
+                      <text x="75" y="-27" fill="#334155" font-family="'Inter', sans-serif" font-size="9" font-weight="700" text-anchor="middle">ÖTEKİ (Köle/Sistem)</text>
+                      <line x1="45" y1="-4" x2="105" y2="-4" stroke="#2563EB" stroke-width="2" />
+                      <text x="75" y="22" fill="#D97706" font-family="'JetBrains Mono', Georgia, serif" font-size="20" font-weight="800" font-style="italic" text-anchor="middle">a</text>
+                      <text x="75" y="34" fill="#B45309" font-family="'Inter', sans-serif" font-size="9" font-weight="600" text-anchor="middle">ÜRETİM (Artık-Haz)</text>
                     </g>
 
-                    <rect x="14" y="152" width="312" height="42" rx="8" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
-                    <text x="26" y="169" fill="#EFF6FF" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700">İktidar &amp; Kimlik Yaptırımı</text>
-                    <text x="26" y="184" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="9.5">Saha: Egemen Siyasi Otorite &amp; Toplumsal Yasa Dayatması</text>
+                    <rect x="14" y="152" width="312" height="42" rx="8" fill="#FFFFFF" stroke="#DBEAFE" stroke-width="1.2" />
+                    <text x="26" y="169" fill="#1E40AF" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700">İktidar &amp; Kimlik Yaptırımı</text>
+                    <text x="26" y="184" fill="#334155" font-family="'Inter', sans-serif" font-size="9.5" font-weight="500">Saha: Egemen Siyasi Otorite &amp; Toplumsal Yasa Dayatması</text>
                   </g>
 
                   <!-- Quadrant 2: Üniversite Söylemi (Top-Right) -->
-                  <g transform="translate(395, 46)" filter="url(#box-shadow)">
-                    <rect x="0" y="0" width="340" height="205" rx="14" fill="url(#card-univ-bg)" stroke="rgba(34, 211, 238, 0.35)" stroke-width="1.2" />
-                    <rect x="14" y="12" width="215" height="24" rx="6" fill="rgba(14, 116, 144, 0.6)" stroke="#22D3EE" stroke-width="1" />
-                    <circle cx="26" cy="24" r="4" fill="#22D3EE" />
-                    <text x="38" y="28" fill="#ECFEFF" font-family="'Inter', sans-serif" font-size="11" font-weight="800" letter-spacing="0.5">ÜNİVERSİTE SÖYLEMİ</text>
-                    <text x="236" y="28" fill="#A5F3FC" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">(S₂ ⟶ a)</text>
+                  <g transform="translate(395, 46)" filter="url(#box-shadow-soft)">
+                    <rect x="0" y="0" width="340" height="205" rx="14" fill="#F0FDFA" stroke="#99F6E4" stroke-width="1.2" />
+                    <rect x="14" y="12" width="215" height="24" rx="6" fill="#CCFBF1" stroke="#0D9488" stroke-width="1" />
+                    <circle cx="26" cy="24" r="4" fill="#0D9488" />
+                    <text x="38" y="28" fill="#0F766E" font-family="'Inter', sans-serif" font-size="11" font-weight="800" letter-spacing="0.5">ÜNİVERSİTE SÖYLEMİ</text>
+                    <text x="236" y="28" fill="#0F766E" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">(S₂ ⟶ a)</text>
 
                     <!-- Matheme Box -->
                     <g transform="translate(170, 95)">
-                      <rect x="-140" y="-42" width="280" height="84" rx="10" fill="rgba(10, 15, 29, 0.75)" stroke="rgba(34, 211, 238, 0.25)" stroke-width="1" />
+                      <rect x="-140" y="-42" width="280" height="84" rx="10" fill="#FFFFFF" stroke="#99F6E4" stroke-width="1.2" />
                       <!-- Left Fraction: S2 / S1 -->
-                      <text x="-75" y="-12" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="800" text-anchor="middle">S₂</text>
-                      <text x="-75" y="-27" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" text-anchor="middle">AJAN (Uzmanlık/Bilgi)</text>
-                      <line x1="-105" y1="-4" x2="-45" y2="-4" stroke="#22D3EE" stroke-width="2" />
-                      <text x="-75" y="22" fill="#A5F3FC" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" text-anchor="middle">S₁</text>
-                      <text x="-75" y="34" fill="#64748B" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" text-anchor="middle">HAKİKAT (Gizli Buyruk)</text>
+                      <text x="-75" y="-12" fill="#0F172A" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="800" text-anchor="middle">S₂</text>
+                      <text x="-75" y="-27" fill="#334155" font-family="'Inter', sans-serif" font-size="9" font-weight="700" text-anchor="middle">AJAN (Uzmanlık/Bilgi)</text>
+                      <line x1="-105" y1="-4" x2="-45" y2="-4" stroke="#0D9488" stroke-width="2" />
+                      <text x="-75" y="22" fill="#0F766E" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" text-anchor="middle">S₁</text>
+                      <text x="-75" y="34" fill="#475569" font-family="'Inter', sans-serif" font-size="9" font-weight="600" text-anchor="middle">HAKİKAT (Gizli Buyruk)</text>
 
                       <!-- Center Arrow & // -->
-                      <line x1="-32" y1="-4" x2="32" y2="-4" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow-univ)" />
-                      <text x="0" y="24" fill="rgba(255,255,255,0.25)" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" text-anchor="middle">//</text>
+                      <line x1="-32" y1="-4" x2="32" y2="-4" stroke="#0D9488" stroke-width="2" marker-end="url(#arrow-univ)" />
+                      <text x="0" y="24" fill="#94A3B8" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" text-anchor="middle">//</text>
 
                       <!-- Right Fraction: a / $ -->
-                      <text x="75" y="-12" fill="#FCD34D" font-family="'JetBrains Mono', Georgia, serif" font-size="20" font-weight="800" font-style="italic" text-anchor="middle">a</text>
-                      <text x="75" y="-27" fill="#D97706" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" text-anchor="middle">ÖTEKİ (Yönetilen Nesne)</text>
-                      <line x1="45" y1="-4" x2="105" y2="-4" stroke="#22D3EE" stroke-width="2" />
-                      <text x="75" y="22" fill="#93C5FD" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" text-anchor="middle">$</text>
-                      <text x="75" y="34" fill="#64748B" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" text-anchor="middle">ÜRETİM (Yabancılaşan Özne)</text>
+                      <text x="75" y="-12" fill="#D97706" font-family="'JetBrains Mono', Georgia, serif" font-size="20" font-weight="800" font-style="italic" text-anchor="middle">a</text>
+                      <text x="75" y="-27" fill="#B45309" font-family="'Inter', sans-serif" font-size="9" font-weight="700" text-anchor="middle">ÖTEKİ (Yönetilen Nesne)</text>
+                      <line x1="45" y1="-4" x2="105" y2="-4" stroke="#0D9488" stroke-width="2" />
+                      <text x="75" y="22" fill="#2563EB" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" text-anchor="middle">$</text>
+                      <text x="75" y="34" fill="#334155" font-family="'Inter', sans-serif" font-size="9" font-weight="600" text-anchor="middle">ÜRETİM (Yabancılaşan Özne)</text>
                     </g>
 
-                    <rect x="14" y="152" width="312" height="42" rx="8" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
-                    <text x="26" y="169" fill="#ECFEFF" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700">Uzmanlık &amp; Kurumsal Bilgi</text>
-                    <text x="26" y="184" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="9.5">Saha: İnsani Yardım Bürokrasisi &amp; Raporlama Dili</text>
+                    <rect x="14" y="152" width="312" height="42" rx="8" fill="#FFFFFF" stroke="#99F6E4" stroke-width="1.2" />
+                    <text x="26" y="169" fill="#0F766E" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700">Uzmanlık &amp; Kurumsal Bilgi</text>
+                    <text x="26" y="184" fill="#334155" font-family="'Inter', sans-serif" font-size="9.5" font-weight="500">Saha: İnsani Yardım Bürokrasisi &amp; Raporlama Dili</text>
                   </g>
 
                   <!-- Quadrant 3: Histerik Söylemi (Bottom-Left) -->
-                  <g transform="translate(25, 280)" filter="url(#box-shadow)">
-                    <rect x="0" y="0" width="340" height="205" rx="14" fill="url(#card-hyst-bg)" stroke="rgba(245, 158, 11, 0.35)" stroke-width="1.2" />
-                    <rect x="14" y="12" width="205" height="24" rx="6" fill="rgba(180, 83, 9, 0.6)" stroke="#F59E0B" stroke-width="1" />
-                    <circle cx="26" cy="24" r="4" fill="#F59E0B" />
-                    <text x="38" y="28" fill="#FFFBEB" font-family="'Inter', sans-serif" font-size="11" font-weight="800" letter-spacing="0.5">HİSTERİK SÖYLEMİ</text>
-                    <text x="224" y="28" fill="#FDE68A" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">($ ⟶ S₁)</text>
+                  <g transform="translate(25, 280)" filter="url(#box-shadow-soft)">
+                    <rect x="0" y="0" width="340" height="205" rx="14" fill="#FFFDF5" stroke="#FDE68A" stroke-width="1.2" />
+                    <rect x="14" y="12" width="205" height="24" rx="6" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1" />
+                    <circle cx="26" cy="24" r="4" fill="#D97706" />
+                    <text x="38" y="28" fill="#92400E" font-family="'Inter', sans-serif" font-size="11" font-weight="800" letter-spacing="0.5">HİSTERİK SÖYLEMİ</text>
+                    <text x="224" y="28" fill="#B45309" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">($ ⟶ S₁)</text>
 
                     <!-- Matheme Box -->
                     <g transform="translate(170, 95)">
-                      <rect x="-140" y="-42" width="280" height="84" rx="10" fill="rgba(10, 15, 29, 0.75)" stroke="rgba(245, 158, 11, 0.25)" stroke-width="1" />
+                      <rect x="-140" y="-42" width="280" height="84" rx="10" fill="#FFFFFF" stroke="#FDE68A" stroke-width="1.2" />
                       <!-- Left Fraction: $ / a -->
-                      <text x="-75" y="-12" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="800" text-anchor="middle">$</text>
-                      <text x="-75" y="-27" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" text-anchor="middle">AJAN (Bölünmüş Özne)</text>
+                      <text x="-75" y="-12" fill="#2563EB" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="800" text-anchor="middle">$</text>
+                      <text x="-75" y="-27" fill="#334155" font-family="'Inter', sans-serif" font-size="9" font-weight="700" text-anchor="middle">AJAN (Bölünmüş Özne)</text>
                       <line x1="-105" y1="-4" x2="-45" y2="-4" stroke="#F59E0B" stroke-width="2" />
-                      <text x="-75" y="22" fill="#FCD34D" font-family="'JetBrains Mono', Georgia, serif" font-size="20" font-weight="800" font-style="italic" text-anchor="middle">a</text>
-                      <text x="-75" y="34" fill="#D97706" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" text-anchor="middle">HAKİKAT (Kayıp Nesne)</text>
+                      <text x="-75" y="22" fill="#D97706" font-family="'JetBrains Mono', Georgia, serif" font-size="20" font-weight="800" font-style="italic" text-anchor="middle">a</text>
+                      <text x="-75" y="34" fill="#92400E" font-family="'Inter', sans-serif" font-size="9" font-weight="600" text-anchor="middle">HAKİKAT (Kayıp Nesne)</text>
 
                       <!-- Center Arrow & // -->
                       <line x1="-32" y1="-4" x2="32" y2="-4" stroke="#F59E0B" stroke-width="2" marker-end="url(#arrow-hyst)" />
-                      <text x="0" y="24" fill="rgba(255,255,255,0.25)" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" text-anchor="middle">//</text>
+                      <text x="0" y="24" fill="#94A3B8" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" text-anchor="middle">//</text>
 
                       <!-- Right Fraction: S1 / S2 -->
-                      <text x="75" y="-12" fill="#93C5FD" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="800" text-anchor="middle">S₁</text>
-                      <text x="75" y="-27" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" text-anchor="middle">ÖTEKİ (Efendi/Otorite)</text>
+                      <text x="75" y="-12" fill="#0F172A" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="800" text-anchor="middle">S₁</text>
+                      <text x="75" y="-27" fill="#334155" font-family="'Inter', sans-serif" font-size="9" font-weight="700" text-anchor="middle">ÖTEKİ (Efendi/Otorite)</text>
                       <line x1="45" y1="-4" x2="105" y2="-4" stroke="#F59E0B" stroke-width="2" />
-                      <text x="75" y="22" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" text-anchor="middle">S₂</text>
-                      <text x="75" y="34" fill="#64748B" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" text-anchor="middle">ÜRETİM (Yeni Bilgi Talebi)</text>
+                      <text x="75" y="22" fill="#0F172A" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" text-anchor="middle">S₂</text>
+                      <text x="75" y="34" fill="#475569" font-family="'Inter', sans-serif" font-size="9" font-weight="600" text-anchor="middle">ÜRETİM (Yeni Bilgi Talebi)</text>
                     </g>
 
-                    <rect x="14" y="152" width="312" height="42" rx="8" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
-                    <text x="26" y="169" fill="#FFFBEB" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700">Soru, Şikayet &amp; Hakikat Arayışı</text>
-                    <text x="26" y="184" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="9.5">Saha: Travma Tanıklığı, Kayıp &amp; Kolektif Yas Feryadı</text>
+                    <rect x="14" y="152" width="312" height="42" rx="8" fill="#FFFFFF" stroke="#FDE68A" stroke-width="1.2" />
+                    <text x="26" y="169" fill="#92400E" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700">Soru, Şikayet &amp; Hakikat Arayışı</text>
+                    <text x="26" y="184" fill="#334155" font-family="'Inter', sans-serif" font-size="9.5" font-weight="500">Saha: Travma Tanıklığı, Kayıp &amp; Kolektif Yas Feryadı</text>
                   </g>
 
                   <!-- Quadrant 4: Analist Söylemi (Bottom-Right) -->
-                  <g transform="translate(395, 280)" filter="url(#box-shadow)">
-                    <rect x="0" y="0" width="340" height="205" rx="14" fill="url(#card-anal-bg)" stroke="rgba(16, 185, 129, 0.35)" stroke-width="1.2" />
-                    <rect x="14" y="12" width="195" height="24" rx="6" fill="rgba(6, 95, 70, 0.6)" stroke="#10B981" stroke-width="1" />
+                  <g transform="translate(395, 280)" filter="url(#box-shadow-soft)">
+                    <rect x="0" y="0" width="340" height="205" rx="14" fill="#F0FDF4" stroke="#A7F3D0" stroke-width="1.2" />
+                    <rect x="14" y="12" width="195" height="24" rx="6" fill="#DCFCE7" stroke="#10B981" stroke-width="1" />
                     <circle cx="26" cy="24" r="4" fill="#10B981" />
-                    <text x="38" y="28" fill="#ECFDF5" font-family="'Inter', sans-serif" font-size="11" font-weight="800" letter-spacing="0.5">ANALİST SÖYLEMİ</text>
-                    <text x="216" y="28" fill="#A7F3D0" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">(a ⟶ $)</text>
+                    <text x="38" y="28" fill="#065F46" font-family="'Inter', sans-serif" font-size="11" font-weight="800" letter-spacing="0.5">ANALİST SÖYLEMİ</text>
+                    <text x="216" y="28" fill="#047857" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">(a ⟶ $)</text>
 
                     <!-- Matheme Box -->
                     <g transform="translate(170, 95)">
-                      <rect x="-140" y="-42" width="280" height="84" rx="10" fill="rgba(10, 15, 29, 0.75)" stroke="rgba(16, 185, 129, 0.25)" stroke-width="1" />
+                      <rect x="-140" y="-42" width="280" height="84" rx="10" fill="#FFFFFF" stroke="#A7F3D0" stroke-width="1.2" />
                       <!-- Left Fraction: a / S2 -->
-                      <text x="-75" y="-12" fill="#FCD34D" font-family="'JetBrains Mono', Georgia, serif" font-size="20" font-weight="800" font-style="italic" text-anchor="middle">a</text>
-                      <text x="-75" y="-27" fill="#D97706" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" text-anchor="middle">AJAN (Psikanalist/Dinleme)</text>
+                      <text x="-75" y="-12" fill="#D97706" font-family="'JetBrains Mono', Georgia, serif" font-size="20" font-weight="800" font-style="italic" text-anchor="middle">a</text>
+                      <text x="-75" y="-27" fill="#334155" font-family="'Inter', sans-serif" font-size="9" font-weight="700" text-anchor="middle">AJAN (Psikanalist/Dinleme)</text>
                       <line x1="-105" y1="-4" x2="-45" y2="-4" stroke="#10B981" stroke-width="2" />
-                      <text x="-75" y="22" fill="#A7F3D0" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" text-anchor="middle">S₂</text>
-                      <text x="-75" y="34" fill="#64748B" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" text-anchor="middle">HAKİKAT (Gizli Teori)</text>
+                      <text x="-75" y="22" fill="#0F172A" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" text-anchor="middle">S₂</text>
+                      <text x="-75" y="34" fill="#475569" font-family="'Inter', sans-serif" font-size="9" font-weight="600" text-anchor="middle">HAKİKAT (Gizli Teori)</text>
 
                       <!-- Center Arrow & // -->
                       <line x1="-32" y1="-4" x2="32" y2="-4" stroke="#10B981" stroke-width="2" marker-end="url(#arrow-anal)" />
-                      <text x="0" y="24" fill="rgba(255,255,255,0.25)" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" text-anchor="middle">//</text>
+                      <text x="0" y="24" fill="#94A3B8" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" text-anchor="middle">//</text>
 
                       <!-- Right Fraction: $ / S1 -->
-                      <text x="75" y="-12" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="800" text-anchor="middle">$</text>
-                      <text x="75" y="-27" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" text-anchor="middle">ÖTEKİ (Analizan / Özne)</text>
+                      <text x="75" y="-12" fill="#2563EB" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="800" text-anchor="middle">$</text>
+                      <text x="75" y="-27" fill="#334155" font-family="'Inter', sans-serif" font-size="9" font-weight="700" text-anchor="middle">ÖTEKİ (Analizan / Özne)</text>
                       <line x1="45" y1="-4" x2="105" y2="-4" stroke="#10B981" stroke-width="2" />
-                      <text x="75" y="22" fill="#93C5FD" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" text-anchor="middle">S₁</text>
-                      <text x="75" y="34" fill="#64748B" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" text-anchor="middle">ÜRETİM (Tekil Gösteren)</text>
+                      <text x="75" y="22" fill="#0F172A" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" text-anchor="middle">S₁</text>
+                      <text x="75" y="34" fill="#475569" font-family="'Inter', sans-serif" font-size="9" font-weight="600" text-anchor="middle">ÜRETİM (Tekil Gösteren)</text>
                     </g>
 
-                    <rect x="14" y="152" width="312" height="42" rx="8" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
-                    <text x="26" y="169" fill="#ECFDF5" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700">Öznel Sorumluluk &amp; Dinleme</text>
-                    <text x="26" y="184" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="9.5">Saha: Psikanalitik Müdahale &amp; Söylem Dönüşümü</text>
+                    <rect x="14" y="152" width="312" height="42" rx="8" fill="#FFFFFF" stroke="#A7F3D0" stroke-width="1.2" />
+                    <text x="26" y="169" fill="#065F46" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700">Öznel Sorumluluk &amp; Dinleme</text>
+                    <text x="26" y="184" fill="#334155" font-family="'Inter', sans-serif" font-size="9.5" font-weight="500">Saha: Psikanalitik Müdahale &amp; Söylem Dönüşümü</text>
                   </g>
 
                   <!-- Rotation Hub (Center Emblem) -->
                   <g transform="translate(380, 265)">
-                    <circle cx="0" cy="0" r="38" fill="#0F172A" stroke="rgba(255,255,255,0.22)" stroke-width="2" filter="url(#box-shadow)" />
-                    <path d="M-22,-12 A26,26 0 1,1 22,12" fill="none" stroke="#94A3B8" stroke-width="2" stroke-dasharray="3.5 2.5" marker-end="url(#arrow-rot)" />
-                    <text x="0" y="-5" fill="#F1F5F9" font-family="'Inter', sans-serif" font-size="8.5" font-weight="800" letter-spacing="0.5" text-anchor="middle">¼ ROTASYON</text>
-                    <text x="0" y="9" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="7.5" font-weight="600" text-anchor="middle">S₁ ⟶ S₂ ⟶ a ⟶ $</text>
+                    <circle cx="0" cy="0" r="38" fill="#FFFFFF" stroke="rgba(28,35,64,0.18)" stroke-width="2" filter="url(#box-shadow-soft)" />
+                    <path d="M-22,-12 A26,26 0 1,1 22,12" fill="none" stroke="#475569" stroke-width="2" stroke-dasharray="3.5 2.5" marker-end="url(#arrow-rot)" />
+                    <text x="0" y="-5" fill="#1A2035" font-family="'Inter', sans-serif" font-size="8.5" font-weight="800" letter-spacing="0.5" text-anchor="middle">¼ ROTASYON</text>
+                    <text x="0" y="9" fill="#334155" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="700" text-anchor="middle">S₁ ⟶ S₂ ⟶ a ⟶ $</text>
                   </g>
 
                   <!-- Bottom Citation Footnote -->
                   <g transform="translate(380, 506)">
-                    <text x="0" y="0" fill="rgba(255,255,255,0.45)" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">Jacques Lacan • Seminer XVII (1969-1970) | Dört Söylem Matrisinin Çatışma Sonrası Saha Söylemlerine Uyarlanışı</text>
+                    <text x="0" y="0" fill="#5A6478" font-family="'Inter', sans-serif" font-size="9" font-weight="500" text-anchor="middle">Jacques Lacan • Seminer XVII (1969-1970) | Dört Söylem Matrisinin Çatışma Sonrası Saha Söylemlerine Uyarlanışı</text>
                   </g>
                 </svg>
               </div>
@@ -1058,8 +1203,8 @@
             </div>
 
             <div class="schema-meta-list">
-              <div class="meta-row"><strong>Kurum &amp; Yıl:</strong> ODTÜ Klinik Psikoloji Doktora Tezi, 2024</div>
-              <div class="meta-row"><strong>Yöntem:</strong> Niteliksel Psikanalitik Söylem Analizi</div>
+              <div class="meta-row"><strong data-i18n="research.schemaInstitute">Kurum &amp; Yıl:</strong> ODTÜ Klinik Psikoloji Doktora Tezi, 2024</div>
+              <div class="meta-row"><strong data-i18n="research.schemaMethod">Yöntem:</strong> Niteliksel Psikanalitik Söylem Analizi</div>
             </div>
           </article>
 
@@ -1259,8 +1404,8 @@
     </div>
   </footer>
 
-  <script src="app.js?v=5.95"></script>
-  <script type="module" src="assets/js/psyche-3d.js?v=3"></script>
+  <script src="app.js?v=5.99"></script>
+  <script type="module" src="assets/js/psyche-3d.js?v=5.99"></script>
 
   <script>
   document.addEventListener('DOMContentLoaded', () => {

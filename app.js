@@ -84,6 +84,8 @@
     "research.title": "Psikanalitik Araştırmalar",
     "research.lead": "Kavramları sabit bir diyagram olarak değil, birbirine bağlanan ilişkiler ve dönüşümler olarak okumak için görsel notlar.",
     "psyche.homeLink": "Şemayı ve araştırma notlarını keşfedin ↗",
+    "psyche.mode2d": "2B Şema (Şekil 5)",
+    "psyche.mode3d": "3D Halini Gör",
     "nav.faq": "SSS",
     "nav.contact": "İletişim",
     "nav.practice": "Klinik Pratik",
@@ -111,15 +113,15 @@
     "psyche.anchor": "ana gösteren",
     "psyche.origin": "Gösteren",
     "psyche.originText": "Söze ve dile açılan başlangıç noktası",
-    "psyche.message": "Baba metaforu",
-    "psyche.messageText": "Mesaj · Ayna evresi",
-    "psyche.fall": "Simgeselden düşme",
-    "psyche.unrecognized": "Simgeselde tanı(n)mama",
-    "psyche.recognized": "Simgeselde tanı(n)ma",
+    "psyche.message": "Baba Metaforu",
+    "psyche.messageText": "Mesaj · Ayna Evresi",
+    "psyche.fall": "Simgeselden Düşme",
+    "psyche.unrecognized": "Simgeselde Tanı(n)mama",
+    "psyche.recognized": "Simgeselde Tanı(n)ma",
     "psyche.code": "Baba-nın-Adları",
-    "psyche.codeText": "Kod · Ruhsal yapılar",
+    "psyche.codeText": "Kod · Ruhsal Yapılar",
     "psyche.psychotic": "Psikotik",
-    "psyche.perverse": "Perversiyon",
+    "psyche.perverse": "Pervert",
     "psyche.neurotic": "Nevrotik",
     "psyche.speech": "Dil alanı",
     "psyche.speechText": "Süjenin konuşma işlevi",
@@ -133,8 +135,8 @@
     "psyche.diagramDesc": "Şema; Baba metaforu ve ayna evresinden başlayıp Gerçek, İmgesel ve Simgesel arasındaki bağlantıları, S1 eksenini, ruhsal yapıları ve öznenin konuşma işlevini gösterir.",
     "psyche.s2Label": "S2 · gösteren zinciri",
     "psyche.s1Label": "S1",
-    "psyche.ayna": "Ayna evresi",
-    "psyche.structureHeading": "Ruhsal yapılar",
+    "psyche.ayna": "Ayna Evresi",
+    "psyche.structureHeading": "Ruhsal Yapılar",
     "psyche.captionText": "Şema, Dr. Ali İhsan Yaka’nın “Psikotik Yapı ve Baba İşlevi” çalışmasından uyarlanmıştır.",
     "psyche.captionLink": "2024 tarihli makaleyi inceleyin ↗",
     "psyche.researchPrompt": "Makalede yer alan diğer şemalar ve açıklamalar için",
@@ -866,6 +868,8 @@
     "research.title": "Psychoanalytic Research",
     "research.lead": "Visual notes exploring concepts not as static diagrams, but as interconnected relations and transformations.",
     "psyche.homeLink": "Explore the model and research notes ↗",
+    "psyche.mode2d": "2D Schema (Figure 5)",
+    "psyche.mode3d": "Explore 3D View",
     "nav.faq": "FAQ",
     "nav.contact": "Contact",
     "nav.practice": "Clinical Practice",
@@ -2162,15 +2166,30 @@
       sessionStorage.removeItem('aiy_splash_seen_session_v4');
     } catch (_) {}
 
-    // Always show splash screen with full 6-second presentation on visit / reload
-    document.documentElement.classList.remove('splash-visited');
-    splash.classList.remove('is-hidden', 'splash-closing');
-    splash.removeAttribute('aria-hidden');
-    splash.inert = false;
-    splash.style.display = '';
-    document.body.classList.add('splash-active');
-    setBackgroundInert(true);
-    window.requestAnimationFrame(() => enterButton?.focus({ preventScroll: true }));
+    // On mobile devices (<= 768px), bypass splash curtain automatically on initial load
+    // so mobile visitors land directly on the mobile-optimized hero without awkward overlays.
+    const isMobileViewport = window.matchMedia('(max-width: 768px)').matches;
+
+    if (isMobileViewport) {
+      isClosed = true;
+      document.documentElement.classList.add('splash-visited');
+      splash.classList.add('is-hidden');
+      splash.setAttribute('aria-hidden', 'true');
+      splash.inert = true;
+      splash.style.display = 'none';
+      document.body.classList.remove('splash-active');
+      setBackgroundInert(false);
+    } else {
+      // Desktop / PC: Show the elegant editorial monograph splash screen ("pc için güzel")
+      document.documentElement.classList.remove('splash-visited');
+      splash.classList.remove('is-hidden', 'splash-closing');
+      splash.removeAttribute('aria-hidden');
+      splash.inert = false;
+      splash.style.display = '';
+      document.body.classList.add('splash-active');
+      setBackgroundInert(true);
+      window.requestAnimationFrame(() => enterButton?.focus({ preventScroll: true }));
+    }
 
     const closeSplash = () => {
       if (isClosed) return;
@@ -2246,8 +2265,10 @@
       if (dy > 60) closeSplash();
     }, { passive: true });
 
-    // 5. Timer schedule (runs for 4.5 seconds)
-    scheduleSplashClose();
+    // 5. Timer schedule (runs for 4.5 seconds on desktop)
+    if (!isMobileViewport) {
+      scheduleSplashClose();
+    }
 
     // 6. Replay button in footer
     replayButton?.addEventListener('click', (event) => {

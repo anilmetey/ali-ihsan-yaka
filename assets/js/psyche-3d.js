@@ -108,14 +108,14 @@ function init() {
 
   /* ------------------------------------------------------------ palette */
   const C = {
-    msg: new THREE.Color('#4E5BA6'),      // horizontal S2 message vectors (Lacanian cobalt)
-    code: new THREE.Color('#C88218'),     // vertical S1 coding vectors & loops (warm ochre gold)
-    loop: new THREE.Color('#3A488D'),     // outer/inner S1-S2 loops
-    mirror: new THREE.Color('#C88218'),   // Mirror Stage vertical vector
+    msg: new THREE.Color('#3D5690'),      // horizontal S2 message vectors (Lacanian cobalt)
+    code: new THREE.Color('#B87314'),     // vertical S1 coding vectors & loops (warm ochre gold)
+    loop: new THREE.Color('#354B84'),     // outer/inner S1-S2 loops
+    mirror: new THREE.Color('#3D5690'),   // Mirror Stage vertical vector
     real: new THREE.Color('#C87820'),     // Gerçek (Warm terracotta amber)
-    imag: new THREE.Color('#7862B8'),     // İmgesel (Lacanian lavender indigo)
-    symb: new THREE.Color('#2E867E'),     // Simgesel (Lacanian teal)
-    glass: new THREE.Color('#4E5BA6')
+    imag: new THREE.Color('#6B52AE'),     // İmgesel (Lacanian lavender indigo)
+    symb: new THREE.Color('#1F7A70'),     // Simgesel (Lacanian teal)
+    glass: new THREE.Color('#3D5690')
   };
 
   /* ------------------------------------------------------------ renderer */
@@ -128,7 +128,7 @@ function init() {
   renderer.setPixelRatio(dpr);
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.08;
+  renderer.toneMappingExposure = 1.04;
   renderer.domElement.className = 'p3d-canvas';
   host.appendChild(renderer.domElement);
 
@@ -138,7 +138,7 @@ function init() {
 
   const scene = new THREE.Scene();
   scene.background = new THREE.Color('#FAF9F6');
-  scene.fog = new THREE.FogExp2('#FAF9F6', 0.005);
+  scene.fog = new THREE.FogExp2('#FAF9F6', 0.004);
 
   const camera = new THREE.PerspectiveCamera(28, 2, 0.1, 300);
   const controls = new OrbitControls(camera, labelRenderer.domElement);
@@ -154,19 +154,19 @@ function init() {
 
   const composer = new EffectComposer(renderer);
   composer.addPass(new RenderPass(scene, camera));
-  const bloom = new UnrealBloomPass(new THREE.Vector2(1024, 576), 0.12, 0.25, 0.85);
+  const bloom = new UnrealBloomPass(new THREE.Vector2(1024, 576), 0.05, 0.2, 0.99);
   composer.addPass(bloom);
   composer.addPass(new OutputPass());
 
   /* ------------------------------------------------------------ lights */
-  scene.add(new THREE.AmbientLight('#ffffff', 1.8));
-  const keyLight = new THREE.DirectionalLight('#fff9f0', 1.6);
+  scene.add(new THREE.AmbientLight('#ffffff', 2.1));
+  const keyLight = new THREE.DirectionalLight('#fffbf2', 1.5);
   keyLight.position.set(6, 10, 14);
   scene.add(keyLight);
-  const rimLight = new THREE.DirectionalLight('#4E5BA6', 0.85);
+  const rimLight = new THREE.DirectionalLight('#4E5BA6', 0.8);
   rimLight.position.set(-9, -4, 9);
   scene.add(rimLight);
-  const goldLight = new THREE.PointLight('#C88218', 12, 40, 1.2);
+  const goldLight = new THREE.PointLight('#C88218', 10, 40, 1.2);
   goldLight.position.set(3, 5, 8);
   scene.add(goldLight);
 
@@ -225,7 +225,7 @@ function init() {
       transparent: true,
       depthWrite: false,
       blending: THREE.NormalBlending,
-      toneMapped: true,
+      toneMapped: false,
       uniforms: {
         uColor: { value: color.clone() },
         uTime: { value: 0 },
@@ -256,14 +256,11 @@ function init() {
         void main() {
           float a = vUv.x;
           if (a > uProgress) discard;
-          float pulse = pow(fract(a * uDensity - uTime * uSpeed + uPhase), 5.0);
-          float core = pow(max(0.0, dot(vN, vView)), 0.6);
-          float rim = pow(1.0 - abs(dot(vN, vView)), 1.6);
-          float ends = smoothstep(0.0, 0.02, a) * smoothstep(uProgress, max(0.0, uProgress - 0.02), a);
-          vec3 baseCol = mix(uColor * 0.85, uColor * 1.15, core);
-          vec3 pulseCol = mix(baseCol, mix(uColor, vec3(1.0, 1.0, 1.0), 0.5), pulse * 0.4);
-          float alpha = (0.85 + 0.15 * pulse) * uDim * ends;
-          gl_FragColor = vec4(pulseCol, alpha);
+          float core = pow(max(0.0, abs(dot(vN, vView))), 0.45);
+          float ends = smoothstep(0.0, 0.015, a) * smoothstep(uProgress, max(0.0, uProgress - 0.015), a);
+          vec3 col = mix(uColor * 0.82, uColor * 1.06, core);
+          float alpha = 0.96 * uDim * ends;
+          gl_FragColor = vec4(col, alpha);
         }`
     });
     mat.userData.order = order;
@@ -274,13 +271,12 @@ function init() {
 
     let cone = null;
     if (arrow) {
-      const coneR = radius * 3.2 * arrowScale;
-      const coneH = radius * 7.8 * arrowScale;
-      const coneMat = new THREE.MeshStandardMaterial({
+      const coneR = radius * 3.15 * arrowScale;
+      const coneH = radius * 7.6 * arrowScale;
+      const coneMat = new THREE.MeshBasicMaterial({
         color: color.clone(),
-        roughness: 0.25,
-        metalness: 0.1,
-        transparent: true
+        transparent: true,
+        toneMapped: false
       });
       cone = new THREE.Mesh(new THREE.ConeGeometry(coneR, coneH, 20), coneMat);
       const end = curve.getPointAt(1);
@@ -288,6 +284,7 @@ function init() {
       cone.position.copy(end).addScaledVector(tan, -coneH * 0.38);
       cone.quaternion.setFromUnitVectors(V(0, 1, 0), tan);
       cone.scale.setScalar(0.001);
+      cone.renderOrder = 3;
       world.add(cone);
       mat.userData.cone = cone;
     }
@@ -313,13 +310,6 @@ function init() {
     span.dataset.key = text;
     span.textContent = t(text);
     el.appendChild(span);
-    el.style.cursor = 'pointer';
-    el.addEventListener('click', (e) => {
-      e.stopPropagation();
-      document.dispatchEvent(new CustomEvent('psyche:inspect', {
-        detail: { key: text, tags, label: t(text) }
-      }));
-    });
     const obj = new CSS2DObject(el);
     obj.position.copy(pos);
     world.add(obj);
@@ -334,16 +324,12 @@ function init() {
 
   function glassMonolith(cx, cy, w, h, d, tint, tags = ['all']) {
     const g = new THREE.Group();
-    const mat = new THREE.MeshPhysicalMaterial({
+    const mat = new THREE.MeshBasicMaterial({
       color: new THREE.Color('#FFFFFF'),
       transparent: true,
-      opacity: 0.72,
-      roughness: 0.12,
-      metalness: 0.05,
-      clearcoat: 1,
-      clearcoatRoughness: 0.1,
-      side: THREE.DoubleSide,
-      depthWrite: false
+      opacity: 0.9,
+      depthWrite: false,
+      toneMapped: false
     });
     const box = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat);
     g.add(box);
@@ -353,7 +339,7 @@ function init() {
       new THREE.LineBasicMaterial({
         color: tint,
         transparent: true,
-        opacity: 0.35,
+        opacity: 0.72,
         toneMapped: false
       })
     );
@@ -362,10 +348,11 @@ function init() {
     const backPlate = new THREE.Mesh(
       new THREE.PlaneGeometry(w * 0.94, h * 0.96),
       new THREE.MeshBasicMaterial({
-        color: '#F4F6FB',
+        color: '#F5F7FC',
         transparent: true,
-        opacity: 0.7,
-        depthWrite: false
+        opacity: 0.85,
+        depthWrite: false,
+        toneMapped: false
       })
     );
     backPlate.position.z = -d * 0.45;
@@ -376,8 +363,8 @@ function init() {
     dimmables.push({
       tags,
       setDim: v => {
-        edges.material.opacity = 0.15 + 0.35 * v;
-        mat.opacity = 0.25 + 0.47 * v;
+        edges.material.opacity = 0.25 + 0.55 * v;
+        mat.opacity = 0.35 + 0.55 * v;
       }
     });
     return g;
@@ -388,32 +375,31 @@ function init() {
   function processPedestal(x, y, key, tags) {
     const g = new THREE.Group();
     const plate = new THREE.Mesh(
-      new THREE.BoxGeometry(2.75, 0.56, 0.26),
-      new THREE.MeshPhysicalMaterial({
+      new THREE.BoxGeometry(2.72, 0.54, 0.22),
+      new THREE.MeshBasicMaterial({
         color: '#FFFFFF',
         transparent: true,
-        opacity: 0.92,
-        roughness: 0.18,
-        clearcoat: 0.8,
-        depthWrite: false
+        opacity: 0.96,
+        depthWrite: false,
+        toneMapped: false
       })
     );
     const border = new THREE.LineSegments(
       new THREE.EdgesGeometry(plate.geometry),
-      new THREE.LineBasicMaterial({ color: '#4E5BA6', transparent: true, opacity: 0.35, toneMapped: false })
+      new THREE.LineBasicMaterial({ color: '#4E5BA6', transparent: true, opacity: 0.52, toneMapped: false })
     );
     g.add(plate, border);
     g.position.set(x, y, 0);
     g.scale.setScalar(0.001);
     world.add(g);
-    label(key, V(x, y, 0.18), 'p3d-process', tags);
+    label(key, V(x, y, 0.16), 'p3d-process', tags);
     const n = { g, core: plate, tags, phase: Math.random() * 6.28, x, spin: false };
     nodes.push(n);
     dimmables.push({
       tags,
       setDim: v => {
-        plate.material.opacity = 0.25 + 0.67 * v;
-        border.material.opacity = 0.12 + 0.28 * v;
+        plate.material.opacity = 0.3 + 0.66 * v;
+        border.material.opacity = 0.15 + 0.42 * v;
       }
     });
     return n;
@@ -422,20 +408,18 @@ function init() {
   function registerNode(x, y, color, key, tags) {
     const g = new THREE.Group();
     const disc = new THREE.Mesh(
-      new THREE.CylinderGeometry(0.46, 0.46, 0.16, 40),
-      new THREE.MeshPhysicalMaterial({
+      new THREE.CylinderGeometry(0.43, 0.43, 0.14, 40),
+      new THREE.MeshBasicMaterial({
         color: '#FFFFFF',
-        roughness: 0.18,
-        metalness: 0.1,
-        clearcoat: 1,
         transparent: true,
-        opacity: 0.96
+        opacity: 0.97,
+        toneMapped: false
       })
     );
     disc.rotation.x = Math.PI / 2;
 
     const ring = new THREE.Mesh(
-      new THREE.TorusGeometry(0.48, 0.026, 16, 72),
+      new THREE.TorusGeometry(0.44, 0.025, 16, 72),
       new THREE.MeshBasicMaterial({
         color: color,
         transparent: true,
@@ -450,11 +434,11 @@ function init() {
         map: glowTexture,
         color,
         transparent: true,
-        opacity: 0.15,
+        opacity: 0.12,
         depthWrite: false
       })
     );
-    halo.scale.setScalar(1.35);
+    halo.scale.setScalar(1.25);
 
     g.add(disc, ring, halo);
     g.position.set(x, y, 0);
@@ -462,16 +446,16 @@ function init() {
     world.add(g);
 
     // Label sits directly on the 3D medallion so no arrows ever cross the text
-    label(key, V(x, y, 0.22), 'p3d-register', tags);
+    label(key, V(x, y, 0.2), 'p3d-register', tags);
 
     const n = { g, core: ring, ring: disc, halo, tags, phase: Math.random() * 6.28, x, spin: false };
     nodes.push(n);
     dimmables.push({
       tags,
       setDim: v => {
-        disc.material.opacity = 0.3 + 0.66 * v;
-        ring.material.opacity = 0.25 + 0.67 * v;
-        halo.material.opacity = 0.04 + 0.11 * v;
+        disc.material.opacity = 0.3 + 0.67 * v;
+        ring.material.opacity = 0.25 + 0.68 * v;
+        halo.material.opacity = 0.03 + 0.09 * v;
       }
     });
     return n;
@@ -480,14 +464,12 @@ function init() {
   function structureNode(x, y, key, tag, color) {
     const g = new THREE.Group();
     const box = new THREE.Mesh(
-      new THREE.BoxGeometry(1.55, 0.58, 0.28),
-      new THREE.MeshPhysicalMaterial({
+      new THREE.BoxGeometry(1.52, 0.56, 0.24),
+      new THREE.MeshBasicMaterial({
         color: '#FFFFFF',
-        roughness: 0.16,
-        metalness: 0.1,
-        clearcoat: 1,
         transparent: true,
-        opacity: 0.94
+        opacity: 0.97,
+        toneMapped: false
       })
     );
     const edges = new THREE.LineSegments(
@@ -495,7 +477,7 @@ function init() {
       new THREE.LineBasicMaterial({
         color: color,
         transparent: true,
-        opacity: 0.85,
+        opacity: 0.88,
         toneMapped: false
       })
     );
@@ -504,18 +486,18 @@ function init() {
         map: glowTexture,
         color,
         transparent: true,
-        opacity: 0.14,
+        opacity: 0.12,
         depthWrite: false
       })
     );
-    halo.scale.set(2.1, 1.2, 1);
+    halo.scale.set(1.9, 1.1, 1);
 
     g.add(box, edges, halo);
     g.position.set(x, y, 0);
     g.scale.setScalar(0.001);
     world.add(g);
 
-    const el = label(key, V(x, y, 0.22), 'p3d-structure', [tag]);
+    const el = label(key, V(x, y, 0.2), 'p3d-structure', [tag]);
     el.dataset.filter = tag;
 
     const n = { g, core: box, ring: edges, halo, tags: [tag], phase: Math.random() * 6.28, x, spin: false };
@@ -523,9 +505,9 @@ function init() {
     dimmables.push({
       tags: [tag],
       setDim: v => {
-        box.material.opacity = 0.3 + 0.64 * v;
-        edges.material.opacity = 0.25 + 0.6 * v;
-        halo.material.opacity = 0.04 + 0.1 * v;
+        box.material.opacity = 0.3 + 0.67 * v;
+        edges.material.opacity = 0.25 + 0.65 * v;
+        halo.material.opacity = 0.03 + 0.09 * v;
       }
     });
     return n;
@@ -556,30 +538,30 @@ function init() {
   label('speech', V(X.Rb, -0.05, 0.52), 'p3d-terminal p3d-speech');
 
   /* 2. Column Headings */
-  label('metaphor', V(X.P, 3.05, 0.1), 'p3d-heading');
-  label('metaphorSub', V(X.P, 2.55, 0.1), 'p3d-sub');
+  label('metaphor', V(X.P, 3.16, 0.1), 'p3d-heading');
+  label('metaphorSub', V(X.P, 2.68, 0.1), 'p3d-sub');
 
-  label('names', V(X.G, 3.05, 0.1), 'p3d-heading');
-  label('namesSub', V(X.G, 2.55, 0.1), 'p3d-sub');
+  label('names', V(X.G, 3.16, 0.1), 'p3d-heading');
+  label('namesSub', V(X.G, 2.68, 0.1), 'p3d-sub');
 
-  label('structures', V(X.Y, 3.08, 0.1), 'p3d-heading');
-  label('structuresSub', V(X.Y, 2.58, 0.1), 'p3d-sub');
+  label('structures', V(X.Y, 3.16, 0.1), 'p3d-heading');
+  label('structuresSub', V(X.Y, 2.68, 0.1), 'p3d-heading');
 
   /* 3. Top Bridge Arrows (Left → Right across headings, as in Figure 5) */
   // Gösteren top → Baba Metaforu
-  flowTube(arc(V(X.L + 0.58, 2.75, 0.1), V(X.P - 1.35, 2.75, 0.1), 0.65, 0.25), {
+  flowTube(arc(V(X.L + 0.58, 2.75, 0.1), V(X.P - 1.38, 2.72, 0.1), 0.62, 0.22), {
     color: C.msg, radius: 0.042, order: 0.3, particles: 2
   });
-  // Baba Metaforu → Baba-nın-Adları (arches over Ayna Evresi top)
-  flowTube(arc(V(X.P + 1.25, 2.72, 0.1), V(X.G - 1.45, 2.72, 0.1), 0.68, 0.25), {
+  // Baba Metaforu right (left of Ayna Evresi) → arches OVER top of Ayna Evresi shaft → into Baba-nın-Adları
+  flowTube(arc(V(X.M - 0.55, 2.7, 0.1), V(X.G - 1.58, 2.7, 0.1), 0.64, 0.22), {
     color: C.msg, radius: 0.042, order: 1.4, particles: 2
   });
-  // Baba-nın-Adları / S1 top → Ruhsal Yapılar (arches over S1 vertical axis top)
-  flowTube(arc(V(X.A - 0.55, 2.85, 0.1), V(X.Y - 0.85, 2.85, 0.1), 0.52, 0.2), {
+  // S1 top → Ruhsal Yapılar (arches directly over S1 vertical axis top arrowhead)
+  flowTube(arc(V(X.A - 0.56, 2.76, 0.1), V(X.A + 0.58, 2.76, 0.1), 0.52, 0.2), {
     color: C.msg, radius: 0.04, order: 3.55, particles: 1
   });
   // Ruhsal Yapılar → Süjenin Dil Alanı
-  flowTube(arc(V(X.Y + 0.85, 2.85, 0.1), V(X.Rb - 1.28, 2.8, 0.1), 0.52, 0.2), {
+  flowTube(arc(V(X.Y + 0.88, 2.75, 0.1), V(X.Rb - 1.28, 2.72, 0.1), 0.54, 0.2), {
     color: C.msg, radius: 0.04, order: 4.4, particles: 1
   });
 
@@ -595,63 +577,46 @@ function init() {
     });
 
     // Horizontal arrow: Process stage → Ayna Evresi blade
-    flowTube(line(V(X.P + 1.42, y, 0), V(X.M - 0.16, y, 0)), {
+    flowTube(line(V(X.P + 1.42, y, 0), V(X.M - 0.08, y, 0)), {
       color: C.msg, radius: 0.04, tags, order: 1.25 + i * 0.08, particles: 1
     });
 
     // Horizontal arrow: after Ayna Evresi → into Baba-nın-Adları matrix
-    flowTube(line(V(X.M + 0.52, y, 0), V(X.I - 0.54, y, 0)), {
+    flowTube(line(V(X.M + 0.56, y, 0), V(X.I - 0.48, y, 0)), {
       color: C.msg, radius: 0.04, tags, order: 1.65 + i * 0.08, particles: 2
     });
   });
 
   // Vertical downward arrows centered in Baba Metaforu column:
   // (Mesaj) ↓ Simgeselden Düşme ↓ Simgeselde Tanı(n)mama ↓ Simgeselde Tanı(n)ma
-  flowTube(line(V(X.P, 2.28, 0), V(X.P, R[0] + 0.31, 0)), {
-    color: C.msg, radius: 0.034, order: 0.85, particles: 1
+  flowTube(line(V(X.P, 2.42, 0), V(X.P, R[0] + 0.29, 0)), {
+    color: C.msg, radius: 0.036, order: 0.85, particles: 1
   });
-  flowTube(line(V(X.P, R[0] - 0.31, 0), V(X.P, R[1] + 0.31, 0)), {
-    color: C.msg, radius: 0.034, order: 0.98, particles: 1
+  flowTube(line(V(X.P, R[0] - 0.3, 0), V(X.P, R[1] + 0.3, 0)), {
+    color: C.msg, radius: 0.036, order: 0.98, particles: 1
   });
-  flowTube(line(V(X.P, R[1] - 0.31, 0), V(X.P, R[2] + 0.31, 0)), {
-    color: C.msg, radius: 0.034, order: 1.12, particles: 1
+  flowTube(line(V(X.P, R[1] - 0.3, 0), V(X.P, R[2] + 0.3, 0)), {
+    color: C.msg, radius: 0.036, order: 1.12, particles: 1
   });
   // Bottom curved descent from Simgeselde Tanı(n)ma ↘ bottom S2
   flowTube(
     bezier(
-      V(X.P, R[2] - 0.32, 0),
+      V(X.P, R[2] - 0.3, 0),
       V(X.P + 0.05, -2.75, 0.15),
-      V(X.M - 1.05, -3.18, 0.15),
-      V(X.M - 0.25, -3.18, 0)
+      V(X.M - 1.05, -3.15, 0.15),
+      V(X.M - 0.25, -3.12, 0)
     ),
     { color: C.msg, radius: 0.042, tags: ['neu'], order: 1.95, particles: 2 }
   );
 
   /* 5. Ayna Evresi: Vertical Downward Pillar + Refractive Prism Blade */
-  glassMonolith(X.M, -0.1, 0.26, 5.75, 1.35, C.mirror);
-  flowTube(line(V(X.M, 2.65, 0.22), V(X.M, -3.05, 0.22)), {
-    color: C.mirror, radius: 0.052, speed: 0.4, order: 1.5, particles: 3, glow: 1.1
+  glassMonolith(X.M, -0.1, 0.22, 5.65, 0.95, C.mirror);
+  flowTube(line(V(X.M, 2.52, 0.22), V(X.M, -3.08, 0.22)), {
+    color: C.mirror, radius: 0.05, speed: 0.4, order: 1.5, particles: 3, glow: 1.05
   });
   label('mirror', V(X.M + 0.32, -0.15, 0.35), 'p3d-mirror p3d-vertical');
 
-  /* 6. Baba-nın-Adları (Kod) — Complete Figure 5 Matrix + Figure 4 Grid */
-  // Subtle 3×3 background coordinate grid representing Figure 4 (S1 × S2 intersections)
-  const gridGroup = new THREE.Group();
-  [X.I, X.G, X.S].forEach(gx => {
-    const gLine = new THREE.Line(
-      new THREE.BufferGeometry().setFromPoints([V(gx, -2.25, -0.25), V(gx, 2.25, -0.25)]),
-      new THREE.LineBasicMaterial({ color: '#f0be6e', transparent: true, opacity: 0.16 })
-    );
-    gridGroup.add(gLine);
-  });
-  R.forEach(gy => {
-    const gLine = new THREE.Line(
-      new THREE.BufferGeometry().setFromPoints([V(X.I - 0.7, gy, -0.25), V(X.S + 0.7, gy, -0.25)]),
-      new THREE.LineBasicMaterial({ color: '#6c92ff', transparent: true, opacity: 0.16 })
-    );
-    gridGroup.add(gLine);
-  });
-  world.add(gridGroup);
+  /* 6. Baba-nın-Adları (Kod) — Complete Figure 5 Matrix */
 
   // Register medallions in the 3 rows:
   // Row 0 (Simgeselden Düşme -> Psikotik): Gerçek
@@ -668,157 +633,154 @@ function init() {
   // U-shaped curve from top of İmgesel vertical vector into Row 0 Gerçek (exact Figure 5 detail!)
   flowTube(
     bezier(
-      V(X.I + 0.12, R[0] - 0.12, 0.12),
-      V(X.I + 0.35, R[0] - 0.82, 0.25),
-      V(X.G - 0.65, R[0] - 0.82, 0.25),
-      V(X.G - 0.46, R[0] - 0.12, 0.12)
+      V(X.I + 0.16, R[0] - 0.08, 0.14),
+      V(X.I + 0.34, R[0] - 0.78, 0.25),
+      V(X.G - 0.56, R[0] - 0.78, 0.25),
+      V(X.G - 0.34, R[0] - 0.22, 0.14)
     ),
     { color: C.code, radius: 0.034, tags: ['psy'], order: 2.35, particles: 2 }
   );
-  // Horizontal arrow to the right of Row 0 Gerçek
-  flowTube(line(V(X.G + 0.54, R[0], 0), V(X.S - 0.15, R[0], 0)), {
+  // Short horizontal arrow to the right of Row 0 Gerçek (Gerçek →)
+  flowTube(line(V(X.G + 0.46, R[0], 0), V(X.G + 1.28, R[0], 0)), {
     color: C.msg, radius: 0.036, tags: ['psy'], order: 2.55, particles: 1
   });
-  // Over-loop above the horizontal arrow returning into Row 0 Gerçek (retrograde coding loop: gelen ok)
+  // Over-loop above the horizontal arrow returning into top-right of Row 0 Gerçek (↶)
   flowTube(
-    arc(V(X.S + 0.15, R[0] + 0.18, 0.14), V(X.G + 0.42, R[0] + 0.26, 0.14), 0.52, 0.18),
+    arc(V(X.G + 1.38, R[0] + 0.14, 0.14), V(X.G + 0.30, R[0] + 0.34, 0.14), 0.48, 0.18),
     { color: C.code, radius: 0.032, tags: ['psy'], order: 2.6, particles: 1 }
   );
 
   // --- Row 1 (Middle / Pervert) connections inside Baba-nın-Adları ---
   // Horizontal arrow: İmgesel → Gerçek
-  flowTube(line(V(X.I + 0.52, R[1], 0), V(X.G - 0.52, R[1], 0)), {
+  flowTube(line(V(X.I + 0.46, R[1], 0), V(X.G - 0.46, R[1], 0)), {
     color: C.msg, radius: 0.036, tags: ['per'], order: 2.3, particles: 1
   });
-  // Downward U-shaped under-loop: İmgesel ⌣ Gerçek
+  // Downward U-shaped under-loop: İmgesel ╰⤴ Gerçek
   flowTube(
     bezier(
-      V(X.I + 0.22, R[1] - 0.42, 0.14),
-      V(X.I + 0.42, R[1] - 0.96, 0.26),
-      V(X.G - 0.42, R[1] - 0.96, 0.26),
-      V(X.G - 0.22, R[1] - 0.42, 0.14)
+      V(X.I + 0.18, R[1] - 0.36, 0.14),
+      V(X.I + 0.36, R[1] - 0.94, 0.26),
+      V(X.G - 0.40, R[1] - 0.94, 0.26),
+      V(X.G - 0.24, R[1] - 0.36, 0.14)
     ),
     { color: C.code, radius: 0.032, tags: ['per'], order: 2.42, particles: 1 }
   );
-  // Horizontal arrow to the right of Row 1 Gerçek
-  flowTube(line(V(X.G + 0.54, R[1], 0), V(X.S - 0.15, R[1], 0)), {
+  // Short horizontal arrow to the right of Row 1 Gerçek (Gerçek →)
+  flowTube(line(V(X.G + 0.46, R[1], 0), V(X.G + 1.28, R[1], 0)), {
     color: C.msg, radius: 0.036, tags: ['per'], order: 2.55, particles: 1
   });
-  // Over-loop returning from right back into Row 1 Gerçek (retrograde coding loop: gelen ok)
+  // Over-loop arching over Gerçek → back into top-right of Row 1 Gerçek (↶)
   flowTube(
-    arc(V(X.S + 0.28, R[1] + 0.18, 0.14), V(X.G + 0.35, R[1] + 0.32, 0.14), 0.56, 0.18),
+    arc(V(X.G + 1.54, R[1] + 0.14, 0.14), V(X.G + 0.30, R[1] + 0.34, 0.14), 0.52, 0.18),
     { color: C.code, radius: 0.032, tags: ['per'], order: 2.62, particles: 1 }
   );
 
   // --- Row 2 (Bottom / Nevrotik) connections inside Baba-nın-Adları ---
   // Horizontal arrow: İmgesel → Gerçek
-  flowTube(line(V(X.I + 0.52, R[2], 0), V(X.G - 0.52, R[2], 0)), {
+  flowTube(line(V(X.I + 0.46, R[2], 0), V(X.G - 0.46, R[2], 0)), {
     color: C.msg, radius: 0.036, tags: ['neu'], order: 2.25, particles: 1
   });
-  // Downward U-shaped under-loop: İmgesel ⌣ Gerçek
+  // Downward U-shaped under-loop: İmgesel ╰⤴ Gerçek
   flowTube(
     bezier(
-      V(X.I + 0.22, R[2] - 0.42, 0.14),
-      V(X.I + 0.42, R[2] - 1.02, 0.26),
-      V(X.G - 0.42, R[2] - 1.02, 0.26),
-      V(X.G - 0.22, R[2] - 0.42, 0.14)
+      V(X.I + 0.16, R[2] - 0.38, 0.14),
+      V(X.I + 0.34, R[2] - 1.02, 0.26),
+      V(X.G - 0.38, R[2] - 1.02, 0.26),
+      V(X.G - 0.22, R[2] - 0.38, 0.14)
     ),
     { color: C.code, radius: 0.032, tags: ['neu'], order: 2.38, particles: 1 }
   );
   // Horizontal arrow: Gerçek → Simgesel
-  flowTube(line(V(X.G + 0.52, R[2], 0), V(X.S - 0.52, R[2], 0)), {
+  flowTube(line(V(X.G + 0.46, R[2], 0), V(X.S - 0.46, R[2], 0)), {
     color: C.msg, radius: 0.036, tags: ['neu'], order: 2.5, particles: 1
   });
-  // Upward over-loop: returning from Simgesel back into Gerçek (retrograde coding loop: gelen ok)
+  // Upward over-loop: Simgesel ↶ Gerçek
   flowTube(
-    arc(V(X.S - 0.25, R[2] + 0.4, 0.14), V(X.G + 0.25, R[2] + 0.4, 0.14), 0.55, 0.22),
+    arc(V(X.S - 0.14, R[2] + 0.36, 0.14), V(X.G + 0.30, R[2] + 0.36, 0.14), 0.52, 0.22),
     { color: C.code, radius: 0.032, tags: ['neu'], order: 2.58, particles: 1 }
   );
 
   // --- Vertical Upward Metonymic Coding Vectors (Bottom → Top) ---
   // Column 1 (İmgesel): Row 2 ↑ Row 1, and Row 1 ↑ Row 0 level
-  flowTube(line(V(X.I, R[2] + 0.52, 0), V(X.I, R[1] - 0.52, 0)), {
+  flowTube(line(V(X.I, R[2] + 0.46, 0), V(X.I, R[1] - 0.46, 0)), {
     color: C.code, radius: 0.036, tags: ['neu', 'per'], order: 2.75, particles: 1
   });
-  flowTube(line(V(X.I, R[1] + 0.52, 0), V(X.I, R[0] - 0.05, 0)), {
+  flowTube(line(V(X.I, R[1] + 0.46, 0), V(X.I, R[0] - 0.06, 0)), {
     color: C.code, radius: 0.036, tags: ['per', 'psy'], order: 2.85, particles: 1
   });
   // Column 2 (Gerçek): Row 2 ↑ Row 1 ↑ Row 0 ↑ (Kod)
-  flowTube(line(V(X.G, R[2] + 0.52, 0), V(X.G, R[1] - 0.52, 0)), {
+  flowTube(line(V(X.G, R[2] + 0.46, 0), V(X.G, R[1] - 0.46, 0)), {
     color: C.code, radius: 0.038, tags: ['neu', 'per'], order: 2.78, particles: 1
   });
-  flowTube(line(V(X.G, R[1] + 0.52, 0), V(X.G, R[0] - 0.52, 0)), {
+  flowTube(line(V(X.G, R[1] + 0.46, 0), V(X.G, R[0] - 0.46, 0)), {
     color: C.code, radius: 0.038, tags: ['per', 'psy'], order: 2.88, particles: 1
   });
-  flowTube(line(V(X.G, R[0] + 0.52, 0), V(X.G, 2.28, 0)), {
+  flowTube(line(V(X.G, R[0] + 0.45, 0), V(X.G, 2.44, 0)), {
     color: C.code, radius: 0.038, tags: ['psy'], order: 2.98, particles: 1
   });
-  // Column 3 (Simgesel): rises upward from Simgesel
-  flowTube(line(V(X.S + 0.58, R[2] + 0.25, 0), V(X.S + 0.58, R[1] - 0.35, 0)), {
-    color: C.code, radius: 0.034, tags: ['neu'], order: 2.82, particles: 1
+  // Column 3 (Simgesel): rises upward from top-right of Simgesel (to the right of the Row 2 over-loop)
+  flowTube(line(V(X.S + 0.18, R[2] + 0.46, 0), V(X.S + 0.18, R[1] - 0.36, 0)), {
+    color: C.code, radius: 0.035, tags: ['neu'], order: 2.82, particles: 1
   });
 
   /* 7. S1 Vertical Upward Axis + Jump Arcs into Ruhsal Yapılar */
-  flowTube(line(V(X.A, -3.05, 0.15), V(X.A, 2.72, 0.15)), {
-    color: C.code, radius: 0.062, speed: 0.52, order: 3.3, particles: 4, glow: 1.15
+  flowTube(line(V(X.A, -3.05, 0.15), V(X.A, 2.58, 0.15)), {
+    color: C.code, radius: 0.06, speed: 0.52, order: 3.3, particles: 4, glow: 1.05
   });
 
   const structColors = [
-    new THREE.Color('#C85A3B'),   // Psikotik
-    new THREE.Color('#7A58A8'),   // Pervert
-    new THREE.Color('#3B6E9E')    // Nevrotik
+    new THREE.Color('#B84A2E'),   // Psikotik
+    new THREE.Color('#6B4C9A'),   // Pervert
+    new THREE.Color('#2E5E8E')    // Nevrotik
   ];
   const structKeys = ['psy', 'per', 'neu'];
 
   R.forEach((y, i) => {
     const tags = [ROWTAG[i]];
-    // Curved jump arrow hopping OVER the S1 vertical axis into each Psychic Structure
+    // Tight curved jump arrow hopping directly OVER the S1 vertical shaft (left of S1 → right of S1)
     flowTube(
-      arc(V(X.A - 0.52, y + 0.06, 0.28), V(X.Y - 0.84, y + 0.06, 0.12), 0.58, 0.25),
+      arc(V(X.A - 0.42, y - 0.02, 0.24), V(X.A + 0.44, y - 0.02, 0.24), 0.46, 0.22),
       { color: C.code, radius: 0.036, tags, order: 3.6 + i * 0.06, particles: 2 }
     );
 
     structureNode(X.Y, y, structKeys[i], ROWTAG[i], structColors[i]);
 
     // Horizontal output arrow: Psychic Structure → Süjenin Dil Alanı ve Konuşma İşlevi
-    flowTube(line(V(X.Y + 0.84, y, 0), V(X.Rb - 1.32, y, 0)), {
+    flowTube(line(V(X.Y + 0.82, y, 0), V(X.Rb - 1.32, y, 0)), {
       color: C.msg, radius: 0.042, tags, order: 4.3 + i * 0.06, particles: 2
     });
   });
 
-  // Vertical upward arrows connecting Nevrotik ↑ Pervert ↑ Psikotik ↑ Ruhsal Yapılar
-  flowTube(line(V(X.Y, R[2] + 0.34, 0), V(X.Y, R[1] - 0.34, 0)), {
+  // Vertical upward arrows connecting Nevrotik ↑ Pervert ↑ Psikotik (no arrow above Psikotik)
+  flowTube(line(V(X.Y, R[2] + 0.32, 0), V(X.Y, R[1] - 0.32, 0)), {
     color: C.code, radius: 0.036, tags: ['neu', 'per'], order: 3.95, particles: 1
   });
-  flowTube(line(V(X.Y, R[1] + 0.34, 0), V(X.Y, R[0] - 0.34, 0)), {
+  flowTube(line(V(X.Y, R[1] + 0.32, 0), V(X.Y, R[0] - 0.32, 0)), {
     color: C.code, radius: 0.036, tags: ['per', 'psy'], order: 4.05, particles: 1
   });
-  flowTube(line(V(X.Y, R[0] + 0.34, 0), V(X.Y, 2.28, 0)), {
-    color: C.code, radius: 0.036, tags: ['psy'], order: 4.15, particles: 1
-  });
 
-  /* 8. Inner S1 ↔ S2 Loops (Top: S1 → S2 right-to-left; Bottom: S2 → S1 left-to-right) */
-  flowTube(arc(V(X.A - 0.05, 3.05, -0.25), V(X.M + 0.05, 3.02, -0.25), 1.38, -0.35), {
+  /* 8. Inner S1 ↔ S2 Loops (Top: S1 → S2 right-to-left; Bottom: S2 → S1 left-to-right arching upward) */
+  flowTube(arc(V(X.A - 0.05, 3.05, -0.25), V(X.M + 0.05, 3.02, -0.25), 1.35, -0.35), {
     color: C.loop, radius: 0.054, order: 4.6, speed: 0.38, particles: 3, glow: 1.05
   });
-  flowTube(arc(V(X.M + 0.1, -3.22, -0.25), V(X.A - 0.1, -3.22, -0.25), 0.72, -0.25), {
+  flowTube(arc(V(X.M + 0.18, -3.38, -0.25), V(X.A - 0.12, -3.38, -0.25), 0.58, -0.25), {
     color: C.loop, radius: 0.05, order: 4.65, speed: 0.38, particles: 3, glow: 1.05
   });
-  // Curved connector from bottom S1 up into the Nevrotik / S1 stream (exact Figure 5 bottom-right curve)
+  // Curved connector from bottom S1 up into the bottom of Nevrotik (exact Figure 5 bottom-right curve)
   flowTube(
     bezier(
-      V(X.A + 0.25, -3.05, 0),
-      V(X.A + 0.85, -3.25, 0.15),
-      V(X.Y + 0.1, -2.65, 0.15),
-      V(X.Y, R[2] - 0.35, 0)
+      V(X.A + 0.16, -3.02, 0),
+      V(X.A + 0.78, -3.28, 0.15),
+      V(X.Y + 0.05, -2.55, 0.15),
+      V(X.Y, R[2] - 0.34, 0)
     ),
     { color: C.code, radius: 0.038, tags: ['neu'], order: 4.7, particles: 1 }
   );
 
-  label('S2', V(X.M - 0.45, 3.72, -0.2), 'p3d-sym');
-  label('S1', V(X.A + 0.52, 3.72, -0.2), 'p3d-sym p3d-sym-gold');
-  label('S2', V(X.M - 0.15, -3.72, -0.2), 'p3d-sym');
-  label('S1', V(X.A + 0.15, -3.72, -0.2), 'p3d-sym p3d-sym-gold');
+  label('S2', V(X.M - 0.42, 3.68, -0.2), 'p3d-sym');
+  label('S1', V(X.A + 0.48, 3.68, -0.2), 'p3d-sym p3d-sym-gold');
+  label('S2', V(X.M - 0.12, -3.65, -0.2), 'p3d-sym');
+  label('S1', V(X.A + 0.12, -3.65, -0.2), 'p3d-sym p3d-sym-gold');
 
   /* 9. Giant Outer Loops (Top: Dil Alanı → Gösteren; Bottom: Gösteren → Dil Alanı) */
   flowTube(arc(V(X.Rb, 3.25, -0.65), V(X.L + 0.1, 3.25, -0.65), 2.75, -0.7), {
@@ -839,7 +801,7 @@ function init() {
     for (let k = 0; k < f.count; k++) {
       const i = particleState.length;
       particleState.push({ f, u: k / f.count + Math.random() * 0.08 });
-      pCol.set([f.color.r * 1.45, f.color.g * 1.45, f.color.b * 1.45], i * 3);
+      pCol.set([f.color.r, f.color.g, f.color.b], i * 3);
       pSize[i] = 1;
     }
   });
@@ -850,7 +812,7 @@ function init() {
     transparent: true,
     depthWrite: false,
     blending: THREE.NormalBlending,
-    toneMapped: true,
+    toneMapped: false,
     vertexColors: true,
     uniforms: { uMap: { value: glowTexture }, uPx: { value: dpr } },
     vertexShader: /* glsl */`
@@ -862,7 +824,7 @@ function init() {
         vColor = color;
         vA = aScale;
         vec4 mv = modelViewMatrix * vec4(position, 1.0);
-        gl_PointSize = 22.0 * uPx * aScale / -mv.z * 6.0;
+        gl_PointSize = 20.0 * uPx * aScale / -mv.z * 6.0;
         gl_Position = projectionMatrix * mv;
       }`,
     fragmentShader: /* glsl */`
@@ -878,7 +840,7 @@ function init() {
   points.renderOrder = 4;
   world.add(points);
 
-  /* atmosphere: pristine clean ivory space */
+  /* atmosphere: clean ivory space matching site theme */
 
   /* ------------------------------------------------------------ UI overlay */
   const ui = document.createElement('div');
@@ -922,7 +884,7 @@ function init() {
   /* ------------------------------------------------------------ filter */
   const dimTargets = dimmables.map(() => 1);
   const dimValues = dimmables.map(() => 1);
-  function setFilter(f, updateCamera = true) {
+  function setFilter(f) {
     dimmables.forEach((d, i) => {
       if (f === 'all') dimTargets[i] = 1;
       else if (d.tags.includes(f)) dimTargets[i] = 1;
@@ -930,25 +892,7 @@ function init() {
       else dimTargets[i] = 0.08;
     });
     ui.querySelectorAll('.p3d-chip').forEach(b => b.classList.toggle('is-active', b.dataset.filter === f));
-    if (updateCamera && !flat) {
-      if (f === 'psy') goTo({ az: -0.42, pol: Math.PI / 2 - 0.22 }, 1.2);
-      else if (f === 'per') goTo({ az: -0.15, pol: Math.PI / 2 - 0.08 }, 1.2);
-      else if (f === 'neu') goTo({ az: 0.18, pol: Math.PI / 2 - 0.18 }, 1.2);
-      else if (f === 'all') goTo(VIEW_3D, 1.2);
-    }
-    document.dispatchEvent(new CustomEvent('psyche:filterChange', { detail: { filter: f } }));
   }
-  document.addEventListener('psyche:setFilter', e => {
-    if (e.detail && e.detail.filter) {
-      setFilter(e.detail.filter);
-    }
-  });
-  window.Psyche3D = {
-    setFilter,
-    goTo,
-    toggleFlat: () => viewBtn.click(),
-    reset: () => { setFilter('all'); goTo(VIEW_3D); }
-  };
   ui.querySelectorAll('.p3d-chip').forEach(b =>
     b.addEventListener('click', () => setFilter(b.dataset.filter))
   );
@@ -1025,10 +969,12 @@ function init() {
     host.style.setProperty('--p3d-scale', String(THREE.MathUtils.clamp(w / 1260, 0.62, 1.22)));
     pMat.uniforms.uPx.value = renderer.getPixelRatio();
   }
-  new ResizeObserver(resize).observe(host);
+  const ro = new ResizeObserver(resize);
+  if (frame) ro.observe(frame);
+  if (host) ro.observe(host);
 
   /* ------------------------------------------------------------ intro + loop */
-  frame.classList.add('is-3d');
+  // (is-3d class is controlled by setupModeSwitcher)
   resize();
   placeCamera(-0.68, VIEW_3D.pol - 0.22, fitDistance * 1.32);
   controls.update();
@@ -1040,8 +986,8 @@ function init() {
   const easeOut = x => 1 - Math.pow(1 - x, 3);
   const easeInOut = x => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
 
-  function startIntro() {
-    if (introStart !== null) return;
+  function startIntro(forceRestart = false) {
+    if (introStart !== null && !forceRestart) return;
     introStart = performance.now();
     if (reduceMotion.matches) {
       tubeMaterials.forEach(m => {
@@ -1052,14 +998,30 @@ function init() {
       placeCamera(VIEW_3D.az, VIEW_3D.pol);
       return;
     }
+    placeCamera(-0.68, VIEW_3D.pol - 0.22, fitDistance * 1.32);
     const s = currentSpherical();
     tween = {
       from: { az: s.theta, pol: s.phi, d: s.radius },
-      to: { ...VIEW_3D, d: fitDistance },
+      to: { ...(flat ? VIEW_FLAT : VIEW_3D), d: fitDistance },
       t0: introStart,
-      dur: 3000
+      dur: 2600
     };
   }
+
+  window.Psyche3D = {
+    set3DMode(active, fromUser = false) {
+      if (active) {
+        requestAnimationFrame(() => {
+          resize();
+          inView = true;
+          if (fromUser || introStart === null) {
+            startIntro(true);
+          }
+          sync();
+        });
+      }
+    }
+  };
 
   const tmp = new THREE.Vector3();
   function frameTick() {
@@ -1159,11 +1121,55 @@ function init() {
       sync();
     },
     { threshold: 0.08 }
-  ).observe(host);
+  ).observe(frame || host);
   document.addEventListener('visibilitychange', sync);
   renderer.domElement.addEventListener('webglcontextlost', e => {
     e.preventDefault();
     frame.classList.remove('is-3d');
     running = false;
   });
+}
+
+/* ------------------------------------------------------------ 2-Katlı Mod Switcher (2B Şema & 3D Halini Gör) */
+function setupModeSwitcher() {
+  const switchers = document.querySelectorAll('.psyche-mode-switcher');
+  if (!switchers.length) return;
+
+  function setMode(mode, fromUser = false) {
+    const is3D = mode === '3d';
+    switchers.forEach(sw => {
+      sw.querySelectorAll('.psyche-mode-btn').forEach(btn => {
+        const active = btn.dataset.mode === mode;
+        btn.classList.toggle('is-active', active);
+        btn.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+    });
+
+    if (is3D) {
+      frame?.classList.add('is-3d');
+      if (window.Psyche3D) {
+        window.Psyche3D.set3DMode(true, fromUser);
+      }
+    } else {
+      frame?.classList.remove('is-3d');
+    }
+  }
+
+  switchers.forEach(sw => {
+    sw.addEventListener('click', e => {
+      const btn = e.target.closest('.psyche-mode-btn');
+      if (!btn) return;
+      const mode = btn.dataset.mode;
+      setMode(mode, true);
+    });
+  });
+
+  const initial3D = new URLSearchParams(window.location.search).get('view') === '3d';
+  setMode(initial3D ? '3d' : '2d');
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', setupModeSwitcher);
+} else {
+  setupModeSwitcher();
 }

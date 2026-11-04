@@ -33,7 +33,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 
   <link rel="icon" href="assets/images/psyche-structure-mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="app.css?v=5.95">
+  <link rel="stylesheet" href="app.css?v=5.99">
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -291,63 +291,259 @@
         </header>
 
         <figure class="psyche-diagram" data-psyche-model>
+                    <div class="psyche-mode-switcher-wrap">
+            <div class="psyche-mode-switcher" role="tablist" aria-label="Görünüm Modu">
+              <button type="button" class="psyche-mode-btn is-active" data-mode="2d" role="tab" aria-selected="true">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                <span data-i18n="psyche.mode2d">2B Şema (Şekil 5)</span>
+              </button>
+              <button type="button" class="psyche-mode-btn psyche-mode-btn-3d" data-mode="3d" role="tab" aria-selected="false">
+                <span class="p3d-sparkle-dot" aria-hidden="true"></span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                <span data-i18n="psyche.mode3d">3D Halini Gör</span>
+              </button>
+            </div>
+          </div>
+
           <p class="psyche-pan-hint" data-i18n="psyche.panHint">Şemayı yatay kaydırarak tüm akışları izleyin ↔</p>
           <div class="psyche-diagram-frame">
-            <svg class="psyche-diagram-svg" viewBox="0 0 1440 680" role="img" aria-labelledby="psycheDiagramTitle psycheDiagramDescription" preserveAspectRatio="xMidYMid meet">
-<title id="psycheDiagramTitle" data-i18n="psyche.diagramTitle">Baba işlevi grafiği: gösteren zincirinden ruhsal yapılara</title><desc id="psycheDiagramDescription" data-i18n="psyche.diagramDesc">Şekil 5’in web için yeniden çizimi. Yatay mesaj hatları soldan sağa ilerler; kodlama vektörleri aşağıdan yukarı çıkar. Üst S2 döngüsü sağdan sola, alt döngü soldan sağa döner.</desc>
-<defs><marker id="psyche-arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#536c9b"/></marker><marker id="psyche-arrow-gold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#b58a50"/></marker></defs>
-<rect class="psyche-paper" x="1" y="1" width="1438" height="678" rx="24"/>
-<g class="model-zones"><rect x="26" y="255" width="120" height="232" rx="15"/><rect x="185" y="245" width="270" height="255" rx="15"/><rect x="575" y="245" width="345" height="255" rx="15"/><rect x="1020" y="245" width="168" height="255" rx="15"/><rect x="1215" y="255" width="195" height="232" rx="15"/></g>
-<path class="model-loop model-loop-top" fill="none" d="M1378 258 C1290 76 190 76 104 258" marker-end="url(#psyche-arrow-blue)"/><text class="model-loop-label" x="740" y="98">S2 · GÖSTEREN ZİNCİRİ</text>
-<path class="model-loop model-loop-bottom" fill="none" d="M104 492 C205 630 1282 630 1378 492" marker-end="url(#psyche-arrow-blue)"/><text class="model-loop-label" x="740" y="610">S2 · GERİ DÖNÜŞ</text>
-<g class="model-inner-transitions" aria-label="İç S2 ve S1 geçişleri">
-<path class="model-transition model-transition-message" fill="none" d="M146 282C166 250 190 250 210 282" marker-end="url(#psyche-arrow-blue)"/>
-<path class="model-inner-loop model-s2-return" fill="none" d="M902 278C850 238 570 238 520 278" marker-end="url(#psyche-arrow-blue)"/><text class="model-loop-label" x="710" y="260">S2</text>
-<path class="model-inner-loop model-s2-forward" fill="none" d="M520 493C580 550 850 550 902 493" marker-end="url(#psyche-arrow-blue)"/><text class="model-loop-label" x="710" y="535">S2</text>
-<path class="model-inner-loop model-s1-return" fill="none" d="M1162 284C1130 248 1050 248 1012 284" marker-end="url(#psyche-arrow-gold)"/><text class="model-loop-label" x="1087" y="260">S1</text>
-<path class="model-inner-loop model-s1-forward" fill="none" d="M1012 493C1050 530 1130 530 1162 493" marker-end="url(#psyche-arrow-gold)"/><text class="model-loop-label" x="1087" y="523">S1</text>
-</g>
-<g class="model-travelers" aria-hidden="true">
-<circle class="model-traveler model-traveler-blue" r="4"><animateMotion dur="9.35s" repeatCount="indefinite" path="M1378 258 C1290 76 190 76 104 258"/></circle>
-<circle class="model-traveler model-traveler-blue" r="4"><animateMotion dur="9.35s" begin="4.675s" repeatCount="indefinite" path="M104 492 C205 630 1282 630 1378 492"/></circle>
-<circle class="model-traveler model-traveler-blue" r="3.5"><animateMotion dur="9.35s" repeatCount="indefinite" path="M146 310 H205 H478 H592 H965 H1040 H1220 H1380"/></circle>
-<circle class="model-traveler model-traveler-blue" r="3.5"><animateMotion dur="9.35s" begin="3.1s" repeatCount="indefinite" path="M146 385 H205 H478 H592 H965 H1040 H1220 H1380"/></circle>
-<circle class="model-traveler model-traveler-blue" r="3.5"><animateMotion dur="9.35s" begin="6.2s" repeatCount="indefinite" path="M146 460 H205 H478 H592 H965 H1040 H1220 H1380"/></circle>
-<circle class="model-traveler model-traveler-gold" r="3"><animateMotion dur="9.35s" begin="0s" repeatCount="indefinite" path="M650 337 V286"/></circle>
-<circle class="model-traveler model-traveler-gold" r="3"><animateMotion dur="9.35s" begin="1.3s" repeatCount="indefinite" path="M650 412 V363"/></circle>
-<circle class="model-traveler model-traveler-gold" r="3"><animateMotion dur="9.35s" begin="2.6s" repeatCount="indefinite" path="M720 412 V363"/></circle>
-<circle class="model-traveler model-traveler-gold" r="3"><animateMotion dur="9.35s" begin="3.9s" repeatCount="indefinite" path="M650 487 V438"/></circle>
-<circle class="model-traveler model-traveler-gold" r="3"><animateMotion dur="9.35s" begin="5.2s" repeatCount="indefinite" path="M720 487 V438"/></circle>
-<circle class="model-traveler model-traveler-gold" r="3"><animateMotion dur="9.35s" begin="6.5s" repeatCount="indefinite" path="M790 487 V438"/></circle>
-<circle class="model-traveler model-traveler-gold" r="3"><animateMotion dur="9.35s" begin="7.8s" repeatCount="indefinite" path="M490 266 V480"/></circle>
-<circle class="model-traveler model-traveler-gold" r="3"><animateMotion dur="9.35s" begin="2.3s" repeatCount="indefinite" path="M980 490 V270"/></circle>
-<circle class="model-traveler model-traveler-blue" r="3"><animateMotion dur="9.35s" repeatCount="indefinite" path="M902 278 C850 238 570 238 520 278"/></circle>
-<circle class="model-traveler model-traveler-blue" r="3"><animateMotion dur="9.35s" begin="4.675s" repeatCount="indefinite" path="M520 493 C580 550 850 550 902 493"/></circle>
-<circle class="model-traveler model-traveler-gold" r="3"><animateMotion dur="9.35s" begin="2.3s" repeatCount="indefinite" path="M1162 284 C1130 248 1050 248 1012 284"/></circle>
-<circle class="model-traveler model-traveler-gold" r="3"><animateMotion dur="9.35s" begin="6.95s" repeatCount="indefinite" path="M1012 493 C1050 530 1130 530 1162 493"/></circle>
-</g>
-<g class="model-headings"><text x="86" y="215" data-i18n="psyche.origin">Gösteren</text><text x="320" y="205" data-i18n="psyche.message">Baba metaforu</text><text x="320" y="226" class="model-subhead" data-i18n="psyche.messageText">Mesaj · Ayna evresi</text><text x="490" y="222" class="model-sidehead" transform="rotate(-90 490 222)" data-i18n="psyche.ayna">Ayna evresi</text><text x="746" y="205" data-i18n="psyche.code">Baba-nın-Adları</text><text x="746" y="226" class="model-subhead" data-i18n="psyche.codeText">Kod · Ruhsal yapılar</text><text x="1104" y="215" data-i18n="psyche.structureHeading">Ruhsal yapılar</text><text x="1312" y="215" data-i18n="psyche.speech">Dil alanı</text></g>
-<g class="model-horizontal">
-<path class="model-forward model-stage-1" fill="none" d="M146 310H205M146 385H205M146 460H205" marker-end="url(#psyche-arrow-blue)"/>
-<path class="model-forward model-stage-2" fill="none" d="M438 310H478M438 385H478M438 460H478" marker-end="url(#psyche-arrow-blue)"/>
-<path class="model-forward model-stage-3" fill="none" d="M505 310H592M505 385H592M505 460H592" marker-end="url(#psyche-arrow-blue)"/>
-<path class="model-forward model-stage-4" fill="none" d="M882 310H965M882 385H965M882 460H965" marker-end="url(#psyche-arrow-blue)"/>
-<path class="model-forward model-stage-5" fill="none" d="M1007 310H1040M1007 385H1040M1007 460H1040" marker-end="url(#psyche-arrow-blue)"/>
-<path class="model-forward model-stage-6" fill="none" d="M1160 310H1220M1160 385H1220M1160 460H1220" marker-end="url(#psyche-arrow-blue)"/>
-</g>
-<path class="model-stage-down" fill="none" d="M425 322V365M425 397V440" marker-end="url(#psyche-arrow-blue)"/>
-<g class="model-row-labels"><text x="320" y="315" data-i18n="psyche.fall">Simgeselden düşme</text><text x="320" y="390" data-i18n="psyche.unrecognized">Simgeselde tanı(n)mama</text><text x="320" y="465" data-i18n="psyche.recognized">Simgeselde tanı(n)ma</text></g>
-<path class="model-down model-mirror-axis" fill="none" d="M490 266V480" marker-end="url(#psyche-arrow-gold)"/><text class="model-axis-label" x="490" y="505" data-i18n="psyche.ayna">Ayna evresi</text>
-<g class="model-code"><text x="760" y="315">Gerçek, …</text><text x="760" y="390">Gerçek, İmgesel, …</text><text x="760" y="465">Gerçek, İmgesel, Simgesel</text>
-<path class="model-up model-code-vector" fill="none" d="M650 337V286" marker-end="url(#psyche-arrow-gold)"/><path class="model-code-arc" fill="none" d="M670 297C688 274 710 274 728 297"/>
-<path class="model-up model-code-vector" fill="none" d="M650 412V363M720 412V363" marker-end="url(#psyche-arrow-gold)"/><path class="model-code-arc" fill="none" d="M670 374C687 350 704 350 720 374M740 374C757 350 774 350 790 374"/>
-<path class="model-up model-code-vector" fill="none" d="M650 487V438M720 487V438M790 487V438" marker-end="url(#psyche-arrow-gold)"/><path class="model-code-arc" fill="none" d="M670 449C687 425 704 425 720 449M740 449C757 425 774 425 790 449M810 449C827 425 844 425 860 449"/></g>
-<path class="model-up model-s1-axis" fill="none" d="M980 490V270" marker-start="url(#psyche-arrow-gold)" marker-end="url(#psyche-arrow-gold)"/><text class="model-axis-label" x="980" y="252">S1</text><text class="model-axis-label" x="980" y="515">S1</text>
-<g class="model-s1-return"><path d="M960 310C930 280 910 280 890 306" marker-end="url(#psyche-arrow-blue)"/><path d="M960 385C930 355 910 355 890 381" marker-end="url(#psyche-arrow-blue)"/><path d="M960 460C930 430 910 430 890 456" marker-end="url(#psyche-arrow-blue)"/></g>
-<g class="model-structures"><text x="1100" y="315" data-i18n="psyche.psychotic">Psikotik</text><text x="1100" y="390" data-i18n="psyche.perverse">Pervers</text><text x="1100" y="465" data-i18n="psyche.neurotic">Nevrotik</text><path class="model-up model-structure-vector" fill="none" d="M1140 344V282M1140 419V357M1140 494V432" marker-end="url(#psyche-arrow-gold)"/></g>
-<g class="model-speech"><text x="1310" y="345">Süjenin</text><text x="1310" y="372">dil alanı ve</text><text x="1310" y="399">konuşma işlevi</text><path d="M1240 420H1380" fill="none"/></g>
-<g class="model-labels"><text x="84" y="374" transform="rotate(-90 84 374)" data-i18n="psyche.origin">Gösteren</text><text class="model-loop-label" x="275" y="555">S2</text><text class="model-loop-label" x="1210" y="555">S1</text></g>
-</svg>
+            <svg class="psyche-diagram-svg" viewBox="0 0 1280 640" width="100%" role="img" aria-labelledby="psycheDiagramTitle psycheDiagramDescription" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+              <title id="psycheDiagramTitle" data-i18n="psyche.diagramTitle">Baba işlevi grafiği: gösteren zincirinden ruhsal yapılara</title>
+              <desc id="psycheDiagramDescription" data-i18n="psyche.diagramDesc">Şekil 5’in birebir topolojik yeniden çizimi. Yatay mesaj hatları soldan sağa ilerler; kodlama vektörleri aşağıdan yukarı çıkar. Üst S1→S2 döngüsü sağdan sola, alt S2→S1 döngüsü soldan sağa bağlanır.</desc>
+              <defs>
+                <marker id="svg-arr-blue" viewBox="0 0 10 10" refX="7.5" refY="5" markerWidth="6.2" markerHeight="6.2" orient="auto">
+                  <path d="M0 1.2L8.8 5L0 8.8z" fill="#3D5690"/>
+                </marker>
+                <marker id="svg-arr-gold" viewBox="0 0 10 10" refX="7.5" refY="5" markerWidth="6.2" markerHeight="6.2" orient="auto">
+                  <path d="M0 1.2L8.8 5L0 8.8z" fill="#B8791E"/>
+                </marker>
+                <marker id="svg-arr-loop" viewBox="0 0 12 12" refX="8.5" refY="6" markerWidth="7.2" markerHeight="7.2" orient="auto">
+                  <path d="M0 1.2L10.5 6L0 10.8z" fill="#354B84"/>
+                </marker>
+                <filter id="svg-node-shadow" x="-15%" y="-15%" width="130%" height="130%">
+                  <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#162033" flood-opacity="0.07"/>
+                </filter>
+              </defs>
+
+              <!-- Paper Background -->
+              <rect class="psyche-paper" x="2" y="2" width="1276" height="636" rx="20" fill="#FAF9F6" stroke="rgba(78,91,166,0.14)" stroke-width="1.5"/>
+
+              <!-- 9. GIANT OUTER LOOPS -->
+              <!-- Top Outer Loop: Süjenin Dil Alanı (right) ↶ Gösteren (left) -->
+              <path class="model-loop model-loop-top" d="M1160 156 C1080 14, 200 14, 96 154" fill="none" stroke="#354B84" stroke-width="3.2" marker-end="url(#svg-arr-loop)"/>
+              <!-- Bottom Outer Loop: Gösteren (left) ⌣➔ Süjenin Dil Alanı (right) -->
+              <path class="model-loop model-loop-bottom" d="M96 484 C200 626, 1080 626, 1160 486" fill="none" stroke="#354B84" stroke-width="3.2" marker-end="url(#svg-arr-loop)"/>
+
+              <!-- 8. INNER S1 ↔ S2 LOOPS -->
+              <!-- Top Inner Loop: S1 (right) ↶ S2 (left) -->
+              <path class="model-inner-loop model-s2-return" d="M858 134 C760 52, 495 52, 405 134" fill="none" stroke="#354B84" stroke-width="2.6" marker-end="url(#svg-arr-loop)"/>
+              <text x="390" y="102" fill="#162033" font-family="'Georgia', serif" font-size="20" font-style="italic" font-weight="700" text-anchor="middle">S2</text>
+              <text x="872" y="102" fill="#162033" font-family="'Georgia', serif" font-size="20" font-style="italic" font-weight="700" text-anchor="middle">S1</text>
+
+              <!-- Bottom Inner Loop: S2 (left) ⌢➔ S1 (right) — arches UPWARD in the center exactly as in Figure 5 -->
+              <path class="model-inner-loop model-s2-forward" d="M422 535 C520 486, 750 486, 848 535" fill="none" stroke="#354B84" stroke-width="2.4" marker-end="url(#svg-arr-loop)"/>
+              <text x="405" y="558" fill="#162033" font-family="'Georgia', serif" font-size="20" font-style="italic" font-weight="700" text-anchor="middle">S2</text>
+              <text x="858" y="558" fill="#162033" font-family="'Georgia', serif" font-size="20" font-style="italic" font-weight="700" text-anchor="middle">S1</text>
+
+              <!-- 1. LEFT MONOLITH BOX: GÖSTEREN -->
+              <g filter="url(#svg-node-shadow)">
+                <rect x="55" y="160" width="82" height="320" rx="4" fill="#FFFFFF" stroke="#2C3E6B" stroke-width="1.8"/>
+                <text x="96" y="320" fill="#162033" font-family="'Georgia', serif" font-size="19" font-style="italic" font-weight="700" text-anchor="middle" transform="rotate(-90 96 320)" data-i18n="psyche.origin">Gösteren</text>
+              </g>
+
+              <!-- 2. TOP BRIDGE ARCS ACROSS HEADINGS (4 curved arrows left → right) -->
+              <!-- Arc 1: Gösteren top-right ↷ Baba Metaforu -->
+              <path class="model-transition" d="M137 174 C158 136, 196 136, 214 168" fill="none" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+              <!-- Arc 2: Baba Metaforu right (left of Ayna Evresi) ↷ arches over Ayna Evresi top ↷ Baba-nın-Adları -->
+              <path class="model-transition" d="M380 174 C418 134, 492 134, 526 168" fill="none" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+              <!-- Arc 3: Over S1 top arrowhead ↷ Ruhsal Yapılar -->
+              <path class="model-transition" d="M814 170 C836 136, 876 136, 898 170" fill="none" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+              <!-- Arc 4: Ruhsal Yapılar ↷ Süjenin Dil Alanı -->
+              <path class="model-transition" d="M1004 170 C1028 136, 1068 136, 1090 170" fill="none" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+
+              <!-- 3. COLUMN HEADINGS -->
+              <g class="model-headings">
+                <text x="275" y="152" fill="#162033" font-family="'Georgia', serif" font-size="16.5" font-weight="700" text-anchor="middle" data-i18n="psyche.message">Baba Metaforu</text>
+                <text x="275" y="174" fill="#2C3A52" font-family="'Georgia', serif" font-size="15" font-weight="700" text-anchor="middle">(Mesaj)</text>
+
+                <text x="648" y="152" fill="#162033" font-family="'Georgia', serif" font-size="16.5" font-weight="700" text-anchor="middle" data-i18n="psyche.code">Baba-nın-Adları</text>
+                <text x="648" y="174" fill="#2C3A52" font-family="'Georgia', serif" font-size="15" font-weight="700" text-anchor="middle">(Kod)</text>
+
+                <text x="955" y="152" fill="#162033" font-family="'Georgia', serif" font-size="16.5" font-weight="700" text-anchor="middle">Ruhsal</text>
+                <text x="955" y="174" fill="#162033" font-family="'Georgia', serif" font-size="16.5" font-weight="700" text-anchor="middle">Yapılar</text>
+              </g>
+
+              <!-- 4. BABA METAFORU (MESAJ) COLUMN: 3 STAGES + VERTICAL DESCENT -->
+              <!-- Vertical downward arrows: (Mesaj) ↓ Simgeselden Düşme ↓ Tanı(n)mama ↓ Tanı(n)ma -->
+              <line class="model-stage-down" x1="275" y1="182" x2="275" y2="213" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+              <line class="model-stage-down" x1="275" y1="254" x2="275" y2="308" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+              <line class="model-stage-down" x1="275" y1="348" x2="275" y2="402" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+              <!-- Bottom curved arrow: Simgeselde Tanı(n)ma ╰➔ bottom S2 -->
+              <path class="model-stage-down" d="M275 444 C275 504, 338 518, 388 515" fill="none" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+
+              <!-- Row 0 Stage: Simgeselden Düşme -->
+              <line class="model-forward" x1="137" y1="235" x2="186" y2="235" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+              <g transform="translate(275, 235)" filter="url(#svg-node-shadow)">
+                <rect x="-86" y="-15" width="172" height="30" rx="7" fill="#FFFFFF" stroke="rgba(61,86,144,0.28)" stroke-width="1.2"/>
+                <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14" font-style="italic" text-anchor="middle" data-i18n="psyche.fall">Simgeselden Düşme</text>
+              </g>
+              <line class="model-forward" x1="362" y1="235" x2="401" y2="235" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+
+              <!-- Row 1 Stage: Simgeselde Tanı(n)mama -->
+              <line class="model-forward" x1="137" y1="330" x2="174" y2="330" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+              <g transform="translate(275, 330)" filter="url(#svg-node-shadow)">
+                <rect x="-96" y="-15" width="192" height="30" rx="7" fill="#FFFFFF" stroke="rgba(61,86,144,0.28)" stroke-width="1.2"/>
+                <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14" font-style="italic" text-anchor="middle" data-i18n="psyche.unrecognized">Simgeselde Tanı(n)mama</text>
+              </g>
+              <line class="model-forward" x1="372" y1="330" x2="401" y2="330" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+
+              <!-- Row 2 Stage: Simgeselde Tanı(n)ma -->
+              <line class="model-forward" x1="137" y1="425" x2="182" y2="425" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+              <g transform="translate(275, 425)" filter="url(#svg-node-shadow)">
+                <rect x="-88" y="-15" width="176" height="30" rx="7" fill="#FFFFFF" stroke="rgba(61,86,144,0.28)" stroke-width="1.2"/>
+                <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14" font-style="italic" text-anchor="middle" data-i18n="psyche.recognized">Simgeselde Tanı(n)ma</text>
+              </g>
+              <line class="model-forward" x1="364" y1="425" x2="401" y2="425" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+
+              <!-- 5. AYNA EVRESİ VERTICAL DOWNWARD AXIS + 3 OUTGOING HORIZONTAL ARROWS -->
+              <line class="model-down model-mirror-axis" x1="405" y1="182" x2="405" y2="512" stroke="#3D5690" stroke-width="3.2" marker-end="url(#svg-arr-blue)"/>
+              <text x="424" y="345" fill="#162033" font-family="'Georgia', serif" font-size="15.5" font-style="italic" font-weight="700" text-anchor="middle" transform="rotate(-90 424 345)" data-i18n="psyche.ayna">Ayna Evresi</text>
+
+              <!-- 3 Horizontal arrows to the right of Ayna Evresi into Baba-nın-Adları -->
+              <line class="model-forward" x1="442" y1="235" x2="486" y2="235" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+              <line class="model-forward" x1="442" y1="330" x2="486" y2="330" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+              <line class="model-forward" x1="442" y1="425" x2="486" y2="425" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+
+              <!-- 6. BABA-NIN-ADLARI (KOD) 3×3 MATRIX -->
+              <!-- Row 0 (Top / Psikotik): Gerçek -->
+              <!-- U-curve from top of Col 1 upward arrow into bottom-left of Row 0 Gerçek (╰⤴) -->
+              <path class="model-code-arc" d="M546 238 C552 282, 608 282, 618 246" fill="none" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+              <g transform="translate(648, 235)" filter="url(#svg-node-shadow)">
+                <rect x="-38" y="-14" width="76" height="28" rx="14" fill="#FFFFFF" stroke="#C87820" stroke-width="1.5"/>
+                <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14" font-style="italic" font-weight="700" text-anchor="middle">Gerçek</text>
+              </g>
+              <!-- Upward arrow: Row 0 Gerçek ↑ (Kod) -->
+              <line class="model-up" x1="648" y1="218" x2="648" y2="184" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+              <!-- Short horizontal arrow to the right of Row 0 Gerçek (Gerçek →) -->
+              <line class="model-forward" x1="688" y1="235" x2="732" y2="235" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+              <!-- Over-loop above Gerçek → returning into top-right of Row 0 Gerçek (↶) -->
+              <path class="model-code-arc" d="M746 224 C746 186, 680 186, 672 216" fill="none" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+
+              <!-- Row 1 (Middle / Pervert): İmgesel & Gerçek -->
+              <g transform="translate(532, 330)" filter="url(#svg-node-shadow)">
+                <rect x="-40" y="-14" width="80" height="28" rx="14" fill="#FFFFFF" stroke="#7862B8" stroke-width="1.5"/>
+                <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14" font-style="italic" font-weight="700" text-anchor="middle">İmgesel</text>
+              </g>
+              <!-- Horizontal arrow: İmgesel → Gerçek -->
+              <line class="model-forward" x1="574" y1="330" x2="606" y2="330" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+              <!-- Downward U-curve under İmgesel → Gerçek into bottom-left of Row 1 Gerçek (╰⤴) -->
+              <path class="model-code-arc" d="M546 346 C552 388, 616 388, 626 348" fill="none" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+              <g transform="translate(648, 330)" filter="url(#svg-node-shadow)">
+                <rect x="-38" y="-14" width="76" height="28" rx="14" fill="#FFFFFF" stroke="#C87820" stroke-width="1.5"/>
+                <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14" font-style="italic" font-weight="700" text-anchor="middle">Gerçek</text>
+              </g>
+              <!-- Short horizontal arrow to the right of Row 1 Gerçek (Gerçek →) -->
+              <line class="model-forward" x1="688" y1="330" x2="732" y2="330" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+              <!-- Over-loop above Gerçek → returning into top-right of Row 1 Gerçek (↶) -->
+              <path class="model-code-arc" d="M758 320 C755 276, 676 276, 668 312" fill="none" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+
+              <!-- Row 2 (Bottom / Nevrotik): İmgesel, Gerçek & Simgesel -->
+              <g transform="translate(532, 425)" filter="url(#svg-node-shadow)">
+                <rect x="-40" y="-14" width="80" height="28" rx="14" fill="#FFFFFF" stroke="#7862B8" stroke-width="1.5"/>
+                <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14" font-style="italic" font-weight="700" text-anchor="middle">İmgesel</text>
+              </g>
+              <!-- Horizontal arrow: İmgesel → Gerçek -->
+              <line class="model-forward" x1="574" y1="425" x2="606" y2="425" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+              <!-- Downward U-curve under İmgesel → Gerçek into bottom of Row 2 Gerçek (╰⤴) -->
+              <path class="model-code-arc" d="M542 442 C548 492, 620 492, 630 444" fill="none" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+              <g transform="translate(648, 425)" filter="url(#svg-node-shadow)">
+                <rect x="-38" y="-14" width="76" height="28" rx="14" fill="#FFFFFF" stroke="#C87820" stroke-width="1.5"/>
+                <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14" font-style="italic" font-weight="700" text-anchor="middle">Gerçek</text>
+              </g>
+              <!-- Horizontal arrow: Gerçek → Simgesel -->
+              <line class="model-forward" x1="688" y1="425" x2="722" y2="425" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+              <!-- Over-loop above Gerçek → Simgesel returning into top-right of Row 2 Gerçek (↶) -->
+              <path class="model-code-arc" d="M748 408 C742 366, 676 366, 668 406" fill="none" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+              <g transform="translate(768, 425)" filter="url(#svg-node-shadow)">
+                <rect x="-42" y="-14" width="84" height="28" rx="14" fill="#FFFFFF" stroke="#2E867E" stroke-width="1.5"/>
+                <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14" font-style="italic" font-weight="700" text-anchor="middle">Simgesel</text>
+              </g>
+
+              <!-- Vertical Upward Coding Arrows inside Baba-nın-Adları -->
+              <!-- Column 1 (İmgesel): Row 2 ↑ Row 1, and Row 1 ↑ Row 0 level -->
+              <line class="model-up" x1="532" y1="408" x2="532" y2="350" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+              <line class="model-up" x1="532" y1="312" x2="532" y2="246" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+              <!-- Column 2 (Gerçek): Row 2 ↑ Row 1 ↑ Row 0 -->
+              <line class="model-up" x1="648" y1="408" x2="648" y2="350" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+              <line class="model-up" x1="648" y1="312" x2="648" y2="254" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+              <!-- Column 3 (Simgesel): rises upward from top-right of Simgesel -->
+              <line class="model-up" x1="782" y1="408" x2="782" y2="356" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+
+              <!-- 7. S1 VERTICAL UPWARD AXIS + 3 JUMP ARCS + BOTTOM CURVE -->
+              <line class="model-up model-s1-axis" x1="855" y1="508" x2="855" y2="178" stroke="#B8791E" stroke-width="3.2" marker-end="url(#svg-arr-gold)"/>
+              <!-- 3 Tight Jump Arcs hopping OVER S1 vertical shaft (left of S1 ↷ right of S1) -->
+              <path class="model-code-arc" d="M830 232 C840 198, 870 198, 882 232" fill="none" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+              <path class="model-code-arc" d="M830 327 C840 293, 870 293, 882 327" fill="none" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+              <path class="model-code-arc" d="M830 422 C840 388, 870 388, 882 422" fill="none" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+              <!-- Bottom-right curved arrow: S1 ╰↑ Nevrotik -->
+              <path class="model-code-arc" d="M868 506 C905 524, 955 496, 955 446" fill="none" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+
+              <!-- 8. RUHSAL YAPILAR COLUMN (Psikotik / Pervert / Nevrotik) -->
+              <!-- Vertical upward progression: Nevrotik ↑ Pervert ↑ Psikotik (NO arrow above Psikotik) -->
+              <line class="model-up" x1="955" y1="406" x2="955" y2="350" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+              <line class="model-up" x1="955" y1="310" x2="955" y2="255" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
+
+              <!-- Psikotik (Top) -->
+              <g transform="translate(955, 235)" filter="url(#svg-node-shadow)">
+                <rect x="-50" y="-15" width="100" height="30" rx="7" fill="#FFFFFF" stroke="#C85A3B" stroke-width="1.6"/>
+                <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14.5" font-style="italic" font-weight="700" text-anchor="middle" data-i18n="psyche.psychotic">Psikotik</text>
+              </g>
+              <line class="model-forward" x1="1008" y1="235" x2="1086" y2="235" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+
+              <!-- Pervert (Middle) -->
+              <g transform="translate(955, 330)" filter="url(#svg-node-shadow)">
+                <rect x="-50" y="-15" width="100" height="30" rx="7" fill="#FFFFFF" stroke="#7A58A8" stroke-width="1.6"/>
+                <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14.5" font-style="italic" font-weight="700" text-anchor="middle" data-i18n="psyche.perverse">Pervert</text>
+              </g>
+              <line class="model-forward" x1="1008" y1="330" x2="1086" y2="330" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+
+              <!-- Nevrotik (Bottom) -->
+              <g transform="translate(955, 425)" filter="url(#svg-node-shadow)">
+                <rect x="-50" y="-15" width="100" height="30" rx="7" fill="#FFFFFF" stroke="#3B6E9E" stroke-width="1.6"/>
+                <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14.5" font-style="italic" font-weight="700" text-anchor="middle" data-i18n="psyche.neurotic">Nevrotik</text>
+              </g>
+              <line class="model-forward" x1="1008" y1="425" x2="1086" y2="425" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
+
+              <!-- 9. RIGHT MONOLITH BOX: SÜJENİN DİL ALANI VE KONUŞMA İŞLEVİ -->
+              <g filter="url(#svg-node-shadow)">
+                <rect x="1092" y="160" width="136" height="320" rx="4" fill="#FFFFFF" stroke="#2C3E6B" stroke-width="1.8"/>
+                <text x="1160" y="238" fill="#162033" font-family="'Georgia', serif" font-size="16" font-style="italic" font-weight="700" text-anchor="middle">Süjenin</text>
+                <text x="1160" y="280" fill="#162033" font-family="'Georgia', serif" font-size="16" font-style="italic" font-weight="700" text-anchor="middle">Dil Alanı</text>
+                <text x="1160" y="322" fill="#162033" font-family="'Georgia', serif" font-size="15.5" font-style="italic" font-weight="700" text-anchor="middle">ve</text>
+                <text x="1160" y="364" fill="#162033" font-family="'Georgia', serif" font-size="16" font-style="italic" font-weight="700" text-anchor="middle">Konuşma</text>
+                <text x="1160" y="406" fill="#162033" font-family="'Georgia', serif" font-size="16" font-style="italic" font-weight="700" text-anchor="middle">İşlevi</text>
+              </g>
+
+              <!-- 10. ANIMATED FLOW TRAVELERS (Living Vector Motion) -->
+              <g class="model-travelers" aria-hidden="true">
+                <!-- Outer Loops -->
+                <circle class="model-traveler model-traveler-blue" r="4"><animateMotion dur="9s" repeatCount="indefinite" path="M1160 156 C1080 14, 200 14, 96 154"/></circle>
+                <circle class="model-traveler model-traveler-blue" r="4"><animateMotion dur="9s" begin="4.5s" repeatCount="indefinite" path="M96 484 C200 626, 1080 626, 1160 486"/></circle>
+                <!-- Inner S1 ↔ S2 Loops -->
+                <circle class="model-traveler model-traveler-blue" r="3.5"><animateMotion dur="7s" repeatCount="indefinite" path="M858 134 C760 52, 495 52, 405 134"/></circle>
+                <circle class="model-traveler model-traveler-blue" r="3.5"><animateMotion dur="7s" begin="3.5s" repeatCount="indefinite" path="M422 535 C520 486, 750 486, 848 535"/></circle>
+                <!-- Horizontal Message Streams (Row 0, Row 1, Row 2) -->
+                <circle class="model-traveler model-traveler-blue" r="3.2"><animateMotion dur="8s" repeatCount="indefinite" path="M137 235 H486 M648 235 H732 M830 232 C840 198, 870 198, 882 232 L1086 235"/></circle>
+                <circle class="model-traveler model-traveler-blue" r="3.2"><animateMotion dur="8s" begin="2.6s" repeatCount="indefinite" path="M137 330 H732 M830 327 C840 293, 870 293, 882 327 L1086 330"/></circle>
+                <circle class="model-traveler model-traveler-blue" r="3.2"><animateMotion dur="8s" begin="5.2s" repeatCount="indefinite" path="M137 425 H768 M830 422 C840 388, 870 388, 882 422 L1086 425"/></circle>
+                <!-- Vertical Axes & Coding Vectors -->
+                <circle class="model-traveler model-traveler-blue" r="3.2"><animateMotion dur="5.5s" repeatCount="indefinite" path="M405 182 V512"/></circle>
+                <circle class="model-traveler model-traveler-gold" r="3.5"><animateMotion dur="5.5s" begin="1.2s" repeatCount="indefinite" path="M855 508 V178"/></circle>
+                <circle class="model-traveler model-traveler-gold" r="3"><animateMotion dur="6s" begin="0.5s" repeatCount="indefinite" path="M532 408 V246"/></circle>
+                <circle class="model-traveler model-traveler-gold" r="3"><animateMotion dur="6s" begin="2s" repeatCount="indefinite" path="M648 408 V184"/></circle>
+                <circle class="model-traveler model-traveler-gold" r="3"><animateMotion dur="6s" begin="3.5s" repeatCount="indefinite" path="M955 406 V255"/></circle>
+              </g>
+            </svg>
             <div class="psyche-3d" data-psyche-3d></div>
           </div>
 
@@ -1093,8 +1289,8 @@
     <div id="lightboxCaption"></div>
   </div>
 
-  <script src="app.js?v=5.95"></script>
+  <script src="app.js?v=5.99"></script>
   <script type="importmap">{"imports":{"three":"./assets/vendor/three/three.module.min.js","three/addons/":"./assets/vendor/three/addons/"}}</script>
-  <script type="module" src="assets/js/psyche-3d.js?v=3"></script>
+  <script type="module" src="assets/js/psyche-3d.js?v=5.99"></script>
 </body>
 </html>

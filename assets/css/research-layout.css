@@ -2,10 +2,14 @@
 .research-dossier-shell { padding: .32rem; border-radius: 22px; }
 .research-dossier-board { padding: clamp(1.1rem, 2.2vw, 1.8rem); border-radius: 18px; }
 .about-research-grid.research-bento-grid {
-  grid-template-columns: minmax(260px, .76fr) minmax(0, 1.24fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: clamp(.8rem, 1.5vw, 1.2rem);
 }
-.research-credentials-stack { gap: .7rem; }
+.research-credentials-stack {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .7rem;
+}
 .research-bento-grid .research-cred-card {
   flex: 0 0 auto;
   padding: 1rem 1.1rem;
