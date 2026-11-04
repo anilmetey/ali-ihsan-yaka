@@ -12647,7 +12647,7 @@ html.splash-visited #splashScreen.splash-screen {
   }
 }
 
-/* Final responsive override: full 2D diagram fits 100% on mobile without horizontal clipping or scroll */
+/* Final responsive override: full 2D diagram fits 100% on mobile without horizontal clipping or scroll, and 3D swaps cleanly */
 @media (max-width: 768px) {
   .psyche-diagram-frame {
     display: block !important;
@@ -12656,20 +12656,33 @@ html.splash-visited #splashScreen.splash-screen {
     overflow: hidden !important;
     padding: 0 !important;
   }
-  .topology-scroll {
+  .psyche-diagram-frame:not(.is-3d) .topology-scroll {
     display: block !important;
     width: 100% !important;
     max-width: 100% !important;
     overflow: hidden !important;
     padding: 0 !important;
   }
-  .psyche-diagram-svg,
-  .topology-svg {
+  .psyche-diagram-frame:not(.is-3d) .psyche-diagram-svg,
+  .psyche-diagram-frame:not(.is-3d) .topology-svg {
     display: block !important;
     width: 100% !important;
     max-width: 100% !important;
     min-width: 0 !important;
     height: auto !important;
+  }
+  .psyche-diagram-frame.is-3d .topology-scroll,
+  .psyche-diagram-frame.is-3d .psyche-diagram-svg,
+  .psyche-diagram-frame.is-3d .topology-svg {
+    display: none !important;
+  }
+  .psyche-diagram-frame.is-3d .psyche-3d {
+    display: block !important;
+    width: 100% !important;
+    height: clamp(360px, 88vw, 480px) !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
   }
   .psyche-pan-hint { display: none !important; }
   .psyche-mobile-map { display: none !important; }

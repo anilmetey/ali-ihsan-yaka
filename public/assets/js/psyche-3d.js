@@ -322,14 +322,16 @@ function init() {
 
   function glassMonolith(cx, cy, w, h, d, tint, tags = ['all']) {
     const g = new THREE.Group();
-    const mat = new THREE.MeshBasicMaterial({
+    const depth = d * 1.45;
+    const mat = new THREE.MeshStandardMaterial({
       color: new THREE.Color('#FFFFFF'),
+      roughness: 0.25,
+      metalness: 0.08,
       transparent: true,
       opacity: 0.9,
-      depthWrite: false,
-      toneMapped: false
+      depthWrite: false
     });
-    const box = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat);
+    const box = new THREE.Mesh(new THREE.BoxGeometry(w, h, depth), mat);
     g.add(box);
 
     const edges = new THREE.LineSegments(
@@ -337,7 +339,7 @@ function init() {
       new THREE.LineBasicMaterial({
         color: tint,
         transparent: true,
-        opacity: 0.72,
+        opacity: 0.82,
         toneMapped: false
       })
     );
@@ -346,14 +348,14 @@ function init() {
     const backPlate = new THREE.Mesh(
       new THREE.PlaneGeometry(w * 0.94, h * 0.96),
       new THREE.MeshBasicMaterial({
-        color: '#F5F7FC',
+        color: '#EBF0FA',
         transparent: true,
-        opacity: 0.85,
+        opacity: 0.88,
         depthWrite: false,
         toneMapped: false
       })
     );
-    backPlate.position.z = -d * 0.45;
+    backPlate.position.z = -depth * 0.48;
     g.add(backPlate);
 
     g.position.set(cx, cy, 0);
@@ -373,24 +375,25 @@ function init() {
   function processPedestal(x, y, key, tags) {
     const g = new THREE.Group();
     const plate = new THREE.Mesh(
-      new THREE.BoxGeometry(2.72, 0.54, 0.22),
-      new THREE.MeshBasicMaterial({
+      new THREE.BoxGeometry(2.72, 0.54, 0.52),
+      new THREE.MeshStandardMaterial({
         color: '#FFFFFF',
+        roughness: 0.22,
+        metalness: 0.06,
         transparent: true,
-        opacity: 0.96,
-        depthWrite: false,
-        toneMapped: false
+        opacity: 0.95,
+        depthWrite: false
       })
     );
     const border = new THREE.LineSegments(
       new THREE.EdgesGeometry(plate.geometry),
-      new THREE.LineBasicMaterial({ color: '#4E5BA6', transparent: true, opacity: 0.52, toneMapped: false })
+      new THREE.LineBasicMaterial({ color: '#4E5BA6', transparent: true, opacity: 0.68, toneMapped: false })
     );
     g.add(plate, border);
     g.position.set(x, y, 0);
     g.scale.setScalar(0.001);
     world.add(g);
-    label(key, V(x, y, 0.16), 'p3d-process', tags);
+    label(key, V(x, y, 0.3), 'p3d-process', tags);
     const n = { g, core: plate, tags, phase: Math.random() * 6.28, x, spin: false };
     nodes.push(n);
     dimmables.push({
@@ -406,45 +409,49 @@ function init() {
   function registerNode(x, y, color, key, tags) {
     const g = new THREE.Group();
     const disc = new THREE.Mesh(
-      new THREE.CylinderGeometry(0.43, 0.43, 0.14, 40),
-      new THREE.MeshBasicMaterial({
+      new THREE.CylinderGeometry(0.43, 0.43, 0.34, 40),
+      new THREE.MeshStandardMaterial({
         color: '#FFFFFF',
+        roughness: 0.2,
+        metalness: 0.08,
         transparent: true,
-        opacity: 0.97,
-        toneMapped: false
+        opacity: 0.96
       })
     );
     disc.rotation.x = Math.PI / 2;
 
     const ring = new THREE.Mesh(
-      new THREE.TorusGeometry(0.44, 0.025, 16, 72),
+      new THREE.TorusGeometry(0.44, 0.032, 16, 72),
       new THREE.MeshBasicMaterial({
         color: color,
         transparent: true,
-        opacity: 0.92,
+        opacity: 0.95,
         toneMapped: false
       })
     );
-    ring.position.z = 0.06;
+    ring.position.z = 0.18;
+
+    const backRing = ring.clone();
+    backRing.position.z = -0.18;
 
     const halo = new THREE.Sprite(
       new THREE.SpriteMaterial({
         map: glowTexture,
         color,
         transparent: true,
-        opacity: 0.12,
+        opacity: 0.16,
         depthWrite: false
       })
     );
-    halo.scale.setScalar(1.25);
+    halo.scale.setScalar(1.35);
 
-    g.add(disc, ring, halo);
+    g.add(disc, ring, backRing, halo);
     g.position.set(x, y, 0);
     g.scale.setScalar(0.001);
     world.add(g);
 
     // Label sits directly on the 3D medallion so no arrows ever cross the text
-    label(key, V(x, y, 0.2), 'p3d-register', tags);
+    label(key, V(x, y, 0.26), 'p3d-register', tags);
 
     const n = { g, core: ring, ring: disc, halo, tags, phase: Math.random() * 6.28, x, spin: false };
     nodes.push(n);
@@ -462,12 +469,13 @@ function init() {
   function structureNode(x, y, key, tag, color) {
     const g = new THREE.Group();
     const box = new THREE.Mesh(
-      new THREE.BoxGeometry(1.52, 0.56, 0.24),
-      new THREE.MeshBasicMaterial({
+      new THREE.BoxGeometry(1.52, 0.56, 0.56),
+      new THREE.MeshStandardMaterial({
         color: '#FFFFFF',
+        roughness: 0.22,
+        metalness: 0.08,
         transparent: true,
-        opacity: 0.97,
-        toneMapped: false
+        opacity: 0.96
       })
     );
     const edges = new THREE.LineSegments(
@@ -475,7 +483,7 @@ function init() {
       new THREE.LineBasicMaterial({
         color: color,
         transparent: true,
-        opacity: 0.88,
+        opacity: 0.92,
         toneMapped: false
       })
     );
@@ -484,7 +492,7 @@ function init() {
         map: glowTexture,
         color,
         transparent: true,
-        opacity: 0.12,
+        opacity: 0.16,
         depthWrite: false
       })
     );
@@ -495,7 +503,7 @@ function init() {
     g.scale.setScalar(0.001);
     world.add(g);
 
-    const el = label(key, V(x, y, 0.2), 'p3d-structure', [tag]);
+    const el = label(key, V(x, y, 0.32), 'p3d-structure', [tag]);
     el.dataset.filter = tag;
 
     const n = { g, core: box, ring: edges, halo, tags: [tag], phase: Math.random() * 6.28, x, spin: false };
@@ -838,7 +846,16 @@ function init() {
   points.renderOrder = 4;
   world.add(points);
 
-  /* atmosphere: clean ivory space matching site theme */
+  /* atmosphere: 3D spatial grid floor for immediate depth perception */
+  const floorGrid = new THREE.GridHelper(28, 28, '#8B9DC7', '#D6DFEE');
+  floorGrid.position.set(0, -4.15, 0);
+  if (Array.isArray(floorGrid.material)) {
+    floorGrid.material.forEach(m => { m.transparent = true; m.opacity = 0.45; });
+  } else {
+    floorGrid.material.transparent = true;
+    floorGrid.material.opacity = 0.45;
+  }
+  world.add(floorGrid);
 
   /* ------------------------------------------------------------ UI overlay */
   const ui = document.createElement('div');
@@ -902,7 +919,7 @@ function init() {
 
   /* ------------------------------------------------------------ camera rig */
   const target = new THREE.Vector3(0, -0.05, 0);
-  const VIEW_3D = { az: -0.28, pol: Math.PI / 2 - 0.14 };
+  const VIEW_3D = { az: -0.44, pol: Math.PI / 2 - 0.25 };
   const VIEW_FLAT = { az: 0, pol: Math.PI / 2 };
   let fitDistance = 30;
   let tween = null;
@@ -956,15 +973,16 @@ function init() {
     bloom.resolution.set(Math.round(w * dpr * 0.75), Math.round(h * dpr * 0.75));
     camera.aspect = w / h;
     const vfov = THREE.MathUtils.degToRad(camera.fov);
-    const needW = 23.2;
-    const needH = 13.5;
+    const isCompact = w < 640;
+    const needW = isCompact ? 18.6 : 21.6;
+    const needH = isCompact ? 11.8 : 13.0;
     const distW = (needW / 2) / (Math.tan(vfov / 2) * camera.aspect);
     const distH = (needH / 2) / Math.tan(vfov / 2);
-    fitDistance = Math.max(distW, distH) + 1.1;
+    fitDistance = Math.max(distW, distH) + (isCompact ? 0.15 : 0.85);
     camera.updateProjectionMatrix();
     const s = currentSpherical();
     if (camera.position.lengthSq() > 0) placeCamera(s.theta, s.phi, fitDistance);
-    host.style.setProperty('--p3d-scale', String(THREE.MathUtils.clamp(w / 1260, 0.62, 1.22)));
+    host.style.setProperty('--p3d-scale', String(THREE.MathUtils.clamp(w / 1120, 0.35, 1.15)));
     pMat.uniforms.uPx.value = renderer.getPixelRatio();
   }
   const ro = new ResizeObserver(resize);
@@ -974,7 +992,7 @@ function init() {
   /* ------------------------------------------------------------ intro + loop */
   // (is-3d class is controlled by setupModeSwitcher)
   resize();
-  placeCamera(-0.68, VIEW_3D.pol - 0.22, fitDistance * 1.32);
+  placeCamera(-0.74, VIEW_3D.pol - 0.24, fitDistance * 1.24);
   controls.update();
 
   let introStart = null;
@@ -996,13 +1014,13 @@ function init() {
       placeCamera(VIEW_3D.az, VIEW_3D.pol);
       return;
     }
-    placeCamera(-0.68, VIEW_3D.pol - 0.22, fitDistance * 1.32);
+    placeCamera(-0.74, VIEW_3D.pol - 0.24, fitDistance * 1.24);
     const s = currentSpherical();
     tween = {
       from: { az: s.theta, pol: s.phi, d: s.radius },
       to: { ...(flat ? VIEW_FLAT : VIEW_3D), d: fitDistance },
       t0: introStart,
-      dur: 2600
+      dur: 1900
     };
   }
 
@@ -1085,15 +1103,15 @@ function init() {
         tween = null;
         lastInteract = now;
       }
-    } else if (motion && !flat && now - lastInteract > 4000) {
+    } else if (motion && !flat && now - lastInteract > 800) {
       const s = currentSpherical();
-      const idle = (now - lastInteract - 4000) / 1000;
-      const ramp = Math.min(1, idle / 3);
-      const az = VIEW_3D.az + Math.sin(idle * 0.18) * 0.28;
-      const pol = VIEW_3D.pol + Math.sin(idle * 0.12) * 0.05;
+      const idle = (now - lastInteract - 800) / 1000;
+      const ramp = Math.min(1, idle / 2.2);
+      const az = VIEW_3D.az + Math.sin(idle * 0.35) * 0.32;
+      const pol = VIEW_3D.pol + Math.sin(idle * 0.22) * 0.08;
       placeCamera(
-        s.theta + (az - s.theta) * 0.022 * ramp,
-        s.phi + (pol - s.phi) * 0.022 * ramp,
+        s.theta + (az - s.theta) * 0.032 * ramp,
+        s.phi + (pol - s.phi) * 0.032 * ramp,
         fitDistance
       );
     }
