@@ -3598,3 +3598,147 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('aiy:langchange', updateFilter);
   }
 });
+
+// Messenger-Style Draggable WhatsApp Chat-Head (All Pages & Viewports)
+(function initWhatsAppChatHead() {
+  function mountChatHead() {
+    if (document.querySelector('.wa-chathead')) return;
+
+    const btn = document.createElement('a');
+    btn.className = 'wa-chathead';
+    btn.target = '_blank';
+    btn.rel = 'noopener noreferrer';
+    btn.innerHTML = `
+      <span class="wa-chathead-inner" aria-hidden="true">
+        <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <path d="M16.004 3.2c-7.068 0-12.8 5.731-12.8 12.8 0 2.257.589 4.46 1.708 6.404L3.09 28.8l6.564-1.721a12.747 12.747 0 0 0 6.35 1.689h.005c7.067 0 12.799-5.731 12.799-12.8 0-3.42-1.332-6.636-3.751-9.054A12.716 12.716 0 0 0 16.004 3.2zm0 23.408h-.004a10.61 10.61 0 0 1-5.408-1.481l-.388-.23-3.998 1.048 1.067-3.897-.253-.402a10.596 10.596 0 0 1-1.629-5.646c0-5.862 4.77-10.631 10.635-10.631 2.84 0 5.51 1.107 7.517 3.116a10.565 10.565 0 0 1 3.113 7.519c0 5.863-4.771 10.604-10.652 10.604zm5.833-7.959c-.319-.16-1.891-.933-2.184-1.04-.293-.106-.506-.16-.719.16-.213.32-.825 1.04-1.012 1.253-.186.213-.373.24-.692.08-.32-.16-1.349-.497-2.57-1.586-.95-.847-1.591-1.894-1.778-2.214-.186-.32-.02-.493.14-.652.144-.143.32-.373.48-.56.16-.186.213-.32.32-.533.106-.213.053-.4-.027-.56-.08-.16-.719-1.733-.985-2.373-.26-.624-.524-.539-.719-.549l-.612-.011c-.213 0-.559.08-.852.4-.293.32-1.119 1.093-1.119 2.666s1.145 3.093 1.305 3.306c.16.213 2.254 3.441 5.46 4.826.763.33 1.358.526 1.822.674.766.243 1.463.209 2.014.127.614-.092 1.891-.773 2.157-1.52.266-.746.266-1.386.186-1.52-.08-.133-.293-.213-.612-.373z"/>
+        </svg>
+      </span>
+      <span class="wa-chathead-badge" aria-hidden="true"></span>
+      <span class="wa-chathead-tooltip"></span>
+    `;
+
+    const tooltip = btn.querySelector('.wa-chathead-tooltip');
+    const syncLang = () => {
+      const isEn = document.documentElement.lang === 'en';
+      const msg = isEn
+        ? 'Hello Dr. Ali İhsan Yaka, could I receive information regarding psychotherapy sessions and available appointment options? Thank you.'
+        : 'Merhaba Dr. Ali İhsan Yaka, psikoterapi seanslarınız ve uygun randevu seçenekleri hakkında bilgi rica edebilir miyim? Teşekkür ederim.';
+      btn.href = 'https://wa.me/905374738433?text=' + encodeURIComponent(msg);
+      const label = isEn ? 'WhatsApp Direct' : 'WhatsApp İletişim';
+      btn.setAttribute('aria-label', label);
+      if (tooltip) tooltip.textContent = label;
+    };
+    syncLang();
+    window.addEventListener('aiy:langchange', syncLang);
+
+    document.body.appendChild(btn);
+
+    const STORAGE_KEY = 'aiy_wa_chathead_pos';
+    const getMargin = () => (window.innerWidth <= 768 ? 14 : 18);
+    const getBottomDefault = () => (window.innerWidth <= 768 ? 20 : 24);
+
+    let state = { side: 'right', topRatio: null };
+    try {
+      const saved = JSON.parse(sessionStorage.getItem(STORAGE_KEY) || 'null');
+      if (saved && (saved.side === 'left' || saved.side === 'right')) {
+        state = saved;
+      }
+    } catch (_) {}
+
+    function applyDockedPosition() {
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+      const size = btn.offsetWidth || (vw <= 768 ? 46 : 50);
+      const margin = getMargin();
+      const minY = margin + 64;
+      const maxY = Math.max(minY, vh - size - getBottomDefault());
+
+      const targetX = state.side === 'left' ? margin : Math.max(margin, vw - size - margin);
+      const targetY = typeof state.topRatio === 'number'
+        ? Math.min(maxY, Math.max(minY, Math.round(state.topRatio * vh)))
+        : maxY;
+
+      btn.style.left = targetX + 'px';
+      btn.style.top = targetY + 'px';
+      btn.classList.toggle('is-docked-left', state.side === 'left');
+    }
+
+    requestAnimationFrame(applyDockedPosition);
+    window.addEventListener('resize', applyDockedPosition, { passive: true });
+
+    let pointerId = null;
+    let startX = 0;
+    let startY = 0;
+    let originLeft = 0;
+    let originTop = 0;
+    let moved = false;
+
+    btn.addEventListener('pointerdown', e => {
+      if (e.button !== undefined && e.button !== 0) return;
+      pointerId = e.pointerId;
+      startX = e.clientX;
+      startY = e.clientY;
+      const rect = btn.getBoundingClientRect();
+      originLeft = rect.left;
+      originTop = rect.top;
+      moved = false;
+      try { btn.setPointerCapture(pointerId); } catch (_) {}
+    });
+
+    btn.addEventListener('pointermove', e => {
+      if (pointerId === null || e.pointerId !== pointerId) return;
+      const dx = e.clientX - startX;
+      const dy = e.clientY - startY;
+      if (!moved && Math.hypot(dx, dy) > 6) {
+        moved = true;
+        btn.classList.add('is-dragging');
+      }
+      if (!moved) return;
+
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+      const size = btn.offsetWidth || 48;
+      const margin = 8;
+      const nextLeft = Math.min(vw - size - margin, Math.max(margin, originLeft + dx));
+      const nextTop = Math.min(vh - size - margin, Math.max(margin, originTop + dy));
+      btn.style.left = nextLeft + 'px';
+      btn.style.top = nextTop + 'px';
+    });
+
+    function finishDrag(e) {
+      if (pointerId === null || (e && e.pointerId !== undefined && e.pointerId !== pointerId)) return;
+      try { btn.releasePointerCapture(pointerId); } catch (_) {}
+      pointerId = null;
+
+      if (moved) {
+        btn.classList.remove('is-dragging');
+        const rect = btn.getBoundingClientRect();
+        const vw = window.innerWidth;
+        const vh = window.innerHeight;
+        const centerX = rect.left + rect.width / 2;
+        state.side = centerX < vw / 2 ? 'left' : 'right';
+        state.topRatio = rect.top / Math.max(1, vh);
+        try { sessionStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (_) {}
+        applyDockedPosition();
+      }
+    }
+
+    btn.addEventListener('pointerup', finishDrag);
+    btn.addEventListener('pointercancel', finishDrag);
+
+    btn.addEventListener('click', e => {
+      if (moved) {
+        e.preventDefault();
+        e.stopPropagation();
+        moved = false;
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', mountChatHead);
+  } else {
+    mountChatHead();
+  }
+})();
