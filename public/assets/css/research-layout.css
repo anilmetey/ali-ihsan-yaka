@@ -1,0 +1,41 @@
+/* Compact academic record layout for the research dossier. */
+.research-dossier-shell { padding: .32rem; border-radius: 22px; }
+.research-dossier-board { padding: clamp(1.1rem, 2.2vw, 1.8rem); border-radius: 18px; }
+.about-research-grid.research-bento-grid {
+  grid-template-columns: minmax(260px, .76fr) minmax(0, 1.24fr);
+  gap: clamp(.8rem, 1.5vw, 1.2rem);
+}
+.research-credentials-stack { gap: .7rem; }
+.research-bento-grid .research-cred-card {
+  flex: 0 0 auto;
+  padding: 1rem 1.1rem;
+  border-radius: 14px;
+}
+.research-cred-top { margin-bottom: .55rem; }
+.research-bento-grid .research-cred-card h3 { margin-bottom: .3rem; font-size: 1.22rem; }
+.research-bento-grid .research-cred-card p { font-size: .86rem; line-height: 1.55; }
+.research-card-meta,
+.research-peer-proof { margin-top: .72rem; padding-top: .68rem; }
+.research-bento-grid .about-publications { padding: 1.15rem 1.25rem; border-radius: 14px; }
+.about-publications-head { padding-bottom: .62rem; }
+.research-bento-grid .about-publication-list { gap: .48rem; margin: .7rem 0; }
+.pub-ledger-card { gap: .32rem; padding: .68rem .78rem; border-radius: 10px; }
+.pub-ledger-citation { font-size: .82rem; line-height: 1.48; }
+.about-publications-footer { padding-top: .65rem; }
+.research-dossier-board .about-talks { margin-top: .8rem; padding: 1rem 1.1rem; border-radius: 14px; }
+.about-talks-head { margin-bottom: .6rem; padding-bottom: .55rem; }
+.research-dossier-board .about-talks ul { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .42rem; }
+.research-dossier-board .about-talks li { padding: .58rem .7rem .58rem 1.45rem; border-radius: 10px; font-size: .8rem; line-height: 1.48; }
+.research-dossier-board .about-talks li::before { left: .65rem; top: .92rem; width: 5px; height: 5px; }
+
+@media (max-width: 980px) {
+  .about-research-grid.research-bento-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 640px) {
+  .research-dossier-board { padding: .9rem .75rem; }
+  .research-bento-grid .research-cred-card,
+  .research-bento-grid .about-publications { padding: .95rem; }
+  .research-dossier-board .about-talks { padding: .9rem; }
+  .research-dossier-board .about-talks ul { grid-template-columns: minmax(0, 1fr); }
+  .research-dossier-board .about-talks li { font-size: .82rem; }
+}
