@@ -3035,11 +3035,70 @@ textarea.form-control {
   font-weight: 500;
 }
 
+/* Polished Form Validation Feedback: Red-Indigo Gradient Micro Banner */
+@keyframes form-error-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4px) scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.form-control[aria-invalid="true"],
+.form-consent input[type="checkbox"][aria-invalid="true"],
+.form-consent-card:has(input[aria-invalid="true"]) {
+  border-color: #E11D48 !important;
+  background-color: #FFF9FA !important;
+  box-shadow: 0 0 0 3px rgba(225, 29, 72, 0.12), 0 2px 8px rgba(78, 91, 166, 0.08) !important;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
 .form-field-error {
-  color: #DC2626;
-  font-size: 0.78rem;
-  margin-top: 0.25rem;
-  display: block;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.45rem !important;
+  margin-top: 0.45rem !important;
+  padding: 0.28rem 0.75rem !important;
+  border-radius: 999px !important;
+  font-family: var(--font-sans, system-ui, sans-serif) !important;
+  font-size: 0.77rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.015em !important;
+  line-height: 1.35 !important;
+  background: linear-gradient(135deg, rgba(225, 29, 72, 0.09) 0%, rgba(78, 91, 166, 0.11) 100%) !important;
+  border: 1px solid rgba(225, 29, 72, 0.22) !important;
+  border-left: 3px solid #E11D48 !important;
+  color: #9F1239 !important;
+  box-shadow: 0 2px 8px rgba(225, 29, 72, 0.06) !important;
+  animation: form-error-in 0.24s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+}
+
+.form-field-error::before {
+  content: "!";
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 50% !important;
+  background: linear-gradient(135deg, #E11D48 0%, #4E5BA6 100%) !important;
+  color: #FFFFFF !important;
+  font-size: 0.68rem !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  flex-shrink: 0 !important;
+}
+
+.form-field-error[hidden] {
+  display: none !important;
+}
+
+.form-consent-error {
+  margin-top: 0.45rem !important;
+  margin-left: 0.2rem !important;
 }
 
 /* Submit Button & Reassurance */
@@ -3116,9 +3175,12 @@ textarea.form-control {
 }
 
 .form-alert.alert-error {
-  background-color: #FEF2F2;
-  border: 1px solid #FECACA;
-  color: #991B1B;
+  background: linear-gradient(135deg, rgba(254, 242, 242, 0.95) 0%, rgba(245, 247, 255, 0.95) 100%) !important;
+  border: 1px solid rgba(225, 29, 72, 0.28) !important;
+  border-left: 4px solid #E11D48 !important;
+  color: #881337 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 16px rgba(225, 29, 72, 0.06), 0 2px 6px rgba(78, 91, 166, 0.05) !important;
 }
 
 .form-alert.alert-success {
@@ -13016,5 +13078,124 @@ html.splash-visited #splashScreen.splash-screen {
   }
   .wa-chathead-tooltip {
     display: none;
+  }
+}
+
+/* ==========================================================================
+   ACADEMIC & EDITORIAL PRINT STYLES (Save as PDF / Clean Printout)
+   ========================================================================== */
+@media print {
+  @page {
+    margin: 1.5cm;
+    size: A4 portrait;
+  }
+
+  *, *::before, *::after {
+    background: transparent !important;
+    color: #111827 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+  }
+
+  body {
+    background: #FFFFFF !important;
+    font-size: 11pt !important;
+    line-height: 1.5 !important;
+    color: #111827 !important;
+  }
+
+  /* Hide interactive, floating, and canvas elements */
+  #splashScreen,
+  .site-header,
+  .mobile-drawer,
+  .drawer-backdrop,
+  .wa-chathead,
+  .footer-ambient-effects,
+  .footer-canvas,
+  .p3d-ui,
+  .psyche-mode-switcher-wrap,
+  .psyche-3d,
+  .psyche-pan-hint,
+  .psyche-inspector-hud,
+  #imageLightbox,
+  .practice-track-switcher,
+  .dictionary-search-bar,
+  .filter-tabs,
+  .pub-filter-bar,
+  .pub-filter-pills,
+  .btn,
+  .btn-primary,
+  .header-cta-pill,
+  .footer-top-beam,
+  .footer-ambient-orb {
+    display: none !important;
+  }
+
+  /* Printable Header */
+  main {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  /* Typography & Headings */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    break-after: avoid;
+    color: #0F172A !important;
+  }
+
+  /* Academic Cards, Articles, Publication Records */
+  .pub-card,
+  .schema-card,
+  .clinician-card,
+  .fieldwork-card,
+  .news-event-card,
+  .bento-card,
+  .faq-accordion-item {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 8px !important;
+    padding: 1rem !important;
+    margin-bottom: 1.25rem !important;
+    background: #FFFFFF !important;
+  }
+
+  /* Tables */
+  table, tr, td, th {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .dictionary-table th {
+    background: #F1F5F9 !important;
+    color: #0F172A !important;
+    border-bottom: 2px solid #CBD5E1 !important;
+  }
+
+  .dictionary-table td {
+    border-bottom: 1px solid #E2E8F0 !important;
+  }
+
+  /* Print link handling */
+  a {
+    text-decoration: underline !important;
+    color: #1E3A8A !important;
+  }
+
+  /* Footer Clean */
+  .site-footer {
+    background: #FFFFFF !important;
+    color: #475569 !important;
+    border-top: 2px solid #E2E8F0 !important;
+    padding: 2rem 0 !important;
+    page-break-inside: avoid;
+  }
+
+  .footer-brand-title,
+  .footer-brand-sub,
+  .footer-col-title {
+    color: #0F172A !important;
   }
 }
