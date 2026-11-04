@@ -786,6 +786,29 @@
     "research.schema3Tag": "ÇOKDİLLİ PSİKANALİZ ÇALIŞMASI",
     "research.schema3Title": "Üç Dilli Psikanaliz Terimleri Sözlüğü",
     "research.schema3Desc": "Dr. Ali İhsan Yaka'nın psikanalitik kavramları Türkçe, İngilizce ve Kürtçe (Kurmancî) dillerinde karşılıklı olarak ele aldığı, kavramsal netliği ve çokdilli klinik dinlemeyi destekleyen terminoloji matrisi.",
+    "research.schemaToolbarObsessional": "Obsesyonel Nevroz • Şema L & Arzu Grafı",
+    "research.schemaToolbarL": "4K Vektörel Şema",
+    "research.schemaFocus": "Odak:",
+    "research.schemaTheory": "Kuramsal Temel:",
+    "research.schemaToolbarDiscourses": "Saha Söylem Analizi • Lacan'ın Dört Söylemi",
+    "research.schemaInstitute": "Kurum & Yıl:",
+    "research.schemaMethod": "Yöntem:",
+    "guncel.heroPill": "GÜNCEL SEMPOZYUM & ETKİNLİKLER",
+    "guncel.heroTitle": "Akademik Çalışmalar, Sempozyumlar & Duyurular",
+    "guncel.heroLead": "Dr. Ali İhsan Yaka'nın University at Buffalo CSPC bünyesindeki araştırmaları, uluslararası kongre bildirileri, araştırma bursları ve güncel klinik etkinlikleri.",
+    "guncel.apsaCredits": "44,5 Sürekli Eğitim Kredisi",
+    "practice.prog1Status": "Güncel uygunluk başvuruda teyit edilir",
+    "practice.prog2Status": "Talep üzerine · kontenjan teyit edilir",
+    "practice.prog3Status": "Program takvimi için iletişim",
+    "meta.publicationsTitle": "Yayınlar, Tezler ve Bildiriler | Dr. Ali İhsan Yaka, Ph.D.",
+    "about.bogaziciTalkAlt": "Dr. Ali İhsan Yaka Boğaziçi Üniversitesi konuşması",
+    "pub.thesisDesc": "Bu doktora monografisi; Irak Ninova Ovası'nda IŞİD/Êzidî soykırımı sonrasında sahada görev yapan yerel ruh sağlığı uzmanlarının klinik süpervizyon seanslarındaki söylemlerini Lacanyen psikanalitik kuram, Dört Söylem modeli ve toplumsal travma ekseninde çözümler.",
+    "pub.thesisMetaKeywords": "Lacanyen Söylem Analizi • Toplumsal Travma",
+    "pub.ayna2024Desc": "Psikotik yapıyı nevrozdan ayıran temel psikanalitik mekanizma olarak Babanın-Adı göstereninin simgesel düzene kaydedilemeyişini (menetme/forclusion) ve psikoz kliniğinde baba işlevinin Lacanyen kuram ekseninde yeniden kavramsallaştırılmasını inceler.",
+    "pub.ayna2021Desc": "Obsesyonel nevrozda arzu ile yasa arasındaki gerilimi, babanın simgesel işlevinin özne tarafından nasıl konumlandırıldığını ve klinik pratikteki göstergelerini Lacanyen psikanaliz perspektifinden inceler.",
+    "pub.tpyDesc": "Yakın İlişkiler Envanteri'nin (ECR-I) Türkçe psikometrik standardizasyonu; bağlanma boyutlarının kendilik algısı, bilişsel çarpıtmalar ve psikopatolojik belirtilerle ilişkisini ampirik olarak değerlendirir.",
+    "pub.kurdiDesc": "Bireyin patolojik yalnızlık kapanından psikanalitik çalışma yoluyla sıyrılarak kolektif bağlar içinde öznelleşme serüvenini Lacanyen kuram çerçevesinde ele alan kamu yayıncılığı makalesi.",
+    "pub.bogaziciDesc": "Yalnızlığın psikopatolojik bir tecrit halinden simgesel düzenle kurulan bağ üzerinden öznelleşme imkanına nasıl evrilebileceğini Lacan'ın ayna evresi ve öteki kavramları üzerinden ele alan davetli sempozyum konuşması.",
   },
   "en": {
     "page.title": "Dr. Ali Ihsan Yaka, Ph.D. | Lacanian Psychoanalysis & Clinical Psychology",
@@ -897,11 +920,11 @@
     "psyche.anchor": "master signifier",
     "psyche.origin": "Signifier",
     "psyche.originText": "A point of departure into speech and language",
-    "psyche.message": "Paternal metaphor",
-    "psyche.messageText": "Message · Mirror stage",
-    "psyche.fall": "Falling out of the symbolic",
-    "psyche.unrecognized": "Unrecognised in the symbolic",
-    "psyche.recognized": "Recognised in the symbolic",
+    "psyche.message": "Paternal Metaphor",
+    "psyche.messageText": "Message · Mirror Stage",
+    "psyche.fall": "Falling from Symbolic",
+    "psyche.unrecognized": "Unrecognised in Symbolic",
+    "psyche.recognized": "Recognised in Symbolic",
     "psyche.code": "Names-of-the-Father",
     "psyche.codeText": "Code · Psychic structures",
     "psyche.psychotic": "Psychotic",
@@ -919,7 +942,7 @@
     "psyche.diagramDesc": "The diagram follows the paternal metaphor and mirror stage into the links among the Real, Imaginary, and Symbolic, the S1 axis, psychic structures, and the subject’s speaking function.",
     "psyche.s2Label": "S2 · signifying chain",
     "psyche.s1Label": "S1",
-    "psyche.ayna": "Mirror stage",
+    "psyche.ayna": "Mirror Stage",
     "psyche.structureHeading": "Psychic structures",
     "psyche.captionText": "Adapted from Dr. Ali İhsan Yaka’s work “Psychotic Structure and the Paternal Function.”",
     "psyche.captionLink": "Read the 2024 article ↗",
@@ -1578,6 +1601,22 @@
     "research.schema3Tag": "TRILINGUAL TERMINOLOGY STUDY",
     "research.schema3Title": "Trilingual Psychoanalysis Dictionary",
     "research.schema3Desc": "Comparative psychoanalytic terminology matrix compiled across English, Kurdish (Kurmancî), and Turkish to facilitate multilingual clinical listening and conceptual rigor.",
+    "research.schemaToolbarObsessional": "Obsessional Neurosis • Schema L & Graph of Desire",
+    "research.schemaToolbarL": "4K Vector Diagram",
+    "research.schemaFocus": "Focus:",
+    "research.schemaTheory": "Theoretical Basis:",
+    "research.schemaToolbarDiscourses": "Field Discourse Analysis • Lacan's Four Discourses",
+    "research.schemaInstitute": "Institution & Year:",
+    "research.schemaMethod": "Method:",
+    "guncel.heroPill": "CURRENT SYMPOSIA & EVENTS",
+    "guncel.heroTitle": "Academic Work, Symposia & Announcements",
+    "guncel.heroLead": "Dr. Ali İhsan Yaka's research at the University at Buffalo CSPC, international congress papers, research grants, and current clinical events.",
+    "guncel.apsaCredits": "44.5 Continuing Education Credits",
+    "practice.prog1Status": "Current availability confirmed upon inquiry",
+    "practice.prog2Status": "Available on demand · capacity confirmed",
+    "practice.prog3Status": "Contact for schedule",
+    "meta.publicationsTitle": "Publications, Dissertations & Presentations | Dr. Ali Ihsan Yaka, Ph.D.",
+    "about.bogaziciTalkAlt": "Dr. Ali Ihsan Yaka presenting at Boğaziçi University",
   }
 };
 
@@ -2068,25 +2107,437 @@
     "Lacanyen psikanalitik psikoterapi ve danışmanlık hizmetleri acil psikiyatrik kriz müdahalesi kapsamında değildir. Kendinize veya bir başkasına zarar verme riski ya da acil psikiyatrik durumlarda en yakın hastanenin acil servisine başvurun veya Türkiye'de 112 Acil Çağrı Merkezi'ni arayın.": "Lacanian psychoanalytic psychotherapy and consultation do not provide emergency psychiatric crisis care. If you or someone else may be at risk of harm or needs urgent psychiatric care, go to the nearest emergency department or call 112 in Turkey.",
     "Başka bir sorunuz veya ön görüşme talebiniz mi var?": "Do you have another question or want to request an initial consultation?",
     "Sorularınız ve seans başvurularınız için doğrudan iletişime geçebilirsiniz.": "Get in touch directly with questions or to inquire about sessions.",
-    "Ön Görüşme Formunu Doldur →": "Complete the Initial Consultation Form →"
+    "Ön Görüşme Formunu Doldur →": "Complete the Initial Consultation Form →",
+    "GÖSTEREN · S2": "SIGNIFIER · S2",
+    "S1 · SÖZCE": "S1 · UTTERANCE",
+    "İMGESEL · GERÇEK · SİMGESEL": "IMAGINARY · REAL · SYMBOLIC",
+    "BABA METAFORU": "PATERNAL METAPHOR",
+    "RUHSAL YAPILAR": "PSYCHIC STRUCTURES",
+    "(Mesaj)": "(Message)",
+    "(Kod)": "(Code)",
+    "Ruhsal": "Psychic",
+    "Yapılar": "Structures",
+    "Gerçek": "Real",
+    "İmgesel": "Imaginary",
+    "Simgesel": "Symbolic",
+    "Süjenin": "The Subject’s",
+    "Dil Alanı": "Field of Language",
+    "ve": "and",
+    "Konuşma": "Speaking",
+    "İşlevi": "Function",
+    "ÇALIŞMALARDAN SEÇKİ": "SELECTED WORK",
+    "Sahadan akademiye, kişisel meraklara": "From fieldwork to academia and personal interests",
+    "Klinik çalışmaları, saha deneyimini ve akademik üretimi bir arada keşfedin.": "Explore clinical practice, humanitarian fieldwork, and academic research together.",
+    "SAHA ÇALIŞMALARI · IRAK": "FIELDWORK · IRAQ",
+    "Ninova Ovası'ndan klinik düşünceye": "From the Nineveh Plains to clinical thought",
+    "Saha çalışmalarını incele": "Explore fieldwork",
+    "YAYINLAR · ARAŞTIRMA": "PUBLICATIONS · RESEARCH",
+    "Psikanalitik bilgi ve saha çalışması": "Psychoanalytic knowledge and fieldwork",
+    "Yayınlara göz at": "Browse publications",
+    "GÜNCEL · 2026": "NEWS · 2026",
+    "Buffalo CSPC Sempozyumu": "Buffalo CSPC Symposium",
+    "Dil, paranoya ve soykırım üzerine psikanalitik değerlendirme.": "Psychoanalytic reflections on language, paranoia, and genocide.",
+    "Güncel çalışmaları gör": "View recent work",
+    "EĞİTİM · ETKİNLİK": "TRAINING · EVENTS",
+    "Uluslararası akademik buluşmalar": "International academic meetings",
+    "Buffalo CSPC, APsA Ulusal Kongresi ve Berlin yaz okulu seçkisi.": "Highlights from Buffalo CSPC, the APsA National Meeting, and the Berlin Summer School.",
+    "Eğitim ve etkinlikler": "Training and events",
+    "KİŞİSEL İLGİLER & DOĞA": "PERSONAL INTERESTS & NATURE",
+    "Merakın farklı biçimleri": "Different forms of curiosity",
+    "Kuş gözlemciliği": "Birdwatching",
+    "Fotoğrafçılık": "Photography",
+    "Bağlama": "Bağlama",
+    "Hakkımda daha fazlası": "More about me",
+    "KLİNİK PRATİK": "CLINICAL PRACTICE",
+    "Psikoterapi ve süpervizyon": "Psychotherapy and supervision",
+    "Yetişkinlerle bireysel psikoterapi; klinisyenler için klinik süpervizyon.": "Individual psychotherapy for adults; clinical supervision for clinicians.",
+    "Klinik hizmetleri incele": "Explore clinical services",
+    "(Özgün başlık:": "(Original title:",
+    "T.C. Sağlık Bakanlığı Diploma Tescili: Klinik Psikolog (Doktora) · Tescil No: 15141": "Turkish Ministry of Health Diploma Registration: Clinical Psychologist (Ph.D.) · Reg. No: 15141",
+    "Yüksek lisans tezi:": "Master’s thesis:",
+    "Bağlanma, Erken Dönem Uyumsuz Şemalar, Öz-Düzenleme ve Psikolojik Belirtiler Arasındaki İlişkiler": "The Relationships Between Attachment, Early Maladaptive Schemas, Self-Regulation, and Psychological Symptoms",
+    "SÜDGE Eğitici Belgesi · T.C. Sağlık Bakanlığı": "SÜDGE Trainer Certificate · Turkish Ministry of Health",
+    "Sürücü Davranışlarını Geliştirme Eğitimi (SÜDGE) eğitici eğitimi sertifikasyonu.": "Driver Behavior Improvement Training (SÜDGE) trainer certification.",
+    "Kayseri, Türkiye": "Kayseri, Turkey",
+    "Buffalo CSPC Araştırma Ofisi · Dr. Ali İhsan Yaka (#408)": "Buffalo CSPC Research Office · Dr. Ali İhsan Yaka (#408)",
+    "CSPC Sempozyumu Programı, Tezi ve Freud Arşivi": "CSPC Symposium Program, Dissertation & Freud Archive",
+    "· 7. Uluslararası Bilişsel Psikoterapi Kongresi (ICCP): Bağlanma, şemalar ve psikopatoloji üzerine bildiri (İstanbul).": "· 7th International Congress of Cognitive Psychotherapy (ICCP): Paper on attachment, schemas, and psychopathology (Istanbul).",
+    "05 / MESLEKİ KATKI · DİLLER & AKREDİTASYON": "05 / PROFESSIONAL SERVICE · LANGUAGES & ACCREDITATION",
+    "Psikanalitik kurumlardaki yönetim ve denetim sorumlulukları, çok dilli klinik yetkinlik ve uluslararası akredite sürekli mesleki gelişim (CPD) programları.": "Governance and supervisory roles in psychoanalytic institutions, multilingual clinical proficiency, and internationally accredited continuing professional development (CPD) programs.",
+    "KURUMSAL HİZMET": "INSTITUTIONAL SERVICE",
+    "Dernek Görevleri & Kurul Üyelikleri": "Association Roles & Board Memberships",
+    "DENETLEME KURULU": "SUPERVISORY BOARD",
+    "Freud-Lacan Psikanaliz Derneği": "Freud-Lacan Psychoanalysis Association",
+    "Ankara · Psikanalitik formasyon seminerleri, dernek içi etik standartlar ve denetim süreçleri.": "Ankara · Psychoanalytic formation seminars, internal ethical standards, and auditing processes.",
+    "YÖNETİM KURULU": "EXECUTIVE BOARD",
+    "İnsan Hakları Derneği (İHD)": "Human Rights Association (İHD)",
+    "Ankara · Hak temelli psikososyal destek, toplumsal travma sahası ve süregiden gönüllü üyelik.": "Ankara · Rights-based psychosocial support, social trauma fieldwork, and ongoing voluntary membership.",
+    "KLİNİK ÇOK DİLLİLİK": "CLINICAL MULTILINGUALISM",
+    "Çalışma Dilleri & Yetkinlik": "Working Languages & Proficiency",
+    "Türkçe & Kurmancî": "Turkish & Kurmanji",
+    "Anadil Düzeyinde": "Native Proficiency",
+    "Kültürel duyarlı psikanalitik psikoterapi, anadilde klinik dinleme ve vaka kavramsallaştırması.": "Culturally sensitive psychoanalytic psychotherapy, clinical listening in the mother tongue, and case formulation.",
+    "İngilizce (English)": "English",
+    "IELTS Academic 7.0 (2015) · Uluslararası klinik görüşmeler, süpervizyon ve konferans sunumları.": "IELTS Academic 7.0 (2015) · International clinical consultations, supervision, and conference presentations.",
+    "Resmi Özgeçmiş PDF'ini İncele ↗": "View Official CV (PDF) ↗",
+    "DOĞRULANABİLİR AKADEMİK & KLİNİK PROFİLLER": "VERIFIABLE ACADEMIC & CLINICAL PROFILES",
+    "Mesleki Ağ": "Professional Network",
+    "Yayın & Atıf": "Publications & Citations",
+    "Hakemli Yayın": "Peer-Reviewed Archive",
+    "Bilimsel Profil": "Scientific Profile",
+    "Doğrulanmış Uzman": "Verified Specialist",
+    "SÜREKLİ EĞİTİM & AKREDİTASYON": "CONTINUING EDUCATION & ACCREDITATION",
+    "Sürekli Mesleki Gelişim (CPD) ve Sertifikalar": "Continuing Professional Development (CPD) & Certificates",
+    "Tümü (11)": "All (11)",
+    "Psikanaliz": "Psychoanalysis",
+    "Risk & Güvenlik": "Risk & Safety",
+    "Uluslararası": "International",
+    "44.5 CME/CE KREDİSİ": "44.5 CME/CE CREDITS",
+    "Araştırma eğitimi, kültürel anlatılar, nöropsikanaliz ve klinik vaka oturumlarını içeren 44,5 saatlik sürekli eğitim akreditasyonu (San Francisco / New York).": "44.5-hour continuing education accreditation covering research training, cultural narratives, neuropsychoanalysis, and clinical case sessions (San Francisco / New York).",
+    "Belgeyi PDF Olarak Görüntüle": "View Certificate (PDF)",
+    "25 Mart 2025'te tamamlanan dijital platformlarda kullanıcı güvenliği, risk değerlendirmesi ve ileri klinik etik sertifikasyon programı.": "Advanced certification program in user safety, risk assessment, and clinical ethics on digital platforms, completed on March 25, 2025.",
+    "KLİNİK RİSK DEĞERLENDİRME": "CLINICAL RISK ASSESSMENT",
+    "16 Aralık 2024'te tamamlanan klinik risk değerlendirme, kendine zarar verme eğilimleri ve kriz protokolleri ileri eğitimi.": "Advanced training in clinical risk assessment, self-harm tendencies, and crisis protocols, completed on December 16, 2024.",
+    "60 AKADEMİK SAAT": "60 ACADEMIC HOURS",
+    "“The Future Now?!” Uluslararası Yaz Okulu": "“The Future Now?!” International Summer School",
+    "Berlin Uluslararası Psikanalitik Üniversitesi programı kapsamında çağdaş psikanaliz, travma ve toplumsal krizler üzerine 60 saatlik yoğun eğitim.": "60-hour intensive training on contemporary psychoanalysis, trauma, and social crises at the International Psychoanalytic University Berlin.",
+    "Katılım Belgesi PDF ↗": "Attendance Certificate PDF ↗",
+    "İNSANİ YARDIM & SAHA": "HUMANITARIAN & FIELDWORK",
+    "Kriz ve çatışma bölgelerinde çocuk gelişimi, ikincil travma ve saha çalışanlarına yönelik ileri psikososyal destek eğitimi (Temmuz 2017).": "Advanced psychosocial support training for fieldworkers on child development and secondary trauma in crisis and conflict zones (July 2017).",
+    "Erbil Saha Belgesi": "Erbil Field Certificate",
+    "KLİNİK PSİKİYATRİ": "CLINICAL PSYCHIATRY",
+    "Gülhane Askeri Tıp Akademisi · Ankara": "Gülhane Military Medical Academy · Ankara",
+    "GATA Psikiyatri Kongresi Katılımı": "GATA Psychiatry Congress Attendance",
+    "29–30 Mayıs 2014 tarihli Gülhane Askeri Tıp Akademisi psikiyatri kongresi ve klinik vaka oturumlarına katılım.": "Participation in the Gülhane Military Medical Academy psychiatry congress and clinical case sessions (May 29–30, 2014).",
+    "ULUSLARARASI DEĞİŞİM": "INTERNATIONAL EXCHANGE",
+    "Council of International Fellowship · İsviçre": "Council of International Fellowship · Switzerland",
+    "“Work with persons from other cultures” mesleki değişim programı; Zürih ve Baden merkezli kültürlerarası psikososyal çalışma (5–20 Nisan 2013).": "“Work with persons from other cultures” professional exchange program; cross-cultural psychosocial work based in Zurich and Baden (April 5–20, 2013).",
+    "KONGRE & ATÖLYE": "CONGRESS & WORKSHOP",
+    "“Behavioral Treatment of Anxiety Disorders” atölyesine katılım; anksiyete bozukluklarının tedavisi üzerine uzmanlaşma (İstanbul, 2–5 Haziran 2011).": "Participation in the “Behavioral Treatment of Anxiety Disorders” workshop; specialized training in the treatment of anxiety disorders (Istanbul, June 2–5, 2011).",
+    "2010 · T.C. SAĞLIK BAKANLIĞI": "2010 · MINISTRY OF HEALTH (TR)",
+    "EĞİTİCİ EĞİTİMİ": "TRAINER CERTIFICATION",
+    "Temel Sağlık Hizmetleri Genel Müdürlüğü": "Directorate General of Primary Health Care",
+    "SÜDGE Programı Eğitici Eğitimi": "SÜDGE Program Trainer Certification",
+    "Sürücü Davranışlarını Geliştirme Eğitimi (SÜDGE) Programı çerçevesinde riskli davranış analizi ve eğitici eğitimi (20–21 Aralık 2010, No: 2010-06).": "Risky behavior analysis and trainer certification under the Driver Behavior Improvement Training (SÜDGE) Program (Dec 20–21, 2010, No: 2010-06).",
+    "Bakanlık Tescilli Belge": "Ministry Registered Certificate",
+    "TOPLUMSAL TRAVMA": "SOCIAL TRAUMA",
+    "Travma Çalışmaları Derneği": "Association for Trauma Studies",
+    "“Traumas in Daily Life” (Günlük Yaşamda Travmalar) sempozyumu oturumları ve saha müdahale atölyeleri katılımı.": "Participation in the “Traumas in Daily Life” symposium sessions and field intervention workshops.",
+    "2004 · ULUDAĞ ÜNİV.": "2004 · ULUDAĞ UNIV.",
+    "BİLDİRİLİ KATILIM": "ORAL PRESENTATION",
+    "9. Ulusal Psikoloji Öğrencileri Kongresi": "9th National Psychology Students Congress",
+    "30 Haziran–4 Temmuz 2004 tarihli ulusal kongrede bildirili katılım ve bilimsel araştırma sunumu.": "Oral paper presentation and scientific research contribution at the national congress (June 30–July 4, 2004).",
+    "Katılım Belgesini Aç ↗": "Open Attendance Certificate ↗",
+    "Klinik dinlemenin gerektirdiği sabır ve dikkat, doğanın sessizliğinde ve vizörün ardında da sürer. Kuş gözlemi, yaban hayatı ve farklı coğrafyalardaki ağaçların hikâyeleri.": "The patience and attention required by clinical listening continue in the quiet of nature and behind the viewfinder—birdwatching, wildlife, and the stories of trees across geographies.",
+    "Doğa & Moon Tree (California)": "Nature & Moon Tree (California)",
+    "NASA Apollo 14 misyonuyla tohumu uzayda taşınan ve California’da yeşeren tarihi \"Moon Tree\" altında doğa ve insan karşılaşmaları.": "Encounters with nature beneath the historic “Moon Tree” grown in California from a seed carried into lunar orbit aboard NASA’s Apollo 14 mission.",
+    "Hizmet Odakları:": "Service Tracks:",
+    "Danışanlar İçin Terapi & Destek": "Therapy & Support for Clients",
+    "Ruh Sağlığı Uzmanları İçin Süpervizyon & Atölyeler →": "Supervision & Workshops for Mental Health Professionals →",
+    "Hızlı Erişim:": "Quick Jump:",
+    "Klinik Süpervizyon": "Clinical Supervision",
+    "Vaka Kavramsallaştırma": "Case Formulation",
+    "Lacan Seminerleri Okuma Grubu": "Lacan Seminars Reading Group",
+    "Güncel uygunluk başvuruda teyit edilir": "Current availability confirmed upon inquiry",
+    "Lacanyen Yapısal Tanı": "Lacanian Structural Diagnosis",
+    "Aktarımın Yönlendirilmesi": "Direction of the Treatment & Transference",
+    "2–4 Kişilik Grup / Bireysel": "Small Group (2–4) / Individual",
+    "Talep üzerine · kontenjan teyit edilir": "Available on demand · capacity confirmed",
+    "L Şeması & Arzu Grafı": "Schema L & Graph of Desire",
+    "Nevroz • Psikoz • Perversiyon": "Neurosis • Psychosis • Perversion",
+    "Klinik Dinleme Matrisi": "Clinical Listening Matrix",
+    "Program takvimi için iletişim": "Contact for schedule",
+    "Seminer Metinleri": "Seminar Texts",
+    "Klinik Yansımalar": "Clinical Reflections",
+    "Sınırlı Katılımcı": "Limited Capacity",
+    "GÜNCEL SEMPOZYUM & ETKİNLİKLER": "CURRENT SYMPOSIA & EVENTS",
+    "Afişin tamamını yüksek çözünürlükte incelemek için tıklayınız": "Click to view the full poster in high resolution",
+    "e-Poster belgesinin tamamını yüksek çözünürlükte incelemek için tıklayınız": "Click to view the full e-Poster document in high resolution",
+    "AYNA Klinik Psikoloji Dergisi": "AYNA Clinical Psychology Journal",
+    "Hakemlik sertifikasının tamamını yüksek çözünürlükte incelemek için tıklayınız": "Click to view the full peer-review certificate in high resolution",
+    "44,5": "44.5",
+    "Saat CE Kredisi": "CE Credit Hours",
+    "44,5 Sürekli Eğitim Kredisi": "44.5 Continuing Education Credits",
+    "San Francisco’da 27 Ocak–1 Şubat 2026 tarihlerinde düzenlenen American Psychoanalytic Association (APsA) Ulusal Toplantısı kapsamında, sunulan en yüksek saat aralığı olan 45,5 saatin 44,5 saatine bizzat katılım sağlanarak resmi sürekli mesleki eğitim kredisi (CE / Contact Hours) tamamlanmıştır.": "Completed 44.5 official continuing education credits (CE / Contact Hours) out of the 45.5-hour maximum program offered at the American Psychoanalytic Association (APsA) 2026 National Meeting held in San Francisco from January 27 to February 1, 2026.",
+    "✦ Çağdaş Psikanalitik Klinik": "✦ Contemporary Psychoanalytic Clinic",
+    "✦ Sınır Durumlar & Aktarım": "✦ Borderline States & Transference",
+    "✦ Psikanalitik Araştırmalar": "✦ Psychoanalytic Research",
+    "✦ NYSED & WES Akreditasyonu": "✦ NYSED & WES Accreditation",
+    "Katılım Belgesini Aç (PDF)": "Open Attendance Certificate (PDF)",
+    "Akademik Belgeler →": "Academic Credentials →",
+    "Meslektaşlarla": "With Colleagues",
+    "San Francisco • Uluslararası akademisyen ve klinisyen meslektaşlarla": "San Francisco • With international academic and clinical colleagues",
+    "Resmi Belge (44,5 h)": "Official Record (44.5 h)",
+    "Resmi Katılım ve Sürekli Eğitim Belgesi": "Official Attendance and Continuing Education Certificate",
+    "Doktora Tezi Odağı": "Doctoral Dissertation Focus",
+    "Doktora Araştırması Zemin Çalışması": "Doctoral Research Fieldwork Foundation",
+    "Bu saha deneyimi, Dr. Ali İhsan Yaka’nın ODTÜ doktora tezinin (2024) ve Buffalo CSPC sunumunun klinik zeminini oluşturmuştur.": "This fieldwork experience formed the clinical foundation of Dr. Ali İhsan Yaka’s METU doctoral dissertation (2024) and his Buffalo CSPC symposium presentation.",
+    "Bağlanma Örüntüleri, Erken Dönem Uyumsuz Şemalar, Öz-Düzenleme ve Psikolojik Belirtiler Arasındaki İlişkiler": "The Relationships Between Attachment Patterns, Early Maladaptive Schemas, Self-Regulation, and Psychological Symptoms",
+    "(2012). Ankara Üniversitesi Sosyal Bilimler Enstitüsü, Psikoloji (Klinik Psikoloji) Anabilim Dalı Yüksek Lisans Tezi. Tez Danışmanı: Prof. Dr. Nesrin Hisli Şahin.": "(2012). Master's Thesis, Ankara University Graduate School of Social Sciences, Department of Psychology (Clinical Psychology). Advisor: Prof. Dr. Nesrin Hisli Şahin.",
+    "(2024). AYNA Klinik Psikoloji Dergisi, 11(1), 1–37. https://doi.org/10.31682/ayna.1282059": "(2024). AYNA Clinical Psychology Journal, 11(1), 1–37. https://doi.org/10.31682/ayna.1282059",
+    "(2021). AYNA Klinik Psikoloji Dergisi, 8(2), 199–220. https://doi.org/10.31682/ayna.815903": "(2021). AYNA Clinical Psychology Journal, 8(2), 199–220. https://doi.org/10.31682/ayna.815903",
+    "Yakın İlişkiler Envanteri’nin Kendilik Algısı, Olumsuz Otomatik Düşünceler ve Psikolojik Belirtiler Bağlamında Güvenirliği ve Geçerliği": "Reliability and Validity of the Experiences in Close Relationships Inventory in the Context of Self-Perception, Negative Automatic Thoughts, and Psychological Symptoms",
+    "(2010). Türk Psikoloji Yazıları, 13(26), 64–76.": "(2010). Turkish Psychological Articles (Türk Psikoloji Yazıları), 13(26), 64–76.",
+    "Psikopatolojik Yalnızlıktan Subjektif Toplumsallığa: Psikanalitik Öznelleşme Deneyimi": "From Psychopathological Loneliness to Subjective Sociality: The Experience of Psychoanalytic Subjectivation",
+    ", 9(21), 61–74. Çeviri: Aydin Rengîn.": ", 9(21), 61–74. Translated by Aydin Rengîn.",
+    "(5–8 Ekim 2025). 25th World Congress of Psychiatry (WPA), Prague, Czech Republic. e-Poster #3015.": "(October 5–8, 2025). 25th World Congress of Psychiatry (WPA), Prague, Czech Republic. e-Poster #3015.",
+    "(19 Nisan 2025). Boğaziçi Üniversitesi 11. Psikoloji Günü: \"Yalnızlık Sempozyumu\", Albert Long Hall, İstanbul.": "(April 19, 2025). Boğaziçi University 11th Psychology Day: “Loneliness Symposium”, Albert Long Hall, Istanbul.",
+    "Boğaziçi Üniversitesi": "Boğaziçi University",
+    "Descartes’ın Yanılgısı ve Duygusal Zeka: Duygu ve Akıl İkilemi": "Descartes’ Error and Emotional Intelligence: The Emotion and Reason Dichotomy",
+    "(6–9 Temmuz 2004). 9. Ulusal Psikoloji Öğrencileri Kongresi, Uludağ Üniversitesi, Bursa, Türkiye.": "(July 6–9, 2004). 9th National Psychology Students Congress, Uludağ University, Bursa, Turkey.",
+    "Psikanalitik Bilginin Psikososyal Saha Çalışmalarında Kullanımı: Toplumsal Travmaya Psikanalitik Yaklaşım": "How Psychoanalytic Knowledge Can Be Used in Psychosocial Field Work: Psychoanalytic Approach to Social Trauma",
+    "Amerikan Psikanaliz Birliği 2026 Ulusal Kongresi: 44,5 Sürekli Eğitim (CE) Kredisi": "American Psychoanalytic Association (APsA) 2026 National Meeting: 44.5 Continuing Education (CE) Credits",
+    "IPU Berlin Uluslararası Yaz Okulu: Çağdaş Psikanalitik Gelişmeler (60 Akademik Saat)": "IPU Berlin International Summer School: Contemporary Developments in Psychoanalysis (60 Academic Hours)",
+    "8. Gülhane Askeri Psikiyatri Günleri Kongresi": "8th Gülhane Military Psychiatry Days Congress",
+    "Krize Müdahale ve Psikolojik Travma Alanında Klinik Yaklaşımlar & Sürekli Eğitim": "Clinical Approaches & Continuing Education in Crisis Intervention and Psychological Trauma",
+    "(2014). 8. Gülhane Askeri Psikiyatri Günleri Kongresi: Krize Müdahale ve Psikolojik Travma. Gülhane Askeri Tıp Akademisi (GATA) Ruh Sağlığı ve Hastalıkları AD, Ankara, Türkiye.": "(2014). 8th Gülhane Military Psychiatry Days Congress: Crisis Intervention and Psychological Trauma. Gülhane Military Medical Academy (GATA) Dept. of Psychiatry, Ankara, Turkey.",
+    "Travma Sonrası İyileşme, Erken Müdahale ve Psikososyal Hizmet Modelleri": "Post-Traumatic Recovery, Early Intervention, and Psychosocial Service Models",
+    "(2009). VI. Uluslararası Psikolojik Travma Sempozyumu: Travma Sonrası İyileşme ve Klinik Müdahaleler. Doğal Afetler ve Travmalarda Psikososyal Hizmetler Birliği (DAPHB), İstanbul, Türkiye.": "(2009). 6th International Psychological Trauma Symposium: Post-Traumatic Recovery and Clinical Interventions. Association for Psychosocial Services in Disasters and Traumas (DAPHB), Istanbul, Turkey.",
+    "ARAŞTIRMALAR · DOKTORA SONRASI & KURAMSAL YAYINLAR": "RESEARCH · POSTDOCTORAL & THEORETICAL PUBLICATIONS",
+    "Psikotik Yapı ve Baba İşlevi": "Psychotic Structure and the Paternal Function",
+    "Sözden ruhsal yapıya: Gösteren zinciri, Baba metaforu ve ayna evresi üzerinden ruhsal yapıların oluşumu ve topolojik analizi.": "From speech to psychic structure: Topological analysis of the formation of psychic structures through the signifying chain, the paternal metaphor, and the mirror stage.",
+    "Dr. Ali İhsan Yaka’nın": "Published in",
+    "’nde yayımlanan hakemli araştırması; ana akım biyomedikal yaklaşımların semptom kataloglarına sıkışan psikoz kavramsallaştırmasını Lacanyen psikanalitik dinleme, gösteren zinciri ve topolojik formasyonlar ekseninde yeniden temellendirir.": ", Dr. Ali İhsan Yaka’s peer-reviewed study reconceptualizes psychosis beyond mainstream biomedical symptom catalogs through Lacanian psychoanalytic listening, the signifying chain, and topological formations.",
+    "YAYIN ORGANI": "JOURNAL",
+    "2024 · Cilt 11, Sayı 1, ss. 1–37": "2024 · Vol. 11, Issue 1, pp. 1–37",
+    "AKADEMİK DİZİN & DOI": "INDEXING & DOI",
+    "KURAMSAL MODEL": "THEORETICAL MODEL",
+    "Şekil 1–5 Bütüncül Topolojisi": "Integrated Topology of Figures 1–5",
+    "S₁ ↔ S₂ Diyalektik Matrisi ve Borromeo Sentezi": "S₁ ↔ S₂ Dialectical Matrix & Borromean Synthesis",
+    "01 / KURAMSAL TEMELLER": "01 / THEORETICAL FOUNDATIONS",
+    "Epistemolojik Çerçeve: Biyomedikal Determinizm vs. Lacanyen Dinleme": "Epistemological Frame: Biomedical Determinism vs. Lacanian Listening",
+    "Klinik psikanalizde bir rahatsızlığın nasıl kavramsallaştırıldığı, yalnızca teorik bir düzlemde kalmayıp sağaltım stratejilerini ve analistin dinleme etiğini doğrudan belirler.": "How a clinical condition is conceptualized in psychoanalysis is never merely theoretical—it directly determines treatment orientation and the analyst’s ethics of listening.",
+    "ANA AKIM PSİKİYATRİ & DSM/ICD": "MAINSTREAM PSYCHIATRY & DSM/ICD",
+    "Biyomedikal Determinizm ve Semptom Sınıflandırması": "Biomedical Determinism and Symptom Classification",
+    "19. yüzyıl sonlarından itibaren psikozu gözlemlenebilir davranış bozukluklarına ve biyolojik işaretlere göre kategorize eden ana akım klinik modeldir.": "The mainstream clinical model since the late 19th century that categorizes psychosis according to observable behavioral disturbances and biological markers.",
+    "Biyolojik İndirgemecilik:": "Biological Reductionism:",
+    "Psikotik belirtiler nörolojik süreçlere, genetik etkenlere ve beyin kimyasına indirgenerek anlamından koparılır.": "Psychotic phenomena are severed from subjective meaning and reduced to neurological processes, genetic factors, and brain chemistry.",
+    "Psikofarmakolojinin Amaçlaşması:": "Psychopharmacology as an End in Itself:",
+    "İlaç sağaltımı bir klinik kolaylaştırıcı olmaktan çıkıp tedavinin birincil ve yegâne amacına dönüştürülür (Lakoff, 2005; Leader, 2011).": "Medication ceases to be a clinical facilitator and becomes the primary and sole aim of treatment (Lakoff, 2005; Leader, 2011).",
+    "Sübjektifliğin ve Söylemin Dışlanması:": "Exclusion of Subjectivity and Discourse:",
+    "Danışanın kendi yaşam öyküsü, arzusu ve söylemi formülasyonun dışına itilir; semptom yalnızca bastırılması gereken bir disfonksiyon sayılır.": "The patient’s life history, desire, and speech are pushed outside the formulation; the symptom is treated merely as a dysfunction to be suppressed.",
+    "LACANYEN KLİNİK PSİKANALİZ": "LACANIAN CLINICAL PSYCHOANALYSIS",
+    "Konuşma İşlevi ve Söylem Temelli Yapısal Teşhis": "Speaking Function and Discourse-Based Structural Diagnosis",
+    "Biyolojik nedenselliğin psişik süreçleri açıklayamayacağını, psikotik yapılanmanın dil alanı ve arzu ekonomisi üzerinden şekillendiğini temel alan psikanalitik yaklaşımdır (Dor, 1999).": "A psychoanalytic approach grounded in the premise that biological causality cannot explain psychic processes, and that psychotic structure is formed through the field of language and the economy of desire (Dor, 1999).",
+    "Söylem Aracılığıyla Teşhis:": "Diagnosis Through Discourse:",
+    "Fenomenolojik semptomlar ile süjenin ruhsal yapısı arasındaki radikal fark ancak hastanın söylemi (parole) dinlenerek çözümlenebilir (Lacan, 1966/2006).": "The radical distinction between phenomenological symptoms and the subject’s psychic structure can only be deciphered by listening to the patient’s speech (parole) (Lacan, 1966/2006).",
+    "Psikanalitik Dinleme Etiği:": "Ethics of Psychoanalytic Listening:",
+    "Analist, hastayı eğiten efendi veya teşhis koyan gözetmen değil; süjenin diline ve deliliğin sekreterliğine tanıklık eden konumdadır.": "The analyst is neither an educating master nor a diagnostic overseer, but witnesses the subject’s language as a ‘secretary to the insane.’",
+    "Topolojik Arzu Profili:": "Topological Desire Profile:",
+    "Ruhsal yapılar stereotipik bir yörüngeyi takip ederek Baba-nın-Adları ve Baba metaforu üzerinden dilde istikrarlı topolojik özellikler üretir.": "Psychic structures follow a structural trajectory, producing stable topological properties in language through the Names-of-the-Father and the paternal metaphor.",
+    "02 / KLİNİK MATRİS": "02 / CLINICAL MATRIX",
+    "Üç Ruhsal Yapı ve Savunma Mekanizmaları": "Three Psychic Structures and Defense Mechanisms",
+    "Freud’un": "Building on Freud’s",
+    "Olumsuzlama (Verneinung, 1925)": "Negation (Verneinung, 1925)",
+    "metninden yola çıkan Lacan, üç temel ruhsal yapıyı olumsuzlamanın üç farklı biçimi ve savunma mekanizması olarak kuramsallaştırmıştır. Kartlara tıklayarak 3B topolojide ilgili yolu anında izole edebilirsiniz.": ", Lacan theorized the three fundamental psychic structures as three distinct modes of negation and defense. Click any card below to isolate its pathway in the 3D topology.",
+    "SAVUNMA: FORCLUSION (VERWERFUNG)": "DEFENSE: FORECLOSURE (FORCLUSION / VERWERFUNG)",
+    "Psikotik Yapı": "Psychotic Structure",
+    "S₁ ↓ Hesaptan / Simgeselden Düşme": "S₁ ↓ Foreclosure / Falling out of the Symbolic",
+    "Simgeselden Düşme": "Falling from Symbolic",
+    "Yalnızca Gerçek (Réel)": "The Real (Réel) Only",
+    "Hezeyanlı Onarım": "Delusional Restitution",
+    "Baba-nın-Adları (S₁) temel göstereni simgesel hesaptan düşmüştür. Simgesel düzen delindiği için Borromeo halkası çözülür; simgeselden dışlanan gösteren doğrudan Gerçek (Réel) düzende delilik, halüsinasyon ve hezeyan olarak geri döner.": "The primordial signifier of the Names-of-the-Father (S₁) is foreclosed from the symbolic account. Because the symbolic register is perforated, the Borromean knot unravels; what is foreclosed from the Symbolic returns directly in the Real as hallucination and delusion.",
+    "3B Sahnede Psikotik Yolu İzole Et": "Isolate Psychotic Path in 3D Scene",
+    "SAVUNMA: DÉSAVEU (VERLEUGNUNG)": "DEFENSE: DISAVOWAL (DÉSAVEU / VERLEUGNUNG)",
+    "Pervert (Sapkın) Yapı": "Perverse Structure",
+    "Désaveu ⟹ Simgeselde Tanı(n)mama": "Désaveu ⟹ Unrecognised in the Symbolic",
+    "Simgeselde Tanı(n)mama": "Unrecognised in Symbolic",
+    "İmgesel + Gerçek Kayıt": "Imaginary + Real Registers",
+    "Öteki'nin Jouissance Nesnesi": "Instrument of the Other’s Jouissance",
+    "Yasa ve kastrasyon simgesel olarak bilinir ancak eşzamanlı olarak inkâr edilir ve askıya alınır. Özne kendi eksikliğini üstlenmek yerine kendini Öteki'nin jouissance nesnesi ve aracı haline getirir.": "The law and castration are known symbolically yet simultaneously disavowed and suspended. Rather than assuming their own lack, the subject positions themselves as the object and instrument of the Other’s jouissance.",
+    "3B Sahnede Pervert Yolu İzole Et": "Isolate Perverse Path in 3D Scene",
+    "SAVUNMA: REFOULEMENT (VERDRÄNGUNG)": "DEFENSE: REPRESSION (REFOULEMENT / VERDRÄNGUNG)",
+    "Nevrotik Yapı": "Neurotic Structure",
+    "S₁ → S₂ · Bastırma ⟹ Simgeselde Tanı(n)ma": "S₁ → S₂ · Repression ⟹ Recognised in the Symbolic",
+    "Simgeselde Tanı(n)ma": "Recognised in Symbolic",
+    "R.S.I. Tam Kenetlenme": "Full R.S.I. Borromean Linking",
+    "Kastrasyon Kabulü": "Acceptance of Castration",
+    "Baba-nın-Adları (S₁) simgesel yasa olarak tanınır; kastrasyon ve eksiklik kabul edilir. S₂ diyakronik mesajı S₁ tarafından geriye doğru (après-coup) kapitone edilir. Semptom dilde şifrelenmiş bilinçdışı arzudur.": "The Names-of-the-Father (S₁) is recognized as symbolic law; castration and lack are accepted. The diachronic message S₂ is retroactively quilted (après-coup) by S₁. The symptom is unconscious desire ciphered in language.",
+    "3B Sahnede Nevrotik Yolu İzole Et": "Isolate Neurotic Path in 3D Scene",
+    "03 / BÜTÜNCÜL SENTEZ": "03 / INTEGRATED SYNTHESIS",
+    "Sözden Ruhsal Yapıya 3B Topolojik Laboratuvarı": "From Speech to Psychic Structure: 3D Topological Laboratory",
+    "Hareketi izleyin: Yatay çizgiler S₂’nin mesajını soldan sağa taşır. Dikey çizgiler, Baba-nın-Adları’nın S₁ kodlamasını aşağıdan yukarı kurar. Bu vektörlerin kesişmesi, üç yapıda baba metaforunun farklı biçimlerde okunmasını görünür kılar.": "Follow the motion: Horizontal vectors carry the message of S₂ from left to right. Vertical vectors establish the S₁ coding of the Names-of-the-Father from bottom to top. Their intersection makes visible how the paternal metaphor is read across the three structures.",
+    "ŞEKİL 5 · TOPOLOJİK VEKTÖR LABORATUVARI": "FIGURE 5 · TOPOLOGICAL VECTOR LABORATORY",
+    "Gösteren zinciri · S₂ diyakronik akış": "Signifying chain · S₂ diachronic flow",
+    "Baba-nın-Adları · S₁ senkronik kodlama": "Names-of-the-Father · S₁ synchronic coding",
+    "Döngüsel vektör düğümleri": "Cyclic vector nodes",
+    "BÜTÜNCÜL TOPOLOJİ": "INTEGRATED TOPOLOGY",
+    "Canlı Düğüm Müfettişi": "Live Node Inspector",
+    "Baba İşlevi Grafiği: Gösteren Zinciri ve Ruhsal Yapılar": "Paternal Function Graph: Signifying Chain & Psychic Structures",
+    "Diyakronik mesaj akışı (soldan sağa S₂) ile senkronik dikey kodlamanın (aşağıdan yukarı S₁) kesişim matrisi.": "Intersection matrix of diachronic message flow (left-to-right S₂) and synchronic vertical coding (bottom-to-top S₁).",
+    "S₁ ↔ S₂ · R.S.I. (Borromeo Düğümü Sentezi)": "S₁ ↔ S₂ · R.S.I. (Borromean Knot Synthesis)",
+    "Klinik Dinamik:": "Clinical Dynamic:",
+    "Üç ruhsal yapının (Nevrotik, Pervert, Psikotik) konuşma işlevi ve dil alanı içindeki formasyonunu haritalandıran akademik model.": "Academic model mapping the formation of the three psychic structures (Neurotic, Perverse, Psychotic) within the speaking function and field of language.",
+    "Şema, makaledeki 2–5. şekiller ve 26–29. sayfalardaki açıklamalara dayanarak web için yeniden modellenmiştir. Akademik bir sentezdir.": "Remodeled for the web based on Figures 2–5 and pages 26–29 of the article. An academic synthesis.",
+    "Özgün Şemayı PDF Olarak Aç": "Open Original Diagram (PDF)",
+    "04 / KAVRAMSAL GELİŞİM": "04 / CONCEPTUAL PROGRESSION",
+    "Lacanyen Topolojinin Adım Adım Evrimi (Şekil 1–5)": "Step-by-Step Evolution of the Lacanian Topology (Figures 1–5)",
+    "Dr. Ali İhsan Yaka’nın makalesinde Şekil 1’den 5’e doğru ilerlerken gösteren zinciri, kodlama ve mesaj arasındaki ilişki adım adım inşa edilir.": "Across Figures 1 to 5 in Dr. Ali İhsan Yaka’s article, the relationship among the signifying chain, coding, and the message is constructed step by step.",
+    "ŞEKİL 1 · LACAN'IN ARZU GRAFİĞİ": "FIGURE 1 · LACAN’S GRAPH OF DESIRE",
+    "Temel Düzey Arzu Grafı & Kapitone Noktası": "Elementary Graph of Desire & Quilting Point (Point de Capiton)",
+    "A (Kod)": "A (Code)",
+    "s(A) (Mesaj)": "s(A) (Message)",
+    "Gösteren zinciri (S → S') ile öznenin niyet vektörü (Δ → $) kesişir. Anlam geriye doğru (après-coup) kapitone noktası s(A) ile sabitlenir. Schreber vakasında bu iki nokta arasındaki bağ kopmuştur.": "The signifying chain (S → S') intersects the subject’s intentional vector (Δ → $). Meaning is retroactively (après-coup) anchored at the quilting point s(A). In the Schreber case, the link between these two points is severed.",
+    "Δ → $ kesişimi: A (Büyük Öteki) ve s(A) (Kapitone)": "Δ → $ intersection: A (Big Other) and s(A) (Quilting Point)",
+    "ŞEKİL 2 · S₁ / S₂": "FIGURE 2 · S₁ / S₂",
+    "Nevrotik Yapıda Gösteren Zincirinin Oluşumu": "Formation of the Signifying Chain in Neurotic Structure",
+    "S₁ (Efendi)": "S₁ (Master)",
+    "S₂ (Bilgi)": "S₂ (Knowledge)",
+    "Anlamdan yoksun ilk gösteren (S₁ / Maître), bilgiyi ve anlamı taşıyan diğer göstereni (S₂ / Savoir) diyalektik olarak harekete geçirir. S₂, süje için \"bütünsellik-bilgisi\" (savoir-totalité) fantazisini kurar.": "The primordial signifier devoid of meaning (S₁ / Maître) dialectically sets in motion the signifier of knowledge and meaning (S₂ / Savoir). S₂ establishes the fantasy of ‘total knowledge’ (savoir-totalité) for the subject.",
+    "S₁ (Simgesel Kod) → S₂ (İmgesel Anlam)": "S₁ (Symbolic Code) → S₂ (Imaginary Meaning)",
+    "ŞEKİL 3 · KOD / MESAJ": "FIGURE 3 · CODE / MESSAGE",
+    "Diyakronik & Senkronik Kesişim Noktaları": "Diachronic & Synchronic Intersection Points",
+    "S₁ Kod": "S₁ Code",
+    "S₂ Mesaj →": "S₂ Message →",
+    "Soldan sağa ilerleyen diyakronik mesaj (S₂), ters yönde aşağıdan yukarı dikey yükselen efendi gösteren (S₁) tarafından senkronik olarak geriye doğru kodlanır; anlam bu kesişimle kurulur.": "The diachronic message moving left to right (S₂) is synchronically and retroactively coded by the master signifier (S₁) rising vertically from bottom to top; signification is produced at this intersection.",
+    "S₂ Mesajı ∩ S₁ Kodu = Anlamlandırma (Signification)": "S₂ Message ∩ S₁ Code = Signification",
+    "ŞEKİL 4 · VEKTÖR AĞI": "FIGURE 4 · VECTOR NETWORK",
+    "Baba İşlevi Bağlamında Gösteren Zinciri": "The Signifying Chain in the Context of the Paternal Function",
+    "Baba-nın-Adları mekanizmasını temsil eden 3 dikey kodlama vektörü (Simgesel, İmgesel, Gerçek Baba); üç ruhsal yapıdaki savunma mekanizmalarını temsil eden 3 yatay anlamlandırma vektörüyle eşleşir.": "Three vertical coding vectors representing the Names-of-the-Father (Symbolic, Imaginary, and Real Father) intersect three horizontal signification vectors representing the defense mechanisms of the three psychic structures.",
+    "3 Dikey Kodlama Vektörü × 3 Yatay Anlamlandırma": "3 Vertical Coding Vectors × 3 Horizontal Significations",
+    "ŞEKİL 5 · NİHAİ MODEL": "FIGURE 5 · INTEGRATED MODEL",
+    "Bütüncül Baba İşlevi ve Ruhsal Yapılar Grafiği": "Integrated Graph of the Paternal Function and Psychic Structures",
+    "Süjenin dil alanı ve konuşma işlevinden gösterene doğru ilerleyen diyalektik döngü. Süje baba metaforu üzerinden S₂’ye doğru diyakronik ilerlerken, Baba-nın-Adları (S₁) kodlama noktalarından senkronik olarak geriye doğru hareket eder ve ayna evresinden geçer. Sonuç olarak ruhsal yapıların formasyonu dil ve konuşma işlevinde kararlı gösterenler olarak billurlaşır.": "The dialectical loop moving between the subject’s field of language / speaking function and the signifier. While the subject advances diachronically toward S₂ through the paternal metaphor, the Names-of-the-Father (S₁) moves synchronically and retroactively across the coding nodes through the mirror stage—crystallizing the formation of psychic structures within speech and language.",
+    "Gösteren → Baba Metaforu (S₂) → Ayna Evresi → Baba-nın-Adları (S₁) → Ruhsal Yapılar → Süjenin Dil Alanı ve Konuşma İşlevi": "Signifier → Paternal Metaphor (S₂) → Mirror Stage → Names-of-the-Father (S₁) → Psychic Structures → Subject’s Field of Language & Speaking Function",
+    "05 / VAKA ANALİZLERİ & KAVRAMLAR": "05 / CASE STUDIES & CONCEPTS",
+    "Schreber Vakası, Temel Fenomenler ve Sinthome": "The Schreber Case, Elementary Phenomena, and the Sinthome",
+    "Makalenin 24–32. sayfalarında incelenen klinik olgular, psikotik yapıda semptomun dilsel doğasını ve analistin kliniğe nasıl konumlanması gerektiğini aydınlatır.": "The clinical phenomena examined on pages 24–32 of the article illuminate the linguistic nature of symptoms in psychosis and how the analyst must position themselves in clinical work.",
+    "KLİNİK VAKA · DANIEL PAUL SCHREBER": "CLINICAL CASE · DANIEL PAUL SCHREBER",
+    "Kesintili Mesaj Fenomeni ve Noktalama Eksikliği": "Interrupted Message Phenomena and Absence of Punctuation",
+    "Schreber, Tanrı'dan kesintiye uğramış mesajlar aldığını ifade ederken (": "When Schreber reports receiving interrupted messages from God (",
+    "\"...şimdi ben yapacağım... kendim...\"": "“...now I shall... myself...”",
+    "), bu ifadeler S₁ kodlama düzeyinde takılı kalmaktadır. Jakobson’un değiştirici (shifter) kavramında olduğu gibi, cümlenin dizinsel elementlerinde kopuş gerçekleşir. Schreber, kapitone noktası üretemediği için bu boşluğu hezeyanlı bir noktalama (punctuation) ile (": "), these utterances remain arrested at the level of S₁ coding. As in Jakobson’s concept of the shifter, a rupture occurs in the indexical elements of the sentence. Unable to produce a quilting point, Schreber is compelled to complete the gap through delusional punctuation (",
+    "\"...bir aptal olduğum gerçeğiyle yüzleşmek...\"": "“...face the fact that I am an idiot...”",
+    ") tamamlamak zorunda kalmıştır.": ").",
+    "KLİNİK KONUMLANMA · SECRÉTAIRE DE L'ALIÉNÉ": "CLINICAL POSITION · SECRÉTAIRE DE L’ALIÉNÉ",
+    "\"Deliliğin Sekreterleri\" ve Hezeyanın Onarım İşlevi": "“Secretaries to the Insane” and the Restitutive Function of Delusion",
+    "Lacan’a göre psikotik hezeyanlar gelişigüzel bir saçmalık değil, Baba-nın-Adları’nın hesaptan düşmesiyle simgesel düzende açılan derin boşluğu imgesel formlarla yamamaya çalışan bir sekreterlik görevidir. Bu durumda sağaltımdaki asıl mesele, analistin hastanın söylemini referans alan bir dinleme konumunda kalarak deliliğin sekreterliğine tanıklık etmesidir (Lacan, 1955-56/1993, s. 213).": "For Lacan, psychotic delusions are not random nonsense, but a work of reconstruction attempting to patch with imaginary forms the void opened in the symbolic order by the foreclosure of the Names-of-the-Father. The decisive clinical task is for the analyst to remain in a listening position anchored in the patient’s speech, bearing witness as a ‘secretary to the insane’ (Lacan, 1955–56/1993, p. 213).",
+    "TOPOLOJİ & SANAT · JAMES JOYCE": "TOPOLOGY & ART · JAMES JOYCE",
+    "Le Sinthome: Çözülmeyi Önleyen Dördüncü Halka": "Le Sinthome: The Fourth Ring Preventing Unraveling",
+    "Lacan, Seminer XXIII’te James Joyce’un ruhsal yapılanmasını incelemiş; Joyce’un psikotik yapıda olmasına rağmen hiçbir psikotik atak geçirmemesini sanatsal yaratımlarına bağlamıştır. Joyce'un dili parçalayıp yeniden kuran edebiyatı, Gerçek, İmgesel ve Simgesel düzenlerini bir arada tutan dördüncü bir halka, yani": "In Seminar XXIII, Lacan examined James Joyce’s psychic structure, attributing the absence of an acute psychotic break—despite a psychotic structure—to his artistic creation. Joyce’s literature, fracturing and remaking language, functioned as a fourth ring holding the Real, Imaginary, and Symbolic registers together—the",
+    "(Adlar-ın-Babası / Père-du-nom) işlevi görerek çözülmeyi önlemiştir.": "(Père-du-nom)—preventing topological unraveling.",
+    "06 / METODOLOJİK İLKELER": "06 / METHODOLOGICAL PRINCIPLES",
+    "Şema Nasıl Okunabilir? 6 Temel İlke": "How to Read the Diagram: 6 Core Principles",
+    "Grafiği yalnızca statik çizgiler kümesi olarak değil; diyakronik akışlar, senkronik kodlamalar ve topolojik kayıt dönüşümleri olarak okumak için kuramsal ilkeler:": "Theoretical principles for reading the graph not as a static set of lines, but as diachronic flows, synchronic codings, and topological register transformations:",
+    "Gösteren Zincirinin Diyalektiği": "Dialectics of the Signifying Chain",
+    "Anlam tek bir işarette kapanmaz; gösterenler arasındaki bağlar ve retroaktif hareket (après-coup) boyunca kurulur ve sürekli yeniden düzenlenir.": "Meaning is never closed within a single sign; it is constituted and continually reorganized across links between signifiers and retroactive motion (après-coup).",
+    "Topolojik Kayıt İlişkileri": "Topological Register Relations",
+    "Çizgiler yalnızca bir sırayı değil; Gerçek, İmgesel ve Simgesel kayıtlar arasındaki düğümleri, dönüşleri ve geçişleri görünür kılar.": "The vectors make visible not merely a sequence, but the knots, turns, and transitions among the Real, Imaginary, and Symbolic registers.",
+    "Kodlama (S₁) ve Mesaj (S₂) Asimetrisi": "Asymmetry of Coding (S₁) and Message (S₂)",
+    "S₁ kodlaması senkronik ve geriye doğru işlerken, S₂ mesajı ileriye doğru diyakronik akar. Kapitone noktası bu iki zıt hareketin kesişimidir.": "While S₁ coding operates synchronically and retroactively, the S₂ message flows forward diachronically. The quilting point is the intersection of these two opposing vectors.",
+    "Ayna Evresi ve Narsistik Eksen": "The Mirror Stage and the Narcissistic Axis",
+    "Ego, ayna evresinde (a - a') imgesel bir yabancılaşma ile kurulur. Ruhsal yapının zeminindeki paranoid durum Baba-nın-Adları ile dengelenir.": "The ego is constituted through imaginary alienation in the mirror stage (a – a'). The paranoiac foundation of psychic structure is stabilized through the Names-of-the-Father.",
+    "Konuşma İşlevinin Önceliği": "Primacy of the Speaking Function",
+    "Semptomlar biyomedikal kataloglarla değil; öznenin dili nasıl kullandığı, neyi bastırdığı ve neyi simgeselden düşürdüğü ile anlaşılır.": "Symptoms are understood not through biomedical catalogs, but through how the subject inhabits language—what is repressed, disavowed, or foreclosed from the Symbolic.",
+    "Analistin Yapısal Konumu": "The Analyst’s Structural Position",
+    "Tedavi oryantasyonu hastanın ruhsal yapısına göre şekillenir. Analist efendi rolünü bırakıp süjenin arzusunun ekonomisini dinleyen konumda kalmalıdır.": "Treatment orientation is shaped by the patient’s psychic structure. The analyst relinquishes the position of master and remains attentive to the economy of the subject’s desire.",
+    "07 / AKADEMİK KÜNYE": "07 / CITATION & DOWNLOADS",
+    "Yayın Künyesi ve Doğrudan İndirme": "Bibliographic Citation & Direct Downloads",
+    "Yaka, A. İ. (2024). Psikotik Yapı, Baba İşlevi ve Lacanyen Kavramsallaştırma.": "Yaka, A. İ. (2024). Psychotic Structure, Paternal Function, and Lacanian Conceptualization.",
+    "Özgün Şemayı PDF Olarak Aç / İndir (Vektörel)": "Open / Download Original Diagram PDF (Vector)",
+    "Makale Tam Metnini İncele (37 Sayfa PDF)": "Read Full Article PDF (37 Pages)",
+    "Yayın Sayfasına Git ↗": "Go to Journal Page ↗",
+    "2021 Makalesi: Obsesyonel Yapı ↗": "2021 Article: Obsessional Structure ↗",
+    "Obsesyonel Nevroz": "Obsessional Neurosis",
+    "4K Vektörel Şema": "4K Vector Diagram",
+    "ŞEMA L • SEMİNER IV & V": "SCHEMA L • SEMINARS IV & V",
+    "JACQUES LACAN • ŞEMA L: OBSESYONEL ARZU ÇIKMAZI": "JACQUES LACAN • SCHEMA L: OBSESSIONAL IMPASSE OF DESIRE",
+    "İMGELERİN PERDESİ (DÜŞÜNCE ENGELİ)": "SCREEN OF IMAGES (THOUGHT BLOCKADE)",
+    "a ⟶ a' İmgesel Savunma: Şüphe & Ruminasyon": "a ⟶ a' Imaginary Defense: Doubt & Rumination",
+    "BİLİNÇDIŞI ARZUNUN İMKANSIZLIĞI ($ ↔ A)": "IMPOSSIBILITY OF UNCONSCIOUS DESIRE ($ ↔ A)",
+    "Simgesel Eksen: Öteki'nin Talebini Erteleme / Felç Etme": "Symbolic Axis: Procrastinating / Paralyzing the Other's Demand",
+    "ÖZNE ($)": "SUBJECT ($)",
+    "Bölünmüş Özne": "Split Subject",
+    "BENLİK (a)": "EGO (a)",
+    "Narsisistik Ego": "Narcissistic Ego",
+    "Moi / İdeal Benlik": "Moi / Ideal Ego",
+    "İMGESEL ÖTEKİ (a')": "IMAGINARY OTHER (a')",
+    "Ayna Benzeri": "Specular Counterpart",
+    "Autre / Savunma": "Autre / Defense",
+    "BÜYÜK ÖTEKİ (A)": "BIG OTHER (A)",
+    "Dil & Bilinçdışı": "Language & Unconscious",
+    "Simgesel Eksen ($ ↔ A), İmgesel Savunma Hattı (a ⟶ a') Tarafından Perdeler ve Arzuyu Çıkmaza Sürükler": "The Symbolic Axis ($ ↔ A) is Screened by the Imaginary Defense Line (a ⟶ a'), Driving Desire into an Impasse",
+    "Simgesel Eksen: $ ⟶ A (Öteki'nin Talebi)": "Symbolic Axis: $ ⟶ A (Demand of the Other)",
+    "İmgesel Savunma: a ⟶ a' (Şüphe Çıkmazı)": "Imaginary Defense: a ⟶ a' (Impasse of Doubt)",
+    "Odak:": "Focus:",
+    "Şüphe, ertelenen arzu, düşünce nöbetleri": "Doubt, deferred desire, obsessive rumination",
+    "Kuramsal Temel:": "Theoretical Basis:",
+    "Jacques Lacan (Seminer V) & Sigmund Freud": "Jacques Lacan (Seminar V) & Sigmund Freud",
+    "Saha Söylem Analizi": "Field Discourse Analysis",
+    "DÖRT SÖYLEM MATRİSİ • SEMİNER XVII": "FOUR DISCOURSES MATRIX • SEMINAR XVII",
+    "ODTÜ DOKTORA TEZİ (2024) • NİNOVA & IRAK SAHA SÖYLEM MATRİSİ": "METU PH.D. THESIS (2024) • NINEVEH & IRAQ FIELD DISCOURSE MATRIX",
+    "EFENDİ SÖYLEMİ": "DISCOURSE OF THE MASTER",
+    "AJAN (Fail)": "AGENT",
+    "HAKİKAT": "TRUTH",
+    "ÖTEKİ (Köle/Sistem)": "OTHER (Slave/System)",
+    "ÜRETİM (Artık-Haz)": "PRODUCTION (Surplus-Jouissance)",
+    "İktidar & Kimlik Yaptırımı": "Sovereign Power & Identity Mandate",
+    "Saha: Egemen Siyasi Otorite & Toplumsal Yasa Dayatması": "Field: Sovereign Political Authority & Imposition of Social Law",
+    "ÜNİVERSİTE SÖYLEMİ": "DISCOURSE OF THE UNIVERSITY",
+    "AJAN (Uzmanlık/Bilgi)": "AGENT (Expertise/Knowledge)",
+    "HAKİKAT (Gizli Buyruk)": "TRUTH (Hidden Imperative)",
+    "ÖTEKİ (Yönetilen Nesne)": "OTHER (Managed Object)",
+    "ÜRETİM (Yabancılaşan Özne)": "PRODUCTION (Alienated Subject)",
+    "Uzmanlık & Kurumsal Bilgi": "Institutional Expertise & Bureaucratic Knowledge",
+    "Saha: İnsani Yardım Bürokrasisi & Raporlama Dili": "Field: Humanitarian Aid Bureaucracy & Reporting Language",
+    "HİSTERİK SÖYLEMİ": "DISCOURSE OF THE HYSTERIC",
+    "AJAN (Bölünmüş Özne)": "AGENT (Split Subject)",
+    "HAKİKAT (Kayıp Nesne)": "TRUTH (Lost Object)",
+    "ÖTEKİ (Efendi/Otorite)": "OTHER (Master/Authority)",
+    "ÜRETİM (Yeni Bilgi Talebi)": "PRODUCTION (Demand for Knowledge)",
+    "Soru, Şikayet & Hakikat Arayışı": "Questioning, Complaint & Search for Truth",
+    "Saha: Travma Tanıklığı, Kayıp & Kolektif Yas Feryadı": "Field: Trauma Testimony, Loss & Collective Lament",
+    "ANALİST SÖYLEMİ": "DISCOURSE OF THE ANALYST",
+    "AJAN (Psikanalist/Dinleme)": "AGENT (Analyst/Listening)",
+    "HAKİKAT (Gizli Teori)": "TRUTH (Latent Knowledge)",
+    "ÖTEKİ (Analizan / Özne)": "OTHER (Analysand / Subject)",
+    "ÜRETİM (Tekil Gösteren)": "PRODUCTION (Singular Signifier)",
+    "Öznel Sorumluluk & Dinleme": "Subjective Responsibility & Analytic Listening",
+    "Saha: Psikanalitik Müdahale & Söylem Dönüşümü": "Field: Psychoanalytic Intervention & Discourse Transformation",
+    "¼ ROTASYON": "¼ ROTATION",
+    "Jacques Lacan • Seminer XVII (1969-1970) | Dört Söylem Matrisinin Çatışma Sonrası Saha Söylemlerine Uyarlanışı": "Jacques Lacan • Seminar XVII (1969–1970) | Adaptation of the Four Discourses Matrix to Post-Conflict Fieldwork",
+    "Saha Görüşmeleri: Ninova Ovası (Musul & Erbil)": "Field Interviews: Nineveh Plains (Mosul & Erbil)",
+    "Kolektif Travma & Söylem Dönüşümü": "Collective Trauma & Discourse Transformation",
+    "Kurum & Yıl:": "Institution & Year:",
+    "ODTÜ Klinik Psikoloji Doktora Tezi, 2024": "METU Clinical Psychology Ph.D. Dissertation, 2024",
+    "Yöntem:": "Method:",
+    "Niteliksel Psikanalitik Söylem Analizi": "Qualitative Psychoanalytic Discourse Analysis",
+    "12 Temel Kavram": "12 Core Concepts",
+    "Kürtçe / Kurmancî": "Kurdish / Kurmanji",
+    "Türkçe": "Turkish",
+    "Terim ara (Örn: Unconscious, Arzu, Kiryar)...": "Search terms (e.g., Unconscious, Desire, Kiryar)...",
+    "Psikanaliz terimlerinde ara": "Search psychoanalysis terms",
+    "Bu terminoloji çalışması, çokdilli psikanalitik psikoterapi seanslarında ve çokkültürlü klinik saha bağlamında dilsel ve kavramsal aktarımı kolaylaştırmak üzere Dr. Ali İhsan Yaka tarafından derlenmektedir.": "This terminology matrix is compiled by Dr. Ali İhsan Yaka to facilitate conceptual precision and multilingual clinical listening across psychoanalytic sessions and cross-cultural fieldwork."
   };
   const homepageLooseTextEnglish = Object.fromEntries(Object.entries(homepageLooseText).map(([tr, en]) => [en, tr]));
+  const homepageLooseNorm = Object.fromEntries(
+    Object.entries(homepageLooseText).map(([tr, en]) => [tr.replace(/\s+/g, ' ').trim(), en])
+  );
 
   function translateUnkeyedText(lang) {
-    const dictionary = lang === 'en' ? homepageLooseText : homepageLooseTextEnglish;
     const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
     let node;
     while ((node = walker.nextNode())) {
       const parent = node.parentElement;
-      if (!parent || parent.closest('script,style')) continue;
+      if (!parent || parent.closest('script,style,[data-psyche-3d],#psychoanalysisDictTable tbody')) continue;
       const keyed = parent.closest('[data-i18n]');
-      if (keyed && translations[lang][keyed.getAttribute('data-i18n')]) continue;
-      const raw = node.nodeValue;
-      const trimmed = raw.trim();
-      if (!trimmed || !Object.prototype.hasOwnProperty.call(dictionary, trimmed)) continue;
-      const leading = raw.match(/^\s*/)?.[0] || '';
-      const trailing = raw.match(/\s*$/)?.[0] || '';
-      node.nodeValue = `${leading}${dictionary[trimmed]}${trailing}`;
+      if (keyed) {
+        const k = keyed.getAttribute('data-i18n');
+        if ((translations.en && translations.en[k]) || (translations.tr && translations.tr[k])) continue;
+      }
+      if (node._origTr === undefined) {
+        node._origTr = node.nodeValue;
+      }
+      if (lang === 'tr') {
+        node.nodeValue = node._origTr;
+        continue;
+      }
+      const orig = node._origTr;
+      const norm = orig.replace(/\s+/g, ' ').trim();
+      if (!norm || !Object.prototype.hasOwnProperty.call(homepageLooseNorm, norm)) continue;
+      const leading = orig.match(/^\s*/)?.[0] || '';
+      const trailing = orig.match(/\s*$/)?.[0] || '';
+      node.nodeValue = `${leading}${homepageLooseNorm[norm]}${trailing}`;
     }
   }
 
@@ -2156,9 +2607,12 @@
 
     // Update all text/html elements with data-i18n
     document.querySelectorAll('[data-i18n]').forEach(el => {
+      if (el.dataset.origTrHtml === undefined) el.dataset.origTrHtml = el.innerHTML;
       const key = el.getAttribute('data-i18n');
-      if (translations[activeLang][key]) {
+      if (translations[activeLang] && translations[activeLang][key]) {
         el.innerHTML = translations[activeLang][key];
+      } else if (activeLang === 'tr') {
+        el.innerHTML = el.dataset.origTrHtml;
       }
     });
 
@@ -2168,6 +2622,12 @@
       if (translations[activeLang][key]) {
         el.placeholder = translations[activeLang][key];
       }
+    });
+
+    document.querySelectorAll('input[placeholder]:not([data-i18n-placeholder]), textarea[placeholder]:not([data-i18n-placeholder])').forEach(el => {
+      if (el.dataset.origTrPlaceholder === undefined) el.dataset.origTrPlaceholder = el.placeholder;
+      const norm = el.dataset.origTrPlaceholder.replace(/\s+/g, ' ').trim();
+      el.placeholder = activeLang === 'en' ? (homepageLooseNorm[norm] || el.dataset.origTrPlaceholder) : el.dataset.origTrPlaceholder;
     });
 
     document.querySelectorAll('[data-i18n-aria-label]').forEach(el => {
@@ -2181,11 +2641,12 @@
 
     document.querySelectorAll('img[alt]:not([data-i18n-alt])').forEach(img => {
       if (!img.dataset.localeBaseAlt) img.dataset.localeBaseAlt = img.alt;
-      const dictionary = activeLang === 'en' ? homepageLooseText : homepageLooseTextEnglish;
-      img.alt = dictionary[img.dataset.localeBaseAlt] || img.dataset.localeBaseAlt;
+      const norm = img.dataset.localeBaseAlt.replace(/\s+/g, ' ').trim();
+      img.alt = activeLang === 'en' ? (homepageLooseNorm[norm] || img.dataset.localeBaseAlt) : img.dataset.localeBaseAlt;
     });
 
     translateUnkeyedText(activeLang);
+    window.dispatchEvent(new CustomEvent('aiy:langchange', { detail: { lang: activeLang } }));
   }
 
   // Bind Language buttons
@@ -3112,8 +3573,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   const termInput = document.getElementById('termSearchInput');
   if (termInput) {
-    termInput.addEventListener('input', (e) => {
-      const q = e.target.value.toLowerCase().trim();
+    const updateFilter = () => {
+      const q = termInput.value.toLowerCase().trim();
       const rows = document.querySelectorAll('#psychoanalysisDictTable tbody tr');
       let visible = 0;
       rows.forEach(r => {
@@ -3127,8 +3588,13 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       const pill = document.getElementById('termCountPill');
       if (pill) {
-        pill.textContent = q ? (visible + ' Kavram Bulundu') : '12 Temel Kavram';
+        const isEn = document.documentElement.lang === 'en';
+        pill.textContent = q
+          ? (isEn ? (visible + ' Concepts Found') : (visible + ' Kavram Bulundu'))
+          : (isEn ? '12 Core Concepts' : '12 Temel Kavram');
       }
-    });
+    };
+    termInput.addEventListener('input', updateFilter);
+    window.addEventListener('aiy:langchange', updateFilter);
   }
 });

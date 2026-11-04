@@ -27,7 +27,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="icon" href="assets/images/psyche-structure-mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="app.css?v=7.50">
+  <link rel="stylesheet" href="app.css?v=7.60">
   <link rel="stylesheet" href="assets/css/research-palette.css?v=1">
 </head>
 <body>
@@ -1400,8 +1400,8 @@
     </div>
   </footer>
 
-  <script src="app.js?v=7.50"></script>
-  <script type="module" src="assets/js/psyche-3d.js?v=7.50"></script>
+  <script src="app.js?v=7.60"></script>
+  <script type="module" src="assets/js/psyche-3d.js?v=7.60"></script>
 
   <script>
   document.addEventListener('DOMContentLoaded', () => {
@@ -1473,20 +1473,103 @@
       }
     };
 
+    const KNOWLEDGE_EN = {
+      all: {
+        pill: 'INTEGRATED TOPOLOGY',
+        name: 'Paternal Function Graph: Signifying Chain & Psychic Structures (Figure 5)',
+        formula: 'S₁ ↔ S₂ · R.S.I. (Borromean Knot Synthesis)',
+        role: 'Intersection matrix of diachronic message flow (left-to-right S₂) and synchronic vertical coding (bottom-to-top S₁).',
+        clinical: 'Academic model mapping the formation of the three psychic structures (Neurotic, Perverse, Psychotic) within the speaking function and field of language.',
+        tag: 'all'
+      },
+      psy: {
+        pill: 'PSYCHOTIC STRUCTURE',
+        name: 'Foreclosure / Falling out of the Symbolic (Forclusion / Verwerfung)',
+        formula: 'S₁ ↓ Forclusion ⟹ Ce qui est forclos du symbolique reparaît dans le réel',
+        role: 'The Names-of-the-Father (S₁) is foreclosed from the symbolic register; the quilting point s(A) cannot be established. Only the Real (Réel) register is active.',
+        clinical: 'Delusions and hallucinations function as “secretaries to the insane,” attempting to patch the void in the Symbolic. The analyst bears witness to the subject’s speech.',
+        tag: 'psy'
+      },
+      per: {
+        pill: 'PERVERSE STRUCTURE',
+        name: 'Disavowal (Désaveu / Démenti / Verleugnung)',
+        formula: 'Désaveu ⟹ Unrecognised in the Symbolic · [Imaginary + Real Registers]',
+        role: 'The law and castration are known yet simultaneously disavowed and suspended. The paternal metaphor remains unrecognized.',
+        clinical: 'Rather than assuming their own castration, the subject positions themselves as the object and instrument (a) of the Other’s jouissance.',
+        tag: 'per'
+      },
+      neu: {
+        pill: 'NEUROTIC STRUCTURE',
+        name: 'Repression (Refoulement / Verdrängung) & Recognition in the Symbolic',
+        formula: 'S₁ → S₂ · Refoulement ⟹ Symbolic + Imaginary + Real (Full Borromean Knot)',
+        role: 'The Names-of-the-Father (S₁) is recognized as symbolic law. The diachronic message S₂ is retroactively quilted (après-coup) by S₁.',
+        clinical: 'Castration and lack are accepted. The symptom is unconscious desire ciphered in language; all three Borromean rings are linked.',
+        tag: 'neu'
+      },
+      names: {
+        pill: 'PRIMORDIAL SIGNIFIER',
+        name: 'Names-of-the-Father (S₁ · Synchronic Code)',
+        formula: 'S₁ ⟶ Maître / Master Signifier · [Des Noms-du-Père]',
+        role: 'The primordial founding signifier devoid of meaning that performs vertical synchronic and retroactive coding.',
+        clinical: 'Represents the subject for other signifiers; serves as the foundational anchor of symbolic law and language.',
+        tag: 'names'
+      },
+      metaphor: {
+        pill: 'METAPHORIC FUNCTION',
+        name: 'Paternal Metaphor (S₂ · Diachronic Message)',
+        formula: '(S₁ / S) · (S / s) ⟶ S₂ (Savoir / Knowledge)',
+        role: 'The mechanism that sets the signifying chain in motion forward through the substitution of the Name-of-the-Father for the Desire of the Mother.',
+        clinical: 'Enables the constitution of the fantasy of “total knowledge” (savoir-totalité) and introduces the subject into symbolic circulation.',
+        tag: 'metaphor'
+      },
+      mirror: {
+        pill: 'IMAGINARY AXIS',
+        name: 'The Mirror Stage (Stade du Miroir)',
+        formula: "a - a' (Imaginary Identification & Alienation)",
+        role: 'The transitional axis intersecting the message flow vertically, through which the ego is constituted via narcissistic investment.',
+        clinical: 'Transition from fragmented bodily experience to an imaginary gestalt; produces alienation (aliénation) and a paranoiac foundation.',
+        tag: 'mirror'
+      },
+      speech: {
+        pill: 'FIELD OF DISCOURSE',
+        name: 'The Subject’s Field of Language and Speaking Function',
+        formula: 'Fonction et champ de la parole et du langage',
+        role: 'The locus where the signifying chain cyclically completes and renews its trajectory.',
+        clinical: 'The sole reference point for structural diagnosis; symptoms can only be deciphered through the patient’s speech.',
+        tag: 'speech'
+      }
+    };
+
     const nameEl = document.getElementById('inspectorName');
     const pillEl = document.getElementById('inspectorPill');
     const roleEl = document.getElementById('inspectorRole');
     const formulaEl = document.getElementById('inspectorFormula');
     const clinicalEl = document.getElementById('inspectorClinical');
+    let currentKey = 'all';
 
-    function updateInspector(item) {
+    function updateInspectorByKey(key) {
+      if (!key || !KNOWLEDGE[key]) return;
+      currentKey = key;
+      const isEn = document.documentElement.lang === 'en';
+      const dict = isEn ? KNOWLEDGE_EN : KNOWLEDGE;
+      const item = dict[key] || KNOWLEDGE[key];
       if (!item) return;
       if (nameEl) nameEl.textContent = item.name;
       if (pillEl) pillEl.textContent = item.pill;
       if (roleEl) roleEl.textContent = item.role;
       if (formulaEl) formulaEl.textContent = item.formula;
-      if (clinicalEl) clinicalEl.innerHTML = '<strong>Klinik Dinamik:</strong> ' + (item.clinical || '');
+      if (clinicalEl) {
+        const label = isEn ? 'Clinical Dynamic:' : 'Klinik Dinamik:';
+        clinicalEl.innerHTML = '<strong>' + label + '</strong> ' + (item.clinical || '');
+      }
     }
+
+    window.addEventListener('aiy:langchange', () => updateInspectorByKey(currentKey));
+    new MutationObserver(() => updateInspectorByKey(currentKey)).observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['lang']
+    });
+    updateInspectorByKey('all');
 
     // Handle external structure card click
     const structCards = document.querySelectorAll('.struct-card');
@@ -1496,7 +1579,7 @@
         structCards.forEach(c => c.classList.remove('is-selected'));
         card.classList.add('is-selected');
         document.dispatchEvent(new CustomEvent('psyche:setFilter', { detail: { filter } }));
-        if (KNOWLEDGE[filter]) updateInspector(KNOWLEDGE[filter]);
+        if (KNOWLEDGE[filter]) updateInspectorByKey(filter);
         const frameEl = document.querySelector('.psyche-diagram-frame');
         if (frameEl) {
           frameEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -1514,13 +1597,13 @@
     document.addEventListener('psyche:filterChange', (e) => {
       const f = e.detail?.filter || 'all';
       structCards.forEach(c => c.classList.toggle('is-selected', c.dataset.filter === f));
-      if (KNOWLEDGE[f]) updateInspector(KNOWLEDGE[f]);
+      if (KNOWLEDGE[f]) updateInspectorByKey(f);
     });
 
     document.addEventListener('psyche:inspect', (e) => {
       const key = e.detail?.key;
       if (key && KNOWLEDGE[key]) {
-        updateInspector(KNOWLEDGE[key]);
+        updateInspectorByKey(key);
       }
     });
 
@@ -1532,7 +1615,8 @@
         if (text) {
           navigator.clipboard.writeText(text).then(() => {
             const original = copyBtn.innerHTML;
-            copyBtn.innerHTML = '<span>✓ Kopyalandı</span>';
+            const isEn = document.documentElement.lang === 'en';
+            copyBtn.innerHTML = isEn ? '<span>✓ Copied</span>' : '<span>✓ Kopyalandı</span>';
             copyBtn.style.background = '#0D9488';
             copyBtn.style.color = '#FFFFFF';
             setTimeout(() => {
