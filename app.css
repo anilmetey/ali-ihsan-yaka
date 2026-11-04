@@ -4738,9 +4738,12 @@ textarea.form-control {
 .psyche-registers { display: flex; justify-content: center; gap: .55rem; margin: 1.4rem auto 0; }
 .psyche-registers span { padding: .4rem .8rem; border: 1px solid rgba(216,200,168,.24); border-radius: 999px; color: #e6d7b9; background: rgba(14,23,38,.46); font-size: .73rem; }
 .psyche-model-caption { margin: 1.15rem 0 0; color: rgba(247,245,239,.59); text-align: center; font-size: .72rem; line-height: 1.5; }
-.about-personal-list { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: clamp(1rem,2vw,1.4rem); padding: 0; margin: 0; list-style: none; }
-.about-personal-list li { position: relative; display: flex; min-height: 12rem; flex-direction: column; align-items: flex-start; overflow: hidden; padding: 1.35rem; border: 1px solid var(--border-light); border-radius: 1rem; background: linear-gradient(145deg,rgba(255,255,255,.78),rgba(247,244,237,.55)); box-shadow: 0 8px 24px rgba(30,39,48,.045); transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease; }
+.about-personal-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: clamp(1rem,2vw,1.4rem); padding: 0; margin: 0; list-style: none; }
+.about-personal-list li { position: relative; display: flex; min-height: 14rem; flex-direction: column; align-items: flex-start; overflow: hidden; padding: 1.35rem; border: 1px solid var(--border-light); border-radius: 1rem; background: linear-gradient(145deg,rgba(255,255,255,.78),rgba(247,244,237,.55)); box-shadow: 0 8px 24px rgba(30,39,48,.045); transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease; }
 .about-personal-list li:hover { transform: translateY(-5px); border-color: rgba(143,119,78,.35); box-shadow: 0 16px 32px rgba(30,39,48,.1); }
+.personal-card-img-wrap { width: 100%; height: 180px; overflow: hidden; border-radius: 0.65rem; margin-bottom: 1.15rem; background: #EAE8E3; border: 1px solid rgba(0,0,0,0.06); }
+.personal-card-img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; cursor: zoom-in; }
+.about-personal-list li:hover .personal-card-img { transform: scale(1.05); }
 .personal-card-index { position: absolute; top: 1.45rem; right: 1.4rem; color: var(--text-muted); font: 600 .68rem/1 var(--font-mono); letter-spacing: .12em; opacity: .62; }
 .personal-card-mark { display: grid; width: 3.1rem; height: 3.1rem; place-items: center; margin: 0 0 1.1rem; border: 1px solid rgba(143,119,78,.2); border-radius: 50%; color: var(--color-primary); background: rgba(220,199,163,.1); transition: color .3s ease, background .3s ease, border-color .3s ease; }
 .personal-card-mark svg { width: 1.65rem; height: 1.65rem; stroke: currentColor; stroke-width: 1.65; stroke-linecap: round; stroke-linejoin: round; }
@@ -5944,11 +5947,12 @@ html.splash-visited #splashScreen.splash-screen {
 .pub-event-proof img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 18% center; }
 .pub-event-proof figcaption { padding: .55rem .7rem; color: var(--text-muted); font-size: .75rem; }
 .about-event-materials-intro { max-width: 62ch; margin: -.75rem 0 1.25rem; color: var(--text-muted); line-height: 1.65; }
-.about-event-materials-grid { display: grid; grid-template-columns: minmax(0,.85fr) minmax(0,1.15fr); gap: clamp(.8rem,2vw,1.25rem); align-items: stretch; }
-.about-event-materials-grid figure { display: flex; flex-direction: column; min-width: 0; margin: 0; overflow: hidden; border: 1px solid var(--border-light); border-radius: .75rem; background: var(--bg-card-outer); }
-.about-event-materials-grid img { display: block; width: 100%; height: clamp(190px,24vw,310px); object-fit: contain; background: #f7f5f1; }
-.about-event-materials-grid figure:first-child img { object-position: center 35%; }
-.about-event-materials-grid figcaption { padding: .7rem .85rem; color: var(--text-muted); font-size: .78rem; line-height: 1.45; }
+.about-event-materials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: clamp(.85rem,2vw,1.35rem); align-items: stretch; }
+.about-event-materials-grid figure { display: flex; flex-direction: column; min-width: 0; margin: 0; overflow: hidden; border: 1px solid var(--border-light); border-radius: .85rem; background: var(--bg-card-outer); box-shadow: 0 4px 16px rgba(20,25,36,0.03); transition: transform 0.25s ease, box-shadow 0.25s ease; }
+.about-event-materials-grid figure:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(20,25,36,0.07); }
+.about-event-materials-grid img { display: block; width: 100%; height: clamp(200px,22vw,280px); object-fit: cover; background: #f7f5f1; cursor: zoom-in; }
+.about-event-materials-grid figure:first-child img { object-position: center 25%; }
+.about-event-materials-grid figcaption { padding: .75rem .95rem; color: var(--text-muted); font-size: .8rem; line-height: 1.45; background: #FFFFFF; border-top: 1px solid var(--border-light); margin-top: auto; }
 .pub-event-proof img { max-height: 350px; object-fit: contain; background: #f7f5f1; }
 /* =====================================================================
    Practice Method Band — High-End Editorial & Motion Architecture
@@ -10932,4 +10936,538 @@ html.splash-visited #splashScreen.splash-screen {
   .psyche-diagram-svg { display: block !important; width: 100% !important; max-width: 100% !important; min-width: 0 !important; height: auto !important; }
   .psyche-diagram-frame.is-3d .psyche-3d { display: none !important; }
   .psyche-diagram-frame.is-3d .psyche-diagram-svg { display: block !important; }
+}
+
+/* ==========================================================================
+   Clinician Programs & Research Schemas (Elevated Editorial System)
+   ========================================================================== */
+
+/* Dual-Track Audience Switcher in Klinik Pratik Hero */
+.practice-track-switcher {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.5rem;
+  padding: 0.85rem 1.15rem;
+  background: rgba(248, 249, 252, 0.85);
+  border: 1px solid rgba(78, 91, 166, 0.14);
+  border-radius: 999px;
+  width: fit-content;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.practice-track-switcher .switcher-label {
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-tertiary, #68728A);
+}
+.practice-track-switcher .switcher-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 0.95rem;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--text-primary, #1B2438);
+  background: #FFFFFF;
+  border: 1px solid rgba(45, 49, 66, 0.12);
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+.practice-track-switcher .switcher-pill:hover {
+  transform: translateY(-1px);
+  border-color: #4E5BA6;
+  background-color: #F8F9FE;
+  box-shadow: 0 4px 12px rgba(78, 91, 166, 0.1);
+}
+.practice-track-switcher .switcher-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #2B8A3E;
+}
+.practice-track-switcher .switcher-dot.dot-alt {
+  background-color: #4E5BA6;
+}
+
+/* Home Clinician Callout Bar */
+.practice-clinician-callout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin: 2.25rem 0 3.25rem;
+  padding: 1.25rem 1.75rem;
+  background: linear-gradient(135deg, rgba(248, 249, 252, 0.95) 0%, rgba(241, 244, 252, 0.9) 100%);
+  border: 1px solid rgba(78, 91, 166, 0.18);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(28, 35, 64, 0.04);
+}
+.practice-clinician-callout .callout-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.practice-clinician-callout .callout-pill {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #4E5BA6;
+  background: rgba(78, 91, 166, 0.1);
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(78, 91, 166, 0.2);
+}
+.practice-clinician-callout .callout-text {
+  font-size: 0.94rem;
+  color: var(--text-primary, #1B2438);
+  font-weight: 500;
+}
+.practice-clinician-callout .callout-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #4E5BA6;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  background: #FFFFFF;
+  border: 1px solid rgba(78, 91, 166, 0.25);
+  border-radius: 999px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.practice-clinician-callout .callout-link:hover {
+  background: #4E5BA6;
+  color: #FFFFFF;
+  transform: translateX(2px);
+  box-shadow: 0 4px 12px rgba(78, 91, 166, 0.25);
+}
+
+/* Clinician Programs Section */
+.clinician-programs-section {
+  position: relative;
+  padding: clamp(3.5rem, 6vw, 5.5rem) 0;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F8F9FC 100%);
+  border-top: 1px solid var(--border-light, rgba(45, 49, 66, 0.08));
+  border-bottom: 1px solid var(--border-light, rgba(45, 49, 66, 0.08));
+}
+.clinician-track-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1.5rem 0 2.25rem;
+}
+.clinician-track-badge {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-tertiary, #68728A);
+}
+.track-chip {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-primary, #1B2438);
+  background: #FFFFFF;
+  border: 1px solid rgba(45, 49, 66, 0.12);
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.track-chip:hover {
+  border-color: #4E5BA6;
+  color: #4E5BA6;
+  background: #F8F9FE;
+}
+.clinician-programs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.clinician-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  border: 1px solid rgba(45, 49, 66, 0.1);
+  border-radius: 18px;
+  padding: clamp(1.5rem, 2.5vw, 2rem);
+  box-shadow: 0 4px 20px rgba(28, 35, 64, 0.04);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.clinician-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(78, 91, 166, 0.35);
+  box-shadow: 0 16px 36px -10px rgba(28, 35, 64, 0.12);
+}
+.clinician-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+.clinician-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #4E5BA6;
+  background: rgba(78, 91, 166, 0.08);
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+}
+.clinician-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+}
+.clinician-status-pill.status-open {
+  background: rgba(43, 138, 62, 0.1);
+  color: #2B8A3E;
+  border: 1px solid rgba(43, 138, 62, 0.25);
+}
+.clinician-status-pill.status-open .status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #2B8A3E;
+  box-shadow: 0 0 6px rgba(43, 138, 62, 0.6);
+}
+.clinician-status-pill.status-ondemand {
+  background: rgba(212, 130, 20, 0.1);
+  color: #B56D0E;
+  border: 1px solid rgba(212, 130, 20, 0.25);
+}
+.clinician-status-pill.status-ondemand .status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #D48214;
+}
+.clinician-status-pill.status-soon {
+  background: rgba(78, 91, 166, 0.1);
+  color: #4E5BA6;
+  border: 1px solid rgba(78, 91, 166, 0.25);
+}
+.clinician-status-pill.status-soon .status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #4E5BA6;
+}
+.clinician-card-icon-box {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(78, 91, 166, 0.08);
+  color: #4E5BA6;
+  margin-bottom: 1.15rem;
+}
+.clinician-card h3 {
+  font-family: var(--font-serif, 'Playfair Display', Georgia, serif);
+  font-size: clamp(1.2rem, 1.5vw, 1.35rem);
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--text-primary, #1B2438);
+  margin-bottom: 0.75rem;
+}
+.clinician-card p {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--text-secondary, #4A5568);
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+.clinician-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+  padding-top: 0.85rem;
+  border-top: 1px dashed rgba(45, 49, 66, 0.12);
+}
+.clinician-tag {
+  font-size: 0.74rem;
+  font-weight: 500;
+  color: var(--text-secondary, #4A5568);
+  background: #F4F5F8;
+  padding: 0.25rem 0.55rem;
+  border-radius: 4px;
+}
+.clinician-card-footer {
+  margin-top: auto;
+}
+.clinician-action-btn {
+  width: 100%;
+  justify-content: center;
+  font-size: 0.86rem;
+  padding: 0.65rem 1rem;
+}
+.clinician-footer-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.25rem 1.75rem;
+  background: #FFFFFF;
+  border: 1px solid rgba(45, 49, 66, 0.1);
+  border-radius: 16px;
+  flex-wrap: wrap;
+}
+.clinician-footer-note {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.88rem;
+  color: var(--text-secondary, #4A5568);
+  max-width: 650px;
+}
+.clinician-footer-icon {
+  flex-shrink: 0;
+  color: #4E5BA6;
+}
+.clinician-btn-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* Section Research Schemas & Visuals */
+.section-research-schemas {
+  position: relative;
+  padding: clamp(3.5rem, 6vw, 5.5rem) 0;
+}
+.research-schemas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+  margin-top: 2.5rem;
+}
+.schema-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(45, 49, 66, 0.1);
+  border-radius: 20px;
+  padding: clamp(1.5rem, 2.5vw, 2.25rem);
+  box-shadow: 0 4px 24px rgba(28, 35, 64, 0.04);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.schema-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(78, 91, 166, 0.35);
+  box-shadow: 0 16px 36px -10px rgba(28, 35, 64, 0.1);
+}
+.schema-card--wide {
+  grid-column: 1 / -1;
+}
+.schema-card-badge-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.schema-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #4E5BA6;
+  background: rgba(78, 91, 166, 0.08);
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+}
+.schema-field-pill {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: #D48214;
+  background: rgba(212, 130, 20, 0.09);
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid rgba(212, 130, 20, 0.2);
+}
+.schema-card-title {
+  font-family: var(--font-serif, 'Playfair Display', Georgia, serif);
+  font-size: clamp(1.25rem, 1.6vw, 1.45rem);
+  font-weight: 600;
+  color: var(--text-primary, #1B2438);
+  margin-bottom: 0.65rem;
+}
+.schema-card-desc {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--text-secondary, #4A5568);
+  margin-bottom: 1.5rem;
+}
+.schema-visual-box {
+  background: #FAF9F6;
+  border: 1px solid rgba(45, 49, 66, 0.08);
+  border-radius: 14px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.schema-diagram-preview svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.schema-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.85rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed rgba(45, 49, 66, 0.1);
+  font-size: 0.78rem;
+  color: var(--text-secondary, #4A5568);
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.legend-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+.legend-dot.dot-indigo { background: #4E5BA6; }
+.legend-dot.dot-amber { background: #D48214; }
+.legend-dot.dot-green { background: #2B8A3E; }
+
+.schema-meta-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  font-size: 0.84rem;
+  color: var(--text-secondary, #4A5568);
+}
+.schema-meta-list .meta-row strong {
+  color: var(--text-primary, #1B2438);
+}
+
+/* Trilingual Dictionary Table & Search */
+.dictionary-table-wrapper {
+  margin-top: 1.25rem;
+  background: #FFFFFF;
+  border: 1px solid rgba(45, 49, 66, 0.1);
+  border-radius: 14px;
+  overflow: hidden;
+}
+.dictionary-search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1.25rem;
+  background: #F8F9FC;
+  border-bottom: 1px solid rgba(45, 49, 66, 0.08);
+}
+.dictionary-search-bar svg {
+  color: #68728A;
+  flex-shrink: 0;
+}
+.dictionary-search-input {
+  flex-grow: 1;
+  border: none;
+  background: transparent;
+  font-size: 0.9rem;
+  color: var(--text-primary, #1B2438);
+  outline: none;
+}
+.dictionary-count-pill {
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: #4E5BA6;
+  background: rgba(78, 91, 166, 0.1);
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.dictionary-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.dictionary-table th {
+  text-align: left;
+  padding: 0.85rem 1.25rem;
+  background: #FAFAFC;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-secondary, #4A5568);
+  border-bottom: 1px solid rgba(45, 49, 66, 0.08);
+}
+.dictionary-table td {
+  padding: 0.8rem 1.25rem;
+  border-bottom: 1px solid rgba(45, 49, 66, 0.06);
+  vertical-align: middle;
+}
+.dictionary-table tbody tr:hover {
+  background: rgba(78, 91, 166, 0.03);
+}
+.dictionary-table .lang-en {
+  color: #1B2438;
+  font-weight: 600;
+}
+.dictionary-table .lang-ku {
+  color: #D48214;
+  font-weight: 500;
+  font-style: italic;
+}
+.dictionary-table .lang-tr {
+  color: #4E5BA6;
+  font-weight: 500;
+}
+.schema-footnote {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-top: 1rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--text-tertiary, #68728A);
+  padding: 0.65rem 0.95rem;
+  background: #FAF9F6;
+  border-radius: 8px;
+  border: 1px solid rgba(45, 49, 66, 0.06);
+}
+.schema-footnote .footnote-icon {
+  color: #4E5BA6;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+@media (max-width: 992px) {
+  .clinician-programs-grid {
+    grid-template-columns: 1fr;
+  }
+  .research-schemas-grid {
+    grid-template-columns: 1fr;
+  }
+  .practice-clinician-callout {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

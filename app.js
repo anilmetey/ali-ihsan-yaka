@@ -165,7 +165,7 @@
     "hero.cred6": "APsA 2026 · 44,5 CE saati",
     "hero.btnConsultation": "Ön Görüşme Randevusu Al",
     "hero.btnPractice": "Klinik Pratik & Süpervizyon",
-    "hero.portraitTitle": "Klinik Psikolog • Buffalo CSPC, 2026",
+    "hero.portraitTitle": "Doktor Klinik Psikolog, Psikanalist ve Süpervizör • Buffalo CSPC, 2026",
     "hero.portraitLangs": "Diller: Türkçe • İngilizce C1 İleri Düzey • Kurmancî",
     "whatsNew.eyebrow": "GÜNCEL AKADEMİK ÇALIŞMALAR & ETKİNLİKLER",
     "whatsNew.title": "Güncel Duyurular & Akademik Etkinlikler",
@@ -610,7 +610,7 @@
     "about.cspcPosterCaption": "CSPC Yıllık Sempozyumu · Buffalo · 2026",
     "about.wpaPosterCaption": "25. Dünya Psikiyatri Kongresi · Prag · 2025",
     "about.profileLinksLabel": "Doğrulanabilir akademik ve mesleki profiller",
-    "footer.brandSub": "Doktor Klinik Psikolog • Psikanalist",
+    "footer.brandSub": "Doktor Klinik Psikolog, Psikanalist ve Süpervizör",
     "footer.ethos": "Lacanyen yönelimli klinik psikoterapi ve süpervizyon; toplumsal travma üzerine akademik çalışma.",
     "footer.langStatus": "Çalışma Dilleri: Türkçe • English (C1/IELTS 7.0) • Kurmancî",
     "footer.navHeading": "Site Gezintisi",
@@ -750,7 +750,40 @@
     "pub.hubDergiparkName": "DergiPark Araştırmacı Profili",
     "pub.hubDergiparkSub": "Ulusal hakemli makaleler ve hakemlik",
     "pub.hubRgSub": "Araştırma çıktıları ve akademik ağ",
-    "footer.splashReplay": "Başa dön"
+    "footer.splashReplay": "Başa dön",
+    "practice.clinicianEyebrow": "RUH SAĞLIĞI ÇALIŞANLARI & UZMANLAR İÇİN",
+    "practice.clinicianTitle": "Süpervizyon, Vaka Kavramsallaştırma ve Seminer Çalışmaları",
+    "practice.clinicianIntro": "Klinik psikologlar, psikoterapistler, psikiyatri hekimleri ve ruh sağlığı uzmanları için; danışanın söylemini psikanalitik eksende okuma, aktarım dinamiğini kavrama ve analitik duruşu pekiştirmeye yönelik yapılandırılmış mesleki programlar.",
+    "practice.prog1Tag": "KLİNİK SÜPERVİZYON",
+    "practice.prog1Title": "Bireysel & Küçük Grup Süpervizyonu",
+    "practice.prog1Desc": "Danışanın söylemindeki yapıyı kavrama, aktarım ve karşı-aktarım düğümlerini çözme ve terapistin analitik duruşunu pekiştirme. ODTÜ AYNA Klinik Destek Birimi deneyimiyle.",
+    "practice.prog1Cta": "Süpervizyon Başvurusu Yap",
+    "practice.prog2Tag": "UYGULAMALI ATÖLYE",
+    "practice.prog2Title": "Psikanalitik Vaka Kavramsallaştırma",
+    "practice.prog2Desc": "L Şeması, gösteren zinciri, arzu grafı ve semptomun analitik dinlenmesi üzerinden yapılandırılmış klinik kavramsallaştırma eğitimleri. Talep halinde açılan modüler program.",
+    "practice.prog2Cta": "Atölye Ön Talebi Bildir",
+    "practice.prog3Tag": "ETKİNLİK & ÇALIŞMA GRUBU",
+    "practice.prog3Title": "Lacan Seminerleri Okuma Grubu",
+    "practice.prog3Desc": "Jacques Lacan'ın seminer metinlerinin satır satır, kavramsal ve klinik izdüşümleriyle ortak okunması. İki haftada bir çevrimiçi kapalı analitik çalışma halkası.",
+    "practice.prog3Cta": "Çalışma Grubuna Ön Kayıt",
+    "practice.clinicianFooterNote": "Süpervizyon ve eğitim süreçleri klinisyenin mesleki ihtiyacına göre şekillendirilir; kurumlar veya uzman grupları özel içerik talebinde bulunabilir.",
+    "practice.clinicianDirectCta": "Doğrudan İletişime Geçin",
+    "practice.clinicianResearchLink": "Teorik Şemaları & Makaleleri İnceleyin",
+    "practice.homeCalloutPill": "RUH SAĞLIĞI UZMANLARI İÇİN",
+    "practice.homeCalloutText": "Psikolog ve klinisyenler için süpervizyon, psikanalitik vaka kavramsallaştırma ve Lacan okuma grubu programları.",
+    "practice.homeCalloutLink": "Uzman Programlarını İnceleyin",
+    "research.schemasEyebrow": "TEORİK MODELLER & SAHA ŞEMALARI",
+    "research.schemasTitle": "Kavramsal Çizimler, Doktora Tezi ve Çokdilli Psikanaliz Sözlüğü",
+    "research.schemasIntro": "Dr. Ali İhsan Yaka'nın obsesyonel yapı makalesi, ODTÜ doktora tezindeki saha topolojisi ve Türkçe, English ve Kurmancî dillerini bir araya getiren psikanalitik terminoloji çalışması.",
+    "research.schema1Tag": "KLİNİK MAKALE ÇİZİMLERİ",
+    "research.schema1Title": "Obsesyonel Yapı ve Arzu Çıkmazı",
+    "research.schema1Desc": "Freud'un Sıçan Adam vakasından Lacan'ın Seminer IV & V metinlerine uzanan obsesyonel dinamik: Özne ($) ile Öteki (A) arasındaki borç, şüphe, ruminasyon ve arzuyu erteleme / imkansız kılma stratejisinin yapısal şemaları.",
+    "research.schema2Tag": "ODTÜ DOKTORA TEZİ TOPOLOJİSİ",
+    "research.schema2Title": "Ninova & Irak Sahası Söylem Matrisi",
+    "research.schema2Desc": "2024 ODTÜ doktora tezinde geliştirilen, çatışma sonrası alanda kolektif yas, şiddet ve kimlik travmalarını Lacan'ın Dört Söylemi (Efendi, Üniversite, Histerik, Analist) üzerinden haritalandıran saha şemaları.",
+    "research.schema3Tag": "ÇOKDİLLİ PSİKANALİZ ÇALIŞMASI",
+    "research.schema3Title": "Üç Dilli Psikanaliz Terimleri Sözlüğü",
+    "research.schema3Desc": "Dr. Ali İhsan Yaka'nın psikanalitik kavramları Türkçe, İngilizce ve Kürtçe (Kurmancî) dillerinde karşılıklı olarak ele aldığı, kavramsal netliği ve çokdilli klinik dinlemeyi destekleyen terminoloji matrisi.",
   },
   "en": {
     "page.title": "Dr. Ali Ihsan Yaka, Ph.D. | Lacanian Psychoanalysis & Clinical Psychology",
@@ -914,7 +947,7 @@
     "hero.cred6": "APsA 2026 · 44.5 CE hours",
     "hero.btnConsultation": "Book Consultation Request",
     "hero.btnPractice": "Clinical Practice & Supervision",
-    "hero.portraitTitle": "Clinical Psychologist • Buffalo CSPC, 2026",
+    "hero.portraitTitle": "Clinical Psychologist, Psychoanalyst & Supervisor • Buffalo CSPC, 2026",
     "hero.portraitLangs": "Languages: Turkish • English C1 Advanced • Kurdish (Kurmanji)",
     "whatsNew.eyebrow": "CURRENT SCHOLARLY INITIATIVES & EVENTS",
     "whatsNew.title": "News & Announcements",
@@ -1369,7 +1402,7 @@
     "about.cspcPosterCaption": "CSPC Annual Symposium · Buffalo · 2026",
     "about.wpaPosterCaption": "25th World Congress of Psychiatry · Prague · 2025",
     "about.profileLinksLabel": "Verifiable academic and professional profiles",
-    "footer.brandSub": "Clinical Psychologist • Psychoanalyst",
+    "footer.brandSub": "Clinical Psychologist, Psychoanalyst & Clinical Supervisor",
     "footer.ethos": "Lacanian-oriented psychotherapy and supervision, with academic work on social trauma.",
     "footer.langStatus": "Languages: Turkish • English C1 Advanced • Kurdish (Kurmanji)",
     "footer.navHeading": "Site Navigation",
@@ -1500,7 +1533,40 @@
     "pub.hubDergiparkName": "DergiPark Researcher Profile",
     "pub.hubDergiparkSub": "National peer-reviewed articles & review record",
     "pub.hubRgSub": "Research outputs and academic network",
-    "footer.splashReplay": "Back to top"
+    "footer.splashReplay": "Back to top",
+    "practice.clinicianEyebrow": "FOR MENTAL HEALTH PROFESSIONALS & CLINICIANS",
+    "practice.clinicianTitle": "Supervision, Case Formulation & Seminar Study Groups",
+    "practice.clinicianIntro": "Structured professional programs for clinical psychologists, psychotherapists, psychiatrists, and counselors focusing on psychoanalytic discourse, transference dynamics, and analytic posture.",
+    "practice.prog1Tag": "CLINICAL SUPERVISION",
+    "practice.prog1Title": "Individual & Small Group Supervision",
+    "practice.prog1Desc": "Comprehending structural discourse, untangling transference and countertransference, and reinforcing the clinician's analytic position. Backed by METU AYNA Clinical Unit experience.",
+    "practice.prog1Cta": "Apply for Supervision",
+    "practice.prog2Tag": "APPLIED WORKSHOP",
+    "practice.prog2Title": "Psychoanalytic Case Formulation",
+    "practice.prog2Desc": "Modular case formulation training based on Schema L, signifying chains, graph of desire, and structural diagnostic axes. Available on demand.",
+    "practice.prog2Cta": "Submit Workshop Inquiry",
+    "practice.prog3Tag": "EVENT & STUDY GROUP",
+    "practice.prog3Title": "Lacan Seminars Reading Group",
+    "practice.prog3Desc": "Line-by-line close reading of Jacques Lacan's seminar texts exploring conceptual and clinical ramifications. Bi-weekly closed online cartel format.",
+    "practice.prog3Cta": "Pre-Register for Reading Group",
+    "practice.clinicianFooterNote": "Supervision and training are tailored to clinicians' needs; institutions or peer groups may request custom syllabi.",
+    "practice.clinicianDirectCta": "Contact Directly",
+    "practice.clinicianResearchLink": "Explore Theoretical Models & Articles",
+    "practice.homeCalloutPill": "FOR MENTAL HEALTH PROFESSIONALS",
+    "practice.homeCalloutText": "Clinical supervision, psychoanalytic case formulation, and Lacan seminar reading groups for psychologists and clinicians.",
+    "practice.homeCalloutLink": "Explore Professional Programs",
+    "research.schemasEyebrow": "THEORETICAL SCHEMAS & FIELDWORK TOPOLOGY",
+    "research.schemasTitle": "Conceptual Diagrams, Doctoral Thesis & Trilingual Psychoanalysis Dictionary",
+    "research.schemasIntro": "Dr. Ali İhsan Yaka's conceptual schemas from his obsessional neurosis paper, METU doctoral fieldwork topology, and the trilingual psychoanalysis terminology study across English, Kurmancî, and Turkish.",
+    "research.schema1Tag": "CLINICAL RESEARCH DIAGRAMS",
+    "research.schema1Title": "Obsessional Structure & The Impasse of Desire",
+    "research.schema1Desc": "Structural schemas from Freud's Rat Man to Lacan's Seminars IV & V: The split subject's ($) strategy of impossible desire, doubt, debt, and procrastination against the demand of the Other (A).",
+    "research.schema2Tag": "METU PH.D. FIELDWORK TOPOLOGY",
+    "research.schema2Title": "Nineveh & Iraq Fieldwork Discourse Matrix",
+    "research.schema2Desc": "Developed in the 2024 METU Ph.D. dissertation, mapping post-conflict collective mourning, violence, and trauma through Lacan's Four Discourses (Master, University, Hysteric, Analyst).",
+    "research.schema3Tag": "TRILINGUAL TERMINOLOGY STUDY",
+    "research.schema3Title": "Trilingual Psychoanalysis Dictionary",
+    "research.schema3Desc": "Comparative psychoanalytic terminology matrix compiled across English, Kurdish (Kurmancî), and Turkish to facilitate multilingual clinical listening and conceptual rigor.",
   }
 };
 
@@ -2984,3 +3050,28 @@
     initDOM();
   }
 })();
+
+// Trilingual Psychoanalysis Dictionary Interactive Search Filter
+document.addEventListener('DOMContentLoaded', () => {
+  const termInput = document.getElementById('termSearchInput');
+  if (termInput) {
+    termInput.addEventListener('input', (e) => {
+      const q = e.target.value.toLowerCase().trim();
+      const rows = document.querySelectorAll('#psychoanalysisDictTable tbody tr');
+      let visible = 0;
+      rows.forEach(r => {
+        const text = r.textContent.toLowerCase();
+        if (!q || text.includes(q)) {
+          r.style.display = '';
+          visible++;
+        } else {
+          r.style.display = 'none';
+        }
+      });
+      const pill = document.getElementById('termCountPill');
+      if (pill) {
+        pill.textContent = q ? (visible + ' Kavram Bulundu') : '12 Temel Kavram';
+      }
+    });
+  }
+});

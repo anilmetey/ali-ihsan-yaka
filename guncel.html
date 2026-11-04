@@ -28,7 +28,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="icon" href="assets/images/psyche-structure-mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="app.css?v=5.92">
+  <link rel="stylesheet" href="app.css?v=5.95">
 </head>
 <body>
   <a class="skip-link" href="#mainContent" data-i18n="a11y.skipToContent">Ana içeriğe geç</a>
@@ -332,14 +332,22 @@
               <div class="apsa-event-kicker">OCAK 2026 &bull; SAN FRANCISCO, CA &bull; APsA NATIONAL MEETING</div>
               <h2>APsA 2026 National Meeting: 44,5 Katılım Saati</h2>
               <p>San Francisco’da 27 Ocak–1 Şubat 2026 tarihlerinde düzenlenen APsA National Meeting için katılım belgesinde 44,5 contact hour kayıtlıdır. Program en fazla 45,5 saat sunmuştur; kişisel katılım toplamı 44,5 saattir.</p>
-              <a class="pub-btn pub-btn-primary" href="assets/docs/apsa-2026-certificate.pdf">Katılım belgesini görüntüle ↗</a>
+              <div style="margin: 1.25rem 0 0; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                <a class="pub-btn pub-btn-primary" href="assets/docs/apsa-2026-certificate.pdf" target="_blank" rel="noopener">Katılım belgesini görüntüle ↗</a>
+              </div>
             </div>
-            <aside class="apsa-event-proof" aria-label="APsA katılım belgesi">
+            <aside class="apsa-event-proof" aria-label="APsA katılım ve etkinlik fotoğrafları">
               <div class="apsa-event-hours"><strong>44,5</strong><span>kişisel katılım saati</span></div>
-              <figure class="certificate-preview">
-                <img src="assets/images/apsa-2026-attendance-preview.jpg" alt="APsA 2026 katılım belgesi; Ali Yaka adına 44,5 contact hour" width="1082" height="1400" loading="lazy" decoding="async">
-                <figcaption>Katılım belgesinden önizleme</figcaption>
-              </figure>
+              <div style="display: flex; flex-direction: column; gap: 0.85rem; width: 100%;">
+                <figure class="certificate-preview" style="margin: 0;">
+                  <img src="assets/images/apsa-2026-colleagues.jpg" alt="APsA 2026 National Meeting meslektaşlarla grup fotoğrafı" width="1600" height="1149" loading="lazy" decoding="async" data-zoomable style="border-radius: 8px; width: 100%; height: auto; object-fit: cover; cursor: zoom-in;">
+                  <figcaption style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.35rem;">San Francisco · Uluslararası akademisyen ve klinisyen meslektaşlarla</figcaption>
+                </figure>
+                <figure class="certificate-preview" style="margin: 0;">
+                  <img src="assets/images/apsa-2026-attendance-preview.jpg" alt="APsA 2026 katılım belgesi; Ali Yaka adına 44,5 contact hour" width="1082" height="1400" loading="lazy" decoding="async" data-zoomable style="border-radius: 8px; width: 100%; height: auto; object-fit: cover; cursor: zoom-in;">
+                  <figcaption style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.35rem;">Resmi Katılım Belgesi Önizlemesi</figcaption>
+                </figure>
+              </div>
             </aside>
           </article>
 
@@ -382,7 +390,7 @@
             <img class="brand-logo-img footer-logo-img" src="assets/images/ali-ihsan-yaka-logo-kinetic-dark.svg" alt="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek" width="520" height="180">
           </a>
           <div class="footer-brand-title">Dr. Ali İhsan Yaka, Ph.D.</div>
-          <div class="footer-brand-sub" data-i18n="footer.brandSub">Doktor Klinik Psikolog &bull; Psikanalist</div>
+          <div class="footer-brand-sub" data-i18n="footer.brandSub">Doktor Klinik Psikolog, Psikanalist ve Süpervizör</div>
           <p class="footer-intro" data-i18n="footer.ethos">
             2026’da University at Buffalo (SUNY) Center for the Study of Psychoanalysis &amp; Culture (CSPC) bünyesinde misafir doktora sonrası araştırmacı olarak bulundu; klinik çalışmaları yetişkinlerle psikanalitik psikoterapi ve klinik süpervizyona odaklanır.
           </p>
@@ -459,6 +467,6 @@
     <div id="lightboxCaption"></div>
   </div>
 
-  <script src="app.js?v=5.92"></script>
+  <script src="app.js?v=5.95"></script>
 </body>
 </html>
