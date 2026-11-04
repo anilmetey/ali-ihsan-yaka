@@ -329,7 +329,7 @@
     "contact.eyebrow": "RANDEVU VE İLETİŞİM PROTOKOLÜ",
     "contact.pageTitle": "İletişim ve Ön Görüşme | Dr. Ali İhsan Yaka",
     "contact.title": "İletişim & Ön Görüşme",
-    "contact.subtitle": "“Benimle iletişime geçmek isterseniz lütfen e-posta gönderin, mesaj atın veya arayın. En kısa sürede dönüş yapacağım.”",
+    "contact.subtitle": "Bireysel psikanalitik psikoterapi, süpervizyon veya kurumsal çalışmalar için doğrudan iletişime geçebilir ya da ön görüşme formunu doldurabilirsiniz.",
     "contact.phoneLabel": "TÜRKİYE DANIŞMA HATTI & WHATSAPP",
     "contact.phoneNote": "Randevu ve genel bilgi için telefon veya WhatsApp üzerinden ulaşabilirsiniz.",
     "contact.phoneVal": "+90 (537) 473 84 33",
@@ -348,10 +348,10 @@
     "contact.inPersonAvailability": "Güncel uygunluk iletişimde teyit edilir.",
     "contact.formatDesc": "Görüşme biçimi, konum ve güncel uygunluk başvuru öncesinde doğrudan teyit edilir.",
     "contact.formTitle": "Ön Görüşme Talebi",
-    "contact.formBadge": "WHATSAPP MESAJI",
+    "contact.formBadge": "WHATSAPP İLE ÖN GÖRÜŞME PROTOKOLÜ",
     "contact.formDesc": "Form, WhatsApp’ta inceleyip kendiniz gönderebileceğiniz bir mesaj hazırlar. Bu site form bilgilerini almaz veya saklamaz.",
     "contact.formName": "Adınız ve Soyadınız *",
-    "contact.formNamePlaceholder": "",
+    "contact.formNamePlaceholder": "Örn. Dr. Deniz Demir",
     "contact.formEmail": "E-posta Adresiniz (isteğe bağlı)",
     "contact.formEmailPlaceholder": "",
     "contact.formPhone": "Telefon Numaranız",
@@ -367,12 +367,22 @@
     "contact.optInPerson": "Yüz yüze (uygunluk iletişimde teyit edilir)",
     "contact.optFlexible": "Fark Etmez / Esnek",
     "contact.formMessage": "Kısaca Durumunuz / Talebiniz",
-    "contact.formMessagePlaceholder": "Lütfen sağlık veya terapi ayrıntısı paylaşmayın.",
+    "contact.formMessagePlaceholder": "Kısaca başvuru gerekçeniz veya uygun olduğunuz saatler...",
     "contact.formSensitiveNote": "Lütfen bu alana sağlık veya terapi ayrıntısı yazmayın.",
     "contact.formConsent": "WhatsApp’ta açılacak mesajı inceleyip kendim göndereceğim.",
     "contact.formPrivacyLink": "Gizlilik açıklaması",
     "contact.formSubmit": "WhatsApp Mesajı Hazırla",
     "contact.reassurance": "WhatsApp açılır; siz Gönder’e basmadıkça mesaj iletilmez. Bu site form bilgilerini almaz veya saklamaz.",
+    "contact.eyebrowSub": "ONLINE & YÜZ YÜZE GÖRÜŞMELER",
+    "contact.trustConfidential": "Etik Çerçeve & Mutlak Gizlilik",
+    "contact.trustResponse": "24 Saat İçinde Doğrudan Dönüş",
+    "contact.trustLocation": "TRT (UTC+3) Online & İstanbul",
+    "contact.step1": "Formu Doldurun",
+    "contact.step2": "WhatsApp'ta İnceleyin",
+    "contact.step3": "Kendiniz İletin",
+    "contact.ethicsTitle": "Klinik Çerçeve ve Acil Durum Bilgilendirmesi",
+    "contact.ethicsText": "Bu iletişim kanalları ve ön görüşme formu acil kriz müdahalesi için uygun değildir. Kendinize veya bir başkasına zarar verme riski taşıyan acil psikiyatrik kriz durumlarında lütfen en yakın sağlık kuruluşunun acil servisine başvurunuz veya 112 Acil Çağrı / Alo 183 / 182 hatlarını arayınız.",
+
     "about.profileLinkedin": "LinkedIn profili",
     "about.profileOrcid": "ORCID araştırmacı kaydı",
     "about.profileScholar": "Google Scholar yayın profili",
@@ -431,6 +441,40 @@
     "practice.inclusiveTitle": "Kapsayıcı ve kültüre duyarlı bir alan",
     "practice.inclusiveDesc": "Çalışma, kişinin kendi yaşam öyküsünü, dilini ve kültürel bağlamını gözeten; LGBTQI+ bireyleri kapsayıcı ve onaylayıcı bir yaklaşımla yürütülür. Her görüşmenin çerçevesi ve ihtiyaçları kişiyle birlikte ele alınır.",
     "practice.focusAreas": "Yetişkinlerle çalışmada ele alınan temel başlıklar: kaygı ve anksiyete, panik atak, takıntılar (OKB), travma ve yas, korkular ve fobiler, depresif belirtiler, kendine zarar verme eğilimleri, odaklanma güçlükleri (DEHB), bağımlılıklar, ilişki ve bağlanma sorunları.",
+    "practice.inclusivePillar1Title": "Kültürel ve Dilsel Bağlam",
+    "practice.inclusivePillar1Tag": "TR · EN · Kurmancî",
+    "practice.inclusivePillar1Desc": "Kişinin kendi yaşam öyküsünü, ana dilini ve içinde yetiştiği toplumsal-kültürel bağlamı gözeten analitik dinleme.",
+    "practice.inclusivePillar2Title": "LGBTQI+ Kapsayıcı ve Onaylayıcı Yaklaşım",
+    "practice.inclusivePillar2Tag": "Onaylayıcı Etik",
+    "practice.inclusivePillar2Desc": "Cinsiyet kimliği ve cinsel yönelim çeşitliliğini patolojize etmeyen, öznel deneyimi onaylayıcı ve güvenli klinik alan.",
+    "practice.inclusivePillar3Title": "Özneyle Birlikte Kurulan Çerçeve",
+    "practice.inclusivePillar3Tag": "İşbirlikçi Süreç",
+    "practice.inclusivePillar3Desc": "Her görüşmenin ritmi, çerçevesi ve öncelikli ihtiyaçları standart kalıplarla değil, kişiyle birlikte değerlendirilir.",
+    "practice.focusAreasHeading": "YETİŞKİNLERLE ÇALIŞMADA ELE ALINAN TEMEL BAŞLIKLAR",
+    "practice.focusAreasSub": "Bireysel psikanalitik psikoterapi ve klinik danışmanlık sürecinde çalışılan başlıca başvuru alanları",
+    "practice.focusAreasCount": "10 Klinik Başlık",
+    "practice.topic1Title": "Kaygı ve Anksiyete",
+    "practice.topic1Desc": "Süregelen endişe, belirsizlik intoleransı ve içsel huzursuzluk döngüleri",
+    "practice.topic2Title": "Panik Atak",
+    "practice.topic2Desc": "Ani bedensel sıkışma, çarpıntı ve kontrol kaybı korkusunun analizi",
+    "practice.topic3Title": "Takıntılar (OKB)",
+    "practice.topic3Desc": "Tekrarlayan düşünceler, şüphe döngüleri ve zorlantılı ritüeller",
+    "practice.topic4Title": "Travma ve Yas",
+    "practice.topic4Desc": "Kayıp süreçleri, sarsıcı yaşantılar ve toplumsal travma izleri",
+    "practice.topic5Title": "Korkular ve Fobiler",
+    "practice.topic5Desc": "Belirli nesne veya durumlara yönelen yoğun kaçınma ve semptom yapısı",
+    "practice.topic6Title": "Depresif Belirtiler",
+    "practice.topic6Desc": "İsteksizlik, anlam yitimi, çökkünlük ve öznel yalnızlık deneyimi",
+    "practice.topic7Title": "Kendine Zarar Verme Eğilimleri",
+    "practice.topic7Desc": "Dile gelemeyen ruhsal acının bedensel eyleme dönüşümü ve dürtüsellik",
+    "practice.topic8Title": "Odaklanma Güçlükleri (DEHB)",
+    "practice.topic8Desc": "Dikkat dağınıklığı, erteleme ve zihinsel meşguliyet örüntüleri",
+    "practice.topic9Title": "Bağımlılıklar",
+    "practice.topic9Desc": "Tekrarlayan nesne, madde veya davranış bağımlılığı döngüleri",
+    "practice.topic10Title": "İlişki ve Bağlanma Sorunları",
+    "practice.topic10Desc": "Yakınlık, sınırlar, terk edilme kaygısı ve tekrarlayan ilişki çıkmazları",
+    "practice.focusFooterNote": "Tanı etiketlerinin ötesinde, her semptom kişinin kendi öznel tarihi içinde dinlenir.",
+    "practice.focusFooterCta": "Ön Görüşme Planla",
     "practice.futurePublicationsLink": "Mevcut yayınları inceleyin",
     "practice.futureNewsLink": "Yeni duyuruları takip edin",
     "practice.futureMediaDesc": "Düzenli blog ve video serileri gelecek planı olarak değerlendiriliyor. Hakkımda bölümünde mevcut YouTube videosuna bağlantı bulunuyor.",
@@ -449,46 +493,78 @@
     "practice.pageTitle": "Klinik Pratik, Terapi & Süpervizyon",
     "practice.pageLead": "“Psikanaliz bir bilgi aktarımı değil; öznenin arzusunun hakikatiyle karşılaşmasıdır.” Klinik görüşmeler, etik çerçeve ve kişinin ihtiyaçları birlikte ele alınarak yürütülür.",
     "practice.profileBadge": "DOKTOR KLİNİK PSİKOLOG • CSPC, 2026",
+    "practice.profileOrientation": "LACANYEN PSİKANALİTİK YÖNELİM",
+    "practice.profileCaptionSub": "Doktor Klinik Psikolog • University at Buffalo (SUNY) CSPC, 2026",
     "practice.profileTitle": "Analitik Dinleme ve Semptomun Anlamı",
     "practice.profileDesc": "Lacanyen psikanalitik yönelim; danışanın şikâyet ettiği semptomu susturulması gereken bir arıza olarak değil, bilinçdışı arzunun ve dile gelemeyen çatışmaların bedendeki ya da ilişkilerdeki şifrelenmiş sözü olarak ele alır. Seanslar, standart reçeteler uygulamak yerine kişinin kendi arzusunun sorumluluğunu üstlenmesine eşlik eder.",
+    "practice.profileEthos": "Her başvuru, kişinin kendi sözcükleri, öznel zamansallığı ve tekil yaşam öyküsü içinde; gizlilik ve mesleki etik sınırlar gözetilerek dinlenir.",
+    "practice.profileCredsAria": "Akademik denklik ve sürekli eğitim bilgileri",
+    "practice.profileCred1Tag": "WES · DOKTORA DENKLİĞİ",
+    "practice.profileCred1Title": "ABD Doktora Eşdeğerliği",
+    "practice.profileCred1Desc": "WES doktora eşdeğerliği değerlendirmesi ile doğrulanmış klinik psikoloji doktora derecesi (ODTÜ Ph.D.).",
+    "practice.profileCred2Tag": "NYSED · EĞİTİM KOŞULU",
+    "practice.profileCred2Title": "İlk Eğitim Koşulu & Formasyon",
+    "practice.profileCred2Desc": "NYSED eğitim koşullarından ilkini karşıladı; ek psikanalitik eğitim sürüyor.",
+    "practice.profileCred3Tag": "APsA · SÜREKLİ EĞİTİM",
+    "practice.profileCred3Title": "APsA 2026 Sürekli Eğitim Kredisi",
+    "practice.profileCred3Desc": "American Psychoanalytic Association 2026 Ulusal Toplantısı kapsamında kayıtlı 44,5 saat sürekli eğitim kredisi.",
     "practice.profileCredentials": "WES doktora eşdeğerliği değerlendirmesi • NYSED eğitim koşullarından ilkini karşıladı; ek psikanalitik eğitim sürüyor • APsA 2026 sürekli eğitim kredisi",
+    "practice.profileCta": "Ön Görüşme Talep Et",
+    "practice.profileVerifyLink": "Akademik doğrulama ve belgeler",
+    "practice.profileLangs": "Türkçe • English (C1) • Kurmancî",
+    "practice.pillarsEyebrow": "HİZMET ALANLARI & KLİNİK UZMANLIK",
+    "practice.pillarsTitle": "Üç Temel Klinik & Kurumsal Çalışma Alanı",
+    "practice.pillarsSubtitle": "Bireysel psikanalitik psikoterapiden mesleki süpervizyona ve kurumsal saha travma danışmanlığına uzanan derinlikli uzmanlık.",
     "practice.card1Number": "01 / PSİKANALİZ & TERAPİ",
     "practice.card1Title": "Bireysel Psikanalitik Psikoterapi",
     "practice.card1Desc": "Yetişkin bireylerle birebir yürütülen derinlikli psikanalitik psikoterapi seansları. Serbest çağrışım kuralı rehberliğinde; kaygı, yas, ilişkisel tıkanıklıklar, takıntılar ve kimlik çatışmalarının kökenindeki bilinçdışı dinamiklerin çözümlenmesi.",
-    "practice.card1Item1": "• Serbest çağrışım ve sözün yakından dinlenmesi",
-    "practice.card1Item2": "• Lacanyen noktalama ve seans ritmi",
-    "practice.card1Item3": "• Tekrarlayan döngüler ve arzu çıkmazlarının analizi",
-    "practice.card1Item4": "• Türkçe, English (C1) ve Kurmancî dillerinde seans seçeneği",
+    "practice.card1Item1": "Serbest çağrışım ve sözün yakından dinlenmesi",
+    "practice.card1Item2": "Lacanyen noktalama ve seans ritmi",
+    "practice.card1Item3": "Tekrarlayan döngüler ve arzu çıkmazlarının analizi",
+    "practice.card1Item4": "Türkçe, English (C1) ve Kurmancî dillerinde seans seçeneği",
     "practice.card1Format": "<strong>Format:</strong> Görüşme biçimi ve güncel yüz yüze uygunluk, randevu öncesinde teyit edilir.",
-    "practice.card1Cta": "Ön Görüşme Talep Et →",
+    "practice.card1Cta": "Ön Görüşme Talep Et",
     "practice.card2Number": "02 / SÜPERVİZYON",
     "practice.card2Title": "Klinik Süpervizyon & Vaka Formülasyonu",
     "practice.card2Desc": "Klinik psikologlar, psikoterapistler, psikiyatri hekimleri ve danışmanlar için vaka süpervizyonu. Danışanın söylemindeki yapıyı kavrama, aktarım ve karşı-aktarım düğümlerini çözme ve terapistin analitik duruşunu pekiştirme.",
-    "practice.card2Item1": "• Lacanyen yapısal değerlendirme (Nevroz, Psikoz, Perversiyon)",
-    "practice.card2Item2": "• Aktarımın yönlendirilmesi ve analistin arzusu",
-    "practice.card2Item3": "• Ağır travma ve kriz vakalarında ikincil travma koruması",
-    "practice.card2Item4": "• Bireysel veya 2–4 kişilik küçük kapalı grup formatı",
+    "practice.card2Item1": "psikanalitik vaka formülasyonu (Nevroz, Psikoz, Perversiyon)",
+    "practice.card2Item2": "Aktarımın yönlendirilmesi ve analistin arzusu",
+    "practice.card2Item3": "Ağır travma ve kriz vakalarında ikincil travma koruması",
+    "practice.card2Item4": "Bireysel veya 2–4 kişilik küçük kapalı grup formatı",
     "practice.card2Scope": "<strong>Kapsam:</strong> ODTÜ AYNA Klinik Psikoloji Destek Birimi deneyimiyle.",
-    "practice.card2Cta": "Süpervizyon Başvurusu →",
+    "practice.card2Cta": "Süpervizyon Başvurusu",
     "practice.card3Number": "03 / MHPSS & EĞİTİM",
     "practice.card3Title": "Saha & Kurumsal Travma Danışmanlığı",
     "practice.card3Desc": "İnsani yardım kuruluşları, STK’lar, kriz ekipleri ve afet sahasında görev yapan saha personeli için kurumsal psikososyal destek (MHPSS) ve travma yönetimi danışmanlığı.",
-    "practice.card3Item1": "• MHPSS programı ve kurum içi kapasite geliştirme danışmanlığı",
-    "practice.card3Item2": "• Merhamet yorgunluğu ve tükenmişlik önleme protokolleri",
-    "practice.card3Item3": "• IASC Rehberi standartlarında saha programlama",
-    "practice.card3Item4": "• Irak, Güney Sudan ve 6 Şubat Deprem Sahası deneyimi",
+    "practice.card3Item1": "MHPSS programı ve kurum içi kapasite geliştirme danışmanlığı",
+    "practice.card3Item2": "Merhamet yorgunluğu ve tükenmişlik önleme protokolleri",
+    "practice.card3Item3": "IASC Rehberi standartlarında saha programlama",
+    "practice.card3Item4": "Irak, Güney Sudan ve 6 Şubat Deprem Sahası deneyimi",
     "practice.card3Scope": "<strong>Kurumsal:</strong> Kuruma ve ihtiyaca özel tasarlanmış atölyeler.",
-    "practice.card3Cta": "Kurumsal Danışmanlık İste →",
+    "practice.card3Cta": "Kurumsal Danışmanlık İste",
     "practice.frameEyebrow": "ÇERÇEVE VE GİZLİLİK",
     "practice.frameTitle": "Klinik Çerçeve & Mesleki Gizlilik",
     "practice.frameDesc": "Klinik çalışma başlamadan önce görüşme çerçevesi, gizlilik ve bunun sınırları birlikte konuşulur.",
     "practice.frameItem1": "✓ <strong>Çerçeve:</strong> Görüşme sıklığı ve yöntemi kişiyle konuşularak planlanır.",
     "practice.frameItem2": "✓ <strong>Gizlilik:</strong> Gizlilik koşulları ve sınırları ilk görüşme öncesinde açıklığa kavuşturulur.",
     "practice.frameItem3": "✓ <strong>Online görüşmeler:</strong> Kullanılacak platform ve teknik koşullar randevu öncesinde netleştirilir.",
+    "practice.frameItem1Title": "Analitik Çerçeve & Sıklık",
+    "practice.frameItem1Desc": "Görüşme sıklığı ve yöntemi kişiyle konuşularak planlanır.",
+    "practice.frameItem2Title": "Mesleki ve Etik Gizlilik",
+    "practice.frameItem2Desc": "Gizlilik koşulları ve sınırları ilk görüşme öncesinde açıklığa kavuşturulur.",
+    "practice.frameItem3Title": "Online & Dijital Güvenlik",
+    "practice.frameItem3Desc": "Kullanılacak platform ve teknik koşullar randevu öncesinde netleştirilir.",
     "practice.feesEyebrow": "GÖRÜŞME ÇERÇEVESİ",
     "practice.feesTitle": "Ücret ve Uygunluk",
     "practice.feesDesc": "Görüşme ücretleri ve güncel uygunluk ilk görüşme öncesinde doğrudan iletişimle netleştirilir.",
-    "practice.feesCta": "Ücret ve Uygunluk Hakkında Bilgi Al →",
+    "practice.feesPoint1Title": "Doğrudan İletişim:",
+    "practice.feesPoint1Desc": "İlk görüşme öncesinde seans bedeli ve uygunluk takvimi doğrudan paylaşılır.",
+    "practice.feesPoint2Title": "Seans Formatı:",
+    "practice.feesPoint2Desc": "Online (görüntülü) ve yüz yüze uygunluk durumu başvuru sırasında değerlendirilir.",
+    "practice.feesPoint3Title": "Veri Koruma:",
+    "practice.feesPoint3Desc": "Gizlilik gereği formda hiçbir hassas sağlık veya terapi detayı talep edilmez.",
+    "practice.feesCta": "Ücret ve Uygunluk Hakkında Bilgi Al",
+    "practice.feesReassurance": "İlk görüşme öncesi tüm sorularınız doğrudan yanıtlanır.",
     "practice.faqEyebrow": "KLİNİK SÜREÇ & ÇERÇEVE",
     "practice.faqTitle": "Ön Görüşme ve Seans Çerçevesi",
     "practice.faq1Desc": "Psikanalitik çalışma, danışan ile analist arasında karşılıklı bir tanışma niteliği taşıyan ön görüşme (ilk seans) ile başlar. Bu ilk buluşmada danışanın terapiye geliş sebebi, beklentileri ve psikanalitik çalışmaya uygunluğu birlikte değerlendirilir; seans sıklığı, çalışma dili ve analitik çerçevenin temel esasları netleştirilir.",
@@ -502,6 +578,17 @@
     "about.eventGalleryCaption1": "Yalnızlık ve psikanalitik perspektif",
     "about.eventGalleryCaption2": "XI. Psikoloji Günü · 27 Nisan 2025",
     "about.bogaziciKicker": "SEÇİLMİŞ SUNUM · 27 NİSAN 2025",
+    "about.ipaInstTag": "International Psychoanalytical Association",
+    "about.ipaDurationChip": "12 Aylık Proje",
+    "about.ipaScopeChip": "Toplumsal Travma & Saha",
+    "about.aynaInstTag": "ODTÜ · DergiPark Akademik",
+    "about.peerCertId": "DergiPark Hakemlik Belgesi · ID: 1817613",
+    "about.peerCertView": "Belgeyi gör ↗",
+    "about.peerCertVerify": "Doğrula ↗",
+    "about.pubCountBadge": "4 Hakemli Yayın",
+    "about.pubArchiveLink": "Arşiv ↗",
+    "about.pubIndexNote": "DergiPark · ULAKBİM · Google Scholar · ORCID",
+    "about.talksBadge": "Kongre & Sempozyum Kayıtları",
     "about.bogaziciTitle": "Boğaziçi Üniversitesi XI. Psikoloji Günü",
     "about.bogaziciDesc": "“Psikopatolojik Yalnızlıktan Subjektif Toplumsallığa: Psikanalitik Öznelleşme Deneyimi” başlıklı davetli konuşma. Fotoğraflar, sunumdaki Ayna Evresi ve psikanalitik yalnızlık tartışmalarından seçilmiştir.",
     "about.bogaziciLink": "Sunumu yayınlar arasında inceleyin →",
@@ -555,6 +642,114 @@
     "meta.faqDescription": "Lacanyen yönelimli psikanalitik psikoterapi, seans çerçevesi, gizlilik, çevrim içi görüşmeler ve klinik süpervizyon hakkında yanıtlar.",
     "meta.contactDescription": "Psikanalitik psikoterapi, klinik süpervizyon veya kurumsal eğitim hakkında iletişime geçin.",
     "meta.privacyDescription": "Web sitesindeki iletişim formu, tarayıcı tercihleri ve gizlilik uygulamaları hakkında bilgilendirme.",
+    "pub.heroEyebrow": "YAYINLAR & AKADEMİK ÜRETİM",
+    "pub.heroSubBadge": "HAKEMLİ ARŞİV • TEZ • BİLDİRİLER",
+    "pub.heroTitle": "Yayınlar, Tezler & Bildiriler",
+    "pub.heroLead": "Psikanalitik kuram, dil, baba işlevi ve toplumsal travmanın klinik kavramsallaştırması üzerine hakemli makaleler ve sunumlar.",
+    "pub.axesAria": "Kuramsal araştırma eksenleri",
+    "pub.axis1Kicker": "EKSEN 01 • YAPI & DİL",
+    "pub.axis1Title": "Baba İşlevi & Ruhsal Yapılar",
+    "pub.axis1Desc": "Psikoz ve obsesyonel nevrozda gösteren zinciri, Babanın-Adı ve menetme (forclusion).",
+    "pub.axis2Kicker": "EKSEN 02 • SÜPERVİZYON",
+    "pub.axis2Title": "Söylem & Klinik Dinleme",
+    "pub.axis2Desc": "Kriz ve saha koşullarında çalışan klinisyenlerin aktarım çıkmazları ve etik konumu.",
+    "pub.axis3Kicker": "EKSEN 03 • TOPLUMSAL TRAVMA",
+    "pub.axis3Title": "Soykırım, Dil & Öznelleşme",
+    "pub.axis3Desc": "Kolektif şiddetin dildeki izleri, paranoit bilgi ve subjektif toplumsallaşma.",
+    "pub.heroIdsAria": "Doğrulanmış akademik kimlikler ve dizinler",
+    "pub.idScholarVal": "Yayın & Atıf Dizini",
+    "pub.idDergiparkVal": "ULAKBİM Kaydı",
+    "pub.ledgerAria": "Akademik üretim envanteri",
+    "pub.ledgerEyebrow": "AKADEMİK KORPUS ENVANTERİ",
+    "pub.ledger1Cat": "DOKTORA MONOGRAFİSİ • ODTÜ (METU) PH.D.",
+    "pub.ledger1Title": "Klinik Süpervizyonda Toplumsal Travma & Söylem",
+    "pub.ledger2Cat": "HAKEMLİ DERGİ MAKALELERİ • 4 YAYIN",
+    "pub.ledger2Title": "AYNA Klinik Psikoloji, Türk Psikoloji Yazıları & Psychology Kurdî",
+    "pub.ledger3Cat": "ULUSLARARASI SEMPOZYUM & KONGRE • 4 BİLDİRİ",
+    "pub.ledger3Title": "University at Buffalo CSPC, WPA Prag, Boğaziçi & ICCP",
+    "pub.ledger4Cat": "AKREDİTASYON & İLERİ EĞİTİM • 4 BELGE",
+    "pub.ledger4Title": "APsA San Francisco (44.5 CE), IPU Berlin, GATA & DAPHB",
+    "pub.ledger5Cat": "HİBE & HAKEMLİK • IPA & TÜBİTAK ULAKBİM",
+    "pub.ledger5Title": "IPA Küresel Araştırma Hibesi & AYNA DergiPark Hakemliği",
+    "pub.filterAria": "Yayın kategorisi filtreleme",
+    "pub.filterAll": "Tümü",
+    "pub.filterThesis": "Doktora Tezi",
+    "pub.filterArticles": "Hakemli Makaleler",
+    "pub.filterTalks": "Kongre & Sunumlar",
+    "pub.statThesesLabel": "Lisansüstü Tez (ODTÜ Doktora & Ankara Üni. YL)",
+    "pub.statArticlesLabel": "Hakemli Makale & Çeviri (AYNA, TPY, Kurdî)",
+    "pub.statTalksLabel": "Sempozyum & Kongre Bildirisi (UB CSPC, WPA...)",
+    "pub.statAccreditationLabel": "Uluslararası Akreditasyon & CE (APsA, IPU Berlin...)",
+    "pub.statGrantsLabel": "IPA Araştırma Hibesi & Hakemlik (Londra / TÜBİTAK)",
+    "pub.filterThesis": "Lisansüstü Tezler",
+    "pub.filterTalks": "Kongre & Sempozyumlar",
+    "pub.filterAccreditation": "Akreditasyon & Eğitim",
+    "pub.filterReview": "Hibe & Hakemlik",
+    "pub.filterStatusAll": "17 Doğrulanmış Akademik Kayıt • Kronolojik ve Tematik Arşiv",
+    "pub.thesisPill": "DOKTORA MONOGRAFİSİ · PH.D.",
+    "pub.ankaraPill": "KLİNİK PSİKOLOJİ · M.S.",
+    "pub.ankaraDesc": "Yetişkin bağlanma stilleri, erken dönem uyumsuz şemalar (EMS) ve bilişsel/duygusal öz-düzenleme süreçlerinin psikolojik belirti düzeyleri (depresyon, kaygı ve somatizasyon) üzerindeki yordayıcı rollerini inceleyen ampirik klinik psikoloji tezi.",
+    "pub.ankaraAdvisor": "Tez Danışmanı: Prof. Dr. Nesrin Hisli Şahin",
+    "pub.bursaPill": "KONGRE SÖZLÜ BİLDİRİSİ",
+    "pub.bursaDesc": "Duygu ve akıl ikilemini Antonio Damasio'nun nörobiyolojik 'Descartes'ın Yanılgısı' tezi ve duygusal zeka kuramları üzerinden ele alan sözlü kongre sunumu.",
+    "pub.bursaCaption": "2004 Kongre Katılım & Bildiri Belgesi (1800×1290) · Büyütmek için tıklayınız",
+    "pub.apsaPill": "SÜREKLİ TIP EĞİTİMİ (CE) • 44,5 SAAT",
+    "pub.apsaDesc": "Amerikan Psikanaliz Birliği (APsA) tarafından 27 Ocak – 1 Şubat 2026 tarihlerinde San Francisco'da düzenlenen Ulusal Kongre kapsamında 44,5 AMA PRA Category 1 Kredi / Sürekli Eğitim (CE) saati tamamlanmış; çağdaş psikanalitik teknik, aktarım ve klinik vaka analizleri üzerine ileri oturumlar akredite edilmiştir.",
+    "pub.ipuPill": "60 AKADEMİK SAAT • ÇAĞDAŞ PSİKANALİZ",
+    "pub.ipuDesc": "International Psychoanalytic University (IPU) Berlin bünyesinde 27 Haziran – 8 Temmuz 2022 tarihlerinde düzenlenen 'Contemporary Developments in Psychoanalysis' yoğun programı kapsamında; psikanalitik kuramın çağdaş klinik, kültürel ve epistemolojik boyutları 60 akademik saatlik seminer dizisiyle tamamlanmıştır.",
+    "pub.gataPill": "KRİZE MÜDAHALE • PSİKOLOJİK TRAVMA",
+    "pub.gataDesc": "GATA Ruh Sağlığı ve Hastalıkları Anabilim Dalı tarafından 29–30 Mayıs 2014 tarihlerinde Ankara'da düzenlenen kongre kapsamında; akut kriz durumları, çatışma ve görev kaynaklı psikolojik travmalar ve klinik müdahale modelleri üzerine ileri eğitim tamamlanmıştır.",
+    "pub.traumaPill": "TRAVMA SONRASI İYİLEŞME • KLİNİK EĞİTİM",
+    "pub.traumaDesc": "Doğal Afetler ve Travmalarda Psikososyal Hizmetler Birliği (DAPHB) tarafından 11–13 Aralık 2009 tarihlerinde İstanbul'da düzenlenen VI. Uluslararası Psikolojik Travma Sempozyumu katılımı ve psikolojik travma klinik müdahaleleri eğitim sertifikası.",
+    "pub.ipaPill": "IPA KÜRESEL ARAŞTIRMA HİBESİ",
+    "pub.ipaDesc": "Uluslararası Psikanaliz Birliği (IPA) Araştırma Komitesi tarafından desteklenen 12 aylık araştırma projesi: Psikanalitik bilginin kitlesel şiddet ve soykırım sonrası psikososyal saha çalışmalarında ve toplumsal travma süreçlerinde nasıl kullanılabileceğini niteliksel klinik süpervizyon ekseninde modeller.",
+    "pub.copyCitation": "Alıntıyı Kopyala",
+    "pub.thesisSpecsAria": "Doktora tezi künye bilgileri",
+    "pub.specInstLabel": "KURUM & ENSTİTÜ",
+    "pub.specInstVal": "Orta Doğu Teknik Üniversitesi (METU) · Klinik Psikoloji Ph.D.",
+    "pub.specAdvisorLabel": "TEZ DANIŞMANI",
+    "pub.specFieldLabel": "SAHA & KURAMSAL EKSEN",
+    "pub.specFieldVal": "Irak Ninova Ovası · Lacanyen Söylem Analizi & Süpervizyon",
+    "pub.specEquivLabel": "ULUSLARARASI AKREDİTASYON",
+    "pub.specEquivVal": "WES ABD Doktora Eşdeğerliği · Tescil No: 15141",
+    "pub.symposiumPill": "ULUSLARARASI SEMPOZYUM",
+    "pub.cspcDesc": "University at Buffalo (SUNY) CSPC 2026 Bahar Sempozyumu kapsamında sunulan bu çalışma; Êzidî kadın kırımı ve soykırımını Lacanyen psikanalitik kuramın paranoit bilgi ve dil yapılanması üzerinden çözümler. Şiddetin simgesel düzeni ve iletişimi hedef alan bir “iletişim-kırım” (communicide) olarak nasıl inşa edildiğini irdeler.",
+    "pub.cspcTopicTag": "Dilde Paranoit Boyut & Soykırım",
+    "pub.wpaPill": "DÜNYA PSİKİYATRİ KONGRESİ",
+    "pub.wpaDesc": "Dünya Psikiyatri Birliği (WPA) tarafından Prag'da düzenlenen 25. Dünya Psikiyatri Kongresi'nde kabul edilen araştırma; Irak Ninova Ovası'nda Êzidî soykırımı mağdurlarıyla çalışan ruh sağlığı personelinin aktarım, karşı-aktarım ve ikincil travma süreçlerini Lacanyen psikanaliz perspektifinden inceler.",
+    "pub.wpaTopicTag": "Klinik Süpervizyon & Toplumsal Travma",
+    "pub.invitedTalkPill": "DAVETLİ KONUŞMA",
+    "pub.bogaziciTopicTag1": "Ayna Evresi (Le stade du miroir)",
+    "pub.bogaziciTopicTag2": "Psikanalitik Öznelleşme",
+    "pub.peerReviewedPill": "ULAKBİM HAKEMLİ DERGİ",
+    "pub.ayna2024Pages": "Cilt 11 · Sayı 1 · s. 1–37",
+    "pub.ayna2024Topic": "Baba Metaforu & Menetme (Forclusion)",
+    "pub.interactiveTopologyBtn": "Etkileşimli Topolojik Şema →",
+    "pub.ayna2021Pages": "Cilt 8 · Sayı 2 · s. 199–220",
+    "pub.ayna2021Topic": "Obsesyonel Nevroz & Babanın-Adı",
+    "pub.kurdiTypePill": "DERGİ YAYINI · KURMANCÎ",
+    "pub.kurdiMetaTranslator": "Çeviri: Aydin Rengîn",
+    "pub.kurdiMetaLang": "Dil: Kurmancî",
+    "pub.tpyTypePill": "AMPİRİK ARAŞTIRMA MAKALESİ",
+    "pub.tpyMetaCoauthor": "Ortak Yazar: Prof. Dr. Nesrin Hisli Şahin",
+    "pub.tpyMetaTopic": "Yetişkin Bağlanma & Şemalar",
+    "pub.iccpTypePill": "ULUSLARARASI KONGRE BİLDİRİSİ",
+    "pub.iccpDesc": "Bağlanma örüntüleri, erken dönem uyumsuz şemalar ve öz-düzenleme süreçlerinin psikolojik belirtilerle ilişkisini inceleyen uluslararası kongre bildirisi.",
+    "pub.iccpMetaTopic": "Bağlanma, Şemalar & Öz-Düzenleme",
+    "pub.reviewTypePill": "BİLİMSEL HAKEMLİK KAYDI",
+    "pub.reviewDesc": "TÜBİTAK ULAKBİM DergiPark sistemi üzerinden yayımlanan hakemli AYNA Klinik Psikoloji Dergisi kapsamında tamamlanan çift-kör bilimsel hakemlik değerlendirme kaydı.",
+    "pub.reviewMetaId": "Kayıt No: 1845184",
+    "pub.reviewMetaRole": "Kör Hakemlik Değerlendirmesi",
+    "pub.reviewCaption": "DergiPark / AYNA Klinik Psikoloji Dergisi · Doğrulanmış Hakemlik Belgesi",
+    "pub.hubAria": "Akademik dizinler ve doğrulanabilir araştırmacı profilleri",
+    "pub.hubEyebrow": "AKADEMİK DİZİNLER & AÇIK ERİŞİM DOĞRULAMA",
+    "pub.hubTitle": "Uluslararası Akademik Profiller ve Atıf Kayıtları",
+    "pub.hubDesc": "Hakemli dergi yayınları, ORCID araştırmacı sicili, uluslararası kongre bildirileri ve açık erişim doktora tezi resmi akademik veri tabanları üzerinden incelenebilir.",
+    "pub.hubScholarSub": "Atıf dizini ve akademik yayın listesi",
+    "pub.hubOrcidSub": "Uluslararası araştırmacı kimlik kaydı",
+    "pub.hubDergiparkName": "DergiPark Araştırmacı Profili",
+    "pub.hubDergiparkSub": "Ulusal hakemli makaleler ve hakemlik",
+    "pub.hubRgSub": "Araştırma çıktıları ve akademik ağ",
     "footer.splashReplay": "Başa dön"
   },
   "en": {
@@ -895,7 +1090,7 @@
     "contact.eyebrow": "CONSULTATION & INTAKE PROTOCOL",
     "contact.pageTitle": "Contact & Consultation | Dr. Ali Ihsan Yaka",
     "contact.title": "Contact & Consultation",
-    "contact.subtitle": "“If you wish to initiate contact, please write an email, send a message, or call. I will respond as promptly as possible.”",
+    "contact.subtitle": "You may reach out directly for psychoanalytic psychotherapy, supervision, or organizational consultations, or complete the initial consultation inquiry below.",
     "contact.phoneLabel": "PHONE & WHATSAPP",
     "contact.phoneNote": "Contact me by phone or WhatsApp about appointments and general inquiries.",
     "contact.phoneVal": "+90 (537) 473 84 33",
@@ -914,10 +1109,10 @@
     "contact.inPersonAvailability": "Current availability is confirmed when you get in touch.",
     "contact.formatDesc": "Current format, location, and in-person availability are confirmed directly before an appointment.",
     "contact.formTitle": "Initial Consultation Request",
-    "contact.formBadge": "WHATSAPP MESSAGE",
+    "contact.formBadge": "WHATSAPP CONSULTATION PROTOCOL",
     "contact.formDesc": "This form prepares a WhatsApp message for you to review and send. This website does not receive or store the form details.",
     "contact.formName": "Full Name *",
-    "contact.formNamePlaceholder": "",
+    "contact.formNamePlaceholder": "e.g. Alex Morgan",
     "contact.formEmail": "Email Address (optional)",
     "contact.formEmailPlaceholder": "",
     "contact.formPhone": "Phone Number",
@@ -933,12 +1128,22 @@
     "contact.optInPerson": "In person (availability confirmed directly)",
     "contact.optFlexible": "Flexible / Either",
     "contact.formMessage": "Brief Summary of Consultation Need",
-    "contact.formMessagePlaceholder": "Please do not include health or therapy details.",
+    "contact.formMessagePlaceholder": "Brief reason for consultation or preferred hours...",
     "contact.formSensitiveNote": "Please do not include health or therapy details in this field.",
     "contact.formConsent": "I will review and send the message after it opens in WhatsApp.",
     "contact.formPrivacyLink": "Privacy notice",
     "contact.formSubmit": "Prepare WhatsApp Message",
     "contact.reassurance": "WhatsApp opens; the message is sent only if you tap Send. This website does not receive or store the form details.",
+    "contact.eyebrowSub": "ONLINE & IN-PERSON SESSIONS",
+    "contact.trustConfidential": "Ethical Framework & Absolute Confidentiality",
+    "contact.trustResponse": "Direct Response Within 24h",
+    "contact.trustLocation": "TRT (UTC+3) Online & Istanbul",
+    "contact.step1": "Fill Details",
+    "contact.step2": "Review on WhatsApp",
+    "contact.step3": "Send Directly",
+    "contact.ethicsTitle": "Clinical Framework & Emergency Notice",
+    "contact.ethicsText": "These contact channels and consultation request form are not intended for acute emergency psychiatric crisis intervention. In case of immediate psychiatric emergency or risk of harm to oneself or others, please contact emergency medical services immediately (112 Emergency / 911 / local emergency hospital).",
+
     "about.profileLinkedin": "LinkedIn profile",
     "about.profileOrcid": "ORCID researcher record",
     "about.profileScholar": "Google Scholar publications",
@@ -996,7 +1201,41 @@
     "practice.inclusiveEyebrow": "APPROACH TO CARE",
     "practice.inclusiveTitle": "An inclusive, culturally responsive space",
     "practice.inclusiveDesc": "The work attends to each person’s life story, language, and cultural context, and takes an LGBTQI+-affirming and inclusive approach. The frame and needs of each consultation are discussed collaboratively.",
-    "practice.focusAreas": "Topics that may be explored in work with adults include anxiety and panic, fears and phobias, obsessions, trauma, grief and loss, depressive symptoms, stress, and relationship or family concerns.",
+    "practice.focusAreas": "Core areas addressed in work with adults: anxiety and generalized worry, panic attacks, obsessions (OCD), trauma and grief, fears and phobias, depressive symptoms, self-harm tendencies, attention and focus difficulties (ADHD), addictions, and relationship and attachment difficulties.",
+    "practice.inclusivePillar1Title": "Cultural & Linguistic Context",
+    "practice.inclusivePillar1Tag": "TR · EN · Kurmanji",
+    "practice.inclusivePillar1Desc": "Analytic listening that honors each person’s life story, mother tongue, and socio-cultural context.",
+    "practice.inclusivePillar2Title": "LGBTQI+-Affirming & Inclusive Care",
+    "practice.inclusivePillar2Tag": "Affirming Ethics",
+    "practice.inclusivePillar2Desc": "A safe, non-pathologizing clinical space that affirms gender identity and sexual orientation diversity.",
+    "practice.inclusivePillar3Title": "Collaboratively Built Frame",
+    "practice.inclusivePillar3Tag": "Collaborative Frame",
+    "practice.inclusivePillar3Desc": "Session rhythm, boundaries, and priorities are shaped together with the subject rather than through rigid templates.",
+    "practice.focusAreasHeading": "CORE AREAS EXPLORED IN WORK WITH ADULTS",
+    "practice.focusAreasSub": "Primary clinical themes addressed in individual psychoanalytic psychotherapy and consultations",
+    "practice.focusAreasCount": "10 Clinical Areas",
+    "practice.topic1Title": "Anxiety & Worry",
+    "practice.topic1Desc": "Persistent worry, intolerance of uncertainty, and inner restlessness",
+    "practice.topic2Title": "Panic Attacks",
+    "practice.topic2Desc": "Acute somatic constriction, palpitations, and fear of losing control",
+    "practice.topic3Title": "Obsessions (OCD)",
+    "practice.topic3Desc": "Intrusive thoughts, cycles of doubt, and compulsive rituals",
+    "practice.topic4Title": "Trauma & Grief",
+    "practice.topic4Desc": "Bereavement, overwhelming life events, and traces of collective trauma",
+    "practice.topic5Title": "Fears & Phobias",
+    "practice.topic5Desc": "Intense avoidance and symptom formations around specific objects or situations",
+    "practice.topic6Title": "Depressive Symptoms",
+    "practice.topic6Desc": "Loss of vitality and meaning, low mood, and subjective withdrawal",
+    "practice.topic7Title": "Self-Harm Tendencies",
+    "practice.topic7Desc": "Unspoken psychic pain enacted through the body and impulsive states",
+    "practice.topic8Title": "Attention Difficulties (ADHD)",
+    "practice.topic8Desc": "Distractibility, procrastination, and executive-focus struggles",
+    "practice.topic9Title": "Addictions",
+    "practice.topic9Desc": "Recurring cycles of substance, object, or behavioral dependency",
+    "practice.topic10Title": "Relationship & Attachment Issues",
+    "practice.topic10Desc": "Intimacy, boundaries, fear of abandonment, and repeating relational impasses",
+    "practice.focusFooterNote": "Beyond diagnostic labels, every symptom is listened to within the person’s singular subjective history.",
+    "practice.focusFooterCta": "Schedule an Initial Consultation",
     "practice.futurePublicationsLink": "View existing publications",
     "practice.futureNewsLink": "Follow announcements",
     "practice.futureMediaDesc": "A regular blog and video series remain future plans. A link to an existing YouTube video is available in the About section.",
@@ -1015,46 +1254,78 @@
     "practice.pageTitle": "Clinical Practice, Psychotherapy & Supervision",
     "practice.pageLead": "“Psychoanalysis is not the transmission of knowledge; it is the subject’s encounter with the truth of their desire.” Clinical work is guided by an ethical frame and discussed in relation to each person’s needs.",
     "practice.profileBadge": "CLINICAL PSYCHOLOGIST • CSPC, 2026",
+    "practice.profileOrientation": "LACANIAN PSYCHOANALYTIC ORIENTATION",
+    "practice.profileCaptionSub": "Clinical Psychologist, Ph.D. • University at Buffalo (SUNY) CSPC, 2026",
     "practice.profileTitle": "Listening Analytically to the Meaning of Symptoms",
-    "practice.profileDesc": "A Lacanian psychoanalytic orientation does not treat a symptom as a fault to silence. It listens to it as a possible expression of unconscious desire and conflicts that have not yet found words, sometimes carried in bodily experience or relationships. Sessions make space for each person to explore their experience rather than follow standard prescriptions.",
+    "practice.profileDesc": "A Lacanian psychoanalytic orientation does not treat a symptom as a fault to silence. It listens to it as a ciphered expression of unconscious desire and conflicts that have not yet found words, carried in bodily experience or relationships. Sessions accompany each subject in assuming responsibility for their own desire rather than following standard prescriptions.",
+    "practice.profileEthos": "Every consultation is listened to within the person’s own words, subjective temporality, and singular life history, guided by strict confidentiality and professional ethics.",
+    "practice.profileCredsAria": "Academic equivalency and continuing education records",
+    "practice.profileCred1Tag": "WES · DOCTORAL EQUIVALENCY",
+    "practice.profileCred1Title": "U.S. Doctoral Equivalency",
+    "practice.profileCred1Desc": "WES evaluation confirming U.S. doctoral equivalency in Clinical Psychology (METU Ph.D.).",
+    "practice.profileCred2Tag": "NYSED · EDUCATION REQUIREMENT",
+    "practice.profileCred2Title": "First Education Requirement",
+    "practice.profileCred2Desc": "NYSED first education requirement met; further psychoanalytic training remains ongoing.",
+    "practice.profileCred3Tag": "APsA · CONTINUING EDUCATION",
+    "practice.profileCred3Title": "APsA 2026 CE Credit",
+    "practice.profileCred3Desc": "44.5 continuing education contact hours recorded at the APsA 2026 National Meeting.",
     "practice.profileCredentials": "WES evaluation of U.S. doctoral equivalency • NYSED: first education requirement met; further psychoanalytic training remains • APsA 2026 continuing education credit",
+    "practice.profileCta": "Request Consultation",
+    "practice.profileVerifyLink": "Academic verification & records",
+    "practice.profileLangs": "Turkish • English (C1) • Kurmanji",
+    "practice.pillarsEyebrow": "AREAS OF PRACTICE & EXPERTISE",
+    "practice.pillarsTitle": "Three Core Clinical & Institutional Pillars",
+    "practice.pillarsSubtitle": "Deep clinical expertise spanning individual psychoanalytic psychotherapy, professional supervision, and frontline trauma consultation.",
     "practice.card1Number": "01 / PSYCHOANALYSIS & THERAPY",
     "practice.card1Title": "Individual Psychoanalytic Psychotherapy",
     "practice.card1Desc": "Individual psychoanalytic psychotherapy for adults. Guided by free association, the work explores unconscious dynamics related to anxiety, grief, relationship impasses, obsessions, and conflicts around identity.",
-    "practice.card1Item1": "• Free association and close attention to speech",
-    "practice.card1Item2": "• Lacanian punctuation (scansion) and session rhythm",
-    "practice.card1Item3": "• Exploring recurring patterns and impasses of desire",
-    "practice.card1Item4": "• Sessions available in Turkish, English (C1), and Kurmanji",
+    "practice.card1Item1": "Free association and close attention to speech",
+    "practice.card1Item2": "Lacanian punctuation (scansion) and session rhythm",
+    "practice.card1Item3": "Exploring recurring patterns and impasses of desire",
+    "practice.card1Item4": "Sessions available in Turkish, English (C1), and Kurmanji",
     "practice.card1Format": "<strong>Format:</strong> Session format and current in-person availability are confirmed before an appointment.",
-    "practice.card1Cta": "Request an Initial Consultation →",
+    "practice.card1Cta": "Request an Initial Consultation",
     "practice.card2Number": "02 / SUPERVISION",
     "practice.card2Title": "Clinical Supervision & Case Formulation",
     "practice.card2Desc": "Case supervision for clinical psychologists, psychotherapists, psychiatrists, and counselors. The work may focus on the structure of a client’s discourse, transference and countertransference impasses, and the clinician’s analytic stance.",
-    "practice.card2Item1": "• Lacanian structural formulation (neurosis, psychosis, perversion)",
-    "practice.card2Item2": "• Working with transference and the analyst’s desire",
-    "practice.card2Item3": "• Considering secondary trauma in severe trauma and crisis cases",
-    "practice.card2Item4": "• Individual or small, closed groups of 2–4 participants",
+    "practice.card2Item1": "Lacanian structural formulation (neurosis, psychosis, perversion)",
+    "practice.card2Item2": "Working with transference and the analyst’s desire",
+    "practice.card2Item3": "Considering secondary trauma in severe trauma and crisis cases",
+    "practice.card2Item4": "Individual or small, closed groups of 2–4 participants",
     "practice.card2Scope": "<strong>Context:</strong> Informed by experience at METU AYNA Clinical Psychology Support Unit.",
-    "practice.card2Cta": "Inquire About Supervision →",
+    "practice.card2Cta": "Inquire About Supervision",
     "practice.card3Number": "03 / MHPSS & TRAINING",
     "practice.card3Title": "Field & Organizational Trauma Consultation",
     "practice.card3Desc": "Organizational mental health and psychosocial support (MHPSS) and trauma consultation for humanitarian organizations, NGOs, crisis teams, and staff working in disaster settings.",
-    "practice.card3Item1": "• MHPSS programming and organizational capacity development",
-    "practice.card3Item2": "• Protocols to address compassion fatigue and prevent burnout",
-    "practice.card3Item3": "• Field programming aligned with IASC Guidelines",
-    "practice.card3Item4": "• Experience in Iraq, South Sudan, and the February 6 earthquake response",
+    "practice.card3Item1": "MHPSS programming and organizational capacity development",
+    "practice.card3Item2": "Protocols to address compassion fatigue and prevent burnout",
+    "practice.card3Item3": "Field programming aligned with IASC Guidelines",
+    "practice.card3Item4": "Experience in Iraq, South Sudan, and the February 6 earthquake response",
     "practice.card3Scope": "<strong>Organizational:</strong> Workshops tailored to an organization’s needs.",
-    "practice.card3Cta": "Request Organizational Consultation →",
+    "practice.card3Cta": "Request Organizational Consultation",
     "practice.frameEyebrow": "FRAME & CONFIDENTIALITY",
     "practice.frameTitle": "Clinical Frame & Professional Confidentiality",
     "practice.frameDesc": "The frame for sessions, confidentiality, and its limits are discussed together before clinical work begins.",
     "practice.frameItem1": "✓ <strong>Frame:</strong> Session frequency and format are planned together.",
     "practice.frameItem2": "✓ <strong>Confidentiality:</strong> Its terms and limits are clarified before the first session.",
     "practice.frameItem3": "✓ <strong>Online sessions:</strong> The platform and technical arrangements are confirmed before an appointment.",
+    "practice.frameItem1Title": "Analytical Frame & Frequency",
+    "practice.frameItem1Desc": "Session frequency and methodology are planned together with the client.",
+    "practice.frameItem2Title": "Professional & Ethical Confidentiality",
+    "practice.frameItem2Desc": "Confidentiality terms and limits are clarified before the first session.",
+    "practice.frameItem3Title": "Online & Digital Setup",
+    "practice.frameItem3Desc": "The platform and technical arrangements are confirmed prior to an appointment.",
     "practice.feesEyebrow": "SESSION FRAME",
     "practice.feesTitle": "Fees & Availability",
     "practice.feesDesc": "Fees and current availability are clarified directly before an initial consultation is arranged.",
-    "practice.feesCta": "Ask About Fees & Availability →",
+    "practice.feesPoint1Title": "Direct Communication:",
+    "practice.feesPoint1Desc": "Session fees and scheduling availability are shared directly prior to the initial consultation.",
+    "practice.feesPoint2Title": "Session Format:",
+    "practice.feesPoint2Desc": "Online (video call) and in-person options are evaluated during initial contact.",
+    "practice.feesPoint3Title": "Data Privacy:",
+    "practice.feesPoint3Desc": "For your confidentiality, no sensitive health or therapy details are requested via form.",
+    "practice.feesCta": "Inquire About Fees & Availability",
+    "practice.feesReassurance": "All questions are answered directly prior to the initial consultation.",
     "practice.faqEyebrow": "CLINICAL PROCESS & FRAME",
     "practice.faqTitle": "The Initial Consultation & Working Frame",
     "practice.faq1Desc": "Psychoanalytic work begins with an initial consultation, serving as a mutual introduction between the client and analyst. In this opening session, the reasons for seeking therapy, personal expectations, and suitability for psychoanalytic exploration are carefully assessed; session frequency, working language, and the foundational parameters of the analytical frame are clarified together.",
@@ -1068,6 +1339,17 @@
     "about.eventGalleryCaption1": "Loneliness and a psychoanalytic perspective",
     "about.eventGalleryCaption2": "11th Psychology Day · April 27, 2025",
     "about.bogaziciKicker": "SELECTED PRESENTATION · APRIL 27, 2025",
+    "about.ipaInstTag": "International Psychoanalytical Association",
+    "about.ipaDurationChip": "12-Month Project",
+    "about.ipaScopeChip": "Collective Trauma & Fieldwork",
+    "about.aynaInstTag": "METU · DergiPark Academic",
+    "about.peerCertId": "DergiPark Reviewer Certificate · ID: 1817613",
+    "about.peerCertView": "View certificate ↗",
+    "about.peerCertVerify": "Verify ↗",
+    "about.pubCountBadge": "4 Peer-Reviewed Articles",
+    "about.pubArchiveLink": "Archive ↗",
+    "about.pubIndexNote": "DergiPark · ULAKBİM · Google Scholar · ORCID",
+    "about.talksBadge": "Congress & Symposium Records",
     "about.bogaziciTitle": "Boğaziçi University 11th Psychology Day",
     "about.bogaziciDesc": "An invited talk titled “From Pathological Loneliness to Subjective Sociality: The Experience of Psychoanalytic Subjectivation.” The photos show selected moments from the talk’s discussion of the mirror stage and psychoanalytic perspectives on loneliness.",
     "about.bogaziciLink": "View the presentation in publications →",
@@ -1110,6 +1392,114 @@
     "footer.crisisText": "This website is not an emergency psychiatric crisis intervention service. In case of crisis, please contact your nearest emergency room or emergency services immediately.",
     "footer.copy": "© 2026 Dr. Ali Ihsan Yaka, Ph.D. All rights reserved.",
     "footer.privacy": "Website Privacy Notice",
+    "pub.heroEyebrow": "PUBLICATIONS & SCHOLARLY WORK",
+    "pub.heroSubBadge": "PEER-REVIEWED ARCHIVE • DISSERTATION • PROCEEDINGS",
+    "pub.heroTitle": "Publications, Dissertations & Presentations",
+    "pub.heroLead": "Peer-reviewed articles and presentations on psychoanalytic theory, language, the paternal function, and clinical formulations of social trauma.",
+    "pub.axesAria": "Theoretical research axes",
+    "pub.axis1Kicker": "AXIS 01 • STRUCTURE & LANGUAGE",
+    "pub.axis1Title": "Paternal Function & Psychic Structures",
+    "pub.axis1Desc": "Signifying chain, Name-of-the-Father, and foreclosure across psychosis and obsessional neurosis.",
+    "pub.axis2Kicker": "AXIS 02 • SUPERVISION",
+    "pub.axis2Title": "Discourse & Analytic Listening",
+    "pub.axis2Desc": "Transference impasses and the ethical listening position of clinicians in crisis settings.",
+    "pub.axis3Kicker": "AXIS 03 • SOCIAL TRAUMA",
+    "pub.axis3Title": "Genocide, Language & Subjectivation",
+    "pub.axis3Desc": "Traces of collective violence in speech, paranoiac knowledge, and subjective sociality.",
+    "pub.heroIdsAria": "Verified academic identifiers and indexes",
+    "pub.idScholarVal": "Citation & Publication Index",
+    "pub.idDergiparkVal": "ULAKBİM Record",
+    "pub.ledgerAria": "Scholarly corpus inventory",
+    "pub.ledgerEyebrow": "SCHOLARLY CORPUS INVENTORY",
+    "pub.ledger1Cat": "DOCTORAL MONOGRAPH • METU PH.D.",
+    "pub.ledger1Title": "Social Trauma & Discourse in Clinical Supervision",
+    "pub.ledger2Cat": "PEER-REVIEWED JOURNAL ARTICLES • 4 PAPERS",
+    "pub.ledger2Title": "AYNA Clinical Psychology, Turkish Psychological Articles & Psychology Kurdî",
+    "pub.ledger3Cat": "INTERNATIONAL SYMPOSIA & CONGRESSES • 4 PRESENTATIONS",
+    "pub.ledger3Title": "University at Buffalo CSPC, WPA Prague, Boğaziçi & ICCP",
+    "pub.ledger4Cat": "ACCREDITATIONS & CONTINUING ED • 4 CREDENTIALS",
+    "pub.ledger4Title": "APsA San Francisco (44.5 CE), IPU Berlin, GATA & DAPHB",
+    "pub.ledger5Cat": "GRANTS & PEER REVIEW • IPA & TÜBİTAK ULAKBİM",
+    "pub.ledger5Title": "IPA Global Research Grant & AYNA DergiPark Peer Review",
+    "pub.filterAria": "Filter publications by category",
+    "pub.filterAll": "All",
+    "pub.filterThesis": "Ph.D. Dissertation",
+    "pub.filterArticles": "Peer-Reviewed Articles",
+    "pub.filterTalks": "Symposia & Talks",
+    "pub.statThesesLabel": "Graduate Theses (METU Ph.D. & Ankara Univ. M.S.)",
+    "pub.statArticlesLabel": "Peer-Reviewed Articles & Translation (AYNA, TPA, Kurdî)",
+    "pub.statTalksLabel": "Symposia & Congress Proceedings (UB CSPC, WPA...)",
+    "pub.statAccreditationLabel": "International Accreditations & CE (APsA, IPU Berlin...)",
+    "pub.statGrantsLabel": "IPA Research Grant & Peer Review (London / TÜBİTAK)",
+    "pub.filterThesis": "Graduate Theses",
+    "pub.filterTalks": "Symposia & Congresses",
+    "pub.filterAccreditation": "Accreditations & Training",
+    "pub.filterReview": "Grants & Peer Review",
+    "pub.filterStatusAll": "17 Verified Scholarly Records • Chronological & Thematic Archive",
+    "pub.thesisPill": "DOCTORAL MONOGRAPH · PH.D.",
+    "pub.ankaraPill": "CLINICAL PSYCHOLOGY · M.S.",
+    "pub.ankaraDesc": "Empirical clinical psychology master's thesis investigating the predictive roles of adult attachment styles, early maladaptive schemas (EMS), and self-regulation on psychological symptoms (depression, anxiety, and somatization).",
+    "pub.ankaraAdvisor": "Thesis Advisor: Prof. Dr. Nesrin Hisli Şahin",
+    "pub.bursaPill": "CONGRESS ORAL PAPER",
+    "pub.bursaDesc": "Oral presentation examining the emotion-cognition dichotomy through Antonio Damasio's 'Descartes' Error' and emotional intelligence frameworks.",
+    "pub.bursaCaption": "9th National Psychology Students Congress · Bursa · Official Certificate (1800×1290)",
+    "pub.apsaPill": "CONTINUING MEDICAL EDUCATION (CE) • 44.5 HOURS",
+    "pub.apsaDesc": "Participation in the APsA 2026 National Meeting in San Francisco; awarded 44.5 AMA PRA Category 1 Credits / CE hours covering contemporary psychoanalytic technique, clinical practice, and advanced case deliberations.",
+    "pub.ipuPill": "60 ACADEMIC HOURS • CONTEMPORARY PSYCHOANALYSIS",
+    "pub.ipuDesc": "International Summer School at the International Psychoanalytic University (IPU) Berlin on 'Contemporary Developments in Psychoanalysis' (60 academic hours), accredited intensive training in Berlin, Germany.",
+    "pub.gataPill": "MILITARY PSYCHIATRY CONGRESS • CRISIS INTERVENTION",
+    "pub.gataDesc": "8th Military Psychiatry Days Congress organized by Gulhane Military Medical Academy (GATA) Department of Psychiatry in Ankara, Turkey: Crisis intervention and psychological trauma clinical training certificate.",
+    "pub.traumaPill": "INTERNATIONAL TRAUMA SYMPOSIUM • CLINICAL INTERVENTIONS",
+    "pub.traumaDesc": "6th International Psychological Trauma Symposium organized by DAPHB in Istanbul, Turkey; certified training in post-traumatic clinical interventions.",
+    "pub.ipaPill": "IPA GLOBAL RESEARCH GRANT",
+    "pub.ipaDesc": "12-month research program funded by the International Psychoanalytical Association (IPA) Research Committee: Investigating qualitative psychoanalytic clinical supervision and discourse analysis in social trauma and psychosocial field work.",
+    "pub.copyCitation": "Copy Citation",
+    "pub.thesisSpecsAria": "Doctoral dissertation bibliographic specifications",
+    "pub.specInstLabel": "INSTITUTION & SCHOOL",
+    "pub.specInstVal": "Middle East Technical University (METU) · Ph.D. in Clinical Psychology",
+    "pub.specAdvisorLabel": "DISSERTATION ADVISOR",
+    "pub.specFieldLabel": "FIELD SITE & THEORETICAL AXIS",
+    "pub.specFieldVal": "Nineveh Plains, Iraq · Lacanian Discourse Analysis & Supervision",
+    "pub.specEquivLabel": "INTERNATIONAL ACCREDITATION",
+    "pub.specEquivVal": "WES U.S. Doctoral Equivalency · Registration No: 15141",
+    "pub.symposiumPill": "INTERNATIONAL SYMPOSIUM",
+    "pub.cspcDesc": "Presented at the University at Buffalo (SUNY) CSPC 2026 Spring Symposium, this paper examines the genocide of Êzidî women through Lacanian accounts of paranoiac knowledge and language—analyzing how violence targets the symbolic order and communication as “communicide.”",
+    "pub.cspcTopicTag": "Paranoiac Language & Genocide",
+    "pub.wpaPill": "WORLD CONGRESS OF PSYCHIATRY",
+    "pub.wpaDesc": "Accepted for the 25th World Congress of Psychiatry in Prague, this study uses a Lacanian psychoanalytic perspective to examine transference, countertransference, and secondary trauma among mental health workers supporting survivors of the Êzidî genocide in Iraq’s Nineveh Plains.",
+    "pub.wpaTopicTag": "Clinical Supervision & Social Trauma",
+    "pub.invitedTalkPill": "INVITED KEYNOTE TALK",
+    "pub.bogaziciTopicTag1": "The Mirror Stage (Le stade du miroir)",
+    "pub.bogaziciTopicTag2": "Psychoanalytic Subjectivation",
+    "pub.peerReviewedPill": "ULAKBİM PEER-REVIEWED JOURNAL",
+    "pub.ayna2024Pages": "Vol. 11 · Issue 1 · pp. 1–37",
+    "pub.ayna2024Topic": "Paternal Metaphor & Foreclosure (Forclusion)",
+    "pub.interactiveTopologyBtn": "Interactive Topological Diagram →",
+    "pub.ayna2021Pages": "Vol. 8 · Issue 2 · pp. 199–220",
+    "pub.ayna2021Topic": "Obsessional Neurosis & Name-of-the-Father",
+    "pub.kurdiTypePill": "JOURNAL PUBLICATION · KURMANJI",
+    "pub.kurdiMetaTranslator": "Translated by Aydin Rengîn",
+    "pub.kurdiMetaLang": "Language: Kurmanji",
+    "pub.tpyTypePill": "EMPIRICAL RESEARCH ARTICLE",
+    "pub.tpyMetaCoauthor": "Co-author: Prof. Dr. Nesrin Hisli Şahin",
+    "pub.tpyMetaTopic": "Adult Attachment & Schemas",
+    "pub.iccpTypePill": "INTERNATIONAL CONGRESS PAPER",
+    "pub.iccpDesc": "International conference paper examining the relationships among attachment patterns, early maladaptive schemas, self-regulation processes, and psychological symptoms.",
+    "pub.iccpMetaTopic": "Attachment, Schemas & Self-Regulation",
+    "pub.reviewTypePill": "PEER-REVIEW RECORD",
+    "pub.reviewDesc": "Double-blind academic peer-review evaluation record completed for the peer-reviewed AYNA Clinical Psychology Journal via TÜBİTAK ULAKBİM DergiPark.",
+    "pub.reviewMetaId": "Record No: 1845184",
+    "pub.reviewMetaRole": "Double-Blind Peer Review",
+    "pub.reviewCaption": "DergiPark / AYNA Clinical Psychology Journal · Verified Peer-Review Certificate",
+    "pub.hubAria": "Academic indexes and verifiable researcher profiles",
+    "pub.hubEyebrow": "SCHOLARLY INDEXES & OPEN-ACCESS VERIFICATION",
+    "pub.hubTitle": "International Academic Profiles & Citation Records",
+    "pub.hubDesc": "Peer-reviewed journal articles, ORCID researcher record, international conference proceedings, and the open-access doctoral dissertation can be verified directly across official scholarly databases.",
+    "pub.hubScholarSub": "Citation index and academic publication list",
+    "pub.hubOrcidSub": "International researcher identifier record",
+    "pub.hubDergiparkName": "DergiPark Researcher Profile",
+    "pub.hubDergiparkSub": "National peer-reviewed articles & review record",
+    "pub.hubRgSub": "Research outputs and academic network",
     "footer.splashReplay": "Back to top"
   }
 };
@@ -1491,6 +1881,9 @@
     "DergiPark Dizini →": "View the DergiPark record →",
     "HAKEMLİ MAKALE • AYNA KLİNİK PSİKOLOJİ 2021": "PEER-REVIEWED ARTICLE • AYNA CLINICAL PSYCHOLOGY 2021",
     "Obsesyonel Yapıda Baba İşlevinin Lacanyen Perspektiften İncelenmesi": "The Paternal Function in Obsessional Structure from a Lacanian Perspective",
+    "Obsesyonel Yapıda Baba İşlevinin Lacanyen Açıdan İncelenmesi": "Examining the Paternal Function in Obsessional Structure from a Lacanian Perspective",
+    "Irak'taki Ruh Sağlığı Çalışanlarının Söyleminin İncelenmesi: Klinik Süpervizyonda Toplumsal Travmaya Lacanyen Bir Yaklaşım": "Turkish Title: Examining the Discourse of Mental Health Workers in Iraq: A Lacanian Approach to Social Trauma in Clinical Supervision",
+    "Makale PDF ↗": "Article PDF ↗",
     "Obsesyonel nevrozda borç, suçluluk, imkansız arzu ve Babanın-Adı'nın yasa koyucu rolü arasındaki klinik ilişkiler. Vaka materyali üzerinden analitik müdahaleler ve gösterenin işlevi ayrıntılandırılmıştır.": "The article examines clinical relations among debt, guilt, impossible desire, and the law-giving role of the Name-of-the-Father in obsessional neurosis. Analytic interventions and the function of the signifier are discussed through case material.",
     "ULUSAL HAKEMLİ • TÜRK PSİKOLOJİ YAZILARI": "NATIONAL PEER-REVIEWED JOURNAL • TURKISH PSYCHOLOGICAL ARTICLES",
     "Yakın İlişkiler Envanteri’nin Kendilik Algısı, Olumsuz Otomatik Düşünceler ve Psikopatolojik Belirtiler Bağlamında İncelenmesi": "The Relationship Inventory in the Context of Self-Perception, Negative Automatic Thoughts, and Psychopathological Symptoms",
@@ -1566,10 +1959,10 @@
   function setLanguage(lang) {
     if (!translations[lang]) lang = 'tr';
     const isHomepage = Boolean(document.getElementById('welcomeHeading'));
-    const supportsFullTranslation = Boolean(document.querySelector('.lang-switch-minimal, .lang-toggle'));
+    const supportsFullTranslation = Boolean(document.querySelector('.lang-switch-minimal, .lang-toggle, .lang-switch'));
     const activeLang = supportsFullTranslation ? lang : 'tr';
     if (supportsFullTranslation) localStorage.setItem('aiy_lang', activeLang);
-    document.querySelectorAll('.lang-switch-minimal, .lang-toggle').forEach(group => {
+    document.querySelectorAll('.lang-switch-minimal, .lang-toggle, .lang-switch').forEach(group => {
       group.hidden = !supportsFullTranslation;
     });
     document.documentElement.lang = activeLang;
@@ -1678,6 +2071,8 @@
     const replayButton = document.getElementById('replaySplashBtn');
     const splashSeenKey = 'aiy_splash_seen_v1';
     let splashAutoCloseTimer = 0;
+    let isClosed = false;
+
     if (!splash) {
       replayButton?.addEventListener('click', (event) => {
         event.preventDefault();
@@ -1700,62 +2095,124 @@
       hasSeenSplash = hasSeenSplash || sessionStorage.getItem('aiy_splash_seen_session_v4') === '1';
       if (hasSeenSplash) localStorage.setItem(splashSeenKey, '1');
     } catch (_) {}
+
     if (hasSeenSplash) {
       document.documentElement.classList.add('splash-visited');
       splash.classList.add('is-hidden');
       splash.setAttribute('aria-hidden', 'true');
       splash.inert = true;
+      splash.style.display = 'none';
+      document.body.classList.remove('splash-active');
+      setBackgroundInert(false);
     } else {
-      splash.classList.remove('is-hidden');
+      splash.classList.remove('is-hidden', 'splash-closing');
       splash.removeAttribute('aria-hidden');
       splash.inert = false;
+      splash.style.display = '';
       document.body.classList.add('splash-active');
       setBackgroundInert(true);
       window.requestAnimationFrame(() => enterButton?.focus({ preventScroll: true }));
     }
 
     const closeSplash = () => {
+      if (isClosed) return;
+      isClosed = true;
+
       window.clearTimeout(splashAutoCloseTimer);
       splashAutoCloseTimer = 0;
+
       try { localStorage.setItem(splashSeenKey, '1'); } catch (_) {}
       try { sessionStorage.removeItem('aiy_splash_seen_session_v4'); } catch (_) {}
-      document.documentElement.classList.add('splash-visited');
-      splash.classList.add('is-hidden');
-      splash.setAttribute('aria-hidden', 'true');
-      splash.inert = true;
+
+      // Immediately restore scrolling and unblock all background regions
       document.body.classList.remove('splash-active');
       setBackgroundInert(false);
+
+      // Trigger smooth fade-out
+      splash.classList.add('splash-closing');
+
+      const finalizeClose = () => {
+        splash.classList.add('is-hidden');
+        splash.classList.remove('splash-closing');
+        splash.setAttribute('aria-hidden', 'true');
+        splash.inert = true;
+        splash.style.display = 'none';
+        document.documentElement.classList.add('splash-visited');
+      };
+
+      // 260ms smooth transition, guaranteed fallback
+      window.setTimeout(finalizeClose, 260);
+
       document.getElementById('welcome')?.scrollIntoView({
         behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
         block: 'start'
       });
-      // Do not move focus to the heading after the timed dismissal: mobile
-      // Safari draws a persistent focus rectangle around the hero title.
     };
 
     const scheduleSplashClose = () => {
       window.clearTimeout(splashAutoCloseTimer);
-      splashAutoCloseTimer = window.setTimeout(closeSplash, 5000);
+      splashAutoCloseTimer = window.setTimeout(closeSplash, 3800);
     };
 
-    enterButton?.addEventListener('click', closeSplash);
+    // 1. Enter button click
+    enterButton?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeSplash();
+    });
+
+    // 2. Click anywhere on splash curtain (backdrop, portrait, card)
+    splash.addEventListener('click', () => {
+      closeSplash();
+    });
+
+    // 3. Scroll wheel / touchpad down immediately dismisses curtain
+    const onWheel = (e) => {
+      if (e.deltaY > 6) closeSplash();
+    };
+    splash.addEventListener('wheel', onWheel, { passive: true });
+
+    // 4. Touch swipe gesture dismisses curtain on mobile
+    let touchStartY = 0;
+    splash.addEventListener('touchstart', (e) => {
+      touchStartY = e.touches[0].clientY;
+    }, { passive: true });
+    splash.addEventListener('touchmove', (e) => {
+      const dy = touchStartY - e.touches[0].clientY;
+      if (Math.abs(dy) > 20) closeSplash();
+    }, { passive: true });
+
+    // 5. Timer schedule
     if (!hasSeenSplash) scheduleSplashClose();
+
+    // 6. Replay button in footer
     replayButton?.addEventListener('click', (event) => {
       event.preventDefault();
       try { localStorage.removeItem(splashSeenKey); } catch (_) {}
+      isClosed = false;
       document.documentElement.classList.remove('splash-visited');
-      splash.classList.remove('is-hidden');
+      splash.classList.remove('is-hidden', 'splash-closing');
       splash.removeAttribute('aria-hidden');
       splash.inert = false;
+      splash.style.display = '';
       document.body.classList.add('splash-active');
       setBackgroundInert(true);
       enterButton?.focus({ preventScroll: true });
       window.scrollTo({ top: 0, behavior: 'auto' });
+
+      // Restart progress bar animation
+      const pBar = splash.querySelector('.splash-progress-bar');
+      if (pBar) {
+        pBar.style.animation = 'none';
+        void pBar.offsetWidth; // trigger reflow
+        pBar.style.animation = '';
+      }
       scheduleSplashClose();
     });
+
+    // 7. Keyboard navigation
     document.addEventListener('keydown', (event) => {
-      if (splash.classList.contains('is-hidden')) return;
-      if (event.key === 'Escape') {
+      if (splash.classList.contains('is-hidden') || isClosed) return;
+      if (['Escape', 'Enter', ' ', 'ArrowDown', 'PageDown'].includes(event.key)) {
         event.preventDefault();
         closeSplash();
       } else if (event.key === 'Tab') {
@@ -1765,7 +2222,7 @@
     });
   }
 
-  // -------------------------------------------------------------
+    // -------------------------------------------------------------
   // 2. SPLASH SCREEN (MONOGRAPH ART CURTAIN)
   // -------------------------------------------------------------
   // -------------------------------------------------------------
@@ -1877,8 +2334,8 @@
       const drawerBrand = document.createElement('a');
       drawerBrand.className = 'drawer-brand';
       drawerBrand.href = 'index.html';
-      drawerBrand.setAttribute('aria-label', 'Dr. Ali İhsan Yaka');
-      drawerBrand.innerHTML = '<img src="assets/images/psyche-structure-mark.svg" alt="" width="42" height="42" aria-hidden="true"><span><strong>Dr. Ali İhsan Yaka</strong><small data-i18n="header.sub">Doktor Klinik Psikolog • Ph.D.</small></span>';
+      drawerBrand.setAttribute('aria-label', 'Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek');
+      drawerBrand.innerHTML = '<img class="brand-logo-img drawer-logo-img" src="assets/images/ali-ihsan-yaka-logo-kinetic.svg" alt="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek" width="520" height="180">';
       drawerHeader.append(drawerBrand, drawerClose);
       panel.append(drawerHeader, list);
       if (cta) {
@@ -2300,14 +2757,13 @@
   }
 
   // -------------------------------------------------------------
-  // 9. FOOTER ANIMATED EFFECTS (Interactive Synaptic Particles & Ambient Motion)
+  // 9. FOOTER AMBIENT CONSTELLATION (Zero-Jank Static Canvas Render)
   // -------------------------------------------------------------
   function initFooterEffects() {
     const footers = document.querySelectorAll('.site-footer');
     if (!footers.length) return;
 
     footers.forEach(footer => {
-      // 1. Ensure ambient container exists
       let ambient = footer.querySelector('.footer-ambient-effects');
       if (!ambient) {
         ambient = document.createElement('div');
@@ -2329,215 +2785,182 @@
       const ctx = canvas.getContext('2d', { alpha: true });
       if (!ctx) return;
 
-      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-      let isVisible = false;
-      let animFrameId = 0;
-      let lastTime = 0;
       let width = 0;
       let height = 0;
-      let mouseX = -9999;
-      let mouseY = -9999;
-      let targetMouseX = -9999;
-      let targetMouseY = -9999;
+      let particles = [];
 
-      const resize = () => {
+      const buildAndDraw = () => {
         const rect = footer.getBoundingClientRect();
         width = Math.max(rect.width || window.innerWidth, 300);
         height = Math.max(rect.height || 360, 200);
-        const dpr = Math.min(window.devicePixelRatio || 1, 2);
-        canvas.width = Math.floor(width * dpr);
-        canvas.height = Math.floor(height * dpr);
-        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      };
+        canvas.width = Math.floor(width);
+        canvas.height = Math.floor(height);
 
-      resize();
-
-      // Palette strictly matching existing site colors:
-      // Warm gold [217, 193, 143] and subtle indigo-silver [164, 184, 218]
-      const count = width < 768 ? 24 : 44;
-      const particles = [];
-
-      for (let i = 0; i < count; i++) {
-        const isGold = Math.random() > 0.4;
-        particles.push({
-          x: Math.random() * width,
-          y: Math.random() * height,
-          baseVx: (Math.random() - 0.5) * 0.3,
-          baseVy: -(0.16 + Math.random() * 0.28), // gentle upward float
-          vx: 0,
-          vy: 0,
-          radius: 0.7 + Math.random() * 1.3,
-          baseAlpha: 0.22 + Math.random() * 0.38,
-          alpha: 0.25,
-          pulsePhase: Math.random() * Math.PI * 2,
-          pulseSpeed: 0.02 + Math.random() * 0.025,
-          color: isGold ? [217, 193, 143] : [164, 184, 218]
-        });
-      }
-
-      function updateParticles() {
-        if (targetMouseX > 0 && targetMouseY > 0) {
-          mouseX += (targetMouseX - mouseX) * 0.12;
-          mouseY += (targetMouseY - mouseY) * 0.12;
-        } else {
-          mouseX = -9999;
-          mouseY = -9999;
+        const count = width < 768 ? 16 : 28;
+        particles = [];
+        for (let i = 0; i < count; i++) {
+          const isGold = (i % 3) !== 0;
+          particles.push({
+            x: ((i * 137.5) % 100) / 100 * width,
+            y: ((i * 73.1 + 19) % 100) / 100 * height,
+            radius: 0.8 + (i % 3) * 0.45,
+            alpha: 0.22 + (i % 4) * 0.07,
+            color: isGold ? [217, 193, 143] : [164, 184, 218]
+          });
         }
 
-        for (let i = 0; i < particles.length; i++) {
-          const p = particles[i];
-          p.pulsePhase += p.pulseSpeed;
-          const shimmer = 0.82 + Math.sin(p.pulsePhase) * 0.26;
-          p.alpha = p.baseAlpha * shimmer;
-
-          // Natural ambient drift
-          p.x += p.baseVx + Math.sin(p.pulsePhase * 0.7) * 0.14 + p.vx;
-          p.y += p.baseVy + p.vy;
-
-          // Drag to dampen interactive velocities
-          p.vx *= 0.93;
-          p.vy *= 0.93;
-
-          // Interactive mouse deflection
-          if (mouseX > 0 && mouseY > 0) {
-            const dx = p.x - mouseX;
-            const dy = p.y - mouseY;
-            const dist = Math.hypot(dx, dy);
-            const maxDist = 130;
-            if (dist < maxDist && dist > 1) {
-              const force = (1 - dist / maxDist) * 1.6;
-              p.vx += (dx / dist) * force * 0.55;
-              p.vy += (dy / dist) * force * 0.55;
-              p.alpha = Math.min(0.92, p.alpha + (1 - dist / maxDist) * 0.4);
-            }
-          }
-
-          // Screen wrap-around
-          if (p.x < -20) p.x = width + 20;
-          else if (p.x > width + 20) p.x = -20;
-          if (p.y < -20) p.y = height + 20;
-          else if (p.y > height + 20) p.y = -20;
-        }
-      }
-
-      function draw() {
         ctx.clearRect(0, 0, width, height);
 
-        // Draw faint synaptic connecting threads
-        const maxDist = 95;
-        const maxDistSq = maxDist * maxDist;
+        // Single batched stroke for faint synaptic threads
+        const maxDistSq = 110 * 110;
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(217, 193, 143, 0.065)';
+        ctx.lineWidth = 0.6;
         for (let i = 0; i < particles.length; i++) {
           const p1 = particles[i];
           for (let j = i + 1; j < particles.length; j++) {
             const p2 = particles[j];
             const dx = p1.x - p2.x;
             const dy = p1.y - p2.y;
-            const distSq = dx * dx + dy * dy;
-            if (distSq < maxDistSq) {
-              const dist = Math.sqrt(distSq);
-              const edgeAlpha = (1 - dist / maxDist) * 0.12 * Math.min(p1.alpha, p2.alpha);
-              if (edgeAlpha > 0.005) {
-                ctx.beginPath();
-                ctx.moveTo(p1.x, p1.y);
-                ctx.lineTo(p2.x, p2.y);
-                ctx.strokeStyle = `rgba(217, 193, 143, ${edgeAlpha.toFixed(3)})`;
-                ctx.lineWidth = 0.55;
-                ctx.stroke();
-              }
+            if (dx * dx + dy * dy < maxDistSq) {
+              ctx.moveTo(p1.x, p1.y);
+              ctx.lineTo(p2.x, p2.y);
             }
           }
         }
+        ctx.stroke();
 
-        // Draw glowing particles
         for (let i = 0; i < particles.length; i++) {
           const p = particles[i];
           ctx.beginPath();
           ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-          ctx.fillStyle = `rgba(${p.color[0]}, ${p.color[1]}, ${p.color[2]}, ${p.alpha.toFixed(3)})`;
+          ctx.fillStyle = `rgba(${p.color[0]}, ${p.color[1]}, ${p.color[2]}, ${p.alpha.toFixed(2)})`;
           ctx.fill();
-
-          // Subtle halo around larger particles
-          if (p.radius > 1.25) {
-            ctx.beginPath();
-            ctx.arc(p.x, p.y, p.radius * 2.4, 0, Math.PI * 2);
-            ctx.fillStyle = `rgba(${p.color[0]}, ${p.color[1]}, ${p.color[2]}, ${(p.alpha * 0.22).toFixed(3)})`;
-            ctx.fill();
-          }
         }
-      }
+      };
 
-      function loop(timestamp) {
-        animFrameId = 0;
-        if (!isVisible || document.hidden || reducedMotion.matches) return;
-        if (timestamp - lastTime >= 24) { // ~40-60fps smooth
-          updateParticles();
-          draw();
-          lastTime = timestamp;
-        }
-        animFrameId = requestAnimationFrame(loop);
-      }
-
-      function syncMotion() {
-        if (isVisible && !document.hidden && !reducedMotion.matches && !animFrameId) {
-          animFrameId = requestAnimationFrame(loop);
-        } else if ((!isVisible || document.hidden || reducedMotion.matches) && animFrameId) {
-          cancelAnimationFrame(animFrameId);
-          animFrameId = 0;
-        }
-      }
-
-      // Pointer event listeners on footer
-      footer.addEventListener('pointermove', (e) => {
-        const rect = footer.getBoundingClientRect();
-        targetMouseX = e.clientX - rect.left;
-        targetMouseY = e.clientY - rect.top;
-      }, { passive: true });
-
-      footer.addEventListener('pointerleave', () => {
-        targetMouseX = -9999;
-        targetMouseY = -9999;
-      }, { passive: true });
-
-      // Viewport visibility
-      if ('IntersectionObserver' in window) {
-        new IntersectionObserver((entries) => {
-          isVisible = entries.some(entry => entry.isIntersecting);
-          syncMotion();
-        }, { threshold: 0.02 }).observe(footer);
-      } else {
-        isVisible = true;
-        syncMotion();
-      }
+      buildAndDraw();
 
       let resizeTimer = 0;
       window.addEventListener('resize', () => {
         clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(() => {
-          resize();
-          if (!animFrameId && isVisible) draw();
-        }, 150);
+        resizeTimer = setTimeout(buildAndDraw, 180);
       }, { passive: true });
-
-      document.addEventListener('visibilitychange', syncMotion);
-      reducedMotion.addEventListener?.('change', syncMotion);
-
-      draw();
-      syncMotion();
     });
   }
 
   initFooterEffects();
 
-  // Dynamic spotlight glow and interactive hover physics for practice-method-band
-  const methodBands = document.querySelectorAll('.practice-method-band');
-  methodBands.forEach(band => {
-    band.addEventListener('mousemove', (e) => {
-      const rect = band.getBoundingClientRect();
-      const x = Math.round(e.clientX - rect.left);
-      const y = Math.round(e.clientY - rect.top);
-      band.style.setProperty('--mouse-x', `${x}px`);
-      band.style.setProperty('--mouse-y', `${y}px`);
-    }, { passive: true });
+  // RAF-throttled spotlight helper (prevents synchronous getBoundingClientRect layout thrashing)
+  function bindSmoothSpotlight(selector) {
+    const cards = document.querySelectorAll(selector);
+    cards.forEach(card => {
+      let rafId = 0;
+      let lastX = 0;
+      let lastY = 0;
+      card.addEventListener('pointermove', (e) => {
+        lastX = e.clientX;
+        lastY = e.clientY;
+        if (rafId) return;
+        rafId = requestAnimationFrame(() => {
+          rafId = 0;
+          const rect = card.getBoundingClientRect();
+          card.style.setProperty('--mouse-x', `${Math.round(lastX - rect.left)}px`);
+          card.style.setProperty('--mouse-y', `${Math.round(lastY - rect.top)}px`);
+        });
+      }, { passive: true });
+    });
+  }
+
+  bindSmoothSpotlight('.practice-method-band, .contact-window-card, .form-card-outer, .pillar-card-outer');
+
+  // Publication Category Filter on yayinlar.html
+  const pubFilterBtns = document.querySelectorAll('.pub-filter-btn[data-pub-filter]');
+  const pubArchiveCards = document.querySelectorAll('#pubArchiveStack .pub-window-card[data-pub-category]');
+  const pubFilterStatus = document.getElementById('pubFilterStatus');
+  if (pubFilterBtns.length && pubArchiveCards.length) {
+    pubFilterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-pub-filter') || 'all';
+        pubFilterBtns.forEach(b => {
+          const active = b === btn;
+          b.classList.toggle('is-active', active);
+          b.setAttribute('aria-pressed', active ? 'true' : 'false');
+        });
+        let visibleCount = 0;
+        let animatedIdx = 0;
+        pubArchiveCards.forEach(card => {
+          const cat = card.getAttribute('data-pub-category') || '';
+          const match = filter === 'all' || cat.split(/\s+/).includes(filter);
+          card.hidden = !match;
+          card.classList.toggle('is-filtered-out', !match);
+          if (match) {
+            visibleCount++;
+            animatedIdx++;
+          }
+        });
+        if (pubFilterStatus) {
+          const currentLang = document.documentElement.lang === 'en' ? 'en' : 'tr';
+          if (filter === 'all') {
+            pubFilterStatus.textContent = translations[currentLang]['pub.filterStatusAll'];
+          } else {
+            const labelEl = btn.querySelector('[data-i18n]');
+            const catLabel = labelEl ? labelEl.textContent.trim() : '';
+            pubFilterStatus.textContent = currentLang === 'en'
+              ? `Showing ${visibleCount} verified record${visibleCount === 1 ? '' : 's'} in ${catLabel}`
+              : `${catLabel} kategorisinde ${visibleCount} doğrulanmış akademik kayıt gösteriliyor`;
+          }
+        }
+      });
+    });
+  }
+
+  // Publication Citation Copy Button with toast feedback
+  const copyButtons = document.querySelectorAll('.pub-copy-btn[data-citation]');
+  copyButtons.forEach(btn => {
+    btn.addEventListener('click', async (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const citation = btn.getAttribute('data-citation');
+      if (!citation) return;
+      const textSpan = btn.querySelector('.pub-copy-text');
+      const origText = textSpan ? textSpan.textContent : '';
+      const isEn = document.documentElement.lang === 'en';
+
+      const doFeedback = () => {
+        if (textSpan) textSpan.textContent = isEn ? 'Copied ✓' : 'Kopyalandı ✓';
+        btn.classList.add('is-copied');
+        setTimeout(() => {
+          if (textSpan) textSpan.textContent = origText;
+          btn.classList.remove('is-copied');
+        }, 2200);
+      };
+
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(citation);
+          doFeedback();
+        } else {
+          throw new Error('Clipboard API unavailable');
+        }
+      } catch (err) {
+        try {
+          const ta = document.createElement('textarea');
+          ta.value = citation;
+          ta.style.position = 'fixed';
+          ta.style.opacity = '0';
+          document.body.appendChild(ta);
+          ta.focus();
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          doFeedback();
+        } catch (e2) {
+          console.warn('Fallback copy error', e2);
+          doFeedback();
+        }
+      }
+    });
   });
 
   setLanguage(savedLang);

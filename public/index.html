@@ -33,7 +33,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 
   <link rel="icon" href="assets/images/psyche-structure-mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="app.css?v=5.52">
+  <link rel="stylesheet" href="app.css?v=5.90">
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -105,6 +105,7 @@
       <button type="button" id="splashEnterBtn" class="splash-enter-btn" aria-label="Çalışmaları keşfet" data-i18n-aria-label="splash.enterBtn">
         <span data-i18n="splash.enterBtn">Çalışmaları keşfet &darr;</span>
       </button>
+      <div class="splash-progress-track" aria-hidden="true"><div class="splash-progress-bar"></div></div>
     </div>
   </section>
 
@@ -113,12 +114,8 @@
        ===================================================================== -->
   <header class="site-header" role="banner" id="siteHeader">
     <div class="container header-inner">
-      <a href="index.html" class="brand-block" aria-label="Dr. Ali İhsan Yaka">
-        <div class="brand-logo-mark" aria-hidden="true"><img class="brand-logo-svg" src="assets/images/psyche-structure-mark.svg" alt="" width="36" height="36"></div>
-        <div class="brand-text">
-          <span class="brand-title">Dr. Ali İhsan Yaka</span>
-          <span class="brand-sub">Doktor Klinik Psikolog &bull; Ph.D.</span>
-        </div>
+      <a href="index.html" class="brand-block" aria-label="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek">
+        <img class="brand-logo-img" src="assets/images/ali-ihsan-yaka-logo-kinetic.svg" alt="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek" width="520" height="180">
       </a>
 
       <!-- Multi-Page Standalone Navigation: Each link opens its dedicated page -->
@@ -156,9 +153,8 @@
   <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobil Menü" data-i18n-aria-label="nav.mobileMenu">
     <div class="drawer-panel">
       <div class="drawer-header">
-        <a href="index.html" class="drawer-brand" aria-label="Dr. Ali İhsan Yaka">
-          <img src="assets/images/psyche-structure-mark.svg" alt="" width="42" height="42" aria-hidden="true">
-          <span><strong>Dr. Ali İhsan Yaka</strong><small data-i18n="header.sub">Doktor Klinik Psikolog • Ph.D.</small></span>
+        <a href="index.html" class="drawer-brand" aria-label="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek">
+          <img class="brand-logo-img drawer-logo-img" src="assets/images/ali-ihsan-yaka-logo-kinetic.svg" alt="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek" width="520" height="180">
         </a>
         <button type="button" class="drawer-close" id="drawerClose" aria-label="Kapat" data-i18n-aria-label="common.close">&times;</button>
       </div>
@@ -185,41 +181,67 @@
          1. WELCOME SECTION (Airy Hero & Clinical Academic Profile)
          ===================================================================== -->
     <section id="welcome" class="hero-art-strip scroll-reveal" aria-labelledby="welcomeHeading">
-      <div class="hero-particle-field" aria-hidden="true"><canvas id="heroParticleCanvas" width="420" height="420"></canvas></div>
       <div class="hero-lacanian-flow" aria-hidden="true">
-        <svg class="hero-flow-motion" viewBox="0 0 1440 900" preserveAspectRatio="none">
-          <g class="diagram-ghost" fill="none" stroke="#53698a" stroke-linecap="round" stroke-linejoin="round">
+        <svg class="hero-flow-motion" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid meet">
+          <!-- Structural Lacanian Topologic Geometry (Architectural Blueprint) -->
+          <g class="diagram-ghost" fill="none" stroke="#4A6082" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Upper Diachronic Arc (Vector of Signifying Articulation) -->
             <path d="M110 275C270 95 1125 95 1330 275" stroke-width="2.2"/>
+            <!-- Lower Synchronic Arc (Retrograde Vector of Meaning) -->
             <path d="M1330 625C1125 805 270 805 110 625" stroke-width="2.2"/>
+            <!-- Lateral Boundary Coordinate Axes -->
             <path d="M115 315v270m1210-270v270" stroke-width="1.8"/>
-            <path d="M125 375h75m-75 90h75m-75 90h75m1040-180h75m-75 90h75m-75 90h75" stroke-width="1.5"/>
-            <path d="M410 290v320m620-320v320" stroke-width="1.75"/>
-            <path d="M468 395c50-60 95-60 145 0s95 60 145 0 95-60 145 0M468 505c50 60 95 60 145 0s95-60 145 0 95 60 145 0" stroke-width="1.75"/>
-            <path d="M530 355v190m103-165v140m104-165v190" stroke-width="1.5"/>
+            <path d="M125 375h75m-75 90h75m-75 90h75m1040-180h75m-75 90h75m-75 90h75" stroke-width="1.2"/>
+            <!-- Vertical Vector Axes -->
+            <path d="M410 290v320m620-320v320" stroke-width="1.6"/>
+            <!-- Central Signifying Oscillations -->
+            <path d="M468 395c50-60 95-60 145 0s95 60 145 0 95-60 145 0" stroke-width="1.6"/>
+            <path d="M468 505c50 60 95 60 145 0s95-60 145 0 95 60 145 0" stroke-width="1.6"/>
+            <!-- Interconnecting Vector Links -->
+            <path d="M530 355v190m103-165v140m104-165v190" stroke-width="1.3"/>
+            <!-- Transverse Signifying Axis -->
             <path d="M340 450h110m648 0h110" stroke-width="1.4"/>
-            <rect x="250" y="198" width="170" height="42" rx="12" stroke-width="1.4"/><rect x="1015" y="198" width="170" height="42" rx="12" stroke-width="1.4"/>
-            <rect x="540" y="660" width="360" height="48" rx="14" stroke-width="1.4"/>
+            <!-- Structural Notation Capsules -->
+            <rect x="235" y="200" width="180" height="38" rx="19" fill="rgba(255, 255, 255, 0.55)" stroke="rgba(74, 96, 130, 0.35)" stroke-width="1.2"/>
+            <rect x="1025" y="200" width="180" height="38" rx="19" fill="rgba(255, 255, 255, 0.55)" stroke="rgba(74, 96, 130, 0.35)" stroke-width="1.2"/>
+            <rect x="530" y="662" width="380" height="42" rx="21" fill="rgba(255, 255, 255, 0.55)" stroke="rgba(74, 96, 130, 0.35)" stroke-width="1.2"/>
           </g>
-          <g class="diagram-labels" fill="#455c7b" font-family="Arial,sans-serif" font-size="15" font-weight="500" letter-spacing="2">
-            <text x="275" y="225">GÖSTEREN · S2</text><text x="1040" y="225">S1 · SÖZCE</text>
-            <text x="580" y="690">İMGESEL  ·  GERÇEK  ·  SİMGESEL</text>
-            <text x="610" y="332" font-size="13">BABA METAFORU</text><text x="790" y="588" font-size="13">RUHSAL YAPILAR</text>
+          <!-- Scholarly Lacanian Topological Notations -->
+          <g class="diagram-labels" font-family="'JetBrains Mono', monospace" font-weight="600" letter-spacing="2.2" fill="#384968">
+            <text x="325" y="224" font-size="11" text-anchor="middle">GÖSTEREN · S2</text>
+            <text x="1115" y="224" font-size="11" text-anchor="middle">S1 · SÖZCE</text>
+            <text x="720" y="688" font-size="12" text-anchor="middle">İMGESEL  ·  GERÇEK  ·  SİMGESEL</text>
+            <text x="610" y="332" font-size="11" text-anchor="middle" fill="#58698A">BABA METAFORU</text>
+            <text x="790" y="588" font-size="11" text-anchor="middle" fill="#58698A">RUHSAL YAPILAR</text>
           </g>
-          <g fill="none" stroke="#b27d3f" stroke-width="2" stroke-linecap="round">
+          <!-- Animated Luminous Pulse Tracks (Living psychoanalytic flow) -->
+          <g fill="none" stroke-linecap="round">
             <path class="flow-track flow-upper" d="M110 275C270 95 1125 95 1330 275"/>
             <path class="flow-track flow-lower" d="M1330 625C1125 805 270 805 110 625"/>
             <path class="flow-track flow-center" d="M470 450H980"/>
           </g>
-          <g class="diagram-nodes" fill="#b27d3f" opacity="0.08"><circle cx="720" cy="450" r="4"/><circle cx="410" cy="290" r="3"/><circle cx="1030" cy="610" r="3"/></g>
+          <!-- Topologic Anchor Nodes -->
+          <circle cx="720" cy="450" r="5" fill="#D48214"/>
+          <circle cx="720" cy="450" r="14" fill="none" stroke="#D48214" stroke-width="1.2" stroke-dasharray="3 3" opacity="0.6"/>
+          <circle cx="410" cy="290" r="4.5" fill="#4E5BA6"/>
+          <circle cx="1030" cy="610" r="4.5" fill="#4E5BA6"/>
+          <!-- Subtle Borromean Rings on Flank -->
+          <g transform="translate(1220, 480)" opacity="0.32">
+            <ellipse cx="0" cy="-55" rx="120" ry="85" fill="none" stroke="#D48214" stroke-width="1.4" stroke-dasharray="6 5"/>
+            <ellipse cx="-60" cy="45" rx="120" ry="85" fill="none" stroke="#4E5BA6" stroke-width="1.6"/>
+            <ellipse cx="60" cy="45" rx="120" ry="85" fill="none" stroke="#2D3142" stroke-width="1.2" stroke-opacity="0.5"/>
+          </g>
         </svg>
       </div>
+      <div class="hero-particle-field" aria-hidden="true"><canvas id="heroParticleCanvas" width="420" height="420"></canvas></div>
       <div class="container hero-art-grid">
-        <div>
-          <div class="section-pill" data-i18n="hero.eyebrow">
-            PSİKANALİTİK PSİKOTERAPİ &bull; KLİNİK SÜPERVİZYON
+        <div class="hero-content-col">
+          <div class="section-pill">
+            <span class="pill-pulse-dot" aria-hidden="true"></span>
+            <span data-i18n="hero.eyebrow">LACANYEN YÖNELİMLİ PSİKOTERAPİ &bull; KLİNİK SÜPERVİZYON</span>
           </div>
           <h1 id="welcomeHeading" tabindex="-1" data-i18n="hero.title">
-            psikanalitik psikoterapi ve klinik süpervizyon.
+            Lacanyen yönelimli psikoterapi ve klinik süpervizyon.
           </h1>
           <div class="hero-quote-box" data-i18n="hero.quote">
             “Bilinçdışını dinlemek, imkânsızı imkâna dönüştürebilir.”
@@ -227,15 +249,20 @@
           <p class="hero-audience" data-i18n="hero.audience">Yetişkinler için bireysel psikoterapi; klinisyenler ve saha ruh sağlığı çalışanları için süpervizyon.</p>
 
           <div class="hero-actions">
-            <a href="#contact" class="btn btn-primary">
+            <a href="#contact" class="btn btn-primary hero-btn-consultation">
               <span data-i18n="hero.btnConsultation">Ön Görüşme Randevusu Al</span>
-              <span class="btn-icon-bubble">&nearr;</span>
+              <span class="btn-icon-bubble" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="3" y1="11" x2="11" y2="3"></line>
+                  <polyline points="4 3 11 3 11 10"></polyline>
+                </svg>
+              </span>
             </a>
-            <a href="#practice" class="btn btn-secondary" data-i18n="hero.btnPractice">Klinik Pratik &amp; Süpervizyon</a>
+            <a href="#practice" class="btn btn-secondary hero-btn-practice" data-i18n="hero.btnPractice">Klinik Pratik &amp; Süpervizyon</a>
           </div>
 
           <p class="lead" data-i18n="hero.lead">Klinik psikoloji, psikanalitik çalışma ve insani yardım alanındaki deneyimimi yetişkinlerle psikoterapi ve klinisyenlerle süpervizyon çalışmalarında bir araya getiriyorum.</p>
-          <a class="hero-about-link" href="hakkimda.html" data-i18n="hero.aboutLink">Eğitimimi, klinik geçmişimi ve çalışmalarımı inceleyin <span aria-hidden="true">&rarr;</span></a>
+          <a class="hero-about-link" href="hakkimda.html" data-i18n="hero.aboutLink">Eğitimimi, klinik geçmişimi ve çalışmalarımı inceleyin &rarr;</a>
 
         </div>
 
@@ -244,6 +271,10 @@
           <div class="portrait-card-outer">
             <div class="portrait-card-inner">
               <div class="portrait-img-wrap">
+                <div class="portrait-status-chip">
+                  <span class="chip-pulse-dot" aria-hidden="true"></span>
+                  <span>Buffalo CSPC 2026</span>
+                </div>
                 <img src="assets/images/dr-ali-ihsan-yaka-hero.jpg" alt="Dr. Ali İhsan Yaka, Ph.D. — Klinik Psikolog & Visiting Postdoctoral Scholar (Jan–Aug 2026)" width="682" height="1024" data-i18n-alt="hero.portraitAlt" class="portrait-hero-img" fetchpriority="high" decoding="async" data-zoomable>
               </div>
               <div class="portrait-meta-plaque">
@@ -915,6 +946,9 @@
       <!-- 1. Main 3-Column Editorial Grid -->
       <div class="footer-main-grid">
         <div>
+          <a href="index.html" class="footer-brand-lockup" aria-label="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek">
+            <img class="brand-logo-img footer-logo-img" src="assets/images/ali-ihsan-yaka-logo-kinetic-dark.svg" alt="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek" width="520" height="180">
+          </a>
           <div class="footer-brand-title">Dr. Ali İhsan Yaka, Ph.D.</div>
           <div class="footer-brand-sub" data-i18n="footer.brandSub">Doktor Klinik Psikolog &bull; Psikanalist</div>
           <p class="footer-intro" data-i18n="footer.ethos">
@@ -993,7 +1027,7 @@
     <div id="lightboxCaption"></div>
   </div>
 
-  <script src="app.js?v=5.43"></script>
+  <script src="app.js?v=5.90"></script>
   <script type="importmap">{"imports":{"three":"./assets/vendor/three/three.module.min.js","three/addons/":"./assets/vendor/three/addons/"}}</script>
   <script type="module" src="assets/js/psyche-3d.js?v=1"></script>
 </body>

@@ -12,3 +12,8 @@ consultations.db-*
 # Local editor and operating-system files
 .taste-skill/
 .DS_Store
+scratch/
+output/
+tmp_*
+*-raw.png
+*-transparent.png

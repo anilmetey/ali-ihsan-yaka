@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="icon" href="assets/images/psyche-structure-mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="app.css?v=5.60">
+  <link rel="stylesheet" href="app.css?v=5.90">
 </head>
 <body style="min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between;">
   <a class="skip-link" href="#mainContent" data-i18n="a11y.skipToContent">Ana içeriğe geç</a>
@@ -20,28 +20,19 @@
   <header class="site-header" role="banner" id="siteHeader">
     <div class="container header-inner">
       <a href="index.html" class="brand-block" aria-label="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek">
-        <span class="brand-logo-frame">
-          <picture>
-            <source srcset="assets/images/ali-ihsan-yaka-logo-4k.webp" type="image/webp">
-            <img class="brand-logo-full" src="assets/images/ali-ihsan-yaka-logo-4k.png" alt="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek" width="4096" height="1480" fetchpriority="high" decoding="async">
-          </picture>
-          <svg class="brand-orbit-svg" viewBox="0 0 410 148" fill="none" aria-hidden="true" preserveAspectRatio="none">
-            <rect class="brand-orbit-base" x="2" y="2" width="406" height="144" rx="72"/>
-            <rect class="brand-orbit-runner" x="2" y="2" width="406" height="144" rx="72"/>
-            <rect class="brand-orbit-inner" x="6" y="6" width="398" height="136" rx="68"/>
-          </svg>
-        </span>
+        <img class="brand-logo-img" src="assets/images/ali-ihsan-yaka-logo-kinetic.svg" alt="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek" width="520" height="180">
       </a>
 
-      <!-- Multi-Page Standalone Navigation -->
-      <nav class="nav-desktop" aria-label="Ana Menü">
-        <a href="index.html" class="nav-link " data-i18n="nav.home">Ana Sayfa</a>
-        <a href="hakkimda.html" class="nav-link " data-i18n="nav.about">Hakkımda</a>
-        <a href="hizmetler.html" class="nav-link " data-i18n="nav.services">Hizmetler</a>
-        <a href="saha-calismalari.html" class="nav-link " data-i18n="nav.fieldwork">Saha Çalışmaları</a>
-        <a href="yayinlar.html" class="nav-link " data-i18n="nav.publications">Yayınlar</a>
-        <a href="sss.html" class="nav-link " data-i18n="nav.faq">SSS</a>
-        <a href="iletisim.html" class="nav-link " data-i18n="nav.contact">İletişim</a>
+      <!-- Multi-Page Standalone Navigation: Each link opens its dedicated page -->
+      <nav class="nav-desktop" aria-label="Ana Menü" data-i18n-aria-label="nav.mainMenu">
+        <a href="index.html" class="nav-link" data-i18n="nav.home">Ana Sayfa</a>
+        <a href="hakkimda.html" class="nav-link" data-i18n="nav.about">Hakkında</a>
+        <a href="klinik-pratik.html" class="nav-link" data-i18n="nav.practice">Klinik Pratik</a>
+        <a href="guncel.html" class="nav-link" data-i18n="nav.news">Güncel</a>
+        <a href="saha-calismalari.html" class="nav-link" data-i18n="nav.fieldwork">Saha Çalışmaları</a>
+        <a href="yayinlar.html" class="nav-link" data-i18n="nav.publications">Yayınlar</a>
+        <a href="arastirmalar.html" class="nav-link" data-i18n="nav.research">Araştırmalar</a>
+        <a href="iletisim.html" class="nav-link" data-i18n="nav.contact">İletişim</a>
       </nav>
 
       <div class="header-right">
@@ -61,6 +52,30 @@
       </div>
     </div>
   </header>
+
+  <!-- Mobile Drawer: Standalone Multi-Page Links -->
+  <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobil Menü" data-i18n-aria-label="nav.mobileMenu">
+    <div class="drawer-panel">
+      <div class="drawer-header"><a href="index.html" class="drawer-brand" aria-label="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek">
+          <img class="brand-logo-img drawer-logo-img" src="assets/images/ali-ihsan-yaka-logo-kinetic.svg" alt="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek" width="520" height="180">
+        </a><button type="button" class="drawer-close" id="drawerClose" aria-label="Kapat" data-i18n-aria-label="common.close">&times;</button></div>
+      <ul class="drawer-links">
+        <li><a href="index.html" class="drawer-link" data-i18n="nav.home">Ana Sayfa</a></li>
+        <li><a href="hakkimda.html" class="drawer-link" data-i18n="nav.about">Hakkında</a></li>
+        <li><a href="klinik-pratik.html" class="drawer-link" data-i18n="nav.practice">Klinik Pratik &amp; Hizmetler</a></li>
+        <li><a href="guncel.html" class="drawer-link" data-i18n="nav.news">Güncel</a></li>
+        <li><a href="saha-calismalari.html" class="drawer-link" data-i18n="nav.fieldwork">Saha Çalışmaları</a></li>
+        <li><a href="yayinlar.html" class="drawer-link" data-i18n="nav.publications">Yayınlar</a></li>
+        <li><a href="arastirmalar.html" class="drawer-link" data-i18n="nav.research">Araştırmalar</a></li>
+        <li><a href="iletisim.html" class="drawer-link" data-i18n="nav.contact">İletişim</a></li>
+      </ul>
+      <div style="margin-top: 2rem;">
+        <a href="iletisim.html" class="btn btn-primary" style="width: 100%;">
+          <span data-i18n="header.ctaLong">Ön Görüşme Randevusu Al</span> &rarr;
+        </a>
+      </div>
+    </div>
+  </div>
 
   <main id="mainContent" tabindex="-1" style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 4rem 1rem;">
     <div style="text-align: center; max-width: 600px; margin: 0 auto;">
@@ -89,17 +104,7 @@
       <div class="footer-main-grid">
         <div>
           <a href="index.html" class="footer-brand-lockup" aria-label="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek">
-            <span class="brand-logo-frame brand-logo-frame-footer">
-              <picture>
-                <source srcset="assets/images/ali-ihsan-yaka-logo-4k.webp" type="image/webp">
-                <img class="brand-logo-full" src="assets/images/ali-ihsan-yaka-logo-4k.png" alt="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek" width="4096" height="1480" loading="lazy" decoding="async">
-              </picture>
-              <svg class="brand-orbit-svg" viewBox="0 0 410 148" fill="none" aria-hidden="true" preserveAspectRatio="none">
-                <rect class="brand-orbit-base" x="2" y="2" width="406" height="144" rx="72"/>
-                <rect class="brand-orbit-runner" x="2" y="2" width="406" height="144" rx="72"/>
-                <rect class="brand-orbit-inner" x="6" y="6" width="398" height="136" rx="68"/>
-              </svg>
-            </span>
+            <img class="brand-logo-img footer-logo-img" src="assets/images/ali-ihsan-yaka-logo-kinetic-dark.svg" alt="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek" width="520" height="180">
           </a>
           <div class="footer-brand-title">Dr. Ali İhsan Yaka, Ph.D.</div>
           <div class="footer-brand-sub" data-i18n="footer.brandSub">Doktor Klinik Psikolog &bull; Psikanalist</div>
@@ -116,7 +121,7 @@
           <ul class="footer-nav-list">
             <li><a href="index.html" data-i18n="nav.home">Ana Sayfa</a></li>
             <li><a href="hakkimda.html" data-i18n="nav.about">Hakkımda</a></li>
-            <li><a href="hizmetler.html" data-i18n="nav.services">Hizmetler</a></li>
+            <li><a href="klinik-pratik.html" data-i18n="nav.practice">Klinik Pratik</a></li>
             <li><a href="saha-calismalari.html" data-i18n="nav.fieldwork">Saha Çalışmaları</a></li>
             <li><a href="yayinlar.html" data-i18n="nav.publications">Yayınlar</a></li>
             <li><a href="sss.html">Sıkça Sorulan Sorular (SSS)</a></li>
@@ -170,6 +175,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=5.43"></script>
+  <script src="app.js?v=5.90"></script>
 </body>
 </html>
