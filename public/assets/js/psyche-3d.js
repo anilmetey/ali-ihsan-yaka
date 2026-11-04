@@ -974,15 +974,18 @@ function init() {
     camera.aspect = w / h;
     const vfov = THREE.MathUtils.degToRad(camera.fov);
     const isCompact = w < 640;
-    const needW = isCompact ? 18.6 : 21.6;
-    const needH = isCompact ? 11.8 : 13.0;
+    const needW = isCompact ? 22.8 : 21.6;
+    const needH = isCompact ? 13.6 : 13.0;
     const distW = (needW / 2) / (Math.tan(vfov / 2) * camera.aspect);
     const distH = (needH / 2) / Math.tan(vfov / 2);
-    fitDistance = Math.max(distW, distH) + (isCompact ? 0.15 : 0.85);
+    fitDistance = Math.max(distW, distH) + (isCompact ? 1.45 : 0.85);
     camera.updateProjectionMatrix();
     const s = currentSpherical();
     if (camera.position.lengthSq() > 0) placeCamera(s.theta, s.phi, fitDistance);
-    host.style.setProperty('--p3d-scale', String(THREE.MathUtils.clamp(w / 1120, 0.35, 1.15)));
+    const labelScale = isCompact
+      ? THREE.MathUtils.clamp(w / 1180, 0.28, 0.48)
+      : THREE.MathUtils.clamp(w / 1120, 0.52, 1.15);
+    host.style.setProperty('--p3d-scale', String(labelScale));
     pMat.uniforms.uPx.value = renderer.getPixelRatio();
   }
   const ro = new ResizeObserver(resize);

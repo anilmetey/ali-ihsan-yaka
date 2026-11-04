@@ -11982,7 +11982,7 @@ html.splash-visited #splashScreen.splash-screen {
   .psyche-diagram-frame.is-3d .psyche-3d {
     display: block !important;
     width: 100% !important;
-    height: clamp(360px, 86vw, 480px) !important;
+    height: clamp(300px, 76vw, 400px) !important;
     min-height: 0 !important;
     max-height: none !important;
     aspect-ratio: auto !important;
@@ -11992,25 +11992,25 @@ html.splash-visited #splashScreen.splash-screen {
     display: none !important;
   }
   .p3d-controls {
-    top: 8px !important;
-    right: 8px !important;
+    top: 6px !important;
+    right: 6px !important;
     gap: 4px !important;
     flex-wrap: wrap !important;
     justify-content: flex-end !important;
-    max-width: calc(100% - 16px) !important;
+    max-width: calc(100% - 12px) !important;
   }
   .p3d-chips {
     padding: 2px !important;
     gap: 2px !important;
   }
   .p3d-chip, .p3d-view {
-    padding: 5px 8px !important;
-    font-size: 10.5px !important;
+    padding: 4px 7px !important;
+    font-size: 9.5px !important;
   }
   .p3d-hint {
     bottom: 6px !important;
     right: 6px !important;
-    font-size: 9.5px !important;
+    font-size: 9px !important;
     padding: 2px 8px !important;
     max-width: calc(100% - 12px) !important;
   }
@@ -12679,13 +12679,57 @@ html.splash-visited #splashScreen.splash-screen {
   .psyche-diagram-frame.is-3d .psyche-3d {
     display: block !important;
     width: 100% !important;
-    height: clamp(360px, 88vw, 480px) !important;
+    height: clamp(300px, 76vw, 400px) !important;
     min-height: 0 !important;
     max-height: none !important;
     aspect-ratio: auto !important;
   }
   .psyche-pan-hint { display: none !important; }
   .psyche-mobile-map { display: none !important; }
+
+  /* Trilingual Dictionary Table: fit all 3 columns full-screen on mobile without horizontal overflow */
+  .schema-card {
+    padding: 1.1rem 0.85rem;
+  }
+  .schema-card-badge-row {
+    flex-wrap: wrap;
+    gap: 0.45rem;
+  }
+  .dictionary-search-bar {
+    padding: 0.65rem 0.75rem;
+    gap: 0.5rem;
+  }
+  .dictionary-search-input {
+    min-width: 0;
+    font-size: 0.82rem;
+  }
+  .dictionary-count-pill {
+    font-size: 0.68rem;
+    padding: 0.2rem 0.5rem;
+  }
+  .table-responsive {
+    overflow-x: hidden;
+  }
+  .dictionary-table {
+    min-width: 0 !important;
+    width: 100% !important;
+    table-layout: fixed;
+    font-size: clamp(0.73rem, 3.1vw, 0.84rem);
+  }
+  .dictionary-table th {
+    padding: 0.55rem 0.4rem;
+    font-size: clamp(0.62rem, 2.5vw, 0.72rem);
+    letter-spacing: 0.02em;
+    line-height: 1.3;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  .dictionary-table td {
+    padding: 0.6rem 0.4rem;
+    line-height: 1.35;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
 }
 
 /* Diagram code-row connections follow the source figure. */
