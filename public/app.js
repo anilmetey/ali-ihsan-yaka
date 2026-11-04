@@ -2149,36 +2149,46 @@
       });
     };
 
+    let splashStartTime = Date.now();
+    const MIN_DISPLAY_MS = 2000;
+    let wheelAccum = 0;
+
     const scheduleSplashClose = () => {
       window.clearTimeout(splashAutoCloseTimer);
-      splashAutoCloseTimer = window.setTimeout(closeSplash, 3800);
+      splashAutoCloseTimer = window.setTimeout(closeSplash, 6000);
     };
 
-    // 1. Enter button click
+    // 1. Enter button click (dismisses immediately on direct user intent)
     enterButton?.addEventListener('click', (e) => {
       e.stopPropagation();
       closeSplash();
     });
 
-    // 2. Click anywhere on splash curtain (backdrop, portrait, card)
+    // 2. Click anywhere on splash backdrop / card (subject to grace period to prevent accidental dismissal on tab focus)
     splash.addEventListener('click', () => {
+      if (Date.now() - splashStartTime < MIN_DISPLAY_MS) return;
       closeSplash();
     });
 
-    // 3. Scroll wheel / touchpad down immediately dismisses curtain
+    // 3. Scroll wheel / touchpad down: grace period + cumulative scroll threshold to prevent trackpad micro-jitter dismissal
     const onWheel = (e) => {
-      if (e.deltaY > 6) closeSplash();
+      if (Date.now() - splashStartTime < MIN_DISPLAY_MS) return;
+      if (e.deltaY > 0) {
+        wheelAccum += e.deltaY;
+        if (wheelAccum > 100) closeSplash();
+      }
     };
     splash.addEventListener('wheel', onWheel, { passive: true });
 
-    // 4. Touch swipe gesture dismisses curtain on mobile
+    // 4. Touch swipe gesture dismisses curtain on mobile (after grace period)
     let touchStartY = 0;
     splash.addEventListener('touchstart', (e) => {
       touchStartY = e.touches[0].clientY;
     }, { passive: true });
     splash.addEventListener('touchmove', (e) => {
+      if (Date.now() - splashStartTime < MIN_DISPLAY_MS) return;
       const dy = touchStartY - e.touches[0].clientY;
-      if (Math.abs(dy) > 20) closeSplash();
+      if (dy > 60) closeSplash();
     }, { passive: true });
 
     // 5. Timer schedule
@@ -2189,6 +2199,8 @@
       event.preventDefault();
       try { localStorage.removeItem(splashSeenKey); } catch (_) {}
       isClosed = false;
+      splashStartTime = Date.now();
+      wheelAccum = 0;
       document.documentElement.classList.remove('splash-visited');
       splash.classList.remove('is-hidden', 'splash-closing');
       splash.removeAttribute('aria-hidden');

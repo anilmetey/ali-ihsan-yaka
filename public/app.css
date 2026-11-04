@@ -471,7 +471,7 @@ a:hover {
   height: 100%;
   width: 0%;
   background: var(--color-primary);
-  animation: splashAutoProgress 3.6s linear forwards;
+  animation: splashAutoProgress 6s linear forwards;
 }
 
 @keyframes splashAutoProgress {
@@ -10865,7 +10865,7 @@ html.splash-visited #splashScreen.splash-screen {
 .splash-progress-bar {
   height: 100%; width: 0; border-radius: 999px;
   background: linear-gradient(90deg, #C88218, #4E5BA6);
-  animation: splashAutoProgress 3.8s linear forwards;
+  animation: splashAutoProgress 6s linear forwards;
 }
 @keyframes splashAutoProgress { from { width: 0; } to { width: 100%; } }
 #splashScreen.splash-screen.splash-closing { opacity: 0 !important; pointer-events: none !important; }
