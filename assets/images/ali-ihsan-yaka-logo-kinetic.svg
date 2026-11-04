@@ -14,7 +14,7 @@
         stroke-width: 2.2;
         stroke-linecap: round;
         stroke-dasharray: 45 165;
-        animation: aiy-orbit-loop 8s linear infinite;
+        animation: none;
       }
       .orbit-inner {
         stroke: #16659C;
@@ -22,7 +22,7 @@
         stroke-linecap: round;
         stroke-dasharray: 30 140;
         opacity: 0.85;
-        animation: aiy-orbit-loop-rev 11s linear infinite;
+        animation: none;
       }
 
       /* --- Borromean Knot Kinetic Circuit Tracks --- */
@@ -32,7 +32,7 @@
         stroke-width: 1.5;
         stroke-linecap: round;
         stroke-dasharray: 10 24;
-        animation: aiy-spin 12s linear infinite;
+        animation: none;
         transform-origin: 118px 65px;
       }
       .knot-trace-top-in {
@@ -41,7 +41,7 @@
         stroke-linecap: round;
         stroke-dasharray: 8 20;
         opacity: 0.75;
-        animation: aiy-spin-rev 9s linear infinite;
+        animation: none;
         transform-origin: 118px 65px;
       }
 
@@ -51,7 +51,7 @@
         stroke-width: 1.4;
         stroke-linecap: round;
         stroke-dasharray: 9 22;
-        animation: aiy-spin 15s linear infinite;
+        animation: none;
         transform-origin: 98px 105px;
       }
       .knot-trace-left-in {
@@ -60,7 +60,7 @@
         stroke-linecap: round;
         stroke-dasharray: 7 18;
         opacity: 0.75;
-        animation: aiy-spin-rev 11s linear infinite;
+        animation: none;
         transform-origin: 98px 105px;
       }
 
@@ -70,7 +70,7 @@
         stroke-width: 1.5;
         stroke-linecap: round;
         stroke-dasharray: 12 26;
-        animation: aiy-spin-rev 10s linear infinite;
+        animation: none;
         transform-origin: 138px 105px;
       }
       .knot-trace-right-in {
@@ -79,19 +79,19 @@
         stroke-linecap: round;
         stroke-dasharray: 8 19;
         opacity: 0.75;
-        animation: aiy-spin 8s linear infinite;
+        animation: none;
         transform-origin: 138px 105px;
       }
 
       /* Central Knot Intersection (Objet petit a) */
       .knot-center-pulse {
-        animation: aiy-center-glow 2.5s ease-in-out infinite alternate;
+        animation: none;
         transform-origin: 118px 92px;
       }
 
       /* Outer Circuit Nodes */
       .node-pulse {
-        animation: aiy-node-glow 3.2s ease-in-out infinite alternate;
+        animation: none;
       }
 
       /* Keyframes */

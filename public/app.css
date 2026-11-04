@@ -8024,12 +8024,12 @@ html.splash-visited #splashScreen.splash-screen {
   transform: translateY(-1px);
 }
 
-/* Scaled down, refined, professional header logo (Height: 38px) */
+/* Scaled up by 40% per client request (Height: 54px, max-width: 220px) */
 .brand-logo-img {
   display: block !important;
-  height: 38px !important;
+  height: 54px !important;
   width: auto !important;
-  max-width: 155px !important;
+  max-width: 220px !important;
   aspect-ratio: 520 / 180 !important;
   object-fit: contain !important;
   transition: transform 0.25s ease;
@@ -8116,12 +8116,12 @@ html.splash-visited #splashScreen.splash-screen {
     display: none !important;
   }
   .brand-logo-img {
-    height: 34px !important;
-    max-width: 140px !important;
+    height: 48px !important;
+    max-width: 195px !important;
   }
 }
 
-/* Footer Brand Lockup - Scaled down one notch ("bir tık daha küçült": Height: 46px) */
+/* Footer Brand Lockup - Scaled up by 40% (Height: 64px) */
 .footer-brand-lockup {
   display: inline-flex !important;
   align-items: center !important;
@@ -8136,9 +8136,9 @@ html.splash-visited #splashScreen.splash-screen {
 
 .footer-logo-img {
   display: block !important;
-  height: 46px !important;
+  height: 64px !important;
   width: auto !important;
-  max-width: 180px !important;
+  max-width: 250px !important;
   aspect-ratio: 520 / 180 !important;
   object-fit: contain !important;
 }
@@ -8155,7 +8155,7 @@ html.splash-visited #splashScreen.splash-screen {
   display: none !important;
 }
 
-/* Drawer Logo */
+/* Drawer Logo - Scaled up by 40% (Height: 54px) */
 .drawer-brand {
   display: inline-flex !important;
   align-items: center !important;
@@ -8164,9 +8164,9 @@ html.splash-visited #splashScreen.splash-screen {
 
 .drawer-logo-img {
   display: block !important;
-  height: 38px !important;
+  height: 54px !important;
   width: auto !important;
-  max-width: 160px !important;
+  max-width: 220px !important;
   aspect-ratio: 520 / 180 !important;
   object-fit: contain !important;
 }
@@ -11978,26 +11978,44 @@ html.splash-visited #splashScreen.splash-screen {
 .model-headings .model-subhead { fill: #5A6682; }
 .model-headings .model-sidehead { fill: #C88218; }
 .model-row-labels, .model-structures, .model-speech { fill: #1B2438; }
-@keyframes arrowLoopMarch {
-  to { stroke-dashoffset: -32; }
+.model-loop,
+.model-inner-loop,
+.model-forward,
+.model-transition,
+.model-stage-down {
+  stroke: #3D5690;
+  stroke-dasharray: none !important;
+  animation: none !important;
 }
-@keyframes arrowInnerMarch {
-  to { stroke-dashoffset: -24; }
-}
-.model-loop, .model-inner-loop { stroke: #3D5690; stroke-dasharray: 10 6 !important; animation: arrowLoopMarch 1.8s linear infinite !important; }
-.model-forward, .model-transition, .model-stage-down { stroke: #3D5690; stroke-dasharray: 8 4 !important; animation: arrowInnerMarch 1.5s linear infinite !important; }
 .model-loop-label { fill: #4E5BA6; }
-.model-up, .model-down, .model-code-arc, .model-s1-return path, .model-s1-return, .model-s1-forward { stroke: #B8791E; stroke-dasharray: 8 4 !important; animation: arrowInnerMarch 1.5s linear infinite !important; }
-.model-mirror-axis { stroke: #3D5690 !important; stroke-dasharray: 10 6 !important; animation: arrowLoopMarch 1.6s linear infinite !important; }
-.model-s1-axis { stroke-dasharray: 10 6 !important; animation: arrowLoopMarch 1.6s linear infinite !important; }
+.model-up,
+.model-down,
+.model-code-arc,
+.model-s1-return path,
+.model-s1-return,
+.model-s1-forward {
+  stroke: #B8791E;
+  stroke-dasharray: none !important;
+  animation: none !important;
+}
+.model-mirror-axis {
+  stroke: #3D5690 !important;
+  stroke-dasharray: none !important;
+  animation: none !important;
+}
+.model-s1-axis {
+  stroke: #B8791E !important;
+  stroke-dasharray: none !important;
+  animation: none !important;
+}
 .model-axis-label { fill: #C88218; }
-.model-traveler { fill: #354B84; filter: none; }
-.model-traveler-gold { fill: #B8791E; filter: none; }
+.model-traveler,
+.model-travelers {
+  display: none !important;
+  animation: none !important;
+}
 #psyche-arrow-blue path { fill: #4E5BA6; }
 #psyche-arrow-gold path { fill: #C88218; }
-/* calmer motion */
-.model-loop-top, .model-loop-bottom, .model-forward { animation-duration: 12s; }
-.model-up, .model-down, .model-s1-return path { animation-duration: 9s; }
 
 /* 3D view (desktop): ivory, indigo & brass stage matching site palette */
 .psyche-diagram-frame.is-3d { background: #FAF9F6; border: 1px solid rgba(78,91,166,.18); box-shadow: 0 24px 64px rgba(22,28,45,.07); }
