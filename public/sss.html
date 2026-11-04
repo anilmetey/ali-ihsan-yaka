@@ -25,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/images/psyche-structure-mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="app.css?v=8.10">
+  <link rel="stylesheet" href="app.css?v=8.20">
 </head>
 <body>
   <a class="skip-link" href="#mainContent" data-i18n="a11y.skipToContent">Ana içeriğe geç</a>
@@ -103,11 +103,19 @@
           </p>
         </div>
 
+        <div class="faq-filter" role="group" aria-label="Soru kategorileri">
+          <button type="button" class="faq-chip is-active" data-faq-filter="all" data-i18n="pub.filterAll">Tümü</button>
+          <button type="button" class="faq-chip" data-faq-filter="therapy">Terapi Süreci</button>
+          <button type="button" class="faq-chip" data-faq-filter="frame">Çerçeve &amp; Randevu</button>
+          <button type="button" class="faq-chip" data-faq-filter="super">Süpervizyon &amp; Eğitim</button>
+          <button type="button" class="faq-chip" data-faq-filter="safety">Gizlilik &amp; Güvenlik</button>
+        </div>
+
         <!-- Interactive Accordion with Smooth Chevrons & Hover Glow -->
         <div class="faq-accordion">
           
           <!-- Accordion Item 1 (Open by default) -->
-          <div class="faq-accordion-item is-open tilt-card">
+          <div class="faq-accordion-item is-open tilt-card" data-faq-cat="therapy">
             <button class="faq-accordion-header" type="button" aria-expanded="true">
               <div class="faq-header-content">
                 <span class="faq-num">01</span>
@@ -123,7 +131,7 @@
           </div>
 
           <!-- Accordion Item 2 -->
-          <div class="faq-accordion-item tilt-card">
+          <div class="faq-accordion-item tilt-card" data-faq-cat="frame">
             <button class="faq-accordion-header" type="button" aria-expanded="false">
               <div class="faq-header-content">
                 <span class="faq-num">02</span>
@@ -139,7 +147,7 @@
           </div>
 
           <!-- Accordion Item 3 -->
-          <div class="faq-accordion-item tilt-card">
+          <div class="faq-accordion-item tilt-card" data-faq-cat="frame">
             <button class="faq-accordion-header" type="button" aria-expanded="false">
               <div class="faq-header-content">
                 <span class="faq-num">03</span>
@@ -155,7 +163,7 @@
           </div>
 
           <!-- Accordion Item 4 -->
-          <div class="faq-accordion-item tilt-card">
+          <div class="faq-accordion-item tilt-card" data-faq-cat="frame">
             <button class="faq-accordion-header" type="button" aria-expanded="false">
               <div class="faq-header-content">
                 <span class="faq-num">04</span>
@@ -171,7 +179,7 @@
           </div>
 
           <!-- Accordion Item 5 -->
-          <div class="faq-accordion-item tilt-card">
+          <div class="faq-accordion-item tilt-card" data-faq-cat="super">
             <button class="faq-accordion-header" type="button" aria-expanded="false">
               <div class="faq-header-content">
                 <span class="faq-num">05</span>
@@ -187,7 +195,7 @@
           </div>
 
           <!-- Accordion Item 6 -->
-          <div class="faq-accordion-item tilt-card">
+          <div class="faq-accordion-item tilt-card" data-faq-cat="safety">
             <button class="faq-accordion-header" type="button" aria-expanded="false">
               <div class="faq-header-content">
                 <span class="faq-num">06</span>
@@ -198,6 +206,103 @@
             <div class="faq-accordion-body">
               <div class="faq-accordion-content">
                 Lacanyen psikanalitik psikoterapi ve danışmanlık hizmetleri acil psikiyatrik kriz müdahalesi kapsamında değildir. Kendinize veya bir başkasına zarar verme riski ya da acil psikiyatrik durumlarda en yakın hastanenin acil servisine başvurun veya Türkiye'de 112 Acil Çağrı Merkezi'ni arayın.
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Accordion Item 7 -->
+          <div class="faq-accordion-item tilt-card" data-faq-cat="frame">
+            <button class="faq-accordion-header" type="button" aria-expanded="false">
+              <div class="faq-header-content">
+                <span class="faq-num">07</span>
+                <h2 class="faq-title">İlk ön görüşmede neler konuşulur?</h2>
+              </div>
+              <div class="faq-chevron" aria-hidden="true">&darr;</div>
+            </button>
+            <div class="faq-accordion-body">
+              <div class="faq-accordion-content">
+                Ön görüşme, birbirimizi tanıma ve çalışmanın size uygun olup olmadığını birlikte değerlendirme fırsatıdır. Başvuru nedeninizi, beklentilerinizi ve varsa önceki deneyimlerinizi paylaşırsınız; seans düzeni, çalışma biçimi ve sorularınız da bu görüşmede netleştirilir. Ön görüşme bir tedavi taahhüdü değildir.
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 8 -->
+          <div class="faq-accordion-item tilt-card" data-faq-cat="safety">
+            <button class="faq-accordion-header" type="button" aria-expanded="false">
+              <div class="faq-header-content">
+                <span class="faq-num">08</span>
+                <h2 class="faq-title">Görüşmelerin gizliliği nasıl sağlanır?</h2>
+              </div>
+              <div class="faq-chevron" aria-hidden="true">&darr;</div>
+            </button>
+            <div class="faq-accordion-body">
+              <div class="faq-accordion-content">
+                Seanslarda paylaşılan bilgiler gizlidir ve rızanız olmadan üçüncü kişilerle paylaşılmaz. Yasal yükümlülüklerin ve kendinize ya da bir başkasına yönelik ciddi risk durumlarının doğurabileceği sınırlı istisnalar ön görüşmede açıkça konuşulur. Çevrim içi görüşmelerde sizin de kesintisiz ve özel bir ortamda bulunmanız gizlilik açısından önemlidir.
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 9 -->
+          <div class="faq-accordion-item tilt-card" data-faq-cat="therapy">
+            <button class="faq-accordion-header" type="button" aria-expanded="false">
+              <div class="faq-header-content">
+                <span class="faq-num">09</span>
+                <h2 class="faq-title">Hangi dillerde seans yapılıyor?</h2>
+              </div>
+              <div class="faq-chevron" aria-hidden="true">&darr;</div>
+            </button>
+            <div class="faq-accordion-body">
+              <div class="faq-accordion-content">
+                Seanslar Türkçe, Kurmancî (Kürtçe) ve İngilizce olarak yürütülebilir. Klinik çalışmada kişinin kendini en rahat ifade ettiği dil önemlidir; bu nedenle dil tercihi ön görüşmede birlikte belirlenir.
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 10 -->
+          <div class="faq-accordion-item tilt-card" data-faq-cat="therapy">
+            <button class="faq-accordion-header" type="button" aria-expanded="false">
+              <div class="faq-header-content">
+                <span class="faq-num">10</span>
+                <h2 class="faq-title">Terapi sürecinde ilaç yazılır mı? Psikiyatrist ile ilişkisi nedir?</h2>
+              </div>
+              <div class="faq-chevron" aria-hidden="true">&darr;</div>
+            </button>
+            <div class="faq-accordion-body">
+              <div class="faq-accordion-content">
+                Klinik psikologlar ilaç yazmaz. Psikiyatrik tedavi ihtiyacı doğarsa, değerlendirme için bir psikiyatriste yönlendirme yapılır ve gerektiğinde sizin onayınızla süreç birlikte koordine edilir. Mevcut ilaç tedavinizi kendi başınıza değiştirmemeniz önemlidir.
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 11 -->
+          <div class="faq-accordion-item tilt-card" data-faq-cat="frame">
+            <button class="faq-accordion-header" type="button" aria-expanded="false">
+              <div class="faq-header-content">
+                <span class="faq-num">11</span>
+                <h2 class="faq-title">Ücretlendirme, randevu değişikliği ve iptal koşulları nasıldır?</h2>
+              </div>
+              <div class="faq-chevron" aria-hidden="true">&darr;</div>
+            </button>
+            <div class="faq-accordion-body">
+              <div class="faq-accordion-content">
+                Seans ücreti ve randevu değişikliği ile iptal koşulları, çalışmaya başlamadan önce ön görüşmede açıkça paylaşılır. Böylece sürecin çerçevesi baştan şeffaf olur ve sonradan belirsizlik yaşanmaz.
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 12 -->
+          <div class="faq-accordion-item tilt-card" data-faq-cat="super">
+            <button class="faq-accordion-header" type="button" aria-expanded="false">
+              <div class="faq-header-content">
+                <span class="faq-num">12</span>
+                <h2 class="faq-title">Ruh sağlığı çalışanlarına yönelik hangi hizmetler sunuluyor?</h2>
+              </div>
+              <div class="faq-chevron" aria-hidden="true">&darr;</div>
+            </button>
+            <div class="faq-accordion-body">
+              <div class="faq-accordion-content">
+                Klinik süpervizyonun yanı sıra psikanalitik vaka kavramsallaştırma çalışmaları ve talep halinde eğitim ya da atölye programları planlanabilir. Bireysel veya küçük grup formatları mümkündür; kapsam ve takvim, ihtiyacınıza göre iletişim yoluyla belirlenir.
               </div>
             </div>
           </div>
@@ -298,6 +403,13 @@
     </div>
   </footer>
 
-  <script src="app.js?v=8.10"></script>
+  <script>
+document.querySelectorAll('.faq-chip').forEach(function(b){b.addEventListener('click',function(){
+var f=b.getAttribute('data-faq-filter');
+document.querySelectorAll('.faq-chip').forEach(function(x){x.classList.toggle('is-active',x===b)});
+document.querySelectorAll('.faq-accordion-item').forEach(function(i){i.hidden=!(f==='all'||i.getAttribute('data-faq-cat')===f)});
+});});
+</script>
+<script src="app.js?v=8.20"></script>
 </body>
 </html>

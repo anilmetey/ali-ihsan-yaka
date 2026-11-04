@@ -2854,7 +2854,8 @@ main.about-page-main > section {
 }
 
 /* Right: Refined Consultation Form Card */
-.contact-form-card {
+.contact-form-card,
+.form-card-outer {
   display: flex;
   flex-direction: column;
   background: #FFFFFF;
@@ -2863,6 +2864,25 @@ main.about-page-main > section {
   padding: clamp(1.4rem, 2.2vw, 1.85rem);
   box-shadow: 0 4px 20px -4px rgba(28, 35, 64, 0.04);
   height: 100%;
+  box-sizing: border-box;
+}
+
+.form-card-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 0;
+}
+
+.contact-form-card #consultationForm {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.contact-form-card .form-submit-wrap {
+  margin-top: auto;
+  padding-top: 0.75rem;
 }
 
 .form-card-head {
@@ -2874,21 +2894,28 @@ main.about-page-main > section {
 .form-head-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.45rem;
+  padding: 0.28rem 0.75rem;
+  background: rgba(22, 163, 74, 0.08);
+  border: 1px solid rgba(22, 163, 74, 0.22);
+  border-radius: 999px;
   font-family: var(--font-mono, monospace);
-  font-size: 0.68rem;
+  font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   color: #15803D;
   text-transform: uppercase;
-  margin-bottom: 0.45rem;
+  margin-bottom: 0.65rem;
+  width: fit-content;
 }
 
 .form-head-badge .live-dot {
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background-color: #16A34A;
+  box-shadow: 0 0 8px rgba(22, 163, 74, 0.6);
+  animation: pulse-dot 2s infinite ease-in-out;
 }
 
 .form-card-title {
@@ -13222,3 +13249,15 @@ html.splash-visited #splashScreen.splash-screen {
 #education .fieldwork-note-actions{display:flex;gap:.7rem;flex-wrap:wrap}
 @media(max-width:600px){#education .fieldwork-note{padding:1.2rem}#education .fieldwork-note-actions,#education .fieldwork-note-actions .btn{width:100%;justify-content:center}}
 @media(prefers-reduced-motion:reduce){#education .fieldwork-card-outer{transition:none}#education .fieldwork-card-outer:hover{transform:none}}
+
+/* FAQ polish */
+.faq-filter{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1.6rem}
+.faq-chip{padding:.5rem 1rem;border:1px solid rgba(78,91,166,.2);border-radius:999px;background:#fff;color:#4E5BA6;font:600 .82rem var(--font-sans);cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.faq-chip:hover{background:rgba(78,91,166,.08)}
+.faq-chip:active{transform:scale(.97)}
+.faq-chip.is-active{background:#4E5BA6;color:#fff;border-color:#4E5BA6}
+.faq-accordion-item{position:relative}
+.faq-accordion-item::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(#4E5BA6,#C88218);opacity:0;transition:opacity .25s}
+.faq-accordion-item.is-open::before{opacity:1}
+.faq-accordion-item[hidden]{display:none}
+@media(max-width:600px){.faq-filter{flex-wrap:nowrap;overflow-x:auto;margin-inline:-1rem;padding:0 1rem .3rem;scrollbar-width:none}.faq-chip{flex:0 0 auto}}
