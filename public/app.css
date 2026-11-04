@@ -11974,9 +11974,46 @@ html.splash-visited #splashScreen.splash-screen {
   .psyche-mobile-map { display: none !important; }
   .psyche-pan-hint { display: none !important; }
   .psyche-diagram-frame { display: block !important; width: 100% !important; overflow: hidden !important; padding: 0 !important; border-radius: 16px !important; }
-  .psyche-diagram-svg { display: block !important; width: 100% !important; max-width: 100% !important; min-width: 0 !important; height: auto !important; }
-  .psyche-diagram-frame.is-3d .psyche-3d { display: none !important; }
-  .psyche-diagram-frame.is-3d .psyche-diagram-svg { display: block !important; }
+  .topology-scroll { display: block !important; width: 100% !important; max-width: 100% !important; overflow: hidden !important; padding: 0 !important; }
+  .psyche-diagram-svg,
+  .topology-svg { display: block !important; width: 100% !important; max-width: 100% !important; min-width: 0 !important; height: auto !important; }
+  
+  /* When 3D is active on mobile: display 3D canvas and hide 2D SVG */
+  .psyche-diagram-frame.is-3d .psyche-3d {
+    display: block !important;
+    width: 100% !important;
+    height: clamp(360px, 86vw, 480px) !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+  }
+  .psyche-diagram-frame.is-3d .topology-scroll,
+  .psyche-diagram-frame.is-3d .psyche-diagram-svg {
+    display: none !important;
+  }
+  .p3d-controls {
+    top: 8px !important;
+    right: 8px !important;
+    gap: 4px !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-end !important;
+    max-width: calc(100% - 16px) !important;
+  }
+  .p3d-chips {
+    padding: 2px !important;
+    gap: 2px !important;
+  }
+  .p3d-chip, .p3d-view {
+    padding: 5px 8px !important;
+    font-size: 10.5px !important;
+  }
+  .p3d-hint {
+    bottom: 6px !important;
+    right: 6px !important;
+    font-size: 9.5px !important;
+    padding: 2px 8px !important;
+    max-width: calc(100% - 12px) !important;
+  }
 }
 
 /* ==========================================================================
@@ -12033,6 +12070,36 @@ html.splash-visited #splashScreen.splash-screen {
 }
 .practice-track-switcher .switcher-dot.dot-alt {
   background-color: #4E5BA6;
+}
+
+@media (max-width: 640px) {
+  .practice-track-switcher {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 16px !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 0.85rem !important;
+    gap: 0.5rem !important;
+    box-sizing: border-box !important;
+  }
+  .practice-track-switcher .switcher-label {
+    font-size: 0.72rem !important;
+    margin-bottom: 0.1rem !important;
+  }
+  .practice-track-switcher .switcher-pill {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    justify-content: flex-start !important;
+    white-space: normal !important;
+    line-height: 1.35 !important;
+    font-size: 0.82rem !important;
+    padding: 0.55rem 0.85rem !important;
+    border-radius: 10px !important;
+  }
+  .practice-track-switcher .switcher-pill span:last-child {
+    flex: 1;
+  }
 }
 
 /* Home Clinician Callout Bar */
@@ -12580,24 +12647,31 @@ html.splash-visited #splashScreen.splash-screen {
   }
 }
 
-/* Final responsive override: preserve label size on phones and allow panning. */
-@media (max-width: 760px) {
+/* Final responsive override: full 2D diagram fits 100% on mobile without horizontal clipping or scroll */
+@media (max-width: 768px) {
   .psyche-diagram-frame {
     display: block !important;
     width: 100% !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    overscroll-behavior-inline: contain;
-    -webkit-overflow-scrolling: touch;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    padding: 0 !important;
   }
-  .psyche-diagram-svg {
+  .topology-scroll {
     display: block !important;
-    width: 1000px !important;
-    max-width: none !important;
-    min-width: 1000px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+  }
+  .psyche-diagram-svg,
+  .topology-svg {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
     height: auto !important;
   }
-  .psyche-pan-hint { display: block !important; }
+  .psyche-pan-hint { display: none !important; }
   .psyche-mobile-map { display: none !important; }
 }
 

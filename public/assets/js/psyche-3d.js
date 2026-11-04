@@ -93,9 +93,7 @@ function supportsWebGL() {
   }
 }
 
-const isMobileDevice = () => window.innerWidth <= 768;
-
-if (host && frame && supportsWebGL() && !isMobileDevice()) {
+if (host && frame && supportsWebGL()) {
   try {
     init();
   } catch (err) {
@@ -1018,7 +1016,11 @@ function init() {
             startIntro(true);
           }
           sync();
+          setTimeout(resize, 60);
+          setTimeout(resize, 200);
         });
+      } else {
+        running = false;
       }
     }
   };
@@ -1152,6 +1154,9 @@ function setupModeSwitcher() {
       }
     } else {
       frame?.classList.remove('is-3d');
+      if (window.Psyche3D) {
+        window.Psyche3D.set3DMode(false, fromUser);
+      }
     }
   }
 
