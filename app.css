@@ -5213,12 +5213,15 @@ textarea.form-control {
 .news-event-card { border-radius: 1rem !important; padding: clamp(1.2rem,3vw,2rem) !important; box-shadow: 0 10px 28px rgba(29,42,58,.055), 0 1px 3px rgba(29,42,58,.04) !important; }
 .news-event-card > div:first-child > div:first-child:not(.news-feature-media) { max-width: 100%; font-size: .7rem !important; line-height: 1.5; letter-spacing: .045em; }
 .news-event-card h2 { text-wrap: pretty; letter-spacing: -.018em; }
-.news-feature-media { display: grid; place-items: center; height: clamp(270px,30vw,390px); max-height: none !important; padding: .4rem; }
-.news-feature-media img { display: block; width: 100%; height: 100% !important; object-fit: contain !important; }
+.news-feature-media { display: grid; place-items: center; height: auto; min-height: 0; max-height: none !important; padding: .4rem; }
+.news-feature-media img { display: block; width: auto; max-width: 100%; height: auto !important; object-fit: contain !important; }
 
-/* Dedicated Full-Visibility Portrait Poster Layout */
+/* Dedicated Full-Visibility Portrait Poster & Proof Layout */
 .news-poster-media,
-#cspc-2026 .news-feature-media {
+.news-proof-media,
+#cspc-2026 .news-feature-media,
+#wpa-2025 .news-feature-media,
+#ipa-2025 .news-feature-media {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
@@ -5226,21 +5229,29 @@ textarea.form-control {
   height: auto !important;
   max-height: none !important;
   min-height: 0 !important;
-  padding: 1rem !important;
-  overflow: visible !important;
+  padding: 1.25rem !important;
+  overflow: hidden !important;
   background: #FAF9F6 !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-radius: var(--radius-inner) !important;
+  box-shadow: var(--shadow-subtle) !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
 }
 
 .news-poster-media img,
 .news-poster-img,
-#cspc-2026 .news-feature-media img {
+.news-proof-media img,
+#cspc-2026 .news-feature-media img,
+#wpa-2025 .news-feature-media img,
+#ipa-2025 .news-feature-media img {
   display: block !important;
   width: auto !important;
   max-width: 100% !important;
   height: auto !important;
-  max-height: 560px !important;
+  max-height: 520px !important;
   object-fit: contain !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
   border-radius: calc(var(--radius-inner) - 6px) !important;
   cursor: zoom-in !important;
   transition: transform 0.25s var(--ease-spring), box-shadow 0.25s ease !important;
@@ -5248,7 +5259,10 @@ textarea.form-control {
 
 .news-poster-media img:hover,
 .news-poster-img:hover,
-#cspc-2026 .news-feature-media img:hover {
+.news-proof-media img:hover,
+#cspc-2026 .news-feature-media img:hover,
+#wpa-2025 .news-feature-media img:hover,
+#ipa-2025 .news-feature-media img:hover {
   transform: translateY(-2px) !important;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12) !important;
 }
@@ -7309,135 +7323,118 @@ html.splash-visited #splashScreen.splash-screen {
   #splashScreen .splash-enter-btn { min-height: 44px; margin-top: .7rem; }
 }
 
-/* Mobile-specific presentation: refined Cameo Medallion layout for mobile */
+/* Mobile-specific presentation: transparent PNG cutout portrait + editorial monograph copy (matching desktop) */
 @media (max-width: 768px) {
   #splashScreen.splash-screen:not(.is-hidden):not(.splash-closing) {
     display: flex !important;
     flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
+    justify-content: flex-start !important;
+    align-items: stretch !important;
+    gap: clamp(.35rem, 1.4svh, .9rem) !important;
     width: 100% !important;
     height: 100svh !important;
     min-height: 100svh !important;
     max-height: 100svh !important;
-    padding: max(1rem, env(safe-area-inset-top)) clamp(1.1rem, 5vw, 1.5rem) max(1rem, env(safe-area-inset-bottom)) !important;
-    overflow: hidden !important;
-    background: radial-gradient(ellipse at 50% 20%, rgba(200, 130, 24, 0.12), transparent 60%),
-                radial-gradient(ellipse at 80% 85%, rgba(78, 91, 166, 0.08), transparent 50%),
-                #FAF9F6 !important;
+    padding: max(.6rem, env(safe-area-inset-top)) clamp(1.1rem, 5vw, 1.5rem) max(.85rem, env(safe-area-inset-bottom)) !important;
+    overflow-y: auto !important;
+    background: transparent !important;
   }
 
-  /* No cut-off floating torso: elegant framed cameo medallion */
   #splashScreen .splash-portrait-source {
     position: relative !important;
     inset: auto !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    flex: 0 0 auto !important;
-    width: auto !important;
-    height: auto !important;
-    min-height: 0 !important;
-    margin: 0 auto 0.9rem !important;
-    z-index: 2 !important;
+    right: auto !important;
+    bottom: auto !important;
+    display: block !important;
+    flex: 0 0 min(43svh, 350px) !important;
+    width: 100% !important;
+    height: min(43svh, 350px) !important;
+    min-height: 210px !important;
+    margin: 0 auto !important;
+    z-index: 1 !important;
   }
 
   #splashScreen .splash-portrait {
     position: relative !important;
     inset: auto !important;
     display: block !important;
-    width: 96px !important;
-    height: 96px !important;
-    border-radius: 50% !important;
-    object-fit: cover !important;
-    object-position: center 10% !important;
+    width: min(100%, 350px) !important;
+    height: 100% !important;
     margin: 0 auto !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    object-fit: contain !important;
+    object-position: center bottom !important;
     transform: none !important;
-    opacity: 1 !important;
-    filter: contrast(1.05) saturate(1.04) brightness(1.02) !important;
-    background: #FAF9F6 !important;
-    border: 2px solid rgba(200, 130, 24, 0.5) !important;
-    box-shadow: 0 0 0 5px rgba(78, 91, 166, 0.08), 0 16px 36px rgba(22, 28, 45, 0.14) !important;
-    -webkit-mask-image: none !important;
-    mask-image: none !important;
-    animation: splash-cameo-arrive 0.6s cubic-bezier(0.2, 0.8, 0.25, 1) both !important;
+    opacity: .95 !important;
+    filter: saturate(1.06) contrast(1.04) brightness(1.01) drop-shadow(0 14px 34px rgba(22, 28, 45, 0.1)) !important;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 78%, rgba(0,0,0,.45) 92%, transparent 100%) !important;
+    mask-image: linear-gradient(180deg, #000 0%, #000 78%, rgba(0,0,0,.45) 92%, transparent 100%) !important;
+    animation: splash-portrait-fade 1.2s ease-out both !important;
   }
 
   #splashScreen .splash-monograph-card {
     position: relative !important;
+    z-index: 2 !important;
     flex: 0 0 auto !important;
-    width: 100% !important;
-    max-width: 430px !important;
+    width: min(100%, 560px) !important;
+    max-width: 560px !important;
     margin: 0 auto !important;
-    padding: 1.35rem 1.25rem 1.2rem !important;
-    background: rgba(255, 255, 255, 0.85) !important;
-    border: 1px solid rgba(255, 255, 255, 0.95) !important;
-    border-radius: 1.5rem !important;
-    box-shadow: 0 20px 48px rgba(22, 36, 54, 0.08), 0 1px 2px rgba(22, 36, 54, 0.04) !important;
-    -webkit-backdrop-filter: blur(20px) saturate(140%) !important;
-    backdrop-filter: blur(20px) saturate(140%) !important;
-    text-align: center !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
+    padding: .2rem 0 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    text-align: left !important;
+    display: block !important;
   }
 
   #splashScreen .splash-eyebrow {
-    font-size: 0.64rem !important;
-    line-height: 1.35 !important;
-    letter-spacing: 0.12em !important;
+    font-size: .64rem !important;
+    line-height: 1.45 !important;
+    letter-spacing: .12em !important;
     color: #66718a !important;
-    margin: 0 0 0.45rem !important;
+    margin: 0 !important;
   }
 
   #splashScreen .splash-quote {
-    font-size: clamp(1.28rem, 5vw, 1.58rem) !important;
-    line-height: 1.16 !important;
-    color: #1a2434 !important;
-    letter-spacing: -0.02em !important;
-    margin: 0 0 0.5rem !important;
     max-width: 22ch !important;
+    margin: .55rem 0 !important;
+    font-size: clamp(1.65rem, 7.4vw, 2.15rem) !important;
+    line-height: 1.08 !important;
+    color: #202b3c !important;
+    letter-spacing: -.03em !important;
     text-wrap: balance !important;
   }
 
   #splashScreen .splash-divider {
-    width: 32px !important;
+    width: 48px !important;
     height: 2px !important;
-    margin: 0.1rem auto 0.5rem !important;
-    background: linear-gradient(90deg, #C88218, rgba(200, 130, 24, 0.2)) !important;
+    margin: .55rem 0 !important;
+    background: linear-gradient(90deg, #a8824b, rgba(168, 130, 75, 0.2)) !important;
   }
 
   #splashScreen .splash-support-quote {
-    font-size: 0.84rem !important;
+    font-size: .84rem !important;
     line-height: 1.4 !important;
-    color: #556277 !important;
-    font-style: italic !important;
-    margin: 0 0 0.45rem !important;
-    max-width: 28ch !important;
+    color: #6f7887 !important;
+    margin: 0 !important;
   }
 
   #splashScreen .splash-scholar-title {
-    font-size: 0.74rem !important;
-    line-height: 1.35 !important;
-    color: #435166 !important;
-    margin: 0 0 0.85rem !important;
+    margin-top: .55rem !important;
+    font-size: .8rem !important;
+    line-height: 1.45 !important;
+    color: #3b4759 !important;
   }
 
   #splashScreen .splash-enter-btn {
-    width: 100% !important;
-    max-width: 250px !important;
-    min-height: 44px !important;
-    border-radius: 999px !important;
-    font-size: 0.88rem !important;
-    font-weight: 500 !important;
-    margin: 0 !important;
-    box-shadow: 0 8px 20px rgba(78, 91, 166, 0.28) !important;
-  }
-
-  #splashScreen .splash-progress-track {
-    width: min(100%, 180px) !important;
-    height: 2.5px !important;
-    margin-top: 0.75rem !important;
+    min-height: 48px !important;
+    margin-top: .8rem !important;
   }
 
   #splashScreen.is-hidden,
@@ -7449,11 +7446,6 @@ html.splash-visited #splashScreen.splash-screen {
     visibility: hidden !important;
     pointer-events: none !important;
   }
-}
-
-@keyframes splash-cameo-arrive {
-  from { opacity: 0; transform: scale(0.92); }
-  to { opacity: 1; transform: scale(1); }
 }
 
 @media (max-width: 768px) {
@@ -11861,8 +11853,12 @@ html.splash-visited #splashScreen.splash-screen {
     linear-gradient(112deg, #f9f7f2, #eef0ef 100%);
 }
 #splashScreen .splash-portrait {
-  opacity: .92 !important;
+  opacity: .94 !important;
   filter: saturate(1.05) contrast(1.04) brightness(1.02) drop-shadow(0 22px 48px rgba(22,28,45,.12)) !important;
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 80%, rgba(0,0,0,.45) 92%, transparent 100%) !important;
+  mask-image: linear-gradient(180deg, #000 0%, #000 80%, rgba(0,0,0,.45) 92%, transparent 100%) !important;
+  -webkit-mask-composite: source-over !important;
+  mask-composite: add !important;
 }
 #splashScreen .splash-monograph-card { pointer-events: auto; }
 .splash-progress-track {

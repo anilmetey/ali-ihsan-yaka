@@ -2166,30 +2166,15 @@
       sessionStorage.removeItem('aiy_splash_seen_session_v4');
     } catch (_) {}
 
-    // On mobile devices (<= 768px), bypass splash curtain automatically on initial load
-    // so mobile visitors land directly on the mobile-optimized hero without awkward overlays.
-    const isMobileViewport = window.matchMedia('(max-width: 768px)').matches;
-
-    if (isMobileViewport) {
-      isClosed = true;
-      document.documentElement.classList.add('splash-visited');
-      splash.classList.add('is-hidden');
-      splash.setAttribute('aria-hidden', 'true');
-      splash.inert = true;
-      splash.style.display = 'none';
-      document.body.classList.remove('splash-active');
-      setBackgroundInert(false);
-    } else {
-      // Desktop / PC: Show the elegant editorial monograph splash screen ("pc için güzel")
-      document.documentElement.classList.remove('splash-visited');
-      splash.classList.remove('is-hidden', 'splash-closing');
-      splash.removeAttribute('aria-hidden');
-      splash.inert = false;
-      splash.style.display = '';
-      document.body.classList.add('splash-active');
-      setBackgroundInert(true);
-      window.requestAnimationFrame(() => enterButton?.focus({ preventScroll: true }));
-    }
+    // Always show splash screen with full presentation on visit / reload (desktop & mobile)
+    document.documentElement.classList.remove('splash-visited');
+    splash.classList.remove('is-hidden', 'splash-closing');
+    splash.removeAttribute('aria-hidden');
+    splash.inert = false;
+    splash.style.display = '';
+    document.body.classList.add('splash-active');
+    setBackgroundInert(true);
+    window.requestAnimationFrame(() => enterButton?.focus({ preventScroll: true }));
 
     const closeSplash = () => {
       if (isClosed) return;
@@ -2265,10 +2250,8 @@
       if (dy > 60) closeSplash();
     }, { passive: true });
 
-    // 5. Timer schedule (runs for 4.5 seconds on desktop)
-    if (!isMobileViewport) {
-      scheduleSplashClose();
-    }
+    // 5. Timer schedule (runs for 4.5 seconds)
+    scheduleSplashClose();
 
     // 6. Replay button in footer
     replayButton?.addEventListener('click', (event) => {
