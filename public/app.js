@@ -2155,30 +2155,22 @@
     ].filter(Boolean);
     const setBackgroundInert = (inert) => backgroundRegions.forEach(region => { region.inert = inert; });
 
-    let hasSeenSplash = false;
-    try { hasSeenSplash = localStorage.getItem(splashSeenKey) === '1'; } catch (_) {}
+    // Ensure clean state and remove any old bypass keys from browser
     try {
-      hasSeenSplash = hasSeenSplash || sessionStorage.getItem('aiy_splash_seen_session_v4') === '1';
-      if (hasSeenSplash) localStorage.setItem(splashSeenKey, '1');
+      localStorage.removeItem(splashSeenKey);
+      localStorage.removeItem('aiy_splash_seen_v1');
+      sessionStorage.removeItem('aiy_splash_seen_session_v4');
     } catch (_) {}
 
-    if (hasSeenSplash) {
-      document.documentElement.classList.add('splash-visited');
-      splash.classList.add('is-hidden');
-      splash.setAttribute('aria-hidden', 'true');
-      splash.inert = true;
-      splash.style.display = 'none';
-      document.body.classList.remove('splash-active');
-      setBackgroundInert(false);
-    } else {
-      splash.classList.remove('is-hidden', 'splash-closing');
-      splash.removeAttribute('aria-hidden');
-      splash.inert = false;
-      splash.style.display = '';
-      document.body.classList.add('splash-active');
-      setBackgroundInert(true);
-      window.requestAnimationFrame(() => enterButton?.focus({ preventScroll: true }));
-    }
+    // Always show splash screen with full 6-second presentation on visit / reload
+    document.documentElement.classList.remove('splash-visited');
+    splash.classList.remove('is-hidden', 'splash-closing');
+    splash.removeAttribute('aria-hidden');
+    splash.inert = false;
+    splash.style.display = '';
+    document.body.classList.add('splash-active');
+    setBackgroundInert(true);
+    window.requestAnimationFrame(() => enterButton?.focus({ preventScroll: true }));
 
     const closeSplash = () => {
       if (isClosed) return;
@@ -2186,9 +2178,6 @@
 
       window.clearTimeout(splashAutoCloseTimer);
       splashAutoCloseTimer = 0;
-
-      try { localStorage.setItem(splashSeenKey, '1'); } catch (_) {}
-      try { sessionStorage.removeItem('aiy_splash_seen_session_v4'); } catch (_) {}
 
       // Immediately restore scrolling and unblock all background regions
       document.body.classList.remove('splash-active');
@@ -2216,12 +2205,12 @@
     };
 
     let splashStartTime = Date.now();
-    const MIN_DISPLAY_MS = 2000;
+    const MIN_DISPLAY_MS = 1500;
     let wheelAccum = 0;
 
     const scheduleSplashClose = () => {
       window.clearTimeout(splashAutoCloseTimer);
-      splashAutoCloseTimer = window.setTimeout(closeSplash, 6000);
+      splashAutoCloseTimer = window.setTimeout(closeSplash, 4500);
     };
 
     // 1. Enter button click (dismisses immediately on direct user intent)
@@ -2257,8 +2246,8 @@
       if (dy > 60) closeSplash();
     }, { passive: true });
 
-    // 5. Timer schedule
-    if (!hasSeenSplash) scheduleSplashClose();
+    // 5. Timer schedule (runs for 4.5 seconds)
+    scheduleSplashClose();
 
     // 6. Replay button in footer
     replayButton?.addEventListener('click', (event) => {

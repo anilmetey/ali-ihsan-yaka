@@ -679,9 +679,9 @@ function init() {
   flowTube(line(V(X.G + 0.54, R[0], 0), V(X.S - 0.15, R[0], 0)), {
     color: C.msg, radius: 0.036, tags: ['psy'], order: 2.55, particles: 1
   });
-  // Over-loop above the horizontal arrow to the right of Row 0 Gerçek
+  // Over-loop above the horizontal arrow returning into Row 0 Gerçek (retrograde coding loop: gelen ok)
   flowTube(
-    arc(V(X.G + 0.42, R[0] + 0.26, 0.14), V(X.S + 0.15, R[0] + 0.18, 0.14), 0.52, 0.18),
+    arc(V(X.S + 0.15, R[0] + 0.18, 0.14), V(X.G + 0.42, R[0] + 0.26, 0.14), 0.52, 0.18),
     { color: C.code, radius: 0.032, tags: ['psy'], order: 2.6, particles: 1 }
   );
 
@@ -704,9 +704,9 @@ function init() {
   flowTube(line(V(X.G + 0.54, R[1], 0), V(X.S - 0.15, R[1], 0)), {
     color: C.msg, radius: 0.036, tags: ['per'], order: 2.55, particles: 1
   });
-  // Over-loop arching from Row 1 Gerçek over to the right (Symbolic column)
+  // Over-loop returning from right back into Row 1 Gerçek (retrograde coding loop: gelen ok)
   flowTube(
-    arc(V(X.G + 0.35, R[1] + 0.32, 0.14), V(X.S + 0.28, R[1] + 0.18, 0.14), 0.56, 0.18),
+    arc(V(X.S + 0.28, R[1] + 0.18, 0.14), V(X.G + 0.35, R[1] + 0.32, 0.14), 0.56, 0.18),
     { color: C.code, radius: 0.032, tags: ['per'], order: 2.62, particles: 1 }
   );
 
@@ -729,9 +729,9 @@ function init() {
   flowTube(line(V(X.G + 0.52, R[2], 0), V(X.S - 0.52, R[2], 0)), {
     color: C.msg, radius: 0.036, tags: ['neu'], order: 2.5, particles: 1
   });
-  // Upward over-loop: Gerçek ⌢ Simgesel
+  // Upward over-loop: returning from Simgesel back into Gerçek (retrograde coding loop: gelen ok)
   flowTube(
-    arc(V(X.G + 0.25, R[2] + 0.4, 0.14), V(X.S - 0.25, R[2] + 0.4, 0.14), 0.55, 0.22),
+    arc(V(X.S - 0.25, R[2] + 0.4, 0.14), V(X.G + 0.25, R[2] + 0.4, 0.14), 0.55, 0.22),
     { color: C.code, radius: 0.032, tags: ['neu'], order: 2.58, particles: 1 }
   );
 

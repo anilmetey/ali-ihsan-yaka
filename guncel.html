@@ -115,7 +115,7 @@
         <div class="news-event-list" style="display: flex; flex-direction: column; gap: 3rem;">
 
           <!-- Event 1: Buffalo CSPC Symposium -->
-          <article id="cspc-2026" class="whats-new-card news-event-card scroll-reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: center; background: #FFFFFF; border: 1px solid var(--border-light); border-radius: var(--radius-outer); padding: 2rem; box-shadow: var(--shadow-card);">
+          <article id="cspc-2026" class="whats-new-card news-event-card scroll-reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: start; background: #FFFFFF; border: 1px solid var(--border-light); border-radius: var(--radius-outer); padding: 2rem; box-shadow: var(--shadow-card);">
             <div>
               <div style="display: inline-block; background: var(--color-primary-soft); color: var(--color-primary); font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600; padding: 0.35rem 0.8rem; border-radius: 999px; margin-bottom: 1rem;">
                 2 MAYIS 2026 &bull; UNIVERSITY AT BUFFALO (SUNY), NEW YORK
@@ -150,7 +150,7 @@
           </article>
 
           <!-- Event 2: WPA World Congress of Psychiatry (Prague) -->
-          <article id="wpa-2025" class="whats-new-card news-event-card scroll-reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: center; background: #FFFFFF; border: 1px solid var(--border-light); border-radius: var(--radius-outer); padding: 2rem; box-shadow: var(--shadow-card);">
+          <article id="wpa-2025" class="whats-new-card news-event-card scroll-reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: start; background: #FFFFFF; border: 1px solid var(--border-light); border-radius: var(--radius-outer); padding: 2rem; box-shadow: var(--shadow-card);">
             <div>
               <div style="display: inline-block; background: var(--color-secondary-soft); color: var(--color-secondary); font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600; padding: 0.35rem 0.8rem; border-radius: 999px; margin-bottom: 1rem;">
                 EKİM 2025 &bull; PRAG, ÇEKYA &bull; 25. DÜNYA PSİKİYATRİ KONGRESİ
@@ -292,7 +292,7 @@
           </article>
 
           <!-- Event 3: IPA Research Grant & Peer Reviewing -->
-          <article class="whats-new-card news-event-card scroll-reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: center; background: #FFFFFF; border: 1px solid var(--border-light); border-radius: var(--radius-outer); padding: 2rem; box-shadow: var(--shadow-card);">
+          <article class="whats-new-card news-event-card scroll-reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: start; background: #FFFFFF; border: 1px solid var(--border-light); border-radius: var(--radius-outer); padding: 2rem; box-shadow: var(--shadow-card);">
             <div>
               <div style="display: inline-block; background: var(--color-primary-soft); color: var(--color-primary); font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600; padding: 0.35rem 0.8rem; border-radius: 999px; margin-bottom: 1rem;">
                 2025 – 2026 &bull; ULUSLARARASI PSİKANALİZ BİRLİĞİ (IPA) & HAKEMLİK
@@ -327,26 +327,67 @@
           </article>
 
           <!-- Event 4: APsA 2026 San Francisco CE Accreditation -->
-          <article id="apsa-2026" class="whats-new-card news-event-card apsa-event-card scroll-reveal" style="background: var(--bg-card-outer); border: 1px solid var(--border-light); border-radius: var(--radius-outer); padding: 2rem;">
+          <article id="apsa-2026" class="whats-new-card news-event-card apsa-event-card scroll-reveal">
+            <!-- Left Editorial Column -->
             <div class="apsa-event-copy">
-              <div class="apsa-event-kicker">OCAK 2026 &bull; SAN FRANCISCO, CA &bull; APsA NATIONAL MEETING</div>
-              <h2>APsA 2026 National Meeting: 44,5 Katılım Saati</h2>
-              <p>San Francisco’da 27 Ocak–1 Şubat 2026 tarihlerinde düzenlenen APsA National Meeting için katılım belgesinde 44,5 contact hour kayıtlıdır. Program en fazla 45,5 saat sunmuştur; kişisel katılım toplamı 44,5 saattir.</p>
-              <div style="margin: 1.25rem 0 0; display: flex; gap: 0.75rem; flex-wrap: wrap;">
-                <a class="pub-btn pub-btn-primary" href="assets/docs/apsa-2026-certificate.pdf" target="_blank" rel="noopener">Katılım belgesini görüntüle ↗</a>
+              <div class="apsa-event-header-row">
+                <span class="apsa-event-kicker">OCAK 2026 &bull; SAN FRANCISCO, CA &bull; APsA NATIONAL MEETING</span>
+                <div class="apsa-hours-badge">
+                  <strong>44,5</strong>
+                  <span>Saat CE Kredisi</span>
+                </div>
+              </div>
+
+              <h2>APsA 2026 National Meeting: 44,5 Sürekli Eğitim Kredisi</h2>
+              
+              <p class="apsa-event-lead">
+                San Francisco’da 27 Ocak–1 Şubat 2026 tarihlerinde düzenlenen American Psychoanalytic Association (APsA) Ulusal Toplantısı kapsamında, sunulan en yüksek saat aralığı olan 45,5 saatin 44,5 saatine bizzat katılım sağlanarak resmi sürekli mesleki eğitim kredisi (CE / Contact Hours) tamamlanmıştır.
+              </p>
+
+              <div class="apsa-topic-tags" aria-label="Toplantı odak konuları">
+                <span class="apsa-topic-tag">✦ Çağdaş Psikanalitik Klinik</span>
+                <span class="apsa-topic-tag">✦ Sınır Durumlar &amp; Aktarım</span>
+                <span class="apsa-topic-tag">✦ Psikanalitik Araştırmalar</span>
+                <span class="apsa-topic-tag">✦ NYSED &amp; WES Akreditasyonu</span>
+              </div>
+
+              <div class="apsa-event-actions">
+                <a class="pub-btn pub-btn-primary" href="assets/docs/apsa-2026-certificate.pdf" target="_blank" rel="noopener">
+                  <span>Katılım Belgesini Aç (PDF)</span>
+                  <span aria-hidden="true">&nearr;</span>
+                </a>
+                <a class="pub-btn pub-btn-secondary" href="hakkimda.html#about-certificates">
+                  <span>Akademik Belgeler &rarr;</span>
+                </a>
               </div>
             </div>
+
+            <!-- Right Media Gallery Column (Balanced 2-Tile Horizontal Grid) -->
             <aside class="apsa-event-proof" aria-label="APsA katılım ve etkinlik fotoğrafları">
-              <div class="apsa-event-hours"><strong>44,5</strong><span>kişisel katılım saati</span></div>
-              <div style="display: flex; flex-direction: column; gap: 0.85rem; width: 100%;">
-                <figure class="certificate-preview" style="margin: 0;">
-                  <img src="assets/images/apsa-2026-colleagues.jpg" alt="APsA 2026 National Meeting meslektaşlarla grup fotoğrafı" width="1600" height="1149" loading="lazy" decoding="async" data-zoomable style="border-radius: 8px; width: 100%; height: auto; object-fit: cover; cursor: zoom-in;">
-                  <figcaption style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.35rem;">San Francisco · Uluslararası akademisyen ve klinisyen meslektaşlarla</figcaption>
+              <div class="apsa-media-grid">
+                
+                <!-- Tile 1: Colleague Photo -->
+                <figure class="apsa-media-tile">
+                  <div class="apsa-tile-img-wrap">
+                    <img src="assets/images/apsa-2026-colleagues.jpg" alt="APsA 2026 National Meeting meslektaşlarla grup fotoğrafı" width="1600" height="1149" loading="lazy" decoding="async" data-zoomable class="apsa-tile-img">
+                    <span class="apsa-tile-pill">Meslektaşlarla</span>
+                  </div>
+                  <figcaption class="apsa-tile-caption">
+                    San Francisco &bull; Uluslararası akademisyen ve klinisyen meslektaşlarla
+                  </figcaption>
                 </figure>
-                <figure class="certificate-preview" style="margin: 0;">
-                  <img src="assets/images/apsa-2026-attendance-preview.jpg" alt="APsA 2026 katılım belgesi; Ali Yaka adına 44,5 contact hour" width="1082" height="1400" loading="lazy" decoding="async" data-zoomable style="border-radius: 8px; width: 100%; height: auto; object-fit: cover; cursor: zoom-in;">
-                  <figcaption style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.35rem;">Resmi Katılım Belgesi Önizlemesi</figcaption>
+
+                <!-- Tile 2: Certificate Preview -->
+                <figure class="apsa-media-tile">
+                  <div class="apsa-tile-img-wrap apsa-cert-wrap">
+                    <img src="assets/images/apsa-2026-attendance-preview.jpg" alt="APsA 2026 katılım belgesi; Ali Yaka adına 44,5 contact hour" width="1082" height="1400" loading="lazy" decoding="async" data-zoomable class="apsa-tile-img apsa-cert-img">
+                    <span class="apsa-tile-pill pill-cert">Resmi Belge (44,5 h)</span>
+                  </div>
+                  <figcaption class="apsa-tile-caption">
+                    Resmi Katılım ve Sürekli Eğitim Belgesi
+                  </figcaption>
                 </figure>
+
               </div>
             </aside>
           </article>
