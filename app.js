@@ -3741,8 +3741,6 @@ document.addEventListener('DOMContentLoaded', () => {
     syncLang();
     window.addEventListener('aiy:langchange', syncLang);
 
-    document.body.appendChild(btn);
-
     const STORAGE_KEY = 'aiy_wa_chathead_pos';
     const getMargin = () => (window.innerWidth <= 768 ? 14 : 18);
     const getBottomDefault = () => (window.innerWidth <= 768 ? 20 : 24);
@@ -3773,7 +3771,9 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.classList.toggle('is-docked-left', state.side === 'left');
     }
 
-    requestAnimationFrame(applyDockedPosition);
+    applyDockedPosition();
+    document.body.appendChild(btn);
+    requestAnimationFrame(() => btn.classList.add('is-ready'));
     window.addEventListener('resize', applyDockedPosition, { passive: true });
 
     let pointerId = null;
@@ -3801,6 +3801,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const dy = e.clientY - startY;
       if (!moved && Math.hypot(dx, dy) > 6) {
         moved = true;
+        btn.classList.remove('is-snapping');
         btn.classList.add('is-dragging');
       }
       if (!moved) return;
@@ -3822,6 +3823,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (moved) {
         btn.classList.remove('is-dragging');
+        btn.classList.add('is-snapping');
         const rect = btn.getBoundingClientRect();
         const vw = window.innerWidth;
         const vh = window.innerHeight;
@@ -3830,6 +3832,7 @@ document.addEventListener('DOMContentLoaded', () => {
         state.topRatio = rect.top / Math.max(1, vh);
         try { sessionStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (_) {}
         applyDockedPosition();
+        setTimeout(() => btn.classList.remove('is-snapping'), 450);
       }
     }
 
