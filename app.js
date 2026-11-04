@@ -3325,11 +3325,13 @@
     });
 
   // -------------------------------------------------------------
-  // 8. HERO PSYCHE PARTICLE FIELD
+  // 8. HERO PSYCHE PARTICLE FIELD (Disabled per client request: static shape only)
   // -------------------------------------------------------------
   const canvas = document.getElementById('heroParticleCanvas');
   if (canvas) {
-    const ctx = canvas.getContext('2d', { alpha: true });
+    // Intentionally disabled: hero background is static geometric shape without particle motion
+    return;
+  }
     const wrap = canvas.closest('.hero-particle-field');
     const logicalSize = 420;
     const renderScale = Math.min(window.devicePixelRatio || 1, 2);

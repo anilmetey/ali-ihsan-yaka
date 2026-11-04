@@ -6635,22 +6635,29 @@ body.splash-active { overflow: hidden; }
   z-index: 1;
   isolation: isolate;
   pointer-events: none;
-  opacity: .58;
+  opacity: .48;
 }
 .hero-flow-motion { position:absolute; inset:0; display:block; width:100%; height:100%; overflow:visible; }
-.diagram-ghost { opacity: .18; stroke: #4A6082; stroke-width: 2.2px; }
+.diagram-ghost { opacity: .18; stroke: #4A6082; stroke-width: 2px; }
 .diagram-labels { opacity: .22; fill: #384968; font-weight: 600; }
-.diagram-nodes { opacity: .40; }
-.flow-track { fill:none; stroke:#D48214; stroke-width:3.8px; stroke-linecap:round; stroke-dasharray:5 30; opacity:.52; animation: lacanian-flow-dash 3.2s linear infinite; filter: drop-shadow(0 0 4px rgba(212, 130, 20, 0.3)); }
-.flow-lower { stroke: #D48214; stroke-width: 3.8px; opacity: .52; animation-duration:3.8s; animation-direction:reverse; }
-.flow-center { stroke:#4E5BA6; stroke-width:3.2px; stroke-dasharray:4 24; opacity:.46; animation-duration:2.8s; filter: drop-shadow(0 0 4px rgba(78, 91, 166, 0.25)); }
+.diagram-nodes { opacity: .35; }
+/* Flow animation disabled per client request: static shape only */
+.flow-track,
+.flow-lower,
+.flow-center {
+  display: none !important;
+  animation: none !important;
+}
+.hero-particle-field {
+  display: none !important;
+}
 .hero-actions .btn-primary {
   background: linear-gradient(135deg, #4E5BA6 0%, #3B4687 100%) !important;
   color: #FFFFFF !important;
   border-color: rgba(255, 255, 255, 0.15) !important;
 }
 @keyframes lacanian-flow-dash { to { stroke-dashoffset:-156px; } }
-.hero-particle-field canvas { display:block;width:100%;height:100%; }
+.hero-particle-field canvas { display:none !important; }
 @media (max-width:760px) {
   .hero-particle-field { top:43%;left:50%;width:min(94vw,520px);opacity:.12; }
 }
@@ -11978,44 +11985,26 @@ html.splash-visited #splashScreen.splash-screen {
 .model-headings .model-subhead { fill: #5A6682; }
 .model-headings .model-sidehead { fill: #C88218; }
 .model-row-labels, .model-structures, .model-speech { fill: #1B2438; }
-.model-loop,
-.model-inner-loop,
-.model-forward,
-.model-transition,
-.model-stage-down {
-  stroke: #3D5690;
-  stroke-dasharray: none !important;
-  animation: none !important;
+@keyframes arrowLoopMarch {
+  to { stroke-dashoffset: -32; }
 }
+@keyframes arrowInnerMarch {
+  to { stroke-dashoffset: -24; }
+}
+.model-loop, .model-inner-loop { stroke: #3D5690; stroke-dasharray: 10 6 !important; animation: arrowLoopMarch 1.8s linear infinite !important; }
+.model-forward, .model-transition, .model-stage-down { stroke: #3D5690; stroke-dasharray: 8 4 !important; animation: arrowInnerMarch 1.5s linear infinite !important; }
 .model-loop-label { fill: #4E5BA6; }
-.model-up,
-.model-down,
-.model-code-arc,
-.model-s1-return path,
-.model-s1-return,
-.model-s1-forward {
-  stroke: #B8791E;
-  stroke-dasharray: none !important;
-  animation: none !important;
-}
-.model-mirror-axis {
-  stroke: #3D5690 !important;
-  stroke-dasharray: none !important;
-  animation: none !important;
-}
-.model-s1-axis {
-  stroke: #B8791E !important;
-  stroke-dasharray: none !important;
-  animation: none !important;
-}
+.model-up, .model-down, .model-code-arc, .model-s1-return path, .model-s1-return, .model-s1-forward { stroke: #B8791E; stroke-dasharray: 8 4 !important; animation: arrowInnerMarch 1.5s linear infinite !important; }
+.model-mirror-axis { stroke: #3D5690 !important; stroke-dasharray: 10 6 !important; animation: arrowLoopMarch 1.6s linear infinite !important; }
+.model-s1-axis { stroke-dasharray: 10 6 !important; animation: arrowLoopMarch 1.6s linear infinite !important; }
 .model-axis-label { fill: #C88218; }
-.model-traveler,
-.model-travelers {
-  display: none !important;
-  animation: none !important;
-}
+.model-traveler { fill: #354B84; filter: none; }
+.model-traveler-gold { fill: #B8791E; filter: none; }
 #psyche-arrow-blue path { fill: #4E5BA6; }
 #psyche-arrow-gold path { fill: #C88218; }
+/* calmer motion */
+.model-loop-top, .model-loop-bottom, .model-forward { animation-duration: 12s; }
+.model-up, .model-down, .model-s1-return path { animation-duration: 9s; }
 
 /* 3D view (desktop): ivory, indigo & brass stage matching site palette */
 .psyche-diagram-frame.is-3d { background: #FAF9F6; border: 1px solid rgba(78,91,166,.18); box-shadow: 0 24px 64px rgba(22,28,45,.07); }
