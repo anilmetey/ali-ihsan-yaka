@@ -6639,7 +6639,7 @@ body.splash-active { overflow: hidden; }
 }
 .hero-flow-motion { position:absolute; inset:0; display:block; width:100%; height:100%; overflow:visible; }
 .diagram-ghost { opacity: .18; stroke: #4A6082; stroke-width: 2px; }
-.diagram-labels { opacity: .22; fill: #384968; font-weight: 600; }
+.diagram-labels { display: none !important; }
 .diagram-nodes { opacity: .35; }
 /* Flow animation disabled per client request: static shape only */
 .flow-track,
