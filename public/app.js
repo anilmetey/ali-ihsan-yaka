@@ -2828,15 +2828,15 @@
       sessionStorage.removeItem('aiy_splash_seen_session_v4');
     } catch (_) {}
 
-    // Direct page load: User opens page directly with zero delay (no blocking curtain)
-    splash.classList.add('is-hidden');
-    splash.setAttribute('aria-hidden', 'true');
-    splash.inert = true;
-    splash.style.display = 'none';
-    document.documentElement.classList.add('splash-visited');
-    document.body.classList.remove('splash-active');
-    setBackgroundInert(false);
-    isClosed = true;
+    // Splash screen presentation: 3 seconds auto-timer, dismissible instantly by clicking anywhere
+    document.documentElement.classList.remove('splash-visited');
+    splash.classList.remove('is-hidden', 'splash-closing');
+    splash.removeAttribute('aria-hidden');
+    splash.inert = false;
+    splash.style.display = '';
+    document.body.classList.add('splash-active');
+    setBackgroundInert(true);
+    window.requestAnimationFrame(() => enterButton?.focus({ preventScroll: true }));
 
     const closeSplash = () => {
       if (isClosed) return;
@@ -2866,12 +2866,11 @@
     };
 
     let splashStartTime = Date.now();
-    const MIN_DISPLAY_MS = 600;
     let wheelAccum = 0;
 
     const scheduleSplashClose = () => {
       window.clearTimeout(splashAutoCloseTimer);
-      splashAutoCloseTimer = window.setTimeout(closeSplash, 5000);
+      splashAutoCloseTimer = window.setTimeout(closeSplash, 3000);
     };
 
     // 1. Enter button click (dismisses immediately on direct user intent)
@@ -2880,35 +2879,29 @@
       closeSplash();
     });
 
-    // 2. Click anywhere on splash backdrop / card (subject to grace period to prevent accidental dismissal on tab focus)
+    // 2. Click anywhere on splash backdrop / card: instant dismissal
     splash.addEventListener('click', () => {
-      if (Date.now() - splashStartTime < MIN_DISPLAY_MS) return;
       closeSplash();
     });
 
-    // 3. Scroll wheel / touchpad down: grace period + cumulative scroll threshold to prevent trackpad micro-jitter dismissal
+    // 3. Scroll wheel / touchpad down: instant dismissal on intentional scroll
     const onWheel = (e) => {
-      if (Date.now() - splashStartTime < MIN_DISPLAY_MS) return;
-      if (e.deltaY > 0) {
-        wheelAccum += e.deltaY;
-        if (wheelAccum > 100) closeSplash();
-      }
+      if (e.deltaY > 20) closeSplash();
     };
     splash.addEventListener('wheel', onWheel, { passive: true });
 
-    // 4. Touch swipe gesture dismisses curtain on mobile (after grace period)
+    // 4. Touch swipe gesture dismisses curtain on mobile
     let touchStartY = 0;
     splash.addEventListener('touchstart', (e) => {
       touchStartY = e.touches[0].clientY;
     }, { passive: true });
     splash.addEventListener('touchmove', (e) => {
-      if (Date.now() - splashStartTime < MIN_DISPLAY_MS) return;
       const dy = touchStartY - e.touches[0].clientY;
-      if (dy > 60) closeSplash();
+      if (dy > 40) closeSplash();
     }, { passive: true });
 
-    // 5. Timer schedule is triggered only on explicit replay modal
-    // (page loads directly with zero delay)
+    // 5. 3-Second Auto-dismiss timer
+    scheduleSplashClose();
 
     // 6. Replay button in footer
     replayButton?.addEventListener('click', (event) => {
