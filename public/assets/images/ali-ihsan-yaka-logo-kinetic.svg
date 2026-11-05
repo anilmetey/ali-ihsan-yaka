@@ -1,7 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 130" width="540" height="130" fill="none" role="img" aria-label="DR. ALİ İHSAN YAKA">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&amp;family=Montserrat:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap');
       .logo-title {
         font-family: 'Cinzel', 'Playfair Display', 'Cormorant Garamond', 'Didot', 'Times New Roman', 'Georgia', serif;
         font-size: 26px;
@@ -10,14 +9,14 @@
         fill: #0B2D48;
       }
       .logo-sub1 {
-        font-family: 'Montserrat', 'Inter', -apple-system, sans-serif;
+        font-family: 'Montserrat', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
         font-size: 10.5px;
         font-weight: 600;
         letter-spacing: 0.26em;
         fill: #9B7438;
       }
       .logo-sub2 {
-        font-family: 'Inter', -apple-system, sans-serif;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
         font-size: 9px;
         font-weight: 500;
         letter-spacing: 0.16em;
@@ -36,7 +35,6 @@
 
   <!-- ==================== BORROMEAN KNOT EMBLEM ==================== -->
   <g transform="translate(56, 65)" filter="url(#subtleShadow)">
-    <!-- Outer fine framing geometry -->
     <circle cx="0" cy="2" r="48" stroke="#9B7438" stroke-width="0.8" stroke-dasharray="2 4" opacity="0.4"/>
     <circle cx="0" cy="2" r="44" stroke="#0B2D48" stroke-width="0.5" opacity="0.2"/>
 
@@ -56,11 +54,9 @@
     <circle cx="0" cy="-14" r="26" stroke="#FFFFFF" stroke-width="5.5" class="knot-ring" stroke-dasharray="16 147" stroke-dashoffset="-82"/>
     <circle cx="0" cy="-14" r="26" stroke="#0B2D48" stroke-width="3" class="knot-ring" stroke-dasharray="16 147" stroke-dashoffset="-82"/>
 
-    <!-- Central intersection: objet petit a -->
     <circle cx="0" cy="2" r="3.2" fill="#9B7438"/>
     <circle cx="0" cy="2" r="1.4" fill="#FFFFFF"/>
 
-    <!-- Small register mathemes -->
     <text x="0" y="-32" font-family="'Cinzel', serif" font-size="7.5" font-weight="700" fill="#0B2D48" text-anchor="middle" opacity="0.85">S</text>
     <text x="-31" y="26" font-family="'Cinzel', serif" font-size="7.5" font-weight="700" fill="#9B7438" text-anchor="middle" opacity="0.85">I</text>
     <text x="31" y="26" font-family="'Cinzel', serif" font-size="7.5" font-weight="700" fill="#3D5A80" text-anchor="middle" opacity="0.85">R</text>
@@ -75,7 +71,7 @@
     <text x="0" y="51" class="logo-title">DR. ALİ İHSAN YAKA</text>
     <line x1="1" y1="63" x2="220" y2="63" stroke="#9B7438" stroke-width="1.4" opacity="0.75"/>
     <circle cx="226" cy="63" r="1.8" fill="#9B7438"/>
-    <text x="2" y="82" class="logo-sub1">PSİKANALİZ & KLİNİK PSİKOLOJİ</text>
+    <text x="2" y="82" class="logo-sub1">PSİKANALİZ &amp; KLİNİK PSİKOLOJİ</text>
     <text x="2" y="100" class="logo-sub2">UNIVERSITY AT BUFFALO CSPC • METU PH.D.</text>
   </g>
 </svg>
