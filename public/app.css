@@ -8044,13 +8044,13 @@ html.splash-visited #splashScreen.splash-screen {
   transform: translateY(-1px);
 }
 
-/* Scaled up by 40% per client request (Height: 54px, max-width: 220px) */
+/* Scaled up by 40% per client request (Height: 54px, max-width: 240px) */
 .brand-logo-img {
   display: block !important;
   height: 54px !important;
   width: auto !important;
-  max-width: 220px !important;
-  aspect-ratio: 520 / 180 !important;
+  max-width: 240px !important;
+  aspect-ratio: auto !important;
   object-fit: contain !important;
   transition: transform 0.25s ease;
 }
@@ -8158,8 +8158,8 @@ html.splash-visited #splashScreen.splash-screen {
   display: block !important;
   height: 64px !important;
   width: auto !important;
-  max-width: 250px !important;
-  aspect-ratio: 520 / 180 !important;
+  max-width: 260px !important;
+  aspect-ratio: auto !important;
   object-fit: contain !important;
 }
 
