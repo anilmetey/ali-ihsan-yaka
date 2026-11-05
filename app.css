@@ -6635,7 +6635,17 @@ body.splash-active { overflow: hidden; }
   z-index: 1;
   isolation: isolate;
   pointer-events: none;
-  opacity: .78;
+  opacity: 0.30;
+  filter: blur(0.25px);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.08) 32%, rgba(0, 0, 0, 0.85) 58%, rgba(0, 0, 0, 0.95) 100%);
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.08) 32%, rgba(0, 0, 0, 0.85) 58%, rgba(0, 0, 0, 0.95) 100%);
+}
+@media (max-width: 768px) {
+  .hero-lacanian-flow {
+    opacity: 0.16;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.25) 30%, rgba(0, 0, 0, 0.8) 80%);
+    mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.25) 30%, rgba(0, 0, 0, 0.8) 80%);
+  }
 }
 .hero-flow-motion {
   position: absolute;
