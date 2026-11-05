@@ -2709,15 +2709,10 @@
       img.alt = activeLang === 'en' ? (homepageLooseNorm[norm] || img.dataset.localeBaseAlt) : img.dataset.localeBaseAlt;
     });
 
-    // Dynamic brand logo localization (English uses regular 'I', Turkish uses 'İ')
+    // Unified 4K Brand Logo localization (Alt text updates with language)
     const isEnMode = (activeLang === 'en');
-    document.querySelectorAll('img.brand-logo-img:not(.footer-logo-img)').forEach(img => {
-      img.src = isEnMode ? 'assets/images/ali-ihsan-yaka-logo-kinetic-en.svg' : 'assets/images/ali-ihsan-yaka-logo-kinetic.svg';
-      img.alt = isEnMode ? 'Dr. Ali Ihsan Yaka — Psychoanalysis & Clinical Psychology' : 'Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek';
-    });
-    document.querySelectorAll('img.footer-logo-img').forEach(img => {
-      img.src = isEnMode ? 'assets/images/ali-ihsan-yaka-logo-kinetic-dark-en.svg' : 'assets/images/ali-ihsan-yaka-logo-kinetic-dark.svg';
-      img.alt = isEnMode ? 'Dr. Ali Ihsan Yaka — Psychoanalysis & Clinical Psychology' : 'Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek';
+    document.querySelectorAll('img.brand-logo-img').forEach(img => {
+      img.alt = isEnMode ? 'Dr. Ali Ihsan Yaka — Simgesel • Imgesel • Gercek' : 'Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek';
     });
 
     translateUnkeyedText(activeLang);
@@ -3056,7 +3051,7 @@
       drawerBrand.className = 'drawer-brand';
       drawerBrand.href = 'index.html';
       drawerBrand.setAttribute('aria-label', 'Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek');
-      drawerBrand.innerHTML = '<img class="brand-logo-img drawer-logo-img" src="assets/images/ali-ihsan-yaka-logo-kinetic.svg" alt="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek" width="520" height="180">';
+      drawerBrand.innerHTML = '<picture><source srcset="assets/images/ali-ihsan-yaka-logo-4k.webp" type="image/webp"><img class="brand-logo-img drawer-logo-img" src="assets/images/ali-ihsan-yaka-logo-4k.png" alt="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek" width="4096" height="1480"></picture>';
       drawerHeader.append(drawerBrand, drawerClose);
       panel.append(drawerHeader, list);
       if (cta) {

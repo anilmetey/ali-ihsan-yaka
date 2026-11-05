@@ -6635,16 +6635,12 @@ body.splash-active { overflow: hidden; }
   z-index: 1;
   isolation: isolate;
   pointer-events: none;
-  opacity: 0.30;
-  filter: blur(0.25px);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.08) 32%, rgba(0, 0, 0, 0.85) 58%, rgba(0, 0, 0, 0.95) 100%);
-  mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.08) 32%, rgba(0, 0, 0, 0.85) 58%, rgba(0, 0, 0, 0.95) 100%);
+  opacity: 0.14;
+  filter: blur(0.2px);
 }
 @media (max-width: 768px) {
   .hero-lacanian-flow {
-    opacity: 0.16;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.25) 30%, rgba(0, 0, 0, 0.8) 80%);
-    mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.25) 30%, rgba(0, 0, 0, 0.8) 80%);
+    opacity: 0.09;
   }
 }
 .hero-flow-motion {
@@ -8054,12 +8050,19 @@ html.splash-visited #splashScreen.splash-screen {
   transform: translateY(-1px);
 }
 
-/* Scaled up by 40% per client request (Height: 54px, max-width: 240px) */
+.brand-block picture,
+.drawer-brand picture,
+.footer-brand-lockup picture {
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+/* Full HD 4K Ultra Quality Brand Logo (Header Height: 48px, max-width: 220px) */
 .brand-logo-img {
   display: block !important;
-  height: 54px !important;
+  height: 48px !important;
   width: auto !important;
-  max-width: 240px !important;
+  max-width: 220px !important;
   aspect-ratio: auto !important;
   object-fit: contain !important;
   transition: transform 0.25s ease;
@@ -8151,7 +8154,7 @@ html.splash-visited #splashScreen.splash-screen {
   }
 }
 
-/* Footer Brand Lockup - Scaled up by 40% (Height: 64px) */
+/* Footer Brand Lockup - Matching 4K Ultra Quality Logo (Height: 52px, max-width: 240px) */
 .footer-brand-lockup {
   display: inline-flex !important;
   align-items: center !important;
@@ -8166,9 +8169,9 @@ html.splash-visited #splashScreen.splash-screen {
 
 .footer-logo-img {
   display: block !important;
-  height: 64px !important;
+  height: 52px !important;
   width: auto !important;
-  max-width: 260px !important;
+  max-width: 240px !important;
   aspect-ratio: auto !important;
   object-fit: contain !important;
 }
