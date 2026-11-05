@@ -174,7 +174,7 @@
     "whatsNew.title": "Güncel Duyurular & Akademik Etkinlikler",
     "whatsNew.subtitle": "Klinik psikanaliz, travma ve söylem analizi alanındaki güncel sempozyum ve yayınlar.",
     "whatsNew.card1Date": "2 MAYIS 2026 • BUFFALO, NEW YORK",
-    "whatsNew.card1Title": "CSPC Sempozyumu: Dildeki Paranoit Boyut ve Soykırım",
+    "whatsNew.card1Title": "CSPC Sempozyumu: Dildeki Paranoid Boyut ve Soykırım",
     "whatsNew.card1Excerpt": "University at Buffalo CSPC Sempozyumu: “Conceptualizing Êzidî Femicide as Communicide: Psychoanalytic Reflections on the Paranoiac Dimension of Language in Genocide.”",
     "whatsNew.card1Link": "Ayrıntıları İncele →",
     "whatsNew.card2Date": "EKİM 2025 • PRAG, ÇEKYA",
@@ -196,10 +196,10 @@
     "practice.p2Title": "Klinik Süpervizyon ve Vaka Analizi",
     "practice.p2Desc": "Klinik psikologlar, psikoterapistler ve sahada çalışan ruh sağlığı profesyonelleri için psikanalitik vaka kavramsallaştırması. Aktarım ve karşı-aktarım dinamikleri, nevroz, psikoz ve perversiyon klinik yapılarının ayrımı ve terapistin analitik duruşu ele alınır.",
     "practice.p2Tag": "Bireysel & Grup",
-    "practice.p3Num": "03 / KLİNİK ÇERÇEVE",
-    "practice.p3Title": "Klinik Çerçeve & Gizlilik",
-    "practice.p3Desc": "Çalışmanın çerçevesi mesleki etik ve gizlilik sınırları gözetilerek birlikte belirlenir. Görüşme sıklığı ve yöntemi kişiyle konuşularak planlanır.",
-    "practice.p3Tag": "Etik & Sınırlar",
+    "practice.p3Num": "03 / EĞİTİM & SEMİNER",
+    "practice.p3Title": "Seminerler & Psikanalitik Eğitimler",
+    "practice.p3Desc": "Üniversiteler, meslek dernekleri ve sivil toplum kuruluşları için Lacanyen psikanaliz, klinik vaka formülasyonu ve travma kuramı seminerleri ve eğitim programları.",
+    "practice.p3Tag": "Seminer & Eğitim",
     "practice.p4Num": "04 / FORMAT",
     "practice.p4Title": "Online ve Yüz Yüze Görüşmeler",
     "practice.p4Desc": "Online veya yüz yüze görüşme seçenekleri güncel uygunluğa göre değerlendirilir. Saat planlamasında Türkiye ve ABD Doğu saat dilimleri dikkate alınır.",
@@ -213,10 +213,10 @@
     "practice.p2f2": "Psikanalitik vaka kavramsallaştırması",
     "practice.p2f3": "Kriz ortamlarında ikincil travmayı gözetme",
     "practice.p2f4": "Bireysel veya küçük grup süpervizyonu",
-    "practice.p3f1": "Meslek etiği ve açık klinik sınırlar",
-    "practice.p3f2": "Uygunluk halinde çevrim içi görüşme",
-    "practice.p3f3": "Ücret ve çerçevenin önceden konuşulması",
-    "practice.p3f4": "Uygunluğu değerlendirmek için ön görüşme",
+    "practice.p3f1": "Üniversiteler ve dernekler için davetli konferanslar",
+    "practice.p3f2": "Klinik vaka formülasyonu ve dinleme atölyeleri",
+    "practice.p3f3": "Saha çalışanları için kriz ve travma seminerleri",
+    "practice.p3f4": "Kurumsal ve akademik grup eğitimleri",
     "practice.featurePill": "KLİNİK FORMÜLASYON & DİLE GELEN ARZU",
     "practice.featureOrientation": "LACANYEN PSİKANALİTİK YÖNELİM",
     "practice.featureTitle": "Semptomun Ardındaki Öznel Anlam",
@@ -666,7 +666,7 @@
     "pub.axis2Desc": "Kriz ve saha koşullarında çalışan klinisyenlerin aktarım çıkmazları ve etik konumu.",
     "pub.axis3Kicker": "EKSEN 03 • TOPLUMSAL TRAVMA",
     "pub.axis3Title": "Soykırım, Dil & Öznelleşme",
-    "pub.axis3Desc": "Kolektif şiddetin dildeki izleri, paranoit bilgi ve subjektif toplumsallaşma.",
+    "pub.axis3Desc": "Kolektif şiddetin dildeki izleri, paranoid bilgi ve subjektif toplumsallaşma.",
     "pub.heroIdsAria": "Doğrulanmış akademik kimlikler ve dizinler",
     "pub.idScholarVal": "Yayın & Atıf Dizini",
     "pub.idDergiparkVal": "ULAKBİM Kaydı",
@@ -724,8 +724,8 @@
     "pub.specEquivLabel": "ULUSLARARASI AKREDİTASYON",
     "pub.specEquivVal": "WES ABD Doktora Eşdeğerliği · Tescil No: 15141",
     "pub.symposiumPill": "ULUSLARARASI SEMPOZYUM",
-    "pub.cspcDesc": "University at Buffalo (SUNY) CSPC 2026 Bahar Sempozyumu kapsamında sunulan bu çalışma; Êzidî kadın kırımı ve soykırımını Lacanyen psikanalitik kuramın paranoit bilgi ve dil yapılanması üzerinden çözümler. Şiddetin simgesel düzeni ve iletişimi hedef alan bir “iletişim-kırım” (communicide) olarak nasıl inşa edildiğini irdeler.",
-    "pub.cspcTopicTag": "Dilde Paranoit Boyut & Soykırım",
+    "pub.cspcDesc": "University at Buffalo (SUNY) CSPC 2026 Bahar Sempozyumu kapsamında sunulan bu çalışma; Êzidî kadın kırımı ve soykırımını Lacanyen psikanalitik kuramın paranoid bilgi ve dil yapılanması üzerinden çözümler. Şiddetin simgesel düzeni ve iletişimi hedef alan bir “iletişim-kırım” (communicide) olarak nasıl inşa edildiğini irdeler.",
+    "pub.cspcTopicTag": "Dilde Paranoid Boyut & Soykırım",
     "pub.wpaPill": "DÜNYA PSİKİYATRİ KONGRESİ",
     "pub.wpaDesc": "Dünya Psikiyatri Birliği (WPA) tarafından Prag'da düzenlenen 25. Dünya Psikiyatri Kongresi'nde kabul edilen araştırma; Irak Ninova Ovası'nda Êzidî soykırımı mağdurlarıyla çalışan ruh sağlığı personelinin aktarım, karşı-aktarım ve ikincil travma süreçlerini Lacanyen psikanaliz perspektifinden inceler.",
     "pub.wpaTopicTag": "Klinik Süpervizyon & Toplumsal Travma",
@@ -947,14 +947,14 @@
     "psyche.real": "The Real",
     "psyche.imaginary": "The Imaginary",
     "psyche.symbolic": "The Symbolic",
-    "psyche.caption": "Model adapted from Dr. Ali İhsan Yaka’s work “Psychotic Structure and the Paternal Function,” redesigned with motion for the web. <a href=\"yayinlar.html#ayna-2024\">Read the 2024 article ↗</a>",
+    "psyche.caption": "Model adapted from Dr. Ali Ihsan Yaka’s work “Psychotic Structure and the Paternal Function,” redesigned with motion for the web. <a href=\"yayinlar.html#ayna-2024\">Read the 2024 article ↗</a>",
     "psyche.diagramTitle": "Diagram from the signifying chain to psychic structures",
     "psyche.diagramDesc": "The diagram follows the paternal metaphor and mirror stage into the links among the Real, Imaginary, and Symbolic, the S1 axis, psychic structures, and the subject’s speaking function.",
     "psyche.s2Label": "S2 · signifying chain",
     "psyche.s1Label": "S1",
     "psyche.ayna": "Mirror Stage",
     "psyche.structureHeading": "Psychic structures",
-    "psyche.captionText": "Adapted from Dr. Ali İhsan Yaka’s work “Psychotic Structure and the Paternal Function.”",
+    "psyche.captionText": "Adapted from Dr. Ali Ihsan Yaka’s work “Psychotic Structure and the Paternal Function.”",
     "psyche.captionLink": "Read the 2024 article ↗",
     "psyche.researchPrompt": "For the article’s other diagrams and notes, visit",
     "psyche.motionNote": "The upper S2 loop returns from right to left; the lower loop connects from left to right. The message travels horizontally left to right; the Mirror Stage axis points down while S1 coding vectors rise from bottom to top.",
@@ -1012,10 +1012,10 @@
     "practice.p2Title": "Clinical Supervision and Case Formulation",
     "practice.p2Desc": "Psychoanalytic case formulation for clinical psychologists and frontline mental health workers. Transference/counter-transference dynamics, differentiation of clinical structures (neurosis, psychosis, perversion).",
     "practice.p2Tag": "Individual & Group",
-    "practice.p3Num": "03 / CLINICAL FRAME",
-    "practice.p3Title": "Clinical Frame & Confidentiality",
-    "practice.p3Desc": "The frame for clinical work is agreed together, with professional ethics and the limits of confidentiality in view. Frequency and format are discussed with each person.",
-    "practice.p3Tag": "Ethics & Boundaries",
+    "practice.p3Num": "03 / TRAININGS & SEMINARS",
+    "practice.p3Title": "Seminars & Psychoanalytic Trainings",
+    "practice.p3Desc": "Invited lectures, clinical seminars, and training modules on Lacanian psychoanalysis, trauma theory, and case formulation for universities, professional associations, and humanitarian organizations.",
+    "practice.p3Tag": "Seminars & Training",
     "practice.p1f1": "Free association and close attention to speech",
     "practice.p1f2": "Exploring subjective anxiety, repetition, and symptoms",
     "practice.p1f3": "Lacanian punctuation (scansion) and session rhythm",
@@ -1024,10 +1024,10 @@
     "practice.p2f2": "Psychoanalytic case formulation",
     "practice.p2f3": "Considering secondary trauma in crisis settings",
     "practice.p2f4": "Individual or small-group supervision",
-    "practice.p3f1": "Professional ethics and clear clinical boundaries",
-    "practice.p3f2": "Online sessions where available",
-    "practice.p3f3": "Fee arrangements discussed in advance",
-    "practice.p3f4": "An initial conversation to clarify fit",
+    "practice.p3f1": "Invited university and association talks (Boğaziçi, GİPDER, etc.)",
+    "practice.p3f2": "Case formulation and psychoanalytic listening workshops",
+    "practice.p3f3": "Humanitarian aid and crisis psychology training modules",
+    "practice.p3f4": "Institutional and academic group seminars",
     "practice.featurePill": "CLINICAL FORMULATION & DESIRE IN SPEECH",
     "practice.featureOrientation": "LACANIAN PSYCHOANALYTIC ORIENTATION",
     "practice.featureTitle": "The Subjective Meaning Behind a Symptom",
@@ -1223,7 +1223,7 @@
     "about.gipderTalk": "2024 · GİPDER, guest talk on “Case Formulation in Clinical Psychoanalysis” — video ↗",
     "publication.bogaziciBadge": "INVITED TALK · 11TH PSYCHOLOGY DAY, BOĞAZİÇİ UNIVERSITY",
     "publication.bogaziciTitle": "From Pathological Loneliness to Subjective Sociality: The Experience of Psychoanalytic Subjectivation",
-    "publication.bogaziciCitation": "<strong>Yaka, A. İ.</strong> (April 27, 2025). 11th Psychology Day, Boğaziçi University, “Loneliness”, Istanbul.",
+    "publication.bogaziciCitation": "<strong>Yaka, A. I.</strong> (April 27, 2025). 11th Psychology Day, Boğaziçi University, “Loneliness”, Istanbul.",
     "publication.bogaziciDesc": "Invited talk on loneliness and a psychoanalytic perspective, including the mirror stage and subjectivity in social life from a Lacanian psychoanalytic perspective.",
     "publication.bogaziciImageAlt": "Dr. Ali Ihsan Yaka presenting on psychoanalytic perspectives on loneliness at Boğaziçi University’s 11th Psychology Day",
     "publication.bogaziciLink": "View event details →",
@@ -1237,7 +1237,7 @@
     "news.bogaziciTag3": "✦ Symbolic Order &amp; the Other",
     "news.bogaziciTag4": "✦ Subjective Sociality",
     "news.bogaziciCta": "Explore Academic Work",
-    "news.bogaziciCitationLink": "Publication Record: Yaka, A. İ. (2025) &rarr;",
+    "news.bogaziciCitationLink": "Publication Record: Yaka, A. I. (2025) &rarr;",
     "news.bogaziciStageBadge": "KEYNOTE &amp; HALL &bull; BOĞAZİÇİ UNIVERSITY",
     "news.bogaziciStageCaption": "Boğaziçi University 11th Psychology Day · April 27, 2025",
     "news.bogaziciStageDesc": "Albert Long Hall, Invited Keynote Opening Session",
@@ -1250,7 +1250,7 @@
     "news.bogaziciZoomHint": "Zoom",
     "publication.kurdiBadge": "KURMANJI TRANSLATION · PSYCHOLOGY KURDÎ",
     "publication.kurdiTitle": "From Psychopathological Loneliness Toward Subjective Sociality: The Experience of Psychoanalytic Subjectivation",
-    "publication.kurdiCitation": "<strong>Yaka, A. İ.</strong> (2026). “<em>Ji tenêtiya psîkopatolojîk berev civakîbûna subjektîf: Tecribeya bikerbûna psîkanalîtîk</em>.” <em>Psychology Kurdî</em>, 9(21), 61–74. Translated into Kurmanji by Aydin Rengîn.",
+    "publication.kurdiCitation": "<strong>Yaka, A. I.</strong> (2026). “<em>Ji tenêtiya psîkopatolojîk berev civakîbûna subjektîf: Tecribeya bikerbûna psîkanalîtîk</em>.” <em>Psychology Kurdî</em>, 9(21), 61–74. Translated into Kurmanji by Aydin Rengîn.",
     "publication.kurdiDesc": "The Kurmanji translation of an article examining loneliness, subjective sociality, and social trauma through a psychoanalytic framework.",
     "publication.kurdiPdf": "View the journal issue (PDF) ↗",
     "publication.kurdiAnnouncement": "Issue announcement ↗",
@@ -1609,7 +1609,7 @@
     "practice.homeCalloutLink": "Explore Professional Programs",
     "research.schemasEyebrow": "THEORETICAL SCHEMAS & FIELDWORK TOPOLOGY",
     "research.schemasTitle": "Conceptual Diagrams, Doctoral Thesis & Trilingual Psychoanalysis Dictionary",
-    "research.schemasIntro": "Dr. Ali İhsan Yaka's conceptual schemas from his obsessional neurosis paper, METU doctoral fieldwork topology, and the trilingual psychoanalysis terminology study across English, Kurmancî, and Turkish.",
+    "research.schemasIntro": "Dr. Ali Ihsan Yaka's conceptual schemas from his obsessional neurosis paper, METU doctoral fieldwork topology, and the trilingual psychoanalysis terminology study across English, Kurmancî, and Turkish.",
     "research.schema1Tag": "CLINICAL RESEARCH DIAGRAMS",
     "research.schema1Title": "Obsessional Structure & The Impasse of Desire",
     "research.schema1Desc": "Structural schemas from Freud's Rat Man to Lacan's Seminars IV & V: The split subject's ($) strategy of impossible desire, doubt, debt, and procrastination against the demand of the Other (A).",
@@ -1628,7 +1628,7 @@
     "research.schemaMethod": "Method:",
     "guncel.heroPill": "CURRENT SYMPOSIA & EVENTS",
     "guncel.heroTitle": "Academic Work, Symposia & Announcements",
-    "guncel.heroLead": "Dr. Ali İhsan Yaka's research at the University at Buffalo CSPC, international congress papers, research grants, and current clinical events.",
+    "guncel.heroLead": "Dr. Ali Ihsan Yaka's research at the University at Buffalo CSPC, international congress papers, research grants, and current clinical events.",
     "guncel.apsaCredits": "44.5 Continuing Education Credits",
     "practice.prog1Status": "Current availability confirmed upon inquiry",
     "practice.prog2Status": "Available on demand · capacity confirmed",
@@ -1779,13 +1779,13 @@
     "OCAK 2026 • SAN FRANCISCO, CA • APsA NATIONAL MEETING": "JANUARY 2026 • SAN FRANCISCO, CA • APsA NATIONAL MEETING",
     "Yayın ve bildiri kayıtlarını incele →": "View publication and presentation records →",
     "Ön Görüşme Randevusu Al →": "Request an Initial Consultation →",
-    "Dr. Ali İhsan Yaka'nın portresi": "Portrait of Dr. Ali Ihsan Yaka",
+    "Dr. Ali Ihsan Yaka'nın portresi": "Portrait of Dr. Ali Ihsan Yaka",
     "American Psychoanalytic Association 2026 katılım belgesinin önizlemesi": "Preview of the 2026 American Psychoanalytic Association attendance certificate",
-    "Ali İhsan Yaka'nın Boğaziçi Üniversitesi XI. Psikoloji Günü'ndeki sunumundan": "A photograph of Ali Ihsan Yaka presenting at Boğaziçi University’s 11th Psychology Day",
-    "Dr. Ali İhsan Yaka Klinik Görünüm": "Clinical portrait of Dr. Ali Ihsan Yaka",
+    "Ali Ihsan Yaka'nın Boğaziçi Üniversitesi XI. Psikoloji Günü'ndeki sunumundan": "A photograph of Ali Ihsan Yaka presenting at Boğaziçi University’s 11th Psychology Day",
+    "Dr. Ali Ihsan Yaka Klinik Görünüm": "Clinical portrait of Dr. Ali Ihsan Yaka",
     "University at Buffalo CSPC Spring 2026 Symposium Afişi": "Poster for the University at Buffalo CSPC Spring 2026 Symposium",
     "25. Dünya Psikiyatri Kongresi (WPA) e-Poster Belgesi": "E-poster for the 25th World Congress of Psychiatry (WPA)",
-    "Dr. Ali İhsan Yaka Boğaziçi Üniversitesi XI. Psikoloji Günü'nde Yalnızlık ve Psikanalitik Perspektif başlıklı konuşmasını yaparken": "Dr. Ali Ihsan Yaka speaking on loneliness and the psychoanalytic perspective at Boğaziçi University’s 11th Psychology Day",
+    "Dr. Ali Ihsan Yaka Boğaziçi Üniversitesi XI. Psikoloji Günü'nde Yalnızlık ve Psikanalitik Perspektif başlıklı konuşmasını yaparken": "Dr. Ali Ihsan Yaka speaking on loneliness and the psychoanalytic perspective at Boğaziçi University’s 11th Psychology Day",
     "AYNA Klinik Psikoloji Dergisi Hakemlik Belgesi": "Peer-review certificate for AYNA Clinical Psychology Journal",
     "APsA 2026 katılım belgesi; Ali Yaka adına 44,5 contact hour": "APsA 2026 attendance certificate for Ali Yaka, recording 44.5 contact hours",
     "Psikolog · Ak Psikoteknik Merkezi": "Psychologist · Ak Psycho-technical Center",
@@ -1939,9 +1939,9 @@
     "Ön Görüşme Randevusu Başlat →": "Request an Initial Consultation →",
     "GÜNCEL GELİŞMELER & DUYURULAR": "RECENT WORK & ANNOUNCEMENTS",
     "Akademik Çalışmalar, Sempozyumlar & Duyurular": "Academic Work, Symposia & Announcements",
-    "Dr. Ali İhsan Yaka'nın University at Buffalo CSPC bünyesindeki araştırmaları, uluslararası kongre bildirileri, araştırma bursları ve güncel klinik etkinlikleri.": "Research at the University at Buffalo CSPC, international conference presentations, research grants, and recent clinical events.",
-    "CSPC Yıllık Sempozyumu: “Dildeki Paranoit Boyut ve Soykırım”": "CSPC Annual Symposium: “The Paranoid Dimension of Language and Genocide”",
-    "University at Buffalo Center for the Study of Psychoanalysis & Culture (CSPC) 2026 Bahar Sempozyumu kapsamında sunulan bu çalışma; Êzidî kadın kırımı ve soykırımını Lacanyen psikanalitik kuramın paranoit bilgi ve dil yapılanması üzerinden çözümler. Şiddetin yalnızca fiziksel bir imha değil, aynı zamanda simgesel düzeni ve iletişimi hedef alan bir \"iletişim-kırım\" (communicide) olarak nasıl inşa edildiğini irdeler.": "Presented at the University at Buffalo CSPC 2026 Spring Symposium, this paper examines the genocide of Êzidî women through Lacanian accounts of paranoid knowledge and language. It considers how violence targets not only bodies but also symbolic order and communication, a process described as “communicide.”",
+    "Dr. Ali Ihsan Yaka'nın University at Buffalo CSPC bünyesindeki araştırmaları, uluslararası kongre bildirileri, araştırma bursları ve güncel klinik etkinlikleri.": "Research at the University at Buffalo CSPC, international conference presentations, research grants, and recent clinical events.",
+    "CSPC Yıllık Sempozyumu: “Dildeki Paranoid Boyut ve Soykırım”": "CSPC Annual Symposium: “The Paranoid Dimension of Language and Genocide”",
+    "University at Buffalo Center for the Study of Psychoanalysis & Culture (CSPC) 2026 Bahar Sempozyumu kapsamında sunulan bu çalışma; Êzidî kadın kırımı ve soykırımını Lacanyen psikanalitik kuramın paranoid bilgi ve dil yapılanması üzerinden çözümler. Şiddetin yalnızca fiziksel bir imha değil, aynı zamanda simgesel düzeni ve iletişimi hedef alan bir \"iletişim-kırım\" (communicide) olarak nasıl inşa edildiğini irdeler.": "Presented at the University at Buffalo CSPC 2026 Spring Symposium, this paper examines the genocide of Êzidî women through Lacanian accounts of paranoid knowledge and language. It considers how violence targets not only bodies but also symbolic order and communication, a process described as “communicide.”",
     "Yer: 202 Clemens Hall, Buffalo, NY": "Location: 202 Clemens Hall, Buffalo, NY",
     "EKİM 2025 • PRAG, ÇEKYA • 25. DÜNYA PSİKİYATRİ KONGRESİ": "OCTOBER 2025 • PRAGUE, CZECHIA • 25TH WORLD CONGRESS OF PSYCHIATRY",
     "25. WPA Dünya Kongresi: Êzidî Soykırımı ve Süpervizyonda Toplumsal Travma": "25th WPA World Congress: Êzidî Genocide and Social Trauma in Supervision",
@@ -2088,7 +2088,7 @@
     "Travma Sempozyumu Katılım Sertifikası (3510×2482) · Büyütmek için tıklayınız": "Trauma Symposium Attendance Certificate (3510×2482) · Click to enlarge",
     "ORCID KAYDI": "ORCID RECORD",
     "Yayınlar, Tezler ve Bildiriler": "Publications, Dissertations and Presentations",
-    "Yayınlar, Tezler ve Bildiriler | Dr. Ali İhsan Yaka": "Publications, Dissertations and Presentations | Dr. Ali Ihsan Yaka",
+    "Yayınlar, Tezler ve Bildiriler | Dr. Ali Ihsan Yaka": "Publications, Dissertations and Presentations | Dr. Ali Ihsan Yaka",
     "Hata 404 · Sayfa Bulunamadı": "Error 404 · Page Not Found",
     "Aradığınız sayfa dilin veya bilincin sınırları dışında kalmış olabilir.": "The page you are looking for may have moved or no longer be available.",
     "Bağlantı adresi değişmiş, kaldırılmış veya geçici olarak ulaşılamıyor olabilir. Ana sayfaya dönerek psikanalitik çalışma alanlarını ve yayınları inceleyebilirsiniz.": "The link may have changed, the page may have been removed, or it may be temporarily unavailable. Return to the home page to explore clinical work and publications.",
@@ -2106,8 +2106,8 @@
     "5. İletişim": "5. Contact",
     "Bu bilgilendirme veya siteyle ilgili sorular için": "For questions about this notice or the website, write to",
     "adresine yazabilirsiniz. Bu sayfa, klinik gizlilik koşullarının veya mevzuata ilişkin hukuki danışmanlığın yerine geçmez.": ". This notice does not replace clinical confidentiality terms or legal advice about applicable regulations.",
-    "Gizlilik, Mesleki Etik ve Hasta Mahremiyeti İlkeleri | Dr. Ali İhsan Yaka": "Privacy, Professional Ethics, and Patient Confidentiality | Dr. Ali Ihsan Yaka",
-    "Sayfa Bulunamadı (404) | Dr. Ali İhsan Yaka, Ph.D.": "Page Not Found (404) | Dr. Ali Ihsan Yaka, Ph.D.",
+    "Gizlilik, Mesleki Etik ve Hasta Mahremiyeti İlkeleri | Dr. Ali Ihsan Yaka": "Privacy, Professional Ethics, and Patient Confidentiality | Dr. Ali Ihsan Yaka",
+    "Sayfa Bulunamadı (404) | Dr. Ali Ihsan Yaka, Ph.D.": "Page Not Found (404) | Dr. Ali Ihsan Yaka, Ph.D.",
     "KLİNİK & PRATİK BİLGİLER": "CLINICAL PRACTICE INFORMATION",
     "Sıkça Sorulan Sorular": "Frequently Asked Questions",
     "Psikanalitik psikoterapi süreci, seansların çerçevesi, gizlilik esasları ve klinik süpervizyon hakkında merak edilen temel hususlar.": "Answers to common questions about psychoanalytic psychotherapy, the frame of sessions, confidentiality, and clinical supervision.",
@@ -2194,7 +2194,7 @@
     "SÜDGE Eğitici Belgesi · T.C. Sağlık Bakanlığı": "SÜDGE Trainer Certificate · Turkish Ministry of Health",
     "Sürücü Davranışlarını Geliştirme Eğitimi (SÜDGE) eğitici eğitimi sertifikasyonu.": "Driver Behavior Improvement Training (SÜDGE) trainer certification.",
     "Kayseri, Türkiye": "Kayseri, Turkey",
-    "Buffalo CSPC Araştırma Ofisi · Dr. Ali İhsan Yaka (#408)": "Buffalo CSPC Research Office · Dr. Ali İhsan Yaka (#408)",
+    "Buffalo CSPC Araştırma Ofisi · Dr. Ali Ihsan Yaka (#408)": "Buffalo CSPC Research Office · Dr. Ali Ihsan Yaka (#408)",
     "CSPC Sempozyumu Programı, Tezi ve Freud Arşivi": "CSPC Symposium Program, Dissertation & Freud Archive",
     "· 7. Uluslararası Bilişsel Psikoterapi Kongresi (ICCP): Bağlanma, şemalar ve psikopatoloji üzerine bildiri (İstanbul).": "· 7th International Congress of Cognitive Psychotherapy (ICCP): Paper on attachment, schemas, and psychopathology (Istanbul).",
     "05 / MESLEKİ KATKI · DİLLER & AKREDİTASYON": "05 / PROFESSIONAL SERVICE · LANGUAGES & ACCREDITATION",
@@ -2335,7 +2335,7 @@
     "Resmi Katılım ve Sürekli Eğitim Belgesi": "Official Attendance and Continuing Education Certificate",
     "Doktora Tezi Odağı": "Doctoral Dissertation Focus",
     "Doktora Araştırması Zemin Çalışması": "Doctoral Research Fieldwork Foundation",
-    "Bu saha deneyimi, Dr. Ali İhsan Yaka’nın ODTÜ doktora tezinin (2024) ve Buffalo CSPC sunumunun klinik zeminini oluşturmuştur.": "This fieldwork experience formed the clinical foundation of Dr. Ali İhsan Yaka’s METU doctoral dissertation (2024) and his Buffalo CSPC symposium presentation.",
+    "Bu saha deneyimi, Dr. Ali Ihsan Yaka’nın ODTÜ doktora tezinin (2024) ve Buffalo CSPC sunumunun klinik zeminini oluşturmuştur.": "This fieldwork experience formed the clinical foundation of Dr. Ali Ihsan Yaka’s METU doctoral dissertation (2024) and his Buffalo CSPC symposium presentation.",
     "Bağlanma Örüntüleri, Erken Dönem Uyumsuz Şemalar, Öz-Düzenleme ve Psikolojik Belirtiler Arasındaki İlişkiler": "The Relationships Between Attachment Patterns, Early Maladaptive Schemas, Self-Regulation, and Psychological Symptoms",
     "(2012). Ankara Üniversitesi Sosyal Bilimler Enstitüsü, Psikoloji (Klinik Psikoloji) Anabilim Dalı Yüksek Lisans Tezi. Tez Danışmanı: Prof. Dr. Nesrin Hisli Şahin.": "(2012). Master's Thesis, Ankara University Graduate School of Social Sciences, Department of Psychology (Clinical Psychology). Advisor: Prof. Dr. Nesrin Hisli Şahin.",
     "(2024). AYNA Klinik Psikoloji Dergisi, 11(1), 1–37. https://doi.org/10.31682/ayna.1282059": "(2024). AYNA Clinical Psychology Journal, 11(1), 1–37. https://doi.org/10.31682/ayna.1282059",
@@ -2360,8 +2360,8 @@
     "ARAŞTIRMALAR · DOKTORA SONRASI & KURAMSAL YAYINLAR": "RESEARCH · POSTDOCTORAL & THEORETICAL PUBLICATIONS",
     "Psikotik Yapı ve Baba İşlevi": "Psychotic Structure and the Paternal Function",
     "Sözden ruhsal yapıya: Gösteren zinciri, Baba metaforu ve ayna evresi üzerinden ruhsal yapıların oluşumu ve topolojik analizi.": "From speech to psychic structure: Topological analysis of the formation of psychic structures through the signifying chain, the paternal metaphor, and the mirror stage.",
-    "Dr. Ali İhsan Yaka’nın": "Published in",
-    "’nde yayımlanan hakemli araştırması; ana akım biyomedikal yaklaşımların semptom kataloglarına sıkışan psikoz kavramsallaştırmasını Lacanyen psikanalitik dinleme, gösteren zinciri ve topolojik formasyonlar ekseninde yeniden temellendirir.": ", Dr. Ali İhsan Yaka’s peer-reviewed study reconceptualizes psychosis beyond mainstream biomedical symptom catalogs through Lacanian psychoanalytic listening, the signifying chain, and topological formations.",
+    "Dr. Ali Ihsan Yaka’nın": "Published in",
+    "’nde yayımlanan hakemli araştırması; ana akım biyomedikal yaklaşımların semptom kataloglarına sıkışan psikoz kavramsallaştırmasını Lacanyen psikanalitik dinleme, gösteren zinciri ve topolojik formasyonlar ekseninde yeniden temellendirir.": ", Dr. Ali Ihsan Yaka’s peer-reviewed study reconceptualizes psychosis beyond mainstream biomedical symptom catalogs through Lacanian psychoanalytic listening, the signifying chain, and topological formations.",
     "YAYIN ORGANI": "JOURNAL",
     "2024 · Cilt 11, Sayı 1, ss. 1–37": "2024 · Vol. 11, Issue 1, pp. 1–37",
     "AKADEMİK DİZİN & DOI": "INDEXING & DOI",
@@ -2436,7 +2436,7 @@
     "Özgün Şemayı PDF Olarak Aç": "Open Original Diagram (PDF)",
     "04 / KAVRAMSAL GELİŞİM": "04 / CONCEPTUAL PROGRESSION",
     "Lacanyen Topolojinin Adım Adım Evrimi (Şekil 1–5)": "Step-by-Step Evolution of the Lacanian Topology (Figures 1–5)",
-    "Dr. Ali İhsan Yaka’nın makalesinde Şekil 1’den 5’e doğru ilerlerken gösteren zinciri, kodlama ve mesaj arasındaki ilişki adım adım inşa edilir.": "Across Figures 1 to 5 in Dr. Ali İhsan Yaka’s article, the relationship among the signifying chain, coding, and the message is constructed step by step.",
+    "Dr. Ali Ihsan Yaka’nın makalesinde Şekil 1’den 5’e doğru ilerlerken gösteren zinciri, kodlama ve mesaj arasındaki ilişki adım adım inşa edilir.": "Across Figures 1 to 5 in Dr. Ali Ihsan Yaka’s article, the relationship among the signifying chain, coding, and the message is constructed step by step.",
     "ŞEKİL 1 · LACAN'IN ARZU GRAFİĞİ": "FIGURE 1 · LACAN’S GRAPH OF DESIRE",
     "Temel Düzey Arzu Grafı & Kapitone Noktası": "Elementary Graph of Desire & Quilting Point (Point de Capiton)",
     "A (Kod)": "A (Code)",
@@ -2497,7 +2497,7 @@
     "Tedavi oryantasyonu hastanın ruhsal yapısına göre şekillenir. Analist efendi rolünü bırakıp süjenin arzusunun ekonomisini dinleyen konumda kalmalıdır.": "Treatment orientation is shaped by the patient’s psychic structure. The analyst relinquishes the position of master and remains attentive to the economy of the subject’s desire.",
     "07 / AKADEMİK KÜNYE": "07 / CITATION & DOWNLOADS",
     "Yayın Künyesi ve Doğrudan İndirme": "Bibliographic Citation & Direct Downloads",
-    "Yaka, A. İ. (2024). Psikotik Yapı, Baba İşlevi ve Lacanyen Kavramsallaştırma.": "Yaka, A. İ. (2024). Psychotic Structure, Paternal Function, and Lacanian Conceptualization.",
+    "Yaka, A. I. (2024). Psikotik Yapı, Baba İşlevi ve Lacanyen Kavramsallaştırma.": "Yaka, A. I. (2024). Psychotic Structure, Paternal Function, and Lacanian Conceptualization.",
     "Özgün Şemayı PDF Olarak Aç / İndir (Vektörel)": "Open / Download Original Diagram PDF (Vector)",
     "Makale Tam Metnini İncele (37 Sayfa PDF)": "Read Full Article PDF (37 Pages)",
     "Yayın Sayfasına Git ↗": "Go to Journal Page ↗",
@@ -2571,7 +2571,7 @@
     "Türkçe": "Turkish",
     "Terim ara (Örn: Unconscious, Arzu, Kiryar)...": "Search terms (e.g., Unconscious, Desire, Kiryar)...",
     "Psikanaliz terimlerinde ara": "Search psychoanalysis terms",
-    "Bu terminoloji çalışması, çokdilli psikanalitik psikoterapi seanslarında ve çokkültürlü klinik saha bağlamında dilsel ve kavramsal aktarımı kolaylaştırmak üzere Dr. Ali İhsan Yaka tarafından derlenmektedir.": "This terminology matrix is compiled by Dr. Ali İhsan Yaka to facilitate conceptual precision and multilingual clinical listening across psychoanalytic sessions and cross-cultural fieldwork."
+    "Bu terminoloji çalışması, çokdilli psikanalitik psikoterapi seanslarında ve çokkültürlü klinik saha bağlamında dilsel ve kavramsal aktarımı kolaylaştırmak üzere Dr. Ali Ihsan Yaka tarafından derlenmektedir.": "This terminology matrix is compiled by Dr. Ali Ihsan Yaka to facilitate conceptual precision and multilingual clinical listening across psychoanalytic sessions and cross-cultural fieldwork."
   };
   const homepageLooseTextEnglish = Object.fromEntries(Object.entries(homepageLooseText).map(([tr, en]) => [en, tr]));
   const homepageLooseNorm = Object.fromEntries(
@@ -2709,6 +2709,17 @@
       img.alt = activeLang === 'en' ? (homepageLooseNorm[norm] || img.dataset.localeBaseAlt) : img.dataset.localeBaseAlt;
     });
 
+    // Dynamic brand logo localization (English uses regular 'I', Turkish uses 'İ')
+    const isEnMode = (activeLang === 'en');
+    document.querySelectorAll('img.brand-logo-img:not(.footer-logo-img)').forEach(img => {
+      img.src = isEnMode ? 'assets/images/ali-ihsan-yaka-logo-kinetic-en.svg' : 'assets/images/ali-ihsan-yaka-logo-kinetic.svg';
+      img.alt = isEnMode ? 'Dr. Ali Ihsan Yaka — Psychoanalysis & Clinical Psychology' : 'Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek';
+    });
+    document.querySelectorAll('img.footer-logo-img').forEach(img => {
+      img.src = isEnMode ? 'assets/images/ali-ihsan-yaka-logo-kinetic-dark-en.svg' : 'assets/images/ali-ihsan-yaka-logo-kinetic-dark.svg';
+      img.alt = isEnMode ? 'Dr. Ali Ihsan Yaka — Psychoanalysis & Clinical Psychology' : 'Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek';
+    });
+
     translateUnkeyedText(activeLang);
     window.dispatchEvent(new CustomEvent('aiy:langchange', { detail: { lang: activeLang } }));
   }
@@ -2817,15 +2828,15 @@
       sessionStorage.removeItem('aiy_splash_seen_session_v4');
     } catch (_) {}
 
-    // Always show splash screen with full presentation on visit / reload (desktop & mobile)
-    document.documentElement.classList.remove('splash-visited');
-    splash.classList.remove('is-hidden', 'splash-closing');
-    splash.removeAttribute('aria-hidden');
-    splash.inert = false;
-    splash.style.display = '';
-    document.body.classList.add('splash-active');
-    setBackgroundInert(true);
-    window.requestAnimationFrame(() => enterButton?.focus({ preventScroll: true }));
+    // Direct page load: User opens page directly with zero delay (no blocking curtain)
+    splash.classList.add('is-hidden');
+    splash.setAttribute('aria-hidden', 'true');
+    splash.inert = true;
+    splash.style.display = 'none';
+    document.documentElement.classList.add('splash-visited');
+    document.body.classList.remove('splash-active');
+    setBackgroundInert(false);
+    isClosed = true;
 
     const closeSplash = () => {
       if (isClosed) return;
@@ -2852,20 +2863,15 @@
 
       // 260ms smooth transition, guaranteed fallback
       window.setTimeout(finalizeClose, 260);
-
-      document.getElementById('welcome')?.scrollIntoView({
-        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
-        block: 'start'
-      });
     };
 
     let splashStartTime = Date.now();
-    const MIN_DISPLAY_MS = 1500;
+    const MIN_DISPLAY_MS = 600;
     let wheelAccum = 0;
 
     const scheduleSplashClose = () => {
       window.clearTimeout(splashAutoCloseTimer);
-      splashAutoCloseTimer = window.setTimeout(closeSplash, 4500);
+      splashAutoCloseTimer = window.setTimeout(closeSplash, 5000);
     };
 
     // 1. Enter button click (dismisses immediately on direct user intent)
@@ -2901,8 +2907,8 @@
       if (dy > 60) closeSplash();
     }, { passive: true });
 
-    // 5. Timer schedule (runs for 4.5 seconds)
-    scheduleSplashClose();
+    // 5. Timer schedule is triggered only on explicit replay modal
+    // (page loads directly with zero delay)
 
     // 6. Replay button in footer
     replayButton?.addEventListener('click', (event) => {
