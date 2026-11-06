@@ -13325,21 +13325,26 @@ html.splash-visited #splashScreen.splash-screen {
 .faq-accordion-item[hidden]{display:none}
 @media(max-width:600px){.faq-filter{flex-wrap:nowrap;overflow-x:auto;margin-inline:-1rem;padding:0 1rem .3rem;scrollbar-width:none}.faq-chip{flex:0 0 auto}}
 
-/* Keep the SVG motif translations intact; animate opacity only. */
+/* Quiet hero artwork: preserve the diagram, keep it out of the reading column. */
 #heroCenterSchema { transform-origin: 720px 460px; }
-.hero-lacanian-flow { opacity: .3; filter: none; }
+.hero-art-strip {
+  background: linear-gradient(118deg, #fbfaf7 0%, #f8f7f4 58%, #f1f2f0 100%);
+}
+.hero-art-strip::before {
+  background: radial-gradient(ellipse at 84% 24%, rgba(88, 108, 120, .055), transparent 48%);
+}
+.hero-lacanian-flow {
+  opacity: .3;
+  filter: grayscale(1);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 43%, rgba(0,0,0,.24) 54%, rgba(0,0,0,.72) 67%, #000 80%);
+  mask-image: linear-gradient(90deg, transparent 0%, transparent 43%, rgba(0,0,0,.24) 54%, rgba(0,0,0,.72) 67%, #000 80%);
+}
 #symbolGraphOfDesire, #symbolSchemaL, #symbolBorromean, #symbolMobiusTorus {
-  animation: lacanian-motif-breathe 14s ease-in-out infinite alternate;
+  animation: none;
+  opacity: .5;
 }
-#symbolSchemaL { animation-delay: -3s; }
-#symbolBorromean { animation-delay: -7s; }
-#symbolMobiusTorus { animation-delay: -10s; }
-@keyframes lacanian-motif-breathe {
-  0% { opacity: .7; }
-  100% { opacity: .92; }
-}
-@media (max-width: 768px) {
-  .hero-lacanian-flow { opacity: .16; }
+@media (max-width: 992px) {
+  .hero-lacanian-flow { display: none; }
 }
 .home-reflection {
   max-width: 40rem;
@@ -13419,8 +13424,8 @@ html.splash-visited #splashScreen.splash-screen {
 @media(max-width:480px) { .cpd-card-iccp .iccp-workshop-grid { grid-template-columns: 1fr; } .cpd-card-iccp .iccp-workshop-card { display: grid; grid-template-columns: minmax(105px,38%) minmax(0,1fr); align-items: center; } .cpd-card-iccp .iccp-workshop-card img { aspect-ratio: 1.35; } }
 
 /* Footer logo stays light for contrast; the header keeps its original colors. */
-html[data-logo-language="tr"] { --footer-brand-mask: url("assets/images/ali-yaka-logo-tr.svg"); }
-html[data-logo-language="en"] { --footer-brand-mask: url("assets/images/ali-yaka-logo-en.svg"); }
+html[data-logo-language="tr"] { --footer-brand-mask: url("assets/images/ali-yaka-logo-tr.svg?v=20261106b"); }
+html[data-logo-language="en"] { --footer-brand-mask: url("assets/images/ali-yaka-logo-en.svg?v=20261106b"); }
 .footer-brand-lockup picture {
   position: relative;
 }
@@ -13433,6 +13438,6 @@ html[data-logo-language="en"] { --footer-brand-mask: url("assets/images/ali-yaka
   inset: 0;
   pointer-events: none;
   background: #fff;
-  -webkit-mask: var(--footer-brand-mask, url("assets/images/ali-yaka-logo-tr.svg")) center / contain no-repeat;
-  mask: var(--footer-brand-mask, url("assets/images/ali-yaka-logo-tr.svg")) center / contain no-repeat;
+  -webkit-mask: var(--footer-brand-mask, url("assets/images/ali-yaka-logo-tr.svg?v=20261106b")) center / contain no-repeat;
+  mask: var(--footer-brand-mask, url("assets/images/ali-yaka-logo-tr.svg?v=20261106b")) center / contain no-repeat;
 }
