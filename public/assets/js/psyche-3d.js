@@ -632,8 +632,8 @@ function init() {
   /* 6. Baba-nın-Adları (Kod) — Complete Figure 5 Matrix */
 
   // Register medallions in the 3 rows:
-  // Row 0 (Simgeselden Düşme -> Psikotik): Gerçek
-  registerNode(X.G, R[0], C.real, 'real', ['psy']);
+  // Row 0 (Simgeselden Düşme -> Psikotik): İmgesel — latest revision
+  registerNode(X.G, R[0], C.imag, 'imag', ['psy']);
   // Row 1 (Simgeselde Tanı(n)mama -> Pervert): İmgesel, Gerçek
   registerNode(X.I, R[1], C.imag, 'imag', ['per']);
   registerNode(X.G, R[1], C.real, 'real', ['per']);
@@ -643,7 +643,7 @@ function init() {
   registerNode(X.S, R[2], C.symb, 'symb', ['neu']);
 
   // --- Row 0 (Top / Psikotik) connections inside Baba-nın-Adları ---
-  // U-shaped curve from top of İmgesel vertical vector into Row 0 Gerçek (exact Figure 5 detail!)
+  // U-shaped curve from top of İmgesel vertical vector into Row 0 İmgesel (exact Figure 5 detail!)
   flowTube(
     bezier(
       V(X.I + 0.16, R[0] - 0.08, 0.14),
@@ -653,11 +653,11 @@ function init() {
     ),
     { color: C.code, radius: 0.034, tags: ['psy'], order: 2.35, particles: 2 }
   );
-  // Short horizontal arrow to the right of Row 0 Gerçek (Gerçek →)
+  // Short horizontal arrow to the right of Row 0 İmgesel (Gerçek →)
   flowTube(line(V(X.G + 0.46, R[0], 0), V(X.G + 1.28, R[0], 0)), {
     color: C.msg, radius: 0.036, tags: ['psy'], order: 2.55, particles: 1
   });
-  // Over-loop above the horizontal arrow returning into top-right of Row 0 Gerçek (↶)
+  // Over-loop above the horizontal arrow returning into top-right of Row 0 İmgesel (↶)
   flowTube(
     arc(V(X.G + 1.38, R[0] + 0.14, 0.14), V(X.G + 0.30, R[0] + 0.34, 0.14), 0.48, 0.18),
     { color: C.code, radius: 0.032, tags: ['psy'], order: 2.6, particles: 1 }

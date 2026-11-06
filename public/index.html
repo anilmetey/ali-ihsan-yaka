@@ -32,8 +32,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 
-  <link rel="icon" href="assets/images/psyche-structure-mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="app.css?v=8.20">
+  <link rel="icon" href="assets/images/psyche-structure-mark.svg" type="image/webp">
+  <link rel="stylesheet" href="app.css?v=8.24">
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -206,7 +206,7 @@
           <!-- 1. DR. ALİ İHSAN YAKA'S INTEGRATED TOPOLOGICAL SCHEMA (CENTER) -->
           <!-- Scaled down to ~66% in the center with delicate semi-transparency -->
           <!-- ============================================================== -->
-          <g id="heroCenterSchema" transform="translate(720, 460) scale(0.66) translate(-720, -450)">
+          <g id="heroCenterSchema" transform="translate(720, 460) scale(0.52) translate(-720, -450)">
             <!-- Framing Coordinate Ellipse -->
             <ellipse cx="720" cy="450" rx="540" ry="310" stroke="#3D5A80" stroke-width="1.2" stroke-dasharray="4 6" opacity="0.3"/>
             
@@ -359,6 +359,10 @@
           </div>
 
           <p class="lead" data-i18n="hero.lead">Klinik psikoloji, psikanalitik çalışma ve insani yardım alanındaki deneyimimi yetişkinlerle psikoterapi ve klinisyenlerle süpervizyon çalışmalarında bir araya getiriyorum.</p>
+          <div class="home-reflection" aria-label="Çalışma yaklaşımı">
+            <span data-i18n="home.reflectionLabel">ÇALIŞMA YAKLAŞIMI</span>
+            <p data-i18n="home.reflectionText">Ruhsal yaşantıyı kişinin sözleri, ilişkileri ve içinde bulunduğu toplumsal bağlamla birlikte dinlemek.</p>
+          </div>
           <a class="hero-about-link" href="hakkimda.html" data-i18n="hero.aboutLink">Eğitimimi, klinik geçmişimi ve çalışmalarımı inceleyin &rarr;</a>
 
         </div>
@@ -368,7 +372,7 @@
           <div class="portrait-card-outer">
             <div class="portrait-card-inner">
               <div class="portrait-img-wrap">
-                <img src="assets/images/dr-ali-ihsan-yaka-hero.jpg" alt="Dr. Ali İhsan Yaka, Ph.D. — Klinik Psikolog" width="682" height="1024" class="portrait-hero-img" fetchpriority="high" decoding="async" data-zoomable>
+                <picture><source srcset="assets/images/dr-ali-ihsan-yaka-hero.webp" type="image/webp"><img src="assets/images/dr-ali-ihsan-yaka-hero.jpg" alt="Dr. Ali İhsan Yaka, Ph.D. — Klinik Psikolog" width="682" height="1024" class="portrait-hero-img" fetchpriority="high" decoding="async" data-zoomable></picture>
               </div>
             </div>
           </div>
@@ -512,12 +516,12 @@
               <line class="model-forward" x1="442" y1="425" x2="486" y2="425" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
 
               <!-- 6. BABA-NIN-ADLARI (KOD) 3×3 MATRIX -->
-              <!-- Row 0 (Top / Psikotik): Gerçek -->
-              <!-- U-curve from top of Col 1 upward arrow into bottom-left of Row 0 Gerçek (╰⤴) -->
+              <!-- Row 0 (Top / Psikotik): İmgesel — revised web model -->
+              <!-- U-curve into the revised Imaginary node -->
               <path class="model-code-arc" d="M546 238 C552 282, 608 282, 618 246" fill="none" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
               <g transform="translate(648, 235)" filter="url(#svg-node-shadow)">
                 <rect x="-38" y="-14" width="76" height="28" rx="14" fill="#FFFFFF" stroke="#C87820" stroke-width="1.5"/>
-                <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14" font-style="italic" font-weight="700" text-anchor="middle">Gerçek</text>
+                <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14" font-style="italic" font-weight="700" text-anchor="middle">İmgesel</text>
               </g>
               <!-- Upward arrow: Row 0 Gerçek ↑ (Kod) -->
               <line class="model-up" x1="648" y1="218" x2="648" y2="184" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
@@ -829,7 +833,7 @@
           <div class="practice-feature-grid">
             <figure class="practice-feature-media">
               <div class="practice-feature-img-wrap">
-                <img src="assets/images/dr-ali-ihsan-yaka-clinical.jpg" alt="Dr. Ali İhsan Yaka — Klinik Psikanalitik Pratik ve Süpervizyon" data-i18n-alt="practice.featureImageAlt" width="682" height="1024" loading="lazy" decoding="async" data-zoomable>
+                <picture><source srcset="assets/images/dr-ali-ihsan-yaka-clinical.webp" type="image/webp"><img src="assets/images/dr-ali-ihsan-yaka-clinical.jpg" alt="Dr. Ali İhsan Yaka — Klinik Psikanalitik Pratik ve Süpervizyon" data-i18n-alt="practice.featureImageAlt" width="682" height="1024" loading="lazy" decoding="async" data-zoomable></picture>
               </div>
               <figcaption class="practice-feature-caption">
                 <div class="practice-feature-caption-name">Dr. Ali İhsan Yaka, Ph.D.</div>
@@ -1413,8 +1417,8 @@
     <div id="lightboxCaption"></div>
   </div>
 
-  <script src="app.js?v=8.20"></script>
+  <script src="app.js?v=8.23"></script>
   <script type="importmap">{"imports":{"three":"./assets/vendor/three/three.module.min.js","three/addons/":"./assets/vendor/three/addons/"}}</script>
-  <script type="module" src="assets/js/psyche-3d.js?v=8.20"></script>
+  <script type="module" src="assets/js/psyche-3d.js?v=8.23"></script>
 </body>
 </html>

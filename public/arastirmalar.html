@@ -26,8 +26,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <link rel="icon" href="assets/images/psyche-structure-mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="app.css?v=8.20">
+  <link rel="icon" href="assets/images/psyche-structure-mark.svg" type="image/webp">
+  <link rel="stylesheet" href="app.css?v=8.24">
   <link rel="stylesheet" href="assets/css/research-palette.css?v=1">
 </head>
 <body>
@@ -137,6 +137,17 @@
         </div>
       </div>
     </section>
+
+    <nav class="research-page-map" aria-label="Araştırma sayfası bölümleri">
+      <a href="#guncel-model" data-i18n="research.mapModel">Güncel model</a>
+      <a href="#kuramsal-notlar" data-i18n="research.mapTheory">Kuramsal notlar</a>
+      <a href="#ek-semalar" data-i18n="research.mapSchemas">Ek şemalar</a>
+      <a href="#okuma-onerileri" data-i18n="research.mapReading">Okuma önerileri</a>
+    </nav>
+
+    <details class="research-disclosure" id="kuramsal-notlar">
+      <summary><span data-i18n="research.openTheory">Kuramsal çerçeve ve ruhsal yapılar</span><span aria-hidden="true">＋</span></summary>
+      <div class="research-disclosure-content">
 
     <!-- Section 2: Epistemolojik Kırılma (01 / KURAMSAL TEMELLER) -->
     <section class="section">
@@ -253,14 +264,17 @@
       </div>
     </section>
 
-    <!-- Section 4: 3D Topolojik Sentez & Canlı Müfettiş (03 / ŞEKİL 5 TOPOLOJİSİ) -->
-    <section class="section">
+      </div>
+    </details>
+
+    <!-- Section 4: Güncel web modeli (03 / ŞEKİL 5 TOPOLOJİSİ) -->
+    <section class="section" id="guncel-model">
       <div class="container">
         <div class="research-section-header">
           <span class="research-section-idx">03 / BÜTÜNCÜL SENTEZ</span>
-          <h2>Sözden Ruhsal Yapıya 3B Topolojik Laboratuvarı</h2>
+          <h2 data-i18n="research.currentModelTitle">Sözden Ruhsal Yapıya: Güncel Web Şeması</h2>
           <p class="research-section-lead">
-            Hareketi izleyin: Yatay çizgiler S₂’nin mesajını soldan sağa taşır. Dikey çizgiler, Baba-nın-Adları’nın S₁ kodlamasını aşağıdan yukarı kurar. Bu vektörlerin kesişmesi, üç yapıda baba metaforunun farklı biçimlerde okunmasını görünür kılar.
+            Şema, S₂ mesaj akışı ile S₁ kodlama vektörlerinin ilişkisini ve son revizyondaki İmgesel → Gerçek → Simgesel sıralamasını gösterir.
           </p>
         </div>
 
@@ -269,7 +283,7 @@
           <div class="psyche-theater-header">
             <div class="psyche-theater-title">
               <span class="dot"></span>
-              <span>ŞEKİL 5 · TOPOLOJİK VEKTÖR LABORATUVARI</span>
+              <span data-i18n="research.currentFigureLabel">GÜNCEL WEB ŞEMASI · SON REVİZYON</span>
             </div>
             <div class="psyche-theater-legend">
               <span><i class="legend-bar-blue"></i> Gösteren zinciri · S₂ diyakronik akış</span>
@@ -278,21 +292,7 @@
             </div>
           </div>
 
-          <!-- Figure Frame -->
-                    <div class="psyche-mode-switcher-wrap">
-            <div class="psyche-mode-switcher" role="tablist" aria-label="Görünüm Modu">
-              <button type="button" class="psyche-mode-btn is-active" data-mode="2d" role="tab" aria-selected="true">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
-                <span data-i18n="psyche.mode2d">2B Şema (Şekil 5)</span>
-              </button>
-              <button type="button" class="psyche-mode-btn psyche-mode-btn-3d" data-mode="3d" role="tab" aria-selected="false">
-                <span class="p3d-sparkle-dot" aria-hidden="true"></span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
-                <span data-i18n="psyche.mode3d">3D Halini Gör</span>
-              </button>
-            </div>
-          </div>
-
+          <!-- Updated single web figure; the published article remains linked below. -->
           <figure class="psyche-diagram" data-psyche-model style="margin: 0;">
             <div class="psyche-diagram-frame">
               <!-- Fallback High-Fidelity 4K Vector SVG for mobile & non-WebGL environments -->
@@ -403,18 +403,18 @@
                   <line class="model-forward" x1="442" y1="425" x2="486" y2="425" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
 
                   <!-- 6. BABA-NIN-ADLARI (KOD) 3×3 MATRIX -->
-                  <!-- Row 0 (Top / Psikotik): Gerçek -->
-                  <!-- U-curve from top of Col 1 upward arrow into bottom-left of Row 0 Gerçek (╰⤴) -->
+                  <!-- Row 0 (Top / Psikotik): İmgesel — revised web model -->
+                  <!-- U-curve from top of Col 1 upward arrow into bottom-left of Row 0 İmgesel (╰⤴) -->
                   <path class="model-code-arc" d="M546 238 C552 282, 608 282, 618 246" fill="none" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
                   <g transform="translate(648, 235)" filter="url(#svg-node-shadow)">
                     <rect x="-38" y="-14" width="76" height="28" rx="14" fill="#FFFFFF" stroke="#C87820" stroke-width="1.5"/>
-                    <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14" font-style="italic" font-weight="700" text-anchor="middle">Gerçek</text>
+                    <text x="0" y="5" fill="#162033" font-family="'Georgia', serif" font-size="14" font-style="italic" font-weight="700" text-anchor="middle" data-i18n="psyche.imaginary">İmgesel</text>
                   </g>
-                  <!-- Upward arrow: Row 0 Gerçek ↑ (Kod) -->
+                  <!-- Upward arrow: Row 0 İmgesel ↑ (Kod) -->
                   <line class="model-up" x1="648" y1="218" x2="648" y2="184" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
-                  <!-- Short horizontal arrow to the right of Row 0 Gerçek (Gerçek →) -->
+                  <!-- Short horizontal arrow to the right of Row 0 İmgesel (Gerçek →) -->
                   <line class="model-forward" x1="688" y1="235" x2="732" y2="235" stroke="#3D5690" stroke-width="2.2" marker-end="url(#svg-arr-blue)"/>
-                  <!-- Over-loop above Gerçek → returning into top-right of Row 0 Gerçek (↶) -->
+                  <!-- Over-loop above Gerçek → returning into top-right of Row 0 İmgesel (↶) -->
                   <path class="model-code-arc" d="M746 224 C746 186, 680 186, 672 216" fill="none" stroke="#B8791E" stroke-width="2.2" marker-end="url(#svg-arr-gold)"/>
 
                   <!-- Row 1 (Middle / Pervert): İmgesel & Gerçek -->
@@ -512,39 +512,24 @@
                     <text x="1160" y="406" fill="#162033" font-family="'Georgia', serif" font-size="16" font-style="italic" font-weight="700" text-anchor="middle">İşlevi</text>
                   </g>
 
-                  <!-- 10. ANIMATED ARROW VECTORS (Moving Arrowheads Along Vector Paths) -->
-                  <g class="model-travelers" aria-hidden="true">
-                    <!-- Outer Loops -->
-                    <path class="model-traveler model-traveler-blue" d="M-7,-4.6 L5,0 L-7,4.6 L-3.8,0 Z"><animateMotion dur="9s" repeatCount="indefinite" rotate="auto" path="M1160 156 C1080 14, 200 14, 96 154"/></path>
-                    <path class="model-traveler model-traveler-blue" d="M-7,-4.6 L5,0 L-7,4.6 L-3.8,0 Z"><animateMotion dur="9s" begin="4.5s" repeatCount="indefinite" rotate="auto" path="M96 484 C200 626, 1080 626, 1160 486"/></path>
-                    <!-- Inner S1 ↔ S2 Loops -->
-                    <path class="model-traveler model-traveler-blue" d="M-6,-4 L4.2,0 L-6,4 L-3.2,0 Z"><animateMotion dur="7s" repeatCount="indefinite" rotate="auto" path="M858 134 C760 52, 495 52, 405 134"/></path>
-                    <path class="model-traveler model-traveler-blue" d="M-6,-4 L4.2,0 L-6,4 L-3.2,0 Z"><animateMotion dur="7s" begin="3.5s" repeatCount="indefinite" rotate="auto" path="M422 535 C520 486, 750 486, 848 535"/></path>
-                    <!-- Horizontal Message Streams (Row 0, Row 1, Row 2) -->
-                    <path class="model-traveler model-traveler-blue" d="M-5.5,-3.6 L3.8,0 L-5.5,3.6 L-3,0 Z"><animateMotion dur="8s" repeatCount="indefinite" rotate="auto" path="M137 235 H486 M648 235 H732 M830 232 C840 198, 870 198, 882 232 L1086 235"/></path>
-                    <path class="model-traveler model-traveler-blue" d="M-5.5,-3.6 L3.8,0 L-5.5,3.6 L-3,0 Z"><animateMotion dur="8s" begin="2.6s" repeatCount="indefinite" rotate="auto" path="M137 330 H732 M830 327 C840 293, 870 293, 882 327 L1086 330"/></path>
-                    <path class="model-traveler model-traveler-blue" d="M-5.5,-3.6 L3.8,0 L-5.5,3.6 L-3,0 Z"><animateMotion dur="8s" begin="5.2s" repeatCount="indefinite" rotate="auto" path="M137 425 H768 M830 422 C840 388, 870 388, 882 422 L1086 425"/></path>
-                    <!-- Vertical Axes & Coding Vectors -->
-                    <path class="model-traveler model-traveler-blue" d="M-5.5,-3.6 L3.8,0 L-5.5,3.6 L-3,0 Z"><animateMotion dur="5.5s" repeatCount="indefinite" rotate="auto" path="M405 182 V512"/></path>
-                    <path class="model-traveler model-traveler-gold" d="M-6,-4 L4.2,0 L-6,4 L-3.2,0 Z"><animateMotion dur="5.5s" begin="1.2s" repeatCount="indefinite" rotate="auto" path="M855 508 V178"/></path>
-                    <path class="model-traveler model-traveler-gold" d="M-5.2,-3.4 L3.6,0 L-5.2,3.4 L-2.8,0 Z"><animateMotion dur="6s" begin="0.5s" repeatCount="indefinite" rotate="auto" path="M532 408 V246"/></path>
-                    <path class="model-traveler model-traveler-gold" d="M-5.2,-3.4 L3.6,0 L-5.2,3.4 L-2.8,0 Z"><animateMotion dur="6s" begin="2s" repeatCount="indefinite" rotate="auto" path="M648 408 V184"/></path>
-                    <path class="model-traveler model-traveler-gold" d="M-5.2,-3.4 L3.6,0 L-5.2,3.4 L-2.8,0 Z"><animateMotion dur="6s" begin="3.5s" repeatCount="indefinite" rotate="auto" path="M955 406 V255"/></path>
-                  </g>
                 </svg>
               </div>
 
-              <!-- High-Performance 4K WebGL Three.js Container -->
-              <div class="psyche-3d" data-psyche-3d aria-label="Sözden ruhsal yapıya 3 boyutlu etkileşimli topolojik şema"></div>
+
             </div>
           </figure>
+          <div class="research-mobile-model" aria-label="Güncel web şemasının mobil özeti">
+            <article><span>01</span><div><strong>Simgeselden Düşme</strong><p>İmgesel <b>→</b> Psikotik</p></div></article>
+            <article><span>02</span><div><strong>Simgeselde Tanı(n)mama</strong><p>İmgesel <b>→</b> Gerçek <b>→</b> Pervers</p></div></article>
+            <article><span>03</span><div><strong>Simgeselde Tanı(n)ma</strong><p>İmgesel <b>→</b> Gerçek <b>→</b> Simgesel <b>→</b> Nevrotik</p></div></article>
+          </div>
 
-          <!-- Live Topology Inspector HUD beneath canvas -->
+          <!-- Explanation panel for the static, updated web figure -->
           <div class="psyche-inspector-hud" id="topologyInspector">
             <div>
               <div class="inspector-meta-title">
                 <span class="inspector-pill" id="inspectorPill">BÜTÜNCÜL TOPOLOJİ</span>
-                <span style="font-size: 0.78rem; color: #5A6478; font-weight: 600;">Canlı Düğüm Müfettişi</span>
+                <span style="font-size: 0.78rem; color: #5A6478; font-weight: 600;" data-i18n="research.modelStructure">Modelin yapısı</span>
               </div>
               <div class="inspector-target-name" id="inspectorName">Baba İşlevi Grafiği: Gösteren Zinciri ve Ruhsal Yapılar</div>
               <div class="inspector-target-role" id="inspectorRole">
@@ -563,7 +548,7 @@
         </div>
 
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; color: var(--text-muted); font-size: 0.9rem;">
-          <span>Şema, makaledeki 2–5. şekiller ve 26–29. sayfalardaki açıklamalara dayanarak web için yeniden modellenmiştir. Akademik bir sentezdir.</span>
+          <span>Web şeması, son revizyondaki İmgesel sıralamasını yansıtan güncel bir yeniden çizimdir. Makaledeki açıklamalar ve yayımlanmış şekil PDF’de korunur.</span>
           <a class="btn btn-sm btn-outline" href="assets/docs/psychoanalytic-structure-diagram.pdf" target="_blank" rel="noopener">
             <span>Özgün Şemayı PDF Olarak Aç</span>
             <span aria-hidden="true">↗</span>
@@ -571,6 +556,10 @@
         </div>
       </div>
     </section>
+
+    <details class="research-disclosure" id="ek-semalar">
+      <summary><span data-i18n="research.openSupplement">Yayın, yöntem, klinik notlar ve diğer şemalar</span><span aria-hidden="true">＋</span></summary>
+      <div class="research-disclosure-content">
 
     <!-- Section 5: Lacanyen Topolojinin Adım Adım Evrimi (04 / KAVRAMSAL GELİŞİM) -->
     <section class="section" style="background: var(--bg-subtle, #FAF9F6); border-top: 1px solid var(--border-light, #EAEAEF); border-bottom: 1px solid var(--border-light, #EAEAEF);">
@@ -646,21 +635,6 @@
             <div class="progression-math">3 Dikey Kodlama Vektörü &times; 3 Yatay Anlamlandırma</div>
           </article>
 
-          <!-- Figure 5 Hero Monograph -->
-          <article class="progression-card progression-card-hero">
-            <span class="progression-num">ŞEKİL 5 · NİHAİ MODEL</span>
-            <h3>Bütüncül Baba İşlevi ve Ruhsal Yapılar Grafiği</h3>
-            <div class="progression-svg-wrap" style="flex-direction: column; gap: 0.5rem; background: #FFFFFF; border: 1px solid rgba(22, 101, 156, 0.15);">
-              <img src="assets/images/fig5-baba-islevi-modeli-authentic.png" alt="Şekil 5: Baba İşlevi Grafiği — AYNA (2024)" class="progression-authentic-img" data-zoomable loading="lazy" style="max-height: 420px;">
-              <span class="progression-badge-source">Makaledeki Özgün Model (AYNA, 2024, s. 28)</span>
-            </div>
-            <p style="font-size: 0.98rem; line-height: 1.75; color: var(--text-main); margin-bottom: 0.85rem;">
-              Süjenin dil alanı ve konuşma işlevinden gösterene doğru ilerleyen diyalektik döngü. Süje baba metaforu üzerinden S₂’ye doğru diyakronik ilerlerken, Baba-nın-Adları (S₁) kodlama noktalarından senkronik olarak geriye doğru hareket eder ve ayna evresinden geçer. Sonuç olarak ruhsal yapıların formasyonu dil ve konuşma işlevinde kararlı gösterenler olarak billurlaşır.
-            </p>
-            <div class="progression-math" style="font-size: 1.05rem; font-weight: 500;">
-              Gösteren &rarr; Baba Metaforu (S₂) &rarr; Ayna Evresi &rarr; Baba-nın-Adları (S₁) &rarr; Ruhsal Yapılar &rarr; Süjenin Dil Alanı ve Konuşma İşlevi
-            </div>
-          </article>
         </div>
       </div>
     </section>
@@ -1408,6 +1382,25 @@
       </div>
     </section>
 
+    </div>
+    </details>
+
+    <section class="research-reading-section" id="okuma-onerileri" aria-labelledby="readingHeading">
+      <div class="container">
+        <div class="research-section-header">
+          <span class="research-section-idx" data-i18n="research.readingEyebrow">OKUMA ÖNERİLERİ</span>
+          <h2 id="readingHeading" data-i18n="research.readingTitle">Psikanaliz için seçilmiş okumalar</h2>
+          <p class="research-section-lead" data-i18n="research.readingLead">Kuramsal metinlere ve klinik giriş kaynaklarına doğrudan erişim.</p>
+        </div>
+        <div class="research-reading-grid">
+          <a class="research-reading-card" href="https://wwnorton.co.uk/books/9780393329254-ecrits" target="_blank" rel="noopener"><span>Jacques Lacan</span><strong>Écrits</strong><small data-i18n="research.readingPublisher">Norton yayıncı sayfası ↗</small></a>
+          <a class="research-reading-card" href="https://www.ncbi.nlm.nih.gov/nlmcatalog/101638812" target="_blank" rel="noopener"><span>Jacques Lacan</span><strong>The Four Fundamental Concepts of Psychoanalysis</strong><small data-i18n="research.readingCatalog">NLM katalog kaydı ↗</small></a>
+          <a class="research-reading-card" href="https://brucefink.com/library" target="_blank" rel="noopener"><span>Bruce Fink</span><strong>A Clinical Introduction to Lacanian Psychoanalysis</strong><small data-i18n="research.readingAuthor">Yazarın kitap listesi ↗</small></a>
+          <a class="research-reading-card" href="https://wwnorton.co.uk/books/9780393007435-new-introductory-lectures-on-psycho-analysis" target="_blank" rel="noopener"><span>Sigmund Freud</span><strong>New Introductory Lectures on Psycho-Analysis</strong><small data-i18n="research.readingPublisher">Norton yayıncı sayfası ↗</small></a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- Site Footer -->
@@ -1498,8 +1491,8 @@
     </div>
   </footer>
 
-  <script src="app.js?v=8.20"></script>
-  <script type="module" src="assets/js/psyche-3d.js?v=8.20"></script>
+  <script src="app.js?v=8.23"></script>
+  <script type="module" src="assets/js/psyche-3d.js?v=8.23"></script>
 
   <script>
   document.addEventListener('DOMContentLoaded', () => {
