@@ -13327,7 +13327,7 @@ html.splash-visited #splashScreen.splash-screen {
 
 /* Keep the SVG motif translations intact; animate opacity only. */
 #heroCenterSchema { transform-origin: 720px 460px; }
-.hero-lacanian-flow { opacity: .2; }
+.hero-lacanian-flow { opacity: .3; filter: none; }
 #symbolGraphOfDesire, #symbolSchemaL, #symbolBorromean, #symbolMobiusTorus {
   animation: lacanian-motif-breathe 14s ease-in-out infinite alternate;
 }
@@ -13335,11 +13335,11 @@ html.splash-visited #splashScreen.splash-screen {
 #symbolBorromean { animation-delay: -7s; }
 #symbolMobiusTorus { animation-delay: -10s; }
 @keyframes lacanian-motif-breathe {
-  0% { opacity: .48; }
-  100% { opacity: .8; }
+  0% { opacity: .7; }
+  100% { opacity: .92; }
 }
 @media (max-width: 768px) {
-  .hero-lacanian-flow { opacity: .1; }
+  .hero-lacanian-flow { opacity: .16; }
 }
 .home-reflection {
   max-width: 40rem;
