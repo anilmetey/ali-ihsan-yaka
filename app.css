@@ -8060,7 +8060,7 @@ html.splash-visited #splashScreen.splash-screen {
 /* Full HD 4K Ultra Quality Brand Logo (Header Height: 48px, max-width: 220px) */
 .brand-logo-img {
   display: block !important;
-  height: 48px !important;
+  height: 56px !important;
   width: auto !important;
   max-width: 220px !important;
   aspect-ratio: auto !important;
@@ -8169,7 +8169,7 @@ html.splash-visited #splashScreen.splash-screen {
 
 .footer-logo-img {
   display: block !important;
-  height: 52px !important;
+  height: 58px !important;
   width: auto !important;
   max-width: 240px !important;
   aspect-ratio: auto !important;

@@ -3063,7 +3063,7 @@
       drawerBrand.className = 'drawer-brand';
       drawerBrand.href = 'index.html';
       drawerBrand.setAttribute('aria-label', 'Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek');
-      drawerBrand.innerHTML = '<picture><source srcset="assets/images/ali-yaka-psychology-horizontal.svg?v=3" type="image/svg+xml"><img class="brand-logo-img drawer-logo-img" src="assets/images/ali-yaka-psychology-horizontal.svg?v=3" alt="Ali Yaka Psychology — Healing, Understanding, Peace" width="230" height="64"></picture>';
+      drawerBrand.innerHTML = '<picture><source srcset="assets/images/ali-yaka-psychology-horizontal-1x.webp 1x, assets/images/ali-yaka-psychology-horizontal-2x.webp 2x, assets/images/ali-yaka-psychology-horizontal-4k.webp 4x" type="image/webp"><img class="brand-logo-img drawer-logo-img" src="assets/images/ali-yaka-psychology-horizontal-1x.webp" srcset="assets/images/ali-yaka-psychology-horizontal-1x.webp 1x, assets/images/ali-yaka-psychology-horizontal-2x.webp 2x, assets/images/ali-yaka-psychology-horizontal-4k.webp 4x" alt="Ali Yaka Psychology — Healing, Understanding, Peace" width="4096" height="1366"></picture>';
       drawerHeader.append(drawerBrand, drawerClose);
       panel.append(drawerHeader, list);
       if (cta) {
