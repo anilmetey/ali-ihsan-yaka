@@ -13418,7 +13418,19 @@ html.splash-visited #splashScreen.splash-screen {
 @media(max-width:480px) { .cpd-card-iccp .iccp-workshop-grid { grid-template-columns: 1fr; } .cpd-card-iccp .iccp-workshop-card { display: grid; grid-template-columns: minmax(105px,38%) minmax(0,1fr); align-items: center; } .cpd-card-iccp .iccp-workshop-card img { aspect-ratio: 1.35; } }
 
 /* Footer-only light wordmark; the header logo keeps its original color. */
-.footer-brand-lockup .footer-logo-img { filter: none; }
-
-/* Footer-only light wordmark for contrast; the header keeps its original colors. */
-.footer-brand-lockup .footer-logo-img { filter: none; }
+/* Footer-only sage-green logo treatment; header and drawer colors stay unchanged. */
+.footer-brand-lockup picture {
+  position: relative;
+}
+.footer-brand-lockup .footer-logo-img {
+  opacity: 0;
+}
+.footer-brand-lockup picture::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(112deg, #82c7ad 0%, #b8dfc8 48%, #d7ead7 100%);
+  -webkit-mask: url("assets/images/ali-yaka-psychology-footer-1x.webp") center / contain no-repeat;
+  mask: url("assets/images/ali-yaka-psychology-footer-1x.webp") center / contain no-repeat;
+}
