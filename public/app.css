@@ -13419,6 +13419,8 @@ html.splash-visited #splashScreen.splash-screen {
 @media(max-width:480px) { .cpd-card-iccp .iccp-workshop-grid { grid-template-columns: 1fr; } .cpd-card-iccp .iccp-workshop-card { display: grid; grid-template-columns: minmax(105px,38%) minmax(0,1fr); align-items: center; } .cpd-card-iccp .iccp-workshop-card img { aspect-ratio: 1.35; } }
 
 /* Footer logo stays light for contrast; the header keeps its original colors. */
+html[data-logo-language="tr"] { --footer-brand-mask: url("assets/images/ali-yaka-logo-tr.svg"); }
+html[data-logo-language="en"] { --footer-brand-mask: url("assets/images/ali-yaka-logo-en.svg"); }
 .footer-brand-lockup picture {
   position: relative;
 }
@@ -13431,6 +13433,6 @@ html.splash-visited #splashScreen.splash-screen {
   inset: 0;
   pointer-events: none;
   background: #fff;
-  -webkit-mask: url("assets/images/ali-yaka-clinical-footer-1x.webp") center / contain no-repeat;
-  mask: url("assets/images/ali-yaka-clinical-footer-1x.webp") center / contain no-repeat;
+  -webkit-mask: var(--footer-brand-mask, url("assets/images/ali-yaka-logo-tr.svg")) center / contain no-repeat;
+  mask: var(--footer-brand-mask, url("assets/images/ali-yaka-logo-tr.svg")) center / contain no-repeat;
 }

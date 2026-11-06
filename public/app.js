@@ -2617,6 +2617,18 @@
     }
   }
 
+  function updateBrandLogoLanguage(lang) {
+    const activeLang = lang === 'en' ? 'en' : 'tr';
+    document.documentElement.dataset.logoLanguage = activeLang;
+    document.querySelectorAll('img.brand-logo-img[data-logo-tr][data-logo-en]').forEach(img => {
+      const src = img.getAttribute(`data-logo-${activeLang}`);
+      if (src && img.getAttribute('src') !== src) img.setAttribute('src', src);
+      img.alt = activeLang === 'en'
+        ? 'Dr. Ali Yaka — Clinical Psychologist'
+        : 'Dr. Ali Yaka — Doktor Klinik Psikolog';
+    });
+  }
+
   function setLanguage(lang) {
     if (!translations[lang]) lang = 'tr';
     const isHomepage = Boolean(document.getElementById('welcomeHeading'));
@@ -2721,11 +2733,7 @@
       img.alt = activeLang === 'en' ? (homepageLooseNorm[norm] || img.dataset.localeBaseAlt) : img.dataset.localeBaseAlt;
     });
 
-    // Unified 4K Brand Logo localization (Alt text updates with language)
-    const isEnMode = (activeLang === 'en');
-    document.querySelectorAll('img.brand-logo-img').forEach(img => {
-      img.alt = isEnMode ? 'Ali Yaka Psychology — Healing, Understanding, Peace' : 'Ali Yaka Psychology — Healing, Understanding, Peace';
-    });
+    updateBrandLogoLanguage(activeLang);
 
     translateUnkeyedText(activeLang);
     window.dispatchEvent(new CustomEvent('aiy:langchange', { detail: { lang: activeLang } }));
@@ -3063,7 +3071,7 @@
       drawerBrand.className = 'drawer-brand';
       drawerBrand.href = 'index.html';
       drawerBrand.setAttribute('aria-label', 'Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek');
-      drawerBrand.innerHTML = '<picture><source srcset="assets/images/ali-yaka-psychology-horizontal-1x.webp 1x, assets/images/ali-yaka-psychology-horizontal-2x.webp 2x, assets/images/ali-yaka-psychology-horizontal-4k.webp 4x" type="image/webp"><img class="brand-logo-img drawer-logo-img" src="assets/images/ali-yaka-psychology-horizontal-1x.webp" srcset="assets/images/ali-yaka-psychology-horizontal-1x.webp 1x, assets/images/ali-yaka-psychology-horizontal-2x.webp 2x, assets/images/ali-yaka-psychology-horizontal-4k.webp 4x" alt="Ali Yaka Psychology — Healing, Understanding, Peace" width="4096" height="1366"></picture>';
+      drawerBrand.innerHTML = '<picture><img class="brand-logo-img drawer-logo-img" src="assets/images/ali-yaka-logo-tr.svg" data-logo-tr="assets/images/ali-yaka-logo-tr.svg" data-logo-en="assets/images/ali-yaka-logo-en.svg" alt="Dr. Ali Yaka — Doktor Klinik Psikolog" width="1100" height="320"></picture>';
       drawerHeader.append(drawerBrand, drawerClose);
       panel.append(drawerHeader, list);
       if (cta) {
