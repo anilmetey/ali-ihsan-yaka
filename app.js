@@ -2724,7 +2724,7 @@
     // Unified 4K Brand Logo localization (Alt text updates with language)
     const isEnMode = (activeLang === 'en');
     document.querySelectorAll('img.brand-logo-img').forEach(img => {
-      img.alt = isEnMode ? 'Dr. Ali Ihsan Yaka — Simgesel • Imgesel • Gercek' : 'Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek';
+      img.alt = isEnMode ? 'Ali Yaka Psychology — Healing, Understanding, Peace' : 'Ali Yaka Psychology — Healing, Understanding, Peace';
     });
 
     translateUnkeyedText(activeLang);
@@ -3063,7 +3063,7 @@
       drawerBrand.className = 'drawer-brand';
       drawerBrand.href = 'index.html';
       drawerBrand.setAttribute('aria-label', 'Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek');
-      drawerBrand.innerHTML = '<picture><source srcset="assets/images/ali-ihsan-yaka-logo-4k.webp" type="image/webp"><img class="brand-logo-img drawer-logo-img" src="assets/images/ali-ihsan-yaka-logo-4k.png" alt="Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek" width="4096" height="1480"></picture>';
+      drawerBrand.innerHTML = '<picture><source srcset="assets/images/ali-yaka-psychology-horizontal.svg?v=2" type="image/svg+xml"><img class="brand-logo-img drawer-logo-img" src="assets/images/ali-yaka-psychology-horizontal.svg?v=2" alt="Ali Yaka Psychology — Healing, Understanding, Peace" width="133" height="48"></picture>';
       drawerHeader.append(drawerBrand, drawerClose);
       panel.append(drawerHeader, list);
       if (cta) {

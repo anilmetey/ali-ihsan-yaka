@@ -8200,7 +8200,7 @@ html.splash-visited #splashScreen.splash-screen {
   height: 54px !important;
   width: auto !important;
   max-width: 220px !important;
-  aspect-ratio: 520 / 180 !important;
+  aspect-ratio: auto !important;
   object-fit: contain !important;
 }
 
