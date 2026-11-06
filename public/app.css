@@ -13325,20 +13325,21 @@ html.splash-visited #splashScreen.splash-screen {
 .faq-accordion-item[hidden]{display:none}
 @media(max-width:600px){.faq-filter{flex-wrap:nowrap;overflow-x:auto;margin-inline:-1rem;padding:0 1rem .3rem;scrollbar-width:none}.faq-chip{flex:0 0 auto}}
 
-/* Refined home background: a small central schema with softly breathing Lacanian motifs. */
+/* Keep the SVG motif translations intact; animate opacity only. */
 #heroCenterSchema { transform-origin: 720px 460px; }
 .hero-lacanian-flow { opacity: .2; }
 #symbolGraphOfDesire, #symbolSchemaL, #symbolBorromean, #symbolMobiusTorus {
   animation: lacanian-motif-breathe 14s ease-in-out infinite alternate;
-  transform-box: fill-box;
-  transform-origin: center;
 }
 #symbolSchemaL { animation-delay: -3s; }
 #symbolBorromean { animation-delay: -7s; }
 #symbolMobiusTorus { animation-delay: -10s; }
 @keyframes lacanian-motif-breathe {
-  0% { opacity: .48; transform: scale(.985); }
-  100% { opacity: .8; transform: scale(1.035); }
+  0% { opacity: .48; }
+  100% { opacity: .8; }
+}
+@media (max-width: 768px) {
+  .hero-lacanian-flow { opacity: .1; }
 }
 .home-reflection {
   max-width: 40rem;
