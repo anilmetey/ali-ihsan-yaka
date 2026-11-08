@@ -2795,8 +2795,8 @@
       const src = img.getAttribute(`data-logo-${activeLang}`);
       if (src && img.getAttribute('src') !== src) img.setAttribute('src', src);
       img.alt = activeLang === 'en'
-        ? 'Dr. Ali Ihsan Yaka, Ph.D. — Clinical Psychologist'
-        : 'Dr. Ali İhsan Yaka, Ph.D. — Klinik Psikolog';
+        ? 'Dr. Ali Ihsan Yaka, Ph.D., Clinical Psychologist'
+        : 'Dr. Ali İhsan Yaka, Ph.D., Klinik Psikolog';
     });
   }
 
@@ -3243,7 +3243,7 @@
       drawerBrand.className = 'drawer-brand';
       drawerBrand.href = 'index.html';
       drawerBrand.setAttribute('aria-label', 'Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek');
-      drawerBrand.innerHTML = '<picture><img class="brand-logo-img drawer-logo-img" src="assets/images/ali-yaka-logo-tr.svg" data-logo-tr="assets/images/ali-yaka-logo-tr.svg" data-logo-en="assets/images/ali-yaka-logo-en.svg" alt="Dr. Ali İhsan Yaka, Ph.D. — Klinik Psikolog" width="1100" height="320"></picture>';
+      drawerBrand.innerHTML = '<picture><img class="brand-logo-img drawer-logo-img" src="assets/images/ali-yaka-logo-tr.svg" data-logo-tr="assets/images/ali-yaka-logo-tr.svg" data-logo-en="assets/images/ali-yaka-logo-en.svg" alt="Dr. Ali İhsan Yaka, Ph.D., Klinik Psikolog" width="1100" height="320"></picture>';
       drawerHeader.append(drawerBrand, drawerClose);
       panel.append(drawerHeader, list);
       if (cta) {
