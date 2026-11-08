@@ -13447,12 +13447,17 @@ html[data-logo-language="en"] { --footer-brand-mask: url("assets/images/ali-yaka
 .hero-lacanian-forms .form-schema { animation:lacanianDrift 18s ease-in-out infinite alternate; }
 .hero-lacanian-forms .form-schema-small { stroke:#c88736; stroke-width:1.9; animation:lacanianDrift 20s ease-in-out -5s infinite alternate; }
 .hero-art-grid { z-index:1; }
+html[lang="tr"] .hero-lacanian-forms { opacity:.055; }
+html[lang="en"] .hero-lacanian-forms { opacity:.13; }
 @keyframes lacanianDrift { from { translate:0 -4px; } to { translate:0 7px; } }
 @keyframes lacanianTurn { to { rotate:360deg; } }
 .home-lacan-quote-section { padding:clamp(2rem,5vw,4.5rem) 0; background:linear-gradient(180deg,rgba(248,247,244,.35),rgba(248,247,244,.82)); }
 .home-lacan-quote { max-width:58rem; margin:0 auto; padding:.8rem clamp(1rem,3vw,2rem); border-left:2px solid rgba(36,69,96,.35); color:var(--text-heading); font:italic clamp(1.35rem,2.35vw,2rem)/1.45 var(--font-serif); text-wrap:balance; }
 .home-lacan-quote span { display:block; margin-top:.7rem; color:var(--text-muted); font:600 .72rem/1.4 var(--font-sans); letter-spacing:.09em; text-transform:uppercase; }
-@media(max-width:760px) { .hero-lacanian-forms { opacity:.09; } }
+@media(max-width:760px) {
+  html[lang="tr"] .hero-lacanian-forms { opacity:.035; }
+  html[lang="en"] .hero-lacanian-forms { opacity:.085; }
+}
 @media(prefers-reduced-motion:reduce) { .hero-lacanian-forms .lacanian-form { animation:none !important; } }
 .footer-brand-lockup .footer-logo-img {
   opacity: 0;
