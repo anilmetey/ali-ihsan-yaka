@@ -1,25 +1,25 @@
-/* Bring the research diagrams into the site's ivory, indigo and brass palette. */
+/* Match research diagrams to the site's warm gray and deep blue palette. */
 .section-research-schemas .schema-visual-box {
   background: linear-gradient(145deg, rgba(255,255,255,.98), rgba(246,244,238,.94));
-  border: 1px solid rgba(78,91,166,.16);
+  border: 1px solid rgba(36,69,96,.16);
   border-radius: 20px;
   box-shadow: 0 12px 30px -14px rgba(35,43,69,.12), inset 0 1px 0 #fff;
 }
 .section-research-schemas .schema-visual-box:hover {
-  border-color: rgba(78,91,166,.32);
+  border-color: rgba(36,69,96,.32);
   box-shadow: 0 16px 36px -14px rgba(35,43,69,.16), inset 0 1px 0 #fff;
 }
-.section-research-schemas .schema-toolbar-badge,
-.section-research-schemas .schema-toolbar-badge::before { color:#354282; background:#354282; }
+.section-research-schemas .schema-toolbar-badge { color:#244560; }
+.section-research-schemas .schema-toolbar-badge::before { background:#244560; }
 .section-research-schemas .schema-toolbar-badge { background:transparent; font-weight:700; }
 .section-research-schemas .schema-toolbar-spec { color:#5A6478; font-weight:600; }
 .section-research-schemas .schema-diagram-preview {
   background:#FFFFFF;
   border-radius:14px;
-  box-shadow:inset 0 0 0 1px rgba(49,61,126,.12), 0 3px 12px rgba(35,43,69,.06);
+  box-shadow:inset 0 0 0 1px rgba(36,69,96,.12), 0 3px 12px rgba(35,43,69,.06);
 }
 .section-research-schemas .schema-visual-box .schema-legend {
-  border-top: 1px solid rgba(49,61,126,.12);
+  border-top: 1px solid rgba(36,69,96,.12);
   color:#4A5568;
 }
 .section-research-schemas .schema-visual-box .legend-item { color:#334155; font-weight:600; }
@@ -30,7 +30,7 @@
 
 .section-research-schemas .schema-diagram-preview svg > rect:first-child {
   fill: #FFFFFF !important;
-  stroke: rgba(49,61,126,.14) !important;
+  stroke: rgba(36,69,96,.14) !important;
 }
 
 @media (max-width:640px) {

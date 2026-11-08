@@ -113,9 +113,11 @@
     "header.contact": "İletişim",
     "header.cta": "Ön Görüşme",
     "header.ctaLong": "Ön Görüşme Randevusu Al",
-    "psyche.eyebrow": "PSİKANALİTİK DÜŞÜNCE · ŞEMA",
+    "psyche.eyebrow": "KURAMSAL ÇERÇEVE · LACANYEN ŞEMA",
     "psyche.title": "Sözden ruhsal yapıya",
-    "psyche.intro": "Paylaşılan şemadaki kavramların birbirine bağlanışını gösteren görsel bir okuma.",
+    "psyche.intro": "Baba işlevi, gösteren zinciri ve ruhsal yapılar arasındaki ilişkileri açıklayan topolojik bir okuma.",
+    "home.frameworkLabel": "ÇALIŞMA YAKLAŞIMI",
+    "home.frameworkTitle": "Kuramsal çerçeve ve şemayı inceleyin",
     "psyche.loop": "gösterenler zinciri",
     "psyche.anchor": "ana gösteren",
     "psyche.origin": "Gösteren",
@@ -935,9 +937,11 @@
     "header.contact": "Contact",
     "header.cta": "Consultation",
     "header.ctaLong": "Book a Consultation Request",
-    "psyche.eyebrow": "PSYCHOANALYTIC THOUGHT · MODEL",
+    "psyche.eyebrow": "THEORETICAL FRAMEWORK · LACANIAN MODEL",
     "psyche.title": "From signifier to psychic structure",
-    "psyche.intro": "A visual reading of how the concepts in the shared diagram relate to one another.",
+    "psyche.intro": "A topological reading of the relations between the paternal function, signifying chain, and psychic structures.",
+    "home.frameworkLabel": "WORKING APPROACH",
+    "home.frameworkTitle": "Explore the theoretical framework and diagram",
     "psyche.loop": "signifier chain",
     "psyche.anchor": "master signifier",
     "psyche.origin": "Signifier",
@@ -1650,8 +1654,8 @@
   }
 };
 
-  // English labels that predate the keyed translation system. Keep this
-  // narrowly scoped to the bilingual homepage and restore them on TR switch.
+  // Fallback translations for legacy text and labels that have not yet moved
+  // into the keyed translation system. Source values are restored on TR switch.
   const homepageLooseText = {
     "Doktor Klinik Psikolog • Ph.D.": "Clinical Psychologist • Ph.D.",
     "ODTÜ DOKTORA TEZİ • 2024": "METU DOCTORAL DISSERTATION • 2024",
@@ -2583,7 +2587,148 @@
     "Türkçe": "Turkish",
     "Terim ara (Örn: Unconscious, Arzu, Kiryar)...": "Search terms (e.g., Unconscious, Desire, Kiryar)...",
     "Psikanaliz terimlerinde ara": "Search psychoanalysis terms",
-    "Bu terminoloji çalışması, çokdilli psikanalitik psikoterapi seanslarında ve çokkültürlü klinik saha bağlamında dilsel ve kavramsal aktarımı kolaylaştırmak üzere Dr. Ali Ihsan Yaka tarafından derlenmektedir.": "This terminology matrix is compiled by Dr. Ali Ihsan Yaka to facilitate conceptual precision and multilingual clinical listening across psychoanalytic sessions and cross-cultural fieldwork."
+    "Bu terminoloji çalışması, çokdilli psikanalitik psikoterapi seanslarında ve çokkültürlü klinik saha bağlamında dilsel ve kavramsal aktarımı kolaylaştırmak üzere Dr. Ali Ihsan Yaka tarafından derlenmektedir.": "This terminology matrix is compiled by Dr. Ali Ihsan Yaka to facilitate conceptual precision and multilingual clinical listening across psychoanalytic sessions and cross-cultural fieldwork.",
+    "Dr. Ali İhsan Yaka’nın": "Dr. Ali Ihsan Yaka’s",
+    "TÜBİTAK ULAKBİM • DergiPark": "TÜBİTAK ULAKBİM • DergiPark",
+    "Şema, S₂ mesaj akışı ile S₁ kodlama vektörlerinin ilişkisini ve son revizyondaki İmgesel → Gerçek → Simgesel sıralamasını gösterir.": "The diagram shows the relationship between the S₂ message-flow vector and the S₁ coding vector, along with the revised Imaginary → Real → Symbolic sequence.",
+    "Web şeması, son revizyondaki İmgesel sıralamasını yansıtan güncel bir yeniden çizimdir. Makaledeki açıklamalar ve yayımlanmış şekil PDF’de korunur.": "The web diagram is an updated redrawing that reflects the revised placement of the Imaginary. The article’s explanations and published figure remain available in the PDF.",
+    "Dr. Ali İhsan Yaka’nın makalesinde Şekil 1’den 5’e doğru ilerlerken gösteren zinciri, kodlama ve mesaj arasındaki ilişki adım adım inşa edilir.": "Across Figures 1–5 in Dr. Ali Ihsan Yaka’s article, the signifier chain and the relationship between coding and message are developed step by step.",
+    "Makaledeki Özgün Çizim (AYNA, 2024, s. 26)": "Original figure from the article (AYNA, 2024, p. 26)",
+    "Anlamdan yoksun ilk gösteren (S₁ / Maître), bilgiyi ve anlamı taşıyan diğer göstereni (S₂ / Savoir) diyalektik olarak harekete geçirir. S₂, süje için \"bütünsellik-bilgisi\" (savoir-totalité) fantazisini kurar. Nevrotik için S₂ ancak S₁ ile ilişkilendirilebildiği ölçüde anlam kazanabilir.": "The first signifier, S₁ (Maître), which has no meaning in itself, sets the other signifier, S₂ (Savoir), which carries knowledge and meaning, into dialectical motion. S₂ creates for the subject the fantasy of “total knowledge” (savoir-totalité). For the neurotic, S₂ gains meaning only insofar as it can be linked to S₁.",
+    "Gösteren Zincirinde Kod ve Mesaj Kesişim Noktaları": "Intersection Points of Code and Message in the Signifier Chain",
+    "Makaledeki Özgün Çizim (AYNA, 2024, s. 27)": "Original figure from the article (AYNA, 2024, p. 27)",
+    "Diyakronik olarak mesajın başladığı S₂ noktasından (soldan sağa doğru) ilerleyen vektör, ters yönde (sağdan sola doğru) hareket eden ve efendi göstereni (S₁) temsil eden vektör tarafından kodlanır; anlam bu kesişimle kurulur.": "The vector moving diachronically from the point where the message begins at S₂ (left to right) is coded by the vector moving in the opposite direction (right to left), which represents the master signifier S₁. Meaning is produced at this intersection.",
+    "Baba-nın-Adları kodlama mekanizmasını temsil eden 3 dikey vektör (Simgesel, İmgesel, Gerçek Baba); üç ruhsal yapıdaki savunma mekanizmalarını (simgeselde tanınma, simgeselde tanınmama ve simgeselden düşme) temsil eden 3 yatay anlamlandırma vektörüyle eşleşir.": "The three vertical vectors representing the Names-of-the-Father coding mechanism (Symbolic, Imaginary, and Real Father) correspond to three horizontal vectors of signification representing defenses in the three psychic structures: recognition in the Symbolic, non-recognition in the Symbolic, and foreclosure from the Symbolic.",
+    "ODTÜ DOKTORA TEZİ (2024) · SF. 140": "METU DOCTORAL DISSERTATION (2024) · P. 140",
+    "Söylem Matrisleri & Vaka Analizi": "Discourse Matrices & Case Analysis",
+    "Dr. Ali İhsan Yaka'nın doktora tezinde (s. 140) yer alan bu model; çatışma sonrası alanda bir vakanın başlangıçtaki modernleştirilmiş efendi/üniversite söyleminden, nihai aşamadaki protestocu histerik söylemine geçişini 4 analitik düzlemde belgeler.": "This model from page 140 of Dr. Ali Ihsan Yaka’s doctoral dissertation documents a case’s shift in a post-conflict setting from an initially modernized Master/University discourse to a final protest-oriented Hysteric discourse across four analytical dimensions.",
+    "Doktora Tezi Orijinal Şekli": "Original Dissertation Figure",
+    "ODTÜ 2024 • TEZ SF. 140": "METU 2024 • DISSERTATION P. 140",
+    "1. Söylemsel Konumlar": "1. Discursive Positions",
+    "Başlangıç:": "Initial:",
+    "Nihai:": "Final:",
+    "2. Yapısal Temalar": "2. Structural Themes",
+    "3. Vaka Kavramsallaştırması": "3. Case Conceptualization",
+    "4. Öznel Konumlanış": "4. Subjective Positioning",
+    "Tez Başlığı:": "Dissertation Title:",
+    "Tez Sayfası:": "Dissertation Page:",
+    "Doktora Tezi, Bölüm 5, Sayfa 140": "Doctoral Dissertation, Chapter 5, Page 140",
+    "ODTÜ DOKTORA TEZİ SAHA EKİ": "METU DOCTORAL DISSERTATION FIELDWORK APPENDIX",
+    "Kolektif Travma & Gösteren Zinciri": "Collective Trauma & the Signifier Chain",
+    "Kolektif Travma Saha Notu: Şengal Göçü ve Çokdilli Gösteren Zinciri": "Collective Trauma Field Note: The Şengal Displacement and a Multilingual Signifier Chain",
+    "Doktora tezine sonradan eklenen bu resimli saha belgesi; Şengal / Êzidî toplumunun yaşadığı kitlesel soykırım ve yerinden edilmenin ardından, travmanın dilde açtığı çatlakları ve Kürtçe-İngilizce gösteren zincirinin metonimik akışını belgeler.": "Added to the dissertation at a later stage, this illustrated field document records the ruptures trauma opens in language after the mass genocide and displacement experienced by the Şengal / Êzidî community, as well as the metonymic flow of a Kurdish–English signifier chain.",
+    "KÜRTÇE • İNGİLİZCE DİLBİLİMSEL DİZİLİM": "KURDISH • ENGLISH LINGUISTIC SEQUENCE",
+    "Resimli Tez Saha Belgesi": "Illustrated Dissertation Field Document",
+    "Saha Belgesi: Şengal Dağı Göç Fotoğrafı ve Gösterenler Dizgesi": "Field Document: Displacement Photograph from Mount Şengal and the Signifier System",
+    "Tez Saha Transkripsiyonu · Özgün Gösteren Zinciri:": "Dissertation Field Transcription · Original Signifier Chain:",
+    "Psikanalitik Söylem Okuması:": "Psychoanalytic Discourse Reading:",
+    "Kolektif şiddet ve soykırım deneyiminin ardından öznenin konuşmasında beliren bu gösteren zinciri; bedensel kanamayı (": "Emerging in the subject’s speech after collective violence and genocide, this signifier chain links bodily bleeding (",
+    ") doğrudan babalık soykütüğüne (": ") directly to paternal genealogy (",
+    "), doğmamış bebeklerin kaybına (": "), the loss of unborn children (",
+    ") ve dinsel efendi gösterenlere (": "), and religious master signifiers (",
+    ") bağlar. Bu dizilim, semptomun organik değil, dilsel ve simgesel bir travma kaydı olduğunu kanıtlar.": "). This sequence presents the symptom as a linguistic and symbolic record of trauma rather than an organic one.",
+    "Saha Bölgesi:": "Field Location:",
+    "Metodoloji:": "Methodology:",
+    "Ninova Ovası & Şengal (Irak)": "Nineveh Plains & Şengal (Iraq)",
+    "Çokdilli Psikanalitik Gösteren Zinciri Analizi (Kürtçe / Kurmancî & English)": "Multilingual Psychoanalytic Signifier Chain Analysis (Kurdish / Kurmancî & English)",
+    "English • Kurmancî • Türkçe": "English • Kurmancî • Turkish",
+    "Bilinçdışı": "Unconscious",
+    "Babanın-Adı": "Name-of-the-Father",
+    "İğdiş / Kastrasyon": "Castration",
+    "Dürtü": "Drive",
+    "Gösteren / Gösterilen": "Signifier / Signified",
+    "Gerçek, Simgesel, İmgesel": "Real, Symbolic, Imaginary",
+    "Aktarım": "Transference",
+    "Jouissance (Acı-Hazz)": "Jouissance (painful enjoyment)",
+    "Dr. Ali İhsan Yaka — Simgesel • İmgesel • Gerçek": "Dr. Ali Ihsan Yaka — Symbolic • Imaginary • Real",
+    "Soru kategorileri": "Question categories",
+    "2021 AYNA Makalesi: Obsesyonel Yapı ve Baba İşlevi": "2021 AYNA Article: Obsessional Structure and the Paternal Function",
+    "Tematik araştırma eksenleri": "Thematic research areas",
+    "Doğrulanmış akademik kimlikler ve dizinler": "Verified academic profiles and indexes",
+    "Akademik üretim envanteri": "Academic output overview",
+    "Yayın kategorisi filtreleme": "Publication category filters",
+    "Yayın türleri": "Publication types",
+    "Doktora tezi künye bilgileri": "Doctoral dissertation details",
+    "University at Buffalo CSPC 2026 Bahar Sempozyumu afişi": "Poster for the University at Buffalo CSPC Spring 2026 Symposium",
+    "25. Dünya Psikiyatri Kongresi Prag kabul belgesi": "Acceptance notice for the 25th World Congress of Psychiatry in Prague",
+    "Dr. Ali İhsan Yaka Boğaziçi Üniversitesi konuşması": "Dr. Ali Ihsan Yaka speaking at Boğaziçi University",
+    "9. Ulusal Psikoloji Öğrencileri Kongresi Katılım ve Bildiri Belgesi": "Participation and presentation certificate from the 9th National Psychology Students Congress",
+    "American Psychoanalytic Association 2026 Katılım & CE Belgesi": "American Psychoanalytic Association 2026 attendance and continuing education certificate",
+    "IPU Berlin Summer School 2022 Başarı Sertifikası": "Certificate of completion, IPU Berlin Summer School 2022",
+    "8. Gülhane Askeri Psikiyatri Günleri Katılım Belgesi": "Certificate of participation, 8th Gülhane Military Psychiatry Days",
+    "VI. Uluslararası Psikolojik Travma Sempozyumu Katılım Sertifikası": "Certificate of participation, 6th International Psychological Trauma Symposium",
+    "Akademik dizinler ve doğrulanabilir araştırmacı profilleri": "Academic indexes and verifiable researcher profiles",
+    "Görsel Büyüteç": "Image viewer",
+    "Dr. Ali İhsan Yaka'nın portresi": "Portrait of Dr. Ali Ihsan Yaka",
+    "Ali İhsan Yaka 2005 Lisans Mezuniyet Portresi": "Ali Ihsan Yaka’s 2005 undergraduate graduation portrait",
+    "Seçilmiş akademik etkinlik": "Selected academic events",
+    "Dr. Ali İhsan Yaka, Boğaziçi Üniversitesi XI. Psikoloji Günü’nde psikanalitik yalnızlık sunumunu yaparken": "Dr. Ali Ihsan Yaka presenting on psychoanalytic solitude at Boğaziçi University’s 11th Psychology Day",
+    "Dr. Ali İhsan Yaka, Boğaziçi Üniversitesi’nde öznel toplumsallaşma üzerine konuşurken": "Dr. Ali Ihsan Yaka speaking about subjective socialization at Boğaziçi University",
+    "Dr. Ali İhsan Yaka University at Buffalo CSPC Araştırma Ofisi önünde": "Dr. Ali Ihsan Yaka outside the CSPC research office at the University at Buffalo",
+    "CSPC Sempozyumu programı, ODTÜ doktora tezi ve Sigmund Freud özgün yazışması": "CSPC symposium program, METU doctoral dissertation, and original correspondence by Sigmund Freud",
+    "APsA 2026 National Meeting San Francisco katılımcıları ve meslektaşlar": "Participants and colleagues at the APsA 2026 National Meeting in San Francisco",
+    "25. Dünya Psikiyatri Kongresi e-poster başlığı": "E-poster title for the 25th World Congress of Psychiatry",
+    "Doğrulanabilir akademik ve mesleki profiller": "Verifiable academic and professional profiles",
+    "APsA 2026 katılım belgesi önizlemesi": "Preview of the APsA 2026 attendance certificate",
+    "Kongrede tamamlanan beş atölye": "Five workshops completed at the congress",
+    "Psikotik semptomlar atölyesi sertifika önizlemesi": "Preview of the certificate for the psychotic symptoms workshop",
+    "Temel inançlar atölyesi sertifika önizlemesi": "Preview of the certificate for the core beliefs workshop",
+    "Olumsuz düşünce stratejileri atölyesi sertifika önizlemesi": "Preview of the certificate for the negative thinking strategies workshop",
+    "Terapide imgelem atölyesi sertifika önizlemesi": "Preview of the certificate for the imagery in therapy workshop",
+    "Anksiyete tedavisi atölyesi sertifika önizlemesi": "Preview of the certificate for the anxiety treatment workshop",
+    "T.C. Sağlık Bakanlığı SÜDGE Sertifikası; Ali İhsan Yaka adına 2010 tarihli tescilli eğitici belgesi": "Turkish Ministry of Health SÜDGE certificate; registered trainer certificate issued to Ali Ihsan Yaka in 2010",
+    "Ali İhsan Yaka adına 9. Ulusal Psikoloji Öğrencileri Kongresi katılım belgesi": "Certificate of participation in the 9th National Psychology Students Congress issued to Ali Ihsan Yaka",
+    "Dr. Ali İhsan Yaka California Moon Tree altında": "Dr. Ali Ihsan Yaka beneath the California Moon Tree",
+    "Kuş gözlemciliği, sulak alanda büyük mavi balıkçıl": "Birdwatching: a great blue heron in a wetland",
+    "Doğal yaşamda sevimli rakunlar": "Raccoons in the wild",
+    "Açılış ve tanıtım": "Introduction",
+    "Çalışmaları keşfet": "Explore the work",
+    "Çalışma yaklaşımı": "Approach to the work",
+    "Dr. Ali İhsan Yaka, Ph.D. — Klinik Psikolog": "Dr. Ali Ihsan Yaka, Ph.D. — Clinical Psychologist",
+    "Görünüm Modu": "View mode",
+    "Psikanalitik şema: mobil görünüm": "Psychoanalytic diagram: mobile view",
+    "IPA Araştırma Hibesi ve Doktora Tezi": "IPA research grant and doctoral dissertation",
+    "Dr. Ali İhsan Yaka — Klinik Psikanalitik Pratik ve Süpervizyon": "Dr. Ali Ihsan Yaka — Clinical Psychoanalytic Practice and Supervision",
+    "Klinik çalışma eksenleri": "Clinical practice areas",
+    "Dünya Psikiyatri Kongresi e-poster sunumu; Dr. Ali İhsan Yaka": "E-poster presentation at the World Congress of Psychiatry by Dr. Ali Ihsan Yaka",
+    "Doktora tezi, Buffalo sempozyum programı ve psikanaliz araştırmaları": "Doctoral dissertation, Buffalo symposium program, and psychoanalytic research",
+    "Dr. Ali İhsan Yaka, Klinik Pratik & Süpervizyon": "Dr. Ali Ihsan Yaka, Clinical Practice & Supervision",
+    "Boğaziçi Üniversitesi XI. Psikoloji Günü Sunum ve Sahne Arşivi": "Presentation and event archive: Boğaziçi University’s 11th Psychology Day",
+    "Dr. Ali İhsan Yaka Boğaziçi Üniversitesi XI. Psikoloji Günü’nde konuşmasını yaparken": "Dr. Ali Ihsan Yaka speaking at Boğaziçi University’s 11th Psychology Day",
+    "Boğaziçi Üniversitesi’nde Ayna Evresi ve Psikanalitik Perspektif sunumu sırasında Dr. Ali İhsan Yaka": "Dr. Ali Ihsan Yaka presenting on the mirror stage and psychoanalytic perspectives at Boğaziçi University",
+    "Boğaziçi Üniversitesi XI. Psikoloji Günü’nde Ali İhsan Yaka’nın sunumundan kürsü detayı": "A lectern detail from Ali Ihsan Yaka’s presentation at Boğaziçi University’s 11th Psychology Day",
+    "Toplantı odak konuları": "Meeting topics",
+    "APsA katılım ve etkinlik fotoğrafları": "APsA attendance and event photos",
+    "APsA 2026 National Meeting meslektaşlarla grup fotoğrafı": "Group photo with colleagues at the APsA 2026 National Meeting",
+    "Araştırma sayfası bölümleri": "Research page sections",
+    "Psikotik yapıyı ve simgeselden düşmeyi 3B sahnede göster": "3D scene showing psychotic structure and foreclosure from the Symbolic",
+    "Pervert yapıyı ve simgeselde tanınmamayı 3B sahnede göster": "3D scene showing perverse structure and non-recognition in the Symbolic",
+    "Nevrotik yapıyı ve simgeselde tanınmayı 3B sahnede göster": "3D scene showing neurotic structure and recognition in the Symbolic",
+    "Baba işlevi grafiği: gösteren zinciri ve ruhsal yapılar": "Paternal function graph: signifier chain and psychic structures",
+    "Güncel web şemasının mobil özeti": "Mobile summary of the current web diagram",
+    "Şekil 2: Nevrotik Yapıda Gösteren Zincirinin Oluşumu — AYNA (2024)": "Figure 2: Formation of the Signifier Chain in Neurotic Structure — AYNA (2024)",
+    "Şekil 3: Gösteren Zincirinin Oluşumunda Kod ve Mesaj Kesişim Noktaları — AYNA (2024)": "Figure 3: Code and Message Intersection Points in the Formation of the Signifier Chain — AYNA (2024)",
+    "Şekil 4: Baba İşlevi Bağlamında Gösteren Zincirinin Oluşumu — AYNA (2024)": "Figure 4: Formation of the Signifier Chain in the Context of the Paternal Function — AYNA (2024)",
+    "Lacan Şema L: Obsesyonel Nevroz ve Arzu Çıkmazı": "Lacan’s Schema L: Obsessional Neurosis and the Impasse of Desire",
+    "Lacan Dört Söylem Matrisi": "Lacan’s Four Discourses Matrix",
+    "Lacan Dört Söylem Matrisi: ODTÜ Doktora Tezi Saha Analizi": "Lacan’s Four Discourses Matrix: Field Analysis from the METU Doctoral Dissertation",
+    "Figure 5.1. Initial and Final Structural, Case Conceptualizations and Subjective Positions' Discourse Mappings — Dr. Ali İhsan Yaka Doktora Tezi": "Figure 5.1. Initial and Final Structural, Case Conceptualizations and Subjective Positions' Discourse Mappings — Dr. Ali Ihsan Yaka’s Doctoral Dissertation",
+    "ODTÜ Doktora Tezi Resimli Saha Belgesi: Şengal Göçü ve Dildeki Gösteren Zinciri": "Illustrated field document from the METU doctoral dissertation: Şengal displacement and the signifier chain in language",
+    "Irak saha çalışması ve doktora tezi cildi": "Iraq fieldwork and doctoral dissertation volume",
+    "Dr. Ali İhsan Yaka Klinik Görünüm": "Dr. Ali Ihsan Yaka in a clinical setting",
+    "Akademik denklik ve sürekli eğitim bilgileri": "Academic equivalency and continuing education information",
+    "Hizmet Kategorisi Seçimi": "Service category selection",
+    "Bu terminoloji çalışması, çokdilli psikanalitik psikoterapi seanslarında ve çokkültürlü klinik saha bağlamında dilsel ve kavramsal aktarımı kolaylaştırmak üzere Dr. Ali İhsan Yaka tarafından derlenmektedir.": "This terminology resource is compiled by Dr. Ali Ihsan Yaka to support linguistic and conceptual exchange in multilingual psychoanalytic sessions and cross-cultural clinical fieldwork.",
+    "(2011). 7th International Congress of Cognitive Psychotherapy (ICCP Clinical Science), İstanbul, Türkiye.": "(2011). 7th International Congress of Cognitive Psychotherapy (ICCP Clinical Science), Istanbul, Türkiye.",
+    "ICCP 2011 · İstanbul": "ICCP 2011 · Istanbul",
+    "DERGİPARK / ULAKBİM": "DERGİPARK / ULAKBİM",
+    "Sertifikayı aç →": "Open certificate →",
+    "Temel İnançlar": "Core Beliefs",
+    "Olumsuz Düşünce Stratejileri": "Negative Thinking Strategies",
+    "Terapide İmgelem": "Imagery in Therapy",
+    "Kongre katılım sertifikasını aç →": "Open congress attendance certificate →",
+    "Sayfa taşındı.": "This page has moved.",
+    "Klinik Pratik sayfasına devam edin.": "Continue to the Clinical Practice page."
   };
   const homepageLooseTextEnglish = Object.fromEntries(Object.entries(homepageLooseText).map(([tr, en]) => [en, tr]));
   const homepageLooseNorm = Object.fromEntries(
@@ -2615,6 +2760,20 @@
       const trailing = orig.match(/\s*$/)?.[0] || '';
       node.nodeValue = `${leading}${homepageLooseNorm[norm]}${trailing}`;
     }
+  }
+
+  function translateUnkeyedAttributes(lang) {
+    const attrs = ['aria-label', 'title'];
+    document.querySelectorAll(attrs.map(attr => `[${attr}]`).join(',')).forEach(el => {
+      attrs.forEach(attr => {
+        if (!el.hasAttribute(attr) || el.hasAttribute(`data-i18n-${attr}`)) return;
+        const originalKey = `localeOrig${attr.replace(/-([a-z])/g, (_, letter) => letter.toUpperCase())}`;
+        if (el.dataset[originalKey] === undefined) el.dataset[originalKey] = el.getAttribute(attr);
+        const original = el.dataset[originalKey];
+        const normalized = original.replace(/\s+/g, ' ').trim();
+        el.setAttribute(attr, lang === 'en' ? (homepageLooseNorm[normalized] || original) : original);
+      });
+    });
   }
 
   function updateBrandLogoLanguage(lang) {
@@ -2736,6 +2895,7 @@
     updateBrandLogoLanguage(activeLang);
 
     translateUnkeyedText(activeLang);
+    translateUnkeyedAttributes(activeLang);
     window.dispatchEvent(new CustomEvent('aiy:langchange', { detail: { lang: activeLang } }));
   }
 
