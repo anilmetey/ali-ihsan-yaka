@@ -1146,12 +1146,13 @@ function init() {
   });
 }
 
-/* ------------------------------------------------------------ 2-Katlı Mod Switcher (2B Şema & 3D Halini Gör) */
+/* ------------------------------------------------------------ Three-view diagram switcher (published image, 2D, 3D) */
 function setupModeSwitcher() {
   const switchers = document.querySelectorAll('.psyche-mode-switcher');
   if (!switchers.length) return;
 
   function setMode(mode, fromUser = false) {
+    const isImage = mode === 'image';
     const is3D = mode === '3d';
     switchers.forEach(sw => {
       sw.querySelectorAll('.psyche-mode-btn').forEach(btn => {
@@ -1163,11 +1164,13 @@ function setupModeSwitcher() {
 
     if (is3D) {
       frame?.classList.add('is-3d');
+      frame?.classList.remove('is-image');
       if (window.Psyche3D) {
         window.Psyche3D.set3DMode(true, fromUser);
       }
     } else {
       frame?.classList.remove('is-3d');
+      frame?.classList.toggle('is-image', isImage);
       if (window.Psyche3D) {
         window.Psyche3D.set3DMode(false, fromUser);
       }
@@ -1183,8 +1186,8 @@ function setupModeSwitcher() {
     });
   });
 
-  const initial3D = new URLSearchParams(window.location.search).get('view') === '3d';
-  setMode(initial3D ? '3d' : '2d');
+  const requestedMode = new URLSearchParams(window.location.search).get('view');
+  setMode(requestedMode === '3d' || requestedMode === 'image' ? requestedMode : '2d');
 }
 
 if (document.readyState === 'loading') {

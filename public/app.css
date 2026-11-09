@@ -12923,7 +12923,7 @@ html.splash-visited #splashScreen.splash-screen {
 
 
 /* -------------------------------------------------------------
-   2-KATLI GÖRÜNÜM MODU DEĞİŞTİRİCİSİ (2B Şema & 3D Halini Gör)
+   THREE-VIEW DIAGRAM SWITCHER (Published image, 2D, 3D)
    ------------------------------------------------------------- */
 .psyche-mode-switcher-wrap {
   display: flex;
@@ -13396,16 +13396,8 @@ html.splash-visited #splashScreen.splash-screen {
 @media(max-width:900px) { .research-reading-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media(max-width:560px) { .research-page-map { justify-content:flex-start; overflow:auto; flex-wrap:nowrap; padding-bottom:.25rem; } .research-page-map a { white-space:nowrap; } .research-reading-grid { grid-template-columns:1fr; } .iccp-workshop-grid { grid-template-columns:1fr; } }
 .portrait-img-wrap > picture,.practice-feature-img-wrap > picture { display:block; width:100%; height:100%; }
-.research-mobile-model { display:none; }
 @media (max-width:760px) {
-  #guncel-model .psyche-diagram-frame { display:none !important; }
   #guncel-model .psyche-inspector-hud { display:none !important; }
-  .research-mobile-model { display:grid; gap:.65rem; margin:0 0 1rem; }
-  .research-mobile-model article { display:flex; align-items:center; gap:.8rem; padding:.85rem; border:1px solid var(--border-light); border-radius:.85rem; background:#fff; box-shadow:0 6px 20px rgba(30,40,60,.045); }
-  .research-mobile-model article>span { display:grid; place-items:center; width:2rem; height:2rem; flex:0 0 2rem; border:1px solid rgba(184,139,74,.35); border-radius:.55rem; color:#937044; font-size:.7rem; font-weight:700; }
-  .research-mobile-model strong { display:block; color:var(--text-heading); font:600 1rem var(--font-serif); }
-  .research-mobile-model p { margin:.25rem 0 0; color:var(--text-muted); font-size:.82rem; line-height:1.45; }
-  .research-mobile-model b { color:#9a7138; padding:0 .15rem; }
 }
 .splash-quote a { display:block; margin-top:.18em; font:600 .35em/1.35 var(--font-sans); letter-spacing:.1em; text-transform:uppercase; }
 /* The research page shows one settled revision; reserve moving dashes for the homepage model. */
@@ -13471,3 +13463,21 @@ html[lang="en"] .hero-lacanian-forms { opacity:.13; }
   html[lang="en"] .hero-lacanian-forms { opacity:.085; }
 }
 @media(prefers-reduced-motion:reduce) { .hero-lacanian-forms .lacanian-form { animation:none !important; } }
+
+
+/* Research model: published figure, 2D redraw, and interactive 3D share one viewer. */
+.psyche-original-image { display:none; flex-direction:column; align-items:center; gap:.7rem; padding:clamp(.75rem,2vw,1.5rem); background:#fff; }
+.psyche-original-image img { display:block; width:min(100%,960px); height:auto; aspect-ratio:1.85; object-fit:cover; object-position:center 49%; border-radius:8px; background:#fff; }
+.psyche-original-image span { color:var(--text-muted); font-size:.8rem; line-height:1.45; text-align:center; }
+.psyche-diagram-frame.is-image .topology-scroll,
+.psyche-diagram-frame.is-image .psyche-diagram-svg,
+.psyche-diagram-frame.is-image .psyche-3d { display:none !important; }
+.psyche-diagram-frame.is-image .psyche-original-image { display:flex; }
+#guncel-model .psyche-diagram-frame { display:block !important; }
+@media(max-width:760px) {
+  #guncel-model .psyche-diagram-frame { display:block !important; }
+  #guncel-model .psyche-mode-switcher-wrap { overflow-x:auto; justify-content:flex-start; padding:.1rem .1rem .35rem; }
+  #guncel-model .psyche-mode-switcher { gap:.1rem; flex:0 0 auto; }
+  #guncel-model .psyche-mode-btn { gap:.32rem; padding:.55rem .72rem; font-size:.74rem; }
+  #guncel-model .psyche-diagram-frame.is-3d .psyche-3d { display:block !important; width:100% !important; height:clamp(300px,76vw,400px) !important; min-height:0 !important; max-height:none !important; aspect-ratio:auto !important; }
+}
