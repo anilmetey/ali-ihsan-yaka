@@ -27,7 +27,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="icon" href="assets/images/psyche-structure-mark.svg" type="image/webp">
-  <link rel="stylesheet" href="app.css?v=8.30">
+  <link rel="stylesheet" href="app.css?v=8.31">
   <link rel="stylesheet" href="assets/css/research-palette.css?v=1">
 </head>
 <body>
@@ -297,7 +297,7 @@
             <div class="psyche-mode-switcher" role="tablist" aria-label="Şema görünümünü seçin" data-i18n-aria-label="psyche.modeLabel">
               <button type="button" class="psyche-mode-btn" data-mode="image" role="tab" aria-selected="false">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-                <span data-i18n="psyche.modeImage">Özgün görsel</span>
+                <span data-i18n="psyche.modeStatic">Statik şema</span>
               </button>
               <button type="button" class="psyche-mode-btn is-active" data-mode="2d" role="tab" aria-selected="true">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
@@ -311,16 +311,12 @@
             </div>
           </div>
 
-          <!-- Original published figure, 2D vector redraw, and interactive 3D view. -->
+          <!-- Static redraw, animated 2D redraw, and interactive 3D view. -->
           <figure class="psyche-diagram" data-psyche-model style="margin: 0;">
             <div class="psyche-diagram-frame">
-              <div class="psyche-original-image" aria-label="Makalede yayımlanan özgün şekil" data-i18n-aria-label="psyche.originalImageLabel">
-                <img src="assets/images/fig5_paper_original.png" alt="Makalede yayımlanan özgün baba işlevi şeması" data-i18n-alt="psyche.originalImageAlt" data-zoomable loading="lazy" decoding="async" width="515" height="400">
-                <span data-i18n="psyche.originalImageCaption">AYNA Klinik Psikoloji Dergisi’nde yayımlanan özgün şekil</span>
-              </div>
               <!-- Fallback High-Fidelity 4K Vector SVG for mobile & non-WebGL environments -->
               <div class="topology-scroll">
-                <svg class="topology-svg psyche-diagram-svg" viewBox="40 34 1200 572" width="100%" role="img" aria-label="Baba işlevi grafiği: gösteren zinciri ve ruhsal yapılar" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+                <svg class="topology-svg psyche-diagram-svg" viewBox="40 34 1200 572" width="100%" role="img" aria-label="Baba işlevi grafiği: gösteren zinciri ve ruhsal yapılar" data-i18n-aria-label="psyche.diagramAria" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
                   <defs>
                     <marker id="svg-arr-blue" viewBox="0 0 10 10" refX="7.5" refY="5" markerWidth="6.2" markerHeight="6.2" orient="auto">
                       <path d="M0 1.2L8.8 5L0 8.8z" fill="#3D5690"/>
@@ -537,6 +533,7 @@
 
                 </svg>
               </div>
+              <div class="psyche-static-caption" data-i18n="psyche.staticDiagramCaption">Özgün web şemasının hareketsiz görünümü</div>
               <div class="psyche-3d" data-psyche-3d aria-label="Baba işlevi bağlamında gösteren zincirinin üç boyutlu etkileşimli şeması" data-i18n-aria-label="psyche.3dAria"></div>
             </div>
           </figure>
@@ -1508,7 +1505,7 @@
     </div>
   </footer>
 
-  <script src="app.js?v=8.30"></script>
+  <script src="app.js?v=8.31"></script>
   <script type="module" src="assets/js/psyche-3d.js?v=8.24"></script>
 
   <script>

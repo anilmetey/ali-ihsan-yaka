@@ -13400,15 +13400,7 @@ html.splash-visited #splashScreen.splash-screen {
   #guncel-model .psyche-inspector-hud { display:none !important; }
 }
 .splash-quote a { display:block; margin-top:.18em; font:600 .35em/1.35 var(--font-sans); letter-spacing:.1em; text-transform:uppercase; }
-/* The research page shows one settled revision; reserve moving dashes for the homepage model. */
-#guncel-model .model-loop,
-#guncel-model .model-inner-loop,
-#guncel-model .model-transition,
-#guncel-model .model-forward,
-#guncel-model .model-up,
-#guncel-model .model-down,
-#guncel-model .model-stage-down,
-#guncel-model .model-code-arc { animation:none !important; }
+/* Research view keeps motion in 2D and uses the same authored SVG as a static figure. */
 
 /* ICCP 2011 certificates: give the five workshop records a full-width, readable display. */
 .cpd-card-iccp { grid-column: 1 / -1; border-color: rgba(36,69,96,.24); background: linear-gradient(135deg,#fff 0%,#fbfaf7 100%); }
@@ -13465,14 +13457,23 @@ html[lang="en"] .hero-lacanian-forms { opacity:.13; }
 }
 
 
-/* Research model: published figure, 2D redraw, and interactive 3D share one viewer. */
-.psyche-original-image { display:none; flex-direction:column; align-items:center; gap:.7rem; padding:clamp(.75rem,2vw,1.5rem); background:#fff; }
-.psyche-original-image img { display:block; width:min(100%,960px); height:auto; aspect-ratio:1.85; object-fit:cover; object-position:center 49%; border-radius:8px; background:#fff; }
-.psyche-original-image span { color:var(--text-muted); font-size:.8rem; line-height:1.45; text-align:center; }
-.psyche-diagram-frame.is-image .topology-scroll,
-.psyche-diagram-frame.is-image .psyche-diagram-svg,
+/* Static mode presents the authored diagram as a clean, non-animated figure. */
+.psyche-static-caption { display:none; color:var(--text-muted); font-size:.8rem; line-height:1.45; text-align:center; padding:.55rem 1rem 1rem; }
 .psyche-diagram-frame.is-image .psyche-3d { display:none !important; }
-.psyche-diagram-frame.is-image .psyche-original-image { display:flex; }
+.psyche-diagram-frame.is-image .psyche-static-caption { display:block; }
+.psyche-diagram-frame.is-image .model-loop,
+.psyche-diagram-frame.is-image .model-inner-loop,
+.psyche-diagram-frame.is-image .model-transition,
+.psyche-diagram-frame.is-image .model-forward,
+.psyche-diagram-frame.is-image .model-up,
+.psyche-diagram-frame.is-image .model-down,
+.psyche-diagram-frame.is-image .model-stage-down,
+.psyche-diagram-frame.is-image .model-code-arc,
+.psyche-diagram-frame.is-image .model-s1-axis,
+.psyche-diagram-frame.is-image .model-mirror-axis,
+.psyche-diagram-frame.is-image .model-s1-return path,
+.psyche-diagram-frame.is-image .model-s1-return,
+.psyche-diagram-frame.is-image .model-s1-forward { animation:none !important; stroke-dasharray:none !important; }
 #guncel-model .psyche-diagram-frame { display:block !important; }
 @media(max-width:760px) {
   #guncel-model .psyche-diagram-frame { display:block !important; }
