@@ -934,7 +934,7 @@ main.about-page-main > section {
   height: 100%;
   width: 0%;
   background: var(--color-primary);
-  animation: splashAutoProgress 3s linear forwards;
+  animation: splashAutoProgress 5s linear forwards;
 }
 
 @keyframes splashAutoProgress {
@@ -12028,7 +12028,7 @@ html.splash-visited #splashScreen.splash-screen {
 .splash-progress-bar {
   height: 100%; width: 0; border-radius: 999px;
   background: linear-gradient(90deg, var(--color-accent-rust), var(--color-primary));
-  animation: splashAutoProgress 3s linear forwards;
+  animation: splashAutoProgress 5s linear forwards;
 }
 @keyframes splashAutoProgress { from { width: 0; } to { width: 100%; } }
 #splashScreen.splash-screen.splash-closing { opacity: 0 !important; pointer-events: none !important; }

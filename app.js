@@ -3130,7 +3130,9 @@
     const enterButton = document.getElementById('splashEnterBtn');
     const replayButton = document.getElementById('replaySplashBtn');
     const splashSeenKey = 'aiy_splash_seen_v1';
+    const progressBar = splash?.querySelector('.splash-progress-bar');
     let isClosed = false;
+    let autoCloseTimer = null;
 
     if (!splash) {
       replayButton?.addEventListener('click', (event) => {
@@ -3155,19 +3157,13 @@
       sessionStorage.removeItem('aiy_splash_seen_session_v4');
     } catch (_) {}
 
-    // Splash screen presentation: 3 seconds auto-timer, dismissible instantly by clicking anywhere
-    document.documentElement.classList.remove('splash-visited');
-    splash.classList.remove('is-hidden', 'splash-closing');
-    splash.removeAttribute('aria-hidden');
-    splash.inert = false;
-    splash.style.display = '';
-    document.body.classList.add('splash-active');
-    setBackgroundInert(true);
-    window.requestAnimationFrame(() => enterButton?.focus({ preventScroll: true }));
-
     const closeSplash = () => {
       if (isClosed) return;
       isClosed = true;
+      if (autoCloseTimer) {
+        window.clearTimeout(autoCloseTimer);
+        autoCloseTimer = null;
+      }
 
       // Immediately restore scrolling and unblock all background regions
       document.body.classList.remove('splash-active');
@@ -3188,6 +3184,30 @@
       // 260ms smooth transition, guaranteed fallback
       window.setTimeout(finalizeClose, 260);
     };
+
+    const scheduleAutoClose = () => {
+      if (autoCloseTimer) {
+        window.clearTimeout(autoCloseTimer);
+        autoCloseTimer = null;
+      }
+      if (progressBar) {
+        progressBar.style.animation = 'none';
+        void progressBar.offsetWidth;
+        progressBar.style.animation = '';
+      }
+      autoCloseTimer = window.setTimeout(closeSplash, 5000);
+    };
+
+    // Splash screen presentation: 5 seconds auto-timer, dismissible instantly by clicking anywhere
+    document.documentElement.classList.remove('splash-visited');
+    splash.classList.remove('is-hidden', 'splash-closing');
+    splash.removeAttribute('aria-hidden');
+    splash.inert = false;
+    splash.style.display = '';
+    document.body.classList.add('splash-active');
+    setBackgroundInert(true);
+    window.requestAnimationFrame(() => enterButton?.focus({ preventScroll: true }));
+    scheduleAutoClose();
 
     // 1. Enter button click (dismisses immediately on direct user intent)
     enterButton?.addEventListener('click', (e) => {
@@ -3230,6 +3250,7 @@
       setBackgroundInert(true);
       enterButton?.focus({ preventScroll: true });
       window.scrollTo({ top: 0, behavior: 'auto' });
+      scheduleAutoClose();
 
     });
 
