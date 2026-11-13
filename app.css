@@ -13629,3 +13629,7 @@ html[lang="en"] .hero-lacanian-forms { opacity:.13; }
 .practice-terminology-note h3 { margin:0 0 .45rem; color:var(--text-heading); font:600 1.05rem/1.35 var(--font-sans); }
 .practice-terminology-note p { margin:0; max-width:78ch; font-size:.94rem; line-height:1.75; }
 @media(max-width:760px) { .hero-lacan-quote { margin:.75rem 0 1.1rem; } }
+@media(max-width:760px) {
+  .hero-art-grid > :first-child { order:0; }
+  .hero-art-grid > .hero-portrait-column { order:1; }
+}
