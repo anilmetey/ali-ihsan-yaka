@@ -33,7 +33,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 
   <link rel="icon" href="assets/images/psyche-structure-mark.svg" type="image/webp">
-  <link rel="stylesheet" href="app.css?v=8.34">
+  <link rel="stylesheet" href="app.css?v=8.36">
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -83,6 +83,18 @@
   <!-- Scroll Progress Indicator (kept in DOM for script compatibility, hidden for calm scholarly reading) -->
   <div id="scrollProgress" class="scroll-progress-bar" aria-hidden="true" style="display: none !important;"></div>
 
+  <section id="splashScreen" class="splash-screen" role="dialog" aria-modal="true" aria-labelledby="splashQuote" aria-describedby="splashScholarTitle" aria-label="Açılış ekranı" data-i18n-aria-label="splash.aria">
+    <picture class="splash-portrait-source"><source srcset="assets/images/dr-ali-ihsan-yaka-cutout.webp" type="image/webp"><img class="splash-portrait" src="assets/images/dr-ali-ihsan-yaka-cutout.png" alt="" aria-hidden="true" width="1024" height="1536" fetchpriority="high" decoding="async"></picture>
+    <div class="splash-monograph-card">
+      <div class="splash-eyebrow" data-i18n="splash.eyebrow">DR. ALİ İHSAN YAKA, Ph.D.</div>
+      <div class="splash-profession" data-i18n="splash.profession">KLİNİK PSİKOLOG</div>
+      <blockquote id="splashQuote" class="splash-quote" data-i18n="splash.quote">“Bilinçdışı bir dil gibi yapılanmıştır.” <a href="https://oyc.yale.edu/english/engl-300/lecture-13" target="_blank" rel="noopener">— Jacques Lacan</a></blockquote>
+      <div class="splash-divider" aria-hidden="true"></div>
+      <div id="splashScholarTitle" class="splash-scholar-title" data-i18n="splash.scholarTitle">Yetişkinlerle bireysel psikoterapi · Klinik süpervizyon</div>
+      <button type="button" id="splashEnterBtn" class="splash-enter-btn" aria-label="Siteye geç" data-i18n-aria-label="splash.enterBtn"><span data-i18n="splash.enterBtn">Siteye geç ↓</span></button>
+    </div>
+  </section>
+
   <!-- =====================================================================
        SITE HEADER (Primary Navigation)
        ===================================================================== -->
@@ -97,7 +109,11 @@
         <a href="index.html" class="nav-link active" data-i18n="nav.home">Ana Sayfa</a>
         <a href="hakkimda.html" class="nav-link" data-i18n="nav.about">Hakkında</a>
         <a href="klinik-pratik.html" class="nav-link" data-i18n="nav.practice">Klinik Pratik</a>
+        <a href="guncel.html" class="nav-link" data-i18n="nav.news">Güncel</a>
+        <a href="saha-calismalari.html" class="nav-link" data-i18n="nav.fieldwork">Saha Çalışmaları</a>
         <a href="yayinlar.html" class="nav-link" data-i18n="nav.publications">Yayınlar</a>
+        <a href="arastirmalar.html" class="nav-link" data-i18n="nav.research">Araştırmalar</a>
+        <a href="sss.html" class="nav-link" data-i18n="nav.faq">SSS</a>
         <a href="iletisim.html" class="nav-link" data-i18n="nav.contact">İletişim</a>
       </nav>
 
@@ -133,9 +149,10 @@
         <li><a href="index.html" class="drawer-link active" data-i18n="nav.home">Ana Sayfa</a></li>
         <li><a href="hakkimda.html" class="drawer-link" data-i18n="nav.about">Hakkında</a></li>
         <li><a href="klinik-pratik.html" class="drawer-link" data-i18n="nav.practice">Klinik Pratik &amp; Hizmetler</a></li>
+        <li><a href="guncel.html" class="drawer-link" data-i18n="nav.news">Güncel</a></li>
+        <li><a href="saha-calismalari.html" class="drawer-link" data-i18n="nav.fieldwork">Saha Çalışmaları</a></li>
         <li><a href="yayinlar.html" class="drawer-link" data-i18n="nav.publications">Yayınlar</a></li>
         <li><a href="arastirmalar.html" class="drawer-link" data-i18n="nav.research">Araştırmalar</a></li>
-        <li><a href="saha-calismalari.html" class="drawer-link" data-i18n="nav.fieldwork">Saha Çalışmaları</a></li>
         <li><a href="sss.html" class="drawer-link" data-i18n="nav.faqDrawer">Sıkça Sorulan Sorular (SSS)</a></li>
         <li><a href="iletisim.html" class="drawer-link" data-i18n="nav.contact">İletişim</a></li>
       </ul>
@@ -156,10 +173,6 @@
         <div class="hero-content-col">
           <h1 id="welcomeHeading" tabindex="-1" data-i18n="hero.title">Dr. Ali İhsan Yaka, Ph.D.</h1>
           <p class="hero-profession" data-i18n="hero.profession">Klinik Psikolog</p>
-          <blockquote class="hero-lacan-quote">
-            <p data-i18n="hero.lacanQuote">“Bilinçdışı bir dil gibi yapılanmıştır.”</p>
-            <cite data-i18n="hero.lacanAttribution">— Jacques Lacan</cite>
-          </blockquote>
           <h2 class="hero-service-title" data-i18n="hero.audience">Yetişkinlerle Bireysel Psikoterapi &amp; Klinik Süpervizyon</h2>
           <p class="hero-service-note" data-i18n="hero.serviceNote">Ruh sağlığı uzmanları ve adayları için süpervizyon süreçleri.</p>
 
@@ -704,7 +717,7 @@
     <div id="lightboxCaption"></div>
   </div>
 
-  <script src="app.js?v=8.33"></script>
+  <script src="app.js?v=8.36"></script>
   <script type="importmap">{"imports":{"three":"./assets/vendor/three/three.module.min.js","three/addons/":"./assets/vendor/three/addons/"}}</script>
   <script type="module" src="assets/js/psyche-3d.js?v=8.23"></script>
 </body>

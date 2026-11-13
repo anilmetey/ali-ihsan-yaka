@@ -66,14 +66,15 @@
     "fieldwork.2015.tag1": "Klinik psikoloji",
     "fieldwork.2015.tag2": "Ruh sağlığı",
     "fieldwork.cta": "Kurumsal İş Birliği & Eğitim Talebi →",
-    "splash.aria": "Açılış Sanat Perdesi",
+    "splash.aria": "Açılış ekranı",
     "a11y.skipToContent": "Ana içeriğe geç",
     "hero.portraitAlt": "Dr. Ali İhsan Yaka, Ph.D. — Klinik Psikolog ve doktora sonrası araştırmacı",
-    "splash.eyebrow": "DR. ALİ İHSAN YAKA, PH.D. • UNIVERSITY AT BUFFALO (SUNY)",
+    "splash.eyebrow": "DR. ALİ İHSAN YAKA, Ph.D.",
+    "splash.profession": "KLİNİK PSİKOLOG",
     "splash.quote": "“Bilinçdışı bir dil gibi yapılanmıştır.” <a href='https://oyc.yale.edu/english/engl-300/lecture-13' target='_blank' rel='noopener'>— Jacques Lacan</a>",
     "splash.supportQuote": "“Benlik, kendi evinin efendisi değildir.” <a href='https://www.freudedition.net/werke/one-difficulties-psycho-analysis/druckschrift-0' target='_blank' rel='noopener'>— Sigmund Freud</a>",
-    "splash.scholarTitle": "Yetişkinler için psikanalitik psikoterapi • Klinik süpervizyon",
-    "splash.enterBtn": "Çalışmaları keşfet ↓",
+    "splash.scholarTitle": "Yetişkinlerle bireysel psikoterapi · Klinik süpervizyon",
+    "splash.enterBtn": "Siteye geç ↓",
     "nav.home": "Ana Sayfa",
     "nav.about": "Hakkımda",
     "nav.services": "Hizmetler",
@@ -174,8 +175,6 @@
     "psyche.loopNote": "Üst ve alt döngüler gösteren zincirini bağlar.",
     "hero.profession": "Klinik Psikolog",
     "hero.title": "Dr. Ali İhsan Yaka, Ph.D.",
-    "hero.lacanQuote": "“Bilinçdışı bir dil gibi yapılanmıştır.”",
-    "hero.lacanAttribution": "— Jacques Lacan",
     "hero.audience": "Yetişkinlerle Bireysel Psikoterapi & Klinik Süpervizyon",
     "hero.serviceNote": "Ruh sağlığı uzmanları ve adayları için süpervizyon süreçleri.",
     "home.approachTitle": "Psikanalitik Yaklaşım",
@@ -810,7 +809,7 @@
     "pub.hubDergiparkName": "DergiPark Araştırmacı Profili",
     "pub.hubDergiparkSub": "Ulusal hakemli makaleler ve hakemlik",
     "pub.hubRgSub": "Araştırma çıktıları ve akademik ağ",
-    "footer.splashReplay": "Başa dön",
+    "footer.splashReplay": "Açılış ekranını göster",
     "practice.clinicianEyebrow": "RUH SAĞLIĞI ÇALIŞANLARI & UZMANLAR İÇİN",
     "practice.clinicianTitle": "Süpervizyon, Vaka Kavramsallaştırma ve Seminer Çalışmaları",
     "practice.clinicianIntro": "Klinik psikologlar, psikoterapistler, psikiyatri hekimleri ve ruh sağlığı uzmanları için; kişinin söylemini psikanalitik eksende dinleme, aktarım dinamiğini kavrama ve analitik duruşu pekiştirmeye yönelik yapılandırılmış mesleki programlar.",
@@ -931,14 +930,15 @@
     "meta.faqDescription": "Answers about Lacanian-oriented psychoanalytic psychotherapy, the session frame, confidentiality, online sessions, and clinical supervision.",
     "meta.contactDescription": "Get in touch about psychoanalytic psychotherapy, clinical supervision, or organizational training.",
     "meta.privacyDescription": "Information about the website’s contact form, browser preferences, and privacy practices.",
-    "splash.aria": "Art Curtain",
+    "splash.aria": "Opening screen",
     "a11y.skipToContent": "Skip to main content",
     "hero.portraitAlt": "Dr. Ali Ihsan Yaka, Ph.D. — Clinical Psychologist",
-    "splash.eyebrow": "DR. ALI IHSAN YAKA, PH.D. • UNIVERSITY AT BUFFALO (SUNY)",
+    "splash.eyebrow": "DR. ALI IHSAN YAKA, Ph.D.",
+    "splash.profession": "CLINICAL PSYCHOLOGIST",
     "splash.quote": "“The unconscious is structured like a language.” <a href='https://oyc.yale.edu/english/engl-300/lecture-13' target='_blank' rel='noopener'>— Jacques Lacan</a>",
     "splash.supportQuote": "“The ego is not master in its own house.” <a href='https://www.freudedition.net/werke/one-difficulties-psycho-analysis/druckschrift-0' target='_blank' rel='noopener'>— Sigmund Freud</a>",
-    "splash.scholarTitle": "Psychoanalytic psychotherapy for adults • Clinical supervision",
-    "splash.enterBtn": "Explore the work ↓",
+    "splash.scholarTitle": "Individual psychotherapy for adults · Clinical supervision",
+    "splash.enterBtn": "Enter the site ↓",
     "nav.home": "Home",
     "nav.about": "About",
     "nav.services": "Services",
@@ -1043,8 +1043,6 @@
     "Kişinin kendi yaşam öyküsü, arzusu ve söylemi formülasyonun dışına itilir; semptom yalnızca bastırılması gereken bir disfonksiyon sayılır.": "The person’s life story, desire, and speech are excluded from the formulation; the symptom is treated only as a dysfunction to suppress.",
     "hero.profession": "Clinical Psychologist",
     "hero.title": "Dr. Ali Ihsan Yaka, Ph.D.",
-    "hero.lacanQuote": "“The unconscious is structured like a language.”",
-    "hero.lacanAttribution": "— Jacques Lacan",
     "hero.audience": "Individual Psychotherapy for Adults & Clinical Supervision",
     "hero.serviceNote": "Supervision for mental health professionals and trainees.",
     "home.approachTitle": "Psychoanalytic Approach",
@@ -1687,7 +1685,7 @@
     "pub.hubDergiparkName": "DergiPark Researcher Profile",
     "pub.hubDergiparkSub": "National peer-reviewed articles & review record",
     "pub.hubRgSub": "Research outputs and academic network",
-    "footer.splashReplay": "Back to top",
+    "footer.splashReplay": "Show opening screen",
     "practice.clinicianEyebrow": "FOR MENTAL HEALTH PROFESSIONALS & CLINICIANS",
     "practice.clinicianTitle": "Supervision, Case Formulation & Seminar Study Groups",
     "practice.clinicianIntro": "Structured professional programs for clinical psychologists, psychotherapists, psychiatrists, and counselors focusing on psychoanalytic discourse, transference dynamics, and analytic posture.",
@@ -3063,13 +3061,12 @@
     const enterButton = document.getElementById('splashEnterBtn');
     const replayButton = document.getElementById('replaySplashBtn');
     const splashSeenKey = 'aiy_splash_seen_v1';
-    let splashAutoCloseTimer = 0;
     let isClosed = false;
 
     if (!splash) {
       replayButton?.addEventListener('click', (event) => {
         event.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.location.assign('index.html?showSplash=1');
       });
       return;
     }
@@ -3103,9 +3100,6 @@
       if (isClosed) return;
       isClosed = true;
 
-      window.clearTimeout(splashAutoCloseTimer);
-      splashAutoCloseTimer = 0;
-
       // Immediately restore scrolling and unblock all background regions
       document.body.classList.remove('splash-active');
       setBackgroundInert(false);
@@ -3124,14 +3118,6 @@
 
       // 260ms smooth transition, guaranteed fallback
       window.setTimeout(finalizeClose, 260);
-    };
-
-    let splashStartTime = Date.now();
-    let wheelAccum = 0;
-
-    const scheduleSplashClose = () => {
-      window.clearTimeout(splashAutoCloseTimer);
-      splashAutoCloseTimer = window.setTimeout(closeSplash, 3000);
     };
 
     // 1. Enter button click (dismisses immediately on direct user intent)
@@ -3161,16 +3147,11 @@
       if (dy > 40) closeSplash();
     }, { passive: true });
 
-    // 5. 3-Second Auto-dismiss timer
-    scheduleSplashClose();
-
-    // 6. Replay button in footer
+    // Replay button in footer
     replayButton?.addEventListener('click', (event) => {
       event.preventDefault();
       try { localStorage.removeItem(splashSeenKey); } catch (_) {}
       isClosed = false;
-      splashStartTime = Date.now();
-      wheelAccum = 0;
       document.documentElement.classList.remove('splash-visited');
       splash.classList.remove('is-hidden', 'splash-closing');
       splash.removeAttribute('aria-hidden');
@@ -3181,17 +3162,9 @@
       enterButton?.focus({ preventScroll: true });
       window.scrollTo({ top: 0, behavior: 'auto' });
 
-      // Restart progress bar animation
-      const pBar = splash.querySelector('.splash-progress-bar');
-      if (pBar) {
-        pBar.style.animation = 'none';
-        void pBar.offsetWidth; // trigger reflow
-        pBar.style.animation = '';
-      }
-      scheduleSplashClose();
     });
 
-    // 7. Keyboard navigation
+    // Keyboard navigation
     document.addEventListener('keydown', (event) => {
       if (splash.classList.contains('is-hidden') || isClosed) return;
       if (['Escape', 'Enter', ' ', 'ArrowDown', 'PageDown'].includes(event.key)) {

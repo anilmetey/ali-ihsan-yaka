@@ -13633,3 +13633,21 @@ html[lang="en"] .hero-lacanian-forms { opacity:.13; }
   .hero-art-grid > :first-child { order:0; }
   .hero-art-grid > .hero-portrait-column { order:1; }
 }
+
+/* Opening screen: restrained, clear, and aligned with the current homepage. */
+#splashScreen .splash-monograph-card { width:min(48vw,620px); max-width:620px; }
+#splashScreen .splash-eyebrow { color:var(--color-primary); font-size:.76rem; font-weight:700; letter-spacing:.13em; }
+#splashScreen .splash-profession { margin:.5rem 0 1rem; color:var(--text-muted); font-size:.82rem; font-weight:700; letter-spacing:.14em; }
+#splashScreen .splash-quote { max-width:17ch; margin:.7rem 0 1.15rem; color:var(--text-heading); font-size:clamp(2.15rem,4vw,3.55rem); line-height:1.08; }
+#splashScreen .splash-quote a { color:inherit; text-decoration:none; }
+#splashScreen .splash-divider { width:44px; margin:1rem 0; background:var(--color-accent-rust); }
+#splashScreen .splash-scholar-title { max-width:35ch; color:var(--text-main); font-size:1rem; font-weight:600; line-height:1.6; }
+#splashScreen .splash-enter-btn { border-color:var(--color-primary); background:var(--color-primary); color:#fff; }
+#splashScreen .splash-enter-btn:hover { background:var(--color-primary-hover); }
+#splashScreen .splash-progress-track { background:rgba(32,83,75,.13); }
+#splashScreen .splash-progress-bar { background:linear-gradient(90deg,var(--color-accent-rust),var(--color-primary)); }
+@media(max-width:760px) {
+  #splashScreen .splash-monograph-card { width:100%; max-width:560px; }
+  #splashScreen .splash-quote { max-width:17ch; font-size:clamp(1.65rem,7vw,2.3rem); }
+  #splashScreen .splash-scholar-title { font-size:.9rem; }
+}
