@@ -722,8 +722,8 @@ main.about-page-main > section {
 .about-deck { max-width: 58rem; margin: 0 0 clamp(2rem, 4vw, 3.5rem); color: var(--text-muted); font: 500 clamp(1.15rem, 2vw, 1.5rem)/1.5 var(--font-serif); }
 .about-intro { display: grid; grid-template-columns: minmax(240px, .72fr) minmax(0, 1.28fr); gap: clamp(1.5rem, 5vw, 4.5rem); align-items: center; }
 .about-portrait { position: relative; margin: 0; overflow: hidden; border-radius: 1.1rem; background: var(--bg-subtle); box-shadow: 0 22px 60px rgba(29,42,58,.13); }
-.about-portrait img { display: block; width: 100%; aspect-ratio: 4/4.6; object-fit: cover; object-position: center 28%; }
-.about-portrait figcaption { position: absolute; inset: auto 0 0; display: grid; gap: .2rem; padding: 2.4rem 1.25rem 1.15rem; color: white; background: linear-gradient(transparent, rgba(15,26,38,.82)); }
+.about-portrait img { display: block; width: 100%; height: auto; aspect-ratio: 682 / 1024; object-fit: contain; object-position: center; }
+.about-portrait figcaption { position: absolute; inset: auto 0 0; display: grid; gap: .2rem; padding: 2rem 1.25rem 1.05rem; color: white; background: linear-gradient(transparent, rgba(15,26,38,.78)); }
 .about-portrait figcaption strong { font: 600 1.35rem/1.2 var(--font-serif); }
 .about-portrait figcaption span { font-size: .82rem; color: rgba(255,255,255,.82); }
 .about-intro-copy { max-width: 54rem; }
@@ -784,8 +784,10 @@ main.about-page-main > section {
 @media (max-width: 900px) { .about-experience-grid, .about-research-grid, .about-certificates { grid-template-columns: repeat(2,minmax(0,1fr)); } }
 @media (max-width: 680px) {
   .about-intro, .about-feature, .about-bottom-grid { grid-template-columns: minmax(0,1fr); }
-  .about-portrait { max-width: 27rem; }
-  .about-portrait img { aspect-ratio: 1.2; }
+  .about-portrait { max-width: min(76vw, 296px); width: 100%; margin-inline: auto; }
+  .about-portrait img { width: 100%; height: auto; aspect-ratio: 682 / 1024; object-fit: contain; }
+  .about-portrait figcaption { padding: 1.65rem 1rem .9rem; }
+  .about-portrait figcaption strong { font-size: 1.15rem; }
   .about-section-heading { display: block; }
   .about-section-heading > span { display: block; margin-bottom: .45rem; }
   .about-experience-grid, .about-research-grid, .about-certificates { grid-template-columns: minmax(0,1fr); }
