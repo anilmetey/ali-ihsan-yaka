@@ -438,8 +438,6 @@ function init() {
     );
     ring.position.z = 0.18;
 
-    const backRing = ring.clone();
-    backRing.position.z = -0.18;
 
     const halo = new THREE.Sprite(
       new THREE.SpriteMaterial({
@@ -452,7 +450,7 @@ function init() {
     );
     halo.scale.setScalar(1.35);
 
-    g.add(disc, ring, backRing, halo);
+    g.add(disc, ring, halo);
     g.position.set(x, y, 0);
     g.scale.setScalar(0.001);
     world.add(g);
@@ -606,10 +604,10 @@ function init() {
     color: C.msg, radius: 0.036, order: 0.85, particles: 1
   });
   flowTube(line(V(X.P, R[0] - 0.3, 0), V(X.P, R[1] + 0.3, 0)), {
-    color: C.msg, radius: 0.036, order: 0.98, particles: 1
+    color: C.msg, radius: 0.036, tags: ['psy'], order: 0.98, particles: 1
   });
   flowTube(line(V(X.P, R[1] - 0.3, 0), V(X.P, R[2] + 0.3, 0)), {
-    color: C.msg, radius: 0.036, order: 1.12, particles: 1
+    color: C.msg, radius: 0.036, tags: ['per', 'psy'], order: 1.12, particles: 1
   });
   // Bottom curved descent from Simgeselde Tanı(n)ma ↘ bottom S2
   flowTube(
@@ -716,24 +714,24 @@ function init() {
   // --- Vertical Upward Metonymic Coding Vectors (Bottom → Top) ---
   // Column 1 (İmgesel): Row 2 ↑ Row 1, and Row 1 ↑ Row 0 level
   flowTube(line(V(X.I, R[2] + 0.46, 0), V(X.I, R[1] - 0.46, 0)), {
-    color: C.code, radius: 0.036, tags: ['neu', 'per'], order: 2.75, particles: 1
+    color: C.code, radius: 0.036, tags: ['per'], order: 2.75, particles: 1
   });
   flowTube(line(V(X.I, R[1] + 0.46, 0), V(X.I, R[0] - 0.06, 0)), {
-    color: C.code, radius: 0.036, tags: ['per', 'psy'], order: 2.85, particles: 1
+    color: C.code, radius: 0.036, tags: [], order: 2.85, particles: 1
   });
   // Column 2 (Gerçek): Row 2 ↑ Row 1 ↑ Row 0 ↑ (Kod)
   flowTube(line(V(X.G, R[2] + 0.46, 0), V(X.G, R[1] - 0.46, 0)), {
-    color: C.code, radius: 0.038, tags: ['neu', 'per'], order: 2.78, particles: 1
+    color: C.code, radius: 0.038, tags: ['per'], order: 2.78, particles: 1
   });
   flowTube(line(V(X.G, R[1] + 0.46, 0), V(X.G, R[0] - 0.46, 0)), {
-    color: C.code, radius: 0.038, tags: ['per', 'psy'], order: 2.88, particles: 1
+    color: C.code, radius: 0.038, tags: [], order: 2.88, particles: 1
   });
   flowTube(line(V(X.G, R[0] + 0.45, 0), V(X.G, 2.44, 0)), {
-    color: C.code, radius: 0.038, tags: ['psy'], order: 2.98, particles: 1
+    color: C.code, radius: 0.038, tags: [], order: 2.98, particles: 1
   });
   // Column 3 (Simgesel): rises upward from top-right of Simgesel (to the right of the Row 2 over-loop)
   flowTube(line(V(X.S + 0.18, R[2] + 0.46, 0), V(X.S + 0.18, R[1] - 0.36, 0)), {
-    color: C.code, radius: 0.035, tags: ['neu'], order: 2.82, particles: 1
+    color: C.code, radius: 0.035, tags: ['per'], order: 2.82, particles: 1
   });
 
   /* 7. S1 Vertical Upward Axis + Jump Arcs into Ruhsal Yapılar */
@@ -766,7 +764,7 @@ function init() {
 
   // Vertical upward arrows connecting Nevrotik ↑ Pervert ↑ Psikotik (no arrow above Psikotik)
   flowTube(line(V(X.Y, R[2] + 0.32, 0), V(X.Y, R[1] - 0.32, 0)), {
-    color: C.code, radius: 0.036, tags: ['neu', 'per'], order: 3.95, particles: 1
+    color: C.code, radius: 0.036, tags: ['per'], order: 3.95, particles: 1
   });
   flowTube(line(V(X.Y, R[1] + 0.32, 0), V(X.Y, R[0] - 0.32, 0)), {
     color: C.code, radius: 0.036, tags: ['per', 'psy'], order: 4.05, particles: 1
@@ -774,10 +772,10 @@ function init() {
 
   /* 8. Inner S1 ↔ S2 Loops (Top: S1 → S2 right-to-left; Bottom: S2 → S1 left-to-right arching upward) */
   flowTube(arc(V(X.A - 0.05, 3.05, -0.25), V(X.M + 0.05, 3.02, -0.25), 1.35, -0.35), {
-    color: C.loop, radius: 0.054, order: 4.6, speed: 0.38, particles: 3, glow: 1.05
+    color: C.loop, radius: 0.072, tags: ['psy', 'per', 'neu'], order: 4.6, speed: 0.38, particles: 3, glow: 1.18, arrowScale: 1.18
   });
   flowTube(arc(V(X.M + 0.18, -3.38, -0.25), V(X.A - 0.12, -3.38, -0.25), 0.58, -0.25), {
-    color: C.loop, radius: 0.05, order: 4.65, speed: 0.38, particles: 3, glow: 1.05
+    color: C.loop, radius: 0.072, tags: ['psy', 'per', 'neu'], order: 4.65, speed: 0.38, particles: 3, glow: 1.18, arrowScale: 1.18
   });
   // Curved connector from bottom S1 up into the bottom of Nevrotik (exact Figure 5 bottom-right curve)
   flowTube(
