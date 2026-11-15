@@ -714,14 +714,14 @@ function init() {
   // --- Vertical Upward Metonymic Coding Vectors (Bottom → Top) ---
   // Column 1 (İmgesel): Row 2 ↑ Row 1, and Row 1 ↑ Row 0 level
   flowTube(line(V(X.I, R[2] + 0.46, 0), V(X.I, R[1] - 0.46, 0)), {
-    color: C.code, radius: 0.036, tags: ['neu', 'per'], order: 2.75, particles: 1
+    color: C.code, radius: 0.036, tags: ['per'], order: 2.75, particles: 1
   });
   flowTube(line(V(X.I, R[1] + 0.46, 0), V(X.I, R[0] - 0.06, 0)), {
     color: C.code, radius: 0.036, tags: [], order: 2.85, particles: 1
   });
   // Column 2 (Gerçek): Row 2 ↑ Row 1 ↑ Row 0 ↑ (Kod)
   flowTube(line(V(X.G, R[2] + 0.46, 0), V(X.G, R[1] - 0.46, 0)), {
-    color: C.code, radius: 0.038, tags: ['neu', 'per'], order: 2.78, particles: 1
+    color: C.code, radius: 0.038, tags: ['per'], order: 2.78, particles: 1
   });
   flowTube(line(V(X.G, R[1] + 0.46, 0), V(X.G, R[0] - 0.46, 0)), {
     color: C.code, radius: 0.038, tags: [], order: 2.88, particles: 1
@@ -731,7 +731,7 @@ function init() {
   });
   // Column 3 (Simgesel): rises upward from top-right of Simgesel (to the right of the Row 2 over-loop)
   flowTube(line(V(X.S + 0.18, R[2] + 0.46, 0), V(X.S + 0.18, R[1] - 0.36, 0)), {
-    color: C.code, radius: 0.035, tags: ['neu'], order: 2.82, particles: 1
+    color: C.code, radius: 0.035, tags: ['per'], order: 2.82, particles: 1
   });
 
   /* 7. S1 Vertical Upward Axis + Jump Arcs into Ruhsal Yapılar */
@@ -764,7 +764,7 @@ function init() {
 
   // Vertical upward arrows connecting Nevrotik ↑ Pervert ↑ Psikotik (no arrow above Psikotik)
   flowTube(line(V(X.Y, R[2] + 0.32, 0), V(X.Y, R[1] - 0.32, 0)), {
-    color: C.code, radius: 0.036, tags: ['neu', 'per'], order: 3.95, particles: 1
+    color: C.code, radius: 0.036, tags: ['per'], order: 3.95, particles: 1
   });
   flowTube(line(V(X.Y, R[1] + 0.32, 0), V(X.Y, R[0] - 0.32, 0)), {
     color: C.code, radius: 0.036, tags: ['per', 'psy'], order: 4.05, particles: 1
