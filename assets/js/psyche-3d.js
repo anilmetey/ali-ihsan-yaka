@@ -604,10 +604,10 @@ function init() {
     color: C.msg, radius: 0.036, order: 0.85, particles: 1
   });
   flowTube(line(V(X.P, R[0] - 0.3, 0), V(X.P, R[1] + 0.3, 0)), {
-    color: C.msg, radius: 0.036, order: 0.98, particles: 1
+    color: C.msg, radius: 0.036, tags: ['psy'], order: 0.98, particles: 1
   });
   flowTube(line(V(X.P, R[1] - 0.3, 0), V(X.P, R[2] + 0.3, 0)), {
-    color: C.msg, radius: 0.036, order: 1.12, particles: 1
+    color: C.msg, radius: 0.036, tags: ['per', 'psy'], order: 1.12, particles: 1
   });
   // Bottom curved descent from Simgeselde Tanı(n)ma ↘ bottom S2
   flowTube(
